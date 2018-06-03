@@ -32,9 +32,29 @@
                         href='${n.url}' target='_blank' class="ts">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
                 </div>
             </div>
-            <div class="bd">
-                ${channel. txt!}
-                <img src="/${res}/imgs/about-img.png"/>
+            <div class="bd jrwm">
+                [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2'
+                dateFormat='yyyy.MM.dd' channelOption='1' ]
+                <table class="jrwm-table" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th class="tb-1">职位名称</th>
+                        <th class="tb-2">人数</th>
+                        <th class="tb-3">工作地点</th>
+                        <th class="tb-4">专业要求</th>
+                        <th class="tb-5">学历要求</th>
+                    </tr>
+                    <tr>
+                        [#list tag_pagination.list as a]
+                        <td class="tb-1"><a href="${a.url}">${a.title}</a></td>
+                        <td>${a.tagStr}</td>
+                        <td>${a.shortTitle}</td>
+                        <td>${a.author}</td>
+                        <td>${a.origin}</td>
+                        [/#list]
+                    </tr>
+                </table>
+                <div class="pagesite">[@cms_pagination sysPage='1'/] </div>
+                [/@cms_content_page]
             </div>
         </div>
     </div>

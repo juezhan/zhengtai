@@ -1,60 +1,56 @@
 <!-- header 开始 -->
 <link href="/${res}/css/header.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="/${res}/css/login.css" />
+<link rel="stylesheet" type="text/css" href="/${res}/css/login.css"/>
 [#if site.config.qqEnable]
-<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js#appId=${site.config.qqID!}" charset="utf-8"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js#appId=${site.config.qqID!}"
+        charset="utf-8"></script>
 [/#if]
 [#if site.config.sinaEnable]
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=${site.config.sinaID!}" type="text/javascript" charset="utf-8"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=${site.config.sinaID!}" type="text/javascript"
+        charset="utf-8"></script>
 [/#if]
 [#if site.config.qqWeboEnable]
 <script type="text/javascript" src="http://mat1.gtimg.com/app/openjs/openjs.js"></script>
 [/#if]
 <script type="text/javascript">
-$(function() {
+  $(function () {
     //优先执行第三方退出 在执行本地退出
-   $('#logout').click(function () {
-          [#if site.config.qqEnable]
-              //退出qq
-               if(QC.Login.check()){
-                     QC.Login.signOut();
-                }
-          [/#if]
-          [#if site.config.sinaEnable]
-             if(WB2.checkLogin()){
-                WB2.logout(function() {
-                    //callback function
-                });
-             }
-          [/#if]
-          [#if site.config.qqWeboEnable]
-             T.init({
-                appkey: ${site.config.qqWeboID!}
-             });
-            if(T.loginStatus()){
-                T.logout(function (loginStatus) { // 登出用户
-                    // 登录成功
-                });
-            }
-         [/#if]
-         location="${base}/logout.jspx?returnUrl=/";
+    $('#logout').click(function () {
+      [#if site.config.qqEnable]
+      //退出qq
+      if (QC.Login.check()) {
+        QC.Login.signOut();
+      }
+      [/#if]
+        [#if site.config.sinaEnable]
+      if (WB2.checkLogin()) {
+        WB2.logout(function () {
+          //callback function
+        });
+      }
+      [/#if]
+        [#if site.config.qqWeboEnable]
+      T.init({
+        appkey: ${site.config.qqWeboID!}
+      });
+      if (T.loginStatus()) {
+        T.logout(function (loginStatus) { // 登出用户
+          // 登录成功
+        });
+      }
+      [/#if]
+        location = "${base}/logout.jspx?returnUrl=/";
+    });
   });
-});
 </script>
 
 <div class="header">
     <div class="container">
         <img src="/${res}/imgs/logo.png" class="logo">
         <div class="sign">
-            <i class="icon icon-user"></i>
+            <i class="icon-earth"></i>
             <div class="bd">
-                [#if user??]
-                <a href="${base}/member/index.jspx">会员中心</a>
-                <a id="logout" >退出账号</a>
-                [#else]
-                <a href="${base}/login.jspx" >用户登陆</a>
-                <a href="${base}/register.jspx" >用户注册</a>
-                [/#if]
+                请选择语言版本<span>/</span><a href="#" class="active">简体版</a><a href="#">繁體版</a><a href="#">English</a>
             </div>
         </div>
     </div>

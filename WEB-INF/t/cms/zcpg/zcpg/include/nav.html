@@ -3,11 +3,13 @@
 <div class="navigation-bar" id="navigationBar">
   <div class="container">
     <div class="bd">
+      <div class="item-wapper">
       [@cms_channel_list]
       [#if !channel??]
       <div class="item"><a href="${base}/" class="tt on">首页</a></div>
         [#list tag_list as c]
           [#if c_index<6]
+          <div class="dot"></div>
           <div class="item">
             <a href="${c.url}" class="tt">${c.name}</a>
             [@cms_channel_list parentId=c.id]
@@ -21,7 +23,7 @@
                   </ul>
               </div>
             [/#if]
-            [/@cms_channel_list] 
+            [/@cms_channel_list]
           </div>
           [/#if]
         [/#list]
@@ -29,6 +31,7 @@
       <div class="item"><a href="${base}/" class="tt">首页</a></div>
         [#list tag_list as c]
           [#if c_index<6]
+          <div class="dot"></div>
           <div class="item">
             [#if channel.parentId??]
             <a href="${c.url}" class="tt[#if channel.parentId==c.id] on[/#if]">${c.name}</a>
@@ -46,25 +49,40 @@
                   </ul>
               </div>
             [/#if]
-            [/@cms_channel_list] 
+            [/@cms_channel_list]
           </div>
           [/#if]
         [/#list]
       [/#if]
       [/@cms_channel_list]
+          <div class="search">
+              <i class="icon icon-magnifier"></i>
+          </div>
+      </div>
     </div>
   </div>
 </div>
 <script>
-  // $('#navigationBar a.tt').each(function (e) {
-  //   $(this).hover(function () {
-  //     $(this).next('.menu').addClass('visible')
-  //   }, null)
-  // })
-  // $('#navigationBar .menu').each(function (e) {
-  //   $(this).hover(null, function () {
-  //     $(this).removeClass('visible')
-  //   })
-  // })
+  var mt = null
+  $('#navigationBar a.tt').each(function (e) {
+    $(this).hover(function () {
+      $(this).next('.menu').addClass('visible')
+    }, function () {
+      var $this = $(this);
+      mt = setTimeout(function () {
+        $this.next('.menu').removeClass('visible')
+        clearTimeout(mt);
+      },50)
+    })
+  })
+  $('#navigationBar .menu').each(function (e) {
+    $(this).hover(function () {
+      clearTimeout(mt);
+      $(this).addClass('visible')
+    }, function () {
+      clearTimeout(mt);
+      $(this).removeClass('visible')
+    })
+  })
 </script>
 <!-- navigation-bar 结束 -->

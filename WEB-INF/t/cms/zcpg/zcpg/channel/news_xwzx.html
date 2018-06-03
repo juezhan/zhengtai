@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name}</title>
+<script src="/${res}/js/jquery-3.3.1.min.js"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link href="/${res}/css/news-xwzx.css" rel="stylesheet"/>
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+
+<head>
+<body class="news-xwzx">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+
+<div class="xwzx-main">
+    <div class="xwzx-wapper">
+        <div class="container">
+            <div class="xwzx-mn">
+                <div class="tit">
+                    <div class="txt">EVERGANDE GROUP</div>
+                    <div class="menu" id="menu">
+                        [@cms_channel_list parentId=channel.id]
+                        [#list tag_list as c]
+                        <a href="${c.url}" class="item[#if c_index == 0] active[/#if]">${c.name}</a>
+                        [/#list]
+                        [/@cms_channel_list]
+                    </div>
+                    <script>
+                        $('#menu .item').each(function () {
+                          $(this).mouseenter(function () {
+                            $(this).addClass('active').siblings().removeClass('active')
+                          })
+                        })
+                    </script>
+                </div>
+                <div class="xwzx-bd">
+                    [@cms_channel_list parentId=channel.id]
+                    [#list tag_list as c]
+                    [#if c_index == 0]<div class="item-w-a">[/#if]
+                    [#if c_index == 1]<div class="item-w-b">[/#if]
+                    <div class="item">
+                        <div class="title">
+                            <div class="txt">${c.name}</div>
+                            <a href="${c.url}" class="move">更多&gt;&gt;</a>
+                        </div>
+                        <div class="list">
+                            [@cms_content_list channelId=c.id count='20' titLen='50' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
+                            [#list tag_list as a]
+                            <div class="list-cell">
+                                <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
+                                <div class="date">${a.date?string(dateFormat)}</div>
+                            </div>
+                            [/#list]
+                            [/@cms_content_list]
+                        </div>
+                    </div>
+                    [#if c_index == 2]</div>[/#if]
+                    [#if c_index == 0]</div>[/#if]
+                    [/#list]
+                    [/@cms_channel_list]
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>
