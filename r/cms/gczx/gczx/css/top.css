@@ -1,0 +1,11 @@
+.top{color:#000;height:60px;line-height:60px;font-size:18px;background-color:#f8f8f8}
+.top .container .bd{text-align:right}
+.top .container a{font-size:18px;color:#000}
+
+@media screen and (max-width: 749px) {
+	.top{font-size:12px;position: absolute;top: 12px;right: 12px;width: 30px;height: 30px;z-index: 99;border: 1px solid #e5e5e5;box-sizing: border-box;background:50% 50% no-repeat url('../imgs/arrow-b.png');background-size: 100% 100%;border-radius:4px;}
+	.top .container{display: none; position: absolute;right: 0;top: 30px;width: 84px;min-width: 84px;padding:4px 12px;background-color: #f8f8f8;box-shadow:2px 2px 8px 1px rgba(0, 0, 0, 0.6);}
+	.top .container .bd{font-size: 0;overflow: hidden;line-height: 0;}
+	.top .container a{float: left;width: 100%;font-size: 12px;line-height: 20px;margin:4px 0;}
+	.top.on .container{display: block;}
+}

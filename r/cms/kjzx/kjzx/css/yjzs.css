@@ -1,0 +1,125 @@
+.yjzs {
+}
+
+.yjzs .cnt-wrapper {
+}
+
+.yjzs .cnt-wrapper .m-cnt {
+    border-right: 2px solid #eaeaea;
+    width: 856px;
+    padding: 30px 40px 30px 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.yjzs .cnt-wrapper .ad-wrapper {
+    padding: 30px 0;
+    font-size: 0;
+    float: right;
+    width: 300px;
+}
+
+.yjzs .cnt-wrapper .ad-wrapper img {
+    margin-bottom: 12px;
+}
+
+.yjzs .cnt-wrapper .more {
+    margin-top: 23px;
+    height: 54px;
+    background: url("../imgs/xwzx-more.png") #e1dede 50% 50% no-repeat;
+    cursor: pointer;
+}
+
+.yjzs .cnt-wrapper .cnt-cell,
+.yjzs .cnt-wrapper .cnt-cell-first {
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.yjzs .cnt-wrapper .cnt-cell {
+    padding: 27px 0 24px;
+}
+.yjzs .cnt-wrapper .cnt-cell .bd{
+    display: flex;
+}
+
+.yjzs .cnt-wrapper .cnt-cell .date {
+    background-color: #e1e1e1;
+    width: 100px;
+    height: 110px;
+    margin-right: 20px;
+}
+
+.yjzs .cnt-wrapper .cnt-cell .date p {
+    font-size: 14px;
+    color: #999999;
+    padding: 0 14px;
+    line-height: 1em;
+    margin-top: 7px;
+}
+
+.yjzs .cnt-wrapper .cnt-cell .date p.day {
+    font-size: 36px;
+    color: #e62b1e;
+    margin-top: 20px;
+}
+
+.yjzs .cnt-wrapper .cnt-cell .mn-cnt {
+    flex: 1;
+    font-size: 14px;
+    color: #746969;
+    line-height: 18px;
+}
+
+.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 9px;
+}
+
+.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-2,
+.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3 {
+    margin-top: 10px;
+}
+.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3{
+    height: 36px;
+    overflow: hidden;
+}
+.yjzs .cnt-wrapper .cnt-cell-first{
+    padding-bottom: 20px;
+}
+.yjzs .cnt-wrapper .cnt-cell-first .mn-cnt{
+    flex: 1;
+}
+.yjzs .cnt-wrapper .cnt-cell-first .date{
+    color: #6d8ac4;
+    font-size: 30px;
+    line-height: 30px;
+}
+.yjzs .cnt-wrapper .cnt-cell-first .txt-1{
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 27px;
+}
+.yjzs .cnt-wrapper .cnt-cell-first .txt-2{
+    margin: 11px 0;
+    font-size: 14px;
+    color: #777777;
+    line-height: 24px;
+}
+.yjzs .cnt-wrapper .cnt-cell-first .avatar{
+    display: flex;
+    width: 330px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.yjzs .cnt-wrapper .ad-wrapper{
+    padding: 30px 0;
+    font-size: 0;
+    float: right;
+    width: 300px;
+}
+.yjzs .cnt-wrapper .ad-wrapper img{
+    margin-bottom: 12px;
+}

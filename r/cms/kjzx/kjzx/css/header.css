@@ -1,0 +1,12 @@
+.header .container{height:80px}
+.header .logo{float:left;margin:17px 0 0 0}
+.header .sign{float:right;border:1px solid #e5e5e5;height:38px;line-height:38px;border-radius:12px;font-size:0;margin-top:29px}
+.header .sign .icon{float:left;margin:10px 12px 0}
+.header .sign .bd{padding:0 18px;display:inline-block;border-left:1px solid #e5e5e5;font-size:0;line-height: 40px;height: 40px;}
+.header .sign a{color:#293896;font-size:14px}
+.header .sign a+a{margin-left:17px}
+.header .cnt-1{float: right;color: #999999;margin:30px 0 0 43px;}
+.header .cnt-1 a{font-size: 18px;color: #999999;}
+.header .search{}
+.header .icon-magnifier{margin-right: 9px; float: left; display: inline-block; background: url("../imgs/magnifier.png") 0 0 no-repeat;width: 20px;height: 18px;}
+.header .txt{}

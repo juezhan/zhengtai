@@ -1,0 +1,12 @@
+.bottom {
+    height: 92px;
+    background-color: #ffffff;
+}
+.bottom .cnt{
+    margin-left: 714px;
+    padding-left: 26px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+    margin-top: 27px;
+}

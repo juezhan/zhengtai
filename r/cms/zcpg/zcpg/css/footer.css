@@ -1,0 +1,50 @@
+.footer{height:auto;background-color:#eeeeee;color:#000}
+.footer a{color:#000}
+.ft-bd{margin: 0 50px;}
+.footer .ft-cnt{font-size:12px;padding: 31px 17px 12px;height: 1em;line-height: 1em;}
+.footer .ft-cell{overflow: hidden;padding: 16px 0 20px;}
+.footer .ft-cell .icon{width: 30px;height: 30px;margin:9px -30px 0 0;position:relative;float:left;}
+.footer .ft-cell .icon-telephone{background:0 0 no-repeat url('../imgs/telephone.png')}
+.footer .ft-cell .icon-mail{background:0 0 no-repeat url('../imgs/mail.png')}
+.footer .ft-cell .icon-fax{background:0 0 no-repeat url('../imgs/fax.png')}
+.footer .ft-cell .item{width:320px;overflow:hidden;float: left;}
+.footer .ft-cell .item p{margin-left: 47px;line-height: 26px;}
+.footer .ft-cell .item.first{margin-left: 20px;}
+.footer .ft-cell .item.second{margin-left: 40px;}
+.footer .ft-cell .item.third{margin-left: 50px;}
+.footer .ft-cell .item .lbl{font-size:18px;color:#293896;height:1em;line-height:1em;text-align:left;padding-bottom:17px;border-bottom:1px solid #293896}
+.footer .ft-cell .item .bd{font-size:14px;line-height:2em;margin-top:13px}
+.footer .site .tt{padding:33px 0 28px;text-align:center;font-size:24px;line-height:1em;color:#293896;border-bottom:1px solid #293896}
+.footer .site .bd{font-size:0;text-align:center}
+.footer .site .bd .item{display:inline-block;width:33.333%;font-size:14px;padding:26px 0}
+.footer .footer-line-1{border-top: 1px solid #b5b5b5;height: 0;}
+.footer .footer-line-2{border-top: 1px dashed #b5b5b5;height: 0;}
+
+@media screen and (min-width: 1680px) {
+  .container{width:1600px;}
+  .footer .ft-cell .item.first{width: 720px;}
+	.footer .ft-cell .item.third{float: right;}
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 750px){
+	.footer .ft-cell .item{float: right;width: 410px;}
+	.footer .ft-cell .item.first,
+	.footer .ft-cell .item.second,
+	.footer .ft-cell .item.third{margin-left: 0;}
+	.footer .ft-cell .item.first{float: left;}
+	.footer .ft-cell .icon{margin-top: 0;}
+	.footer .ft-cell .item.third{margin-top: 12px;}
+}
+
+@media screen and (max-width: 749px) {
+	.ft-bd{margin: 0;}
+	.footer .ft-cnt{line-height: 16px;height: auto;padding: 10px 12px 8px;}
+	.footer .ft-cell .item{width: 100%;}
+	.footer .ft-cell .item.first,
+	.footer .ft-cell .item.second,
+	.footer .ft-cell .item.third{margin: 0;}
+	.footer .ft-cell .item + .item{margin-top: 10px;}
+	.footer .ft-cell .icon{margin-top: 0;}
+	.footer .ft-cell .item p{line-height: 20px;}
+}

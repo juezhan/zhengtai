@@ -1,0 +1,30 @@
+.gywm{}
+.gywm .crumbs{
+    border-bottom: 2px solid #eaeaea;
+    line-height: 58px;
+    height: 58px;
+    font-size: 18px;
+}
+.gywm .crumbs .icon-home{
+    background: url("../imgs/icon-home.png") 0 0 no-repeat;
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+}
+.gywm .cnt-wrapper{}
+.gywm .cnt-wrapper .m-cnt{
+    border-right: 2px solid #eaeaea ;
+    width: 856px;
+    padding: 30px 40px 30px 20px;
+    box-sizing: border-box;
+    float: left;
+}
+.gywm .cnt-wrapper .ad-wrapper{
+    padding: 30px 0;
+    font-size: 0;
+    float: right;
+    width: 300px;
+}
+.gywm .cnt-wrapper .ad-wrapper img{
+    margin-bottom: 12px;
+}

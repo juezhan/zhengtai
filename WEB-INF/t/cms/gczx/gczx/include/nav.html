@@ -1,0 +1,94 @@
+<!-- navigation-bar 开始 -->
+<div class="navigation-bar" id="navigationBar">
+  [@cms_channel_list]
+  [#if !channel??]
+    <a class="item on" href="${base}/">
+      <span class="tit">首页</span>
+      <span class="tit-2">HOME</span>
+    </a>
+    [#list tag_list as c]
+      [#if c_index<4]
+      <a class="item [#if c_index<3]key-item[/#if] ${c.path}" href="${c.url}" data-target="${c.path}">
+        <span class="tit">${c.name}</span>
+        <span class="tit-2">${c.txt}</span>
+        [#if c_index<3]
+          <div class="menu-arrow"></div>
+        [/#if]
+      </a>
+      [/#if]
+    [/#list]
+  [#else]
+    <a class="item" href="${base}/">
+      <span class="tit">首页</span>
+      <span class="tit-2">HOME</span>
+    </a>
+    [#list tag_list as c]
+      [#if c_index<4]      
+      [#if channel.parentId??]
+      <a href="${c.url}" class="item[#if channel.parentId==c.id] on[/#if] [#if c_index<3]key-item[/#if] ${c.path}" data-target="${c.path}">
+      [#else]
+      <a href="${c.url}" class="item[#if channel.id==c.id] on[/#if] [#if c_index<3]key-item[/#if] ${c.path}" data-target="${c.path}">
+      [/#if]
+        <span class="tit">${c.name}</span>
+        <span class="tit-2">${c.txt}</span>        
+        [#if c_index<3]
+          <div class="menu-arrow"></div>
+        [/#if]
+      </a>
+      [/#if]
+    [/#list]
+  [/#if]
+  [/@cms_channel_list]
+  <link href="/${res}/css/header-menus.css" rel="stylesheet"/>
+  <div class="header-menus" id="headerMenus">    
+    <div class="container">
+    [@cms_channel_list]
+      [#list tag_list as c]
+        [@cms_channel_list parentId = c.id]
+        <div class="header-menus-item ${c.path}">
+          [#list tag_list as c2]
+            <a href="${c2.url}" class="tit"><i class="icon" style="background-image: url(${c2.titleImg!});"></i>${c2.name}</a>
+          [/#list]
+        </div>
+        [/@cms_channel_list]
+      [/#list]
+    [/@cms_channel_list]    
+    </div>
+  </div>
+  <script type="text/javascript">
+    
+    function getScreenWidth(argument) {
+      return document.body.clientWidth;
+    }
+
+    var target = '';
+
+    $('#navigationBar .key-item')
+      .mouseenter(function (e) {
+        target = $(this).data('target');
+        if(getScreenWidth<=749){
+          $(this).addClass('is-set').siblings().removeClass('is-set');
+          $('#headerMenus').addClass('on');
+          $('#headerMenus .header-menus-item').removeClass('on');
+          $('#headerMenus .header-menus-item.' + target).addClass('on');
+        }
+      })
+      .mouseleave(function(){
+        $(this).removeClass('is-set');
+        $('#headerMenus').removeClass('on');
+      });
+
+    $('#headerMenus')
+      .mouseenter(function(){
+        $('.key-item.' + target).addClass('is-set');
+        $('#headerMenus').addClass('on');
+      })
+      .mouseleave(function(){
+        $('.key-item').removeClass('is-set');
+        $('#headerMenus').removeClass('on');
+      });
+
+  </script>
+</div>
+
+<!-- navigation-bar 结束 -->

@@ -1,0 +1,23 @@
+blockquote,body,button,dd,dl,dt,fieldset,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;border:0}
+body,button,input,select,textarea{font-family:'Microsoft Yahei',"Lucida Grande",Tahoma,Arial,Helvetica,sans-serif;font-size:14px;color:#333}
+button,input,select,textarea{outline:0}
+html{line-height:1}
+address,cite,em,i,var{font-style:normal}
+h1{font-size:18px}
+h2{font-size:16px}
+h3{font-size:14px}
+h4,h5,h6{font-size:100%}
+li,ol,ul{list-style:none}
+a{text-decoration:none;color:#333;cursor:pointer}
+ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
+img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
+.container{width:1200px;margin:0 auto}
+.icon{display:inline-block}
+.cgzs .cgzs-mn{font-size:0;text-align:left;padding:14px 0;overflow: hidden;}
+.cgzs .cgzs-mn .item{border:3px solid #a0a0a0;border-radius:9px;width:547px;height:300px;display:inline-block;margin:14px 18px;float:left;}
+.cgzs .cgzs-mn .item .item-bd{padding:29px 38px;overflow:hidden}
+.cgzs .cgzs-mn .item .item-bd img{float:left}
+.cgzs .cgzs-mn .item .item-bd .cnt{width:360px;float:right;font-size:18px;line-height:24px;text-align:left}
+.cgzs .cgzs-mn .item .item-bd .cnt .bd1{padding: 3px 0;}
+.cgzs .cgzs-mn .item .item-bd .cnt .bd1 .sd1{color: #888888;width: 90px;float:left;margin-right:-90px;}
+.cgzs .cgzs-mn .item .item-bd .cnt .bd1 .mn1{margin-left:90px;}

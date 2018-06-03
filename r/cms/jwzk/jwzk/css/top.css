@@ -1,0 +1,11 @@
+.top{color:#000;height:60px;line-height:60px;font-size:18px;background-color:#f8f8f8}
+.top .container .bd{text-align:right}
+.top .container a{color:#000}
+
+@media screen and (min-width: 1600px) {
+}
+
+@media screen and (max-width: 749px) {
+    .top{font-size:12px;height: 20px;line-height: 20px;text-align: center;}
+    .top .container .bd{text-align: center}
+}

@@ -1,0 +1,13 @@
+<!-- navigation-bar 开始 -->
+<link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
+<div class="navigation-bar" id="navigationBar">
+    [@cms_channel_list]
+    [#list tag_list as c]
+    <a href="${c.url}" class="tt">
+        <span class="txt-1">${c.name}</span>
+        <span class="txt-2">${c.keywords!}</span>
+    </a>
+    [/#list]
+    [/@cms_channel_list]
+</div>
+<!-- navigation-bar 结束 -->

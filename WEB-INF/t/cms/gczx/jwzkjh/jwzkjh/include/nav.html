@@ -1,0 +1,56 @@
+<!-- navigation-bar 开始 -->
+<link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
+<script>
+  function qkeypress(){
+    var q=$("input[name=q]");
+    if(q.val().trim()!=""){
+      $("input[name=q]").autocomplete("enable");
+    }else{
+      $("input[name=q]").autocomplete("disable");
+    }
+  }
+  function query(){
+    $.post("${base}/createToken.jspx", {}, function(data) {
+      $("#token").val(data.token);
+      $("#searchForm").submit();
+    }, "json");
+  }
+  $(function() {
+    $("input[name='q']").bind('keypress',function(event){
+      if(event.keyCode == 13)
+      {
+        event.preventDefault();
+        query();
+      }
+    });
+  });
+</script>
+<div class="navigation-bar" id="navigationBar">
+    <div class="container">
+        <div class="bd">
+            [@cms_channel_list]
+            [#if !channel??]
+            <a href="/" class="tt first on">首页</a>
+            [#list tag_list as c]
+            <a href="${c.url}" class="tt">${c.name}</a>
+            [/#list]
+            [#else]
+            <a href="/" class="tt first">首页</a>
+            [#list tag_list as c]
+            <a href="${c.url}" class="tt [#if channel??&&channel.id==c.id] on[/#if]">${c.name}</a>
+            [/#list]
+            [/#if]
+            [/@cms_channel_list]
+        </div>
+        <div class="search">
+            <form action="${base}/search.jspx" target="_blank" name="searchForm" id="searchForm">
+                <input type="text" name="q" value="${oldq!}" placeholder="Search" maxlength="50" autocomplete="off"
+                       class="searchCon">
+                <input type="hidden" name="token" id="token" value="${token!}"/>
+                <input type="button" value="" class="searchMenu" onclick="query()">
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- navigation-bar 结束 -->

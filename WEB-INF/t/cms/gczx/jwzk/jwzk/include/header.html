@@ -1,0 +1,42 @@
+<!-- header 开始 -->
+<link href="/${res}/css/header.css" rel="stylesheet"/>
+<script>
+  function qkeypress(){
+    var q=$("input[name=q]");
+    if(q.val().trim()!=""){
+      $("input[name=q]").autocomplete("enable");
+    }else{
+      $("input[name=q]").autocomplete("disable");
+    }
+  }
+  function query(){
+    $.post("${base}/createToken.jspx", {}, function(data) {
+      $("#token").val(data.token);
+      $("#searchForm").submit();
+    }, "json");
+  }
+  $(function() {
+    $("input[name='q']").bind('keypress',function(event){
+      if(event.keyCode == 13)
+      {
+        event.preventDefault();
+        query();
+      }
+    });
+  });
+</script>
+<div class="header">
+    <div class="container">
+        <img src="/${res}/imgs/logo.png" class="logo">
+        [#include "./nav.html"/]
+        <div class="search">
+            <form action="${base}/search.jspx" target="_blank" name="searchForm" id="searchForm">
+                <input type="text" name="q" value="${oldq!}" placeholder="请输入关键词" maxlength="50" autocomplete="off"
+                       class="searchCon">
+                <input type="hidden" name="token" id="token" value="${token!}"/>
+                <input type="button" value="" class="searchMenu" onclick="query()">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- header 结束 -->

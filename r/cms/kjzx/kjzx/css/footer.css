@@ -1,0 +1,22 @@
+.footer{height:auto;}
+.footer a{color:#000}
+.footer .container{border-top: 1px solid #f2f2f2;border-bottom: 1px solid #f2f2f2;height: 56px;display: flex;line-height: 56px;font-size: 14px;}
+.footer .txt-1{
+    width:  714px;
+    float: left;
+}
+.footer .txt-2{
+    flex: 1;
+    background: #f2f2f2;
+}
+.footer .txt-2 .icon-wechat{
+    background: url("../imgs/wechat.jpg") 0 0 no-repeat;
+    width: 21px;
+    height: 19px;
+    float: left;
+    margin: 18px 10px 0 27px;
+}
+.footer .txt-2 a{
+    margin: 0 4px;
+}
+.footer .txt-2 span{}

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name}</title>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/column-pgpj.css" />
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+<head>
+<body class="column-pgpj">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="banner banner-1200" style="background-image: url(/${res}/imgs/evaluation.png);">
+    <div class="container"></div>
+</div>
+<div class="banner banner-750">
+    <img src="/${res}/imgs/evaluation.png" />
+    <div class="container"></div>
+</div>
+<div class="bdcnt">
+    <div class="container">
+        <div class="side-bar">
+        [@cms_channel_list parentId=channel.parentId]
+        [#list tag_list as a]
+            [#if a.id == channel.id]
+            <a href="javascript:void(0);" class="item on" style="background-image: url(${a.contentImg!});"></a>
+            [#else]
+            <a href="${a.url}" class="item" style="background-image: url(${a.contentImg!});"></a>
+            [/#if]
+        [/#list]
+        [/@cms_channel_list] 
+        </div>
+        <div class="side-bar-750">
+        [@cms_channel_list parentId=channel.parentId]
+        [#list tag_list as a]
+            [#if a.id == channel.id]
+            <a href="javascript:void(0);" class="item on">${a.name}</a>
+            [#else]
+            <a href="${a.url}" class="item">${a.name}</a>
+            [/#if]
+        [/#list]
+        [/@cms_channel_list] 
+        </div>
+        <div class="article">
+            [@cms_content_list orderBy='1' channelId=channel.id channelOption='1' dateFormat='yyyy-MM-dd'] 
+            [#list tag_list as a]
+            <div class="ntit">${a.title}</div>
+            <div>
+                ${a.txt!}
+            </div>
+            [/#list]
+            [/@cms_content_list]
+            <!-- <div class="ntit">产品介绍</div>
+            <div style="line-height: 24px;margin: 13px 0 25px;color: #5d5d5d;">
+                <p>文字介绍文字介绍Major special evaluation字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字介绍文字介绍字</p>
+            </div>
+            <div class="ntit">产品价值</div>
+            <div style="line-height: 24px;margin: 33px 0 25px;color: #5d5d5d;padding: 0 27px;">
+                <div style="overflow: hidden;">
+                    <div style="width: 50%;float: left;">
+                        <span style="font-size: 16px;padding-bottom: 8px;display: block;">互联网公司</span>
+                        帮助：掌握市场第一手资料<br/>
+                        帮助：掌握市场第一手资料<br/>
+                        帮助：掌握市场第一手资料
+                    </div>
+                    <div style="width: 50%;float: left;">
+                        <span style="font-size: 16px;padding-bottom: 8px;display: block;">广告公司及广告主</span>
+                        帮助：掌握市场第一手资料<br/>
+                        帮助：掌握市场第一手资料<br/>
+                        帮助：掌握市场第一手资料
+                    </div>
+                </div>
+                <div style="margin-top: 40px;line-height: 28px;">
+                    证明营销活动的效果<br/>
+                    帮助：掌握市场字介绍文字介绍<br/>
+                    字介绍文字介绍字介绍文字介绍第一手资料
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

@@ -1,0 +1,35 @@
+.jrwm {
+}
+
+.jrwm .mn {
+    background-color: #e7eaef;
+    padding: 55px 0 37px;
+}
+
+.jrwm .mn-c {
+    background-color: #ffffff;
+    padding: 43px 50px;
+}
+
+.jrwm .mn-c table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.jrwm .mn-c th,
+.jrwm .mn-c td {
+    line-height: 50px;
+}
+
+.jrwm .mn-c th {
+    background-color: #f5f5f5;
+}
+
+.jrwm .mn-c .txt {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.jrwm .mn-c .txt-2 {
+    font-size: 18px;
+}
