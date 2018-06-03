@@ -1,24 +1,24 @@
-.icon-arrow-down{background-image:url(icon.png);background-position:-38px -40px;width:15px;height:13px}
-.icon-click{background-image:url(icon.png);background-position:0 0;width:20px;height:20px}
-.icon-tzgg-on{background-image:url(icon.png);background-position:-20px 0;width:20px;height:20px}
-.icon-tzgg{background-image:url(icon.png);background-position:0 -20px;width:20px;height:20px}
-.icon-ptxw-on{background-image:url(icon.png);background-position:-20px -20px;width:20px;height:20px}
-.icon-ptxw{background-image:url(icon.png);background-position:-40px 0;width:20px;height:20px}
-.icon-zcxx-on{background-image:url(icon.png);background-position:-40px -20px;width:20px;height:20px}
-.icon-zcxx{background-image:url(icon.png);background-position:0 -40px;width:20px;height:20px}
-.icon-user{background-image:url(icon.png);background-position:-20px -40px;width:18px;height:18px}
+.icon-1{display: block;background-image:url(../imgs/icon-1.png);background-repeat: no-repeat; background-position:50% 50%;width:78px;height:78px}
+.icon-2{display: block;background-image:url(../imgs/icon-2.png);background-repeat: no-repeat; background-position:50% 50%;width:78px;height:78px}
+.icon-3{display: block;background-image:url(../imgs/icon-3.png);background-repeat: no-repeat; background-position:50% 50%;width:78px;height:78px}
+.icon-4{display: block;background-image:url(../imgs/icon-4.png);background-repeat: no-repeat; background-position:50% 50%;width:78px;height:78px}
+.icon-5{display: block;background-image:url(../imgs/icon-5.png);background-repeat: no-repeat; background-position:50% 50%;width:78px;height:78px}
+.icon-6{display: block;background-image:url(../imgs/icon-6.png);background-repeat: no-repeat; background-position:50% 50%;width:78px;height:78px}
+.icon-player{background-image:url(../imgs/icon-player.png);background-position:50% 50%;width:20px;height:20px}
+.icon-triangle{background-image:url(../imgs/icon-triangle.png);background-position:50% 50%;width:20px;height:20px}
 
-
-.header .container{height:105px}
+.header{background-color: rgba(255,255,255,.6);margin-bottom: -86px;z-index: 999;position: relative;}
+.header .container{height:86px}
 .header .logo{float:left;margin:20px 0 0 0}
-.header .sign{float:right;border:1px solid #e5e5e5;height:38px;line-height:38px;border-radius:12px;font-size:0;margin-top:29px}
-.header .sign .icon{float:left;margin:10px 12px 0}
-.header .sign .bd{padding:0 18px;display:inline-block;border-left:1px solid #e5e5e5;font-size:0;line-height: 40px;height: 40px;}
-.header .sign a{color:#293896;font-size:14px}
-.header .sign a+a{margin-left:17px}
+.header .nav{float: right;line-height: 20px;margin-top: 35px;}
+.header .nav .item{float: left;margin-left: 60px;}
+.header .nav .tt{font-size: 16px;font-weight: bold}
+.header .nav .tt.on{color: #ec7820}
+
+.menu{background-color: rgba(0,0,0,.6);height: 40px;position: absolute;width: 100%;top: 100%;left: 0;}
 
 @media screen and (min-width: 1680px) {
-  .container{width:1600px;}
+	.container{width:1600px;}
 }
 
 @media screen and (max-width: 749px) {
@@ -46,36 +46,36 @@
 .hot .item .img img, .hot .item .pic img{
 	width:100%; height:100%;
 	overflow-x: hidden;
-    overflow-y: hidden;
+	overflow-y: hidden;
 	transition-delay: 0s;
-    transition-duration: 1s;
-    transition-property: all;
-    transition-timing-function: ease;
+	transition-duration: 1s;
+	transition-property: all;
+	transition-timing-function: ease;
 	/* Firefox 4 */
 	-moz-transition-delay: 0s;
-    -moz-transition-duration: 1s;
-    -moz-transition-property: all;
-    -moz-transition-timing-function: ease;
+	-moz-transition-duration: 1s;
+	-moz-transition-property: all;
+	-moz-transition-timing-function: ease;
 	/* Safari 和 Chrome */
 	-webkit-transition-delay: 0s;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-property: all;
-    -webkit-transition-timing-function: ease;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease;
 	/* Opera */
 	-o-transition-delay: 0s;
-    -o-transition-duration: 1s;
-    -o-transition-property: all;
-    -o-transition-timing-function: ease;
-	}
+	-o-transition-duration: 1s;
+	-o-transition-property: all;
+	-o-transition-timing-function: ease;
+}
 .hot .item .img img:hover, .hot .item .pic img:hover{
 	transform: scale(1.1, 1.1);
-	
+
 	-ms-transform:scale(1.1, 1.1); 	/* IE 9 */
 	-moz-transform:scale(1.1, 1.1); 	/* Firefox */
 	-webkit-transform:scale(1.1, 1.1); /* Safari 和 Chrome */
 	-o-transform:scale(1.1, 1.1); 	/* Opera */
-	}
-	 
+}
+
 
 
 /*新闻样式开始*/
@@ -150,7 +150,7 @@
 .tag .tag-nav h1:after{content:""; height:2px; width:100%; position:absolute; left:0; bottom:-12px; background-color:#ef3838;}
 .tag .tag-nav .change{right:0; bottom:7px; position:absolute; color:#999999; font-size:12px; line-height:14px;}
 .tag .tag-nav .change:hover i{-webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); -o-transform: rotateZ(180deg);
--ms-transform: rotateZ(180deg); transform: rotateZ(180deg);}
+	-ms-transform: rotateZ(180deg); transform: rotateZ(180deg);}
 .tag .tag-nav .change i{width:14px; height:14px; display:block; background:url(../images/change.png) no-repeat;-webkit-transition: -webkit-transform .5s ease-out; -moz-transition: -moz-transform .5s ease-out; -o-transition: -o-transform .5s ease-out; -ms-transition: -ms-transform .5s ease-out; float:left; margin-right:5px;}
 .tag .tagList{margin-top:15px;}
 .tag .tagList a{color:#1a1a1a; font-size:16px; padding:12px 19px; display:inline-block; float:left; margin:0 1px 1px 0; background:#e7e7e7; transition-duration:400ms; -moz-transition-duration:400ms; -webkit-transition-duration:400ms; -o-transition-duration:400ms;}
@@ -175,7 +175,7 @@
 .topic .topicList a{width:310px; height:100px; display:inline-block; margin-bottom:10px;}
 
 /*wcom*/
-.wcom{margin-top:16px;} 
+.wcom{margin-top:16px;}
 .wcom .item{padding:15px 0 8px; border-top:1px dashed #e0e0e0;}
 .wcom .item .ori-news{padding:10px 20px; background:#e0e0e0; position:relative; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px; line-height:18px;}
 .wcom .item .ori-news a{font-size:12px; color:#7d7d7d;}
@@ -304,12 +304,12 @@
 .jcspList .tssjItem #test{height:8px;width:8px;position:absolute;background-color:#fff;border-radius:50%;top:0px;left:10px; z-index:2;}
 .jcspList .tssjItem #rond {height:60px;width:60px;border:1px solid #fff;border-radius:50%;position:absolute;top:70px;left:145px;animation:rond 2s infinite;-webkit-animation:rond 2s infinite; z-index:2;}
 @keyframes rond {
-  0% {transform:rotate(0deg);}
-  100% {transform:rotate(360deg);}
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
 }
 @-webkit-keyframes rond {
-  0% {-webkit-transform:rotate(0deg);}
-  100% {-webkit-transform:rotate(360deg);}
+	0% {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);}
 }
 
 /*图库样式结束*/
@@ -646,7 +646,7 @@ h1 .position:before{width:12px; height:13px; display:inline-block; content:""; p
 .comments-item .rig .rig-top{padding-top:10px;}
 .rig .rig-top a{color:#00a2ff; font-size:12px; margin-right:10px;}
 .rig .rig-top em{color:#ccc; font-size:12px;}
-.rig .rig-txt{color:#1f1f1f; font-size:14px; line-height:18px; margin-top:10px;}  
+.rig .rig-txt{color:#1f1f1f; font-size:14px; line-height:18px; margin-top:10px;}
 .rig .rig-bottom{margin:10px 0; color:#ccc; font-size:12px;}
 .rig .rig-bottom a{color:#ccc; font-size:12px; margin-right:20px; padding-left:18px; position:relative; cursor:pointer; line-height:12px; display:inline-block;}
 .rig .rig-bottom .comments-zan:before{content:""; position:absolute; left:0; bottom:0; width:12px; height:12px; background:url(../images/content_tubiao.png) -13px -274px no-repeat;}
