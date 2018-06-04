@@ -9,13 +9,11 @@
 .icon-user{background-image:url(icon.png);background-position:-20px -40px;width:18px;height:18px}
 
 
-.header .container{height:105px}
-.header .logo{float:left;margin:20px 0 0 0}
-.header .sign{float:right;border:1px solid #e5e5e5;height:38px;line-height:38px;border-radius:12px;font-size:0;margin-top:29px}
-.header .sign .icon{float:left;margin:10px 12px 0}
-.header .sign .bd{padding:0 18px;display:inline-block;border-left:1px solid #e5e5e5;font-size:0;line-height: 40px;height: 40px;}
-.header .sign a{color:#293896;font-size:14px}
-.header .sign a+a{margin-left:17px}
+.header {}
+.header .header-w{height: 120px;display: flex;}
+.header .logo{}
+.header .logo img{display: block;margin-top: 27px;}
+.header .mn{flex: 1;text-align: right}
 
 @media screen and (min-width: 1680px) {
   .container{width:1600px;}
@@ -187,12 +185,6 @@
 .wcom .item .flo .com-txt a{color:#333333; font-size:14px; line-height:20px;}
 .wcom .item .flo .com-txt a:hover{color:#ef3838;}
 
-/*footer*/
-.footer{width:100%; background:#4d4d4d;}
-.footer .footer-link{line-height:54px; border-bottom:1px solid #3a3a3a; text-align:center;}
-.footer .footer-link a{margin-left:66px; color:#fff; font-size:14px;}
-.footer .footer-link a:hover{ text-decoration:underline;}
-.footer .copyright{line-height:24px; color:#aeaeae; font-size:12px; text-align:center; padding:15px 0; border-top:1px solid #5f5f5f;}
 
 /*right-fixed*/
 .right-fixed{position:fixed; right:0px; bottom:150px;}

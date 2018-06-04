@@ -1,63 +1,129 @@
 <!-- header 开始 -->
 <link href="/${res}/css/header.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="/${res}/css/login.css" />
+<link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="/${res}/css/login.css"/>
 [#if site.config.qqEnable]
-<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js#appId=${site.config.qqID!}" charset="utf-8"></script>
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js#appId=${site.config.qqID!}"
+        charset="utf-8"></script>
 [/#if]
 [#if site.config.sinaEnable]
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=${site.config.sinaID!}" type="text/javascript" charset="utf-8"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=${site.config.sinaID!}" type="text/javascript"
+        charset="utf-8"></script>
 [/#if]
 [#if site.config.qqWeboEnable]
 <script type="text/javascript" src="http://mat1.gtimg.com/app/openjs/openjs.js"></script>
 [/#if]
 <script type="text/javascript">
-$(function() {
+  $(function () {
     //优先执行第三方退出 在执行本地退出
-   $('#logout').click(function () {
-          [#if site.config.qqEnable]
-              //退出qq
-               if(QC.Login.check()){
-                     QC.Login.signOut();
-                }
-          [/#if]
-          [#if site.config.sinaEnable]
-             if(WB2.checkLogin()){
-                WB2.logout(function() {
-                    //callback function
-                });
-             }
-          [/#if]
-          [#if site.config.qqWeboEnable]
-             T.init({
-                appkey: ${site.config.qqWeboID!}
-             });
-            if(T.loginStatus()){
-                T.logout(function (loginStatus) { // 登出用户
-                    // 登录成功
-                });
-            }
-         [/#if]
-         location="${base}/logout.jspx?returnUrl=/";
+    $('#logout').click(function () {
+      [#if site.config.qqEnable]
+      //退出qq
+      if (QC.Login.check()) {
+        QC.Login.signOut();
+      }
+      [/#if]
+        [#if site.config.sinaEnable]
+      if (WB2.checkLogin()) {
+        WB2.logout(function () {
+          //callback function
+        });
+      }
+      [/#if]
+        [#if site.config.qqWeboEnable]
+      T.init({
+        appkey: ${site.config.qqWeboID!}
+      });
+      if (T.loginStatus()) {
+        T.logout(function (loginStatus) { // 登出用户
+          // 登录成功
+        });
+      }
+      [/#if]
+        location = "${base}/logout.jspx?returnUrl=/";
+    });
   });
-});
 </script>
 
 <div class="header">
     <div class="container">
-        <img src="/${res}/imgs/logo.png" class="logo">
-        <div class="sign">
-            <i class="icon icon-user"></i>
-            <div class="bd">
-                [#if user??]
-                <a href="${base}/member/index.jspx">会员中心</a>
-                <a id="logout" >退出账号</a>
-                [#else]
-                <a href="${base}/login.jspx" >用户登陆</a>
-                <a href="${base}/register.jspx" >用户注册</a>
-                [/#if]
+        <div class="header-w">
+            <div class="logo">
+                <img src="/${res}/imgs/logo.png">
+            </div>
+            <div class="mn">
+                <div class="item-w" id="navigationBar">
+                    [@cms_channel_list]
+                    [#if !channel??]
+                    <div class="item"><a href="${base}/" class="tt on">首页</a></div>
+                    [#list tag_list as c]
+                    [#if c_index<5]
+                    <div class="line"></div>
+                    <div class="item">
+                        <a href="${c.url}" class="tt" data-target="#menu_${c.id}">${c.name}</a>
+                    </div>
+                    [/#if]
+                    [/#list]
+                    [#else]
+                    <div class="item"><a href="${base}/" class="tt">首页</a></div>
+                    [#list tag_list as c]
+                    [#if c_index<5]
+                    <div class="line"></div>
+                    <div class="item">
+                        [#if channel.parentId??]
+                        <a href="${c.url}" class="tt[#if channel.parentId==c.id] on[/#if]"  data-target="#menu_${c.id}">${c.name}</a>
+                        [#else]
+                        <a href="${c.url}" class="tt[#if channel.id==c.id] on[/#if]"  data-target="#menu_${c.id}">${c.name}</a>
+                        [/#if]
+                    </div>
+                    [/#if]
+                    [/#list]
+                    [/#if]
+                    [/@cms_channel_list]
+                </div>
             </div>
         </div>
     </div>
 </div>
+[@cms_channel_list]
+[#list tag_list as c]
+[@cms_channel_list parentId=c.id]
+[#if tag_list?size>0]
+<div class="menu" id="menu_${c.id}">
+    <div class="container">
+        <div class="menu-w">
+            [#list tag_list as c2]
+            <a href="${c2.url}" class="tt">${c2.name}</a>
+            [/#list]
+        </div>
+    </div>
+</div>
+[/#if]
+[/@cms_channel_list]
+[/#list]
+[/@cms_channel_list]
+
+<script>
+  var mt = null
+  $('#navigationBar a.tt').each(function (e) {
+    $(this).hover(function () {
+      $($(this).data('target')).addClass('active').siblings().removeClass('active');
+    }, function () {
+      var $this = $(this);
+      mt = setTimeout(function () {
+        $($this.data('target')).removeClass('active')
+        clearTimeout(mt);
+      },200)
+    })
+  })
+  $('.menu').each(function (e) {
+    $(this).hover(function () {
+      clearTimeout(mt);
+      $(this).addClass('active')
+    }, function () {
+      clearTimeout(mt);
+      $(this).removeClass('active')
+    })
+  })
+</script>
 <!-- header 结束 -->
-[#include "./nav.html"/]

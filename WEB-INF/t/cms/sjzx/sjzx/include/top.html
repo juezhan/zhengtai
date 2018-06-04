@@ -1,27 +1,2 @@
 <!-- top 开始 -->
-<link href="/${res}/css/top.css" rel="stylesheet"/>
-<div class="top" id="top">
-  <div class="container">
-    <div class="bd">
-      <a href="#">正泰第三方</a>丨<a href="#">正泰服务</a>丨<a href="#">九维智库</a>丨<a href="#">众创空间</a>
-    </div>
-  </div>
-</div>
 <!-- top 结束 -->
-<script type="text/javascript">
-	$('#top').click(function(){
-			if($(this).hasClass('on')){
-				$(this).removeClass('on');
-			}else{
-				$(this).addClass('on');
-			}
-		});
-	$(document).ready(function(){
-		var $sign = $('.header .sign');
-		function setDivTop(){
-			$('#top').css({'top':Math.ceil($sign.offset().top)+'px'});
-		}
-		setDivTop();
-		$(window).resize(setDivTop);
-	});
-</script>

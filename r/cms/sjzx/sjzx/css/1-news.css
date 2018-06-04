@@ -14,7 +14,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
 
-.news .news-w{height: 314px;}
+.news .news-w{}
 .news .news-w .bread{display: flex;height: 64px;line-height: 64px;border-bottom: 1px solid #f4f4f4;}
 .news .news-w .bread .icon-house{height: 64px;width: 64px;background-color: #f4f4f4;}
 .news .news-w .bread .c{flex: 1;font-size: 18px;padding-left: 22px;}
@@ -25,7 +25,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news .news-w .cm-1 .avatar img{width: 100%}
 .news .news-w .cm-1 .cm-mn{flex: 1;color:#999999;line-height: 24px;padding-right: 20px;border-right: 1px solid #f4f4f4;}
 .news .news-w .cm-1 .cm-mn .cm-mn-c{height: 100%;overflow: hidden; background-color:#f4f4f4;padding-left: 43px;padding-right: 20px;}
-.news .news-w .cm-1 .cm-mn .t-1{font-size: 18px;line-height: 1em;color:#5d98a5;margin-top: 26px;}
+.news .news-w .cm-1 .cm-mn .t-1{font-size: 18px;line-height: 1em;color:#5d98a5;margin-top: 26px;display: block}
 .news .news-w .cm-1 .cm-mn .t-2{font-size: 24px;margin-top: 16px;}
 .news .news-w .cm-1 .cm-mn .t-3{font-size: 14px;margin-top: 30px;}
 
