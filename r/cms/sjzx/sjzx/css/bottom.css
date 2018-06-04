@@ -1,1 +1,4 @@
-.bottom{height:50px;line-height:50px;background-color:#eeeeee;color:#000;font-size:12px;text-align:center}
+.bottom{height: 82px;}
+.bottom .txt{font-size: 12px;line-height: 12px;color:#8c8c8c;margin-top: 12px;}
+.bottom .txt a{color:#8c8c8c;}
+.bottom .txt-1{margin-top: 18px;}
