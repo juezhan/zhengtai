@@ -3,14 +3,14 @@
 <div class="header">
     <div class="container">
         <img src="/${res}/imgs/logo.png" class="logo">
-        <div class="nav">
+        <div class="nav" id="navigationBar">
             [@cms_channel_list]
             [#if !channel??]
             <div class="item"><a href="${base}/" class="tt on">首页</a></div>
             [#list tag_list as c]
             [#if c_index<5]
             <div class="item">
-                <a href="${c.url}" class="tt">${c.name}</a>
+                <a href="${c.url}" class="tt" data-target="#menu_${c.id}">${c.name}</a>
             </div>
             [/#if]
             [/#list]
@@ -20,9 +20,9 @@
             [#if c_index<5]
             <div class="item">
                 [#if channel.parentId??]
-                <a href="${c.url}" class="tt[#if channel.parentId==c.id] on[/#if]">${c.name}</a>
+                <a href="${c.url}" class="tt[#if channel.parentId==c.id] on[/#if]" data-target="#menu_${c.id}">${c.name}</a>
                 [#else]
-                <a href="${c.url}" class="tt[#if channel.id==c.id] on[/#if]">${c.name}</a>
+                <a href="${c.url}" class="tt[#if channel.id==c.id] on[/#if]" data-target="#menu_${c.id}">${c.name}</a>
                 [/#if]
             </div>
             [/#if]
@@ -32,46 +32,41 @@
         </div>
     </div>
     [@cms_channel_list]
-    [#if !channel??]
     [#list tag_list as c]
     [@cms_channel_list parentId=c.id]
     [#if tag_list?size>0]
-    <div class="menu">
+    <div class="menu" id="menu_${c.id}">
         <div class="container">
-            <div class="arrow"></div>
-            <ul>
-                [#list tag_list as c2]
-                <li><a href="${c2.url}" class="tt">${c2.name}</a></li>
-                [/#list]
-            </ul>
+            [#list tag_list as c2]
+            <a href="${c2.url}" class="tt">${c2.name}</a>
+            [/#list]
         </div>
     </div>
     [/#if]
     [/@cms_channel_list]
     [/#list]
-    [/#if]
     [/@cms_channel_list]
 </div>
 <script>
   var mt = null
   $('#navigationBar a.tt').each(function (e) {
     $(this).hover(function () {
-      $(this).next('.menu').addClass('visible')
+      $($(this).data('target')).addClass('active').siblings().removeClass('active');
     }, function () {
       var $this = $(this);
       mt = setTimeout(function () {
-        $this.next('.menu').removeClass('visible')
+        $($this.data('target')).removeClass('active')
         clearTimeout(mt);
-      },50)
+      },200)
     })
   })
-  $('#navigationBar .menu').each(function (e) {
+  $('.menu').each(function (e) {
     $(this).hover(function () {
       clearTimeout(mt);
-      $(this).addClass('visible')
+      $(this).addClass('active')
     }, function () {
       clearTimeout(mt);
-      $(this).removeClass('visible')
+      $(this).removeClass('active')
     })
   })
 </script>

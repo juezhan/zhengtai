@@ -30,7 +30,19 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .about .about-w .m-2{flex: 1;}
 .about .about-w .m-2 .tit .beard{font-size: 12px;color: #656565;margin-top: 8px;line-height: 12px;}
-.about .about-w .m-2 .cnt{font-size: 14px;line-height: 28px;color: #333333;padding: 20px 0}
+.about .about-w .m-2 .cnt{padding: 18px 0}
+
+.about .about-w .m-2 .cnt .t,
+.about .about-w .m-2 .cnt .cell{display: flex;color: #333333;font-size: 14px;}
+.about .about-w .m-2 .cnt .cell-line{border-bottom: 1px solid #dcdcdc;}
+.about .about-w .m-2 .cnt .t{color: #ee7800;border-bottom: 1px solid #ee7800;padding-bottom: 9px;}
+.about .about-w .m-2 .cnt .cell{margin: 18px 0}
+.about .about-w .m-2 .cnt .cell div{padding: 0 18px;text-align: center}
+.about .about-w .m-2 .cnt .cell div.d-1{text-align: left;flex: 1;}
+.about .about-w .m-2 .cnt .cell div.d-2{width: 50px;}
+.about .about-w .m-2 .cnt .cell div.d-3{width: 100px;}
+.about .about-w .m-2 .cnt .cell div.d-4{width: 150px;}
+.about .about-w .m-2 .cnt .cell div.d-5{width: 100px;}
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
   .container{width:960px;}
