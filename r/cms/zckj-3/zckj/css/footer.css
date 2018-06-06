@@ -1,0 +1,13 @@
+.footer{height:auto;background-color:#f4f4f4}
+.footer a{color:#000}
+.footer .ft-cnt{padding:43px 0 33px;overflow:hidden;font-size:0}
+.footer .ft-cnt .ft-cell{float:left;width:33.333%}
+.footer .ft-cnt .ft-cell .item{width:286px;overflow:hidden}
+.footer .ft-cnt .ft-cell .item.first{float:left}
+.footer .ft-cnt .ft-cell .item.second{margin:0 auto}
+.footer .ft-cnt .ft-cell .item.third{float:right}
+.footer .ft-cnt .ft-cell .item .lbl{font-size:18px;color:#293896;height:1em;line-height:1em;text-align:left;padding-bottom:17px;border-bottom:1px solid #293896}
+.footer .ft-cnt .ft-cell .item .bd{font-size:14px;line-height:2em;margin-top:13px}
+.footer .site .tt{padding:33px 0 28px;text-align:center;font-size:24px;line-height:1em;color:#293896;border-bottom:1px solid #293896}
+.footer .site .bd{font-size:0;text-align:center}
+.footer .site .bd .item{display:inline-block;width:33.333%;font-size:14px;padding:26px 0}
