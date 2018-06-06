@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>首页 - ${site.name}</title>
+<meta http-equiv="keywords" content="${site.keywords!}"/>
+<meta http-equiv="description" content="${site.description!}"/>
+<script src="../../../../../../r/cms/zckj-b/zckj/js/jquery-3.3.1.min.js"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../../../../../r/cms/zckj-b/zckj/js/jquery.SuperSlide.js"></script>
+<link href="../../../../../../r/cms/zckj-b/zckj/css/index.css" rel="stylesheet"/>
+<link href="../../../../../../r/cms/zckj-b/zckj/css/icon.css" rel="stylesheet"/>
+
+<!--[if lt IE 9]>
+<script src="../../../../../../r/cms/zckj-b/zckj/js/html5shiv.min.js"></script>
+<script src="../../../../../../r/cms/zckj-b/zckj/js/respond.min.js"></script>
+<![endif]-->
+<head>
+<body class="index">
+<!-- header 开始 -->
+<link href="../../../../../../r/cms/zckj-b/zckj/css/header.css" rel="stylesheet"/>
+<div class="header">
+  <div class="container">
+    <div class="header-w">
+      <div class="avatar">
+        <img src="../../../../../../r/cms/zckj-b/zckj/imgs/logo-2.png" class="logo">
+      </div>
+      <div class="nav">
+        <div class="nav-w" id="navigationBar">
+          <div class="item">
+            <div class="tt">
+              <a href="#" class="active">首页</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tt">
+              <a href="#" class="tt-cell" data-target="#cnt_1">技术</a>
+            </div>
+            <div class="cnt" id="cnt_1">
+              <div class="cnt-w">
+                <a href="#">所有技术</a>
+                <a href="#">精选专题</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tt">
+              <a href="#" class="tt-cell" data-target="#cnt_2">智库</a>
+            </div>
+            <div class="cnt" id="cnt_2">
+              <div class="cnt-w">
+                <a href="#">行业专家</a>
+                <a href="#">合作机构</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tt">
+              <a href="#" class="tt-cell">活动</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tt">
+              <a href="#" class="tt-cell">资讯</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tt">
+              <a href="#" class="tt-cell">政策</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sign">
+        <a href="#" class="sign-in">登录</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var mt = null
+  var mt = null
+  $('#navigationBar a.tt-cell').each(function (e) {
+    $(this).hover(function () {
+      $($(this).data('target')).addClass('active').siblings().removeClass('active');
+    }, function () {
+      var $this = $(this);
+      mt = setTimeout(function () {
+        $($this.data('target')).removeClass('active')
+        clearTimeout(mt);
+      }, 200)
+    })
+  })
+  $('#navigationBar .cnt').each(function (e) {
+    $(this).hover(function () {
+      clearTimeout(mt);
+      $(this).addClass('active')
+    }, function () {
+      clearTimeout(mt);
+      $(this).removeClass('active')
+    })
+  })
+</script>
+<!-- header 结束 -->
+<!-- footer 开始 -->
+<link href="../../../../../../r/cms/zckj-b/zckj/css/footer.css" rel="stylesheet"/>
+<div class="footer">
+  <div class="container">
+    <div class="m-1">
+      <div class="mn-1">
+        <div><b>关于吉林正泰</b></div>
+        <div><a href="#">合作站</a></div>
+        <div><a href="#">加入我们</a></div>
+      </div>
+      <div class="mn-2">
+        <div><b>企业服务</b></div>
+        <div><a href="#">企动力技术宝</a></div>
+        <div><a href="#">企动力政策宝</a></div>
+        <div><a href="#">企动力服务</a></div>
+      </div>
+      <div class="mn-3">
+        <div>联系我们（工作日 9:30-18:30）</div>
+        <div>客服电话：400-000-1786</div>
+        <div>邮箱：service@metalab.cn</div>
+        <div>地址：上海市浦东新区祥科路58号炬芯研发大楼A栋4楼</div>
+      </div>
+      <div class="mn-4">
+        <div>官方微信丨公众号</div>
+        <div class="avatar">
+          <img src="../../../../../../r/cms/zckj-b/zckj/imgs/qr.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="m-2">
+      <table class="table" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>国家科学技术部</td>
+          <td>国家知识产权局</td>
+          <td>中国科学院</td>
+          <td>国家科技成果网</td>
+        </tr>
+        <tr>
+          <td>新材料在线</td>
+          <td>绿色技术银行</td>
+          <td class="sp2" colspan="2">泰坦科技实验室整体解决方案领导者</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- footer 结束 -->
+<!-- bottom 开始 -->
+<link href="../../../../../../r/cms/zckj-b/zckj/css/bottom.css" rel="stylesheet"/>
+<div class="bottom">
+  <div class="container">
+    Copyright &copy; 沪ICP备15000929号-1 | 吉林正泰工程咨询有限公司 | 021-54336693
+  </div>
+</div>
+<!-- bottom 结束 -->
+</body>
+</html>

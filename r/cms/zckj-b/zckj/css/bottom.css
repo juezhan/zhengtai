@@ -1,0 +1,8 @@
+.bottom {
+    height: 30px;
+    line-height: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center
+}

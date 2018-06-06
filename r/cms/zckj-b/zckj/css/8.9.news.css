@@ -1,0 +1,73 @@
+blockquote,body,button,dd,dl,dt,fieldset,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;border:0}
+body,button,input,select,textarea{font-family:'Microsoft Yahei',"Lucida Grande",Tahoma,Arial,Helvetica,sans-serif;font-size:14px;color:#333}
+button,input,select,textarea{outline:0}
+html{line-height:1}
+address,cite,em,i,var{font-style:normal}
+h1{font-size:18px}
+h2{font-size:16px}
+h3{font-size:14px}
+h4,h5,h6{font-size:100%}
+li,ol,ul{list-style:none}
+a{text-decoration:none;color:#333;cursor:pointer}
+ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
+img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
+.container{width:1200px;margin:0 auto}
+.icon{display:inline-block}
+
+.bread{padding: 28px 0;}
+.bread span{font-family: serif;margin: 0 2px;}
+.bread a:last-child{color:#66b0ed}
+
+.news_89{}
+.news_89 .news_89-w{background-color: #eeeeee;padding-bottom: 48px;}
+.news_89 .news_89-w .container{}
+.news_89 .mn{display: flex;}
+/* ===== mn-article ===== */
+.news_89 .mn-article{flex: 1;overflow: hidden;background-color: #ffffff;}
+.news_89 .mn-article .mn-hd{position: relative;height: 190px;background: url("../imgs/100-bg.png") 0 0 no-repeat;}
+.news_89 .mn-article .mn-hd .avatar-w{padding: 5px;border: 1px solid #ccc;width: 130px;border-radius: 50%;position: absolute;left: 50%;bottom: -71px;margin-left: -71px;}
+.news_89 .mn-article .mn-hd .avatar{width: 130px;height: 130px;border-radius: 50%;background: 50% 50% no-repeat;background-size: cover;}
+.news_89 .mn-article .mn-bd{padding: 60px 20px 30px;border-bottom: 2px solid #e4e3e3;margin: 0 38px;}
+.news_89 .mn-article .mn-bd .tit{margin-top: 20px;margin-bottom: 10px;font-size: 24px;text-align: center;}
+.news_89 .mn-article .mn-bd .cnt{font-size: 14px;color: #999;margin-top: 20px;text-indent: 2em;line-height: 1.42857143;word-spacing: 1px;}
+/* ============ .mn-bd-2 ============== */
+.news_89 .mn-article .mn-bd-2{padding: 0 38px 0 75px;}
+.news_89 .mn-article .mn-bd-2 .item{padding-bottom: 20px;}
+.news_89 .mn-article .mn-bd-2 .item + .item{border-top: 2px solid #e4e3e3;}
+.news_89 .mn-article .mn-bd-2 .item .t{font-size: 16px;height: 30px;line-height: 30px;margin: 25px 0 10px;color: #666;font-weight: 700;text-indent: 40px;background-repeat: no-repeat;margin-left: -32px;}
+.news_89 .mn-article .mn-bd-2 .item .c{font-size: 14px;color: #666;line-height: 24px;padding: 0 8px;}
+.news_89 .mn-article .mn-bd-2 .cells{overflow: hidden;}
+.news_89 .mn-article .mn-bd-2 .cells .cell{float: left;width: 260px;margin-right: 50px ;}
+.news_89 .mn-article .mn-bd-2 .cells .avatar{}
+.news_89 .mn-article .mn-bd-2 .cells .avatar img{display: block;}
+.news_89 .mn-article .mn-bd-2 .cells .cnt{border: 1px solid #a0a0a0;overflow: hidden; border-top: 0;height: 75px;}
+.news_89 .mn-article .mn-bd-2 .cells .cnt .t-1{font-size: 14px;text-align: left;padding: 0 10px;line-height: 14px;margin-top: 13px;}
+.news_89 .mn-article .mn-bd-2 .cells .cnt .t-2{margin-top: 14px;padding: 0 10px;line-height: 20px;font-size: 12px;}
+.news_89 .mn-article .mn-bd-2 .cells .cnt .t-2-1{color: #666666;}
+.news_89 .mn-article .mn-bd-2 .cells .cnt .t-2-2{background-color: #abd9f6;color: #022888;display: inline-block;padding: 0 10px;border-radius: 2px;float: right;}
+.news_89 .mn-article .btn-more{height: 50px;line-height: 50px;text-align: center;background-color: #f1f1f1;font-size: 16px;color: #666666;margin: 18px 38px 58px;}
+.news_89 .mn-article .btn-more span{font-family: serif;margin-left: 4px;}
+
+/* ====== mn-aside ===== */
+.news_89 .mn-aside{width: 390px;margin-left: 20px;}
+.news_89 .mn-aside .w{padding: 22px;border:1px solid #a0a0a0;background-color: #ffffff;}
+.news_89 .mn-aside .counsel{}
+.news_89 .mn-aside .counsel .subtitle{margin-bottom: 8px;padding-left: 5px;height: 17px;line-height: 17px;font-size: 16px;font-weight: 700;color: #333;border-left: 6px solid #1f86ed;}
+.news_89 .mn-aside .counsel .consult-form{}
+.news_89 .mn-aside .counsel .form-group{display: flex;margin-bottom: 15px;}
+.news_89 .mn-aside .counsel .form-group .tel{border: 1px solid #a0a0a0;margin-right: 15px;width: 76px;text-align: center;line-height: 32px;border-radius: 2px;}
+.news_89 .mn-aside .counsel .form-group [type="text"]{flex: 1;border: 1px solid #a0a0a0;padding: 6px 12px;border-radius: 2px;box-sizing: border-box;}
+.news_89 .mn-aside .counsel .form-group input[type="text"]{height: 34px;}
+.news_89 .mn-aside .counsel .form-group textarea[type="text"]{padding: 6px 10px;resize: none;}
+.news_89 .mn-aside .counsel .form-group input.code-text{border-radius: 2px 0 0 2px;border-right: none;}
+.news_89 .mn-aside .counsel .form-group button{color: #fff;background-color: #2e96e6;font-size: 12px;}
+.news_89 .mn-aside .counsel .form-group button.btn-send-code{width: 90px;border-radius: 0 2px 2px 0;}
+.news_89 .mn-aside .counsel .form-group button.btn{width: 100%;height: 34px;}
+
+.news_89 .mn-aside .other-organization{margin: 35px 0;font-size: 14px;}
+.news_89 .mn-aside .other-organization dt{height: 30px;line-height: 20px;}
+.news_89 .mn-aside .other-organization dd{height: 60px;border-bottom: 1px solid #e5e3e3;padding-top: 15px;line-height: 30px;}
+.news_89 .mn-aside .other-organization dd a{font-size: 20px;color: #666;width: 180px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.news_89 .mn-aside .other-organization .subtitle{float: left;margin: 0;font-size: 18px;color: #1f86ed;}
+.news_89 .mn-aside .other-organization .nuxt-link-active{float: right;color: #337ab7;text-decoration: none;}
+.news_89 .mn-aside .other-organization .s-photo{width: 28px;height: 28px;border-radius: 50%;border: 1px solid #ccc;background-size: cover;background-position: 50%;float: left;margin-right: 15px;}
