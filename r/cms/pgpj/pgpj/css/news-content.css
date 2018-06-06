@@ -9,48 +9,42 @@ h3{font-size:14px}
 h4,h5,h6{font-size:100%}
 li,ol,ul{list-style:none}
 a{text-decoration:none;color:#333;cursor:pointer}
+ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
 
-.news-content{margin: 20px 0 44px; overflow: hidden;}
-.news-content .content{float:left;width:100%;}
-.news-content .content .content-mn{margin-right:330px;}
-.news-content .content .content-mn .crumb{font-size: 14px;}
-.news-content .content .content-mn .crumb span{font-family: '宋体';}
-.news-content .content .content-mn .title{font-size: 30px;color: #000; font-weight: normal; line-height:35px;height:auto;text-align: center;margin-top: 30px;}
-.news-content .content .content-mn .content-inf{text-align: center;font-size: 12px;color: #999;padding-bottom: 20px;border-bottom: 1px solid #a0a0a0;margin-top: 10px}
-.news-content .content .content-mn .content-txt{padding: 20px 50px;line-height: 2;}
-.news-content .content .content-mn .pager-wrapper{text-align: left;padding: 0 50px;}
-.news-content .content .content-mn .pager-wrapper .prev-content{}
-.news-content .content .content-mn .pager-wrapper .next-content{float: right;}
+.news .news-ad{}
+.news .news-ad .container{height: 353px;}
 
-.news-content .aside{position:relative;float:right;width:280px;margin-left:-330px}
-.news-content .aside .item+.item{margin-top: 20px;}
-.news-content .aside .item .tt{height:35px;line-height:35px;text-align:center;font-size:16px;color:#fff;background-color:#2084da}
-.news-content .aside .item .bd{border:1px solid #a0a0a0;padding:10px 15px;}
-.news-content .aside .item .bd .link{display:block;background-color:#fff;height:24px;line-height:24px;color:#000;font-size:14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
-.news-content .aside .item .bd .link span{color:#ccc;margin-right:8px;font-family: '宋体';}
+.news .news-w{display: flex;padding: 65px 0;}
+.news .news-w .tit{display: flex;border-bottom: 2px solid #a0a0a0;font-size: 24px;line-height: 24px;padding-bottom: 14px;}
+.news .news-w .tit .mn{flex: 1;color:#ec7820;}
+.news .news-w .m-1{width: 305px;margin-right: 55px;}
+.news .news-w .m-1 .tit{border-color:#ec7820;}
+.news .news-w .m-1 .list-w{font-size: 14px;line-height: 1em;}
+.news .news-w .m-1 .item{padding: 24px 4px;border-bottom:1px solid #a0a0a0;}
+.news .news-w .m-1 a{color: #272626;}
+.news .news-w .m-1 span{float: right;}
+.news .news-w .m-1 a.active{color: #ec7820;}
 
 
-@media screen and (min-width: 1620px) {
-  .container{width:1600px;}
-}
+.news .news-w .m-2{flex: 1;}
+.news .news-w .m-2 .tit .beard{font-size: 12px;color: #656565;margin-top: 8px;line-height: 12px;}
+.news .news-w .m-2 .list-w{color: #333333;padding-top: 30px;}
+.news .news-w .m-2 .t-1{font-size: 20px;padding: 20px 0;text-align: center;}
+.news .news-w .m-2 .t-2{font-size: 16px;text-align: center;line-height: 36px;height: 36px;border-top:1px #e5e5e5 solid;border-bottom:1px #e5e5e5 solid;}
+.news .news-w .m-2 .t-2 .t-2-1{}
+.news .news-w .m-2 .t-2 .t-2-2{margin-left: 78px}
+.news .news-w .m-2 .t-3{padding-top: 30px;line-height: 32px;font-size: 14px;}
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
   .container{width:960px;}
-  .news-content .content .content-mn{margin-right: 280px;}
-  .news-content .aside{width: 240px;margin-left: -240px;}
-  .news-content .content .content-mn .content-txt{padding:20px 30px;}
 }
 
 @media screen and (max-width: 749px) {
-  .container{width:100%;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
-  .news-content .content .content-mn{margin-right:0;}
-  .news-content .content .content-mn .content-txt{padding: 20px 0px;}
-  .news-content .content .content-mn .content-link{padding:0;overflow: hidden;line-height: 20px;margin-bottom: 12px;}
-  .news-content .content .content-mn .content-link .prev-content{display: block;}
-  .news-content .content .content-mn .content-link .next-content{display: block;float: none;margin-top: 8px;}
-
-  .news-content .aside{width:100%;margin-left:0;}
+  .container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
+  .about .about-bd{padding: 20px 0;}
+  .about .about-bd .bd{margin:8px 0px 0;}
+  .about .about-bd .bd img{width: 100% !important;height: auto !important;}
 }

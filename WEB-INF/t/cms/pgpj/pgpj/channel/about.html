@@ -9,18 +9,20 @@
 <title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
 <script src="${resSys}/jquery.js" type="text/javascript"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
-<script type="text/javascript" src="../../../../../../r/cms/pgpj/pgpj/js/jquery.SuperSlide.js"></script>
-<link type="text/css" rel="stylesheet" href="../../../../../../r/cms/pgpj/pgpj/css/about.css"/>
-<link href="../../../../../../r/cms/pgpj/pgpj/css/icon.css" rel="stylesheet"/>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/about.css"/>
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
 
 <!--[if lt IE 9]>
-<script src="../../../../../../r/cms/pgpj/pgpj/js/html5shiv.min.js"></script>
-<script src="../../../../../../r/cms/pgpj/pgpj/js/respond.min.js"></script>
+<script src="/${res}js/html5shiv.min.js"></script>
+<script src="/${res}js/respond.min.js"></script>
 <![endif]-->
 
 <head>
 <body class="about">
-<div class="about-ad" style="background-image:url('../../../../../../r/cms/pgpj/pgpj/imgs/pgpj-about-1.png');">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="about-ad" style="background-image:url('/${res}/imgs/pgpj-about-1.png');">
   <div class="container">
   </div>
 </div>
@@ -32,7 +34,7 @@
       </div>
       <div class="list-w">
         <div class="item">
-          <a href="#">公司概况<span>&gt;</span></a>
+          <a href="#" class="active">公司概况<span>&gt;</span></a>
         </div>
         <div class="item">
           <a href="#">企业文化<span>&gt;</span></a>
@@ -107,5 +109,7 @@
     </div>
   </div>
 </div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
 </body>
 </html>

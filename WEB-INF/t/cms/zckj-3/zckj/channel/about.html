@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/about.css" />
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+
+<head>
+<body class="about">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="about-bd">
+    <div class="container">
+        <div class="tt">关于我们</div>
+        <div class="bd">
+        ${channel. txt!}
+        </div>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

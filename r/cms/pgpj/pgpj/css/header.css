@@ -15,7 +15,9 @@
 .header .nav .tt{font-size: 16px;font-weight: bold}
 .header .nav .tt.on{color: #ec7820}
 
-.menu{background-color: rgba(0,0,0,.6);height: 40px;position: absolute;width: 100%;top: 100%;left: 0;}
+.menu{display: none; background-color: rgba(0,0,0,.6);height: 40px;position: absolute;width: 100%;top: 100%;left: 0;line-height: 40px;text-align: right}
+.menu a{color: #ffffff;margin-left: 59px;}
+.menu.active{display: block;}
 
 @media screen and (min-width: 1680px) {
 	.container{width:1600px;}
@@ -90,9 +92,6 @@
 .topNews a:hover{color:#ef3838;}
 .topNews em,.topNews span{color:#b7b7b7; font-size:12px; margin-left:20px;}
 
-.news{width:100%; height:340px; margin-top:28px;}
-.news .banner{float:left; width:510px; height:340px; position:relative; margin-right:24px;}
-.news .banner .banner_pre, .news .banner .banner_next{display:none;position:absolute;top:130px;width:20px;height:24px; overflow:hidden;z-index:10;background-image:url(../images/tubiao.png); background-repeat:no-repeat; cursor:pointer;}
 .banner_pre{left:15px;background-position:-10px -10px;}
 .banner_pre:hover{background-position:-40px -10px;}
 .banner_next{right:15px;background-position:-70px -10px;}

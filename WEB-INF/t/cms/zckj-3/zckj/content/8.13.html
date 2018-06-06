@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>8.3众创空间技术精选专题 ${title} - ${site.name}</title>
+<meta content="${content.tagStr!}" http-equiv="keywords"/>
+<meta content="${content.description!}" http-equiv="description"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../r/cms/zckj-3/zckj/css/8.13.css"/>
+
+<!--[if lt IE 9]>
+<script src="../../../../../../r/cms/zckj-3/zckj/js/html5shiv.min.js"></script>
+<script src="../../../../../../r/cms/zckj-3/zckj/js/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+  $(function () {
+    Cms.checkPerm("${base}", "${content.id}");
+    Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+    Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+    Cms.viewCount("${base}", "${content.id}");
+    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    $('.content-comment').click(function () {
+      $('html,body').animate({scrollTop: $('#comments-text').offset().top}, 1000)
+      $('#comments-text').focus();
+    });
+  });
+
+  $(function () {
+    //设置一个定时器，为BUTTON点击事件用
+    var timer = null;
+    var number1 = 0;
+
+    //文本输入时改变
+    $('#comments-text').keyup(function () {
+      if (!$(this).val() == '') {
+        $('.submit-on').attr("class", "submit-out");
+      } else {
+        $(".submit-out").attr("class", "submit-on");
+      }
+    });
+
+    //处理输入的内容是文字还是字母的函数
+    function getLength(str) {
+      return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+    };
+
+  });
+</script>
+
+<head>
+<body class="news_813">
+<div class="container">
+    <div class="news_813-w">
+        <div class="tab-container">
+            <a href="#" class="tab"><i class="prefix" style="display: none;"></i>所有栏目</a>
+            <a href="#" class="tab active"><i class="prefix"></i>企业案例</a>
+            <a href="#" class="tab"><i class="prefix"></i>服务指导</a>
+            <a href="#" class="tab"><i class="prefix"></i>行业观察</a>
+            <a href="#" class="tab"><i class="prefix"></i>迈科技新闻</a>
+        </div>
+        <table class="cover-list">
+            <tbody>
+            <tr class="cover-list-line">
+                <td class="cover-list-item">
+                    <a href="/edu/articles/5adece55263ee367baf3601b" class="" target="_blank">
+                        <div class="m-cover"
+                             style="background-image: url(https://res2.maikeji.cn/FkbwBs2jlNsQNBt3zvlFowwWT3AS);"></div>
+                        <div class="cnt">
+                            <h4 class="title">一块化妆镜如何靠技术升级迎接这个“美颜时代”？</h4>
+                            <p class="text">导言：化妆镜都技术升级了，你呢？</p>
+                            <p class="tag-container"><span class="m-icon"><i class="iconfont icon-tag"></i>迈科技服务</span></p>
+                            <span class="page-views">阅读 831</span>
+                        </div>
+                    </a>
+                </td>
+                <td class="cover-list-item"><a href="/edu/articles/5ad71af6263ee35b9f1f4a96" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FkojxRKGKGAUy1kiiTphZvQxUFrT);"></div>
+                    <div class="cnt"><h4 class="title">深耕家底，山东滨州让老产业“逆生长”</h4>
+                        <p class="text">导言：一粒小麦可以加工成500种产品，一颗大豆可以榨取高档“膳食...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 438</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5aceeeff263ee34a0db8ad7e" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/Fr-LwLOvgpMpXcOYg2oxK9eZHFBc);"></div>
+                    <div class="cnt"><h4 class="title">【迈科技】联合上海化工院落地山东土壤修复项目，双向服务助跑...</h4>
+                        <p class="text">导言：迈科技三次亮相东方卫视，迈科技领跑技术创新服务，助推科技成...</p>
+                        <p class="tag-container"><span class="m-icon"><i class="iconfont icon-tag"></i>迈科技动态</span><span
+                                class="m-icon"><i class="iconfont icon-tag"></i>迈科技服务</span></p><span
+                                class="page-views">阅读 2635</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5abc59e2263ee352a93d6376" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FpNRgLAaJ8x4telmD_NGhKKRCJXX);"></div>
+                    <div class="cnt"><h4 class="title">一“纸”卖出6684万元！华南理工大学相关技术顺利作价入股</h4>
+                        <p class="text">导言：芳纶纸是一种重要的国防装备基础材料，飞机、高铁、航空母舰、...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 653</span></div>
+                </a></td>
+            </tr>
+            <tr class="cover-list-line">
+                <td class="cover-list-item"><a href="/edu/articles/5a9e10d7263ee376ab617317" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FnHv_U_oL2NENe26JaBlVL8M2qQS);"></div>
+                    <div class="cnt"><h4 class="title">从亏损1.5亿到年销30亿，它如何靠一朵棉花成为新国货品牌...</h4>
+                        <p class="text">导言：做品牌是需要花时间，更需要耐得住寂寞，保证品质，做好口碑。</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 682</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a7808a6263ee3663b250e71" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FuXxHAxoXHynnSYJKGve0aB-YZB8);"></div>
+                    <div class="cnt"><h4 class="title">迈科技助力“最后一公里”，高效换热管实现市场化</h4>
+                        <p class="text">导言：迈科技一直在“挖掘企业技术需求”与“发挥技术价值”两端同时...</p>
+                        <p class="tag-container"><span class="m-icon"><i class="iconfont icon-tag"></i>迈科技案例</span><span
+                                class="m-icon"><i class="iconfont icon-tag"></i>迈科技动态</span></p><span
+                                class="page-views">阅读 1359</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a77cc3a263ee3663b24a03f" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/Fn0gJzv6PEc56chnd59Phi1S2Fm1);"></div>
+                    <div class="cnt"><h4 class="title">周其仁：从佛山7个企业案例看中国制造业创新趋势</h4>
+                        <p class="text">导言：创新是一个长链条，它需要各种角色，但如果没有企业家，眼花缭...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 671</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a6e9ccb263ee3273953bba6" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FgSoH23osWeMrvE_BZD-KMZZNL7B);"></div>
+                    <div class="cnt"><h4 class="title">4个案例论证为什么企业是科技成果转化的主体（下篇）</h4>
+                        <p class="text">导言：企业是科技成果转化的主体。只有认识到这一点，坚信这一点，并...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 648</span></div>
+                </a></td>
+            </tr>
+            <tr class="cover-list-line">
+                <td class="cover-list-item"><a href="/edu/articles/5a6e9c0e263ee3273953b97e" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FlTuiA6REVAqOpHzaCIzjz5_aQpW);"></div>
+                    <div class="cnt"><h4 class="title">4个案例论证为什么企业是科技成果转化的主体（上篇）</h4>
+                        <p class="text">导言：企业支持早期科研，可以获得核心技术，进而可以获得核心竞争力...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 350</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a656226263ee3694f13b540" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FkjW6sdUl6uOV5rwmViWZZ3s0sFw);"></div>
+                    <div class="cnt"><h4 class="title">才云科技：AI+云计算让IT管理成本降九成</h4>
+                        <p class="text">导言：技术让企业降本增效：才云科技通过“云计算”，帮助企业用十分...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 323</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a4ed8e7263ee325aa5face9" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FmojOdToTn3BXuCOkWDvjrIfziaQ);"></div>
+                    <div class="cnt"><h4 class="title">勇担行业重任： 新特能源实现多晶硅绿色生产</h4>
+                        <p class="text">导言：校企联合，不断实现的技术创新突破，建成系列化主辅配套的高纯...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 271</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a41b087263ee36975842ba2" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FsdywVFcvhee5gXNfBDFO5CM2uP6);"></div>
+                    <div class="cnt"><h4 class="title">陕鼓：创新引领能源装备绿色发展</h4>
+                        <p class="text">导言：首个分布式能源领域实现能源系统“九联供”的能源互联岛全球运...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 265</span></div>
+                </a></td>
+            </tr>
+            <tr class="cover-list-line">
+                <td class="cover-list-item"><a href="/edu/articles/5a3733ea263ee32707ee53af" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/Fg4SpJOOCo78JeM-pn2e-kiqaq2X);"></div>
+                    <div class="cnt"><h4 class="title">山东博山：老工业基地探寻“重生利器</h4>
+                        <p class="text">导言：当濒临破产时，企业冒险进行跨行业产品结构调整，持续创新，硬...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 299</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a2e14ab263ee3059ab849ce" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/Fg8SNrnu9HIGk3RreuHWfTx3D6o5);"></div>
+                    <div class="cnt"><h4 class="title">新疆全力打造马产业转型升级新高地 促科技成果转化拓富路</h4>
+                        <p class="text">导言：自治区科技重大专项“马产业升级技术创新工程”项目启动与部署...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 385</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a2612c3263ee3346d5cbff8" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FvP2FjUkXW8aU3iiA-ehwrrmvC8M);"></div>
+                    <div class="cnt"><h4 class="title">如何让一家只卖1元纸箱的公司年赚6亿?</h4>
+                        <p class="text">导言：28岁当上最年轻的橡果国际高管，36岁成为年销千万的淘宝店...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 868</span></div>
+                </a></td>
+                <td class="cover-list-item"><a href="/edu/articles/5a24ae46263ee34c0c9b55fc" class="" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FvF1psgHmy6Q6AT4hYmAEUvOEj3S);"></div>
+                    <div class="cnt"><h4 class="title">从平安到平台，科技转型对平安到底意味着什么？ </h4>
+                        <p class="text">导言：科技创新已经成为中国发展战略，前不久的十九大会议上，习近平...</p>
+                        <p class="tag-container"></p><span class="page-views">阅读 303</span></div>
+                </a></td>
+            </tr>
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation" class="list-pagination">
+            <ul class="pagination">
+                <li class="active"><a href="#" class="">1</a></li>
+                <li class=""><a href="#" class="">2</a></li>
+                <li><a href="#" class="" aria-label="Next"><span aria-hidden="true">下一页</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

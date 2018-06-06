@@ -1,0 +1,11 @@
+.navigation-bar{height:50px;background-color:#339;text-align:center}
+.navigation-bar .container{font-size:0}
+.navigation-bar .container .bd{margin:0 auto;width:1102.5px}
+.navigation-bar .container .item{position:relative;display:inline-block;width:20%;text-align:center;font-size:22.5px}
+.navigation-bar .container .item a{color:#fff;display:inline-block;line-height:50px}
+.navigation-bar .container .item .menu{display:none;position:absolute;top:0;left:0;width:100%;padding-top:39.375px;line-height:37.5px}
+.navigation-bar .container .item .menu.visible{display:block}
+.navigation-bar .container .item .menu .arrow{margin:0 auto;background:url(../imgs/arrow.png?v=xfLMvwYkPUqyFq%2FGZERloA%3D%3D) 0 0 no-repeat;background-size:100% 100%;width:23.125px;height:10.625px}
+.navigation-bar .container .item .menu ul{display:inline-block;background-color:rgba(0,0,0,.7);padding:10.625px 26.25px}
+.navigation-bar .container .item .menu ul a{word-break:keep-all}
+.navigation-bar .container .item .menu ul a:hover{color:#999}
