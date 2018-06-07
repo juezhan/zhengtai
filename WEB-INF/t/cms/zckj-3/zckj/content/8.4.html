@@ -1,0 +1,592 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>8.4众创空间技术专题详情 ${title} - ${site.name}</title>
+<meta content="${content.tagStr!}" http-equiv="keywords"/>
+<meta content="${content.description!}" http-equiv="description"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../r/cms/zckj-3/zckj/css/8.4.css"/>
+
+<!--[if lt IE 9]>
+<script src="../../../../../../r/cms/zckj-3/zckj/js/html5shiv.min.js"></script>
+<script src="../../../../../../r/cms/zckj-3/zckj/js/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+  $(function () {
+    Cms.checkPerm("${base}", "${content.id}");
+    Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+    Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+    Cms.viewCount("${base}", "${content.id}");
+    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    $('.content-comment').click(function () {
+      $('html,body').animate({scrollTop: $('#comments-text').offset().top}, 1000)
+      $('#comments-text').focus();
+    });
+  });
+
+  $(function () {
+    //设置一个定时器，为BUTTON点击事件用
+    var timer = null;
+    var number1 = 0;
+
+    //文本输入时改变
+    $('#comments-text').keyup(function () {
+      if (!$(this).val() == '') {
+        $('.submit-on').attr("class", "submit-out");
+      } else {
+        $(".submit-out").attr("class", "submit-on");
+      }
+    });
+
+    //处理输入的内容是文字还是字母的函数
+    function getLength(str) {
+      return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+    };
+
+  });
+</script>
+
+<head>
+<body class="news_84">
+<div class="ad-wrapper">
+  <div class="container">
+    <div class="ad-content">
+      <h1 class="title">新材料之王石墨烯相关技术</h1>
+      <p class="text">
+        有着“新材料之王”之称的石墨烯，目前应用领域十分广，比如防腐涂料、超级电容器、电极材料、导热散热涂层、电池及其导电膜等的应用，无一不用到这一神奇石墨烯材料，更多石墨烯优质项目，请关注本专题或迈科技。
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="holy-grail">
+    <div class="item-catalog-container">
+      <div class="catalog-item">
+        <a href="/" class="nuxt-link-active">首页</a>
+        <span class="divider">&gt;</span>
+      </div>
+      <div class="catalog-item">
+        <a href="/packages?page=1" class="">全部专题</a>
+        <span class="divider">&gt;</span>
+      </div>
+      <div class="catalog-item">
+        <a href="javascript:void(0)">专题详情</a>
+        <span class="divider">&gt;</span>
+      </div>
+    </div>
+    <div class="technology-list">
+      <div class="technology-list-item">
+        <a href="#" class="list-item-wrapper" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/o_1at39dbi74q41cjd12gp1hst1of7j.png);">
+          </div>
+          <div class="list-item-content">
+            <h3 class="list-item-title">三维石墨烯∕中空碳球复合材料的制备方法</h3>
+            <p class="list-item-text-container"></p>
+            <p class="list-item-text-container">
+              <span class="m-icon">中国</span>
+              <span class="pull-right maturity-tag">中试阶段</span>
+            </p>
+          </div>
+          <div class="list-item-caption">
+            <div class="text-container">
+              <div class="text">适用于：复合材料</div>
+              <p>
+                <span class="pull-left">浏览量：2861</span>
+                <span class="pull-right">咨询量：9</span>
+              </p>
+            </div>
+            <div class="contact-content"><span class="m-icon m-icon-tel"><i
+                class="iconfont icon-dianhua"></i></span><span
+                class="text">联系技术方</span></div>
+          </div>
+        </a></div>
+      <div class="technology-list-item"><a href="/technologies/5770ede6263ee30155603b00"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1at0m089k11mfnmuqc51vpllc7j.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">新一代可商业化应用的氧化石墨烯分离薄膜</h3>
+          <p class="list-item-text-container"></p>
+          <p class="list-item-text-container"><span class="m-icon">英国
+        </span><span class="pull-right maturity-tag">小试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：树脂
+            </div>
+            <p><span class="pull-left">浏览量：2577</span><span class="pull-right">咨询量：6</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/57ac174a263ee30e9beb06f7"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1at0i8e70cjj1kholln1o2nrnuj.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">新型复合纳米级石墨烯的高铁防水材料</h3>
+          <p class="list-item-text-container">本技术方案提供石墨烯/聚脲材料，主要应用于高铁防水。中铁建、承接中铁高铁项目以及有防水材...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：汽车|摩托车|轨交|船舶
+            </div>
+            <p><span class="pull-left">浏览量：2664</span><span class="pull-right">咨询量：10</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/57c69b24263ee31048c4c6ce"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1at07dnp874a135h1cjmvtt3q6j.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">石墨烯经济高效分散技术及其高性能防腐涂料</h3>
+          <p class="list-item-text-container">本技术方案通过自主设计合成特色分散剂，实现石墨烯的经济高效分散。同时，拥有一整套完整自主...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：涂料、医药|生物工程、...</div>
+            <p><span class="pull-left">浏览量：2056</span><span class="pull-right">咨询量：6</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/581316e7263ee36e31f1d448"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b05ba6fmt939aq1i75g8qj3hj.jpg);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">生态碳元素复合材料石墨烯负离子</h3>
+          <p class="list-item-text-container">以市场需求为导向，“黑科技~石墨烯碳复合材料”捷足先登，破解医用级高分子敷料“休克性软肋...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：医药|生物工程
+            </div>
+            <p><span class="pull-left">浏览量：2521</span><span class="pull-right">咨询量：8</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5816bf7b263ee36e31f24359"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b0cqq12nafo1rr64ud1kfi1berj.jpg);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">石墨烯基超级电容器产业化技术</h3>
+          <p class="list-item-text-container">石墨烯基超级电容器的研制对推动我国电容器行业的发展，提升行业竞争优势具有重要的意义。</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：电气|电力|水利、太阳...</div>
+            <p><span class="pull-left">浏览量：2252</span><span class="pull-right">咨询量：4</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/584648e6263ee36ca4562ae3"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b398tqot1ej1sacea41b101hccj.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">高质量石墨烯的规模化制备及其在新能源等方面的应用</h3>
+          <p class="list-item-text-container">设备投入少，生产过程环保，制备的石墨烯粉体具备形态完整、尺寸大、层数薄及可控等关键优点。</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：专用化学产品、通用|工程塑料
+            </div>
+            <p><span class="pull-left">浏览量：2220</span><span class="pull-right">咨询量：9</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/585a467f263ee311f9279096"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b4i42vl41eaj1bmg45912kv1j5bj.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">常压干燥法制备多功能超弹性的石墨烯气凝胶</h3>
+          <p class="list-item-text-container">利用常压干燥法制备出多功能超弹性的石墨烯气凝胶，制备方法更加环保、工艺简单，还有利于工业...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">小试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：功能材料、水体污染治理
+            </div>
+            <p><span class="pull-left">浏览量：2015</span><span class="pull-right">咨询量：7</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/585b491b263ee311f927b594"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b4ij97qi1vcb1hrdnpm81vspj.jpg);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">石墨烯复合电极材料及超级电容器集成应用关键技术</h3>
+          <p class="list-item-text-container">本技术制备的三维石墨烯复合电极材料具有比容量高、能量密度大、循环稳定性好等特点；且三维石...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：电子技术|半导体|集成电路
+            </div>
+            <p><span class="pull-left">浏览量：2048</span><span class="pull-right">咨询量：3</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/585b49a7263ee311f927b5f3"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b4ikv2vn16er1a651mevtshfcj.jpg);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">利用氧化还原法制备石墨烯材料工艺</h3>
+          <p class="list-item-text-container">利用可大规模生产的氧化－还原法制备多种石墨烯材料，具有价格低廉、原料丰富及其优良性能，还...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：非金属矿物制品业
+            </div>
+            <p><span class="pull-left">浏览量：1959</span><span class="pull-right">咨询量：9</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/58787fda263ee304a02e60f7"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b6bdr8hq16df1t613ksobs1b5ej.jpg);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">含石墨烯成分的耐高温防腐涂料的生产</h3>
+          <p class="list-item-text-container">将石墨烯作为配料按照一定比例加入到防腐涂料中，提高防腐能力，生产理想的耐高温防腐蚀涂料，...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">中试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：涂料、专用化学产品
+            </div>
+            <p><span class="pull-left">浏览量：2160</span><span class="pull-right">咨询量：8</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/587881ff263ee304a02e6295"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b6bfutvu1omvgspfq1e3nmrhj.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">改性钛基负载石墨烯光催化剂及其在电厂烟气与室内空气污染 全天候控...</h3>
+          <p class="list-item-text-container">对烟气汞脱除效率91.4%以上，并对SO2和NOx具有良好脱除效果，采用多种脱除技术协同...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：除尘、废气处理|空气净化
+            </div>
+            <p><span class="pull-left">浏览量：1857</span><span class="pull-right">咨询量：3</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/58805d1a263ee3082effcb81"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1b722hc4dcgehkgkj1fg02fuj.png);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">三维石墨烯∕中空碳球复合材料制备方法</h3>
+          <p class="list-item-text-container">该项目制备方法简单、工艺易控，应用领域广泛，市场前景广阔。</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：电子技术|半导体|集成...</div>
+            <p><span class="pull-left">浏览量：1860</span><span class="pull-right">咨询量：8</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/58edf3f7263ee36233bf01e6"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1bdj9d56qhnriso7mn7pei0j.png);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">石墨烯导电及导热产品的制备与应用</h3>
+          <p class="list-item-text-container">本项目开发的石墨烯衍生产品主要应用于LED、电子产品、薄膜天线、键盘、柔性印刷电路等，在...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：电子技术|半导体|集成电路
+            </div>
+            <p><span class="pull-left">浏览量：2385</span><span class="pull-right">咨询量：8</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5928f1c9263ee3054e069f0d"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1bh4ha19ukpvs2n1q6i1omt1ipdj.png);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">高质量大尺寸氧化石墨烯产品项目</h3>
+          <p class="list-item-text-container">石墨烯是碳原子紧密堆积成单层二维蜂窝状晶格结构的一种碳质材料， 是迄今已知最单薄的纳米材...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：纳米技术
+            </div>
+            <p><span class="pull-left">浏览量：2152</span><span class="pull-right">咨询量：6</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5928f56f263ee3054e06a217"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/o_1bh4je52lgoh14vsbgp1brv18bvj.jpg);">
+
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">性能优越的石墨烯防腐涂料项目</h3>
+          <p class="list-item-text-container">石墨烯是优质功能涂料添加剂。石墨烯优异的电学、热学、力学和光学性能，使石墨烯成为新一代涂...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：涂料、纳米技术
+            </div>
+            <p><span class="pull-left">浏览量：2526</span><span class="pull-right">咨询量：11</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5996a51b263ee36c50487f46"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FuhSNKNVgq7GPiCpEFxHw42FYQ19);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">疏水环保的石墨烯-红外辐射导热、散热涂层应用</h3>
+          <p class="list-item-text-container">一种全新的导热、散热解决方案，可以满足电子产品、电器设备的超小型化、高度集成化，以及高性...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：家用电器、安全防护、涂...</div>
+            <p><span class="pull-left">浏览量：4219</span><span class="pull-right">咨询量：26</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/59e95988263ee311e2fc4033"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Fj3A79gBw-lqDvsyk4h5sq_s6qxi);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">环保型石墨烯/铜基电接触复合材料产业化项目</h3>
+          <p class="list-item-text-container">利用CVD在铜粉表面上均匀沉积单层或者多层石墨烯，形成石墨烯/铜的三维网络结构，增大铜粉...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right maturity-tag">生试阶段</span></p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：复合材料、大型设备|机...</div>
+            <p><span class="pull-left">浏览量：570</span><span class="pull-right">咨询量：3</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5a3b7da7263ee37d759e3536"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FqHt1fSwWqrPM5cRT4E50gpy6agx);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">石墨烯纳米薄片与多壁碳纳米管的合成、生产及应用</h3>
+          <p class="list-item-text-container">碳纳米管具有独特的机械、电学、热学性能。其杨氏模量可达1000GPa，抗拉强度为60GP...</p>
+          <p class="list-item-text-container"><span class="m-icon">俄罗斯
+        </span><span class="pull-right cooperation-tag">落地孵化合作</span><span class="pull-right maturity-tag">中试阶段</span>
+          </p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">
+              适用于：纳米技术、复合材料
+            </div>
+            <p><span class="pull-left">浏览量：391</span><span class="pull-right">咨询量：8</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5a448c28263ee32a7269b88d"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FihtItmZeoK4vGcmamBk3-DanHUB);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">大规模低成本NRO法制备高锂电性能的石墨烯负极</h3>
+          <p class="list-item-text-container">NRO法制备石墨烯可有效简化生产流程，无需氧化过程，无需用到危险的氧化剂，危险系数降低；...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right cooperation-tag">落地孵化合作</span><span class="pull-right maturity-tag">中试阶段</span>
+          </p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：高分子化学、复合材料、...</div>
+            <p><span class="pull-left">浏览量：363</span><span class="pull-right">咨询量：6</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5a52e111263ee320dd9eb546"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FobaBWKgJ2K2YiJtg0qobfumkEDl);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">石墨烯电池——纳米碳材料超级电容器快速充电储能设备</h3>
+          <p class="list-item-text-container">研发出可以实现量产的5分钟快速充满的石墨烯电池（纳米碳材料超级电容器快速充电储能设备），...</p>
+          <p class="list-item-text-container"><span class="m-icon">英国
+        </span><span class="pull-right cooperation-tag">市场渠道合作</span><span class="pull-right maturity-tag">中试阶段</span>
+          </p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：电池、储能、家用电器、...</div>
+            <p><span class="pull-left">浏览量：129</span><span class="pull-right">咨询量：1</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5aa9ebc4263ee336accec496"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FtcJrFy3dBDj2vymLcSb2B_0XJDu);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">一种石墨烯键合改性硅灰的制备方法</h3>
+          <p class="list-item-text-container">本发明显著提高水泥基复合材料强度，使得硅灰具有更好分散性和优异电学性能，能使混凝土达到较...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right cooperation-tag">落地孵化合作</span><span class="pull-right maturity-tag">中试阶段</span>
+          </p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：建筑|建材、专用化学产...</div>
+            <p><span class="pull-left">浏览量：63</span><span class="pull-right">咨询量：1</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+      <div class="technology-list-item"><a href="/technologies/5ac1a827263ee31e663bfa0f"
+                                           class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FjhuqLM56_g7hugzLbw_9TJRvplK);">
+          <div class="list-item-prefix" style="display: none;">推荐技术
+          </div>
+        </div>
+        <div class="list-item-content"><h3 class="list-item-title">用于触摸屏和显示器中的优异柔软性石墨烯PET透明导电膜</h3>
+          <p class="list-item-text-container">石墨烯PET透明导电膜可广泛用于触摸屏、显示器等电子器件中，已申请中国发明专利和国际PC...</p>
+          <p class="list-item-text-container"><span class="m-icon">中国
+        </span><span class="pull-right cooperation-tag">股权融资合作</span><span class="pull-right maturity-tag">小试阶段</span>
+          </p></div>
+        <div class="list-item-caption">
+          <div class="text-container">
+            <div class="text">适用于：电子技术|半导体|集成...</div>
+            <p><span class="pull-left">浏览量：76</span><span class="pull-right">咨询量：1</span></p></div>
+          <div class="contact-content"><span class="m-icon m-icon-tel"><i class="iconfont icon-dianhua"></i></span><span
+              class="text">联系技术方</span></div>
+        </div>
+      </a></div>
+    </div>
+    <nav class="list-pagination">
+      <ul class="pagination"><!---->
+        <li class="active"><a href="/activities?page=1" class="">1</a></li>
+        <li class=""><a href="/activities?page=2" class="">2</a></li>
+        <li class=""><a href="/activities?page=3" class="">3</a></li>
+        <li class=""><a href="/activities?page=4" class="">4</a></li>
+        <li class=""><a href="/activities?page=5" class="">5</a></li>
+        <li class=""><a href="/activities?page=6" class="">6</a></li>
+        <li class=""><a href="/activities?page=13" class="">...</a></li>
+        <li class=""><a href="/activities?page=20" class="">20</a></li>
+        <li><a href="/activities?page=2" class="" aria-label="Next"><span aria-hidden="true">下一页</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</body>
+</html>
