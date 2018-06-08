@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>8.2众创空间技术所有技术 ${title} - ${site.name}</title>
+  <meta content="${content.tagStr!}" http-equiv="keywords"/>
+  <meta content="${content.description!}" http-equiv="description"/>
+  <script src="${resSys}/jquery.js" type="text/javascript"></script>
+  <script src="${resSys}/front.js" type="text/javascript"></script>
+
+  <link type="text/css" rel="stylesheet" href="../../../../../../r/cms/zckj-3/zckj/css/8.15.css"/>
+
+  <!--[if lt IE 9]>
+  <script src="../../../../../../r/cms/zckj-3/zckj/js/html5shiv.min.js"></script>
+  <script src="../../../../../../r/cms/zckj-3/zckj/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+    $(function () {
+      Cms.checkPerm("${base}", "${content.id}");
+      Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+      Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+      Cms.viewCount("${base}", "${content.id}");
+      Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+    });
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $('.content-comment').click(function () {
+        $('html,body').animate({scrollTop: $('#comments-text').offset().top}, 1000)
+        $('#comments-text').focus();
+      });
+    });
+
+    $(function () {
+      //设置一个定时器，为BUTTON点击事件用
+      var timer = null;
+      var number1 = 0;
+
+      //文本输入时改变
+      $('#comments-text').keyup(function () {
+        if (!$(this).val() == '') {
+          $('.submit-on').attr("class", "submit-out");
+        } else {
+          $(".submit-out").attr("class", "submit-on");
+        }
+      });
+
+      //处理输入的内容是文字还是字母的函数
+      function getLength(str) {
+        return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+      };
+
+    });
+  </script>
+
+</head>
+<body class="news_815">
+<div class="ad-wrapper">
+  <div class="container">
+    <div class="ad-content">
+      <h1 class="title">获补贴拿荣誉 享政策得优惠</h1>
+      <form action="/policies/search" class="searchbar-container white-searchbar-container">
+        <input placeholder="请输入您想要搜索的政策名称或关键字" type="text" name="text" autocomplete="off" class="searchbar-text">
+        <button class="m-btn btn-primary btn-search">搜&nbsp;索</button>
+      </form>
+      <div class="searchbar-tag-container">
+        热门搜索：
+        <a href="#" class="">高企加分</a>
+        <a href="#" class="">高新技术企业</a>
+        <a href="#" class="">商标</a>
+        <a href="#" class="">软件著作权</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+</div>
+<div class="holy-grails">
+  <div id="level1" class="holy-grail policy-index-section small-section">
+    <div class="title-container"><span class="prefix">F1</span><span class="title">正在进行</span><span class="text">等待无益，抓牢申报季</span>
+    </div>
+    <div class="list">
+      <div class="list-item" style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/small-2.gif);">
+        <div>
+          <div><a href="javascript:void(0)" class="recommend-link">立刻咨询</a></div><!----></div>
+      </div>
+      <div class="list-item">
+        <div class="title">2017年浦东新区“小微企...</div>
+        <p class="text">为了贯彻落实国家“小微...</p><a href="/policies/59b9f179263ee31e20a37e18" class="m-link" target="_blank">去看看吧
+        &gt;</a>
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Fk6-zaPUi4d0ABExl4Bec10Y3FcW);"></div>
+      </div>
+      <div class="list-item">
+        <div class="title">金山区科技创新资金（医药卫...</div>
+        <p class="text">通过高新技术企业认定的可加分，根据...</p><a href="/policies/59ae01bcad8b3213e0d98ba8" class="m-link"
+                                                   target="_blank">去看看吧 &gt;</a>
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Fj5d1-eak2V-QzkUaqBk9TFw6wKz);"></div>
+      </div>
+      <div class="list-item">
+        <div class="title">宝山区产学研合作项目</div>
+        <p class="text">通过高新技术企业认定的可加分，不仅...</p><a href="/policies/59ae01bdad8b3213e0d98ba9" class="m-link"
+                                                   target="_blank">去看看吧 &gt;</a>
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Ftf5ZzlKrN8OetFcF3sCEAl_PywC);"></div>
+      </div>
+    </div>
+  </div>
+  <div class="holy-grail-container">
+    <div id="level2" class="holy-grail policy-index-section big-section">
+      <div class="title-container">
+        <span class="prefix">F2</span><span class="title">从0开始</span>
+        <span class="text">循序渐进，规划荣誉体系</span><a
+          href="/policies/search?page=1" class="pull-right" target="_blank">查看更多 &gt;</a></div>
+      <div class="list-container">
+        <div class="list-head" style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/big-1.gif);">
+          <div>
+            <div>
+              <button class="recommend-link" style="background-color: rgb(255, 180, 0); color: rgb(51, 85, 164);">立刻咨询
+              </button>
+            </div><!----></div>
+        </div>
+        <div class="list">
+          <a href="/policies/59b9f179263ee31e20a37e18" class="list-item" target="_blank">
+            <div class="m-cover"
+                 style="background-image: url(https://res2.maikeji.cn/Fk6-zaPUi4d0ABExl4Bec10Y3FcW);">
+              <span class="tag">最高获得300万</span>
+              <span class="tag">提升创新能力</span>
+            </div>
+            <div class="title">2017年浦东新区“小微企业创业创新基地城市示范”专项...</div>
+            <p class="text">为了贯彻落实国家“小微企业创业创新基地城市示范&amp;...</p></a>
+          <a href="/policies/59b0dd34263ee3472e7a7806"
+             class="list-item" target="_blank">
+            <div class="m-cover"
+                 style="background-image: url(https://res2.maikeji.cn/FsWEyT1VX7wDse_sUqhtL9CYdTxV);"><span
+                class="tag">50万元无息贷款</span><!----></div>
+            <div class="title">上海市大学生科技创业基金“雄鹰计划”</div>
+            <p class="text">“雄鹰计划”是指基金会委托孵化机构投...</p></a><a href="/policies/59929843263ee3394af9dc06" class="list-item"
+                                                            target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FtplwrDKyDuDOzOMd6L_0-gnN9xI);"><span
+              class="tag">现金补助</span><span class="tag">利于项目融资</span></div>
+          <div class="title">上海市创新创业大赛（科技创新基金）</div>
+          <p class="text">1、创新基金最直接的好处在于能够将国家的资金拨给有技术、有创...</p></a><a href="/policies/59898f8b263ee30cee1eac10"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FkXc5cJ8-reTgDu6TAd7XchQcw0G);"><span
+              class="tag">税收减免</span><span class="tag">技术出资入股</span></div>
+          <div class="title">软件著作权</div>
+          <p class="text">1、作为税收减免的重要依据财政部、国家税务总局《关于贯彻落实...</p></a><a href="/policies/5975c22e3b1f353f7a6936d8"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FkFPGRMOrSCRqP0Or4ka0qMLKuTv);"><span
+              class="tag">创新规划</span><span class="tag">项目补贴</span></div>
+          <div class="title">科技创新券</div>
+          <p class="text">根据现有政策，申请企业在申请成功后，可以享受如下政策优惠：资...</p></a><a href="/policies/5975baf63b1f353f7a6936ab"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/Fr82r1dWADlpYKylUuf78qeXQZn1);"><span
+              class="tag">创新规划</span><span class="tag">项目补贴</span></div>
+          <div class="title">科技创新体验券</div>
+          <p class="text">根据现有政策，申请企业在申请成功后，可以享受如下政策优惠： ...</p></a></div>
+      </div>
+    </div>
+  </div>
+  <div id="level3" class="holy-grail policy-index-section big-section">
+    <div class="title-container"><span class="prefix">F3</span><span class="title">高企加分</span><span class="text">更多资质，轻松拿下来</span><a
+        href="/policies/search?page=1&amp;text=%E9%AB%98%E4%BC%81%E8%AE%A4%E5%AE%9A" class="pull-right" target="_blank">查看更多
+      &gt;</a></div>
+    <div class="list-container">
+      <div class="list-head" style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/big-2.gif);"><a
+          href="/policies/5971a98e3b1f3525661decee" class="recommend-link" target="_blank"
+          style="background-color: rgb(205, 99, 254); color: rgb(249, 199, 100);">
+        申请高企认定
+      </a></div>
+      <div class="list"><a href="/policies/5975c6e33b1f353f7a6936ee" class="list-item" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FgeF5NSVAZr7rmYcqAIoHd-LtKcp);"><span
+            class="tag">数十万补贴</span><span class="tag">加计扣除</span></div>
+        <div class="title">上海各区级科技（培育）小巨人</div>
+        <p class="text">1、市政府以补贴资金与区县财政资金配套，资助科技小巨人培育企...</p></a><a href="/policies/5975c37e3b1f353f7a6936e2"
+                                                                    class="list-item" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FuSiLPY3DAVWtJiU-vrRUNwn7d22);"><span
+            class="tag">百万补贴</span><span class="tag">加计扣除</span></div>
+        <div class="title">张江专项资金（大张江计划）</div>
+        <p class="text">根据现有政策，申请企业在申请成功后，可以享受如下政策优惠： ...</p></a><a href="/policies/59ae01c7ad8b3213e0d98bbd"
+                                                                    class="list-item" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Fqii-_oXMZMlsGA3x_aW-wjEqz0O);"><span
+            class="tag">最高获得3000万</span><span class="tag">利企业转型</span></div>
+        <div class="title">临港高端智能装备首台突破和示范应用专项</div>
+        <p class="text">不仅有现金补助，最高可获得3000万资金扶持，还可推动企业转...</p></a><a href="/policies/59ae01cdad8b3213e0d98bc7"
+                                                                    class="list-item" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/FkINMZWb2T77AN5-sQn80TPC3ZMV);"><span
+            class="tag">最高获得150万资金扶持</span><span class="tag">升社会地位和荣誉</span></div>
+        <div class="title">上海市科技小巨人企业</div>
+        <p class="text">通过知识产权贯标体系认证或通过企业技术中心认定可加分，最高可...</p></a><a href="/policies/59ae01d1ad8b3213e0d98bd1"
+                                                                    class="list-item" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Ftq6B3deFF8FuQ8m7pyDLLVTqGYU);"><span
+            class="tag">最高获得400万资金扶持</span><span class="tag">推动产业结构的形成 </span></div>
+        <div class="title">上海市服务业发展引导资金</div>
+        <p class="text">研发项目获得过国家、省市等立项扶持可加分，通过高企认定的也可...</p></a><a href="/policies/59ae01e2ad8b3213e0d98be1"
+                                                                    class="list-item" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(https://res2.maikeji.cn/Fmtt9rF4S1xPVidsSKkn0En-LpF-);"><span
+            class="tag">给予60万元的资金扶持</span><span class="tag">利于融资发展</span></div>
+        <div class="title">上海市级企业技术中心</div>
+        <p class="text">已通过高新技术企业认定的可加分，并可获得60万元的资金扶持，...</p></a></div>
+    </div>
+  </div>
+  <div class="holy-grail-container">
+    <div id="level4" class="holy-grail policy-index-section big-section">
+      <div class="title-container"><span class="prefix">F4</span><span class="title">热门推荐</span><span class="text">好处多多，申请了才知道</span><a
+          href="/policies/search?page=1" class="pull-right" target="_blank">查看更多 &gt;</a></div>
+      <div class="list-container">
+        <div class="list-head" style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/big-3.gif);">
+          <div>
+            <div>
+              <button class="recommend-link" style="background-color: rgb(21, 212, 192); color: rgb(22, 80, 128);">
+                立刻咨询
+              </button>
+            </div><!----></div>
+        </div>
+        <div class="list"><a href="/policies/599ba506263ee34fb282153f" class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/Fgs2GiyXLDsGr9R4Ks2mdURFBTH4);"><span
+              class="tag">资金扶持</span><span class="tag">产学研合作</span></div>
+          <div class="title">上海各区产学研合作项目</div>
+          <p class="text">一、获取一定额度的资金扶持（15万~30万），具体额度根据项...</p></a><a href="/policies/5975c22e3b1f353f7a6936d8"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FkFPGRMOrSCRqP0Or4ka0qMLKuTv);"><span
+              class="tag">创新规划</span><span class="tag">项目补贴</span></div>
+          <div class="title">科技创新券</div>
+          <p class="text">根据现有政策，申请企业在申请成功后，可以享受如下政策优惠：资...</p></a><a href="/policies/5975c0a23b1f353f7a6936ce"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FkgAMcWcuYHl8zpZR-bcqvwzEc6X);"><span
+              class="tag">加计扣除</span><span class="tag">项目扶持</span></div>
+          <div class="title">高新技术成果转化</div>
+          <p class="text">根据现有政策，申请企业在申请成功后，可以享受如下政策优惠：（...</p></a><a href="/policies/5971a98e3b1f3525661decee"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/Fhicx8oRjv3AUMzP5dWp_9li_qeK);"><span
+              class="tag">10万起补贴</span><span class="tag">所得税减免40%</span></div>
+          <div class="title">高新技术企业认定</div>
+          <p class="text">1、促进企业科技转型创新是企业发展的根本动力，高新技术企业认...</p></a><a href="/policies/596dbe1a3b1f350f5cd96b77"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FiNJk8gpElM5jH9vkXvZXZU5s1_Y);"><span
+              class="tag">税收优惠</span><span class="tag">资质证书</span></div>
+          <div class="title">双软认定</div>
+          <p class="text">1、软件产品登记后，对增值税一般纳税人销售其自行开发生产的软...</p></a><a href="/policies/59ae01f8ad8b3213e0d98c05"
+                                                                      class="list-item" target="_blank">
+          <div class="m-cover"
+               style="background-image: url(https://res2.maikeji.cn/FiXv86zLamXF_Zi4bTfSRt3WXoen);"><span
+              class="tag">最高获得300万资金扶持</span><span class="tag">促进文化发展提升荣誉</span></div>
+          <div class="title">上海市文化创意产业专项</div>
+          <p class="text">通过高新技术企业认定可加分，最高可获得300万资金扶持，还可...</p></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

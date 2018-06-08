@@ -1,0 +1,634 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>8.1众创空间首页 ${title} - ${site.name}</title>
+  <meta content="${content.tagStr!}" http-equiv="keywords"/>
+  <meta content="${content.description!}" http-equiv="description"/>
+  <script src="${resSys}/jquery.js" type="text/javascript"></script>
+  <script src="${resSys}/front.js" type="text/javascript"></script>
+
+  <link type="text/css" rel="stylesheet" href="../../../../../../r/cms/zckj-3/zckj/css/8.1.css"/>
+
+  <!--[if lt IE 9]>
+  <script src="../../../../../../r/cms/zckj-3/zckj/js/html5shiv.min.js"></script>
+  <script src="../../../../../../r/cms/zckj-3/zckj/js/respond.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+    $(function () {
+      Cms.checkPerm("${base}", "${content.id}");
+      Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+      Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+      Cms.viewCount("${base}", "${content.id}");
+      Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+    });
+  </script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $('.content-comment').click(function () {
+        $('html,body').animate({scrollTop: $('#comments-text').offset().top}, 1000)
+        $('#comments-text').focus();
+      });
+    });
+
+    $(function () {
+      //设置一个定时器，为BUTTON点击事件用
+      var timer = null;
+      var number1 = 0;
+
+      //文本输入时改变
+      $('#comments-text').keyup(function () {
+        if (!$(this).val() == '') {
+          $('.submit-on').attr("class", "submit-out");
+        } else {
+          $(".submit-out").attr("class", "submit-on");
+        }
+      });
+
+      //处理输入的内容是文字还是字母的函数
+      function getLength(str) {
+        return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+      };
+
+    });
+  </script>
+
+</head>
+<body class="news_81">
+<div class="ad-wrapper">
+  <div class="banner-content">
+    <a href="#" target="_blank" class="image"
+       style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/banner1.jpg);"></a>
+    <a href="#" target="_blank" class="image"
+       style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/banner2.jpg);"></a>
+    <a href="#" target="_blank" class="image active"
+       style="background-image: url(../../../../../../r/cms/zckj-3/zckj/imgs/banner3.jpg);"></a>
+  </div>
+  <div class="banner-caption">
+    <div class="caption-list">
+      <div class="caption-list-item">
+        一站式技术创新服务平台
+      </div>
+      <div class="caption-list-item">
+        第113期技术专题
+      </div>
+      <div class="caption-list-item active">
+        第三次亮相东方卫视，领跑技术创新服务
+      </div>
+    </div>
+    <div class="tab-container">
+      <div class="tab-header">
+        <div class="tab-header-item active">
+          热门技术
+        </div>
+        <div class="tab-header-item">
+          热门活动
+        </div>
+        <div class="tab-header-item">
+          热门资讯
+        </div>
+      </div>
+      <div>
+        <div class="tab-body">
+          <div class="tab-body-item"><a href="/technologies/5b162268263ee33a284d7159" class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>轻质高效环保的中空微球聚合物乳液
+            </div>
+            <div class="text overflow-hidden">
+              水乳液、钛白粉、涂料、中空结构、遮盖性
+            </div>
+          </a></div>
+          <div class="tab-body-item"><a href="/technologies/5b165a7c263ee33a284e0b72" class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>不受室外温度、地势和水源限制的封闭循环水源热泵
+            </div>
+            <div class="text overflow-hidden">
+              燃煤、地源热泵、工程采暖、家用取暖设施
+            </div>
+          </a></div>
+          <div class="tab-body-item"><a href="/technologies/5b17a00a263ee33a284f90e0" class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>【美国】高效回收工业废水中重金属的终极解决方案
+            </div>
+            <div class="text overflow-hidden">
+              电镀废水、吸附材料、增强吸附、材料再生
+            </div>
+          </a></div>
+          <div class="tab-body-item"><a href="/technologies/5b1893aa263ee33a2850b79e" class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>【意大利】消除厨房气味骚扰的最理想解决方案
+            </div>
+            <div class="text overflow-hidden">
+              空气处理、渗透因子屏障、垃圾处理、超声波、喷嘴
+            </div>
+          </a></div>
+        </div>
+        <div class="tab-body" style="display: none;">
+          <div class="tab-body-item" style="display: none;"><a href="/activities/5b03b0a7263ee32908c838c5" class=""
+                                                               target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>2018 长江经济带互联网+绿色技术转移转化大会
+            </div>
+            <div class="text overflow-hidden">上海&nbsp;2018.06.14-2018.06.15
+            </div>
+          </a></div>
+          <div class="tab-body-item" style="display: none;"><a href="/activities/5b151363263ee3372df24aa5" class=""
+                                                               target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>第二届全国化工园区绿色发展高端论坛</div>
+            <div class="text overflow-hidden">南京&nbsp;2018.07.26-2018.07.27
+            </div>
+          </a></div>
+          <div class="tab-body-item" style="display: none;"><a href="/activities/5b1252c9263ee3372def2570" class=""
+                                                               target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>全国第 39 次复混肥技术年会</div>
+            <div class="text overflow-hidden">江苏•镇江&nbsp;2018.06.11-2018.06.13
+            </div>
+          </a></div>
+          <div class="tab-body-item" style="display: none;"><a href="/activities/5acf6180263ee34a0db9575e" class=""
+                                                               target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>2018北美土壤修复技术专题培训讲座丨中国专场预告
+            </div>
+            <div class="text overflow-hidden">上海&nbsp;2018.06.11-2018.06.15
+            </div>
+          </a></div>
+        </div>
+        <div class="tab-body" style="display: none;">
+          <div class="tab-body-item" style="display: none;"><a href="/edu/articles/5b164a8d263ee33a284ddd86"
+                                                               class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>大学与商业如何共生？</div>
+            <div class="text overflow-hidden">
+              科技关乎人类如何生活，而生物技术则关乎人类能否生存，将生物医药研发产业的上下游打通、推进资源整合，也就成为生物医药产业发展不可忽视的一个重要命题
+            </div>
+          </a></div>
+          <div class="tab-body-item" style="display: none;"><a href="/edu/articles/5b163748263ee33a284d9eea"
+                                                               class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>2018年新能源与润滑油发展趋势研究报告</div>
+            <div class="text overflow-hidden">本文将从新能源汽车的发展、普通汽车的市场需求、国家政策的倾向等几个方面做全面分析。</div>
+          </a></div>
+          <div class="tab-body-item" style="display: none;"><a href="/edu/articles/5b0e7dc2263ee3037835dc47"
+                                                               class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>马斯克“保住“董事长，特斯拉第一座“超级工厂”将落地上海
+            </div>
+            <div class="text overflow-hidden">马斯克能否用中国生产挽回市场信心？超级工厂又将花落谁家？</div>
+          </a></div>
+          <div class="tab-body-item" style="display: none;"><a href="/edu/articles/5b0bb8ae263ee30378317d97"
+                                                               class="" target="_blank">
+            <div class="title overflow-hidden"><span class="title-prefix">·&nbsp;</span>新民晚报丨众里寻他千百度，终于等来这一波科技成果“金黄牛”
+            </div>
+            <div class="text overflow-hidden">企业要找技术满世界转，没有头绪，谁知技术支持方就在一条马路之隔的对面大楼。</div>
+          </a></div>
+        </div>
+        <a href="/technologies?page=1" class="tab-footer" target="_blank">
+              <span class="m-icon">
+                <i class="iconfont icon-new"></i>
+              </span>
+          <span class="text">
+                <span class="count" style="">3294</span>
+                &nbsp;项优质技术项目正在寻求合作&gt;&gt;
+              </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="info-bar">
+  <div class="info-bar-wrapper">
+    <span class="placeholder-block"></span>
+    <span class="m-icon"><i class="iconfont icon-xitongtongzhi"></i></span>
+    <div id="info-list" class="text-list-container">
+      <div class="text-list">
+        <div class="text">用户杨**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b14f7b2263ee3372df214ce"
+                                         target="_blank">电子封装用的高纯超细亚...</a></div>
+        <div class="text">用户余**咨询了技术方案<a href="https://www.maikeji.cn/technologies/583d3a15263ee37972155bb8"
+                                         target="_blank">国内首创的心血管疾病干...</a></div>
+        <div class="text">用户J**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b1893aa263ee33a2850b79e"
+                                         target="_blank">【意大利】消除厨房气味...</a></div>
+        <div class="text">用户赵**咨询了技术方案<a href="https://www.maikeji.cn/technologies/565dcb0a695a324656000004"
+                                         target="_blank">［环保高效］河道水质深...</a></div>
+        <div class="text">用户钱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5afea88d263ee32908c1f6e1"
+                                         target="_blank">建筑能耗监测平台建设与...</a></div>
+        <div class="text">用户钱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5afe953b263ee32908c1d4e4"
+                                         target="_blank">全透明薄膜晶体管及其电...</a></div>
+        <div class="text">用户钱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5afea1d5263ee32908c1ea30"
+                                         target="_blank">便携式三维环境建模与重...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/57bc2090263ee3104ba9ffe1"
+                                         target="_blank">井盖监控系统助力市政井...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/5661381a695a3272ea000005"
+                                         target="_blank">一项通过可见光回复反射...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/58c79725263ee3055431b13c"
+                                         target="_blank">一种独特的耐用标牌翻新...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/56fa33e1695a326ab8000009"
+                                         target="_blank">新型高柔韧性耐火纸</a></div>
+        <div class="text">用户梁**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b10a79a263ee37e5e288040"
+                                         target="_blank">高效益的先进装备系统与...</a></div>
+        <div class="text">用户梁**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b10b44a263ee37e5e2893aa"
+                                         target="_blank">太阳能供电方式的水下探...</a></div>
+        <div class="text">用户M**发布了技术方案<a href="https://www.maikeji.cn/technologies/5af26bab263ee3695d649713"
+                                         target="_blank">【芬兰】具备完整生产链...</a></div>
+        <div class="text">用户R**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b17a00a263ee33a284f90e0"
+                                         target="_blank">【美国】高效回收工业废...</a></div>
+        <div class="text">用户杨**咨询了技术方案<a href="https://www.maikeji.cn/technologies/58364261263ee33074410fa5"
+                                         target="_blank">新型根结线虫生防菌剂及...</a></div>
+        <div class="text">用户朱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b165a7c263ee33a284e0b72"
+                                         target="_blank">不受室外温度、地势和水...</a></div>
+        <div class="text">用户刘**咨询了技术方案<a href="https://www.maikeji.cn/technologies/5838015a263ee34ef1bc30cb"
+                                         target="_blank">基于大数据平台的智能家...</a></div>
+        <div class="text">用户刘**咨询了技术方案<a href="https://www.maikeji.cn/technologies/583e30c4263ee35015c298a2"
+                                         target="_blank">实时互动智能家居服务机...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/585b7912263ee311f927c462"
+                                         target="_blank">西班牙Beacon智能...</a></div>
+        <div class="text">用户杨**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b14f7b2263ee3372df214ce"
+                                         target="_blank">电子封装用的高纯超细亚...</a></div>
+        <div class="text">用户余**咨询了技术方案<a href="https://www.maikeji.cn/technologies/583d3a15263ee37972155bb8"
+                                         target="_blank">国内首创的心血管疾病干...</a></div>
+        <div class="text">用户J**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b1893aa263ee33a2850b79e"
+                                         target="_blank">【意大利】消除厨房气味...</a></div>
+        <div class="text">用户赵**咨询了技术方案<a href="https://www.maikeji.cn/technologies/565dcb0a695a324656000004"
+                                         target="_blank">［环保高效］河道水质深...</a></div>
+        <div class="text">用户钱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5afea88d263ee32908c1f6e1"
+                                         target="_blank">建筑能耗监测平台建设与...</a></div>
+        <div class="text">用户钱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5afe953b263ee32908c1d4e4"
+                                         target="_blank">全透明薄膜晶体管及其电...</a></div>
+        <div class="text">用户钱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5afea1d5263ee32908c1ea30"
+                                         target="_blank">便携式三维环境建模与重...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/57bc2090263ee3104ba9ffe1"
+                                         target="_blank">井盖监控系统助力市政井...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/5661381a695a3272ea000005"
+                                         target="_blank">一项通过可见光回复反射...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/58c79725263ee3055431b13c"
+                                         target="_blank">一种独特的耐用标牌翻新...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/56fa33e1695a326ab8000009"
+                                         target="_blank">新型高柔韧性耐火纸</a></div>
+        <div class="text">用户梁**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b10a79a263ee37e5e288040"
+                                         target="_blank">高效益的先进装备系统与...</a></div>
+        <div class="text">用户梁**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b10b44a263ee37e5e2893aa"
+                                         target="_blank">太阳能供电方式的水下探...</a></div>
+        <div class="text">用户M**发布了技术方案<a href="https://www.maikeji.cn/technologies/5af26bab263ee3695d649713"
+                                         target="_blank">【芬兰】具备完整生产链...</a></div>
+        <div class="text">用户R**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b17a00a263ee33a284f90e0"
+                                         target="_blank">【美国】高效回收工业废...</a></div>
+        <div class="text">用户杨**咨询了技术方案<a href="https://www.maikeji.cn/technologies/58364261263ee33074410fa5"
+                                         target="_blank">新型根结线虫生防菌剂及...</a></div>
+        <div class="text">用户朱**发布了技术方案<a href="https://www.maikeji.cn/technologies/5b165a7c263ee33a284e0b72"
+                                         target="_blank">不受室外温度、地势和水...</a></div>
+        <div class="text">用户刘**咨询了技术方案<a href="https://www.maikeji.cn/technologies/5838015a263ee34ef1bc30cb"
+                                         target="_blank">基于大数据平台的智能家...</a></div>
+        <div class="text">用户刘**咨询了技术方案<a href="https://www.maikeji.cn/technologies/583e30c4263ee35015c298a2"
+                                         target="_blank">实时互动智能家居服务机...</a></div>
+        <div class="text">用户刚**咨询了技术方案<a href="https://www.maikeji.cn/technologies/585b7912263ee311f927c462"
+                                         target="_blank">西班牙Beacon智能...</a></div>
+      </div>
+    </div>
+    <span class="placeholder-block"></span>
+  </div>
+</div>
+<div class="section-block nav-section">
+  <div class="holy-grail">
+    <a href="/technologies?page=1" target="_blank" class="nav-item">
+      <div class="left">
+        <div class="title">找技术</div>
+        <p class="text">2000+成熟技术项目</p>
+      </div>
+      <div class="right m-icon" style="color:#2dd9b9;"><i class="iconfont icon-xiangmu"></i></div>
+    </a>
+    <a href="/experts" target="_blank" class="nav-item">
+      <div class="left">
+        <div class="title">问专家</div>
+        <p class="text">10000+深度合作专家</p>
+      </div>
+      <div class="right m-icon" style="color:#fec84b;"><i class="iconfont icon-zhuanjia-xuanzhong"></i></div>
+    </a>
+    <a href="/activities?page=1" target="_blank" class="nav-item">
+      <div class="left">
+        <div class="title">报活动</div>
+        <p class="text">行业精英共同交流</p>
+      </div>
+      <div class="right m-icon" style="color:#2ce0b8;"><i class="iconfont icon-act"></i></div>
+    </a>
+    <a href="/edu" target="_blank" class="nav-item">
+      <div class="left">
+        <div class="title">学创新</div>
+        <p class="text">探讨企业创新发展</p>
+      </div>
+      <div class="right m-icon" style="color:#7f9cfa;"><i class="iconfont icon-edu"></i></div>
+    </a>
+    <a href="/policies?page=1" target="_blank" class="nav-item">
+      <div class="left">
+        <div class="title">申政策</div>
+        <p class="text">政策申报通过率高</p>
+      </div>
+      <div class="right m-icon" style="color:#30bfff;"><i class="iconfont icon-activity"></i></div>
+    </a>
+  </div>
+</div>
+<section id="technology-section" class="section-block technology-section">
+  <div class="head">
+    <h2>汇聚全球技术 助力企业升级</h2>
+    <p class="head-text">2000+成熟技术项目正在推广中</p>
+    <div class="tab-container">
+      <span class="tab-text active">化学化工</span>
+      <span class="tab-divider">/</span>
+      <span class="tab-text">能源电力</span>
+      <span class="tab-divider">/</span>
+      <span class="tab-text">环境工程</span>
+      <span class="tab-divider">/</span>
+      <span class="tab-text">材料科技</span>
+      <span class="tab-divider">/</span>
+      <span class="tab-text">生农医药</span>
+      <span class="tab-divider">/</span>
+      <span class="tab-text">机械电子</span>
+      <span class="tab-divider">/</span>
+      <a href="/technologies?page=1" target="_blank" class="tab-link">全部&gt;</a>
+    </div>
+  </div>
+  <div class="body holy-grail">
+    <div class="technology-list">
+      <div class="technology-list-item-simple"><a href="javascript:void(0)" class="list-item-prefix"
+                                                           style="display: none;">推荐技术</a><a
+          href="/technologies/57bc3d7d263ee3104ba9ffec" class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(&quot;https://res2.maikeji.cn/o_1at0ktfju1ple1he1ffm9re1qu2j.png&quot;);"></div>
+        <div class="list-item-content"><h3 class="list-item-title">高回收率零排放的闭路循环干燥技术</h3>
+          <p class="list-item-text-container"><span class="m-icon">来源地：中国</span>
+            <span class="pull-right maturity-tag">生试阶段</span></p></div>
+      </a></div>
+      <div class="technology-list-item-simple"><a href="javascript:void(0)" class="list-item-prefix"
+                                                           style="display: none;">推荐技术</a><a
+          href="/technologies/56fa33e1695a326ab8000009" class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(&quot;https://res2.maikeji.cn/o_1at8aa0dbcn1fv31sqtnrkb7mj.png&quot;);"></div>
+        <div class="list-item-content"><h3 class="list-item-title">新型高柔韧性耐火纸</h3>
+          <p class="list-item-text-container"><span class="m-icon">来源地：中国</span>
+            <span class="pull-right maturity-tag">小试阶段</span></p></div>
+      </a></div>
+      <div class="technology-list-item-simple"><a href="javascript:void(0)" class="list-item-prefix"
+                                                           style="display: none;">推荐技术</a><a
+          href="/technologies/5721de9b677db52781a7adc8" class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(&quot;https://res2.maikeji.cn/o_1at863kmn16k6hl91uq61n4chcgj.png&quot;);"></div>
+        <div class="list-item-content"><h3 class="list-item-title">苯乙烯-马来酸酐（SMA）树脂水溶液</h3>
+          <p class="list-item-text-container"><span class="m-icon">来源地：中国</span>
+            <span class="pull-right maturity-tag">量产阶段</span></p></div>
+      </a></div>
+      <div class="technology-list-item-simple"><a href="javascript:void(0)" class="list-item-prefix"
+                                                           style="display: none;">推荐技术</a><a
+          href="/technologies/56277f674808dd95562ab4d3" class="list-item-wrapper" target="_blank">
+        <div class="m-cover"
+             style="background-image: url(&quot;https://res2.maikeji.cn/o_1at8g93mi17vijglto693t1v3kj.png&quot;);"></div>
+        <div class="list-item-content"><h3 class="list-item-title">通用型防水剂</h3>
+          <p class="list-item-text-container"><span class="m-icon">来源地：中国</span>
+            <span class="pull-right maturity-tag">生试阶段</span></p></div>
+      </a></div>
+    </div>
+    <a href="/technologies?area=%E5%8C%96%E5%AD%A6%E5%8C%96%E5%B7%A5&amp;sort=%E9%BB%98%E8%AE%A4&amp;page=1"
+       target="_blank" class="btn btn-black">查看更多化学化工技术
+    </a></div>
+</section>
+<section id="expert-section" class="section-block expert-section section-animate">
+  <div class="head"><h2>行业顶尖专家 资深技术顾问
+  </h2>
+    <p class="head-text">10000+合作技术方 更有全网专家信息可检索
+    </p>
+    <div class="tab-container"><span class="tab-text active">医药科学</span><span class="tab-divider">/</span><span
+        class="tab-text">化学化工</span><span class="tab-divider">/</span><span class="tab-text">工程技术</span><span
+        class="tab-divider">/</span><span class="tab-text">农业科学</span><span class="tab-divider"
+                                                                            style="display:none;">/</span></div>
+  </div>
+  <div class="body holy-grail institutions-container">
+    <table class="expert-list">
+      <tbody>
+      <tr>
+        <td>
+          <div class="expert-info">
+            <div class="m-cover m-avatar"
+                 style="background-image: url(&quot;https://res2.maikeji.cn/FlcdTlvZyfwZe8gLMBqMPwTagWoa&quot;);"></div>
+            <h3 class="name">钱峰</h3>
+            <p class="institution">研究员</p>
+            <div class="tag-container"><span class="tag overflow-hidden">新型药物</span><span class="tag overflow-hidden">呼吸性疾病发病机理与分子机制</span><span
+                class="tag overflow-hidden">高通量药物</span></div>
+          </div>
+          <a href="/experts/5567cc374808dd4925ea2984" class="expert-info-caption" target="_blank">
+            <div><p class="text">概况实验室简要介绍代表成果突出研究成果教学工作本科生：《微生物学与免疫学...</p><span class="m-link">查看详情
+  <span class="m-icon"><i class="iconfont icon-chakanxiangqing"></i></span></span></div>
+          </a></td>
+        <td>
+          <div class="expert-info">
+            <div class="m-cover m-avatar"
+                 style="background-image: url(&quot;https://res2.maikeji.cn/Fjfipb1pUJxqzNm12bdiE-ZDx4HO&quot;);"></div>
+            <h3 class="name">傅磊</h3>
+            <p class="institution">教授，博导</p>
+            <div class="tag-container"><span class="tag overflow-hidden">药物化学</span><span class="tag overflow-hidden">慢性疼痛药物</span><span
+                class="tag overflow-hidden">糖尿病药物</span></div>
+          </div>
+          <a href="/experts/55234b674808dd625e9f57ab" class="expert-info-caption" target="_blank">
+            <div><p class="text">概况课题组成立于2006年初，主要从事化学药物、 药用化妆品和功能食品的...</p><span class="m-link">查看详情
+  <span class="m-icon"><i class="iconfont icon-chakanxiangqing"></i></span></span></div>
+          </a></td>
+        <td>
+          <div class="expert-info">
+            <div class="m-cover m-avatar"
+                 style="background-image: url(&quot;https://res2.maikeji.cn/Fs88q36P3SlCS025FiNIOK9_sAqg&quot;);"></div>
+            <h3 class="name">许平</h3>
+            <p class="institution">教授</p>
+            <div class="tag-container"><span class="tag overflow-hidden">尼古丁</span><span
+                class="tag overflow-hidden">食品</span><span class="tag overflow-hidden">应用与环境微生物</span></div>
+          </div>
+          <a href="/experts/5523b5954808dd635e9f57ad" class="expert-info-caption" target="_blank">
+            <div><p class="text">论文Structural and computational studi...</p><span class="m-link">查看详情
+  <span class="m-icon"><i class="iconfont icon-chakanxiangqing"></i></span></span></div>
+          </a></td>
+        <td>
+          <div class="expert-info">
+            <div class="m-cover m-avatar"
+                 style="background-image: url(&quot;https://res2.maikeji.cn/Fn6QnLSS8ORdQdT3C4eMC2ngB6NW&quot;);"></div>
+            <h3 class="name">郭圣荣</h3>
+            <p class="institution">教授</p>
+            <div class="tag-container"><span class="tag overflow-hidden">药物输送系统</span><span class="tag overflow-hidden">新型医药用高分子材料</span><span
+                class="tag overflow-hidden">生物可降解高分子合成</span></div>
+          </div>
+          <a href="/experts/5563e4ea4808dd491cea2988" class="expert-info-caption" target="_blank">
+            <div><p class="text">概况实验室简要介绍代表成果主要从事新型医药用高分子材料、药物输送系统的研...</p><span class="m-link">查看详情
+  <span class="m-icon"><i class="iconfont icon-chakanxiangqing"></i></span></span></div>
+          </a></td>
+      </tr>
+      </tbody>
+    </table>
+    <a href="/experts/search?text=%E5%8C%BB%E8%8D%AF%E7%A7%91%E5%AD%A6&amp;page=1" target="_blank"
+       class="btn btn-black">查看更多医药科学专家
+    </a></div>
+</section>
+<section id="activity-section" class="section-block activity-section section-animate">
+  <div class="head"><h2>行业热门活动 技术交流盛会
+  </h2><a href="/activities?page=1" target="_blank" class="head-text">参与到产业活动中 和技术方零距离交流
+  </a></div>
+  <div class="body">
+    <div class="holy-grail"><a href="/activities?page=1" target="_blank" class="activity-item">
+      <div class="activity-item-wrapper"><span class="m-icon"><i class="iconfont icon-fenxiang1"></i></span><span
+          class="text">社群交流</span>
+        <button class="btn btn-transparent">查看最新活动</button>
+      </div>
+    </a><a href="/activities?page=1" target="_blank" class="activity-item">
+      <div class="activity-item-wrapper"><span class="m-icon"><i class="iconfont icon-zhanhui"></i></span><span
+          class="text">行业展会</span>
+        <button class="btn btn-transparent">查看最新活动</button>
+      </div>
+    </a><a href="/activities?page=1" target="_blank" class="activity-item">
+      <div class="activity-item-wrapper"><span class="m-icon"><i class="iconfont icon-luntan"></i></span><span
+          class="text">会议论坛</span>
+        <button class="btn btn-transparent">查看最新活动</button>
+      </div>
+    </a><a href="/activities?page=1" target="_blank" class="activity-item">
+      <div class="activity-item-wrapper"><span class="m-icon"><i class="iconfont icon-shalongshike"></i></span><span
+          class="text">圆桌沙龙</span>
+        <button class="btn btn-transparent">查看最新活动</button>
+      </div>
+    </a><a href="/activities?page=1" target="_blank" class="activity-item">
+      <div class="activity-item-wrapper"><span class="m-icon"><i class="iconfont icon-person-copy"></i></span><span
+          class="text">会员活动</span>
+        <button class="btn btn-transparent">查看最新活动</button>
+      </div>
+    </a></div>
+  </div>
+</section>
+<section id="edu-section" class="section-block edu-section section-animate">
+  <div class="head"><h2>闯创新之道 登浪潮之巅
+  </h2><a href="/edu/articles?page=1" target="_blank" class="head-text">解读企业技术创新的成功案例，分享技术创新的经验
+  </a></div>
+  <div class="body holy-grail">
+    <div class="edu-list">
+      <div><a href="/edu/articles/5adece55263ee367baf3601b" class="article-item" target="_blank">
+        <div class="m-cover-img-container"><img src="https://res2.maikeji.cn/FkbwBs2jlNsQNBt3zvlFowwWT3AS"
+                                                alt="一块化妆镜如何靠技术升级迎接这个“美颜时代”？" class="img-animate m-cover-img"></div>
+        <div class="title">【企业案例】一块化妆镜如何靠技术升级迎接这个“美颜时...</div>
+      </a><a href="/edu/articles/5ad71af6263ee35b9f1f4a96" class="article-item-slim" target="_blank">
+        深耕家底，山东滨州让老产业“逆生长”
+      </a><a href="/edu/articles/5aceeeff263ee34a0db8ad7e" class="article-item-slim" target="_blank">
+        【迈科技】联合上海化工院落地山东土壤修复...
+      </a></div>
+      <div><a href="/edu/articles/5aaf81d1263ee3445c1bbde6" class="article-item" target="_blank">
+        <div class="m-cover-img-container"><img src="https://res2.maikeji.cn/Fl4MdABKSFXk8AoyN1bliF5GLFf4"
+                                                alt="你问我答 | 科研人员及科研助理实务问题90问" class="img-animate m-cover-img"></div>
+        <div class="title">【服务指导】你问我答 | 科研人员及科研助理实务问题...</div>
+      </a><a href="/edu/articles/5a77c9f3263ee3663b2498e8" class="article-item-slim" target="_blank">
+        “科技创新券”让更多科技成果走出“深闺”
+      </a><a href="/edu/articles/5a444e09263ee32a72695484" class="article-item-slim" target="_blank">
+        下月起环保税开征，不了解这些关键点，要吃...
+      </a></div>
+      <div><a href="/edu/articles/5b0e7dc2263ee3037835dc47" class="article-item" target="_blank">
+        <div class="m-cover-img-container"><img src="https://res2.maikeji.cn/Fi7jdMLA_VG2O-F8XTpwlaB4Uy_H"
+                                                alt="马斯克“保住“董事长，特斯拉第一座“超级工厂”将落地上海" class="img-animate m-cover-img">
+        </div>
+        <div class="title">【行业观察】马斯克“保住“董事长，特斯拉第一座“超级...</div>
+      </a><a href="/edu/articles/5b164a8d263ee33a284ddd86" class="article-item-slim" target="_blank">
+        大学与商业如何共生？
+      </a><a href="/edu/articles/5b163748263ee33a284d9eea" class="article-item-slim" target="_blank">
+        2018年新能源与润滑油发展趋势研究报告
+      </a></div>
+      <div><a href="/edu/articles/5b0bb8ae263ee30378317d97" class="article-item" target="_blank">
+        <div class="m-cover-img-container"><img src="https://res2.maikeji.cn/Fp6FCUa3TcJhozpfrYf_HK6mse4w"
+                                                alt="新民晚报丨众里寻他千百度，终于等来这一波科技成果“金黄牛”" class="img-animate m-cover-img">
+        </div>
+        <div class="title">【迈科技新闻】新民晚报丨众里寻他千百度，终于等来这一...</div>
+      </a><a href="/edu/articles/5aeaba74263ee317c0b5f85a" class="article-item-slim" target="_blank">
+        迈科技再获两轮各数千万融资，城市服务站点...
+      </a><a href="/edu/articles/5b066ca6263ee33be8b53be4" class="article-item-slim" target="_blank">
+        湖南省科技厅领导一行莅临迈科技，产业技术...
+      </a></div>
+    </div>
+    <a href="/edu/articles?column=%E6%89%80%E6%9C%89%E6%A0%8F%E7%9B%AE&amp;page=1" target="_blank"
+       class="btn btn-black">查看更多文章</a></div>
+</section>
+<section id="policy-section" class="section-block policy-section section-animate">
+  <div class="head"><h2>获补贴拿荣誉 享政策得优惠
+  </h2><a href="/policies?page=1" target="_blank" class="head-text">申请政策资金补贴 建立企业荣誉体系</a></div>
+  <div class="body holy-grail">
+    <div class="policy-list"><a href="/policies/59ae01f8ad8b3213e0d98c05" class="policy-item" target="_blank"><img
+        src="https://res2.maikeji.cn/FiXv86zLamXF_Zi4bTfSRt3WXoen" alt="上海市文化创意产业专项" class="img-animate m-cover-img">
+      <div class="tag-container"><span class="tag">最高获得300万资金扶持</span><br><span class="tag">促进文化发展提升荣誉</span></div>
+      <div class="title overflow-hidden">
+        上海市文化创意产业专项
+      </div>
+    </a><a href="/policies/5971a98e3b1f3525661decee" class="policy-item" target="_blank"><img
+        src="https://res2.maikeji.cn/Fhicx8oRjv3AUMzP5dWp_9li_qeK" alt="高新技术企业认定" class="img-animate m-cover-img">
+      <div class="tag-container"><span class="tag">10万起补贴</span><br><span class="tag">所得税减免40%</span></div>
+      <div class="title overflow-hidden">
+        高新技术企业认定
+      </div>
+    </a><a href="/policies/59898f8b263ee30cee1eac10" class="policy-item" target="_blank"><img
+        src="https://res2.maikeji.cn/FkXc5cJ8-reTgDu6TAd7XchQcw0G" alt="软件著作权" class="img-animate m-cover-img">
+      <div class="tag-container"><span class="tag">税收减免</span><br><span class="tag">技术出资入股</span></div>
+      <div class="title overflow-hidden">
+        软件著作权
+      </div>
+    </a></div>
+    <a href="/policies/search?page=1" target="_blank" class="btn btn-black">查看更多政策</a></div>
+</section>
+<section id="cases" class="section-block cases section-animate">
+  <div class="head"><h2>
+    成功案例
+  </h2>
+    <p class="head-text">技术创新，您也可以
+    </p></div>
+  <div class="body">
+    <div class="m-carousel-wrapper">
+      <div class="m-carousel">
+        <div class="m-carousel-item">
+          <div class="content" style="background-image:url(/images/index/cases/qingdao.jpg);"></div>
+        </div>
+        <div class="m-carousel-item">
+          <div class="content" style="background-image:url(/images/index/cases/environment.jpg);"></div>
+        </div>
+        <div class="m-carousel-item active">
+          <div class="content" style="background-image:url(/images/index/cases/mold.jpg);"></div>
+        </div>
+        <div class="m-carousel-item">
+          <div class="content" style="background-image:url(/images/index/cases/voc.jpg);"></div>
+        </div>
+        <div class="m-carousel-item">
+          <div class="content" style="background-image:url(/images/index/cases/gene.jpg);"></div>
+        </div>
+      </div>
+      <div class="text-wrapper">
+        <div class="text">
+          <div class="content"><h3 class="text-title">
+            高效低成本国产脱模剂完成进口替代
+          </h3>
+            <p class="text-content">
+              脱模剂是一种轮胎生产企业必备的化工助剂，一直以来市场都是被高性能的国外产品所占据的，作为上游原料商的许先生在其中发现了商机，多方联系技术方，最终实现了该产品的进口替代
+            </p>
+            <div class="text-right"><a href="/edu/articles/5836ba3e263ee33074413d89" target="_blank"
+                                       class="btn btn-default">
+              查看详情 &gt;&gt;
+            </a></div>
+          </div>
+        </div>
+      </div>
+      <div class="prev-trigger"><span class="m-icon"><i class="iconfont icon-back"></i></span></div>
+      <div class="next-trigger"><span class="m-icon"><i class="iconfont icon-back"></i></span></div>
+    </div>
+  </div>
+</section>
+<div class="floor-nav-container" style="">
+  <div class="list-item">找<br>技术</div>
+  <div class="list-item">问<br>专家</div>
+  <div class="list-item">报<br>活动</div>
+  <div class="list-item">学<br>创新</div>
+  <div class="list-item no-bottom">申<br>政策</div>
+  <div class="list-item list-url no-bottom">回到顶部</div>
+</div>
+<div class="m-float-buttons">
+  <div class="btn btn-primary btn-wechat">
+    微信客服
+    <div class="wechat-container"><img src="/images/wx-qrcode.jpg">
+      打开微信<br>“扫一扫”
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="btn btn-primary btn-consult">
+        留言反馈
+      </div>
+    </div>
+  </div>
+  <div class="btn btn-primary-reverse btn-back-top"><i class="iconfont icon-back-top"></i></div>
+</div>
+</body>
+</html>
