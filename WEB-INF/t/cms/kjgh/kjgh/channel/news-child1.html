@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+
+<!--[if lt IE 9]>
+<script src="${resSys}/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link href="/${res}/css/html5.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
+<link href="${resSys}/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css"/>
+<link href="/${res}/css/news.css" rel="stylesheet"/>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+
+<script src="/${res}/js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	Cms.channelViewCount("${base}","${channel.id}");
+	Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwitch?string}");
+});
+</script>
+<style type="text/css">
+.currPageClass{
+	color: black;
+	font-weight: bold;
+	font-size: large;
+}
+.norPageClass{
+	color: black;
+}
+</style>
+</head>
+
+<body class="news-index">
+[#include "../include/header.html"/]
+<div class="news-main">
+    <div class="banner">
+        <img src="/${res}/imgs/newschild-banner.jpg"/>
+    </div>
+    <div class="newschild" title="公司要闻">
+        <div class="container">
+            <div class="newschild-title">
+                <div class="newschild-tit">买卖宝荣登“2018年中国大宗商品电商百强企业”</div>
+                <div class="newschild-author">作者：丁曦  发布时间：2018年04月17日  阅读量：367</div>
+            </div>
+            <div class="newschild-item">
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近日，2018第三届全国大宗商品电商峰会暨首届中国B2B创业大赛启动仪式于北京召开。远东智慧能源股份有限公司（股票简称：智慧能源，股票代码：600869）旗下的远东买卖宝网络科技有限公司（以下简称“买卖宝”）获评“2018年中国大宗商品电商百强企业”。</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这场"千亿"级B2B盛会由国家工业信息安全发展研究中心指导，B2B内参主办，工业电子商务创新发展联盟大力支持。30多位投资人，600多家大宗B2B企业，1500多名B2B行业精英同聚于此，把脉行业，共同探讨2018年全国大宗商品电商发展大势，为更好地引导和推动我国大宗商品电商及B2B行业的发展纳言献策。</div>
+                <div class="newschild-itemimg">
+                    <img src="/${res}/imgs/index-news1.jpg"/>
+                    <div>大会主会场</div>
+                </div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大会现场发布了“2018年中国大宗商品电商百强企业”、“2018年中国大宗商品电商创新企业”、“2018年中国大宗商品电商行业领袖”等权威榜单，该奖项以企业规模、行业地位、融资情况、舆论关注等为评选指标，对符合条件的公司分别进行排名并据此赋予相应分值，对各指标得分加权平均得出综合排名，上榜的都是行业翘楚。</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“中国大宗商品电商百强”是买卖宝继“2017中国B2B行业百强”、2017中国产业互联网“最具成长性平台”后，获得的又一殊荣。</div>
+                <div class="newschild-itemimg">
+                    <img src="/${res}/imgs/newschild1.jpg"/>
+                    <div>智慧能源投资人、电缆网总经理助理童利国（右五）上台领奖</div>
+                </div>
+                <div class="newschild-itemimg">
+                    <img src="/${res}/imgs/newschild2.jpg"/>
+                    <div>荣誉奖杯</div>
+                </div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“大宗商品电商峰会”作为国内B2B领域的重要会议，自2016年首次举办以来，已成为探讨中国B2B行业发展趋势,促进传统产业转型升级，集聚B2B产业发展资源，推动B2B创业创新发展的重要平台。本次更是规模空前，人气火爆，既有多家独角兽级别的B2B企业出席，也有600多家B2B行业新锐平台参加，更有资本创投鼎力参与，汇聚了中国B2B行业中坚力量。</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;买卖宝是智慧能源（600869）旗下专业的电线电缆和电工电气电子商务OTO服务平台，成立于2011年。依托于智慧能源30多年强大的产业基础，构建了以电线电缆的定制和现货、配套用金具附件和电工电气产品交易为主体的电子商务OTO服务平台。通过多年发展积累，形成了以衔接供需、交易撮合、现货交易、供应链融资及OTO的模式服务于上下游客户，为客户提供从采购、销售、支付、物流、质检、售后及金融等相关服务为一体的一站式采供服务。</div>
+            </div>
+            <div class="newschild-nav">
+                <div class="newschild-up">上一篇：已经是第一篇</div>
+                <div class="newschild-down">下一篇：智慧能源即将闪耀德国杜塞尔多夫展会</div>
+            </div>
+        </div>
+    </div>
+</div>
+[#include "../include/bottom.html"/]
+</body>
+</html>

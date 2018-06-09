@@ -42,22 +42,11 @@ $(function() {
 });
 </script>
 
+<link href="/${res}/css/header.css" rel="stylesheet"/>
 <div class="header">
     <div class="container">
         <img src="/${res}/imgs/logo.png" class="logo">
-        <div class="sign">
-            <i class="icon icon-user"></i>
-            <div class="bd">
-                [#if user??]
-                <a href="${base}/member/index.jspx">会员中心</a>
-                <a id="logout" >退出账号</a>
-                [#else]
-                <a href="${base}/login.jspx" >用户登陆</a>
-                <a href="${base}/register.jspx" >用户注册</a>
-                [/#if]
-            </div>
-        </div>
+        [#include "./nav.html"/]
     </div>
 </div>
 <!-- header 结束 -->
-[#include "./nav.html"/]

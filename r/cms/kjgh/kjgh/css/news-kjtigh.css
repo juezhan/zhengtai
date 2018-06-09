@@ -1,0 +1,201 @@
+blockquote, body, button, dd, dl, dt, fieldset, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body, button, input, select, textarea {
+    font-family: 'Microsoft Yahei', "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333
+}
+
+button, input, select, textarea {
+    outline: 0
+}
+
+html {
+    line-height: 1
+}
+
+address, cite, em, i, var {
+    font-style: normal
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h4, h5, h6 {
+    font-size: 100%
+}
+
+li, ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer
+}
+
+ahover {
+    text-decoration: none;
+    color: #ef3838;
+    transition-duration: .4s
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.icon {
+    display: inline-block
+}
+
+.kjtigh .banner {
+    margin-top: 20px
+}
+
+.kjtigh .banner img {
+    width: 100%;
+}
+
+.kjtigh .kjtighnews {
+    padding: 34px 0 69px;
+    font-size: 0;
+}
+
+.kjtigh .kjtighnews .tit {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.kjtigh .kjtighnews .tit .cell-nav ul li {
+    display: inline-block;
+    width: 192px;
+}
+
+.kjtigh .kjtighnews .tit .cell-nav ul li a{
+    display: inline-block;
+    width: 192px;
+    height: 40px;
+}
+
+.kjtigh .kjtighnews .tit .cell-nav ul li .current{
+    color: #45c0fa;
+    border-bottom: 2px solid #45c0fa;
+}
+
+.kjtigh .tit .title {
+    text-align: center;
+    font-size: 18px;
+    color: #a5a5a5;
+    line-height: 30px;
+}
+.kjtigh .tit .line {
+    width: 100%;
+    height: 1px;
+    background-color: #d2d2d2;
+}
+.kjtigh .kjtighnews .cell-wrapper {
+    font-size: 0;
+    overflow: hidden;
+    margin: 50px 0 0 0;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell {
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-title {
+    background-color: #2061ad;
+    color: #fff;
+    font-size: 24px;
+    line-height: 76px;
+    text-align: center;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .tit {
+    flex: 1;
+    font-size: 24px;
+    color: #2061ad;
+    line-height: 30px;
+    text-align: left;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .tit .cell-line{
+    display: inline-block;
+    width: 8px;
+    height: 18px;
+    background-color: #2061ad;
+    margin-right: 10px;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-txt .cell-tit {
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-txt .p {
+    color: #a5a5a5;
+    font-size: 14px;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-txt .p .consult {
+    color: #377ce3;
+}
+
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-txt .more {
+    color: #000;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-txt.primary {
+    color: #000;
+    display: inline-block;
+    padding-top: 46px;
+}
+.kjtigh .kjtighnews .cell-wrapper .cell .cell-img {
+   width: 100%;
+   margin-top: 150px;
+}
+@media screen and (max-width: 1199px) and (min-width: 750px){
+  .container{width:960px;}
+  .kjtigh .banner img {
+    width:1200px;
+    }
+}
+@media screen and (max-width: 749px) {
+    .container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
+    .kjtigh .kjtighnews .tit .cell-nav ul li a {
+        display: inline-block;
+        width: 134px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .kjtigh .kjtighnews .tit .cell-nav ul li {
+        display: inline-block;
+        width: 134px;
+    }
+    .kjtigh .kjtighnews .cell-wrapper .cell .cell-title {
+    line-height: 50px;
+    }
+}

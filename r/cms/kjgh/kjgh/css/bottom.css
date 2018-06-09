@@ -1,1 +1,40 @@
-.bottom{height:50px;line-height:50px;background-color:#eeeeee;color:#000;font-size:12px;text-align:center}
+.bottom{
+	height:70px;
+	line-height:70px;
+	background-color:#000;
+	color:#fff;
+	font-size:12px;
+	width: 100%;
+	min-width: 1200px;
+	margin: auto;
+}
+.kjghlink select{
+	width: 190px;
+	height: 36px;
+	color:#fff;
+	background-color: transparent;
+	border: 1px solid #fff;
+	
+}
+@media screen and (max-width: 1199px) and (min-width: 750px) {
+	.bottom{
+	height:100px;
+	line-height:100px;
+	background-color:#000;
+	color:#fff;
+	font-size:12px;
+	width: 1200px;
+	min-width: 300px;
+	}
+}
+@media screen and (max-width: 749px) {
+	.bottom{
+	height:100px;
+	line-height:20px;
+	background-color:#000;
+	color:#fff;
+	font-size:12px;
+	width: 100%;
+	min-width: 300px;
+	}
+}

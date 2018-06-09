@@ -20,17 +20,82 @@
 
 <head>
 <body class="about">
-[#include "../include/top.html"/]
 [#include "../include/header.html"/]
 <div class="about-bd">
-    <div class="container">
-        <div class="tt">关于我们</div>
-        <div class="bd">
-        ${channel. txt!}
-        </div>
-    </div>
+    <div class="banner">
+	    <img src="/${res}/imgs/about.jpg"/>
+	</div>
+	<div class="lxwm" title="联系我们">
+		<div class="container">
+			<div class="tit">
+				<div class="cell-nav">
+					<ul>
+						<li>
+							您所在的位置&gt;首页&gt;联系我们
+						</li>
+						<li>
+							<div class="contact">联系方式 <div class="circle"></div><span class="contactus">CONTACT US</span></div>
+						</li>
+					</ul>
+				</div>
+	          	<div class="line"></div>
+	        </div>
+	        <div class="cell-wrapper">
+	        	<div class="cell">
+	        		 <img class="img cell-img" src="/${res}/imgs/lxwm.png"/>
+	        		<div class="cell-txt">
+	        		 	<div class="item">
+	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm1.png"/></div>
+	        		 		<div class="p">地址</div>
+	        		 		<div>81961806</div>
+	        		 	</div>
+	        		 	<div class="item">
+	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm2.png"/></div>
+	        		 		<div class="p">电话</div>
+	        		 		<div>81961806</div>
+	        		 	</div>
+	        		 	<div class="item">
+	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm3.png"/></div>
+	        		 		<div class="p">邮箱</div>
+	        		 		<div>admin@chinata.cn</div>
+	        		 	</div>
+	        		</div>
+	        		<div class="message">
+	        			<div class="message-tit">在线留言</div>
+	        			<div class="message-line"></div>
+	        			<form action="" method="" class="message-form">
+							<div class="message-item">
+								<span>姓名：</span>
+								<input type="text" name="">
+							</div>
+							<div class="message-item message-centre">
+								<span><sup>*</sup>电话：</span>
+								<input type="text" name="">
+							</div>
+							<div class="message-item">
+								<span>邮箱：</span>
+								<input type="text" name="">
+							</div>
+							<div class="message-centont">
+								<textarea></textarea>
+								<span class="message-span"><span class="red">*</span>留言内容：</span>
+							</div>
+							<div class="verify">
+								<div class="verify-item verify-box">
+									<span>验证码：</span>
+									<input type="text" name="">
+									<div class="verify-img"><img src="/${res}/imgs/lxwm4.png"></div>
+								</div>
+								<div class="verify-item verify-txt">（备注：带<span class="red">*</span>	为必填项）</div>
+							</div>
+							<input type="submit" value="提交" class="btn" name="">
+						</form>
+	        		</div>
+	        	</div>
+	        </div>
+		</div>
+	</div>
 </div>
-[#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
 </html>
