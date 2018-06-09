@@ -1,16 +1,104 @@
 <!-- header 开始 -->
+<link href="/${res}/css/iconfont.css" rel="stylesheet"/>
 <link href="/${res}/css/header.css" rel="stylesheet"/>
 <div class="header">
     <div class="container">
-        <img src="/${res}/imgs/logo.png" class="logo">
-        <div class="sign">
-            <i class="icon icon-user"></i>
-            <div class="bd">
-                <a href="#" >用户登陆</a>
-                <a href="#" >用户注册</a>
+        <div class="header-w">
+            <div class="avatar">
+                <img src="/${res}/imgs/logo-2.png" class="logo">
+            </div>
+            <div class="nav">
+                <div class="nav-w" id="navigationBar">
+
+                    [@cms_channel_list]
+                    [#if !channel??]
+                    <div class="item">
+                        <div class="tt">
+                            <a href="${base}/" class="active">首页</a>
+                        </div>
+                    </div>
+                    [#list tag_list as c]
+                    [#if c_index<6]
+                    <div class="item">
+                        <div class="tt">
+                            <a href="${c.url}" class="tt-cell" data-target="#cnt_${c.id}">${c.name}</a>
+                        </div>
+                        [@cms_channel_list parentId=c.id]
+                        [#if tag_list?size>0]
+                        <div class="cnt" id="cnt_${c.id}">
+                            <div class="cnt-w">
+                                [#list tag_list as c2]
+                                <a href="${c2.url}">${c2.name}</a>
+                                [/#list]
+                            </div>
+                        </div>
+                        [/#if]
+                        [/@cms_channel_list]
+                    </div>
+                    [/#if]
+                    [/#list]
+                    [#else]
+                    <div class="item">
+                        <div class="tt">
+                            <a href="${base}/">首页</a>
+                        </div>
+                    </div>
+                    [#list tag_list as c]
+                    [#if c_index<6]
+                    <div class="item">
+                        <div class="tt">
+                            [#if channel.parentId??]
+                            <a href="${c.url}" class="${c.url}[#if channel.parentId==c.id] active[/#if]" data-target="#cnt_${c.id}">${c.name}</a>
+                            [#else]
+                            <a href="${c.url}" class="tt-cell[#if channel.id==c.id] active[/#if]" data-target="#cnt_${c.id}">${c.name}</a>
+                            [/#if]
+                        </div>
+                        [@cms_channel_list parentId=c.id]
+                        [#if tag_list?size>0]
+                        <div class="cnt" id="cnt_${c.id}">
+                            <div class="cnt-w">
+                                [#list tag_list as c2]
+                                <a href="${c2.url}">${c2.name}</a>
+                                [/#list]
+                            </div>
+                        </div>
+                        [/#if]
+                        [/@cms_channel_list]
+                    </div>
+                    [/#if]
+                    [/#list]
+                    [/#if]
+                    [/@cms_channel_list]
+                </div>
+            </div>
+            <div class="sign">
+                <a href="#" class="sign-in">登录</a>
             </div>
         </div>
     </div>
 </div>
+<script>
+  var mt = null
+  var mt = null
+  $('#navigationBar a.tt-cell').each(function (e) {
+    $(this).hover(function () {
+      $($(this).data('target')).addClass('active').siblings().removeClass('active');
+    }, function () {
+      var $this = $(this);
+      mt = setTimeout(function () {
+        $($this.data('target')).removeClass('active')
+        clearTimeout(mt);
+      }, 200)
+    })
+  })
+  $('#navigationBar .cnt').each(function (e) {
+    $(this).hover(function () {
+      clearTimeout(mt);
+      $(this).addClass('active')
+    }, function () {
+      clearTimeout(mt);
+      $(this).removeClass('active')
+    })
+  })
+</script>
 <!-- header 结束 -->
-[#include "./nav.html"/]
