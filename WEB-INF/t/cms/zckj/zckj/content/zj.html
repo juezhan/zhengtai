@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>${title} - ${site.name} - Powered by JEECMS</title>
+    <meta content="${content.tagStr!}" http-equiv="keywords"/>
+    <meta content="${content.description!}" http-equiv="description"/>
+    <script src="${resSys}/jquery.js" type="text/javascript"></script>
+    <script src="${resSys}/front.js" type="text/javascript"></script>
+
+    <link type="text/css" rel="stylesheet" href="/${res}/css/8.7.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="/${res}/js/html5shiv.min.js"></script>
+    <script src="/${res}/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 8.7 行业专家 -->
+    <script type="text/javascript">
+      $(function () {
+        ;
+        Cms.checkPerm("${base}", "${content.id}");
+        Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+        Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+        Cms.viewCount("${base}", "${content.id}");
+        Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+      });
+    </script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $('.content-comment').click(function () {
+          $('html,body').animate({scrollTop: $('#comments-text').offset().top}, 1000)
+          $('#comments-text').focus();
+        });
+      });
+
+      $(function () {
+        //设置一个定时器，为BUTTON点击事件用
+        var timer = null;
+        var number1 = 0;
+
+        //文本输入时改变
+        $('#comments-text').keyup(function () {
+          if (!$(this).val() == '') {
+            $('.submit-on').attr("class", "submit-out");
+          } else {
+            $(".submit-out").attr("class", "submit-on");
+          }
+        });
+
+        //处理输入的内容是文字还是字母的函数
+        function getLength(str) {
+          return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+        };
+
+      });
+    </script>
+
+</head>
+<body class="news_87">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="news_85-w">
+    <div class="container">
+        <div class="item-catalog-container">
+            <div class="catalog-item">
+                <a href="/" class="nuxt-link-active">首页</a>
+                <span class="divider">&gt;</span></div>
+            <div class="catalog-item">
+                <a href="/experts" class="nuxt-link-active">智库</a>
+                <span class="divider">&gt;</span>
+            </div>
+            <div class="catalog-item"><a href="javascript:void(0)">专家详情</a><span class="divider">&gt;</span></div>
+        </div>
+        <div class="expert-item-body">
+            <div class="item-content">
+                <div class="m-cover cover"></div>
+                <div class="expert-info-header">
+                    <div class="info-container">
+                        <div class="m-cover m-avatar"
+                             style="background-image: url(https://res2.maikeji.cn/FsdweRiL2hI_eZgoEw_4jPvzuNHZ);"></div>
+                        <h3 class="title">高乃平</h3>
+                        <p class="text"><span></span><!----><span>同济大学 | 机械与能源学院</span></p>
+                        <div class="details fr-view"><p>研究方向/领域</p>
+                            <p>建筑空调、通风、空气源热泵采暖、高效洁净燃烧系统、工业加热炉和中低温余热利用1. 污染物传播、室内气流组织、建筑通风、小区热环境、城市通风2.
+                                工业余热利用、有机朗肯循环（ORC）、储热技术3. 计算流体力学（CFD）在暖通空调、换热器和工业炉窑等领域的应用</p>
+                            <p>情况介绍</p>
+                            <p>横向项目1. 北车长春客车股份有限公司（2014）：标准动车组设备舱通风冷却效果超大网格数量模拟2. 国际铜业协会（2014）：采用铜流道的无水箱相变太阳能热水器3.
+                                河南核净洁净技术有限公司（2014）：圆筒形过滤器阻力模拟分析4. 苏州净化工程安装有限公司（2014）：超大面积单向流洁净室气流组织均匀性分析与优化5.
+                                上海亚德环保工程有限公司（2014）：废液废气焚烧炉燃烧效果和SNCR模拟研究6.
+                                宁波方太厨具有限公司（2014）：高效燃烧器仿真分析、改进与三通道阀体技术标准建立7. 南车青岛四方机车车辆有限公司（2013）：机械式粗虑器过滤效率测试8.
+                                上海市能效中心（2013）：上海市电信企业能源审计9. 河南核净洁净技术有限公司（2013）：方形过滤器阻力模拟分析10.
+                                瑞安集团（2012）：上海市卢湾区第126和127街坊项目冬季办公大堂热环境CFD模拟分析11.
+                                青岛奥能建筑节能咨询有限公司（2012）：青岛福瀛天麓湖风环境与热环境模拟分析12. 中国建筑科学研究院天津分院（2012）：中新天津生态城滨海家园热岛效应模拟13.
+                                国际铜业协会（2012）：冷凝式燃气热水器铜制小管径换热器优化14. 上海市隧道工程轨道交通设计研究院（2010-2011）：地铁隧道活塞风井作用及其优化研究15.
+                                上海塞克利汽车股份有限公司（2010-2011）：汽车零部件热冲压关键技术在车身覆盖件轻量化技术上的应用研究16.
+                                上海锅炉厂有限公司（2010）：燃用无烟煤超临界锅炉燃烧系统数值模拟研究17. 上海宝山钢铁公司（2008）：硅钢加热炉高温段炉内温度场模拟试验18.
+                                中海地产（2008）：中海瀛台小区室外风环境分析与评价19. 上海建筑科学研究院（2008）：杭州科技馆自然通风模拟20.
+                                美国柏诚工程咨询公司（2007-2008）：Energy saving potential investigation of floor level air
+                                supply system</p></div>
+                        <div class="tag-container"><a
+                                href="/experts/search?text=%E5%BB%BA%E7%AD%91%E4%B8%8E%E5%9C%B0%E4%B8%8B%E7%A9%BA%E9%97%B4%E7%9A%84%E9%80%9A%E9%A3%8E%E5%92%8C%E7%83%AD%E9%97%AE%E9%A2%98"
+                                class="tag" target="_blank">建筑与地下空间的通风和热问题
+                        </a><a href="/experts/search?text=%E7%A9%BA%E6%B0%94%E6%BA%90%E7%83%AD%E6%B3%B5%E7%83%AD%E6%B0%B4%E7%B3%BB%E7%BB%9F"
+                               class="tag" target="_blank">空气源热泵热水系统
+                        </a><a href="/experts/search?text=%E4%B8%AD%E4%BD%8E%E6%B8%A9%E7%83%AD%E8%83%BD%E9%AB%98%E6%95%88%E5%88%A9%E7%94%A8%E3%80%81%E6%9C%89%E6%9C%BA%E6%9C%97%E8%82%AF%E5%BE%AA%E7%8E%AF%28ORC%29"
+                               class="tag" target="_blank">中低温热能高效利用、有机朗肯循环(ORC)
+                        </a></div>
+                    </div>
+                </div>
+                <div class="expert-info-body">
+                    <div class="projects-list"><h4 class="list-title"><i class="m-icon iconfont icon-xiangmu2"></i>代表性项目&nbsp;&nbsp;Representative
+                        Project
+                    </h4>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2014年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 标准动车组设备舱通风冷却效果超大网格数量模拟
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 采用铜流道的无水箱相变太阳能热水器
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. 圆筒形过滤器阻力模拟分析
+                                    </li>
+                                    <li class="childlist-item">
+                                        4. 超大面积单向流洁净室气流组织均匀性分析与优化
+                                    </li>
+                                    <li class="childlist-item">
+                                        5. 废液废气焚烧炉燃烧效果和SNCR模拟研究
+                                    </li>
+                                    <li class="childlist-item">
+                                        6. 高效燃烧器仿真分析、改进与三通道阀体技术标准建立
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2013年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 机械式粗虑器过滤效率测试
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 上海市电信企业能源审计
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. 方形过滤器阻力模拟分析
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2012年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 上海市卢湾区第126和127街坊项目冬季办公大堂热环境CFD模拟分析
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 青岛福瀛天麓湖风环境与热环境模拟分析
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. 中新天津生态城滨海家园热岛效应模拟
+                                    </li>
+                                    <li class="childlist-item">
+                                        4. 冷凝式燃气热水器铜制小管径换热器优化
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2010年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 地铁隧道活塞风井作用及其优化研究
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 汽车零部件热冲压关键技术在车身覆盖件轻量化技术上的应用研究
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. 燃用无烟煤超临界锅炉燃烧系统数值模拟研究
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2008年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 硅钢加热炉高温段炉内温度场模拟试验
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 中海瀛台小区室外风环境分析与评价
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. 杭州科技馆自然通风模拟
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2007年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. Energy saving potential investigation of floor level air supply system
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="patents-list"><h4 class="list-title"><i class="m-icon iconfont icon-zhuanjia1"></i>代表性专利&nbsp;&nbsp;Representative
+                        Patent
+                    </h4>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2016年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 一种低温余热驱动的热电并供方法及实现该方法的系统
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2015年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 一种低温余热驱动的热电联产系统
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2014年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 一种低品位余热驱动的冷热电联产系统
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2013年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. 一种有机朗肯循环与热泵循环的耦合系统
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="papers-list"><h4 class="list-title"><i class="m-icon iconfont icon-lunwen1"></i>代表性论文&nbsp;&nbsp;Representative
+                        Papers
+                    </h4>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2016年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. Wind tunnel tests of inter-flat pollutant transmission characteristics in
+                                        a rectangular multi-story residential building, part A: effect of wind
+                                        direction
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. Investigation on a spectral splitting photovoltaic/thermal hybrid system
+                                        based on polypyrrole nanofluid: preliminary test
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. Investigation on the fluid selection and evaporation parametric
+                                        optimization for sub- and supercritical organic Rankine cycle
+                                    </li>
+                                    <li class="childlist-item">
+                                        4. 进气孔形状对涡旋膨胀机进气过程压力损失的影响研究
+                                    </li>
+                                    <li class="childlist-item">
+                                        5. Numerical simulation on the temperature field in an equipment cabin of a
+                                        high-speed railway train.
+                                    </li>
+                                    <li class="childlist-item">
+                                        6. 冷源温度对小型ORC低温余热发电系统的影响
+                                    </li>
+                                    <li class="childlist-item">
+                                        7. 低温余热驱动的热电复合系统优化设计
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2015年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. Accelerative iteration for coupled conductive-radiative heat transfer
+                                        computation in semitransparent media
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 分布式冷热电能源系统优化设计及多指标综合评价方法的研究
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. The transport of gaseous pollutants due to stack and wind effect in
+                                        high-rise residential buildings
+                                    </li>
+                                    <li class="childlist-item">
+                                        4. Ventilation for Healthy Indoor Environment in Various Types of Buildings.
+                                        International Journal of Ventilation
+                                    </li>
+                                    <li class="childlist-item">
+                                        5. Experimental testing and numerical simulation of scroll expander in a
+                                        small scale Organic Rankine Cycle
+                                    </li>
+                                    <li class="childlist-item">
+                                        6. The airborne transmission of infection due to the stack effect in
+                                        high-rise residential buildings
+                                    </li>
+                                    <li class="childlist-item">
+                                        7. The airborne transmission of infection between flats in high-rise
+                                        residential buildings: A review
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2014年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. A numerical analysis of train-induced airflow and performance evaluation
+                                        of a subway ventilation system
+                                    </li>
+                                    <li class="childlist-item">
+                                        2. 静压箱对地板送风气流组织与温度分层特性的影响
+                                    </li>
+                                    <li class="childlist-item">
+                                        3. 有机朗肯循环涡旋膨胀机性能试验研究
+                                    </li>
+                                    <li class="childlist-item">
+                                        4. The dynamics of human wake due to the motion and its effects on the
+                                        indoor environment and contaminant transport in a displacement ventilated
+                                        office room
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left">2013年</li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. Co-occupant’s exposure to exhaled pollutants with two types of
+                                        personalized ventilation strategies under mixing and displacement
+                                        ventilation systems
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-item list-item-left"></li>
+                            <li class="list-item list-item-right">
+                                <ul class="childlist">
+                                    <li class="childlist-item">
+                                        1. Wind tunnel tests of inter-flat pollutant transmission characteristics in
+                                        a rectangular multi-story residential building, part B: effect of source
+                                        location
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-sidebar">
+                <div class="item-sidebar-wrapper">
+                    <h4 class="subtitle">专家推荐服务</h4>
+                    <p class="subtitle-caption">10000+深度合作专家 提供专业咨询</p>
+                    <form class="consult-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="您的姓名" value="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="tel">
+                                +86
+                            </div>
+                            <input name="username" type="text" placeholder="请输入您的手机号" value="" class="form-control phone-text">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="code" placeholder="请输入您的验证码" value="" class="code-text">
+                            <button type="button" class="btn-send-code">发送验证码</button>
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" placeholder="您想要了解..." rows="5" value="" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">联系该机构</button>
+                        </div>
+                    </form>
+                    <div class="sidebar-w">
+                        <h3 class="title">相关专家
+                        <a href="/experts/search?text=%E5%BB%BA%E7%AD%91%E4%B8%8E%E5%9C%B0%E4%B8%8B%E7%A9%BA%E9%97%B4%E7%9A%84%E9%80%9A%E9%A3%8E%E5%92%8C%E7%83%AD%E9%97%AE%E9%A2%98"
+                           class="refresh">查看更多&gt;
+                        </a></h3>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-list-item"><a href="/experts/596ef6d7ad8b321e886e7838" class=""
+                                                             target="_blank"><span class="list-item-number">1</span>
+                                <div class="list-item-info">
+                                    <div class="m-cover m-avatar"
+                                         style="background-image: url(https://res2.maikeji.cn/FlUDABUE7Y4V-4_danINetKqOcOy);"></div>
+                                    <div class="info"><p class="text">高乃平</p>
+                                        <p class="text" style="display: none;"><span></span><span class="divider"
+                                                                                                  style="display: none;"> | </span><span>同济大学</span>
+                                        </p></div>
+                                </div><!----></a></li>
+                            <li class="sidebar-list-item"><a href="/experts/55b8dbf3695a327710000031" class=""
+                                                             target="_blank"><span class="list-item-number">2</span>
+                                <div class="list-item-info">
+                                    <div class="m-cover m-avatar"
+                                         style="background-image: url(https://res2.maikeji.cn/FqvN5FD_PPoca2nX87wjnORQjU-y);"></div>
+                                    <div class="info"><p class="text">裴 刚 </p>
+                                        <p class="text"><span>教授</span><span
+                                                class="divider"> | </span><span>中国科学技术大学</span></p></div>
+                                </div>
+                                <div class="tag-container"><span title="太阳能利用" class="tag">太阳能利...</span><span
+                                        title="中低温热力循环" class="tag">中低温热...</span></div>
+                            </a></li>
+                            <li class="sidebar-list-item"><a href="/experts/556462914808dd8c19ea2987" class=""
+                                                             target="_blank"><span class="list-item-number">3</span>
+                                <div class="list-item-info">
+                                    <div class="m-cover m-avatar"
+                                         style="background-image: url(https://res2.maikeji.cn/FtzHRFVy4ARYyOF-K82XQjtg2-bC);"></div>
+                                    <div class="info"><p class="text">代彦军</p>
+                                        <p class="text"><span>教授</span><span
+                                                class="divider"> | </span><span>上海交通大学</span></p></div>
+                                </div>
+                                <div class="tag-container"><span title="太阳能利用与建筑节能" class="tag">太阳能利...</span><span
+                                        title="除湿空调、环境湿度控制传热与传质" class="tag">除湿空调...</span></div>
+                            </a></li>
+                            <li class="sidebar-list-item"><a href="/experts/5525354c4808dd2b783fec71" class=""
+                                                             target="_blank"><span class="list-item-number">4</span>
+                                <div class="list-item-info">
+                                    <div class="m-cover m-avatar"
+                                         style="background-image: url(https://res2.maikeji.cn/FuZFiJPA9uaPKb96nY6OJ784F3kr);"></div>
+                                    <div class="info"><p class="text">连之伟</p>
+                                        <p class="text"><span>教授</span><span
+                                                class="divider"> | </span><span>上海交通大学</span></p></div>
+                                </div>
+                                <div class="tag-container"><span title="室内环境" class="tag">室内环境</span><span title="建筑节能"
+                                                                                                           class="tag">建筑节能</span>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

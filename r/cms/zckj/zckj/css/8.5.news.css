@@ -46,7 +46,7 @@ p {margin: 0 0 10px;}
 .news_85 .item-body .item-content .number {position: absolute;top: 3px;left: 0;height: 100%;width: 120px;}
 .news_85 .item-body .item-content .number .m-icon {display: block;margin: 0 auto;width: 60px;height: 60px;line-height: 60px;font-size: 60px;z-index: 10;color: #666;}
 .news_85 .item-body .item-content .number .iconfont.icon-number-01 {}
-.news_85 .item-body .item-content .number em {position: relative;top: -16px;background-color: #fff;color: #666;font-size: 24px;font-weight: 700;z-index: 11;}
+.news_85 .item-body .item-content .number em {position: relative;top: -8px;background-color: #fff;color: #666;font-size: 24px;font-weight: 700;z-index: 11;}
 .news_85 .item-body .item-content .text {color: #666;text-align: left;border-bottom: 1px solid #eee;min-height: 120px;margin-bottom: 24px;padding-bottom: 18px;line-height: 1.8;font-size: 16px;}
 .news_85 .item-body .item-content .btn {display: inline-block;margin-bottom: 0;font-weight: 400;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;background-color: #f7b52d;border-color: #f7b52d;color: #fff;padding: 7.5px 30px;width: 170px;font-size: 20px;margin-left: 140px;}
 

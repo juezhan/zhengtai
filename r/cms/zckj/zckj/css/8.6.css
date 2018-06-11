@@ -72,8 +72,8 @@ p {margin: 0 0 10px;}
 .news_86 .experts-section .experts-section-content .expert-list .tag.long-tag {margin-right: 0;width: 198px;}
 .news_86 .experts-section .experts-section-content .expert-list .tag + .tag{margin-left: 12px;}
 .news_86 .experts-section .experts-section-content .expert-list em {display: block;font-weight: 400;}
-.news_86 .experts-section .experts-section-content .expert-list .m-icon {display: block;color: #fff;}
-.news_86 .experts-section .experts-section-content .expert-list .iconfont {border-radius: 50%;border: 1px solid #ffffff;width: 40px;height: 40px;display: inline-block;line-height: 40px;font-family:serif;text-align: center;font-size: 32px;}
+.news_86 .experts-section .experts-section-content .expert-list .m-icon {display: block;font-size: 36px;color: #fff;-ms-transform: rotate(90deg);transform: rotate(90deg);}
+.news_86 .experts-section .experts-section-content .expert-list .iconfont {}
 .news_86 .experts-section .experts-section-content .expert-list .img-container:hover .img-caption{display: flex;}
 .news_86 .experts-section .experts-section-content .expert-list .text-container {display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;-ms-flex-pack: distribute;justify-content: space-around;padding: 20px 0;height: 100px;background-color: #f4f4f4;}
 .news_86 .experts-section .experts-section-content .expert-list .text.title-text {font-size: 16px;color: #706f6f;}

@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="keywords" content="${channel.keywords!}"/>
+    <meta http-equiv="description" content="${channel.description!}"/>
+
+    <title>${channel.title!channel.name} - ${site.name}</title>
+
+    <script src="${resSys}/prefixfree.min.js" type="text/javascript"></script>
+    <script src="/${res}/js/jquery-3.3.1.min.js"></script>
+    <script src="${resSys}/front.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+    <link href="/${res}/css/8.8.css" rel="stylesheet"/>
+    <link href="/${res}/css/icon.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="/${res}/js/html5shiv.min.js"></script>
+    <script src="/${res}/js/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body class="news_88">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="container news_88-w">
+    <div class="organization-header">
+        <div class="h3">合作机构</div>
+        <hr>
+        <span class="span">我要入驻</span>
+    </div>
+    <div>
+        <ul class="organization-list">
+            [@cms_content_page channelId=channel.id count='20' titLen='15' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1']
+            [#list tag_pagination.list as a]
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box">
+                        <a href="${a.url}" class="img" target="_blank"
+                           style="background-image: url(https://res2.maikeji.cn/FuQ0AqrHvgQvt8EBFnwAb_0JkAlb);"></a>
+                        <div class="bar">
+                            <span><i class="iconfont icon-didian"></i>上海长宁</span>
+                        </div>
+                    </div>
+                    <a href="${a.url}" class="organization-title" target="_blank">${a.title}</a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            化工产品开发、高性能特种材料、土壤污染修复技术、节能减排VOC治理技术、气/液/固高效分离技术、生态/毒理/健康的危害评估、化学品安全防范、应急处置、危险性鉴定、检测、甲级设计、环评、咨询
+                        </div>
+                    </div>
+                </div>
+            </li>
+            [/#list]
+            [/@cms_content_page]
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box">
+                        <a href="#" class="img" target="_blank"
+                           style="background-image: url(https://res2.maikeji.cn/FvWrYnQA0RBjashg8PGYMlFLFS_l);"></a>
+                        <div class="bar">
+                            <span><i class="iconfont icon-didian"></i>上海松江</span>
+                        </div>
+                    </div>
+                    <a href="#" class="organization-title" target="_blank">中美中心</a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            健康医疗科技、农业科技、新材料领域、智能制造&amp;物联网
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FuWYH-WB5CnaiolyEe4Kjc--twES);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        江苏常州
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        机械科学研究总院江苏分院
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            智能制造研发、光烧结快速成型、复合材料成型技术与装备、铸件表面柔性打磨清理系统、激光加工设备成套技术、超高强刚钢成型技术与装备、轻合金成型、模具材料开发、摩擦及润滑材料开发、微纳米技术开发
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/Fl291Lh-bNeFkv6P3-3--o4Rzs87);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海杨浦
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        上海微谱化工技术服务有限公司
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            材料逆向开发、食品饮料检测开发、金属加工及表面处理、工业及民商清洗剂检测开发、纺织印染助剂、日化用品、化妆品
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FtJS1uoTta1Oom9Zp4UDIX5zYQBz);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海徐汇
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        上海交通大学
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            综合型研究、微米/纳米加工技术、船舶与海洋工程、金属基复合材料、轻合金精密成型、汽车电子控制技术
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FsBhBdWFRRwqJVrDKHAqqIqa7gPk);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海杨浦
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        同济大学
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            土木工程、污染控制与资源化研究、新能源汽车及动力系统、燃料电池汽车及动力系统工程技术、先进微结构材料
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/Ftdg6RI1_t4tCAMiiN1Es-hlKZki);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海宝山
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        上海大学
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            钢冶金与光纤、高品质特殊钢冶金与制备、新型显示技术及应用、材料复合与先进分散技术
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FrfTxlZw_8O9sDLlixeimIf3XOXY);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海徐汇
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        华东理工大学
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            化学工程、高浓度难降解有机废水处理、先进功能材料及其制备、大数据流通与交易技术、生化工程技术、煤气化及能源化工
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/Flr-e8ZjaZsdKu4TQ4tm8If3IlqT);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        北京朝阳
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        北京化工大学
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            化学工程与技术、控制科学与工程、有机无机复合材料、碳纤维工程技术、轮胎设计与制造工艺
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FmqdAChkSuvbsE2KpJuRq_HCgLTN);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海浦东新区
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        迈科技产业技术研究院
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">化工环保新材料
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FiJXLcI_CGw9a-4ntTXZoqi9J9Mv);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        江苏镇江
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        北京交通大学长三角研究院
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            电气工程、机械与电子控制工程、锂电池安全监测评估、新能源驱动系统、轨道交通牵引控制系统、轨道交通电工新技术
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FpigUBcbdMVQPimXj-x29YphRrJ6);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        浙江杭州
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        杭州师范大学
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            氟硅化学品、有机硅化学及材料技术、手性分子合成组装及应用、药用植物种质改良与质量控制技术、精细化学品生产化工过程、湿地生态修复与资源利用
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FiNvqH1uyowsqudtJn587fhqNokP);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        浙江宁波
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        中国科学院宁波材料所
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            材料技术、高分子材料、磁性材料、纳米材料、能源技术、光伏技术、储能技术、先进制造
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FrMXl7qJZw0BFCnBhoTRYA_KF9v8);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        江苏常州
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        中国科学院合肥物质科学研究院先进制造所
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">智能制造、机器人技术、智能车辆、数字化技术
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box"><a
+                            href="#" class="img"
+                            target="_blank"
+                            style="background-image: url(https://res2.maikeji.cn/FqHGMQK6w5rzqlOP22POwCE1Q1Av);"></a>
+                        <div class="bar"><span>
+                            <i class="iconfont icon-didian"></i>
+        上海长宁
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title"
+                       target="_blank">
+                        中国科学院上海微系统与信息技术研究所
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            传感微系统技术、信息功能材料、宽带无线技术、太赫兹固态技术、仿生视觉系统、微系统加工技术、超导材料与器件、传感技术
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="organization-item-container">
+                    <div class="img-box">
+                        <a href="#" class="img" target="_blank"
+                           style="background-image: url(https://res2.maikeji.cn/FkjaVsYBb1t0ZzCB3pJd-IiLjDBd);"></a>
+                        <div class="bar">
+                            <span>
+                            <i class="iconfont icon-didian"></i>
+        上海徐汇
+      </span></div>
+                    </div>
+                    <a href="#" class="organization-title" target="_blank">
+                        中国科学院上海生命科学研究院植物生理生态研究所
+                    </a>
+                    <div class="organization-info">
+                        <div class="organization-tag overflow-hidden">
+                            生物科学、抗生素生物合成、纤维素利用、现代农业与空间生物学、生物制氢、优质抗逆农作物基因工程育种、微生物发酵
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <nav aria-label="Page navigation" class="list-pagination">
+            <ul class="pagination">
+                <li class="active"><a href="#" class="">1</a></li>
+                <li class=""><a href="#" class="">2</a></li>
+                <li><a href="#" class="" aria-label="Next"><span aria-hidden="true">下一页</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

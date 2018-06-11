@@ -26,7 +26,7 @@ p {margin: 0 0 10px;}
 .list-pagination .pagination li.active a {background-color: #1f86ed;color: #fff;border-color: #1f86ed;}
 
 
-.news_813{background-color: #eee;font-size: 14px;line-height: 1.42857143;}
+.news_813{background-color: #eee;font-size: 14px;line-height: 1.42857143;padding-top: 100px;}
 .news_813 a{display: block;color: #337ab7;text-decoration: none;}
 .news_813 .tab-container {margin-bottom: 0;padding-bottom: 18px;width: 100%;border-bottom: 2px solid #e1dede;font-size: 18px;font-weight: 700;}
 .news_813 .tab-container .tab {display: inline-block;margin-right: 26px;height: 24px;cursor: pointer;color: #828a92;}

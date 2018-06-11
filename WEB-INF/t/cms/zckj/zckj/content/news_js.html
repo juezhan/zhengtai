@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${title} - ${site.name} - Powered by JEECMS</title>
+<meta content="${content.tagStr!}" http-equiv="keywords" />
+<meta content="${content.description!}" http-equiv="description" />
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+
+<link type="text/css" rel="stylesheet" href="/${res}/css/8.5.news.css" />
+
+<!--[if lt IE 9]> 
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+$(function() {;
+Cms.checkPerm("${base}","${content.id}");
+Cms.collectCsi("${base}","collectCsiDiv","collect_csi","${content.id}");
+Cms.attachment("${base}","${content.id}","${content.attachments?size}","attach");
+Cms.viewCount("${base}","${content.id}");
+Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwitch?string}");
+});
+</script>
+
+<script type="text/javascript"> 
+jQuery(document).ready(function($){ 
+$('.content-comment').click(function(){
+	$('html,body').animate({scrollTop:$('#comments-text').offset().top}, 1000)
+	$('#comments-text').focus();
+	});  
+});
+
+$(function(){
+	//设置一个定时器，为BUTTON点击事件用
+	var timer=null;
+	var number1=0;
+
+	//文本输入时改变
+	$('#comments-text').keyup(function(){
+		if(!$(this).val()==''){
+			$('.submit-on').attr("class", "submit-out");
+		}else{
+			$(".submit-out").attr("class", "submit-on");
+		}
+	});
+	
+	//处理输入的内容是文字还是字母的函数
+	function getLength(str){
+		return String(str).replace(/[^\x00-\xff]/g,'aa').length;
+	};
+	
+});
+</script>
+
+<head>
+<body class="news_85">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="news_85-w">
+  <div class="container">
+    <div class="bread">
+      <a href="#">首页</a><span>&gt;</span><a href="#">机构</a><span>&gt;</span><a href="#">中国科学院宁波材料所 </a>
+    </div>
+    <div class="mn">
+      <div class="item-head">
+        <div class="card">
+          <div class="mc">
+            <div class="avatar"
+                 style="background-image: url('https://res2.maikeji.cn/Fry-YLQy2ztTrPfrqdQJe2hdyywr')"></div>
+            <div class="item-head-text">
+              <div class="title">
+                <span class="pull-left cooperation-tag">市场渠道合作</span>${content.title}
+              </div>
+              <p class="text">
+                该技术能有效控制微球粒径和表面形貌调控，能最大限度制造中空率，降低TiO2消耗，相对进口产品，其最终产品成本减少50%；项目团队与印度INDOFIL公司仅半年就攻克对方多年未解决的难点，完成85%的技术指标，可应用于涂料、纸张、皮革、化妆品等领域。
+              </p>
+              <div>
+                <a to="/technologies?text=水乳液" target="_blank" class="tag">水乳液</a>
+                <a to="/technologies?text=钛白粉" target="_blank" class="tag">钛白粉</a>
+                <a to="/technologies?text=涂料" target="_blank" class="tag">涂料</a>
+                <a to="/technologies?text=中空结构" target="_blank" class="tag">中空结构</a>
+                <a to="/technologies?text=遮盖性" target="_blank" class="tag">遮盖性</a>
+              </div>
+              <div>
+                <button class="btn">联系技术方</button>
+                <span class="span-s">&nbsp;&nbsp;&nbsp;咨询：0&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;浏览：46</span>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix caption">
+            <div class="cell"><label>技术编号：</label>T2018060006</div>
+            <div class="cell"><label>成熟度：</label>小试阶段</div>
+            <div class="cell"><label>来源地：</label>中国</div>
+            <div class="cell"><label>合作方式：</label>技术入股、委托开发、其他</div>
+            <div class="cell"><label>合作价格：</label>面议</div>
+            <div class="cell"><label>专利：</label>有</div>
+            <div class="cell"><label>交付形式：</label>产品</div>
+            <div class="cell "><label>所属领域：</label>材料科技</div>
+            <div class="cell "><label>此技术可用于：</label>涂料、高分子化学</div>
+          </div>
+        </div>
+      </div>
+      <div class="item-body">
+        <div class="item-content">
+          <div class="card">
+            <div class="sub-title">方案描述</div>
+            <div class="text-container">
+              <div class="text-wrapper">
+                  <span class="number">
+                    <span class="m-icon">
+                      <i class="iconfont icon-number-01"></i>
+                    </span>
+                    <em>技术详述</em>
+                  </span>
+                <div class="text fr-view">
+                  <p><strong>一、项目亮点</strong></p>
+                  <p>
+                    所用聚合物单体为大通用原料，其成本最低，产品中无VOCs，属于环保产品，现阶段主要应用于水性涂料中用于改善TiO<sub>2</sub>效率。它促进涂料应用和性能改进，降低TiO<sub>2</sub>的消耗，减少各类水性涂料的成本，且能在不损耗涂料中其他配方的基础上提供最大包覆空间（40-50%），这也为该产品的进阶应用提供良好基础，如药物缓释，纳米金属离子包覆等潜在应用。
+                  </p>
+                  <p><strong>二、团队介绍</strong></p>
+                  <p>
+                    团队共有15人，其中教授级高工1名，高级工程师4人，硕士或中级以上技术人员10人。曾承担国家、省部级及横向项目近10余项，科研经费约1000万元，研发研发产品获得“国家重点新产品”，上海市专利新产品、上海市优秀发明选拔赛等荣誉。<br>团队主要从事高分子材料的合成及改性，分两大类，丁苯树脂和聚丙烯酸酯乳液。团队成员专业背景主要涉及材料工程、化学工程、化学工艺、有机化学、工业催化。
+                  </p>
+                  <p><strong>三、技术背景</strong></p>
+                  <p>
+                    中空高分子微球是在高分子合成技术进步的基础上进行粒子形态控制的产物。中空高分子微球的制备迄今已发展了碱溶胀法、碱酸溶胀法、模板法等。目前，罗门哈斯(现陶氏杜邦化学)公司已开发出中空高分子微球乳液用作乳胶涂料中的遮盖剂。国内有一些用碱酸溶胀法制备中空高分子微球的报道，但其单分散性不理想、粒径小、中空度低，微球形貌不规整，表面粗糙不光滑，很大程度上影响了乳液的使用性能。<br>目前国外钛白粉的价格已大幅上涨，越来越多的企业开始考虑到中空微球聚合物乳液的应用效果，并逐渐开始部分替代钛白粉在涂料中的应用。虽然国内，现在钛白粉市场处于平稳期，但据专家分析，在不久后国内钛白粉价格也会出现较大的涨幅，而且，轻质化新材料的开发也是未来材料行业的发展趋势，所以提早掌握技术，开发能与进口商品相媲美的国产产品，对于我国今后的发展有着非常重要的作用。<br><strong>四、技术原理</strong>
+                  </p>
+                  <p>
+                    中空高分子微球内部是空腔，其内充满空气，由于空气聚合物界面处的折光指数的差异以及空气泡对光线的高散射，中空高分子微球有很强的遮盖效果，因此可用作水性涂料中遮盖聚合物助剂，取代部分钛白粉，涂料的对比率基本保持不变。而由于颜基比的降低，涂膜的成膜性能会更好，有利于提高涂膜的耐水性、耐洗刷性能、提高涂料的户外保色性等，同时配方成本显著降低。<br><strong>五、应用影响</strong>
+                  </p>
+                  <p>
+                    目前国内所采用的普通碱溶胀、碱酸溶胀技术所制备的中空微球乳液，普遍存在单分散性不理想、粒径小、中空度低，微球形貌不规整，表面粗糙不光滑的缺点。我们所采用的动态协同中空结构制备技术，能有效的控制微球粒径和表面形貌调控，并且能最大限度的制造中空率。</p>
+                  <p><strong>① 原料及成本优势：&nbsp;</strong>制备技术中所使用的原料均为大通用原料，最终产品成本可相对进口产品减少50%。<br><strong>②
+                    性能优势：</strong>部分代替TiO<sub>2</sub>，改善材料光学特性，增量增白，与TiO<sub>2</sub>颗粒尺寸相近，但质轻且分布窄，最大限度的提供包覆空间，使复合材料轻质化，减小成本，可与水形成单分散性乳液，无VOCs。在水性涂料应用中，有巨大的潜力，由于其自身的中空结构，使得其在皮革修复改性、纸张改性、化妆品增效、药物缓释、皮肤保护等方面也有着潜在的应用潜力。
+                  </p>
+                  <p><strong>③ 政策及社会发展优势：</strong>早在2016年，欧洲食品安全局（EFSA）就提出食品中的纳米级二氧化钛颗粒添加剂具有潜在的致癌作用，虽然在涂料应用中，并未直接证明钛白粉的致癌性，但国际涂料行业巨头，如阿克苏诺贝尔、PPG都已经寻找能替代钛白粉的材料。至此，中空微球聚合物乳液的优势再次被发掘。今后的材料发展趋势主要是轻质、高效、环保，所以开发新材料代替传统。
+                  </p>
+                  <p><strong>六、未来投入与收益</strong></p>
+                  <p>
+                    目前进口产品售价约为10元/吨，我们的产品成本能控制在5元/吨，减小50%成本。前期在市场渠道上困难较大，所以主要集中在技术的深度开发和优化，以及中试技术的验证，中期市场打开后开始中试生产及产业化发展，后期主要通过走量和技术支持服务来获得收益。<br><strong>七、合作方式</strong>
+                  </p>
+                  <p>1、共同研发；</p>
+                  <p>2、委托开发；</p>
+                  <p>3、合作方提供生产条件，我方提供技术，合作生产。</p></div>
+              </div>
+              <div class="text-wrapper">
+                  <span class="number">
+                    <span class="m-icon">
+                      <i class="iconfont icon-number-02"></i>
+                    </span>
+                    <em>技术优势</em>
+                  </span>
+                <div class="text fr-view">
+                  <p>本技术具有以下优势：</p>
+                  <ol>
+                    <li>用于改善TiO<sub>2</sub>效率；</li>
+                    <li>促进涂料应用和性能改进，降低TiO<sub>2</sub>的消耗，减少各类水性涂料的成本；</li>
+                    <li>能在不损耗涂料中其他配方的基础上提供最大包覆空间（40-50%）；</li>
+                    <li>相对进口产品，其最终产品成本减少50%；</li>
+                    <li>能有效的控制微球粒径和表面形貌调控，并且能最大限度的制造中空率。</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="text-wrapper">
+                  <span class="number">
+                    <span class="m-icon">
+                      <i class="iconfont icon-number-03"></i>
+                    </span>
+                    <em>效果指标</em>
+                  </span>
+                <div class="text fr-view">
+                  <p>目前，本技术处于小试阶段，其效果指标如下：</p>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">Physical Properties&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">Specifications&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">重量固含量， wt %&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">30 -32&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">体积固含量 ，%&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">50.1- 56.1&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">中空率， %&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">40-45 %&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">Brookfield粘度，CPs&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">&lt;500&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">pH&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">8-8.5&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: justify;" width="50%">湿密度，g/mL</td>
+                      <td style="text-align: justify;" width="50%">1.01-1.03</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: justify;" width="50%">干密度，g/cm3</td>
+                      <td style="text-align: justify;" width="50%">0.57- 0.62</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">平均粒径，nm&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">300-500&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">乳液稳定性&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">粘度不变 , 无沉淀&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: top;" width="50%">成分特征&nbsp;</td>
+                      <td style="vertical-align: top;" width="50%">无氨，无甲苯、无甲醛等VOCs</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="text-wrapper">
+                  <span class="number">
+                    <span class="m-icon">
+                      <i class="iconfont icon-number-04"></i>
+                    </span>
+                    <em>案例详述</em>
+                  </span>
+                <div class="text fr-view">
+                  <p><strong>主要应用案例</strong></p>
+                  <p>项目团队与印度MODI基团旗下INDOFIL公司共同开发此类产品，仅半年就攻克对方多年未解决的难点，完成85%的技术指标，以此促进了双方进一步的合作和开发。</p>
+                </div>
+              </div>
+              <div class="text-wrapper">
+                  <span class="number">
+                    <span class="m-icon">
+                      <i class="iconfont icon-number-05"></i>
+                    </span>
+                    <em>适用对象</em>
+                  </span>
+                <div class="text fr-view">
+                  <p>本技术可应用于涂料、纸张、皮革、化妆品等领域。</p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-secondary item-head-btn-func">联系技术方
+            </button>
+          </div>
+        </div>
+        <div class="item-sidebar">
+          <div class="card">
+            <div style="">
+              <h4 class="title">相关技术
+                <a href="javascript:void(0)" class="refresh" style="">
+                    <span class="m-icon">
+                      <i class="iconfont icon-huanyihuan m-icon-refresh"></i>
+                    </span>
+                  换一换
+                </a>
+              </h4>
+              <div class="sidebar-list">
+                <div class="technology-list-item-simple sidebar-list-item">
+                  <a href="#" class="list-item-wrapper" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FpjfkCMFEKrEui03zlI5nfoe2lVn);">
+                    </div>
+                    <div class="list-item-content">
+                      <h3 class="list-item-title">可膨胀微球作为轻质填料或发泡剂的应用</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="technology-list-item-simple sidebar-list-item">
+                  <a href="#" class="list-item-wrapper" target="_blank">
+                    <div class="m-cover" style="background-image: url(https://res2.maikeji.cn/FtwbhdkZfJiA-UhvsMJ94EAIyzcf);"></div>
+                    <div class="list-item-content">
+                      <h3 class="list-item-title">一种乳液法制备TiO2/SiO2气凝胶微球的方法</h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="technology-list-item-simple sidebar-list-item">
+                  <a href="#" class="list-item-wrapper" target="_blank">
+                    <div class="m-cover"
+                         style="background-image: url(https://res2.maikeji.cn/FvCYj7q58FxHIZ5IOSrPw059LDFj);">
+                    </div>
+                    <div class="list-item-content">
+                      <h3 class="list-item-title">【加拿大】中空二氧化硅微球体 （纳米微载体污水处理材料）</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

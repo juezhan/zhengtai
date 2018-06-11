@@ -18,7 +18,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .bread span{font-family: serif;margin: 0 2px;}
 .bread a:last-child{color:#66b0ed}
 
-.news_89{}
+.news_89{padding-top: 80px;}
 .news_89 .news_89-w{background-color: #eeeeee;padding-bottom: 48px;}
 .news_89 .news_89-w .container{}
 .news_89 .mn{display: flex;}

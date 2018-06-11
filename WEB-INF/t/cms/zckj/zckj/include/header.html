@@ -48,7 +48,7 @@
                     <div class="item">
                         <div class="tt">
                             [#if channel.parentId??]
-                            <a href="${c.url}" class="${c.url}[#if channel.parentId==c.id] active[/#if]" data-target="#cnt_${c.id}">${c.name}</a>
+                            <a href="${c.url}" class="tt-cell[#if channel.parentId==c.id] active[/#if]" data-target="#cnt_${c.id}">${c.name}</a>
                             [#else]
                             <a href="${c.url}" class="tt-cell[#if channel.id==c.id] active[/#if]" data-target="#cnt_${c.id}">${c.name}</a>
                             [/#if]
@@ -79,7 +79,6 @@
 </div>
 <script>
   var mt = null
-  var mt = null
   $('#navigationBar a.tt-cell').each(function (e) {
     $(this).hover(function () {
       $($(this).data('target')).addClass('active').siblings().removeClass('active');
@@ -101,4 +100,22 @@
     })
   })
 </script>
+<div class="sign-dialog">
+    <div class="mw"></div>
+    <div class="sign-dialog-w">
+        <h1>
+        [#if user??]
+        OK
+        [#else]
+        NO
+        [/#if]
+        </h1>
+        <form id="jvForm" action="${base}/login.jspx" method="post">
+            <div><input id="username" name="username" class="required login-input" type="text" placeholder="用户名"></div>
+            <div><input id="password" name="password" class="required password-input" type="password" placeholder="密码"></div>
+            <div><div class="captcha-con clearfix"><i></i><input type="text" id="captcha" name="captcha" class=""required captcha-input" placeholder="验证码"/><img src="${base}/captcha.svl" onclick="this.src='${base}/captcha.svl?d='+new Date()*1" /></div></div>
+            <div><input type="submit" class="login-btn" value="登 录"></div>
+        </form>
+    </div>
+</div>
 <!-- header 结束 -->

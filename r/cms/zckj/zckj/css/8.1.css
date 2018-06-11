@@ -35,8 +35,8 @@ p {margin: 0 0 10px;}
 .item-catalog-container .catalog-item a.nuxt-link-active {}
 
 .item-catalog-container .divider {}
-.left {float: left;}
-.right{float: right;}
+/*.left {float: left;}*/
+/*.right{float: right;}*/
 .m-avatar {position: relative;margin: 0 auto;width: 132px;min-width: 132px;height: 132px;line-height: 126px;border-radius: 132px;background-color: #999;color: #666;text-align: center;font-size: 58px;}
 
 .news_81 {background-color: #ffffff;font-size: 14px;line-height: 1.42857143;}
@@ -80,7 +80,7 @@ p {margin: 0 0 10px;}
 .news_81 .info-bar .iconfont.icon-xitongtongzhi {}
 .news_81 .info-bar .text-list-container {height: 50px;overflow: hidden;}
 .news_81 .info-bar .text-list {position: relative;width: 450px;animation: loop2 50s linear infinite;}
-.news_81 .info-bar .text-list .text {height: 50px;line-height: 50px;font-size: 16px;}
+.news_81 .info-bar .text-list .text {height: 50px;line-height: 50px;font-size: 16px; padding: 0 20px;}
 .news_81 .info-bar .text-list .text a {display: inline-block;text-decoration: underline;color: #f7b52d;}
 
 /* ===== section-block ===== */
@@ -103,7 +103,7 @@ p {margin: 0 0 10px;}
 /* ============ nav-section ============ */
 .news_81 .nav-section {padding: 20px 0;background-color: #f5f5f5;}
 .news_81 .nav-section .holy-grail {display: -ms-flexbox;display: flex;-ms-flex-pack: justify;justify-content: space-between;max-width: 1200px;margin: 0 auto;}
-.news_81 .nav-section .nav-item {display: -ms-flexbox;display: flex;-ms-flex-align: center;align-items: center;-ms-flex-pack: distribute;justify-content: pace-around;padding: 0 10px;width: 236px;height: 110px;background-color: #fff;cursor: pointer;}
+.news_81 .nav-section .nav-item {display: -ms-flexbox;display: flex;-ms-flex-align: center;align-items: center;-ms-flex-pack: distribute;justify-content: space-around;padding: 0 10px;width: 236px;height: 110px;background-color: #fff;cursor: pointer;}
 .news_81 .nav-section .nav-item:hover {box-shadow: 0 0 4px rgba(0,0,0,.3);}
 .news_81 .nav-section .title {margin-bottom: 6px;font-size: 24px;font-weight: 700;color: #666;}
 .news_81 .nav-section .text {margin-bottom: 0;color: #999;}
