@@ -37,14 +37,13 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="ad-message">
         <div class="container">
-
-            <h1>发表留言</h1>
+            <h2 class="experts-section-title"><i></i>发表留言<i></i></h2>
             <form id="guestbookForm" action="${base}/guestbook.jspx"  method="post">
                 <div class="message_inf">
                     <div class="line"></div>
-                    <p><span>类别</span>
+                    <p><span>类别:</span>
                         <select name="ctgId">
                             [@cms_guestbook_ctg_list siteId=site.id]
                             [#list tag_list as ctg]
@@ -53,20 +52,20 @@
                             [/@cms_guestbook_ctg_list]
                         </select>
                     </p>
-                    <p><span>邮箱</span><input type="text" name="email" class="message_email"
-                                             maxlength="100"/><span>手机号</span><input type="text" name="phone"
+                    <p><span>邮箱:</span><input type="text" name="email" class="message_email"
+                                             maxlength="100"/><span>手机号:</span><input type="text" name="phone"
                                                                                      maxlength="50"
                                                                                      class="message_phone"/><span
-                            style="width:auto;">QQ</span><input type="text" name="qq" class="message_qq"/></p>
+                            style="width:auto;">QQ:</span><input type="text" name="qq" class="message_qq"/></p>
                     <div class="line"></div>
-                    <p><span>标题</span><input type="text" name="title" class="message_title" maxlength="255"/></p>
-                    <p><span>内容</span><textarea name="content" cols="55" rows="4" class="message_txt"></textarea></p>
-                    <p><span>验证码</span><input type="text" name="captcha" maxlength="20" vld="{required:true}"
+                    <p><span>标题:</span><input type="text" name="title" class="message_title" maxlength="255"/></p>
+                    <p><span style="vertical-align: top;display: inline-block;margin-top: 18px;">内容:</span><textarea name="content" cols="55" rows="10" class="message_txt"></textarea></p>
+                    <p><span>验证码:</span><input type="text" name="captcha" maxlength="20" vld="{required:true}"
                                               class="message_code"/><img id="guestbookCaptcha" src="${base}/captcha.svl"
                                                                          onclick="this.src='${base}/captcha.svl?d='+new Date()*1">
                     </p>
                     <input type="hidden" name="token" id="token" value="${token!}"/>
-                    <p style="margin-top:30px; position:relative;"><input type="hidden" name="sessionId"
+                    <p style="margin-top:30px; position:relative;width: 100px;margin: auto;"><input type="hidden" name="sessionId"
                                                                           id="sessionId"/>
                         <input type="submit" id="submit" class="message_btn" value="发表留言"/>
                         <!--<a class="tolist">查看留言列表</a>--></p>

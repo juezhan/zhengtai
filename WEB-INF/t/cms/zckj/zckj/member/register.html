@@ -38,7 +38,7 @@
       <li><span>设置密码</span><input id="password" type="password" name="loginPassword" vld="{required:true,rangelength:[${site.passwordMinLen},20]}" class="register-input" /></li>
       <li><span>确认密码</span><input type="password" equalto="#password" vld="{required:true,rangelength:[${site.passwordMinLen},20]}" class="register-input" /></li>
       <li><span>验证码</span><input type="text" maxlength="20" name="captcha" class="register-input register-code" /><i class="code-img"><img id="guestbookCaptcha"   alt="" src="${base}/captcha.svl"></i></li>
-      <li class="register-txt"><input type="checkbox" class="register-checkbox" />我已阅读并接受<a>《JEECMS注册协议》</a></li>
+      <li class="register-txt"><input type="checkbox" class="register-checkbox" />我已阅读并接受<a>《注册协议》</a></li>
       <li class="register-btn">
       <input type="hidden" name="token"  value="${token!}" />
       <input type="submit" name="register" value="立即注册" />

@@ -72,7 +72,11 @@
                 </div>
             </div>
             <div class="sign">
-                <a href="#" class="sign-in">登录</a>
+                [#if user??]
+                <span id="logout" class="sign-in">退出</span>
+                [#else]
+                <span id="signInBtn" class="sign-in">登录</span>
+                [/#if]
             </div>
         </div>
     </div>
@@ -100,22 +104,89 @@
     })
   })
 </script>
-<div class="sign-dialog">
+<script type="text/javascript">
+  $(function() {
+    $("#guestbookCaptcha").bind("click", function(){
+      $(this).attr("src","${base}/captcha.svl?d="+Math.random());
+    });
+  });
+</script>
+<div class="sign-dialog" id="signDialog">
     <div class="mw"></div>
     <div class="sign-dialog-w">
-        <h1>
-        [#if user??]
-        OK
-        [#else]
-        NO
-        [/#if]
-        </h1>
-        <form id="jvForm" action="${base}/login.jspx" method="post">
-            <div><input id="username" name="username" class="required login-input" type="text" placeholder="用户名"></div>
-            <div><input id="password" name="password" class="required password-input" type="password" placeholder="密码"></div>
-            <div><div class="captcha-con clearfix"><i></i><input type="text" id="captcha" name="captcha" class=""required captcha-input" placeholder="验证码"/><img src="${base}/captcha.svl" onclick="this.src='${base}/captcha.svl?d='+new Date()*1" /></div></div>
-            <div><input type="submit" class="login-btn" value="登 录"></div>
-        </form>
+        <div class="sign-wmn">
+            <div class="tab-t">
+                <a class="tab-t-item " href="${base}/register.jspx" >账户注册</a>
+                <div class="tab-t-item active">账户登录</div>
+            </div>
+            <div class="tab-w active">
+                <form id="jvFormRegister" action="${base}/register.jspx" method="post">
+                    <div>
+                        <input type="text" id="username"  vld="{required:true,rangelength:[${site.usernameMinLen},20],username:true,remote:'username_unique.jspx',messages:{remote:'用户名已存在'}}" name="username" placeholder="3~14字符，中文字符/英文字母/数字" class="register-input" />
+                    </div>
+                    <div>
+                        <input id="password" type="password" name="loginPassword" vld="{required:true,rangelength:[${site.passwordMinLen},20]}" class="register-input" />
+                    </div>
+                    <div>
+                        <input type="password" equalto="#password" vld="{required:true,rangelength:[${site.passwordMinLen},20]}" class="register-input" />
+                    </div>
+                    <div><span>验证码</span><input type="text" maxlength="20" name="captcha" class="register-input register-code" /><i class="code-img"><img id="guestbookCaptcha"   alt="" src="${base}/captcha.svl"></i></div>
+                    <input type="submit" name="register" value="立即注册" />
+                </form>
+            </div>
+            <div class="tab-w active">
+            <form id="jvForm" action="${base}/login.jspx" method="post">
+                <!--<div class="fg">
+                    <div class="fg-lbl">账户</div>
+                    <div class="fg-ipt-w"><input id="username" name="username" class="ipt required login-input" type="text" placeholder="请输入您的账户"></div>
+                </div>
+                <div class="fg">
+                    <div class="fg-lbl">密码</div>
+                    <div class="fg-ipt-w"><input id="password" name="password" class="ipt required password-input" type="password" placeholder="密码"></div>
+                </div>
+                <div class="rpw">
+                    <a href="#" class="rpw-link">忘记密码？</a>
+                </div>
+                <input type="submit" class="login-btn" value="登 录">-->
+            </form>
+        </div>
+        </div>
     </div>
 </div>
+<script>
+    $('#signInBtn').click(function () {
+      $('#signDialog').addClass('active');
+    });
+    //优先执行第三方退出 在执行本地退出
+    $('#logout').click(function () {
+      [#if site.config.qqEnable]
+      //退出qq
+      if(QC.Login.check()){
+        QC.Login.signOut();
+      }
+      [/#if]
+        [#if site.config.sinaEnable]
+      if(WB2.checkLogin()){
+        WB2.logout(function() {
+          //callback function
+        });
+      }
+      [/#if]
+        [#if site.config.qqWeboEnable]
+      T.init({
+        appkey: ${site.config.qqWeboID!}
+      });
+      if(T.loginStatus()){
+        T.logout(function (loginStatus) { // 登出用户
+          // 登录成功
+        });
+      }
+      [/#if]
+        location="${base}/logout.jspx?returnUrl=/";
+    });
+    [#if user??]
+        $('#signDialog').removeClass('active');
+    [#else]
+    [/#if]
+</script>
 <!-- header 结束 -->
