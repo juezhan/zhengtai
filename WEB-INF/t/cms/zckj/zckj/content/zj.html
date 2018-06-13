@@ -385,27 +385,82 @@
                 <div class="item-sidebar-wrapper">
                     <h4 class="subtitle">专家推荐服务</h4>
                     <p class="subtitle-caption">10000+深度合作专家 提供专业咨询</p>
-                    <form class="consult-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="您的姓名" value="" class="form-control">
+                    <div class="ad-message">
+                        <div class="container" style="width: 100%">
+                            <form id="guestbookForm1" action="${base}/guestbook.jspx"  method="post">
+                                <div class="message_inf">
+                                    <div class="line"></div>
+                                    <p><span>类别:</span>
+                                        <select name="ctgId">
+                                            [@cms_guestbook_ctg_list siteId=site.id]
+                                            [#list tag_list as ctg]
+                                            <option value="${ctg.id}">${ctg.name}</option>
+                                            [/#list]
+                                            [/@cms_guestbook_ctg_list]
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <input type="text" name="email" class="message_email message_phone" maxlength="100" placeholder="您的邮箱"/>
+                                        <input type="text" name="phone" maxlength="50" class="message_phone" placeholder="您的手机号"/>
+                                        <input type="text" name="qq" class="message_qq message_phone" placeholder="您的QQ"/></p>
+                                    <div class="line"></div>
+                                    <p>
+                                        <input type="text" name="title" class="message_title message_phone"maxlength="255"  placeholder="标题"/>
+                                    </p>
+                                    <p>
+                                        <textarea name="content" cols="55" rows="10" class="message_txt"  placeholder="您想要了解..."></textarea>
+                                    </p>
+                                    <p><span>验证码:</span>
+                                        <input type="text" name="captcha" maxlength="20" vld="{required:true}" class="message_code"/>
+                                        <img id="guestbookCaptcha" src="${base}/captcha.svl" onclick="this.src='${base}/captcha.svl?d='+new Date()*1">
+                                    </p>
+                                    <input type="hidden" name="token" id="token" value="${token!}"/>
+                                    <p style="margin-top:30px; position:relative;"><input type="hidden" name="sessionId"
+                                                                                          id="sessionId"/>
+                                        <input type="submit" id="submit" class="message_btn" value="发表留言"/>
+                                        <!--<a class="tolist">查看留言列表</a>--></p>
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $("#sessionId").val(null);
+                                    $("#submit").click(function () {
+                                        var options = {
+                                            url: '${base}/guestbook.jspx?d=new Date()',
+                                            type: 'post',
+                                            dataType: 'json',
+                                            data: $("#guestbookForm1").serialize(),
+                                            success:  function (data) {
+                                                console.info(data)
+                                                if(data.status==0) {
+                                                    alert("留言成功");
+                                                    location.href=location.href;
+                                                } else if(data.status==1) {
+                                                    alert("验证码错误");
+                                                    $("#guestbookCaptcha").click();
+                                                } else if(data.status==2) {
+                                                    alert("留言尚未开启");
+                                                    $("#guestbookCaptcha").click();
+                                                } else if(data.status==3) {
+                                                    alert("您需要登陆");
+                                                    $("#guestbookCaptcha").click();
+                                                }else if(data.status==4) {
+                                                    alert("留言超过限制了!");
+                                                    $("#guestbookCaptcha").click();
+                                                }else if(data.status==10) {
+                                                    alert("标题或者内容含有敏感词,不允许发表!");
+                                                    $("#guestbookCaptcha").click();
+                                                }
+                                            }
+                                        };
+                                        $.ajax(options);
+                                        return false;
+                                    });
+                                });
+
+                            </script>
                         </div>
-                        <div class="form-group">
-                            <div class="tel">
-                                +86
-                            </div>
-                            <input name="username" type="text" placeholder="请输入您的手机号" value="" class="form-control phone-text">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="code" placeholder="请输入您的验证码" value="" class="code-text">
-                            <button type="button" class="btn-send-code">发送验证码</button>
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" placeholder="您想要了解..." rows="5" value="" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn">联系该机构</button>
-                        </div>
-                    </form>
+                    </div>
                     <div class="sidebar-w">
                         <h3 class="title">相关专家
                         <a href="/experts/search?text=%E5%BB%BA%E7%AD%91%E4%B8%8E%E5%9C%B0%E4%B8%8B%E7%A9%BA%E9%97%B4%E7%9A%84%E9%80%9A%E9%A3%8E%E5%92%8C%E7%83%AD%E9%97%AE%E9%A2%98"
