@@ -112,7 +112,7 @@
   });
 </script>
 <div class="sign-dialog" id="signDialog">
-    <div class="mw"></div>
+    <div class="mw" id="singMw"></div>
     <div class="sign-dialog-w">
         <div class="sign-wmn">
             <div class="tab-t">
@@ -120,23 +120,8 @@
                 <div class="tab-t-item active">账户登录</div>
             </div>
             <div class="tab-w active">
-                <form id="jvFormRegister" action="${base}/register.jspx" method="post">
-                    <div>
-                        <input type="text" id="username"  vld="{required:true,rangelength:[${site.usernameMinLen},20],username:true,remote:'username_unique.jspx',messages:{remote:'用户名已存在'}}" name="username" placeholder="3~14字符，中文字符/英文字母/数字" class="register-input" />
-                    </div>
-                    <div>
-                        <input id="password" type="password" name="loginPassword" vld="{required:true,rangelength:[${site.passwordMinLen},20]}" class="register-input" />
-                    </div>
-                    <div>
-                        <input type="password" equalto="#password" vld="{required:true,rangelength:[${site.passwordMinLen},20]}" class="register-input" />
-                    </div>
-                    <div><span>验证码</span><input type="text" maxlength="20" name="captcha" class="register-input register-code" /><i class="code-img"><img id="guestbookCaptcha"   alt="" src="${base}/captcha.svl"></i></div>
-                    <input type="submit" name="register" value="立即注册" />
-                </form>
-            </div>
-            <div class="tab-w active">
             <form id="jvForm" action="${base}/login.jspx" method="post">
-                <!--<div class="fg">
+                <div class="fg">
                     <div class="fg-lbl">账户</div>
                     <div class="fg-ipt-w"><input id="username" name="username" class="ipt required login-input" type="text" placeholder="请输入您的账户"></div>
                 </div>
@@ -147,13 +132,16 @@
                 <div class="rpw">
                     <a href="#" class="rpw-link">忘记密码？</a>
                 </div>
-                <input type="submit" class="login-btn" value="登 录">-->
+                <input type="submit" class="login-btn" value="登 录">
             </form>
         </div>
         </div>
     </div>
 </div>
 <script>
+    $('#singMw').click(function () {
+        $('#signDialog').removeClass('active');
+    });
     $('#signInBtn').click(function () {
       $('#signDialog').addClass('active');
     });
