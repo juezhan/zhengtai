@@ -2,7 +2,7 @@
 .header .container{height:136px}
 .header .logo{float:left;margin:47px 0 0 72px}
 .header .navigation-bar{float:right;margin:50px 90px 0 0}
-.header .navigation-bar .item{display:inline-block;margin-left:40px;text-align:center;font-size:16px;color:#a09f9f;position: relative;height: 86px;}
+.header .navigation-bar .item{display:inline-block;margin-left:40px;text-align:center;font-size:15px;color:#a09f9f;position: relative;height: 86px;}
 .header .navigation-bar .item span{display:block}
 .header .navigation-bar .item span.tit-2{margin-top:16px}
 .header .navigation-bar .item.on,

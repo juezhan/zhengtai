@@ -71,6 +71,7 @@
     font-size: 18px;
     color: #000000;
     margin-top: 9px;
+    font-weight: 600;
 }
 
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-2,
@@ -89,14 +90,15 @@
 }
 .xwzx .cnt-wrapper .cnt-cell-first .date{
     color: #6d8ac4;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 30px;
 }
 .xwzx .cnt-wrapper .cnt-cell-first .txt-1{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
     color: #000000;
     margin-top: 27px;
+    font-weight: 600;
 }
 .xwzx .cnt-wrapper .cnt-cell-first .txt-2{
     margin: 11px 0;

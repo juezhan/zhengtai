@@ -28,8 +28,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .news-zlyj .banner-2{background-color: #f8f8f8;}
 .news-zlyj .banner-2 .container{height: 510px;display: flex;align-items: self-start;}
-.news-zlyj .banner-2 .img{margin-top: 90px;margin-left: 120px;}
-.news-zlyj .banner-2 .bd{flex: 1;margin-left: 86px;margin-right: 110px;}
+.news-zlyj .banner-2 .img{margin-top: 90px;margin-right: 122px;height: 299px;}
+.news-zlyj .banner-2 .bd{flex: 1;margin-left: 126px;margin-right: 110px;}
 .news-zlyj .banner-2 .bd .tt{font-size: 24px;line-height: 24px;margin-top: 113px;color: #343434;}
 .news-zlyj .banner-2 .bd .cnt{font-size: 14px;line-height: 24px;color: #656565;margin-top: 56px;}
 .news-zlyj .banner-2 .bd .item-wrapper{width: 300px;margin-top: 54px;}

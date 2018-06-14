@@ -22,15 +22,15 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-xwzx .tit{display: flex;padding-top: 47px;}
 .news-xwzx .tit .txt{flex: 1;font-size: 24px;color: #dedede}
 .news-xwzx .tit .menu{}
-.news-xwzx .tit .menu .item{font-size: 18px;display: block;float:left;line-height: 18px;border-bottom: 2px solid transparent;padding: 0 5px 13px;}
+.news-xwzx .tit .menu .item{font-size: 13px;display: block;float:left;line-height: 18px;border-bottom: 2px solid transparent;padding: 0 5px 13px;font-weight: bold;}
 .news-xwzx .tit .menu .item.active{border-bottom-color: #e80000;}
 .news-xwzx .tit .menu .item+.item{margin-left:33px;}
 /* ===================== ================================ */
 .news-xwzx .xwzx-bd{display: flex;margin-top:40px;}
 .news-xwzx .xwzx-bd .item{}
 .news-xwzx .xwzx-bd .title{display: flex;line-height: 20px;}
-.news-xwzx .xwzx-bd .title .txt{flex: 1;font-size: 20px;}
-.news-xwzx .xwzx-bd .title .move{font-size: 16px;color: #db2020;}
+.news-xwzx .xwzx-bd .title .txt{flex: 1;font-size: 16px;font-weight: bold;}
+.news-xwzx .xwzx-bd .title .move{font-size: 13px;color: #db2020;font-weight: bold;}
 .news-xwzx .xwzx-bd .list{padding: 23px 0 15px;}
 .news-xwzx .xwzx-bd .list-cell{display: flex;font-size: 14px;line-height: 20px;}
 .news-xwzx .xwzx-bd .list-cell+.list-cell{margin-top: 10px;}

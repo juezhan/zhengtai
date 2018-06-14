@@ -17,13 +17,13 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about .about-w{height: 314px;}
 .about .about-w .bread{display: flex;height: 64px;line-height: 64px;border-bottom: 1px solid #f4f4f4;}
 .about .about-w .bread .icon-house{height: 64px;width: 64px;background-color: #f4f4f4;}
-.about .about-w .bread .c{flex: 1;font-size: 18px;padding-left: 22px;}
+.about .about-w .bread .c{flex: 1;font-size: 13px;padding-left: 22px;font-weight: bold;}
 
 .about .about-w .m{display: flex;height: 315px;}
 .about .about-w .cm-1{width: 400px;line-height:24px;border-right: #f4f4f4 1px solid;}
 .about .about-w .cm-1 .cm-1-m{width: auto;float: left;margin: 47px 0 0 42px;}
 .about .about-w .cm-1 .t-1{font-size: 24px;color: #26a2ae;}
-.about .about-w .cm-1 .t-2{font-size: 18px;color: #999;margin-top: 25px;}
+.about .about-w .cm-1 .t-2{font-size: 13px;color: #999;margin-top: 25px;}
 
 .about .about-w .cm-2{flex: 1;line-height: 18px;}
 .about .about-w .cm-2 .t-1{font-size: 18px;height: 100px;border-bottom: 1px solid #f4f4f4;}

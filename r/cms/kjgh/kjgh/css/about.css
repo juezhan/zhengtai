@@ -30,7 +30,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 .about .about-bd .lxwm .container .tit .cell-nav ul li .contact{
 	display: inline-block;
-	font-size: 20px;
+	font-size: 28px;
 	color: #24629b;
 	width: 100%;
 	text-align: right;
@@ -94,7 +94,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about .about-bd .lxwm .container .cell-wrapper .cell .message .message-centre{
 	margin: 44px 139px;
 }
-.about .about-bd .lxwm .container .cell-wrapper .cell .message .message-centre sup{
+.about .about-bd .lxwm .container .cell-wrapper .cell .message .message-centre .sup{
 	color: red;
 }
 .about .about-bd .lxwm .container .cell-wrapper .cell .message .message-item input{

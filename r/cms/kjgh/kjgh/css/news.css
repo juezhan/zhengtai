@@ -23,7 +23,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .news-index .news-center .tit {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
 }
 
@@ -35,9 +35,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 .news-index .tit .line {
     text-align: center;
-    font-size: 28px;
+    font-size: 33px;
     color: #e74f06;
-    line-height: 20px;
+    line-height: 40px;
 }
 .news-index .news-center .cell-news {
     font-size: 0;
@@ -69,7 +69,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
     margin-top: 46px;
     border: 1px solid #37a1ea;
     border-radius: 28px;
-    padding: 0px 20px;
+    padding: 0px 40px;
     display: block;
     width: 64px;
 }
@@ -102,7 +102,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 18px;
+    font-size: 22px;
     color: #000;
     line-height: 30px;
 }

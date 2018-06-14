@@ -84,7 +84,7 @@ img {
 
 .index .business .tit {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
 }
 
@@ -175,13 +175,13 @@ img {
 
 .index .kjghnews .tit {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
 }
 
 .index .tit .title {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #a5a5a5;
     line-height: 30px;
 }
@@ -205,7 +205,7 @@ img {
 }
 
 .index .kjghnews .cell-wrapper .cell .tit{
-    font-size: 18px;
+    font-size: 25px;
     text-align: left;
     font-weight: 400;
 }
@@ -215,7 +215,7 @@ img {
     text-align: left;
     font-weight: 500;
     color: #333;
-    line-height: 12px;
+    line-height: 38px;
     margin-bottom: 8px;
 }
 
@@ -238,7 +238,7 @@ img {
 .index .kjghnews .cell-wrapper .cell .lbl {
 }
 
-.index .kjghnews .cell-wrapper .cell .tit {
+.index .kjghnews .cell-wrapper .cell .cell-tit {
     flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -246,6 +246,7 @@ img {
     font-size: 16px;
     color: #000;
     line-height: 30px;
+    font-weight: 600;
 }
 
 .index .kjghnews .cell-wrapper .cell .cell-txt .p {

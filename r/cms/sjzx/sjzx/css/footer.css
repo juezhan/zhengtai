@@ -5,7 +5,7 @@
 .footer a{color:#8c8c8c}
 .footer .footer-w{display: flex;height:60px;background-color:#f4f4f4;}
 .footer .m-1{flex: 1;display: flex;align-items: center;}
-.footer .m-1 .txt{margin-right: 12px;}
+.footer .m-1 .txt{margin-right: 12px;font-weight: bold;}
 .footer .m-2{width: 400px;}
 .footer .m-2 .cm-1{width: 348px;height: 100%;box-sizing: border-box;border-left: 1px solid #ffffff;border-right: 1px solid #ffffff;}
-.footer .m-2 .sel{font-size: 14px;line-height: 60px;margin: 0 30px 0 15px;background: url("../imgs/arrow-down.png") 100% 50% no-repeat;}
+.footer .m-2 .sel{font-size: 14px;line-height: 60px;margin: 0 30px 0 15px;background: url("../imgs/arrow-down.png") 100% 50% no-repeat;font-weight: bold;}

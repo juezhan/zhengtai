@@ -100,11 +100,12 @@ img {
 .index .news .tab-tag-item{
     position: relative;
     float: left;
-    font-size: 18px;
+    font-size: 13px;
     height: 20px;
     line-height: 20px;
     padding-bottom: 11px;
     cursor: pointer;
+    font-weight: bold;
 }
 .index .news .tab-tag-item:after{
     display: block;

@@ -1,6 +1,6 @@
 .item-w {font-size: 0;float: right;margin-top: 52px;}
 .item-w  .item{display:inline-block;text-align:center;margin: 0 16px;float:left;}
-.item-w  .item a{position:relative;display: block;font-size:18px;line-height: 1em;}
+.item-w  .item a{position:relative;display: block;font-size:14px;line-height: 1em;font-weight: 600;}
 .item-w  .item a:after{
 	display: block;
 	content: '';
@@ -18,7 +18,7 @@
 
 .menu{display: none; height: 40px;line-height: 40px;background-color: rgba(0,0,0,.6);position: absolute;width: 100%;top: 120px;left: 0;font-size: 0px;}
 .menu.active{display: block;}
-.menu a{color: #fff;font-size: 18px;margin:0 15px}
+.menu a{color: #fff;font-size: 14px;margin:0 15px}
 .menu a + a{}
 .menu .menu-w{float: right;height: 40px;}
 

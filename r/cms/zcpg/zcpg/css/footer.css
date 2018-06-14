@@ -5,7 +5,7 @@
 .footer .footer-wrapper .mn-1 .txt-1{font-size: 12px;line-height: 12px;margin-top: 28px;}
 .footer .footer-wrapper .mn-1 .txt-2{font-size: 22px;line-height: 22px;margin-top: 25px;}
 .footer .footer-wrapper .mn-1 .txt-2 span{color: #fc5111;margin-left: 14px;}
-.footer .footer-wrapper .mn-2{flex: 1;border-top: 2px solid #fc490c;font-size: 12px;text-align: right;height: 148px;}
+.footer .footer-wrapper .mn-2{flex: 1;border-top: 2px solid #fc490c;font-size: 12px;text-align: right;height: 148px;font-weight: bold;}
 .footer .footer-wrapper .mn-2 .txt-1{line-height: 24px;margin-top: 36px;}
 .footer .footer-wrapper .mn-2 .txt-2{line-height: 24px;}
 .footer .footer-wrapper .mn-2 .txt-2 a{margin-left: 14px;}

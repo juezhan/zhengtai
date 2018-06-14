@@ -3,7 +3,8 @@
     border-bottom: 2px solid #eaeaea;
     line-height: 58px;
     height: 58px;
-    font-size: 18px;
+    font-size: 12px;
+    font-weight: 600;
 }
 .gywm .crumbs .icon-home{
     background: url("../imgs/icon-home.png") 0 0 no-repeat;
