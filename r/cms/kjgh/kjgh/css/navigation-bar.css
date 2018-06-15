@@ -1,14 +1,21 @@
-.navigation-bar .container{font-size:0;width: 800px;}
-.navigation-bar .container .bd{margin:0 auto;height:38px;line-height:38px;}
-.navigation-bar .container .item{position:relative;display:inline-block;width:16%;text-align:center;font-size:16px}
-.navigation-bar .container .item a.tt{color:#000;display:inline-block;padding:0 20px;margin-bottom:-1px;border-bottom:2px solid transparent}
-.navigation-bar .container .item a.tt.on{color:#293896;border-color:#f8a835}
-.navigation-bar .container .item .menu{display:none;position:absolute;top:42px;left:0;width:100%}
-.navigation-bar .container .item .menu.visible{display:block}
-.navigation-bar .container .item .menu .arrow{margin:0 auto;background:url(../imgs/arrow.png?v=xfLMvwYkPUqyFq%2FGZERloA%3D%3D) 0 0 no-repeat;background-size:100% 100%}
-.navigation-bar .container .item .menu ul{display:inline-block;background-color:#5899dd;}
-.navigation-bar .container .item .menu ul a{word-break:keep-all;color: #fff;}
-.navigation-bar .container .item .menu ul a:hover{color:#999}
+.navigation-bar{font-size:0;}
+.navigation-bar .bd{margin:0 auto;}
+.navigation-bar .item{position:relative;text-align:center;font-size:16px;float: left;padding: 0 10px;}
+.navigation-bar .item a.tt{color:#000;display:block;padding:0 10px;line-height: 80px;height: 80px;}
+.navigation-bar .item a.tt.on{color: #e74f06}
+.navigation-bar .item .menu{display:none;position:absolute;top:42px;left:0;width:100%;}
+.navigation-bar .line{position: absolute;background: #40b0e7;bottom: 0;height: 4px;left: 0;width: 47px;transition: 0.7s;}
+/*.navigation-bar .item .menu.visible{display:block}*/
+/*.navigation-bar .item .menu .arrow{margin:0 auto;background:url(../imgs/arrow.png?v=xfLMvwYkPUqyFq%2FGZERloA%3D%3D) 0 0 no-repeat;background-size:100% 100%}*/
+/*.navigation-bar .item .menu ul{display:inline-block;background-color:#5899dd;}*/
+/*.navigation-bar .item .menu ul a{word-break:keep-all;color: #fff;}*/
+/*.navigation-bar .item .menu ul a:hover{color:#999}*/
+
+/*.header .navigation-bar .item{display:inline-block;text-align:center;font-size:16px;color:#a09f9f;position: relative;height: 80px;line-height: 80px;}*/
+/*.header .navigation-bar .item span{display:block}*/
+/*.header .navigation-bar .item span.tit-2{margin-top:16px}*/
+/*.header .navigation-bar .item.on,*/
+/*.header .navigation-bar .item.is-set{color:#0093ff;height: 86px;}*/
 
 .navigation-bar .menus{
 	position: absolute;

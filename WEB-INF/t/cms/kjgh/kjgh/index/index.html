@@ -1,116 +1,565 @@
 <!DOCTYPE HTML>
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <title>首页 - ${site.name}</title>
 <meta http-equiv="keywords" content="${site.keywords!}"/>
 <meta http-equiv="description" content="${site.description!}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<script src="/${res}/js/jquery-3.3.1.min.js"></script>
+<script src="${resSys}/jquery.js"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
 <link href="/${res}/css/index.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
 
-<!--[if lt IE 9]> 
+<!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
 <![endif]-->
 <head>
 <body class="index">
 [#include "../include/header.html"/]
-<div class="banner">
-    <img src="/${res}/imgs/index-banner-1.jpg"/>
-</div>
-<div class="business" title="主营业务">
-    <div class="container">
-        <div class="tit">
-          <div>
-            主营业务
-          </div>
-          <div class="line">—</div>
-          <div class="title">
-              MAIN BUSINESS
-          </div>
-          <div class="title">
-              智慧能源拥有系统的业务布局，云计算数据中心互联网+物联网
-          </div>
-        </div>
-        <div class="cell-wrapper">
-            <div class="first">
-                <img src="/${res}/imgs/operation.jpg"/>
+
+<div id="banenr" name="banner区" runat="server" class=" column">
+    <div class="portlet" id="cb3f5e8d245d4f10a95818186d240917" pagemoduleid="9d86eaa04227439b8ec0088cb4ae5b7b">
+        <div align="left" class="portlet-header">
+            <span id="menu"></span>
+            <div id="submenucb3f5e8d245d4f10a95818186d240917" class="shadow dn">
+                <ul class="float_list_ul">
+                </ul>
             </div>
+        </div>
+        <div>
+            <div class="banner" opentype="page">
+                <ul class="banner-list-wrap">
+                    <li class="banner-list list-1"><img
+                            src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017112317562824633.jpg" class="banner-big"
+                            width="100%" alt=""/>
+                        <video src="http://www.600869.com/eportal/fileDir/fe-cable/resource/cms/2017/11/2017112316144752631.mp4" muted=""
+                               loop="" id="video" width="100%" height="100%"></video>
+                    </li>
+                    <li class="banner-list snow-container list-2"><img
+                            src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017112409405179231.jpg" width="100%" alt=""/>
+                        <!--<img src="/fezhny/uiFramework/commonResource/image/2017111710491467144.png" class="move-text cn-tit" width="800" alt="">-->
+                        <h2 class="move-text cn-tit" style="font-size: 38px; font-weight: lighter; color: #fff;">
+                            致力于成为全球领先的智慧能源、智慧城市服务商</h2></li>
+                    <li class="banner-list snow-container list-3"><img
+                            src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017120816253065902.jpg" width="100%" alt=""/>
+                        <!--<img src="/fezhny/uiFramework/commonResource/image/2017111710492830362.png" class="move-text cn-tit" width="500" alt="">-->
+                        <h1 class="move-text cn-tit" style="font-size: 50px; font-weight: lighter; color: #fff;">创造价值
+                            服务社会</h1>
+                        <h1 class="move-text en-tit" style="font-size: 38px; font-weight: lighter; color: #fff;">
+                            CREATING VALUE AND SERVING THE SOCIETY</h1>
+                        <!--<img src="/fezhny/uiFramework/commonResource/image/2017111710493621771.png" class="move-text en-tit" width="800" alt="">-->
+                    </li>
+                </ul>
+                <i class="iconfont arrow banner-arrow-left"></i>
+                <i class="iconfont arrow banner-arrow-right"></i>
+            </div>
+            <style>
+                #banenr {
+                    margin-top: 80px;
+                }
+
+                .banner .banner-list.list-2 .cn-tit.on {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+
+                .banner {
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                .banner .banner-list {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .banner .banner-list .move-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 99;
+                }
+
+                .banner .banner-list video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 9;
+                    object-fit: cover;
+                }
+
+                .banner .banner-list .move-text {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    -webkit-transition: 0.7s;
+                    transition: 0.7s;
+                }
+
+                .banner .banner-list.list-2 .cn-tit {
+                    margin: -50px 0 0 -400px;
+                    -webkit-transform: translateX(-500px);
+                    transform: translateX(-500px);
+                }
+
+                .banner .banner-list.list-2 .cn-tit.on {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+
+                .banner .banner-list.list-3 .cn-tit {
+                    margin: -215px 0 0 -250px;
+                    -webkit-transform: translateY(-500px);
+                    transform: translateY(-500px);
+                }
+
+                .banner .banner-list.list-3 .cn-tit.on {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                }
+
+                .banner .banner-list.list-3 .en-tit {
+                    margin: -100px 0 0 -400px;
+                    -webkit-transform: translateY(500px);
+                    transform: translateY(500px);
+                }
+
+                .banner .banner-list.list-3 .en-tit.on {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                }
+
+                .banner .banner-list.on {
+                    display: block;
+                }
+
+                .banner .banner-btn-wrap {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    z-index: 100;
+                }
+
+                .banner .banner-btn-wrap li {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 5px;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, .5);
+                    cursor: pointer;
+                }
+
+                .banner .banner-btn-wrap li.on {
+                    background: rgba(0, 204, 255, .5);
+                }
+
+                .banner .arrow {
+                    position: absolute;
+                    top: 50%;
+                    z-index: 99;
+                    margin-top: -20px;
+                    font-size: 40px;
+                    color: #fff;
+                    -webkit-transition: 1s;
+                    transition: 1s;
+                    cursor: pointer;
+                }
+
+                .banner .arrow.banner-arrow-left {
+                    left: -100%;
+                }
+
+                .banner .arrow.banner-arrow-right {
+                    right: -100%;
+                }
+
+                .banner:hover .banner-arrow-left {
+                    left: 3%;
+                }
+
+                .banner:hover .banner-arrow-right {
+                    right: 3%;
+                }
+
+            </style>
+            <script>
+              !function (n) {
+                function t(n, t) {
+                  this.n = 0, this.timer = null, this.time = t.time, this.showBtn = t.showBtn, this.autoplay = t.autoplay, this.transition = t.transition, this.bannerWrap = n, this.bannerList = n.children(), this.bannerBtnWrap = function (t) {
+                    return t.showBtn && n.after('<ul class="banner-btn-wrap"></ul>'), n.siblings(".banner-btn-wrap")
+                  }(this), this.bannerBtnList = null, this.bannerBigImg = t.bannerBigFirstImg, this.moveTxt = t.moveTxt, this.moveTextAddClass = t.moveTextAddClass, this.arrowLeft = t.leftBtn, this.arrowRight = t.rightBtn, this.resize = t.resize, this.callback = t.callback
+                }
+
+                t.prototype = {
+                  "init": function () {
+                    var t = this, i = this;
+                    this.bannerList.each(function () {
+                      t.bannerBtnWrap.append("<li></li>")
+                    }), this.bannerList.first().show(0, function () {
+                      n(this).children(i.moveTxt).addClass("on")
+                    }), this.bannerBigImg.load(function () {
+                      i.bannerWrap.height(n(this).height())
+                    }), this.bannerWrap.height(this.bannerList.first().height()), this.bannerBtnList = this.bannerBtnWrap.children(), this.bannerBtnList.first().addClass("on"), this.bannerBtnWrap.css({
+                      "width": this.bannerBtnList.length * this.bannerBtnList.outerWidth(!0) + "px",
+                      "marginLeft": function () {
+                        return -n(this).width() / 2
+                      }
+                    }), this.hoverBanner().arrowClick().resizeWindow(), this.autoplay && this.autoplayBanner().clearBanner(), this.createArrow && this.arrowClick()
+                  }, "hoverBanner": function () {
+                    var t = this;
+                    return this.bannerBtnList.mouseenter(function () {
+                      t.n = n(this).index(), n(this).addClass("on").siblings().removeClass("on"), t.bannerList.eq(t.n).fadeIn(t.transition, function () {
+                        n(this).children(t.moveTxt).addClass("on"), "function" == typeof t.callback && t.callback(t.n)
+                      }).siblings().fadeOut(t.trantransition, function () {
+                        n(this).children(t.moveTxt).removeClass("on")
+                      })
+                    }), this
+                  }, "autoplayBanner": function () {
+                    var t = this, i = this;
+                    return "function" == typeof this.callback && this.callback(this.n), this.timer = setInterval(function () {
+                      t.n++, t.n %= t.bannerList.length, t.bannerBtnList.eq(t.n).addClass("on").siblings().removeClass("on"), t.bannerList.eq(t.n).fadeIn(i.transition, function () {
+                        n(this).children(i.moveTxt).addClass("on"), "function" == typeof i.callback && i.callback(i.n)
+                      }).siblings().fadeOut(i.trantransition, function () {
+                        n(this).children(i.moveTxt).removeClass("on")
+                      })
+                    }, this.time), this
+                  }, "arrowClick": function () {
+                    var t = this, i = this;
+                    return this.arrowLeft.click(function () {
+                      t.n--, t.n < 0 && (t.n = t.bannerList.length - 1), t.bannerBtnList.eq(t.n).addClass("on").siblings().removeClass("on"), t.bannerList.eq(t.n).fadeIn(i.transition, function () {
+                        n(this).children(i.moveTxt).addClass("on"), "function" == typeof i.callback && i.callback(i.n)
+                      }).siblings().fadeOut(i.trantransition, function () {
+                        n(this).children(i.moveTxt).removeClass("on")
+                      })
+                    }), this.arrowRight.click(function () {
+                      t.n++, t.n %= t.bannerList.length, t.bannerBtnList.eq(t.n).addClass("on").siblings().removeClass("on"), t.bannerList.eq(t.n).fadeIn(i.transition, function () {
+                        n(this).children(i.moveTxt).addClass("on"), "function" == typeof i.callback && i.callback(i.n)
+                      }).siblings().fadeOut(i.trantransition, function () {
+                        n(this).children(i.moveTxt).removeClass("on")
+                      })
+                    }), this
+                  }, "resizeWindow": function () {
+                    var t = this;
+                    n(window).bind("resize", function () {
+                      t.bannerWrap.height(t.bannerList.first().height()), "function" == typeof t.resize ? t.resize() : console.error("'" + t.resize + "' is not a function")
+                    })
+                  }, "clearBanner": function () {
+                    var n = this;
+                    this.bannerWrap.parent().hover(function () {
+                      clearInterval(n.timer)
+                    }, function () {
+                      n.autoplayBanner()
+                    })
+                  }
+                }, n.fn.textBanner = function (i) {
+                  var s = {
+                    "time": 5e3,
+                    "transition": 500,
+                    "showBtn": !0,
+                    "autoplay": !0,
+                    "createArrow": !0,
+                    "moveTextAddClass": "on",
+                    "bannerBigFirstImg": this.find(".banner-big:first"),
+                    "moveTxt": this.find(".move-text"),
+                    "leftBtn": this.siblings(".banner-arrow-left"),
+                    "rightBtn": this.siblings(".banner-arrow-right"),
+                    "resize": function () {
+                    },
+                    "callback": function () {
+                    }
+                  };
+                  this.children().length > 1 && new t(this, n.extend(s, i)).init()
+                }
+              }(jQuery);
+              $(function () {
+                $('.banner-list-wrap').textBanner({
+                  callback: function (i) {
+                    if (!/MSIE 8/.test(navigator.appVersion)) {
+                      var oVideo = document.getElementById('video');
+                      if (i == 0) {
+                        oVideo.play();
+                      } else {
+                        oVideo.pause();
+                        oVideo.currentTime = 0;
+                      }
+                    }
+                  }
+                });
+              });
+            </script>
         </div>
     </div>
 </div>
-<div class="kjghnews" title="新闻中心">
-    <div class="container">
-        <div class="tit">
-          <div>
-            新闻中心
-          </div>
-          <div class="line">—</div>
-          <div class="title">
-            NEWS CENTER
-          </div>
+<div id="center-container" class="section product column" name="主营业务" runat="server">
+    <div class="portlet" id="4dadc3287c394a218ab752f9907a51e1" pagemoduleid="ce0b7ffcee41475c9ba8da808e9d7d77">
+        <div>
+            <div class="wrap" opentype="page">
+                <div class="miss_1">
+                    业务分类
+                </div>
+                <div class="miss_3"></div>
+                <div class="miss_2">
+                    PRODUCT DISPLAY
+                </div>
+                <div class="miss_2">
+                    智慧能源拥有系统的业务布局，云计算数据中心互联网+物联网
+                </div>
+                <div class="p-relative">
+                    <div class="product-list-wrap animated">
+                        <ul class="clearfix">
+                            <li class="text-left product-center"><img class="shi"
+                                                                      src="http://www.600869.com/fezhny/resource/cms/2018/06/img_pc_site/2018060518023967549.jpg">
+                                <div class="bak_bj">
+                                    <a href="/fezhny/gsyw45/zndl/index.html"> <img class="bak_dt"
+                                                                                   src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219434968441.jpg">
+                                        <div class="bak_text">
+                                            <p class="bak_img"><img
+                                                    src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219435819295.png">
+                                            </p>
+                                            <p class="bak_tit">智能电力产品</p>
+                                            <ul>
+                                                <li class=""><span class="b_yu">●</span><span class="b_text">智能电缆（电网、风电、光伏、核缆、交通、建筑等）</span>
+                                                </li>
+                                                <li><span class="b_yu">●</span><span class="b_text">配电、输电检测等一、二次设备及成套产品及服务等</span>
+                                                </li>
+                                                <li class=""><span class="b_yu">●</span><span
+                                                        class="b_text">新材料研发与应用</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="text-left product-center"><img class="shi"
+                                                                      src="http://www.600869.com/fezhny/resource/cms/2018/05/img_pc_site/2018051509560642612.jpg">
+                                <div class="bak_bj">
+                                    <a href="/fezhny/gsyw45/qj_xny/index.html"> <img class="bak_dt"
+                                                                                     src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219434968441.jpg">
+                                        <div class="bak_text">
+                                            <p class="bak_img"><img
+                                                    src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219440586322.png">
+                                            </p>
+                                            <p class="bak_tit">清洁/新能源系统</p>
+                                            <ul>
+                                                <li><span class="b_yu">●</span><span class="b_text">新能源发电、送电、变电和配/农网工程的勘测设计</span>
+                                                </li>
+                                                <li><span class="b_yu">●</span><span class="b_text">新能源工程总承包</span></li>
+                                                <li><span class="b_yu">●</span><span
+                                                        class="b_text">能源项目管理工程技术咨询服务和能源投资等</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="text-left product-center"><img class="shi"
+                                                                      src="http://www.600869.com/fezhny/resource/cms/2018/05/img_pc_site/2018051509584215549.jpg">
+                                <div class="bak_bj">
+                                    <a href="/fezhny/gsyw45/qcdljcnsb/index.html"> <img class="bak_dt"
+                                                                                        src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219434968441.jpg">
+                                        <div class="bak_text">
+                                            <p class="bak_img"><img
+                                                    src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219441153851.png">
+                                            </p>
+                                            <p class="bak_tit">新能源汽车动力系统及储能设备</p>
+                                            <ul>
+                                                <li><span class="b_yu">●</span><span class="b_text">锂电池、动力电池组、储能电池（组）、新型电池、电芯等）</span>
+                                                </li>
+                                                <li><span class="b_yu">●</span><span class="b_text">新能源汽车销售</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="text-left product-center"><img class="shi"
+                                                                      src="http://www.600869.com/fezhny/resource/cms/2018/05/img_pc_site/2018051509562637408.jpg">
+                                <div class="bak_bj">
+                                    <a href="/fezhny/gsyw45/hlwdgdq/index.html"> <img class="bak_dt"
+                                                                                      src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219434968441.jpg">
+                                        <div class="bak_text">
+                                            <p class="bak_img"><img
+                                                    src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017102219441872461.png">
+                                            </p>
+                                            <p class="bak_tit">互联网电工电气平台</p>
+                                            <ul>
+                                                <li><span class="b_yu">●</span><span class="b_text">电工电气资讯、信息增值服务</span>
+                                                </li>
+                                                <li><span class="b_yu">●</span><span class="b_text">电工电气材料交易服务</span>
+                                                </li>
+                                                <li><span class="b_yu">●</span><span class="b_text">电工电气商品交易</span></li>
+                                                <li><span class="b_yu">●</span><span class="b_text">供应链金融</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+              $(function () {
+                $('.product-list-wrap ul li').mouseover(function () {
+                  $(this).addClass('on');
+                });
+                $('.product-list-wrap ul li').mouseleave(function () {
+                  $(this).removeClass('on');
+                });
+              });
+            </script>
         </div>
-        <div class="cell-wrapper">
-            <div class="cell">
-                <div class="tit">
-                  公司新闻
-                  <div class="line">—</div>
-                </div>
-                 <img class="img" src="/${res}/imgs/index-news1.jpg"/>
-                <div class="cell-txt primary">
-                    <div class="cell-tit">买卖宝荣登 "2018年中国大宗商品电商百强企业2018年中国大宗商品电商百强企业</div>
-                </div>
-                <div class="cell-txt">
-                    <div class="p">
-                      近日，2018第三届全国大宗商品电商峰会暨首届中国B2B创业大赛启动仪式与北京近日
-                      <a class="consult" href="">查看更多</a>
+    </div>
+</div>
+<div class="wrap" style="margin-bottom:50px;">
+    <div class="miss_1">
+        新闻中心
+    </div>
+    <div class="miss_3"></div>
+    <div class="miss_2">
+        NEWS CENTER
+    </div>
+    <div class="p-relative">
+        <div class="product-list-wrap animated">
+            <div id="product-contaia" class="section product column" name="新闻中心" runat="server"
+                 style="float:left;width:30%;margin-right:4.5%">
+                <div class="portlet" id="38f2383243bb4f71b45b8044d6616114"
+                     pagemoduleid="2c33c00cafb64b2b8fc99ccc365a3987">
+                    <div>
+                        <div class="text-left product-animate animated" opentype="page">
+                            <div class="miss_4">
+                                公司新闻
+                            </div>
+                            <div class="miss_5"></div>
+                            <div class="icon-wrap">
+                                <a href="/fezhny/xwzx9532/gsyw4662/index.html"><img class="dongz"
+                                                                                    src="http://www.600869.com/eportal/fileDir/ydkg/resource/cms/2018/06/img_pc_site/2018061411274633123.JPG"
+                                                                                    style="height: 333px;"></a>
+                            </div>
+                            <h2 class="product-title" style="margin-bottom: 28px; margin-top: 18px;"><a
+                                    href="/fezhny/xwzx9532/gsyw4662/505253/index.html"><p>蒋华君率队参访江苏中超电缆股份有限公司</p></a>
+                            </h2>
+                            <p class="product-summary">　6月13日，投资人、远东智慧能源股份有限公司（简称：智慧能源 股票代码：600...<span><a
+                                    href="/fezhny/xwzx9532/gsyw4662/505253/index.html"
+                                    style="color:#018cc5">查看更多</a></span></p>
+                            <a class="block text-left view-btn" href="/fezhny/xwzx9532/gsyw4662/index.html"
+                               style="font-weight:bold;margin-top:50px">MORE+</a>
+                        </div>
+                        <style>
+                            .icon-wrap img {
+                                overflow: hidden;
+
+                                position: relative;
+                                width: 100%;
+                                transition: 0.7s;
+
+                            }
+
+                            .product-list:hover .icon-wrap a img {
+                                transform: scale(1.04);
+                            }
+
+
+                        </style>
                     </div>
-                </div>
-                <div class="cell-txt">
-                    <div class="more">MORE+</div>
                 </div>
             </div>
-            <div class="cell centre">
-                <div class="tit">
-                  行业洞察
-                  <div class="line">—</div>
-                </div>
-                 <img class="img" src="/${res}/imgs/index-news2.jpg"/>
-                <div class="cell-txt primary">
-                    <div class="cell-tit">买卖宝荣登 "2018年中国大宗商品电商百强企业2018年中国大宗商品电商百强企业</div>
-                </div>
-                <div class="cell-txt">
-                    <div class="p">
-                      近日，2018第三届全国大宗商品电商峰会暨首届中国B2B创业大赛启动仪式与北京近日
-                      <span class="consult">查看更多</span>
+            <div id="product-contaib" class="section product column" name="行业资讯" runat="server"
+                 style="float:left;width:30%;margin-right:4.5%">
+                <div class="portlet" id="47dd2970a970499ba8e7786df9d6a193"
+                     pagemoduleid="010dca7a76db4cef923a51e3c567b4d3">
+                    <div align="left" class="portlet-header" style="display: none;">
+  <span id="menu">
+        </span>
+                        <div id="submenu47dd2970a970499ba8e7786df9d6a193" class="shadow dn">
+                            <ul class="float_list_ul">
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="cell-txt">
-                    <div class="more">MORE+</div>
+                    <div>
+
+
+                        <div class="text-left product-animate animated" opentype="page">
+                            <div class="miss_4">
+                                行业洞察
+                            </div>
+                            <div class="miss_5"></div>
+                            <div class="icon-wrap">
+                                <a href="/fezhny/xwzx9532/xydc12/index.html"> <img class="dongz"
+                                                                                   src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017110214393982868.jpg"></a>
+                            </div>
+                            <h2 class="product-title" style="margin-bottom: 28px; margin-top: 18px;"><a
+                                    href="/fezhny/xwzx9532/xydc12/505530/index.html"><p>光伏补贴新政逼退落后产能 平价上网"曙光初...</p></a>
+                            </h2>
+                            <p class="product-summary">三部门此次出台新政，旨在引导市场和行业根据新形势调整发展思路，将光伏发展重点从扩...<span><a
+                                    href="/fezhny/xwzx9532/xydc12/505530/index.html"
+                                    style="color:#018cc5">查看更多</a></span></p>
+                            <a class="block text-left view-btn" href="/fezhny/xwzx9532/xydc12/index.html"
+                               style="font-weight:bold;margin-top:50px">MORE+</a>
+                        </div>
+                        <style>
+                            .icon-wrap img {
+                                overflow: hidden;
+
+                                position: relative;
+                                width: 100%;
+                                transition: 0.7s;
+
+                            }
+
+                        </style>
+                    </div>
                 </div>
             </div>
-            <div class="cell">
-                <div class="tit">
-                  媒体聚焦
-                  <div class="line">—</div>
-                </div>
-                 <img class="img" src="/${res}/imgs/index-news3.jpg"/>
-                <div class="cell-txt primary">
-                    <div class="cell-tit">买卖宝荣登 "2018年中国大宗商品电商百强企业2018年中国大宗商品电商百强企业</div>
-                </div>
-                <div class="cell-txt">
-                    <div class="p">
-                      近日，2018第三届全国大宗商品电商峰会暨首届中国B2B创业大赛启动仪式与北京近日
-                      <sapn class="consult">查看更多</span>
+            <div id="product-contaic" class="section product column" name="媒体焦距" runat="server"
+                 style="float:left;width:30%;">
+                <div class="portlet" id="6ab560a25a87410bac3d2d274742b66d"
+                     pagemoduleid="4956fc7c5a6f48afb6194e890d830e4b">
+                    <div align="left" class="portlet-header" style="display: none;">
+  <span id="menu">
+        </span>
+                        <div id="submenu6ab560a25a87410bac3d2d274742b66d" class="shadow dn">
+                            <ul class="float_list_ul">
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="cell-txt">
-                    <div class="more">MORE+</div>
+                    <div>
+
+
+                        <div class="text-left product-animate animated" opentype="page">
+                            <div class="miss_4">
+                                媒体聚焦
+                            </div>
+                            <div class="miss_5"></div>
+                            <div class="icon-wrap">
+                                <a href="/fezhny/xwzx9532/mtjj34/index.html"> <img class="dongz"
+                                                                                   src="http://www.600869.com/fezhny/uiFramework/commonResource/image/2017110214394891277.jpg"></a>
+                            </div>
+                            <h2 class="product-title" style="margin-bottom: 28px; margin-top: 18px;"><a
+                                    href="/fezhny/xwzx9532/mtjj34/504825/index.html"><p>智慧能源: 中期业绩预增最高至113%，全年净...</p>
+                            </a></h2>
+                            <p class="product-summary">　　智慧能源6月9日发布2018年中期业绩预增公告，公司预计2018年上半年度实...<span><a
+                                    href="/fezhny/xwzx9532/mtjj34/504825/index.html"
+                                    style="color:#018cc5">查看更多</a></span></p>
+                            <a class="block text-left view-btn" href="/fezhny/xwzx9532/mtjj34/index.html"
+                               style="font-weight:bold;margin-top:50px">MORE+</a>
+                        </div>
+                        <style>
+                            .icon-wrap:hover .dongz {
+                                transform: scale(1.04);
+                            }
+
+
+                        </style>
+                    </div>
                 </div>
             </div>
         </div>
