@@ -1,12 +1,12 @@
-.footer{height:auto;background-color:#ffffff;color:#a2a2a2;height: 146px;}
+.footer{height:auto;background-color:#ffffff;color:#a2a2a2;height: auto;font-weight: bold;padding: 48px 0;}
 .footer a{color:#000}
-.footer .footer-wrapper{font-size:16px;text-align: center;overflow: hidden}
-.footer .t-1{margin-top: 30px;color: #a2a2a2}
+.footer .footer-wrapper{font-size: 14px;text-align: center;overflow: hidden;}
+.footer .t-1{margin-top: 10px;color: #a2a2a2;line-height: 20px;}
 .footer .t-1 a{color: #a2a2a2}
 .footer .t-2{}
 
 @media screen and (min-width: 1680px) {
-  .footer .ft-cell .item.first{width: 720px;}
+	.footer .ft-cell .item.first{width: 720px;}
 	.footer .ft-cell .item.third{float: right;}
 }
 
