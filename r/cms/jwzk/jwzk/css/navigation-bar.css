@@ -1,6 +1,6 @@
 .navigation-bar{font-size:0;float: left;margin: 36px 0 0 100px;}
 .navigation-bar .bd{margin:0 auto;text-align:center;}
-.navigation-bar .item{position:relative;padding: 0 14px;display:inline-block;text-align:center;font-size:18px;height: 48px;line-height: 48px;}
+.navigation-bar .item{position:relative;padding: 0 14px;display:inline-block;text-align:center;font-size:16px;height: 48px;line-height: 48px;}
 .navigation-bar .item + .item{margin-left: 90px;}
 .navigation-bar .item.on{color:#293896;background-color:#cbcbcb;height: 74px;border-radius: 6px 6px 0 0;}
 .navigation-bar .item.on a.tt{color:#293896;}

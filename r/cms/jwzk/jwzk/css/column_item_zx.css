@@ -93,7 +93,7 @@ img {
 }
 
 .column-item-zx .column-item-bd .slide-bar .menu-cell {
-    font-size: 24px;
+    font-size: 18px;
     display: block;
     height: 78px;
     line-height: 78px;
@@ -142,7 +142,7 @@ img {
 }
 
 .column-item-zx .column-item-bd .box-wrapper .box .txt-1 {
-    font-size: 24px;
+    font-size: 20px;
     color: #e74a19;
     border-bottom: 1px solid #e74a19;
     line-height: 24px;
@@ -150,6 +150,7 @@ img {
     display: inline-block;
     padding-bottom: 12px;
     margin-bottom: -13px;
+    font-weight: 600;
 }
 
 .column-item-zx .column-item-bd .box-wrapper .box .txt-2 {

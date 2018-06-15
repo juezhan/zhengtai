@@ -8,7 +8,7 @@
 .header .nav-w{font-size:0;margin-top: 26px;}
 .header .nav-w a{color:#FFFFFF;display: block;}
 .header .nav-w .item{display: inline-block;margin-left: 30px;position: relative;}
-.header .nav-w .tt{font-size: 18px;line-height: 32px;}
+.header .nav-w .tt{font-size: 16px;line-height: 32px;}
 .header .nav-w .tt a.active{border-bottom: 2px solid #ffffff;}
 .header .nav-w .cnt{display: none;position: absolute;padding-top: 10px;box-sizing: border-box;background: url("../imgs/nav-border.png") 0 0 no-repeat;width: 84px;height: 65px;font-size: 12px;left: 50%;margin-left: -42px;}
 .header .nav-w .cnt-w{display: flex;flex-direction: column;}

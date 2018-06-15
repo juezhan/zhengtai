@@ -92,7 +92,7 @@ img {
 }
 
 .about .column-item-bd .slide-bar .menu-cell {
-    font-size: 24px;
+    font-size: 18px;
     display: block;
     height: 78px;
     line-height: 78px;
@@ -119,11 +119,13 @@ img {
 }
 .about .column-item-bd .list-wrapper .cell .tit{
     margin:  0 33px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     height: 30px;
     border-left: 5px solid #31a5fc;
     padding: 0 13px;
+    font-weight: 600;
+    color: #666;
 }
 .about .column-item-bd .list-wrapper .cell .bd{
     padding: 0 57px;
