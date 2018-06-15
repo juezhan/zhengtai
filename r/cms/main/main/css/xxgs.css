@@ -18,12 +18,12 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .xxgs .xxgs-main .container .aside{float:left;width:260px}
 .xxgs .xxgs-main .container .aside .tt{height:50px;line-height:50px;text-align:center;font-size:24px;color:#fff;background-color:#2084da}
 .xxgs .xxgs-main .container .aside .bd{border:1px solid #a0a0a0;background-color:#e5e5e5;padding:11px 20px}
-.xxgs .xxgs-main .container .aside .bd .item{display:block;background-color:#fff;padding:0 16px;height:40px;line-height:40px;color:#000;font-size:18px;margin-bottom:11px;    text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.xxgs .xxgs-main .container .aside .bd .item{display:block;background-color:#fff;padding:0 16px;height:40px;line-height:40px;color:#000;font-size:12px;margin-bottom:11px;    text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .xxgs .xxgs-main .container .aside .bd .item span{color:#ccc;margin-right:12px}
 .xxgs .xxgs-main .container .aside .bd .item.on{color:#fff;background-color:#72a7de}
 .xxgs .xxgs-main .container .aside .bd .item.on span{color:#fff}
 .xxgs .xxgs-main .container .xxgs-cnt{width:858px;float:right}
-.xxgs .xxgs-main .container .xxgs-cnt .tt{height:56px;line-height:56px;text-align:center;color:#293896;font-size:30px}
+.xxgs .xxgs-main .container .xxgs-cnt .tt{height:56px;line-height:56px;text-align:center;color:#293896;font-size:24px}
 .xxgs .xxgs-main .container .xxgs-cnt .line-1,.xxgs .xxgs-main .container .xxgs-cnt .line-2{border-top:1px dashed transparent;height:0}
 .xxgs .xxgs-main .container .xxgs-cnt .line-1{margin-top:9px;border-color:#c58729}
 .xxgs .xxgs-main .container .xxgs-cnt .line-2{margin:18px 0;border-color:#4b9ae8}
@@ -31,7 +31,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .xxgs .xxgs-main .container .xxgs-cnt .bd li{font-size:0;border-bottom:1px solid #e5e5e5}
 .xxgs .xxgs-main .container .xxgs-cnt .bd li div{display:inline-block;font-size:14px;line-height:36px}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .nav{text-align:center;color:#293896;background-color:#e5e5e5}
-.xxgs .xxgs-main .container .xxgs-cnt .bd .nav div{line-height:35px;font-size:18px}
+.xxgs .xxgs-main .container .xxgs-cnt .bd .nav div{line-height:35px;font-size:12px;font-weight: 600;}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .number{width:84px;text-align:center}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name{width:576px;color:#293896}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name a{color:#293896}

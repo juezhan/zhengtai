@@ -118,7 +118,7 @@ img {
 }
 
 .index .news .container .aside .tt {
-    font-size: 18px;
+    font-size: 14px;
     color: #293896;
     line-height: 20px;
     margin-top: 15px
@@ -159,7 +159,7 @@ img {
 
 .index .news .container .news-main .tag-tt .item {
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
     width: 126px;
     height: 18px;
@@ -271,7 +271,7 @@ img {
 }
 
 .index .cell .item .tt {
-    font-size: 24px;
+    font-size: 20px;
     color: #293896;
     margin-top: 10px;
 }
@@ -293,7 +293,7 @@ img {
 
 .index .cell .item .link-btn {
     color: #000000;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     height: 40px;
     line-height: 40px;

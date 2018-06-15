@@ -14,7 +14,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
 .about .about-bd{padding:60px 0}
-.about .about-bd .tt{font-size:30px;line-height:30px;text-align:center;color:#293896}
+.about .about-bd .tt{font-size:24px;line-height:30px;text-align:center;color:#293896}
 .about .about-bd .bd{margin:46px 100px 0;color:#000;line-height: 2;}
 
 @media screen and (min-width: 1620px) {
