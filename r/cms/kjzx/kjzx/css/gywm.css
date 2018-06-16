@@ -1,31 +1,50 @@
 .gywm{}
-.gywm .crumbs{
-    border-bottom: 2px solid #eaeaea;
-    line-height: 58px;
-    height: 58px;
-    font-size: 12px;
-    font-weight: 600;
-}
-.gywm .crumbs .icon-home{
-    background: url("../imgs/icon-home.png") 0 0 no-repeat;
-    display: inline-block;
-    height: 17px;
-    width: 17px;
-}
+.gywm .crumbs{border-bottom: 2px solid #eaeaea;line-height: 58px;height: 58px;font-size: 12px;font-weight: 600;}
+.gywm .crumbs .icon-home{background: url("../imgs/icon-home.png") 0 0 no-repeat;display: inline-block;height: 17px;width: 17px;}
 .gywm .cnt-wrapper{}
-.gywm .cnt-wrapper .m-cnt{
-    border-right: 2px solid #eaeaea ;
-    width: 856px;
-    padding: 30px 40px 30px 20px;
-    box-sizing: border-box;
-    float: left;
+.gywm .cnt-wrapper .m-cnt{border-right: 2px solid #eaeaea ;width: 856px;padding: 30px 40px 30px 20px;box-sizing: border-box;float: left;}
+.gywm .cnt-wrapper .ad-wrapper{padding: 30px 0;font-size: 0;float: right;width: 300px;}
+.gywm .cnt-wrapper .ad-wrapper img{margin-bottom: 12px;}
+.gywm .cnt-wrapper img{
+    width: 100%;
 }
-.gywm .cnt-wrapper .ad-wrapper{
-    padding: 30px 0;
-    font-size: 0;
-    float: right;
-    width: 300px;
+
+@media screen and (max-width: 1199px) and (min-width: 769px){
+    .gywm .cnt-wrapper .m-cnt{
+        width: 686px;
+    }
+
+    .gywm .cnt-wrapper .ad-wrapper{
+        padding: 20px 0;
+    }
+    .gywm .cnt-wrapper .ad-wrapper{
+        width: 250px;
+    }
 }
-.gywm .cnt-wrapper .ad-wrapper img{
-    margin-bottom: 12px;
+@media screen and (max-width: 768px) and (min-width: 750px){
+    .gywm .cnt-wrapper .m-cnt{
+        width: 100%;
+        border-right:none;
+        padding:30px 20px;
+    }
+    .gywm .cnt-wrapper .ad-wrapper{
+        width: 100%;
+        display: flex;
+    }
+    .gywm .cnt-wrapper .ad-wrapper div{
+        flex: 1;
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 749px){
+    .gywm .cnt-wrapper .m-cnt{
+        width: 100%;
+        border-right:none;
+        padding:20px 12px;
+    }
+    .gywm .cnt-wrapper .ad-wrapper{
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
 }
