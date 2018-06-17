@@ -1,11 +1,20 @@
 .icon-wechart{width: 33px;height: 33px;background: url("../imgs/img-4_01.png") 50% 50% no-repeat;display: inline-block;}
 .icon-weblog{width: 33px;height: 33px;background: url("../imgs/img-4_02.png") 50% 50% no-repeat;display: inline-block;}
 .icon-house{width: 10px;height: 10px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;display: inline-block;}
-.footer{color:#8c8c8c}
+.footer{color:#8c8c8c;}
 .footer a{color:#8c8c8c}
-.footer .footer-w{display: flex;height:60px;background-color:#f4f4f4;}
+.footer .footer-w{display: flex;height:60px;background-color:#f4f4f4;padding: 0 20px}
 .footer .m-1{flex: 1;display: flex;align-items: center;}
 .footer .m-1 .txt{margin-right: 12px;font-weight: bold;}
 .footer .m-2{width: 400px;}
 .footer .m-2 .cm-1{width: 348px;height: 100%;box-sizing: border-box;border-left: 1px solid #ffffff;border-right: 1px solid #ffffff;}
 .footer .m-2 .sel{font-size: 14px;line-height: 60px;margin: 0 30px 0 15px;background: url("../imgs/arrow-down.png") 100% 50% no-repeat;font-weight: bold;}
+
+
+@media screen and (max-width: 749px) {
+    .footer .footer-w{display: block;height: auto;padding: 8px 12px}
+    .footer .m-1{width: 100%;}
+    .footer .m-2{width: 100%;}
+    .footer .m-2 .cm-1{width: 100%;border:0;}
+    .footer .m-2 .sel{margin: 0}
+}

@@ -2,3 +2,6 @@
 .bottom .txt{font-size: 12px;line-height: 12px;color:#8c8c8c;margin-top: 12px;}
 .bottom .txt a{color:#8c8c8c;}
 .bottom .txt-1{margin-top: 18px;}
+@media screen and (max-width: 1199px) {
+    .bottom {padding: 0 12px;text-align: center;}
+}

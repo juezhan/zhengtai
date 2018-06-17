@@ -1,36 +1,49 @@
 <!DOCTYPE HTML>
 <html>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport"
-      content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <title>首页 - ${site.name}</title>
 <meta http-equiv="keywords" content="${site.keywords!}"/>
 <meta http-equiv="description" content="${site.description!}"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script src="../../../../../../r/cms/sjzx/sjzx/js/jquery-3.3.1.min.js"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
-<script type="text/javascript" src="../../../../../../r/cms/pgpj/pgpj/js/jquery.SuperSlide.js"></script>
-<link href="../../../../../../r/cms/sjzx/sjzx/css/index.css" rel="stylesheet"/>
-<link href="../../../../../../r/cms/sjzx/sjzx/css/icon.css" rel="stylesheet"/>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link href="/${res}/css/index.css" rel="stylesheet"/>
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
 
 <!--[if lt IE 9]>
-<script src="../../../../../../r/cms/sjzx/sjzx/js/html5shiv.min.js"></script>
-<script src="../../../../../../r/cms/sjzx/sjzx/js/respond.min.js"></script>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
 <![endif]-->
 <head>
 <body class="index">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
+<div class="ad">
+  <div class="ad-w">
+    <div class="item" style="background-image: url('/${res}/imgs/index-banner-1.png')"></div>
+  </div>
+  <div class="container"></div>
+</div>
 <div class="banner">
   <div class="container">
-    <div class="w-ad">
-      <img src="../../../../../../r/cms/sjzx/sjzx/imgs/index-banner-1.png"/>
-    </div>
     <div class="w-2">
       <div class="m-1">
         <div class="mc-1">
-          <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-1.png"/>
+          <div class="main-list clearfix">
+            <div class="main-list-con">
+              <h3>产品与服务</h3>
+              <h4>PRODUCTS<br>&amp;SERVICES</h4>
+            </div>
+            <ul>
+              <li class="main-list1 animated zoomIn"><a href="product.aspx?type=6"><p>地产</p></a></li>
+              <li class="main-list2 animated zoomIn"><a href="product.aspx?type=7"><p>物业</p></a></li>
+              <li class="main-list3 animated zoomIn"><a href="http://www.bgyhotel.com/index.php/web/hotel/index.html" target="_blank"><p>酒店</p></a></li>
+              <li class="main-list4 animated zoomIn"><a href="product.aspx?type=10"><p>客户中心</p></a></li>
+              <li class="main-list5 animated zoomIn"><a href="http://www.tengyuejz.com/" target="_blank"><p>其他</p></a></li>
+            </ul>
+          </div>
         </div>
         <div class="mc-2">
           <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-3.png"/>
@@ -41,9 +54,11 @@
           <div class="avatar">
             <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-2.png"/>
           </div>
-          <a href="#" class="tit">碧桂园森林城市</a>
-          <a href="#" class="cnt">森林城市地面都是公园，车辆在底层穿行，地面是无污染轨道交通，建筑外墙长满垂直分布的植物，每一天，人们就都生活在花园里，呼吸在森呼吸在森</a>
-          <a href="#" class="more">了解更多 ></a>
+          <div class="mnt">
+            <a href="#" class="tit">碧桂园森林城市</a>
+            <a href="#" class="cnt">森林城市地面都是公园，车辆在底层穿行，建筑外墙长满垂直分布的植物，每一天，人们就都生活在花园里，呼吸在森呼吸在森</a>
+            <a href="#" class="more">了解更多 ></a>
+          </div>
         </div>
       </div>
     </div>
