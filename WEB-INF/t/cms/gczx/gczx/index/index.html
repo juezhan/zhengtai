@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <title>首页 - ${site.name}</title>
 <meta http-equiv="keywords" content="${site.keywords!}"/>
@@ -20,7 +20,11 @@
 <body class="index">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="banner banner-1200" style="background-image: url(/${res}/imgs/ad-1.jpg);">
+<div class="banner" >
+  <div class="item-w">
+    <div class="item" style="background-image: url(/${res}/imgs/ad-1.jpg);"></div>
+  </div>
+  <div class="banner-w">
   <div class="container">
     <div class="arrow arrow-l"></div>
     <div class="arrow arrow-r"></div>
@@ -32,17 +36,6 @@
       <div class="progress-bar-dian"></div>
     </div>
   </div>
-</div>
-<div class="banner banner-750">
-  <div class="container">
-    <img src="/${res}/imgs/ad-1.jpg" />
-    <div class="progress-bar">
-      <div class="progress-bar-dian on"></div>
-      <div class="progress-bar-dian"></div>
-      <div class="progress-bar-dian"></div>
-      <div class="progress-bar-dian"></div>
-      <div class="progress-bar-dian"></div>
-    </div>
   </div>
 </div>
 <div class="case">

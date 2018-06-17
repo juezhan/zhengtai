@@ -31,7 +31,7 @@
     <div class="m-2">
       <div class="tit">
         <div class="mn">主营业务</div>
-        <div class="beard">首页>关于我们</div>
+        <div class="beard"><a href='${base}/'>首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]</div>
       </div>
       <div class="list-w">
         <div class="item">

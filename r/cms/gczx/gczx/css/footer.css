@@ -21,8 +21,8 @@
 .footer .footer-line-2{border-top: 1px dashed #b5b5b5;height: 0;}
 
 @media screen and (min-width: 1680px) {
-  .footer .ft-cell .item.first{width: 720px;}
-	.footer .ft-cell .item.third{float: right;}
+  /*.footer .ft-cell .item.first{width: 720px;}*/
+	/*.footer .ft-cell .item.third{float: right;}*/
 }
 
 
@@ -30,7 +30,7 @@
 	.footer .ft-cell .item{float: right;width: 410px;}
 	.footer .ft-cell .item.first,
 	.footer .ft-cell .item.second,
-	.footer .ft-cell .item.third{margin-left: 0;}
+	.footer .ft-cell .item.third{margin-left: 0;float: left;}
 	.footer .ft-cell .item.first{float: left;}
 	.footer .ft-cell .icon{margin-top: 0;}
 	.footer .ft-cell .item.third{margin-top: 12px;}

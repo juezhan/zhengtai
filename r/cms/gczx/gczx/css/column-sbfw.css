@@ -34,22 +34,31 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .column-sbfw .banner.banner-750{display: none;}
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 768px){
+    .column-sbfw .cell .container{width: 100%;box-sizing: border-box;padding: 0 12px;}
+    .column-sbfw .cell:nth-child(2n-1){padding: 48px 0 37px;}
+    .column-sbfw .cell .img{width: 220px;}
+    .column-sbfw .cell .cnt{width: 500px;}
+    .column-sbfw .cell:nth-child(2n){padding: 60px 0 50px;}
+    .column-sbfw .cell:nth-child(2n) .img{}
+    .column-sbfw .cell:nth-child(2n) .cnt{}
+}
 
-.column-sbfw .banner.banner-1200{display: none;}
-.column-sbfw .banner.banner-750{display: block;}
-.column-sbfw .banner .container{height: auto;}
-.column-sbfw .banner.banner-750 img{width: 100%;}
-.column-sbfw .cell-wrapper{padding-bottom: 36px;}
-.column-sbfw .cell .container{width: 100%;text-align: center;}
-.column-sbfw .cell .img{width: 160px;display: inline-block;float: inherit;}
-.column-sbfw .cell .cnt{width: 100%;float: left;margin-top: 16px;}
-.column-sbfw .cell .cnt .tt{font-size: 16px;}
-.column-sbfw .cell .cnt .bd{text-align: left;font-size: 14px;margin-top: 12px;line-height: 24px;}
-.column-sbfw .cell{}
-.column-sbfw .cell:nth-child(2n-1){padding: 24px 0;}
-.column-sbfw .cell:nth-child(2n) {}
-.column-sbfw .cell:nth-child(2n) .img{float: inherit;}
-.column-sbfw .cell:nth-child(2n) {padding: 24px 0;}
-.column-sbfw .cell:nth-child(2n) .cnt{}
+@media screen and (max-width: 749px) {
+    .column-sbfw .banner.banner-1200{display: none;}
+    .column-sbfw .banner.banner-750{display: block;}
+    .column-sbfw .banner .container{height: auto;}
+    .column-sbfw .banner.banner-750 img{width: 100%;}
+    .column-sbfw .cell-wrapper{padding-bottom: 36px;}
+    .column-sbfw .cell .container{width: 100%;text-align: center;}
+    .column-sbfw .cell .img{width: 160px;display: inline-block;float: inherit;}
+    .column-sbfw .cell .cnt{width: 100%;float: left;margin-top: 16px;}
+    .column-sbfw .cell .cnt .tt{font-size: 16px;}
+    .column-sbfw .cell .cnt .bd{text-align: left;font-size: 14px;margin-top: 12px;line-height: 24px;}
+    .column-sbfw .cell{}
+    .column-sbfw .cell:nth-child(2n-1){padding: 24px 0;}
+    .column-sbfw .cell:nth-child(2n) {}
+    .column-sbfw .cell:nth-child(2n) .img{float: inherit;}
+    .column-sbfw .cell:nth-child(2n) {padding: 24px 0;}
+    .column-sbfw .cell:nth-child(2n) .cnt{}
 }
