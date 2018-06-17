@@ -14,7 +14,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
 
-.about .about-w{height: 314px;}
+/*.about .about-w{height: 314px;}*/
 .about .about-w .bread{display: flex;height: 64px;line-height: 64px;border-bottom: 1px solid #f4f4f4;}
 .about .about-w .bread .icon-house{height: 64px;width: 64px;background-color: #f4f4f4;}
 .about .about-w .bread .c{flex: 1;font-size: 13px;padding-left: 22px;font-weight: bold;}

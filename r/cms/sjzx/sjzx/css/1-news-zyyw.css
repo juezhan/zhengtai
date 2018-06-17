@@ -18,7 +18,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .zyyw-w .bread{display: flex;height: 64px;line-height: 64px;border-bottom: 1px solid #f4f4f4;}
 .zyyw .zyyw-w .bread .icon-house{height: 64px;width: 64px;background-color: #f4f4f4;}
 .zyyw .zyyw-w .bread .c{flex: 1;display: flex; font-size: 18px;padding-left: 22px;}
-.zyyw .zyyw-w .bread .c .t-1{flex: 1}
+.zyyw .zyyw-w .bread .c .t-1{flex: 1;font-weight: bold;font-size: 13px;}
 .zyyw .zyyw-w .bread .c .t-2{margin-right: 60px;}
 .zyyw .zyyw-w .bread .c .t-2 a{margin-left: 22px;}
 
