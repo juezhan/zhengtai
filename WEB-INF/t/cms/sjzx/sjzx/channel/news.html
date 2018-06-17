@@ -21,15 +21,18 @@
 <body class="news">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="container">
-    <div class="news-ad">
-        <img src="/${res}/imgs/about-banner-1.png"/>
+<div class="ad">
+    <div class="ad-w">
+        <div class="item" style="background-image: url('/${res}/imgs/about-banner-1.png')"></div>
     </div>
+    <div class="container"></div>
+</div>
+<div class="container">
     <div class="news-w">
         <div class="bread">
             <i class="icon-house"></i>
             <div class="c">
-                新闻中心
+                <a href='${base}/'>首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
             </div>
         </div>
         <div class="m">

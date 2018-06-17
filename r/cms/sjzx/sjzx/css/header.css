@@ -1,3 +1,12 @@
+.container {width: 1200px;margin: 0 auto}
+.clearfix:after {clear: both;display: block;content: "";height: 0;}
+
+.ad{}
+.ad .ad-w{}
+.ad .ad-w .item{background: 50% 50% no-repeat;background-size: cover}
+.ad .ad-w .item:after{content: '';display: block;padding-top: 25%;}
+.ad .ad-w .container{}
+
 .icon-arrow-down{background-image:url(icon.png);background-position:-38px -40px;width:15px;height:13px}
 .icon-click{background-image:url(icon.png);background-position:0 0;width:20px;height:20px}
 .icon-tzgg-on{background-image:url(icon.png);background-position:-20px 0;width:20px;height:20px}
@@ -15,17 +24,42 @@
 .header .logo img{display: block;margin-top: 27px;}
 .header .mn{flex: 1;text-align: right}
 
-@media screen and (min-width: 1680px) {
-  .container{width:1600px;}
+.header .nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #000;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
+.header .nav-mini .nav-mini-m{display: none;background-color: rgba(0,0,0,.3);position: fixed;top:0;right: 0;height: 100%;width:100%;z-index: 999}
+.header .nav-mini .nav-mini-w{display: none;width:100px;background-color: #ffffff;position: fixed;top:0;right: 0;height: 100%;z-index: 9999;overflow: auto}
+.header .nav-mini .nav-mini-w .item{font-size: 14px;padding: 10px 12px;position: relative;}
+.header .nav-mini .nav-mini-w .item:after{position: absolute;left: 12px;bottom: 0;right: 0;content: '';display: block;height: 1px;background-color: #000000;transform:scaleY(.5);}
+.header .nav-mini .nav-mini-w .menu-mini{font-size: 12px;padding-left: 24px}
+.header .nav-mini.active .nav-mini-m,
+.header .nav-mini.active .nav-mini-w{display: block;}
+
+@media screen and (max-width: 1199px){
+	.container {width: 960px;}
+	.header .header-w{height: auto;padding: 12px 0;}
+	.header .logo{}
+	.header .logo img{width: 200px;margin: 0;}
+	.header .item-w{margin: 18px 0 0;}
+	.header .item-w .item{}
+	.header .item-w .item a{}
+	.header .item-w .item a:after{top: 40px;}
+	.header .item-w .line{}
+}
+@media screen and (max-width: 769px) {
+	.container {width: 100%;}
+	.header .logo img{width: 180px;}
+	.header .header-w {height: auto;padding: 12px;}
+	.header .item-w .item a:after{top: 35px;}
 }
 
 @media screen and (max-width: 749px) {
 	.header .container{height:auto;overflow: hidden;}
-	.header .logo{width: 100%;margin-top: 12px;}
+	.header .logo{width: 100%;margin-top: 0px;}
 	.header .sign{margin: 12px 0;float: left;height: 24px;line-height: 24px;}
 	.header .sign .icon{margin: 3px 8px 0;-webkit-transform: scale(0.8);transform: scale(0.8);}
 	.header .sign .bd{line-height: 24px;height: 24px;padding: 0 12px;}
 	.header .sign a{font-size: 12px;}
+	.header .item-w{display: none}
+	.header .nav-mini{display: block}
 }
 
 @charset "utf-8";
@@ -33,7 +67,6 @@
 
 .bx_fl, .fl {float: left;}
 .bx_fr, .fr {float: right;}
-.container{width:1200px; margin:0 auto;}
 .clear{ clear:both;}
 .c10{height:10px;width:100%;}
 .c20{height:20px;width:100%;}
@@ -42,38 +75,38 @@
 .undis{display:none;margin:0px;padding:0;}
 .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0}
 .hot .item .img img, .hot .item .pic img{
-	width:100%; height:100%;
-	overflow-x: hidden;
-    overflow-y: hidden;
-	transition-delay: 0s;
-    transition-duration: 1s;
-    transition-property: all;
-    transition-timing-function: ease;
-	/* Firefox 4 */
-	-moz-transition-delay: 0s;
-    -moz-transition-duration: 1s;
-    -moz-transition-property: all;
-    -moz-transition-timing-function: ease;
-	/* Safari 和 Chrome */
-	-webkit-transition-delay: 0s;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-property: all;
-    -webkit-transition-timing-function: ease;
-	/* Opera */
-	-o-transition-delay: 0s;
-    -o-transition-duration: 1s;
-    -o-transition-property: all;
-    -o-transition-timing-function: ease;
-	}
+width:100%; height:100%;
+overflow-x: hidden;
+overflow-y: hidden;
+transition-delay: 0s;
+transition-duration: 1s;
+transition-property: all;
+transition-timing-function: ease;
+/* Firefox 4 */
+-moz-transition-delay: 0s;
+-moz-transition-duration: 1s;
+-moz-transition-property: all;
+-moz-transition-timing-function: ease;
+/* Safari 和 Chrome */
+-webkit-transition-delay: 0s;
+-webkit-transition-duration: 1s;
+-webkit-transition-property: all;
+-webkit-transition-timing-function: ease;
+/* Opera */
+-o-transition-delay: 0s;
+-o-transition-duration: 1s;
+-o-transition-property: all;
+-o-transition-timing-function: ease;
+}
 .hot .item .img img:hover, .hot .item .pic img:hover{
-	transform: scale(1.1, 1.1);
-	
-	-ms-transform:scale(1.1, 1.1); 	/* IE 9 */
-	-moz-transform:scale(1.1, 1.1); 	/* Firefox */
-	-webkit-transform:scale(1.1, 1.1); /* Safari 和 Chrome */
-	-o-transform:scale(1.1, 1.1); 	/* Opera */
-	}
-	 
+transform: scale(1.1, 1.1);
+
+-ms-transform:scale(1.1, 1.1); 	/* IE 9 */
+-moz-transform:scale(1.1, 1.1); 	/* Firefox */
+-webkit-transform:scale(1.1, 1.1); /* Safari 和 Chrome */
+-o-transform:scale(1.1, 1.1); 	/* Opera */
+}
+
 
 
 /*新闻样式开始*/
@@ -88,7 +121,7 @@
 .topNews a:hover{color:#ef3838;}
 .topNews em,.topNews span{color:#b7b7b7; font-size:12px; margin-left:20px;}
 
-.news{width:100%; height:340px; margin-top:28px;}
+.news{width:100%;;}
 .news .banner{float:left; width:510px; height:340px; position:relative; margin-right:24px;}
 .news .banner .banner_pre, .news .banner .banner_next{display:none;position:absolute;top:130px;width:20px;height:24px; overflow:hidden;z-index:10;background-image:url(../images/tubiao.png); background-repeat:no-repeat; cursor:pointer;}
 .banner_pre{left:15px;background-position:-10px -10px;}
@@ -296,12 +329,12 @@
 .jcspList .tssjItem #test{height:8px;width:8px;position:absolute;background-color:#fff;border-radius:50%;top:0px;left:10px; z-index:2;}
 .jcspList .tssjItem #rond {height:60px;width:60px;border:1px solid #fff;border-radius:50%;position:absolute;top:70px;left:145px;animation:rond 2s infinite;-webkit-animation:rond 2s infinite; z-index:2;}
 @keyframes rond {
-  0% {transform:rotate(0deg);}
-  100% {transform:rotate(360deg);}
+0% {transform:rotate(0deg);}
+100% {transform:rotate(360deg);}
 }
 @-webkit-keyframes rond {
-  0% {-webkit-transform:rotate(0deg);}
-  100% {-webkit-transform:rotate(360deg);}
+0% {-webkit-transform:rotate(0deg);}
+100% {-webkit-transform:rotate(360deg);}
 }
 
 /*图库样式结束*/
