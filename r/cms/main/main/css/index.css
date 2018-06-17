@@ -345,7 +345,6 @@ img {
 }
 
 @media screen and (min-width: 1620px) {
-    /*
     .container {
         width: 1600px;
     }
@@ -364,7 +363,6 @@ img {
     .float_remind_box{
         width: 198px;
     }
-    */
 }
 
 @media screen and (max-width: 1199px) and (min-width: 769px) {
