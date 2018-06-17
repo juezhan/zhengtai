@@ -15,7 +15,7 @@
 .yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {font-size: 18px;color: #000000;margin-top: 9px;font-weight: 600;}
 .yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-2,
 .yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3 {margin-top: 10px;}
-.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3{height: 36px;overflow: hidden;}
+/*.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3{height: 36px;overflow: hidden;}*/
 .yjzs .cnt-wrapper .cnt-cell-first{padding-bottom: 20px;}
 .yjzs .cnt-wrapper .cnt-cell-first .mn-cnt{flex: 1;}
 .yjzs .cnt-wrapper .cnt-cell-first .date{color: #6d8ac4;font-size: 30px;line-height: 30px;}
