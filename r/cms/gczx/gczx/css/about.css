@@ -44,6 +44,14 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .about .banner.banner-750{display: none;}
 
+@media screen and (max-width: 1199px){
+	.about .item-wrapper{margin: 55px -10px 0;}
+	.about .item-wrapper .item{margin:0 10px;}
+}
+@media screen and (max-width: 768px) {
+	.about .item-wrapper .item{width: 230px; height: 310px;}
+	.about .about-bd{padding:30px 0 60px 0}
+}
 @media screen and (max-width: 749px) {
 
 	.about .banner.banner-1200{display: none;}
@@ -60,14 +68,14 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-bd .bd span.third{margin: 8px 0 0;}
 	.about .about-bd {padding: 24px 0 0;}
 	.about .about-bd .tt{font-size: 18px;}
-	.about .about-bd .bd{text-align: left;width: 206px;margin: 20px auto 0;}
+	.about .about-bd .bd{text-align: left;width: 256px;margin: 20px auto 0;}
 	.about .about-bd .bd .about-icon{}
 	.about .about-bd .bd .about-icon.gczx-email{}
 	.about .about-bd .bd .about-icon.gczx-location{}
 	.about .about-bd .bd .about-icon.gczx-telphone{}
 
 
-	.about .item-wrapper{}
+	.about .item-wrapper{margin: 25px 0 0;}
 	.about .item-wrapper .item{width: 100%;margin: 0 0 12px;box-sizing: border-box;height: auto;padding-bottom: 37px;}
 	.about .item-wrapper .item .mn{}
 	.about .item-wrapper .item .img{}
@@ -76,5 +84,6 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .item-wrapper .item .mobile{}
 	.about .item-wrapper .item .emil{}
 
+	.about .about-bd .bd span{height: 13px;}
 
 }

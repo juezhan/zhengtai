@@ -42,7 +42,13 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .column-pgpj .banner.banner-750{display: none;}
 .column-pgpj .banner.banner-750 img{width: 100%}
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1199px){
+	.column-pgpj .bdcnt .side-bar{transform: scale(.8);margin: -25px  -28px 0 -28px;}
+	.column-pgpj .bdcnt .side-bar .item{height: 84px;}
+	.column-pgpj .bdcnt .article{width: 705px;float: right;}
+}
+
+@media screen and (max-width: 768px) {
 
 	.column-pgpj .banner.banner-1200{display: none;}
 	.column-pgpj .banner.banner-750{display: block;}
