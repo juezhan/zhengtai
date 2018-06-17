@@ -1,6 +1,19 @@
-.lxwm {
-}
+.lxwm {}
 .lxwm .cnt-wrapper{padding-bottom: 110px;}
 .lxwm .cnt-wrapper .txt{line-height: 30px;padding: 28px 0;}
 .lxwm .cnt-wrapper .tit{font-size: 20px;}
 .lxwm .cnt-wrapper .cnt{font-size: 14px;}
+
+@media screen and (max-width: 1199px) and (min-width: 769px){
+}
+@media screen and (max-width: 768px) and (min-width: 750px){
+}
+@media screen and (max-width: 749px){
+    .lxwm .cnt-wrapper{
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+    .lxwm .cnt-wrapper img{
+        width: 100%;
+    }
+}

@@ -1,5 +1,6 @@
 .DS_Store
 /doc/
+/install/
 /jeeadmin/
 /META-INF/
 /res/
@@ -35,11 +36,13 @@ install.html
 /WEB-INF/lib/
 /WEB-INF/lucene/
 /WEB-INF/plug/
+/WEB-INF/jeecms_sys/
 /WEB-INF/t/cms_sys_defined/
 /WEB-INF/t/cms/1s1/
 /WEB-INF/t/cms/jwzkjh/
 /WEB-INF/t/cms/ztfwjh/
 /WEB-INF/t/cms/ztjh/
+/WEB-INF/t/cms/www/
 # Editor directories and files
 .idea
 .vscode

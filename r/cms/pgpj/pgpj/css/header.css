@@ -9,27 +9,34 @@
 
 .header{background-color: rgba(255,255,255,.6);margin-bottom: -86px;z-index: 999;position: relative;}
 .header .container{height:86px}
-.header .logo{float:left;margin:20px 0 0 0}
+.header .logo-w{float:left;margin:20px 0 0 0}
 .header .nav{float: right;line-height: 20px;margin-top: 35px;}
-.header .nav .item{float: left;margin-left: 60px;}
-.header .nav .tt{font-size: 16px;font-weight: bold}
+.header .nav .item{float: left;margin-left: 36px;}
+.header .nav .tt{font-size: 15px;font-weight: bold;}
 .header .nav .tt.on{color: #ec7820}
+.header .nav .menu-list-w{}
+
+.header .nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #000;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
+.header .nav-mini .nav-mini-m{display: none;background-color: rgba(0,0,0,.3);position: fixed;top:0;right: 0;height: 100%;width:100%;z-index: 999}
+.header .nav-mini .nav-mini-w{display: none;width:100px;background-color: #ffffff;position: fixed;top:0;right: 0;height: 100%;z-index: 9999;overflow: auto}
+.header .nav-mini .nav-mini-w .item{font-size: 14px;padding: 10px 12px;position: relative;}
+.header .nav-mini .nav-mini-w .item:after{position: absolute;left: 12px;bottom: 0;right: 0;content: '';display: block;height: 1px;background-color: #000000;transform:scaleY(.5);}
+.header .nav-mini .nav-mini-w .menu-mini{font-size: 12px;padding-left: 24px}
+/*.header .nav-mini .menu-mini*/
+
+.header .nav-mini.active .nav-mini-m,
+.header .nav-mini.active .nav-mini-w{display: block;}
 
 .menu{display: none; background-color: rgba(0,0,0,.6);height: 40px;position: absolute;width: 100%;top: 100%;left: 0;line-height: 40px;text-align: right}
 .menu a{color: #ffffff;margin-left: 59px;}
 .menu.active{display: block;}
 
-@media screen and (min-width: 1680px) {
-	.container{width:1600px;}
-}
 
 @media screen and (max-width: 749px) {
 	.header .container{height:auto;overflow: hidden;}
-	.header .logo{width: 100%;margin-top: 12px;}
-	.header .sign{margin: 12px 0;float: left;height: 24px;line-height: 24px;}
-	.header .sign .icon{margin: 3px 8px 0;-webkit-transform: scale(0.8);transform: scale(0.8);}
-	.header .sign .bd{line-height: 24px;height: 24px;padding: 0 12px;}
-	.header .sign a{font-size: 12px;}
+	.header .logo-w{margin:0;padding:12px 0;}
+	.header .nav{display: none}
+	.header .nav-mini{display: block}
 }
 
 @charset "utf-8";

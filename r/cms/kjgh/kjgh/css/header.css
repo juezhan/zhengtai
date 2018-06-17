@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'iconfont';  /* project id 274880 */
+	src: url('http://at.alicdn.com/t/font_274880_08565vz5yah8h0k9.eot');
+	src: url('http://at.alicdn.com/t/font_274880_08565vz5yah8h0k9.eot?#iefix') format('embedded-opentype'),
+	url('http://at.alicdn.com/t/font_274880_08565vz5yah8h0k9.woff') format('woff'),
+	url('http://at.alicdn.com/t/font_274880_08565vz5yah8h0k9.ttf') format('truetype'),
+	url('http://at.alicdn.com/t/font_274880_08565vz5yah8h0k9.svg#iconfont') format('svg');
+}
+
+.iconfont { vertical-align: middle; font-family: "iconfont" !important; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+
 .icon-arrow-down{background-image:url(icon.png);background-position:-38px -40px;width:15px;height:13px}
 .icon-click{background-image:url(icon.png);background-position:0 0;width:20px;height:20px}
 .icon-tzgg-on{background-image:url(icon.png);background-position:-20px 0;width:20px;height:20px}
@@ -7,29 +18,17 @@
 .icon-zcxx-on{background-image:url(icon.png);background-position:-40px -20px;width:20px;height:20px}
 .icon-zcxx{background-image:url(icon.png);background-position:0 -40px;width:20px;height:20px}
 .icon-user{background-image:url(icon.png);background-position:-20px -40px;width:18px;height:18px}
+.clearfix:after {clear: both;display: block;content: "";height: 0;}
+
+.header {position: fixed;width: 100%;top:0;left: 0;background-color: rgba(255,255,255,.9);}
+.header .container{height:80px;position: relative;}
+.header .logo{float:left;}
+.header .navigation-bar{float:right;}
 
 
-/*.header .container{height:105px}
-.header .logo{float:left;margin:20px 0 0 0}
-.header .sign{float:right;border:1px solid #e5e5e5;height:38px;line-height:38px;border-radius:12px;font-size:0;margin-top:29px}
-.header .sign .icon{float:left;margin:10px 12px 0}
-.header .sign .bd{padding:0 18px;display:inline-block;border-left:1px solid #e5e5e5;font-size:0;line-height: 40px;height: 40px;}
-.header .sign a{color:#293896;font-size:14px}
-.header .sign a+a{margin-left:17px}*/
-.header {position: relative;}
-.header {position: relative;}
-.header .container{height:42px}
-.header .logo{float:left;margin:24px 0 0 72px}
-.header .navigation-bar{float:right;margin:42px 20px 0 0}
-.header .navigation-bar .item{display:inline-block;text-align:center;font-size:16px;color:#a09f9f;position: relative;height: 86px;}
-.header .navigation-bar .item span{display:block}
-.header .navigation-bar .item span.tit-2{margin-top:16px}
-.header .navigation-bar .item.on,
-.header .navigation-bar .item.is-set{color:#0093ff;height: 86px;}
+/*.header .navigation-bar .item .menu-arrow{background:url(../imgs/menu-arrow.png) 0 0 no-repeat;width: 45px;height: 18px;background-size: 100% 100%;position: absolute;left: 50%;bottom: 0;margin-left: -22px;display: none;}*/
 
-.header .navigation-bar .item .menu-arrow{background:url(../imgs/menu-arrow.png) 0 0 no-repeat;width: 45px;height: 18px;background-size: 100% 100%;position: absolute;left: 50%;bottom: 0;margin-left: -22px;display: none;}
-
-.header .navigation-bar .item.is-set .menu-arrow{display: block;}
+/*.header .navigation-bar .item.is-set .menu-arrow{display: block;}*/
 
 
 @media screen and (max-width: 749px) {

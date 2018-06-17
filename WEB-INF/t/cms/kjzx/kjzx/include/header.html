@@ -1,12 +1,98 @@
 <!-- header 开始 -->
 <link href="/${res}/css/header.css" rel="stylesheet"/>
+<link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
 <div class="header">
-    <div class="container">
+    <div class="container clearfix">
         <img src="/${res}/imgs/logo.png" class="logo">
-        <!--<div class="cnt-1">
-            <a class="search" href="#"><i class="icon-magnifier"></i></a><a class="txt" href="#">中文</a>丨<a class="txt" href="#">EN</a>
-        </div>-->
-        [#include "./nav.html"/]
+        <div class="navigation-bar" id="navigationBar">
+            [@cms_channel_list]
+            [#if !channel??]
+            <div class="item"><a href="/" class="tt index on">首页</a></div>
+            [#list tag_list as c]
+            [#if c_index<5]
+            <div class="item">
+                <a href="${c.url}" class="tt" id="item_${c.id}" data-target="#subNav_${c.id}">${c.name}</a>
+            </div>
+            [/#if]
+            [/#list]
+            [#else]
+            <div class="item"><a href="/" class="tt index">首页</a></div>
+            [#list tag_list as c]
+            <div class="item">
+                <a href="${c.url}" id="item_${c.id}" class="tt[#if channel??&&channel.id==c.id] on[/#if]" data-target="#subNav_${c.id}">${c.name}</a>
+            </div>
+            [/#list]
+            [/#if]
+            [/@cms_channel_list]
+        </div>
+        <div class="nav-mini" id="navigationBarMini">
+            <div class="nav-mini-m"></div>
+            <div class="nav-mini-w">
+                [@cms_channel_list]
+                <div class="item"><a href="${base}/" class="tt on">首页</a></div>
+                [#list tag_list as c]
+                <div class="item">
+                    <a href="${c.url}" class="tt" >${c.name}</a>
+                </div>
+                [@cms_channel_list parentId=c.id]
+                [#if tag_list?size>0]
+                [#list tag_list as c2]
+                <div class="item menu-mini">
+                    <a href="${c2.url}" class="tt">${c2.name}</a>
+                </div>
+                [/#list]
+                [/#if]
+                [/@cms_channel_list]
+                [/#list]
+                [/@cms_channel_list]
+            </div>
+        </div>
     </div>
 </div>
+<div class="sub-nav" id="subNav">
+    <div class="container clearfix">
+    [@cms_channel_list]
+    [#list tag_list as c]
+    [@cms_channel_list parentId=c.id]
+    [#if tag_list?size>0]
+    <div class="menu" data-target="#item_${c.id}" id="subNav_${c.id}">
+        [#list tag_list as c2]
+        <a href="${c2.url}" class="tt">${c2.name}</a>
+        [/#list]
+    </div>
+    [/#if]
+    [/@cms_channel_list]
+    [/#list]
+    [/@cms_channel_list]
+    </div>
+</div>
+<script>
+    // subNav
+    var mt = null
+    $('#navigationBar a.tt').each(function () {
+      $(this).hover(function () {
+        var $target = $(this).data('target')
+        $($target).addClass('active').siblings().removeClass('active');
+      },function () {
+        $('#subNav .menu').removeClass('active');
+      });
+    });
+    $('#subNav .menu').each(function () {
+      var $target = $(this).data('target')
+      $(this).css({left:$($target).offset().left-20+'px'})
+      $(this).hover(function () {
+        $(this).addClass('active');
+      },function () {
+        $('#subNav .menu').removeClass('active');
+      })
+    });
+    // navigationBarMini
+    $('#navigationBarMini').click(function () {
+    $(this).addClass('active')
+  });
+    $('#navigationBarMini .nav-mini-m').click(function () {
+    $('#navigationBarMini').removeClass('active');
+    return false;
+  });
+</script>
 <!-- header 结束 -->

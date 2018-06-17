@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>首页 - ${site.name}</title>
 <meta http-equiv="keywords" content="${site.keywords!}"/>
@@ -19,17 +20,11 @@
 <body class="index">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="banner-tt">
-    <div class="container">
-        <div class="links">
-            <a href="#" class="link">联系我们</a>
-            <a href="#" class="link">加入我们</a>
-        </div>
-    </div>
-</div>
 <div class="banner">
     <div class="container">
-        <img src="/${res}/imgs/banner-1.png"/>
+        <div class="ad-wrapper">
+            <div class="item" style="background-image: url('/${res}/imgs/banner-1.png')"></div>
+        </div>
     </div>
 </div>
 <div class="news">
@@ -42,9 +37,8 @@
         <div class="w-2">
             <div class="tag">
                 <div class="tag-tt">
-                    <div class="item active" data-target="c1">集团新闻</div>
-                    <div class="item" data-target="c2">地方动态</div>
-                    <div class="item" data-target="c3">媒体报道</div>
+                    <div class="item active" data-target="c1">新闻中心</div>
+                    <div class="item" data-target="c2">业绩展示</div>
                 </div>
                 <div class="tab-bd">
                     <div class="item c1 active">
@@ -57,28 +51,45 @@
                         <a href="#">2018.03.26 万科2017年报致股东：做无愧伟大新时代的...</a>
                         <a href="#">2018.03.26 万科发布2017年度报告：各项业务保持稳健...</a>
                     </div>
-                    <div class="item c3">
-                        <a href="#">2018.04.11 集团新闻万科总部大厦开工仪式在深圳举行</a>
-                        <a href="#">2018.03.26 万科2017年报致股东：做无愧伟大新时代的...</a>
-                        <a href="#">2018.03.26 万科发布2017年度报告：各项业务保持稳健...</a>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="w-3">
-            <div class="txt-1">正泰A000002</div>
-            <div class="txt-2">
-                28.40
-                <small>RMB</small>
-            </div>
-            <div class="txt-3">截至 2018-04-27 15:05:03</div>
-        </div>
     </div>
 </div>
-<div class="banner">
-    <div class="container">
-        <img src="/${res}/imgs/img-1.png"/>
+<div id="subjects">
+    <div class="container g-wrap" id="subjectsWrap">
+        <a class="item-1" data-target="state-1" target="_blank"
+           href="http://www.vanke.com/upload/file/2016-07-22/03613d09-aa45-4ded-98c3-d60f550da1d8.pdf" idx="1">
+            <span class="p1"><img src="/upload/img/2016-07-28/c58a160d-8092-47b3-83e4-fa8d37b16bb2.jpg" alt=""></span>
+            <span class="p2" style="left: 350px; top: 21px;"></span>
+        </a>
+        <a class="item-2" data-target="state-2" target="_blank" href="http://www.runforfun.com/" idx="2">
+            <span class="p1"><img src="/upload/img/2015-04-29/d94d2c0d-3a38-45c9-bf2f-f6804e12a49c.jpg" alt=""></span>
+            <span class="p2"><img src="/upload/img/2015-04-30/6ead2c8e-f430-4407-b7ac-63208aca4d7a.jpg" alt=""></span>
+        </a>
+        <a class="item-3" data-target="state-3" target="_blank" href="http://life.vanke.com" idx="3">
+            <span class="p1"><img src="/upload/img/2018-01-18/a6b5caa1-24ab-4fd4-9c54-71309ecc26c3.jpg" alt=""></span>
+            <span class="p2"><img src="/upload/img/2016-09-22/9a19119d-ce86-4734-ac21-eeccbe9a587d.jpg" alt=""></span>
+        </a>
+        <a class="item-4" data-target="state-4" target="_blank" href="http://www.vankeweekly.com/" idx="4">
+            <span class="p1"><img src="/upload/img/2015-04-29/02b0c63d-4b68-4eba-9359-8bdaada83524.jpg" alt=""></span>
+            <span class="p2"><img src="/upload/img/2015-06-09/1dd49f8c-9a50-4381-8091-544109091213.jpg" alt=""></span>
+        </a>
     </div>
+    <script>
+      var $subjectsWarp = $('#subjectsWrap');
+      setTimeout(function () {
+        $subjectsWarp.addClass('state-0');
+      }, 500);
+      $('#subjectsWrap a').each(function () {
+        $(this).hover(function () {
+          var target = $(this).data('target');
+          $subjectsWarp.removeClass('state-0 state-1 state-2 state-3 state-4').addClass(target);
+        }, function () {
+          $subjectsWarp.removeClass('state-1 state-2 state-3 state-4').addClass('state-0');
+        });
+      });
+    </script>
 </div>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
