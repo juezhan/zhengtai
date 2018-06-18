@@ -17,7 +17,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon-house{width: 18px;height: 18px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;}
 .icon{display:inline-block}
 .about .about-bd .container{width:1308px;margin:0 auto;}
-.about .about-bd{background: url("../imgs/about-bg.png") 50% 100% repeat-x;padding: 87px 0 45px;}
+.about .about-bd{background: url("../imgs/about-bg.png") 50% 100% repeat-x;padding: 87px 0 45px;background-size: contain;}
 .about .about-mn{background-color: #ffffff;padding: 0 54px;}
 .about .about-bd .tt{font-size:14px;line-height:18px;text-align:left;color:#000000;padding: 30px 0 16px;border-bottom: 2px solid #999a9a;font-weight: bold;}
 .about .about-bd .tt .icon{float: left;margin-right: 5px;}
