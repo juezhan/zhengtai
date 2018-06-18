@@ -21,7 +21,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-xwzx .xwzx-mn{background-color: #ffffff;padding: 0 54px;}
 .news-xwzx .xwzx-mbd{display: flex;}
 .news-xwzx .list-wapper{flex: 1;}
-.news-xwzx .list-wapper .tt{font-size:12px;line-height:18px;text-align:left;color:#000000;padding: 98px 0 16px;border-bottom: 2px solid #999a9a;font-weight: bold;}
+.news-xwzx .list-wapper .tt{font-size:14px;line-height:18px;text-align:left;color:#000000;padding: 98px 0 16px;border-bottom: 2px solid #999a9a;font-weight: bold;}
 .news-xwzx .list-wapper .tt .icon{float: left;margin-right: 5px;}
 .news-xwzx .list-wapper .tt .ts:last-child{color: #e60b00;}
 .news-xwzx .list-wapper .list-items{color: #645b58}
