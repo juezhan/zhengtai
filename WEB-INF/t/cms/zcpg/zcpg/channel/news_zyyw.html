@@ -29,8 +29,7 @@
                 <div class="list-wapper">
                     <div class="tt">
                         <div class="tt-w">
-                            <i class="icon icon-house"></i><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as
-                            n]<a
+                            <i class="icon icon-house"></i><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a
                                 href='${n.url}' target='_blank' class="ts">${n.name}</a>[#if n_has_next] &gt;
                             [/#if][/#list]
                         </div>
@@ -42,12 +41,8 @@
                         <div class="item" href="${a.url}">
                             <div class="t">
                                 <div class="t-1">${a.title}</div>
-                                <div class="t-2">${a.stit}</div>
                             </div>
                             <div class="c">
-                                <div class="avatar">
-                                    <img src='${a.titleImg!}'/>
-                                </div>
                                 <div class="desc">${a.desc}</div>
                             </div>
                         </div>
