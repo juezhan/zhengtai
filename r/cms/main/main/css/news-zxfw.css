@@ -36,6 +36,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name{width:576px;color:#293896}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name a{color:#293896}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .date{width:198px;text-align:center}
+.xxgs .xxgs-main .container .xxgs-cnt .zcpg{min-height: 266px;}
+.xxgs .xxgs-main .container .xxgs-cnt .tiaoz{color:#2084da;float: right;}
+
 
 @media screen and (min-width: 1620px) {
   .container{width:1600px;}
