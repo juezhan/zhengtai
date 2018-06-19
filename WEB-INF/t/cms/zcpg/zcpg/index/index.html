@@ -33,16 +33,19 @@
             <div class="news-list">
                 <div class="tab-wrapper" id="tabWrapper">
                     <div class="tab-tag" >
-                        [@cms_channel_list parentId='216']
+                        [@cms_channel_list]
                         [#list tag_list as c]
+                        [#if c.id == 216 || c.id == 218 ]
                         <div class="tab-tag-item[#if c_index == 0] active[/#if]" data-target="#div_${c.id}">${c.name}</div>
+                        [/#if]
                         [/#list]
                         [/@cms_channel_list]
                     </div>
                     <div class="tab-cnt">
-                        [@cms_channel_list parentId='216']
+                        [@cms_channel_list]
                         [#list tag_list as c]
-                        <div class="tab-cnt-item [#if c_index == 0] active[/#if]" id="div_${c.id}">
+                        [#if c.id == 216 || c.id == 218 ]
+                        <div class="tab-cnt-item [#if c.id == 216] active[/#if]" id="div_${c.id}">
                             [@cms_content_list channelId=c.id count='1' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
                             [#list tag_list as a]
                             <div class="tit">${a.title}</div>
@@ -53,6 +56,7 @@
                             [/#list]
                             [/@cms_content_list]
                         </div>
+                        [/#if]
                         [/#list]
                         [/@cms_channel_list]
                     </div>
