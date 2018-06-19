@@ -50,33 +50,33 @@
       <div class="tag-bd" id=tagBd>
         [@cms_channel_list]
         [#list tag_list as c]
-          [#if c.id==170 || c.id==169]
-          <div class="item [#if c.id==169] on[/#if] ${c.path}">
-            <ul>
+        [#if c.id==170 || c.id==169]
+        <div class="item [#if c.id==169] on[/#if] ${c.path}">
+          <ul>
             [@cms_content_list count='8' orderBy='4' channelId=c.id channelOption='1' dateFormat='yyyy-MM-dd']
             [#list tag_list as a]
-              <li><div><a href="${a.url}"><em></em>${a.title}</a></div><span>${a.date?string(dateFormat)}</span></li>
+            <li><div><a href="${a.url}"><em></em>${a.title}</a></div><span>${a.date?string(dateFormat)}</span></li>
             [/#list]
             [/@cms_content_list]
-            </ul>
-            <a href="${c.url}" class="more">更多&gt;&gt;</a>
-          </div>
-          [/#if]
+          </ul>
+          <a href="${c.url}" class="more">更多&gt;&gt;</a>
+        </div>
+        [/#if]
         [/#list]
         [/@cms_channel_list]
       </div>
       <script type="text/javascript">
-        var target = '';
-        $('#tagTt > .item').each(function (e) {
-          $(this).mouseenter(function(){
-           target = $(this).addClass('on').siblings('.item').removeClass('on').end().data('target');
-           tagToggle(target)
+          var target = '';
+          $('#tagTt > .item').each(function (e) {
+              $(this).mouseenter(function(){
+                  target = $(this).addClass('on').siblings('.item').removeClass('on').end().data('target');
+                  tagToggle(target)
+              });
           });
-        });
-        function tagToggle(_target){
-          $('#tagBd>.item').removeClass('on');
-          $('#tagBd>.' + target).addClass('on');
-        }
+          function tagToggle(_target){
+              $('#tagBd>.item').removeClass('on');
+              $('#tagBd>.' + target).addClass('on');
+          }
       </script>
     </div>
   </div>
@@ -117,16 +117,13 @@
         <div class="tt">工程咨询</div>
         <div class="bd">
           <div class="btn-w">
-            <a href="${base}/gczx/" target="_blank" title="战略研究" rel="战略研究" class="tip link-btn"><em>&gt;</em>战略研究</a>
-              </div>
-          <div class="btn-w">
-            <a href="${base}/gczx/" target="_blank" title="试点方案" rel="试点方案" class="tip link-btn"><em>&gt;</em>试点方案</a>
+            <a href="${base}/main/zxzx/index.jhtml" target="_blank" title="专项咨询" rel="专项咨询" class="tip link-btn"><em>&gt;</em>专项咨询</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/gczx/" target="_blank" title="可行性研究" rel="可行性研究" class="tip link-btn"><em>&gt;</em>可行性研究</a>
+            <a href="${base}/main/gczj/index.jhtml" target="_blank" title="工程造价" rel="工程造价" class="tip link-btn"><em>&gt;</em>工程造价</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/gczx/" target="_blank" title="工程造价" rel="工程造价" class="tip link-btn"><em>&gt;</em>工程造价</a>
+            <a href="${base}/main/zbdl/index.jhtml" target="_blank" title="招标代理" rel="招标代理" class="tip link-btn"><em>&gt;</em>招标代理</a>
           </div>
         </div>
       </div>
@@ -135,19 +132,16 @@
         <div class="tt">科技咨询</div>
         <div class="bd">
           <div class="btn-w">
-            <a href="${base}/kjzx/" target="_blank" title="企业培育咨询服务" rel="企业培育咨询服务" class="tip link-btn"><em>&gt;</em>企业培育咨询服务</a>
+            <a href="${base}/main/gjyssrddglkjxqydchysb/index.jhtml" target="_blank" title="国家与省市认定的各类科技型企业的策划与申报" rel="国家与省市认定的各类科技型企业的策划与申报" class="tip link-btn"><em>&gt;</em>国家与省市认定的各类科技型企业的策划与申报</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/kjzx/" target="_blank" title="技术开发和转移咨询" rel="技术开发和转移咨询" class="tip link-btn"><em>&gt;</em>技术开发和转移咨询</a>
+            <a href="${base}/main/kjcgpjone/index.jhtml" target="_blank" title="科技成果评价" rel="科技成果评价" class="tip link-btn"><em>&gt;</em>科技成果评价</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/kjzx/" target="_blank" title="科技发展计划项目咨询" rel="科技发展计划项目咨询" class="tip link-btn"><em>&gt;</em>科技发展计划项目咨询</a>
+            <a href="${base}/main/kjzczcxmdchysb/index.jhtml" target="_blank" title="科技政策支持项目的策划与申报" rel="科技政策支持项目的策划与申报" class="tip link-btn"><em>&gt;</em>科技政策支持项目的策划与申报</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/kjzx/" target="_blank" title="创业创新培训服务" rel="创业创新培训服务" class="tip link-btn"><em>&gt;</em>创业创新培训服务</a>
-          </div>
-          <div class="btn-w">
-            <a href="${base}/kjzx/" target="_blank" title="科技成果第三方评价" rel="科技成果第三方评价" class="tip link-btn"><em>&gt;</em>科技成果第三方评价</a>
+            <a href="${base}/main/xzqycjsjqyjszxhsjkjcxzx/index.jhtml" target="_blank" title="协助企业创建省级企业技术中心和省级科技创新中心" rel="协助企业创建省级企业技术中心和省级科技创新中心" class="tip link-btn"><em>&gt;</em>协助企业创建省级企业技术中心和省级科技创新中心</a>
           </div>
         </div>
       </div>
@@ -186,28 +180,16 @@
         <div class="tt">审计咨询</div>
         <div class="bd">
           <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="常规财务审计" rel="常规财务审计" class="tip link-btn"><em>&gt;</em>常规财务审计</a>
+            <a href="${base}/main/jxpj/index.jhtml" target="_blank" title="绩效评价" rel="绩效评价" class="tip link-btn"><em>&gt;</em>绩效评价</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="科技发展计划项目验收专审" rel="科技发展计划项目验收专审" class="tip link-btn"><em>&gt;</em>科技发展计划项目验收专审</a>
+            <a href="${base}/main/kjzx/index.jhtml" target="_blank" title="科技专项" rel="科技专项" class="tip link-btn"><em>&gt;</em>科技专项</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="高新技术企业认定专审" rel="高新技术企业认定专审" class="tip link-btn"><em>&gt;</em>高新技术企业认定专审</a>
+            <a href="${base}/main/gqrd/index.jhtml" target="_blank" title="高企认定" rel="高企认定" class="tip link-btn"><em>&gt;</em>高企认定</a>
           </div>
           <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="国家、省发改重大专项验收审计财务审计" rel="国家、省发改重大专项验收审计财务审计" class="tip link-btn"><em>&gt;</em>国家、省发改重大专项验收审计财务审计</a>
-          </div>
-          <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="司法鉴定审计" rel="司法鉴定审计" class="tip link-btn"><em>&gt;</em>司法鉴定审计</a>
-          </div>
-          <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="海关进出口企业稽查审核" rel="海关进出口企业稽查审核" class="tip link-btn"><em>&gt;</em>海关进出口企业稽查审核</a>
-          </div>
-          <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="投资、收购项目的财务尽职调查" rel="投资、收购项目的财务尽职调查" class="tip link-btn"><em>&gt;</em>投资、收购项目的财务尽职调查</a>
-          </div>
-          <div class="btn-w">
-            <a href="${base}/sjzx/" target="_blank" title="财政支出资金绩效评价" rel="财政支出资金绩效评价" class="tip link-btn"><em>&gt;</em>财政支出资金绩效评价</a>
+            <a href="${base}/main/dysj/index.jhtml" target="_blank" title="多元审计" rel="多元审计" class="tip link-btn"><em>&gt;</em>多元审计</a>
           </div>
         </div>
       </div>
@@ -224,11 +206,11 @@
         </div>
       </div>
       <script type=text/javascript>
-        $(function() {
-          $(".tip").powerFloat({
-            targetMode:"remind"
+          $(function() {
+              $(".tip").powerFloat({
+                  targetMode:"remind"
+              });
           });
-        });
       </script>
     </div>
   </div>
