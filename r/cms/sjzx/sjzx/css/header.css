@@ -19,9 +19,9 @@
 
 
 .header {}
-.header .header-w{height: 120px;display: flex;}
+.header .header-w{height: 90px;display: flex;}
 .header .logo{}
-.header .logo img{display: block;margin-top: 27px;}
+.header .logo img{display: block;margin-top: 27px;width: 146px;}
 .header .mn{flex: 1;text-align: right}
 
 .header .nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #000;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
