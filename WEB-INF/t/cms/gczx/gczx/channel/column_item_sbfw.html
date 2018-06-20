@@ -27,20 +27,20 @@
     <img src="/${res}/imgs/declaration.png" />
     <div class="container"></div>
 </div>
-<div class="cell-wrapper">    
+<div class="cell-wrapper">
     [@cms_channel_list parentId=channel.id]
-        [#list tag_list as c]
-            <div class="cell">
-                <div class="container">
-                    <img class="img" src="${c.contentImg!} " />
-                    <div class="cnt">
-                        <h1 class="tt">${c.title}</h1>
-                        <p class="bd">${c.description}</p>
-                    </div>            
-                </div>
+    [#list tag_list as c]
+    <div class="cell">
+        <div class="container">
+            <img class="img" src="${c.contentImg!} " />
+            <div class="cnt">
+                <h1 class="tt">${c.title}</h1>
+                <p class="bd">${c.txt}</p>
             </div>
-        [/#list]
-    [/@cms_channel_list]  
+        </div>
+    </div>
+    [/#list]
+    [/@cms_channel_list]
     <!-- <div class="cell">
         <div class="container">
             <img class="img" src="/${res}/imgs/矢量图层.png" />

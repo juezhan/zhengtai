@@ -18,9 +18,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-zlyj .banner .container{height: 350px;}
 
 .news-zlyj .banner-1{text-align: center;}
-.news-zlyj .banner-1 .container{height: 502px;}
+.news-zlyj .banner-1 .container{height: 728px;}
 .news-zlyj .banner-1 .tt{font-size: 24px;height: 24px;line-height: 24px;margin-top: 58px;}
-.news-zlyj .banner-1 .bd{font-size: 16px;color: #656565;line-height: 30px;margin: 40px auto 0;width: 760px;}
+.news-zlyj .banner-1 .bd{font-size: 16px;color: #656565;line-height: 30px;margin: 40px auto 0;width: 768px;text-align: left;}
 .news-zlyj .banner-1 .item-wrapper{overflow: hidden;text-align: center;font-size: 0;margin-top: 70px;}
 .news-zlyj .banner-1 .item{width: 180px;display: inline-block;text-align: center;margin: 0 30px;}
 .news-zlyj .banner-1 .item .img{width: 126px;height: 134px;background:50% 50% no-repeat;margin: 0 auto 45px}
