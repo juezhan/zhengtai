@@ -1,7 +1,8 @@
 
 .header{border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb;}
-.header .container{height:118px}
-.header .logo{float:left;margin:27px 0 0 0}
+.header .container{height:84px}
+.header .logo{float:left;margin:25px 0 0 0;
+	width: 132px;}
 .header .sign{float:right;color: #999999;margin-top: 48px;display: flex;height: 22px;line-height: 22px;}
 .header .sign .icon-earth{float:left;}
 .header .sign .bd{flex: 1;}

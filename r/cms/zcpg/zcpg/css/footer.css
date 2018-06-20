@@ -1,7 +1,7 @@
 .footer{height:auto;background-color:#f5eedc;color:#999999}
 .footer a{color:#999999}
 .footer .footer-wrapper{display: flex;}
-.footer .footer-wrapper .mn-1{width: 33%;border-top: 2px solid #413e8d;height: 148px;color: #000000;}
+.footer .footer-wrapper .mn-1{width: 33%;border-top: 2px solid #413e8d;height: 200px;color: #000000;}
 .footer .footer-wrapper .mn-1 .txt-1{font-size: 12px;line-height: 12px;margin-top: 28px;}
 .footer .footer-wrapper .mn-1 .txt-2{font-size: 22px;line-height: 22px;margin-top: 25px;}
 .footer .footer-wrapper .mn-1 .txt-2 span{color: #fc5111;margin-left: 14px;}
