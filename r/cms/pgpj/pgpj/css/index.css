@@ -24,7 +24,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .banner .btns .btn-r{background: url(http://www.crpharm.com/images/next.png) 0 0 no-repeat;right: 0;}
 .index .banner .btns .btn-l:hover,
 .index .banner .btns .btn-r:hover{background-position: -32px 0;}
-.index .banner .t{position: relative;margin-top:-70px;background-color: rgba(236,120,32,.7);}
+.index .banner .t{position: relative;margin-top:-70px;background-color: rgba(14,132,199,0.59);}
 .index .banner .t .container{height: 70px;line-height: 70px;font-size: 24px;color: #fffefd;text-align: right;}
 .index .banner img {width: 100%;}
 
@@ -69,7 +69,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .b-2 .item{position: relative;float: left;overflow: hidden;}
 .index .b-2 .item + .item{margin-left: 29px;}
 .index .b-2 img{position: relative}
-.index .b-2 span{position: absolute;display: block;left: 0;bottom: 0;height: 32px;line-height: 32px;text-align: center;width: 100%;color: #fff;background-color: rgba(236,120,32,.9);}
+.index .b-2 span{position: absolute;display: block;left: 0;bottom: 0;height: 32px;line-height: 32px;text-align: center;width: 100%;color: #fff;background-color: rgba(14,132,199,0.59);}
 
 .index .b-3{margin: 30px 0;}
 .index .b-3 .items{overflow: hidden;padding: 0 5px;}
