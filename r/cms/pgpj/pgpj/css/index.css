@@ -59,7 +59,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .news .tab-cnt-item .list s{margin-left: 5px;text-decoration: none}
 .index .news .tab-cnt-item .list a:hover b{color: #ee7700;}
 .index .news .n-2{}
-.index .news .n-2 .t{font-size: 20px;color: #ed7826;height: 50px;line-height: 50px;position: relative;background: url("../imgs/icon-triangle.png") 100% 0% no-repeat;}
+.index .news .n-2 .t{font-size: 20px;color: #ed7826;line-height: 33px;position: relative;background: url(http://www.crpharm.com/images/mHeader.png) 100% 20px no-repeat;height: 33px;padding-bottom: 6px;}
 .index .news .n-2 .t:after{background-color:#a0a0a0;display: block;content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 1px;}
 .index .news .n-2 .c{overflow: hidden;padding: 23px 0}
 .index .news .n-2 .c img{width: 100%}
