@@ -57,7 +57,7 @@
     [#if tag_list?size>0]
     <div class="menu" data-target="#item_${c.id}" id="subNav_${c.id}">
         [#list tag_list as c2]
-        <a href="${c2.url}" class="tt">${c2.name}</a>
+        <a href="${c2.url}" class="tt clearfix">${c2.name}</a>
         [/#list]
     </div>
     [/#if]
@@ -73,13 +73,17 @@
       $(this).hover(function () {
         var $target = $(this).data('target')
         $($target).addClass('active').siblings().removeClass('active');
+        $('#navigationBar a.tt').removeClass('active');
+        $(this).addClass('active');
       },function () {
         $('#subNav .menu').removeClass('active');
+        $('#navigationBar a.tt').removeClass('active');
       });
     });
     $('#subNav .menu').each(function () {
-      var $target = $(this).data('target')
-      $(this).css({left:$($target).offset().left-20+'px'})
+      var $target = $(this).data('target');
+      console.log($(this),$($target).offset() );
+      $(this).css({left:($($target).offset().left- 8)+'px'});
       $(this).hover(function () {
         $(this).addClass('active');
       },function () {

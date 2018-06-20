@@ -1,9 +1,11 @@
-.navigation-bar {float: right}
+.navigation-bar {float: right;}
 .navigation-bar .bd{margin:0 auto;text-align:center;float: left;}
 .navigation-bar .item{display:inline-block;text-align:center;font-size:14px;height: 80px;line-height: 80px;float: left;}
-.navigation-bar .item a.tt{color:#000;display:inline-block;padding: 0 16px;}
+.navigation-bar .item a.tt{color:#000;display:inline-block;padding: 0 16px;position: relative;}
 .navigation-bar .item a.tt.index{padding: 0 20px;}
-.navigation-bar .item a.tt.on{color:#ffffff;background-color:#556cfd}
+.navigation-bar .item a.tt.on{color:#ffffff;background-color:#556cfd;}
+.navigation-bar .item a.tt:after{display:block; content:'';background-color:#556cfd;height: 0;width: 100%;left: 0;bottom: 0;position: absolute;transition: height .1s linear;}
+.navigation-bar .item a.tt.active:after{height: 4px;}
 
 .nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #9a9a9a;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
 .nav-mini .nav-mini-m{display: none;background-color: rgba(0,0,0,.3);position: fixed;top:0;right: 0;height: 100%;width:100%;z-index: 999}
