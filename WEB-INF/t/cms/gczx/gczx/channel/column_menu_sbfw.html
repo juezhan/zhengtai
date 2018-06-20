@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name}</title>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/column-sbfw.css" />
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+</head>
+<body class="column-sbfw">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="banner banner-1200" style="background-image: url(/${res}/imgs/declaration.png);">
+    <div class="container"></div>
+</div>
+<div class="banner banner-750">
+    <img src="/${res}/imgs/declaration.png" />
+    <div class="container"></div>
+</div>
+<div class="cell-wrapper">
+    [@cms_channel_list parentId=channel.id]
+    [#list tag_list as c]
+    <div class="cell">
+        <div class="container">
+            <img class="img" src="${c.contentImg!} " />
+            <div class="cnt">
+                <h1 class="tt">${c.title}</h1>
+                <p class="bd">${c.txt}</p>
+            </div>
+        </div>
+    </div>
+    [/#list]
+    [/@cms_channel_list]
+</div>
+
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

@@ -28,9 +28,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .column-sbfw .cell .cnt .bd{font-size: 18px;line-height: 34px;color: #909090;margin-top: 27px;}
 .column-sbfw .cell:nth-child(2n-1){padding: 96px 0  74px;}
 .column-sbfw .cell:nth-child(2n) {padding: 162px 0 97px;}
-.column-sbfw .cell:nth-child(2n) .img{float: right;}
+/*.column-sbfw .cell:nth-child(2n) .img{float: right;}*/
 .column-sbfw .cell:nth-child(2n) {background-color: #f8f8f8}
-.column-sbfw .cell:nth-child(2n) .cnt{float: left;}
+/*.column-sbfw .cell:nth-child(2n) .cnt{float: left;}*/
 
 .column-sbfw .banner.banner-750{display: none;}
 
