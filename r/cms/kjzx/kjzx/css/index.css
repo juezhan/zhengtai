@@ -55,7 +55,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 #subjects {height:165px; background-color:#e0e2e4;}
 #subjects .g-wrap{position: relative;height: 100%;overflow: hidden;}
 #subjects .g-wrap a {position:absolute; top:0; left:100%; width:100%; height:100%; overflow:hidden; -webkit-opacity:1; opacity:1; display:block\9; -webkit-transition:left 300ms, -webkit-opacity 700ms; transition:left 300ms, opacity 700ms;}
-#subjects .g-wrap .item-1 {z-index:1; background-color:#c8c8c8;}
+#subjects .g-wrap .item-1 {z-index:1; background-color:#E8E7EC;}
 #subjects .g-wrap .item-2 {z-index:2; background-color:#ffd900;}
 #subjects .g-wrap .item-3 {z-index:3; background-color:#fc433e;}
 #subjects .g-wrap .item-4 {z-index:4; background-color:#2d2d58;}

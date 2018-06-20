@@ -34,8 +34,7 @@
                 1、国家高新技术企业申报<br>
                 (1)吉林省银河水利水电新技术设计有限公司<br>
                 (2)长春金阳高科技有限公司<br>
-                (3)吉林省裕林医药信息咨询有限公司<br>
-                (4)中软吉大信息技术有限公司...<br>
+                (3)吉林省裕林医药信息咨询有限公司...<br>
             </a>
         </div>
         <div class="w-2">
@@ -74,35 +73,35 @@
     <div class="container g-wrap" id="subjectsWrap">
         <a class="item-1" data-target="state-1" target="_blank"
            href="http://localhost:8080/zckj/js/index.jhtml" idx="1">
-            <span class="p1"><img src="/upload/img/2016-07-28/c58a160d-8092-47b3-83e4-fa8d37b16bb2.jpg" alt=""></span>
+            <span class="p1"><img src="/${res}/imgs/index1.jpg" alt=""></span>
             <span class="p2" style="left: 350px; top: 21px;"></span>
         </a>
         <a class="item-2" data-target="state-2" target="_blank" href="http://localhost:8080/zckj/zk/index.jhtml" idx="2">
-            <span class="p1"><img src="/upload/img/2015-04-29/d94d2c0d-3a38-45c9-bf2f-f6804e12a49c.jpg" alt=""></span>
-            <span class="p2"><img src="/upload/img/2015-04-30/6ead2c8e-f430-4407-b7ac-63208aca4d7a.jpg" alt=""></span>
+            <span class="p1"><img src="/${res}/imgs/index2.jpg" alt=""></span>
+            <!-- <span class="p2"><img src="/upload/img/2015-04-30/6ead2c8e-f430-4407-b7ac-63208aca4d7a.jpg" alt=""></span> -->
         </a>
         <a class="item-3" data-target="state-3" target="_blank" href="http://localhost:8080/zckj/hd/index.jhtml" idx="3">
-            <span class="p1"><img src="/upload/img/2018-01-18/a6b5caa1-24ab-4fd4-9c54-71309ecc26c3.jpg" alt=""></span>
-            <span class="p2"><img src="/upload/img/2016-09-22/9a19119d-ce86-4734-ac21-eeccbe9a587d.jpg" alt=""></span>
+            <span class="p1"><img src="/${res}/imgs/index3.jpg" alt=""></span>
+            <!-- <span class="p2"><img src="/upload/img/2016-09-22/9a19119d-ce86-4734-ac21-eeccbe9a587d.jpg" alt=""></span> -->
         </a>
         <a class="item-4" data-target="state-4" target="_blank" href="http://localhost:8080/zckj/zx/index.jhtml" idx="4">
-            <span class="p1"><img src="/upload/img/2015-04-29/02b0c63d-4b68-4eba-9359-8bdaada83524.jpg" alt=""></span>
-            <span class="p2"><img src="/upload/img/2015-06-09/1dd49f8c-9a50-4381-8091-544109091213.jpg" alt=""></span>
+            <span class="p1"><img src="/${res}/imgs/index4.jpg" alt=""></span>
+            <!-- <span class="p2"><img src="/upload/img/2015-06-09/1dd49f8c-9a50-4381-8091-544109091213.jpg" alt=""></span> -->
         </a>
     </div>
     <script>
-      var $subjectsWarp = $('#subjectsWrap');
-      setTimeout(function () {
-        $subjectsWarp.addClass('state-0');
-      }, 500);
-      $('#subjectsWrap a').each(function () {
-        $(this).hover(function () {
-          var target = $(this).data('target');
-          $subjectsWarp.removeClass('state-0 state-1 state-2 state-3 state-4').addClass(target);
-        }, function () {
-          $subjectsWarp.removeClass('state-1 state-2 state-3 state-4').addClass('state-0');
+        var $subjectsWarp = $('#subjectsWrap');
+        setTimeout(function () {
+            $subjectsWarp.addClass('state-0');
+        }, 500);
+        $('#subjectsWrap a').each(function () {
+            $(this).hover(function () {
+                var target = $(this).data('target');
+                $subjectsWarp.removeClass('state-0 state-1 state-2 state-3 state-4').addClass(target);
+            }, function () {
+                $subjectsWarp.removeClass('state-1 state-2 state-3 state-4').addClass('state-0');
+            });
         });
-      });
     </script>
 </div>
 [#include "../include/footer.html"/]
