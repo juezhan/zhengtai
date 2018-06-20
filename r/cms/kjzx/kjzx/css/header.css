@@ -14,7 +14,7 @@
 .header .icon-magnifier{margin-right: 9px; float: left; display: inline-block; background: url("../imgs/magnifier.png") 0 0 no-repeat;width: 20px;height: 18px;}
 .header .txt{}
 
-.sub-nav{height: 60px;line-height: 60px;position: absolute;top: 80px;left: 0;z-index: 4;width: 100%;}
+.sub-nav{height: 60px;line-height: 60px;position: absolute;top: 80px;left: 0;z-index: 4;width: 91%;}
 .sub-nav .container{height: 100%;}
 .sub-nav .menu{display:none;position:absolute;top:0;top: 0;right: 0;background-color: #4c4a4f;padding: 0 20px;}
 .sub-nav .menu a{word-break:keep-all;color: #ffffff;display: block;float: left;}
