@@ -37,7 +37,7 @@
 	.container{width:960px;}
 }
 @media screen and (max-width: 768px){
-	.container{width:100%;}
+	.container{width:100%;padding: 0 20px;box-sizing: border-box;}
 }
 @media screen and (max-width: 749px) {
 	.container{width:100%;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}  

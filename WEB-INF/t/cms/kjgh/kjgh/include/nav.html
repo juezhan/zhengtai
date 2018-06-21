@@ -55,6 +55,28 @@
         [/@cms_channel_list]
     </div>
 </div>
+<div class="nav-mini" id="navigationBarMini">
+    <div class="nav-mini-m"></div>
+    <div class="nav-mini-w">
+        [@cms_channel_list]
+        <div class="item"><a href="${base}/" class="tt on">首页</a></div>
+        [#list tag_list as c]
+        <div class="item">
+            <a href="${c.url}" class="tt" >${c.name}</a>
+        </div>
+        [@cms_channel_list parentId=c.id]
+        [#if tag_list?size>0]
+        [#list tag_list as c2]
+        <div class="item menu-mini">
+            <a href="${c2.url}" class="tt">${c2.name}</a>
+        </div>
+        [/#list]
+        [/#if]
+        [/@cms_channel_list]
+        [/#list]
+        [/@cms_channel_list]
+    </div>
+</div>
 <script>
   var cntLeft = $('.header .container').offset().left;
 
@@ -90,6 +112,15 @@
       $(this).removeClass('visible')
     })
   })
+
+  // navigationBarMini
+  $('#navigationBarMini').click(function () {
+    $(this).addClass('active')
+  });
+  $('#navigationBarMini .nav-mini-m').click(function () {
+    $('#navigationBarMini').removeClass('active');
+    return false;
+  });
 </script>
 <script>
 
