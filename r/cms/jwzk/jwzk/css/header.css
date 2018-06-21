@@ -1,38 +1,40 @@
-.header .container{height:110px;background:url("../imgs/logo-bg.png") 0 0 no-repeat #eeeeee;}
-.header .logo{float:left;margin:29px 0 0 36px}
+.container{width:1200px;margin:0 auto}
+.clearfix:after {clear: both;display: block;content: "";height: 0;}
+
+.header .container{height:80px;position:relative;}
+.header .logo{float:left;margin:17px 0 0 0}
 .header .sign{float:right;border:1px solid #e5e5e5;height:38px;line-height:38px;border-radius:12px;font-size:0;margin-top:29px}
 .header .sign .icon{float:left;margin:10px 12px 0}
 .header .sign .bd{padding:0 18px;display:inline-block;border-left:1px solid #e5e5e5;font-size:0;line-height: 40px;height: 40px;}
 .header .sign a{color:#293896;font-size:14px}
 .header .sign a+a{margin-left:17px}
+.header .cnt-1{float: right;color: #999999;margin:30px 0 0 43px;}
+.header .cnt-1 a{font-size: 18px;color: #999999;}
+.header .search{}
+.header .icon-magnifier{margin-right: 9px; float: left; display: inline-block; background: url("../imgs/magnifier.png") 0 0 no-repeat;width: 20px;height: 18px;}
+.header .txt{}
 
-.header .search{background-color: #e5e5e5;float: right;height: 30px;width: 190px;border-radius: 30px;margin: 41px 14px 0 0;border: 1px solid #a0a0a0;}
-.header .searchCon{height: 30px;width: 143px;padding-left: 15px;box-sizing: border-box;background-color: transparent;float: left;font-size: 12px;}
-.header .searchMenu{background: url("../imgs/magnifier.png") 50% 50% no-repeat;width: 42px;height: 30px;}
+.sub-nav{height: 60px;line-height: 60px;position: absolute;top: 80px;left: 0;z-index: 4;width: 91%;}
+.sub-nav .container{height: 100%;}
+.sub-nav .menu{display:none;position:absolute;top:0;background-color: #4c4a4f;padding: 0 ;width: 88px;text-align: center}
+.sub-nav .menu a{word-break:keep-all;color: #ffffff;display: block;float: left;line-height: 30px;height: 30px;width: 100%;}
+.sub-nav .menu a:hover{color:#f63b2e}
+.sub-nav .menu.active{display: block;}
 
-@media screen and (max-width: 749px) {
-    .header .container{
-        height: auto;
-        overflow: hidden;
-        background-image:none;
-        background-color: #FFFFFF;
-    position: relative}
-    .header .logo{margin: 12px 0;width: 82px;}
-    .header .search{
-        margin: 0;
-        height: 24px;
-        width: 138px;
-        position: absolute;
-        top: 17px;
-        right: 12px;}
-    .header .search form{
-        display: flex;
+@media screen and (max-width: 1199px) and (min-width: 769px){
+    .container{width: 960px;}
+    .banner img{width: 100%;}
+}
+@media screen and (max-width: 768px) and (min-width: 750px){
+    .container{width: 750px;}
+    .banner img{width: 100%;}
+}
+@media screen and (max-width: 749px){
+    .container{width: 100%;}
+    .banner img{width: 100%;}
+    .header .logo{
+        margin:0;
+        width: 150px;
     }
-    .header .searchCon{
-        flex: 1;
-        height: 24px;
-        width: 100px;
-    }
-    .header .searchMenu{
-        height: 24px;}
+    .header .container{height: auto;padding: 12px;box-sizing: border-box;}
 }
