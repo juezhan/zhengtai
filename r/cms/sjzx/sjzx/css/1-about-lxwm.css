@@ -44,6 +44,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-w .cm-2{}
 	.about .about-w .cm-2 .cm-2-m1{}
 	.about .about-w .cm-2 .cm-2-m2{margin-bottom: 40px;}
+	.about .container .about-ad img{width: 100%;}
 }
 @media screen and (max-width: 749px) {
 	.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
@@ -53,4 +54,5 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 	.about .about-w .bread{height: 32px;line-height: 32px;margin: 12px 0}
 	.about .about-w .bread .icon-house{width:32px;height: 32px;line-height: 32px;}
+	.about .container .about-ad img{width: 100%;}
 }
