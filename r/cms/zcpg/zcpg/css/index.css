@@ -276,4 +276,7 @@ img {
         line-height: 1em;
         padding: 6px 10px;
     }
+    .index .news .news-wrapper{
+        display: block;
+    }
 }

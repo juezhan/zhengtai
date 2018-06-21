@@ -47,4 +47,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-bd{padding: 20px 0;}
 	.about .about-bd .bd{margin:8px 0px 0;}
 	.about .about-bd .bd img{width: 100% !important;height: auto !important;}
+	.about .about-mn {padding: 0 10px;}
+	.about .jrwm-table th {padding: 0 2px;width: 20%;}
+	.about .jrwm-table td {padding: 0 2px;width: 20%;}
+	.about .jrwm-table{width: 100%;}
 }
