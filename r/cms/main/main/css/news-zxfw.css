@@ -55,7 +55,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 
 @media screen and (max-width: 749px) {
-  .container{width:100%;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
+  .container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
   .xxgs .xxgs-main .container .xxgs-cnt{width: 100%;}
   .xxgs .xxgs-main .container .xxgs-cnt .bd .nav{display: none;}
   .xxgs .xxgs-main .container .xxgs-cnt .bd .number{display: none;}

@@ -11,7 +11,7 @@
 <link href="/${res}/css/news-zxfw.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
 
-<!--[if lt IE 9]> 
+<!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
 
@@ -27,7 +27,7 @@
         <div class="aside">
             <div class="tt">${channel.name!}</div>
             <div class="bd">
-                [@cms_channel_list parentId=171]
+                [@cms_channel_list parentId=286]
                 [#list tag_list as c]
                 <a href="${c.url}" title="${c.name}" class="item [#if channel.id==c.id]on[/#if]"><span>&gt;</span>${c.name}</a>
                 [/#list]
@@ -37,6 +37,7 @@
         <div class="xxgs-cnt">
             ${channel.txt!}
         </div>
+
     </div>
 </div>
 

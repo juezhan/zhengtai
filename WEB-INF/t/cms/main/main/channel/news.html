@@ -24,6 +24,18 @@
 
 <div class="xxgs-main">
     <div class="container">
+        <div class="aside">
+            <div class="tt">${channel.name!}</div>
+            <div class="bd">
+                [@cms_channel_list parentId=channel.parentId]
+                [#list tag_list as c]
+                [#if c.id==170 || c.id==169]
+                <a href="${c.url}" title="${c.name}" class="item [#if channel.id==c.id]on[/#if]"><span>&gt;</span>${c.name}</a>
+                [/#if]
+                [/#list]
+                [/@cms_channel_list]
+            </div>
+        </div>
         <div class="xxgs-cnt">
             <div class="tt">${channel.name}</div>
             <div class="line-1"></div>
@@ -48,18 +60,6 @@
             <link href="/${res}/css/pagination.css" rel="stylesheet"/>
             <div class="pagination">[@cms_pagination sysPage='1'/]</div>
             [/@cms_content_page]
-        </div>
-        <div class="aside">
-            <div class="tt">${channel.name!}</div>
-            <div class="bd">
-                [@cms_channel_list parentId=channel.parentId]
-                [#list tag_list as c]
-                [#if c.id==170 || c.id==169]
-                    <a href="${c.url}" title="${c.name}" class="item [#if channel.id==c.id]on[/#if]"><span>&gt;</span>${c.name}</a>
-                [/#if]
-                [/#list]
-                [/@cms_channel_list]
-            </div>
         </div>
     </div>
 </div>
