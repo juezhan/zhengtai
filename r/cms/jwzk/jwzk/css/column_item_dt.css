@@ -200,4 +200,14 @@ img {
 .column-item-dt .column-item-bd .list-wrapper .cell.cell-a img{width: 427px;height: 281px;margin: -20px 23px -20px -26px;}
 
 @media screen and (max-width: 749px) {
+    .column-item-dt .column-item-bd .list-wrapper .cell {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #a0a0a0;
+        float: none;
+        padding: 20px 26px;
+        box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.35), 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
+    }
+    .column-item-dt .column-item-bd .slide-bar {display: none;}
 }

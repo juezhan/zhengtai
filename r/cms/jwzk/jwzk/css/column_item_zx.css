@@ -221,4 +221,31 @@ img {
 }
 
 @media screen and (max-width: 749px) {
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item {
+        width: 300px;
+        float: none;
+        margin: 14px 20px;
+        display: block;
+        height: 160px;
+    }
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .img {
+        padding: inherit;
+        z-index: 999;
+        width: 100px;
+        position: relative;
+        height: 100px;
+        margin-top: 30px;
+        margin-left: -19px;
+    }
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item-mn {
+        background-color: #f8f8f8;
+        position: relative;
+        width: 320px;
+        margin-left: -160px;
+        float: right;
+        height: 160px;
+        z-index: 1;
+        padding: 0 26px 0 106px;
+        box-sizing: border-box;
+    }
 }
