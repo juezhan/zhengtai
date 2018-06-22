@@ -67,4 +67,10 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-bd{padding: 20px 0;}
 	.about .about-bd .bd{margin:8px 0px 0;}
 	.about .about-bd .bd img{width: 100% !important;height: auto !important;}
+	.news-xwzx .xwzx-bd {display: block;}
+	.news-xwzx .xwzx-bd .item-w-b .item {padding-left: 0; }
+	.news-xwzx .xwzx-mn {background-color: #ffffff;padding: 0px 10px;}
+	.news-xwzx .xwzx-bd .item-w-b {width: 100%;}
+	.news-xwzx .tit .txt {flex: 1;font-size: 20px;color: #dedede;}
+	.news-xwzx .tit .menu .item+.item {margin-left: 0;}
 }
