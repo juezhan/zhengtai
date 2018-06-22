@@ -39,11 +39,13 @@
             </div>
             <div class="cnt-wrapper">
                 <div class="m-cnt">
+                    [@cms_content_page count=channel.pageSize orderBy='4' channelId=channel.id channelOption='0' dateFormat='yyyy-MM-dd' currPageClass="currPageClass" norPageClass="norPageClass"]
+                    [#list tag_pagination.list as a]
                     <div class="cnt-cell-first">
                         <div class="mn-cnt">
-                            <div class="date">Apr 11, 2018</div>
-                            <div class="txt-1">国家与省市认定的各类科技型企业的策划与申报</div>
-                            <div class="txt-2">
+                            <div class="date" style="visibility: hidden">Apr 11, 2018</div>
+                            <a href="${a.url}" class="txt-1">${a.title}</a>
+                            <div class="txt-2" style="visibility: hidden">
                                 公司通过协助申报企业培育自主知识产权、完善产品研发和生产、规范研发费用管理和检测检验技术文件。
                             </div>
                             <!-- <div class="more"></div> -->
@@ -52,49 +54,9 @@
                             <img src="/${res}/imgs/logo.png"/>
                         </div>
                     </div>
-                    <div class="cnt-cell-first">
-                        <div class="mn-cnt">
-                            <div class="date">Apr 11, 2018</div>
-                            <div class="txt-1">科技成果评价</div>
-                            <div class="txt-2">
-                                公司是国家行政机关认定的科技成果第三方评价试点单位，依据国家科技部《科技成果评价试点暂行办法》、吉林省《科技成果评价试点工作方案》，为企业提供专业、权威的科技成果第三方评价。
-                            </div>
-                            <!-- <div class="more"></div> -->
-                        </div>
-                        <div class="avatar">
-                            <img src="/${res}/imgs/logo.png"/>
-                        </div>
-                    </div>
-                    <div class="cnt-cell-first">
-                        <div class="mn-cnt">
-                            <div class="date">Apr 11, 2018</div>
-                            <div class="txt-1">科技政策支持项目的策划与申报</div>
-                            <div class="txt-2">
-                                1.技术交易合同认定登记
-                                <br>
-                                2.科技发展计划项目申报咨询
-                                <br>
-                                3.可享受其他科技政策支持项目的策划与申报
-                                <br>
-                                公司通过协助企业开展技术攻关和成果转化、促进企业转型升级、培育自主知识产权、建立产学研联盟、规划企业发展路径等咨询服务。
-                            </div>
-                            <!-- <div class="more"></div> -->
-                        </div>
-                        <div class="avatar">
-                            <img src="/${res}/imgs/logo.png"/>
-                        </div>
-                    </div>
-                    <div class="cnt-cell-first">
-                        <div class="mn-cnt">
-                            <div class="date">Apr 11, 2018</div>
-                            <div class="txt-1">协助企业创建省级企业技术中心和省级科技创新中心</div>
-                            <div class="txt-2"></div>
-                            <!-- <div class="more"></div> -->
-                        </div>
-                        <div class="avatar">
-                            <img src="/${res}/imgs/logo.png"/>
-                        </div>
-                    </div>
+                    [/#list]
+                    [@cms_pagination sysPage='1'/]
+                    [/@cms_content_page]
                 </div>
                 <div class="ad-wrapper">
                     <img src="/${res}/imgs/ad-1.png"/>

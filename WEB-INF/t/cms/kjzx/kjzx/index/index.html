@@ -39,33 +39,36 @@
         </div>
         <div class="w-2">
             <div class="tag">
-                <div class="tag-tt">
-                    <div class="item active" data-target="c1">新闻中心</div>
-                    <div class="item" data-target="c2">业绩展示</div>
+                <div class="tag-tt" id="tagTt">
+                    <div class="item active" data-target="#c1">新闻中心</div>
+                    <div class="item" data-target="#c2">业绩展示</div>
                 </div>
                 <div class="tab-bd">
-                    <div class="item c1 active">
-                        <a href="#">国家与省市认定的各类科技型企业的策划与申报</a>
+                    <div id="c1" class="item  active">
+                        [@cms_content_list count='4' orderBy='4' channelId='231' channelOption='1' dateFormat='yyyy-MM-dd']
+                        [#list tag_list as a]
+                        <a href="${a.url}">${a.title}</a>
                         <br>
-                        <a href="#">科技成果评价</a>
-                        <br>
-                        <a href="#">享受科技政策支持项目的策划与申报</a>
-                        <br>
-                        <a href="#">协助企业创建省级企业技术中心和省级科技创新中心</a>
-                        <br>
+                        [/#list]
+                        [/@cms_content_list]
                     </div>
-                    <div class="item c2">
-                        <a href="#">国家与省市认定的各类科技型企业的策划与申报</a>
+                    <div id="c2" class="item ">
+                        [@cms_content_list count='4' orderBy='4' channelId='232' channelOption='1' dateFormat='yyyy-MM-dd']
+                        [#list tag_list as a]
+                        <a href="${a.url}">${a.title}</a>
                         <br>
-                        <a href="#">科技成果评价</a>
-                        <br>
-                        <a href="#">享受科技政策支持项目的策划与申报</a>
-                        <br>
-                        <a href="#">协助企业创建省级企业技术中心和省级科技创新中心</a>
-                        <br>
+                        [/#list]
+                        [/@cms_content_list]
                     </div>
                 </div>
             </div>
+            <script>
+                $('#tagTt .item').click(function () {
+                  var target = $(this).data('target')
+                  $(this).addClass('active').siblings().removeClass('active')
+                  $(target).addClass('active').siblings().removeClass('active')
+                });
+            </script>
         </div>
     </div>
 </div>
