@@ -5,7 +5,7 @@
 .navigation-bar .container .item{position:relative;height: 40px;line-height: 40px;text-align:center;font-size:13px;float: left;font-weight: bold;}
 .navigation-bar .container .item a.tt{color:#757575;display:inline-block;padding: 0 14px;}
 .navigation-bar .container .item a.tt.on{color: #e71910;}
-.navigation-bar .container .item .menu{display:none;position:absolute;top: 40px;left:0;width:100%;padding: 10px 0;z-index: 999}
+.navigation-bar .container .item .menu{display:none;position:absolute;top: 31px;left:0;width:100%;padding: 10px 0;z-index: 999}
 .navigation-bar .container .item .menu.visible{display:block}
 .navigation-bar .container .item .menu .arrow{margin:0 auto;background:url(../imgs/arrow.png?v=xfLMvwYkPUqyFq%2FGZERloA%3D%3D) 0 0 no-repeat;background-size:100% 100%}
 .navigation-bar .container .item .menu ul{display:inline-block;background-color:rgba(0,0,0,.7)}
