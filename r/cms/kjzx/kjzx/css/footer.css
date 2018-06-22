@@ -15,7 +15,7 @@
 .reference .txt-1 a {background:no-repeat 0 13px;}
 .reference .txt-1 em{display:block;margin:0 12px;font-style: normal;}
 .reference .txt-1 .a3 {background-image:url(../img/refer_icon_life.png);}
-.reference .txt-2 {float:right; width:323px; line-height:69px; text-indent:24px; background:#f2f2f2 url(../img/refer_icon_3.png) no-repeat 19px 23px; border-left:1px solid #e5e5e5;}
+.reference .txt-2 {float:right; width:323px; line-height:69px;  background:#f2f2f2 url(../img/refer_icon_3.png) no-repeat 19px 23px; border-left:1px solid #e5e5e5;text-align: center;}
 
 .copyright {height:75px;}
 .copyright .container {overflow:visible;}

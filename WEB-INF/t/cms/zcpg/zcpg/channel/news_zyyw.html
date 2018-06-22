@@ -22,7 +22,7 @@
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
 
-<div class="zyyw-wapper">
+<!-- <div class="zyyw-wapper">
     <div class="container">
         <div class="zyyw-mn">
             <div class="zyyw-mbd">
@@ -51,7 +51,7 @@
                         [/#if]
                         [/#list]
                         [/@cms_content_page]
-                        <!--<div class="add-more"></div>-->
+                        <div class="add-more"></div>
                     </div>
                 </div>
                 <div class="menu-wapper">
@@ -71,9 +71,41 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<div id="ctl00_ContentPlaceHolder1_home">
 
-[#include "../include/footer.html"/]
-[#include "../include/bottom.html"/]
+    <!-- 一级栏目公用 -->
+    <link rel="stylesheet" href="css/public1.css?v=1.0.2">
+
+
+    <!-- 编辑区 start -->
+    <div id="content">
+        <div id="main">
+            <div class="innerWrapper">
+                <div class="subColumns">
+                    <!-- <div class="wrapper">
+                        <a href="responsibility.aspx?tags=1">公益理念</a>
+                        <a href="responsibility.aspx?tags=5">脱贫攻坚</a>
+                        <a href="responsibility.aspx?tags=2">慈善捐赠</a>
+                        <a href="responsibility.aspx?tags=3">振兴体育</a>
+                        <a href="responsibility.aspx?tags=4">企业公民报告</a>
+                    </div>
+                <p class="abs" style="width: 52px; left: 670px; display: block; overflow: hidden;"></p> -->
+
+                </div>
+                <div class="responsibility-items">
+                    <a class="item1" href="responsibility.aspx?tags=1"></a>
+                    <a class="item2" href="responsibility.aspx?tags=5"></a>
+                    <a class="item3" href="javascript:;"></a>
+                    <a class="item4" href="responsibility.aspx?tags=4"></a>
+                    <a class="item6" href="responsibility.aspx?tags=3"></a>
+                    <a class="item5" href="responsibility.aspx?tags=2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 编辑区 end -->
+    [#include "../include/footer.html"/]
+    [#include "../include/bottom.html"/]
 </body>
 </html>
