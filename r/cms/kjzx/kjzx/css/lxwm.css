@@ -18,3 +18,39 @@
         width: 100%;
     }
 }
+
+#contact-1 .cont-info {position:relative;height:389px; background:#f1eff1 url(../imgs/p_1_1.jpg) no-repeat 0 96px;}
+#contact-1 .cont-info .contacts {position:absolute; top:175px;}
+#contact-1 .cont-info .c1 {left:0; width:421px;}
+#contact-1 .cont-info .c2 {left:524px; width:625px;}
+#contact-1 .cont-info .contacts .menu {height:57px; border-bottom:1px solid #cfb3a8;}
+#contact-1 .cont-info .c2 .menu {margin-right:-35px;}
+#contact-1 .cont-info .contacts .menu a {float:left; margin-right:15px; font-size:11px; line-height:57px; color:#564f4a;}
+#contact-1 .cont-info .contacts .menu .on {border-bottom:1px solid #e32235;}
+#contact-1 .cont-info .contacts .cont {position:relative; height:147px;}
+#contact-1 .cont-info .contacts .cont .subitem {display:none; position:absolute; top:20px; left:0; width:100%; height:127px;}
+#contact-1 .cont-info .contacts .cont .subitem * {font-size:12px; color:#564f4a;}
+#contact-1 .cont-info .contacts .cont .subitem h1 {font-size:15px;}
+#contact-1 .cont-areas {position:relative; height:450px; color:#ffeec7; background:#e74e42 url(../imgs/p_1_2_bg.jpg) repeat-x 0 340px;}
+
+#contact-1 .cont-areas .belong {position:absolute; top:36px; right:0; height:49px;}
+#contact-1 .cont-areas .belong a {+color:#ffeec7; float:left; margin-left:5px; padding:16px 35px; font-size:13px; line-height:13px; border:2px solid #e74e42; border-radius:30px;}
+#contact-1 .cont-areas .belong a.on {border-color:#fee8c2;}
+
+#contact-1 .cont-areas .comps {position:absolute; left:0; top:110px; width:100%; height:108px;}
+#contact-1 .cont-areas .comps .item {display:none; position:absolute; top:0; left:0; width:100%; height:100%;}
+/*#contact-1 .cont-areas .comps .on {display:block;}*/
+#contact-1 .cont-areas .comps .item .subitem {height:27px;clear:both;}
+#contact-1 .cont-areas .comps .item .subitem * {float:left; padding:7px 12px; font-size:13px; line-height:13px; }
+#contact-1 .cont-areas .comps .item .subitem span {padding-left:0;}
+#contact-1 .cont-areas .comps .item .subitem a {+color:#ffeec7; border-radius:30px; -webkit-transition:color 300ms, background-color 300ms; transition:color 300ms, background-color 300ms;}
+#contact-1 .cont-areas .comps .item .subitem a.on,
+#contact-1 .cont-areas .comps .item .subitem a:hover {color:#e74e42; background-color:#ffeec7;}
+
+#contact-1 .cont-areas .addrs {position:absolute; left:0; top:350px; width:100%; height:90px; color:#ffeec7;}
+#contact-1 .cont-areas .addrs .item {display:none; position:absolute; left:0; top:0; width:100%; height:100%;}
+#contact-1 .cont-areas .addrs .item .subitem {display:none; position:absolute; top:0; left:0; width:100%; height:100%;}
+#contact-1 .cont-areas .addrs .item .subitem h1 {font-weight:normal; font-size:20px; line-height:29px; color:#ffeec7;}
+#contact-1 .cont-areas .addrs .item .subitem p {line-height:29px;}
+#contact-1 .cont-areas .addrs .item .subitem a {display:inline-block; padding-left:35px; line-height:29px; background:url(../imgs/p_1_2_icon.png) no-repeat 0 0;color: #ffeec7}
+.g-wrap {position:relative; margin:0 auto; width:1130px; height:100%; overflow:hidden;}
