@@ -41,134 +41,19 @@
         </div>
         <div class="cnt-wrapper">
             <div class="m-cnt">
+                [@cms_content_page count=channel.pageSize orderBy='4' channelId=channel.id channelOption='0' dateFormat='yyyy-MM-dd' currPageClass="currPageClass" norPageClass="norPageClass"]
+                [#list tag_pagination.list as a]
                 <div class="cnt-cell">
                     <div class="bd">
-                        <div class="date">
-                            <p class="day">26</p>
-                            <p>Mar</p>
-                            <p>2018</p>
-                        </div>
                         <div class="mn-cnt">
-                            <div class="txt-1">国家与省市认定的各类科技型企业的策划与申报</div>
-                            <div class="txt-2">
-                                <span>发布者: 正泰</span>
-                                <span>浏览次数: 7376</span>
-                            </div>
-                            <div class="txt-3">
-                                1、国家高新技术企业申报
-                                <br>
-                                (1)吉林省银河水利水电新技术设计有限公司
-                                <br>
-                                (2)长春金阳高科技有限公司
-                                <br>
-                                (3)吉林省裕林医药信息咨询有限公司
-                                <br>
-                                (4)中软吉大信息技术有限公司
-                                <br>
-                                (5)长春力登维科技产业有限公司
-                                <br>
-                                (6)抚松金秋木业有限公司
-                                <br>
-                                (7)吉林省健维天然生物科技有限公司
-                                <br>
-                                2、省级小巨人申报
-                                <br>
-                                (1)葵花药业集团（吉林）临江有限公司
-                                <br>
-                                (2)吉林正泰工程咨询有限公司
-                                <br>
-                                3、科技型中小企业申报
-                                <br>
-                                (1)吉林正泰工程咨询有限公司
-                                <br>
-                                (2)长春市建邦汽车零部件有限公司
-                                <br>
-                                (3)吉林省银河水利水电新技术设计有限公司
-                                <br>
-                                (4)吉林省裕林医药信息咨询有限公司
-                            </div>
+                            <a href="${a.url}"  class="txt-1">${a.title}</a>
                         </div>
                     </div>
                     <!-- <div class="more"></div> -->
                 </div>
-                <div class="cnt-cell">
-                    <div class="bd">
-                        <div class="date">
-                            <p class="day">26</p>
-                            <p>Mar</p>
-                            <p>2018</p>
-                        </div>
-                        <div class="mn-cnt">
-                            <div class="txt-1">科技成果评价</div>
-                            <div class="txt-2">
-                                <span>发布者: 正泰</span>
-                                <span>浏览次数: 7376</span>
-                            </div>
-                            <div class="txt-3">
-                                长春理工大学科技成果评价-2微米波段宽带可调谐全光纤微光器
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="more"></div> -->
-                </div>
-                <div class="cnt-cell">
-                    <div class="bd">
-                        <div class="date">
-                            <p class="day">26</p>
-                            <p>Mar</p>
-                            <p>2018</p>
-                        </div>
-                        <div class="mn-cnt">
-                            <div class="txt-1">享受科技政策支持项目的策划与申报</div>
-                            <div class="txt-2">
-                                <span>发布者: 正泰</span>
-                                <span>浏览次数: 7376</span>
-                            </div>
-                            <div class="txt-3">
-                                1、技术交易合同认定登记
-                                <br>
-                                2、科技发展计划项目申报咨询
-                                <br>
-                                （1）长春发电设备总厂“双十”项目
-                                <br>
-                                （2）吉林亚泰制药股份有限公司“双十”项目
-                                <br>
-                                （3）吉林省弘泰新能源有限公司“双十”项目
-                                <br>
-                                （4）长春登维科技有限公司“双十”项目
-                                <br>
-                                3、其他科技政策支持项目的策划与申报
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="more"></div> -->
-                </div>
-                <div class="cnt-cell">
-                    <div class="bd">
-                        <div class="date">
-                            <p class="day">26</p>
-                            <p>Mar</p>
-                            <p>2018</p>
-                        </div>
-                        <div class="mn-cnt">
-                            <div class="txt-1">协助企业创建省级企业技术中心和省级科技创新中心</div>
-                            <div class="txt-2">
-                                <span>发布者: 正泰</span>
-                                <span>浏览次数: 7376</span>
-                            </div>
-                            <div class="txt-3">
-                                1、吉林博仁科技股份有限公司省级企业技术中心
-                                <br>
-                                2、吉林省亮达医疗器械有限公司省级企业技术中心
-                                <br>
-                                3、吉林和元生物工程有限公司省级企业技术中心
-                                <br>
-                                4、长春海和信息技术有限公司对日外包服务平台公共服务项目
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="more"></div> -->
-                </div>
+                [/#list]
+                [#include "../include/page.html"/]
+                [/@cms_content_page]
             </div>
             <div class="ad-wrapper">
                 <div><img src="/${res}/imgs/ad-1.png"/></div>

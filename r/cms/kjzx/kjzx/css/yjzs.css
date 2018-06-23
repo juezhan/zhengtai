@@ -25,6 +25,7 @@
 .yjzs .cnt-wrapper .ad-wrapper{padding: 30px 0;font-size: 0;float: right;width: 300px;}
 .yjzs .cnt-wrapper .ad-wrapper img{margin-bottom: 12px;width: 100%}
 
+.yjzs .banner .container img{width: 100%;}
 @media screen and (max-width: 1199px) and (min-width: 769px){
     .yjzs .cnt-wrapper .m-cnt{width: 686px;}
     .yjzs .cnt-wrapper .ad-wrapper{padding: 20px 0;}

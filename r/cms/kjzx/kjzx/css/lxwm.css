@@ -4,6 +4,7 @@
 .lxwm .cnt-wrapper .tit{font-size: 20px;}
 .lxwm .cnt-wrapper .cnt{font-size: 14px;}
 
+.lxwm .banner .container img{width: 100%;}
 @media screen and (max-width: 1199px) and (min-width: 769px){
 }
 @media screen and (max-width: 768px) and (min-width: 750px){

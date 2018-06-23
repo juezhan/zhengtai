@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>首页 - ${site.name}</title>
 <meta http-equiv="keywords" content="${site.keywords!}"/>
@@ -42,7 +43,8 @@
                 </div>
                 <div class="tab-bd">
                     <div id="c1" class="item  active">
-                        [@cms_content_list count='4' orderBy='4' channelId='231' channelOption='1' dateFormat='yyyy-MM-dd']
+                        [@cms_content_list count='4' orderBy='4' channelId='231' channelOption='1'
+                        dateFormat='yyyy-MM-dd']
                         [#list tag_list as a]
                         <a href="${a.url}">${a.title}</a>
                         <br>
@@ -50,7 +52,8 @@
                         [/@cms_content_list]
                     </div>
                     <div id="c2" class="item ">
-                        [@cms_content_list count='4' orderBy='4' channelId='232' channelOption='1' dateFormat='yyyy-MM-dd']
+                        [@cms_content_list count='4' orderBy='4' channelId='232' channelOption='1'
+                        dateFormat='yyyy-MM-dd']
                         [#list tag_list as a]
                         <a href="${a.url}">${a.title}</a>
                         <br>
@@ -60,11 +63,11 @@
                 </div>
             </div>
             <script>
-                $('#tagTt .item').click(function () {
-                  var target = $(this).data('target')
-                  $(this).addClass('active').siblings().removeClass('active')
-                  $(target).addClass('active').siblings().removeClass('active')
-                });
+              $('#tagTt .item').click(function () {
+                var target = $(this).data('target')
+                $(this).addClass('active').siblings().removeClass('active')
+                $(target).addClass('active').siblings().removeClass('active')
+              });
             </script>
         </div>
     </div>
@@ -76,33 +79,50 @@
             <span class="p1"><img src="/${res}/imgs/index1.jpg" alt=""></span>
             <span class="p2" style="left: 350px; top: 21px;"></span>
         </a>
-        <a class="item-2" data-target="state-2" target="_blank" href="http://localhost:8080/zckj/zk/index.jhtml" idx="2">
+        <a class="item-2" data-target="state-2" target="_blank" href="http://localhost:8080/zckj/zk/index.jhtml"
+           idx="2">
             <span class="p1"><img src="/${res}/imgs/index2.jpg" alt=""></span>
-            <!-- <span class="p2"><img src="/upload/img/2015-04-30/6ead2c8e-f430-4407-b7ac-63208aca4d7a.jpg" alt=""></span> -->
         </a>
-        <a class="item-3" data-target="state-3" target="_blank" href="http://localhost:8080/zckj/hd/index.jhtml" idx="3">
+        <a class="item-3" data-target="state-3" target="_blank" href="http://localhost:8080/zckj/hd/index.jhtml"
+           idx="3">
             <span class="p1"><img src="/${res}/imgs/index3.jpg" alt=""></span>
-            <!-- <span class="p2"><img src="/upload/img/2016-09-22/9a19119d-ce86-4734-ac21-eeccbe9a587d.jpg" alt=""></span> -->
         </a>
-        <a class="item-4" data-target="state-4" target="_blank" href="http://localhost:8080/zckj/zx/index.jhtml" idx="4">
+        <a class="item-4" data-target="state-4" target="_blank" href="http://localhost:8080/zckj/zx/index.jhtml"
+           idx="4">
             <span class="p1"><img src="/${res}/imgs/index4.jpg" alt=""></span>
-            <!-- <span class="p2"><img src="/upload/img/2015-06-09/1dd49f8c-9a50-4381-8091-544109091213.jpg" alt=""></span> -->
         </a>
     </div>
     <script>
-        var $subjectsWarp = $('#subjectsWrap');
-        setTimeout(function () {
-            $subjectsWarp.addClass('state-0');
-        }, 500);
-        $('#subjectsWrap a').each(function () {
-            $(this).hover(function () {
-                var target = $(this).data('target');
-                $subjectsWarp.removeClass('state-0 state-1 state-2 state-3 state-4').addClass(target);
-            }, function () {
-                $subjectsWarp.removeClass('state-1 state-2 state-3 state-4').addClass('state-0');
-            });
+      var $subjectsWarp = $('#subjectsWrap');
+      setTimeout(function () {
+        $subjectsWarp.addClass('state-0');
+      }, 500);
+      $('#subjectsWrap a').each(function () {
+        $(this).hover(function () {
+          var target = $(this).data('target');
+          $subjectsWarp.removeClass('state-0 state-1 state-2 state-3 state-4').addClass(target);
+        }, function () {
+          $subjectsWarp.removeClass('state-1 state-2 state-3 state-4').addClass('state-0');
         });
+      });
     </script>
+</div>
+<div class="subjects-b">
+    <div class="container clearfix">
+        <a class="item item-1" data-target="state-1" target="_blank"
+           href="http://localhost:8080/zckj/js/index.jhtml" idx="1">
+            <span class="p1"><img src="/${res}/imgs/index1.jpg" alt=""></span>
+        </a>
+        <a class="item item-2" data-target="state-2" target="_blank" href="http://localhost:8080/zckj/zk/index.jhtml" idx="2">
+            <span class="p1"><img src="/${res}/imgs/index2.jpg" alt=""></span>
+        </a>
+        <a class="item item-3" data-target="state-3" target="_blank" href="http://localhost:8080/zckj/hd/index.jhtml" idx="3">
+            <span class="p1"><img src="/${res}/imgs/index3.jpg" alt=""></span>
+        </a>
+        <a class="item item-4" data-target="state-4" target="_blank" href="http://localhost:8080/zckj/zx/index.jhtml" idx="4">
+            <span class="p1"><img src="/${res}/imgs/index4.jpg" alt=""></span>
+        </a>
+    </div>
 </div>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
