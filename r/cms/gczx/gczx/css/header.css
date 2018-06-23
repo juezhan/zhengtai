@@ -100,6 +100,14 @@
 	animation-duration: .75s;
 }
 
+.nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #000;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
+.nav-mini .nav-mini-m{display: none;background-color: rgba(0,0,0,.3);position: fixed;top:0;right: 0;height: 100%;width:100%;z-index: 999}
+.nav-mini .nav-mini-w{display: none;width:100px;background-color: #ffffff;position: fixed;top:0;right: 0;height: 100%;z-index: 9999;overflow: auto}
+.nav-mini .nav-mini-w .item{font-size: 14px;padding: 10px 12px;position: relative;}
+.nav-mini .nav-mini-w .item:after{position: absolute;left: 12px;bottom: 0;right: 0;content: '';display: block;height: 1px;background-color: #000000;transform:scaleY(.5);}
+.nav-mini .nav-mini-w .menu-mini{font-size: 12px;padding-left: 24px}
+.nav-mini.active .nav-mini-m,
+.nav-mini.active .nav-mini-w{display: block;}
 
 @-webkit-keyframes fadeInDown {
 	from {
@@ -171,7 +179,6 @@
 
 @media screen and (max-width: 1199px){
 	.container{width: 960px;}
-	.header .container{height:auto;padding: 12px 0}
 	.header .logo{margin:0;width: 200px;}
 	.header .navigation-bar{margin: 8px 0 0;}
 	.header .navigation-bar .item{margin-left: 20px;height: auto;}
@@ -180,8 +187,10 @@
 	.header .navigation-bar .item span.tit-2{margin-top: 8px;}
 }
 @media screen and (max-width: 768px) {
+
 	#iResearch-nav{display: none;}
 	#navigationBarMini{display: block;}
+
 	.container{width: 750px;}
 	.header .container{height:auto;padding: 8px 0}
 	.header .logo{width: 190px;}

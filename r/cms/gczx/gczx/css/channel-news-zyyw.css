@@ -12,7 +12,7 @@ a{text-decoration:none;color:#333;cursor:pointer}
 ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
-.banner{background: 50% 0 no-repeat;}
+.banner{background: 50% 0 no-repeat;background-size: auto 100%;}
 .banner .container{}
 .banner .container:after{display: block;content: '';padding-top:16.66666666666667% }
 
@@ -71,4 +71,11 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 749px) {
+	.zyyw .zyyw-wrapper-m{display: block;}
+	.zyyw .aside{width: 100%;}
+	.zyyw .aside .aside-w .tt{display: none}
+	.zyyw .mnc-w .item-wrapper .item{width: 98%}
+	.zyyw .mnc{margin-top: 20px;}
+	.zyyw .aside .aside-w .list li:first-child{border-top: none;}
+	.zyyw .zyyw-wrapper-m{margin-top: 12px;}
 }

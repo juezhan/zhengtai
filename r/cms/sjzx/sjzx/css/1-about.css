@@ -42,7 +42,6 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 @media screen and (max-width: 749px) {
 	.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
-
 	.about .about-w{padding: 12px 0 20px;}
 	.about .about-w .bread{height: 32px;line-height: 32px;margin:0;}
 	.about .about-w .bread .icon-house{width:32px;height: 32px;line-height: 32px;}
