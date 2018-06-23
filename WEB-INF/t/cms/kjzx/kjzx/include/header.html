@@ -7,19 +7,19 @@
         <div class="navigation-bar" id="navigationBar">
             [@cms_channel_list]
             [#if !channel??]
-            <div class="item"><a href="/" class="tt index on">首页</a></div>
+            <div class="item"><a href="/" class="tt index on active"><span>首页</span></a></div>
             [#list tag_list as c]
             [#if c_index<5]
             <div class="item">
-                <a href="${c.url}" class="tt" id="item_${c.id}" data-target="#subNav_${c.id}">${c.name}</a>
+                <a href="${c.url}" class="tt" id="item_${c.id}" data-target="#subNav_${c.id}"><span>${c.name}</span></a>
             </div>
             [/#if]
             [/#list]
             [#else]
-            <div class="item"><a href="/" class="tt index">首页</a></div>
+            <div class="item"><a href="/" class="tt index"><span>首页</span></a></div>
             [#list tag_list as c]
             <div class="item">
-                <a href="${c.url}" id="item_${c.id}" class="tt[#if channel??&&channel.id==c.id] on[/#if]" data-target="#subNav_${c.id}">${c.name}</a>
+                <a href="${c.url}" id="item_${c.id}" class="tt[#if channel??&&channel.id==c.id] on[/#if]" data-target="#subNav_${c.id}"><span>${c.name}</span></a>
             </div>
             [/#list]
             [/#if]
@@ -68,7 +68,7 @@
 </div>
 <script>
     // subNav
-    var mt = null
+    var mt = null,$cruuentItem = $('#navigationBar a.tt.on').eq(0)
     $('#navigationBar a.tt').each(function () {
       $(this).hover(function () {
         var $target = $(this).data('target')
@@ -78,6 +78,7 @@
       },function () {
         $('#subNav .menu').removeClass('active');
         $('#navigationBar a.tt').removeClass('active');
+        $cruuentItem.addClass('active')
       });
     });
     $('#subNav .menu').each(function () {
