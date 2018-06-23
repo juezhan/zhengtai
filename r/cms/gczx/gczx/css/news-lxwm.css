@@ -11,14 +11,26 @@ li,ol,ul{list-style:none}
 a{text-decoration:none;color:#333;cursor:pointer}
 ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
+.container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
 
 .about .banner{background:50% 0 #00afe6 no-repeat;}
+.about .banner .container{height: 350px;}
 .about .banner .cnt{width: 470px;color: #ffffff;margin-top: 106px;float: left;}
 .about .banner .cnt .tt{font-size: 18px;}
 .about .banner .cnt .bd{font-size: 12px;line-height: 24px;margin-top: 30px;}
 
 .about .about-bd {padding: 53px 0 131px 0;background-color: #f8f8f8;}
+.about .about-bd .tt{font-size: 24px;text-align: center;}
+.about .about-bd .bd{font-size: 0;text-align: center;margin-top: 36px;}
+.about .about-bd .bd span{font-size: 12px;line-height: 13px;display: inline-block;}
+.about .about-bd .bd span.first{}
+.about .about-bd .bd span.second{margin-left: 24px}
+.about .about-bd .bd span.third{margin-left: 57px}
+.about .about-bd .bd .about-icon{display: inline-block;width: 13px;height: 13px;background: 0 0 no-repeat;float: left;margin-right: 12px;}
+.about .about-bd .bd .about-icon.gczx-email{background-image: url(../imgs/gczx-email.png);}
+.about .about-bd .bd .about-icon.gczx-location{background-image: url(../imgs/gczx-location.png);}
+.about .about-bd .bd .about-icon.gczx-telphone{background-image: url(../imgs/gczx-telphone.png);}
 
 
 .about .item-wrapper{font-size: 0;text-align: center;margin-top: 55px;}
@@ -31,12 +43,6 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about .item-wrapper .item .emil{font-size: 12px;margin-top: 18px;}
 
 .about .banner.banner-750{display: none;}
-.banner .container{}
-.banner .container:after{display: block;content: '';padding-top:16.66666666666667% }
-
-.about-bd .mcnt{display: flex;}
-.about-bd .mcnt-a{flex: 1;}
-.about-bd .mcnt-b{width: 47.5%;margin-left: 10%;}
 
 @media screen and (max-width: 1199px){
 	.about .item-wrapper{margin: 55px -10px 0;}
@@ -47,8 +53,12 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-bd{padding:30px 0 60px 0}
 }
 @media screen and (max-width: 749px) {
+
+	.about .banner.banner-1200{display: none;}
+	.about .banner.banner-750{display: block;position: relative;}
 	.about .banner .container{height: auto;position: absolute;top: 0;}
 	.about .banner.banner-750 img{width: 100%;}
+
 	.about .banner .cnt{margin: 0;width: 100%;margin-top: 5px;}
 	.about .banner .cnt .tt{font-size: 14px;}
 	.about .banner .cnt .bd{margin-top: 0;line-height: 14px;}

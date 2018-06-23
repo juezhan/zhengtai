@@ -2,8 +2,8 @@
 .clearfix:after {clear: both;display: block;content: "";height: 0;}
 
 .header {border-bottom: 1px solid #e5e5e5;position: relative;}
-.header .container{height:136px}
-.header .logo{float:left;margin:47px 0 0 72px}
+.header .container{padding-top: 20px;position: static;}
+.header .logo{top: -10px;position: relative;float: left;}
 .header .navigation-bar{float:right;margin:50px 90px 0 0}
 .header .navigation-bar .item{display:inline-block;margin-left:40px;text-align:center;font-size:15px;color:#a09f9f;position: relative;height: 86px;}
 .header .navigation-bar .item span{display:block}
@@ -14,6 +14,160 @@
 .header .navigation-bar .item .menu-arrow{background:url(../imgs/menu-arrow.png) 0 0 no-repeat;width: 45px;height: 18px;background-size: 100% 100%;position: absolute;left: 50%;bottom: 0;margin-left: -22px;display: none;}
 
 .header .navigation-bar .item.is-set .menu-arrow{display: block;}
+
+#iResearch-nav{}
+#navigationBarMini{display: none;}
+
+#iResearch-nav {line-height: 1.42857143;text-align: right; color: #444; font-size: 15px;}
+#iResearch-nav > ul {white-space: nowrap;margin-left: 300px;}
+#iResearch-nav > ul > li {display: inline-block;margin: 0 1.2%;text-align: center;height: 59px;vertical-align: middle;}
+#iResearch-nav > ul > li:last-child{ margin-right: 0;}
+#iResearch-nav > ul > .active a { color: #0093ff; }
+#iResearch-nav > ul > li > a { display: inline-block; padding: 0 7px; vertical-align: middle;}
+#iResearch-nav > ul > li:last-child > a { padding-right: 0;}
+#iResearch-nav > ul > li > a > span { display: block; letter-spacing: 1px;}
+#iResearch-nav > ul > li > a > em { display: block;font-family:Arial,sans-serif; font-size: .8em; opacity: .6; letter-spacing: -.3px; margin-top: 3px;}
+
+
+#iResearch-nav .dropdown { position: static;}
+#iResearch-nav .dropdown-toggle { position: relative;}
+#iResearch-nav .dropdown .dropdown-toggle { height: 59px; overflow-y: hidden;}
+#iResearch-nav .dropdown-toggle::after {content: '';width: 1.2rem;height: 1.2rem;position: absolute;z-index: 10;left: 0;right: 0;bottom: -12px;margin: auto;background-color: rgba(57,67,78,.95);-webkit-transform: scale(1,.8) rotate(45deg);-ms-transform: scale(1,.8) rotate(45deg);-o-transform: scale(1,.8) rotate(45deg);transform: scale(1,.8) rotate(45deg);opacity: 0;}
+#iResearch-nav .open >.dropdown-toggle::after {opacity: 1;-webkit-transition: all 300ms;-ms-transition: all 300ms;-o-transition: all 300ms;transition: all 300ms;bottom: -8px;}
+#iResearch-nav .dropdown-wrap { position: absolute; z-index: 999; left: 0; top: 98%; width: 100%; height: 201px; opacity: 0; overflow: hidden; background-color: rgba(57,67,78,.95);-webkit-transition: all 300ms;-ms-transition: all 300ms;-o-transition: all 300ms;transition: all 300ms;-webkit-transform-origin: top;-ms-transform-origin: top;-o-transform-origin: top;transform-origin: top;-webkit-transform: scale(1,0);-ms-transform: scale(1,0);-o-transform: scale(1,0);transform: scale(1,0);}
+#iResearch-nav .dropdown-wrap >.container { overflow-x:initial;}
+#iResearch-nav .open >.dropdown-wrap { opacity: 1;-webkit-transform: scale(1,1);-ms-transform: scale(1,1);-o-transform: scale(1,1);transform: scale(1,1);}
+#iResearch-nav .dropdown-wrap >div >.dropdown-menu { position: static; display: block; float: none; margin: 25px -18px 0; padding: 0; color: #555; font-size: 13px; background-color: transparent; border-radius: 0; box-shadow: none; border:none;-webkit-animation-duration: .6s;animation-duration: .6s;}
+#iResearch-nav .dropdown-menu >li {width: 20%;float: left;padding: 0 18px;margin: 15px 0 0;box-sizing: border-box;text-align: left;}
+#iResearch-nav .dropdown-menu >li a { position: relative;  display: block; padding: 5px 0 5px 15px; line-height: 25px; color: #c2cbd5; background-color: transparent; box-shadow: 0 0 10px rgba(0,0,0,.05);-webkit-transition: all 300ms;-ms-transition: all 300ms;-o-transition: all 300ms;transition: all 300ms;}
+#iResearch-nav .dropdown-menu >li a::before,
+#iResearch-nav .dropdown-menu >li a::after { content: ''; position: absolute; width: 100%; height: 1px; left: 0; right: 0; bottom: 0; margin: auto; background-color: #6a7582; z-index: 1;-webkit-transition: all 300ms;-ms-transition: all 300ms;-o-transition: all 300ms;transition: all 300ms;}
+#iResearch-nav .dropdown-menu >li a::after { width: 0%; z-index: 2; background-color: #64bb2f;}
+
+#iResearch-nav .dropdown-menu >li a span { display: inline-block; vertical-align: middle;}
+#iResearch-nav .dropdown-menu >li a:hover { color: #fff; background-color: transparent;}
+#iResearch-nav .dropdown-menu >li a:hover::after { width: 100%;}
+#iResearch-nav .dropdown-wrap .icon { display: inline-block; width: 22px; height: 25px; vertical-align: middle; margin-right: 15px; background-repeat: no-repeat; background-position: center;}
+#iResearch-nav .dropdown-wrap .icon-1 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-1.png);}
+#iResearch-nav .dropdown-wrap .icon-2 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-2.png);}
+#iResearch-nav .dropdown-wrap .icon-3 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-3.png);}
+#iResearch-nav .dropdown-wrap .icon-4 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-4.png);}
+#iResearch-nav .dropdown-wrap .icon-5 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-5.png);}
+#iResearch-nav .dropdown-wrap .icon-6 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-6.png);}
+#iResearch-nav .dropdown-wrap .icon-7 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-7.png);}
+#iResearch-nav .dropdown-wrap .icon-8 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-8.png);}
+#iResearch-nav .dropdown-wrap .icon-9 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-9.png);}
+#iResearch-nav .dropdown-wrap .icon-10 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-10.png);}
+#iResearch-nav .dropdown-wrap .icon-11 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-11.png); width: 28px;}
+#iResearch-nav .dropdown-wrap .icon-12 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-12.png);}
+
+#iResearch-nav .dropdown-wrap a:hover .icon-1 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-1-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-2 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-2-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-3 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-3-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-4 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-4-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-5 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-5-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-6 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-6-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-7 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-7-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-8 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-8-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-9 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-9-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-10 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-10-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-11 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-11-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-12 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-12-active-2.png);}
+
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.animated.infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+	-webkit-animation-duration: .75s;
+	animation-duration: .75s;
+}
+
+
+@-webkit-keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+
+
+@-webkit-keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
 
 @media screen and (max-width: 1199px){
 	.container{width: 960px;}
@@ -26,15 +180,16 @@
 	.header .navigation-bar .item span.tit-2{margin-top: 8px;}
 }
 @media screen and (max-width: 768px) {
+	#iResearch-nav{display: none;}
+	#navigationBarMini{display: block;}
 	.container{width: 750px;}
 	.header .container{height:auto;padding: 8px 0}
 	.header .logo{width: 190px;}
 	.header .navigation-bar .item{margin-left: 0;}
 	.header .navigation-bar .item span.tit-2{font-size: 12px;margin-top: 4px;}
 }
-
 @media screen and (max-width: 749px) {
-	.container{width:100%;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}  
+	.container{width:100%;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
 	.header {}
 	.header .container{height: auto;}
 	.header .logo{margin: 12px 0 0px;width: 50%;float: inherit;}

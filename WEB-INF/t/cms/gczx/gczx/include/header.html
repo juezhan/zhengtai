@@ -3,7 +3,135 @@
 <div class="header">
     <div class="container clearfix">
         <img src="/${res}/imgs/logo.png" class="logo">
-        [#include "./nav.html"/]
+        <nav id="iResearch-nav">
+            <ul class="clearfix">
+                [@cms_channel_list]
+                [#if !channel??]
+                <li class="active"><a href="/"><span>首页</span><em>HOME</em></a></li>
+                [#list tag_list as c]
+                [#if c_index<4]
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="${c.url}"><span>${c.name}</span><em>${c.txt}</em></a>
+                    [@cms_channel_list parentId = c.id]
+                    <div class="dropdown-wrap">
+                        <div class="container">
+                            <ul class="dropdown-menu clearfix animated">
+                                [#list tag_list as c2]
+                                <li><a href="${c2.url}"><i class="icon icon-1"></i><span>${c2.name}</span></a></li>
+                                [/#list]
+                            </ul>
+                        </div>
+                    </div>
+                    [/@cms_channel_list]
+                </li>
+                [/#if]
+                [/#list]
+                [#else]
+                <li><a href="/"><span>首页</span><em>HOME</em></a></li>
+                [#list tag_list as c]
+                [#if c_index<4]
+                [#if channel.parentId??]
+                <li class="dropdown [#if channel.parentId==c.id] active[/#if]">
+                    [#else]
+                <li class="dropdown [#if channel.id==c.id] active[/#if]">
+                [/#if]
+                    <a class="dropdown-toggle" href="${c.url}"><span>${c.name}</span><em>${c.txt}</em></a>
+                    <div class="dropdown-wrap">
+                        <div class="container">
+                            <ul class="dropdown-menu clearfix animated">
+                                <li><a href="/Solutions/Internet.shtml"><i class="icon icon-1"></i><span>互联网</span></a></li>
+                                <li><a href="/Solutions/Finance.shtml"><i class="icon icon-5"></i><span>金融</span></a></li>
+                                <li><a href="/Solutions/Fmsg.shtml"><i class="icon icon-4"></i><span>快消</span></a></li>
+                                <li><a href="/Solutions/AdCompany.shtml"><i class="icon icon-3"></i><span>广告公司</span></a></li>
+                                <li><a href="/Solutions/Films.shtml"><i class="icon icon-2"></i><span>影视</span></a></li>
+                                <li><a href="/Solutions/Investor.shtml"><i class="icon icon-6"></i><span>投资机构</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                [/#if]
+                [/#list]
+                [/#if]
+                [/@cms_channel_list]
+        <!--        <li class="nav_home active"><a href="/"><span>首页</span><em>HOME</em></a></li>
+                <li class="nav_solutions dropdown">
+                    <a class="dropdown-toggle" href="/Solutions.shtml"><span>行业方案</span><em>SOLUTION</em></a>
+                    <div class="dropdown-wrap">
+                        <div class="container">
+                            <ul class="dropdown-menu clearfix animated">
+                                <li><a href="/Solutions/Internet.shtml"><i class="icon icon-1"></i><span>互联网</span></a></li>
+                                <li><a href="/Solutions/Finance.shtml"><i class="icon icon-5"></i><span>金融</span></a></li>
+                                <li><a href="/Solutions/Fmsg.shtml"><i class="icon icon-4"></i><span>快消</span></a></li>
+                                <li><a href="/Solutions/AdCompany.shtml"><i class="icon icon-3"></i><span>广告公司</span></a></li>
+                                <li><a href="/Solutions/Films.shtml"><i class="icon icon-2"></i><span>影视</span></a></li>
+                                <li><a href="/Solutions/Investor.shtml"><i class="icon icon-6"></i><span>投资机构</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_products"><a href="/report.shtml"><span>研究报告</span><em>RESEARCH</em></a></li>
+                <li class="nav_datas"><a href="/Datas.shtml"><span>数据服务</span><em>DATA</em></a></li>
+                <li class="nav_research dropdown">
+                    <a class="dropdown-toggle" href="/Research.shtml"><span>研究服务</span><em>CONSULTING</em></a>
+                    <div class="dropdown-wrap">
+                        <div class="container">
+                            <ul class="dropdown-menu clearfix animated">
+                                <li><a href="/Research/Brand.shtml"><i class="icon icon-7"></i><span>品牌研究</span></a></li>
+                                <li><a href="/Research/Marketing.shtml"><i class="icon icon-8"></i><span>营销／广告研究</span></a></li>
+                                <li><a href="/Research/Operation.shtml"><i class="icon icon-9"></i><span>运营精细化研究</span></a></li>
+                                <li><a href="/Research/Product.shtml"><i class="icon icon-10"></i><span>产品创新策略研究</span></a></li>
+                                <li><a href="/Research/Automobile.shtml"><i class="icon icon-11"></i><span>汽车研究</span></a></li>
+                                <li><a href="/Research/Retail.shtml"><i class="icon icon-12"></i><span>新零售及电子商务研究</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_consulting"><a href="/Consulting.shtml"><span>投资研究</span><em>INVESTMENT</em></a></li>
+                <li class="nav_members"><a href="/memberservice.shtml"><span>会员服务</span><em>CLUB</em></a></li>
+                <li class="nav_events"><a href="/Events.shtml"><span>活动会议</span><em>EVENT</em></a></li>
+-->
+            </ul>
+        </nav>
+        <div class="nav-mini" id="navigationBarMini">
+            <div class="nav-mini-m"></div>
+            <div class="nav-mini-w">
+                [@cms_channel_list]
+                <div class="item"><a href="${base}/" class="tt on">首页</a></div>
+                [#list tag_list as c]
+                <div class="item">
+                    <a href="${c.url}" class="tt" >${c.name}</a>
+                </div>
+                [@cms_channel_list parentId=c.id]
+                [#if tag_list?size>0]
+                [#list tag_list as c2]
+                <div class="item menu-mini">
+                    <a href="${c2.url}" class="tt">${c2.name}</a>
+                </div>
+                [/#list]
+                [/#if]
+                [/@cms_channel_list]
+                [/#list]
+                [/@cms_channel_list]
+            </div>
+        </div>
+        <script>
+          $('#iResearch-nav .dropdown').stop().hover(function () {
+            $(this).addClass('open');
+            $(this).find('.dropdown-menu').addClass('fadeInUp');
+          }, function () {
+            $(this).removeClass('open');
+            $(this).find('.dropdown-menu').removeClass('fadeInUp');
+          });
+
+          // navigationBarMini
+          $('#navigationBarMini').click(function () {
+            $(this).addClass('active')
+          });
+          $('#navigationBarMini .nav-mini-m').click(function () {
+            $('#navigationBarMini').removeClass('active');
+            return false;
+          });
+        </script>
     </div>
 </div>
 <!-- header 结束 -->
