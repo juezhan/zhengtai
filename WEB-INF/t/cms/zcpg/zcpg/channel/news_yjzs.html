@@ -8,7 +8,7 @@
 <script src="/${res}/js/jquery-3.3.1.min.js"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
-<link href="/${res}/css/news-xwzx-2.css" rel="stylesheet"/>
+<link href="/${res}/css/news-yjzs.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
 
 <!--[if lt IE 9]>
@@ -52,8 +52,8 @@
                         <div class="line"></div>
                         [/#if]
                         [/#list]
+                        [#include "../include/page.html"/]
                         [/@cms_content_page]
-                        <div class="add-more"></div>
                     </div>
                 </div>
                 <div class="menu-wapper">
@@ -61,7 +61,7 @@
                         <div class="txt">ACHEVEMENT</div>
                     </div>
                     <div class="menu-items">
-                        ${channel. titleImg!}
+                        <img src="${channel.titleImg!}"/>
                     </div>
                 </div>
             </div>

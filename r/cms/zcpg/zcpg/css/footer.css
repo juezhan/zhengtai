@@ -10,11 +10,15 @@
 .footer .footer-wrapper .mn-2 .txt-2{line-height: 24px;}
 .footer .footer-wrapper .mn-2 .txt-2 a{margin-left: 14px;}
 
-@media screen and (min-width: 1680px) {
+@media screen and (max-width: 1199px){
 }
+@media screen and (max-width: 768px){
 
-@media screen and (max-width: 1199px) and (min-width: 750px){
 }
-
 @media screen and (max-width: 749px) {
+    .footer .footer-wrapper{display: block;}
+    .footer .footer-wrapper .mn-1{width: 100%;height: auto;padding-bottom: 10px;}
+    .footer .footer-wrapper .mn-1 .txt-1{margin-top: 10px;}
+    .footer .footer-wrapper .mn-2{text-align: center;}
+    .footer .footer-wrapper .mn-2 .txt-1{margin-top: 18px;}
 }

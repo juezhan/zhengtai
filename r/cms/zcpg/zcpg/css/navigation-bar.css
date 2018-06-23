@@ -14,12 +14,18 @@
 .navigation-bar .search{width: 40px;height: 40px;background-color: #ec4847;float: left;margin-left: 19px;}
 .navigation-bar .search .icon{margin: 10px;}
 
-@media screen and (min-width: 1680px) {
-}
 
-@media screen and (max-width: 749px) {
-	.navigation-bar .container{padding: 0}
-	.navigation-bar .container .bd{height: 28px;line-height: 30px;border-left: 0;border-right: 0;}
-	.navigation-bar .container .item{font-size: 14px;line-height: 28px;}
-	.navigation-bar .container .item a.tt{padding: 0}
+.nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #9a9a9a;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
+.nav-mini .nav-mini-m{display: none;background-color: rgba(0,0,0,.3);position: fixed;top:0;right: 0;height: 100%;width:100%;z-index: 999}
+.nav-mini .nav-mini-w{display: none;width:100px;background-color: #ffffff;position: fixed;top:0;right: 0;height: 100%;z-index: 9999;overflow: auto}
+.nav-mini .nav-mini-w .item{font-size: 14px;padding: 10px 12px;position: relative;}
+.nav-mini .nav-mini-w .item:after{position: absolute;left: 12px;bottom: 0;right: 0;content: '';display: block;height: 1px;background-color: #000000;transform:scaleY(.5);}
+.nav-mini .nav-mini-w .menu-mini{font-size: 12px;padding-left: 24px}
+
+.nav-mini.active .nav-mini-m,
+.nav-mini.active .nav-mini-w{display: block;}
+
+@media screen and (max-width: 749px){
+	.navigation-bar{display:none;}
+	.nav-mini{display:block;}
 }

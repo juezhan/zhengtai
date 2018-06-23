@@ -1,8 +1,6 @@
-
 .header{border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb;}
 .header .container{height:84px}
-.header .logo{float:left;margin:25px 0 0 0;
-	width: 132px;}
+.header .logo{float:left;margin:25px 0 0 0;width: 132px;}
 .header .sign{float:right;color: #999999;margin-top: 48px;display: flex;height: 22px;line-height: 22px;}
 .header .sign .icon-earth{float:left;}
 .header .sign .bd{flex: 1;}
@@ -11,18 +9,6 @@
 .header .sign a+a{margin-left:15px}
 .header .sign a.active{color: #cd4d45}
 
-@media screen and (min-width: 1680px) {
-  .container{width:1600px;}
-}
-
-@media screen and (max-width: 749px) {
-	.header .container{height:auto;overflow: hidden;}
-	.header .logo{width: 100%;margin-top: 12px;}
-	.header .sign{margin: 12px 0;float: left;height: 24px;line-height: 24px;}
-	.header .sign .icon{margin: 3px 8px 0;-webkit-transform: scale(0.8);transform: scale(0.8);}
-	.header .sign .bd{line-height: 24px;height: 24px;padding: 0 12px;}
-	.header .sign a{font-size: 12px;}
-}
 
 @charset "utf-8";
 /* CSS Document */
@@ -254,15 +240,15 @@
 /*page*/
 .page-large{margin:40px 0 20px; text-align:center;}
 .page-large a{min-width:34px; height:34px; display:inline-block; border:1px solid #d5d5d5; box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box; line-height:34px; text-align:center; float:left; text-indent:0; color:#666666; font-size:12px; font-family:Arial, Helvetica, sans-serif; margin:0 3px;}
-.page-large a.on{border:1px solid #ef3838; background:#ef3838; color:#fff;}
+.page-large a.on{border:1px solid #fc2f07; background:#fc2f07;color: #ffffff !important;}
 .page-large a.none{border:none;}
-.page-large .Num:hover{border:1px solid #ef3838; color:#ef3838;}
-.page-large .on:hover{border:1px solid #ef3838; color:#fff;}
+.page-large .Num:hover{border:1px solid #fc2f07; color:#fc2f07;}
+.page-large .on:hover{border:1px solid #fc2f07; color:#fff;}
 
 .page-large .prev-page{background:url(../images/small-prev-page.png) center center no-repeat;}
 .page-large .next-page{background:url(../images/small-next-page.png) center center no-repeat;}
-.page-large .prev-page:hover{border:1px solid #ef3838; background:url(../images/small-prev-page-on.png) center center no-repeat #ef3838;}
-.page-large .next-page:hover{border:1px solid #ef3838; background:url(../images/small-next-page-on.png) center center no-repeat #ef3838;}
+.page-large .prev-page:hover{border:1px solid #fc2f07; background:url(../images/small-prev-page-on.png) center center no-repeat #ef3838;}
+.page-large .next-page:hover{border:1px solid #fc2f07; background:url(../images/small-next-page-on.png) center center no-repeat #ef3838;}
 
 /*图库样式结束*/
 
@@ -837,3 +823,20 @@ h1 .position:before{width:12px; height:13px; display:inline-block; content:""; p
 .tag-list li{width:25%; float:left; position:relative; text-indent:10px; margin-top:20px;}
 .tag-list li:before{content:""; width:3px; height:3px; position:absolute; left:0; top:4px; background:#999; display:block;}
 .tag-count{color:#ef3838; font-size:16px; margin-left:20px;}
+
+@media screen and (max-width: 1199px){
+	.container{width: 960px;}
+}
+@media screen and (max-width: 768px) {
+	.container{width: 750px;}
+}
+@media screen and (max-width: 749px){
+	.container{width: 100%;max-width: 640px;min-width: 320px;}
+	.header{border: 0;margin-bottom: 12px;}
+	.header .container{height:auto;overflow: hidden;}
+	.header .logo{width:200px;margin-top: 12px;}
+	.header .sign{margin: 12px 0;float: left;height: 24px;line-height: 24px;}
+	.header .sign .icon{margin: 3px 8px 0;-webkit-transform: scale(0.8);transform: scale(0.8);}
+	.header .sign .bd{line-height: 24px;height: 24px;padding: 0 12px;}
+	.header .sign a{font-size: 12px;}
+}
