@@ -50,6 +50,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .yjzs .mnc-w .item-wrapper .avatar img{height: auto !important;}
 .yjzs .mnc-w .item-wrapper .item{position: relative;float: left;width: 98%;margin: 1%;box-sizing: border-box;border: 1px solid #e2e2e2;border-radius: 4px;padding: 20px;height: 200px;display: flex;}
 .yjzs .mnc-w .item-wrapper .txt{font-size: 18px;line-height: 32px;flex: 1;}
+.span-txt{font-size: 12px;line-height: 20px;display: inline-block;}
 
 @media screen and (max-width: 1199px){
 }

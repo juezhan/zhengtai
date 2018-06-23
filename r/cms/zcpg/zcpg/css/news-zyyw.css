@@ -87,6 +87,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	height: 176px;
 	background: url(../imgs/p_0_1_new.jpg) no-repeat 0 0;
 	border-bottom: 2px solid #ecebe9;
+	background-color: #F5EEDC;
+	background-size: contain;
 }
 #main .responsibility-items .item2 {
 	position: absolute;
@@ -103,6 +105,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	width: 269px;
 	height: 359px;
 	background: url(../imgs/p_0_3.jpg) no-repeat 0 0;
+	background-size: cover;
 }
 #main .responsibility-items .item4 {
 	position: absolute;
@@ -111,6 +114,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	width: 375px;
 	background: #f4eeda url(../imgs/p_0_4-2.jpg) no-repeat;
 	height: 128px;
+	background-size: contain;
 }
 #main .responsibility-items .item6 {
 	position: absolute;
@@ -127,6 +131,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	width: 375px;
 	height: 110px;
 	background: url(../imgs/p_0_5-2_new_1.jpg) no-repeat 0 0;
+	background-size: contain;
 }
 #main .subColumns {
 	height: 92px;

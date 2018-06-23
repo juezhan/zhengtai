@@ -37,7 +37,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .case .items{overflow: hidden;}
 .index .case .item{width: 30%;float:left;display: flex;align-items: start;}
 .index .case .item + .item{margin-left: 5%;}
-.index .case .item .img{margin-right: 24px;width: 150px;/* height: 203px; */}
+.index .case .item .img{margin-right: 24px;width: 150px; height: 150px; }
 .index .case .item .cnt{flex: 1;position: relative;height: 155px;}
 .index .case .item .tt{font-size: 18px;color: #0099ff;}
 .index .case .item .bd{font-size: 14px;color: #999999;margin-top: 50px;}

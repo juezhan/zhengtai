@@ -58,6 +58,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	font-size: 18px;
 	line-height: 32px;
 }
+.zyyw .mnc-w .item-wrapper .span-txt{
+	font-size: 12px;
+}
 
 @media screen and (max-width: 1199px){
 }

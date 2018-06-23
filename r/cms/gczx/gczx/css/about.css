@@ -35,7 +35,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .banner .container:after{display: block;content: '';padding-top:16.66666666666667% }
 
 .about-bd .mcnt{display: flex;}
-.about-bd .mcnt-a{flex: 1;}
+.about-bd .mcnt-a{flex: 1;line-height: 26px;}
 .about-bd .mcnt-b{width: 47.5%;margin-left: 10%;}
 
 @media screen and (max-width: 1199px){
