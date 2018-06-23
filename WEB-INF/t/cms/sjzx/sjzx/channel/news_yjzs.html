@@ -42,22 +42,40 @@
         </div>-->
       </div>
     </div>
-    <!--<div class="m">
-      ${channel.txt!}
-    </div>-->
-    <div class="m">
-      [@cms_content_page channelId=channel.id count='1' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
+    <div class="list-items">
+      [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
       [#list tag_pagination.list as a]
-      <div class="t-1">${a.title}</div>
-      <div class="t-2">
-        <div class="avatar">
-          <img src="${a.titleImg!}"/>
-        </div>
-        <div class="cnt">${a.desc}</div>
+      [#if a_index == 0]
+      <div class="item-first">
+        <a href="${a.url}" target="_blank" class="t">${a.title}</a>
+        <a href="${a.url}" target="_blank" class="c">${a.desc}</a>
       </div>
+      [/#if]
+      [#if a_index > 0]
+      <div class="item">
+        <div class="date">${a.date?string(dateFormat)}</div>
+        <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
+      </div>
+      [/#if]
+      [#if a_has_next]
+      <div class="line"></div>
+      [/#if]
       [/#list]
       [/@cms_content_page]
     </div>
+   <!-- <div class="m">
+    [@cms_content_page channelId=channel.id count='1' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
+    [#list tag_pagination.list as a]
+    <div class="t-1">${a.title}</div>
+    <div class="t-2">
+      <div class="avatar">
+        <img src="${a.titleImg!}"/>
+      </div>
+      <div class="cnt">${a.desc}</div>
+    </div>
+    [/#list]
+    [/@cms_content_page]
+  </div>-->
   </div>
 </div>
 [#include "../include/footer.html"/]
