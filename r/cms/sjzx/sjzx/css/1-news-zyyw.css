@@ -28,6 +28,16 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .zyyw-w .m .t-2 .avatar{width: 320px;height: 180px;overflow: hidden;margin-right: 24px;}
 .zyyw .zyyw-w .m .t-2 .cnt{font-size: 18px;color:#999999;flex: 1}
 
+
+.zyyw .list-items .list-items{color: #645b58}
+.zyyw .list-items .list-items a{color: #645b58}
+.zyyw .list-items .item-first{background-color: #f4f4f4;padding:0 10px;margin-top: 18px;}
+.zyyw .list-items .item-first .t{padding: 0 14px;font-size: 18px;color: #0062B2;display: block;border-bottom: 1px dotted #808080;line-height: 54px;height: 54px;}
+.zyyw .list-items .item-first .c{padding: 10px 14px;line-height: 24px;display: block}
+.zyyw .list-items .item{display: flex;line-height: 20px;margin: 13px 0}
+.zyyw .list-items .item .name{flex: 1;}
+.zyyw .list-items .item .date{margin-right: 16px;}
+.zyyw .list-items .line{height: 1px;background-color: #ededed;}
 @media screen and (max-width: 1199px) and (min-width: 750px){
 	.container{width:960px;}
 	.zyyw .container .zyyw-ad img{width: 100%;}
