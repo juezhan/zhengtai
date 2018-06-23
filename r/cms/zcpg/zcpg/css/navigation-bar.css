@@ -1,11 +1,11 @@
 .navigation-bar .container{font-size:0}
-.navigation-bar .container .bd{margin:0 auto;height:60px;text-align:center;}
+.navigation-bar .container .bd{margin:0 auto;height:50px;text-align:center;}
 .navigation-bar .container .item-wapper{float:right;margin-top: 8px;}
 .navigation-bar .container .dot{width: 5px;height: 5px;border-radius: 50%;background-color: #c2c2c2;display: inline-block;margin: 18px 5px 0;float: left;}
 .navigation-bar .container .item{position:relative;height: 40px;line-height: 40px;text-align:center;font-size:13px;float: left;font-weight: bold;}
 .navigation-bar .container .item a.tt{color:#757575;display:inline-block;padding: 0 14px;}
 .navigation-bar .container .item a.tt.on{color: #e71910;}
-.navigation-bar .container .item .menu{display:none;position:absolute;top: 40px;left:0;width:100%;padding: 10px 0;z-index: 999}
+.navigation-bar .container .item .menu{display:none;position:absolute;top: 31px;left:0;width:100%;padding: 10px 0;z-index: 999}
 .navigation-bar .container .item .menu.visible{display:block}
 .navigation-bar .container .item .menu .arrow{margin:0 auto;background:url(../imgs/arrow.png?v=xfLMvwYkPUqyFq%2FGZERloA%3D%3D) 0 0 no-repeat;background-size:100% 100%}
 .navigation-bar .container .item .menu ul{display:inline-block;background-color:rgba(0,0,0,.7)}

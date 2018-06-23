@@ -1,16 +1,15 @@
+
 <!DOCTYPE HTML>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport"
-      content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="format-detection" content="telephone=no">
 <meta http-equiv="keywords" content="${channel.keywords!}"/>
 <meta http-equiv="description" content="${channel.description!}"/>
 <title>${channel.title!channel.name} - ${site.name}</title>
-<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="/${res}/js/jquery-3.3.1.min.js"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
-<link type="text/css" rel="stylesheet" href="/${res}/css/about.css"/>
+<link href="/${res}/css/news-xwzx-2.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
 
 <!--[if lt IE 9]>
@@ -20,25 +19,66 @@
 <![endif]-->
 
 <head>
-<body class="about">
+<body class="news-xwzx">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="about-bd">
+
+<div class="xwzx-wapper">
     <div class="container">
-        <div class="about-mn">
-            <div class="tt">
-                <div class="tt-w">
-                    <i class="icon icon-house"></i><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a
-                        href='${n.url}' target='_blank' class="ts">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
+        <div class="xwzx-mn">
+            <div class="xwzx-mbd">
+                <div class="list-wapper">
+                    <div class="tt">
+                        <div class="tt-w">
+                            <i class="icon icon-house"></i><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a
+                                href='${n.url}' target='_blank' class="ts">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
+                        </div>
+                    </div>
+                    <!-- <div class="list-items">
+                        [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
+                        [#list tag_pagination.list as a]
+                        [#if a_index == 0]
+                        <div class="item-first">
+                            <a href="${a.url}" target="_blank" class="t">${a.title}</a>
+                            <a href="${a.url}" target="_blank" class="c">${a.desc}</a>
+                        </div>
+                        [/#if]
+                        [#if a_index > 0]
+                        <div class="item">
+                            <div class="date">${a.date?string(dateFormat)}</div>
+                            <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
+                        </div>
+                        [/#if]
+                        [#if a_has_next]
+                        <div class="line"></div>
+                        [/#if]
+                        [/#list]
+                        [/@cms_content_page]
+                        <div class="add-more"></div>
+                    </div> -->
+                    <div class="list-item bd">
+                        ${channel. txt!}
+                    </div>
+                </div>
+                <div class="menu-wapper">
+                    <div class="tt">
+                        <div class="txt">ABOUT</div>
+                    </div>
+                    <div class="menu-items">
+                        [@cms_channel_list parentId=channel.parentId]
+                        [#list tag_list as c]
+                        <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
+                            <span>${c.name}</span>
+                        </a>
+                        [/#list]
+                        [/@cms_channel_list]
+                    </div>
                 </div>
             </div>
-            <div class="bd">
-                ${channel. txt!}
-            </div>
-            
         </div>
     </div>
 </div>
+
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>

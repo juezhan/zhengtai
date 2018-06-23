@@ -45,6 +45,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-xwzx .menu-wapper .item.active:after,
 .news-xwzx .menu-wapper .item:hover:after{width: 100%;}
 
+.news-xwzx .list-wapper .list-item.bd{width: 758px;}
+.news-xwzx .list-wapper .list-item.bd img{width: 100%;}
 
 @media screen and (min-width: 1620px) {
   .container{width:1600px;}
