@@ -45,8 +45,10 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 @media screen and (max-width: 749px) {
 	.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
-	.zyyw .zyyw-w{padding: 20px 0;}
+	.zyyw .zyyw-w{padding: 12px 0 20px;}
 	.zyyw .zyyw-w .bd{margin:8px 0px 0;}
 	.zyyw .zyyw-w .bd img{width: 100% !important;height: auto !important;}
 	.zyyw .container .zyyw-ad img{width: 100%;}
+	.zyyw .zyyw-w .bread{height: 32px;line-height: 32px;}
+	.zyyw .zyyw-w .bread .icon-house{height: 32px;width: 32px;}
 }
