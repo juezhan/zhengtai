@@ -97,7 +97,7 @@ img {
 .index .news .container .aside,
 .index .news .container .news-main {
     height: 348px;
-    border: 1px solid #a0a0a0
+    border: 1px solid #ccc
 }
 
 .index .news .container .aside {
@@ -246,7 +246,7 @@ img {
 
 .index .cell .cell-main {
     background-color: #eee;
-    border: 1px solid #a0a0a0;
+    border: 1px solid #ccc;
     text-align: center;
     font-size: 0;
     padding: 12px 0 17px;
@@ -258,7 +258,7 @@ img {
     position: relative;
     width: 350px;
     background-color: #fff;
-    border-top: 1px solid #293896;
+    border-top: 1px solid #0066B3;
     margin: 13px;
     overflow: hidden;
     text-align: center;
@@ -268,7 +268,7 @@ img {
 
 .index .cell .item .tt {
     font-size: 20px;
-    color: #293896;
+    color: #0066B3;
     margin-top: 10px;
 }
 
