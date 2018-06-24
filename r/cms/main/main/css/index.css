@@ -139,6 +139,7 @@ img {
 
 .index .news .container .aside .bd img {
     width: 100%;
+    margin-top: 40px;
 }
 
 .index .news .container .news-main {
@@ -314,6 +315,11 @@ img {
 .index .cell .item .link-btn em {
     font-family: '宋体';
     margin-right: 10px;
+}
+.index .cell .iconimg{
+    vertical-align: bottom;
+    margin: 0 6px;
+    width: 20px;
 }
 
 .index .news-main .icon {
