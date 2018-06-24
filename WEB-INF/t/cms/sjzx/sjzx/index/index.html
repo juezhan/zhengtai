@@ -57,10 +57,10 @@
                     <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-4.png"/>
                 </div>
                 <div class="txt">
-                    <a href="#" class="tit">科技计划资金专项审计 </a>
+                    <div class="tit">科技计划资金专项审计 </div>
                     <div class="date">2018.04.13</div>
-                    <a href="#" class="cnt">作为
-                        “十一五”、“十二五”、“十三五”期间国家科技计划资金审计机构之一，公司先后承担了省内各高等院校、科研院所及企业的国家科技计划课题结题验收审计任务100多项</a>
+                    <div class="cnt">作为
+                        “十一五”、“十二五”、“十三五”期间国家科技计划资金审计机构之一，公司先后承担了省内各高等院校、科研院所及企业的国家科技计划课题结题验收审计任务100多项</div>
                     <a href="http://localhost:8080/sjzx/xwzx/index.jhtml" class="more">了解更多 ></a>
                 </div>
             </div>
@@ -70,9 +70,15 @@
                         <div class="t-txt">业绩展示</div>
                     </div>
                     <div class="cnt">
-                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价<br>
-                            近年来，接受省财政厅资产处、预算处、农发评审中心、省预算编审中心等部门的委托先后完成了2011-2012年安排的国有经济和产业结构调整支出
-                        </a>
+                        [@cms_content_list channelId='201' count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1']
+                        [#list tag_list as a]
+                        <a href="${a.url}">${a.title}</a>
+                        [/#list]
+                        [/@cms_content_list]
+                        <!--<a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>
+                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>
+                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>
+                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>-->
                     </div>
                 </div>
             </div>
