@@ -96,8 +96,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	height: 176px;
 	background: url(../imgs/p_0_1_new.jpg) no-repeat 0 0;
 	border-bottom: 2px solid #ecebe9;
-	background-color: #F5EEDC;
+	background-color: #FEFDFB;
 	background-size: contain;
+	background-size: 83%;
 }
 #main .responsibility-items .item2 {
 	position: absolute;
@@ -106,32 +107,43 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	width: 400px;
 	height: 231px;
 	background: url(../imgs/p_0_2_new.jpg) no-repeat 0 16px;
+	background-size: 96%;
 }
 #main .responsibility-items .item3 {
 	position: absolute;
-	right: 0;
+	left: 406px;
 	top: 0;
-	width: 375px;
-	background: #f4eeda url(../imgs/p_0_4-2.jpg) no-repeat;
-	height: 128px;
-	background-size: contain;
+	width: 200px;
+	height: 359px;
+	background: url(../imgs/p_0_3.jpg) no-repeat 0 0;
+	background-size: cover;
 }
 #main .responsibility-items .item4 {
 	position: absolute;
-	bottom: 0;
 	right: 0;
-	width: 375px;
-	height: 110px;
-	background: url(../imgs/p_0_5-2_new_1.jpg) no-repeat 0 0;
-	background-size: contain;
+	top: 0;
+	width: 446px;
+	background: #f4eeda url(../imgs/p_0_4-2.jpg) no-repeat;
+	height: 128px;
+	background-size: 105%;
 }
-#main .responsibility-items .item5 {
+#main .responsibility-items .item6 {
 	position: absolute;
 	bottom: 115px;
 	right: 0;
-	width: 375px;
+	width: 446px;
 	height: 110px;
 	background: url(../imgs/p_0_six.jpg) no-repeat 0 0;
+	background-size: 108%;
+}
+#main .responsibility-items .item5 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 446px;
+	height: 110px;
+	background: url(../imgs/p_0_5-2_new_1.jpg) no-repeat 0 0;
+	background-size: 106%;
 }
 #main .subColumns {
 	height: 92px;

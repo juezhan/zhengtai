@@ -97,7 +97,7 @@ img {
 .index .news .container .aside,
 .index .news .container .news-main {
     height: 348px;
-    border: 1px solid #a0a0a0
+    border: 1px solid #ccc
 }
 
 .index .news .container .aside {
@@ -246,7 +246,7 @@ img {
 
 .index .cell .cell-main {
     background-color: #eee;
-    border: 1px solid #a0a0a0;
+    border: 1px solid #ccc;
     text-align: center;
     font-size: 0;
     padding: 12px 0 17px;
@@ -257,17 +257,18 @@ img {
     display: inline-block;
     position: relative;
     width: 350px;
-    height: 320px;
     background-color: #fff;
-    border-top: 1px solid #293896;
+    border-top: 1px solid #0066B3;
     margin: 13px;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 10px;
+    vertical-align: top;
 }
 
 .index .cell .item .tt {
     font-size: 20px;
-    color: #293896;
+    color: #0066B3;
     margin-top: 10px;
 }
 
@@ -344,7 +345,7 @@ img {
     width: 135px;
 }
 
-@media screen and (min-width: 1620px) {
+/*@media screen and (min-width: 1620px) {
     .container {
         width: 1600px;
     }
@@ -363,7 +364,7 @@ img {
     .float_remind_box{
         width: 198px;
     }
-}
+}*/
 
 @media screen and (max-width: 1199px) and (min-width: 769px) {
     .container {
