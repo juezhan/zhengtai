@@ -67,8 +67,17 @@
                     })
                 </script>
             </div>
-            <div class="news-ad">
-                <a href="/zcpg/zyyw/index.jhtml"><img src="/${res}/imgs/index-img-1.png"/></a>
+            <div class="news-ad" title="公司业务" style="background-image: url(/${res}/imgs/index-img-1.png)">
+                <div class="items clearfix">
+                    [@cms_content_list channelId='217' count='5' titLen='25' append='...' orderBy='1' dateFormat='yyyy.MM.dd' channelOption='1' ]
+                    [#list tag_list as a]
+                    <a href="${a.url}" class="item">
+                        <em style="background-image: url('${a.titleImg!}')"></em>
+                        <span class="title">${a.title}</span>
+                    </a>
+                    [/#list]
+                    [/@cms_content_list]
+                </div>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-blockquote, body, button, dd, dl, dt, fieldset, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {margin: 0;padding: 0;border: 0}
+news-adblockquote, body, button, dd, dl, dt, fieldset, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {margin: 0;padding: 0;border: 0}
 body, button, input, select, textarea {font-family: 'Microsoft Yahei', "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;font-size: 14px;color: #333}
 button, input, select, textarea {outline: 0}
 html {line-height: 1}
@@ -36,7 +36,12 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .news .txt{font-size: 14px;line-height: 25px;}
 .index .news .txt a{color: #e80009}
 .index .news .txt .move-arrow{font-family: '宋体'}
-.index .news .news-ad{margin-left: 30px;}
+
+.index .news .news-ad{margin-left: 30px;width: 667px;height: 189px;}
+.index .news .news-ad .items{display: flex;justify-content: center;margin-top: 106px;}
+.index .news .news-ad .item{display: block;float: left;width: 100px;text-align: center;margin: 0 10px;}
+.index .news .news-ad .item em{width: 46px;height: 46px;display: block;margin: 0 auto 13px;background: 50% 50% no-repeat;}
+.index .news .news-ad .item span{display: block;font-size: 14px;color: #666666;}
 
 @media screen and (max-width: 1199px)  {
     .index .news .container .aside {width: 278px;}
