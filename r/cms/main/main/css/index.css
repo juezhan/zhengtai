@@ -257,12 +257,13 @@ img {
     display: inline-block;
     position: relative;
     width: 350px;
-    height: 320px;
     background-color: #fff;
     border-top: 1px solid #293896;
     margin: 13px;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 10px;
+    vertical-align: top;
 }
 
 .index .cell .item .tt {
@@ -344,7 +345,7 @@ img {
     width: 135px;
 }
 
-@media screen and (min-width: 1620px) {
+/*@media screen and (min-width: 1620px) {
     .container {
         width: 1600px;
     }
@@ -363,7 +364,7 @@ img {
     .float_remind_box{
         width: 198px;
     }
-}
+}*/
 
 @media screen and (max-width: 1199px) and (min-width: 769px) {
     .container {
