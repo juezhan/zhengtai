@@ -3,7 +3,9 @@
 .navigation-bar .container .item-wapper{float:right;margin-top: 8px;}
 .navigation-bar .container .dot{width: 5px;height: 5px;border-radius: 50%;background-color: #c2c2c2;display: inline-block;margin: 18px 5px 0;float: left;}
 .navigation-bar .container .item{position:relative;height: 40px;line-height: 40px;text-align:center;font-size:13px;float: left;font-weight: bold;}
-.navigation-bar .container .item a.tt{color:#757575;display:inline-block;padding: 0 14px;}
+.navigation-bar .container .item a.tt{color:#757575;display:inline-block;padding: 0 14px;position: relative;}
+.navigation-bar .container .item > a.tt:before{position: absolute;top:-9px;left: 0;content: '';display: block; width: 100%;height: 1px;background-color: #e71910;z-index: 9;opacity: 0;transition: opacity .2s ease-in;}
+.navigation-bar .container .item > a.tt.active:before{opacity: 1;}
 .navigation-bar .container .item a.tt.on{color: #e71910;}
 .navigation-bar .container .item .menu{display:none;position:absolute;top: 31px;left:0;width:100%;padding: 10px 0;z-index: 999}
 .navigation-bar .container .item .menu.visible{display:block}

@@ -94,12 +94,17 @@
 
                 </div>
                 <div class="responsibility-items">
-                    <a class="item1" href="responsibility.aspx?tags=1"></a>
-                    <a class="item2" href="responsibility.aspx?tags=5"></a>
-                    <a class="item3" href="javascript:;"></a>
-                    <a class="item4" href="responsibility.aspx?tags=4"></a>
-                    <a class="item6" href="responsibility.aspx?tags=3"></a>
-                    <a class="item5" href="responsibility.aspx?tags=2"></a>
+                    <a class="item-a" href="javascript:;"></a>
+                    [@cms_content_list channelId=channel.id count='5' titLen='25' append='...' orderBy='1' dateFormat='yyyy.MM.dd' channelOption='1' ]
+                    [#list tag_list as a]
+                        <a class="item${a_index+1}" href="${a.url}"></a>
+                    [/#list]
+                    [/@cms_content_list]
+                    <!--<a class="item1" href="responsibility.aspx?tags=1"></a>-->
+                    <!--<a class="item2" href="responsibility.aspx?tags=5"></a>-->
+                    <!--<a class="item3" href="responsibility.aspx?tags=4"></a>-->
+                    <!--<a class="item5" href="responsibility.aspx?tags=3"></a>-->
+                    <!--<a class="item4" href="responsibility.aspx?tags=2"></a>-->
                 </div>
             </div>
         </div>

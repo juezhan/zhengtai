@@ -79,6 +79,15 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	position: relative;
 	height: 359px;
 }
+#main .responsibility-items .item-a {
+	position: absolute;
+	left: 406px;
+	top: 0;
+	width: 269px;
+	height: 359px;
+	background: url(../imgs/p_0_3.jpg) no-repeat 0 0;
+	background-size: cover;
+}
 #main .responsibility-items .item1 {
 	position: absolute;
 	left: 0;
@@ -100,15 +109,6 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 #main .responsibility-items .item3 {
 	position: absolute;
-	left: 406px;
-	top: 0;
-	width: 269px;
-	height: 359px;
-	background: url(../imgs/p_0_3.jpg) no-repeat 0 0;
-	background-size: cover;
-}
-#main .responsibility-items .item4 {
-	position: absolute;
 	right: 0;
 	top: 0;
 	width: 375px;
@@ -116,15 +116,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	height: 128px;
 	background-size: contain;
 }
-#main .responsibility-items .item6 {
-	position: absolute;
-	bottom: 115px;
-	right: 0;
-	width: 375px;
-	height: 110px;
-	background: url(../imgs/p_0_six.jpg) no-repeat 0 0;
-}
-#main .responsibility-items .item5 {
+#main .responsibility-items .item4 {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -132,6 +124,14 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	height: 110px;
 	background: url(../imgs/p_0_5-2_new_1.jpg) no-repeat 0 0;
 	background-size: contain;
+}
+#main .responsibility-items .item5 {
+	position: absolute;
+	bottom: 115px;
+	right: 0;
+	width: 375px;
+	height: 110px;
+	background: url(../imgs/p_0_six.jpg) no-repeat 0 0;
 }
 #main .subColumns {
 	height: 92px;
