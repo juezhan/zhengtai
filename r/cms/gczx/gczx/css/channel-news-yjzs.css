@@ -45,7 +45,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .yjzs .aside .aside-w .list .item a.active .icon.icon-zb{background-image: url("../imgs/icon-zb-on.png");}
 
 .yjzs .aside .aside-w .list .child{display: none; position: absolute;left: 100%;width: 300px;top:0;border: 1px solid #e0e0e0;background-color: #f3f3f3;}
-.yjzs .aside .aside-w .list .child-item{line-height: 40px;height: 40px;overflow: hidden; box-sizing: border-box;padding-right: 20px;}
+.yjzs .aside .aside-w .list .child-item{line-height: 58px;height: 58px;overflow: hidden; box-sizing: border-box;padding-right: 20px;}
 .yjzs .aside .aside-w .list .child-2-w + .child-2-w{border-top: 1px solid #e0e0e0;}
 .yjzs .aside .aside-w .list .child-item-2{padding-left: 40px;}
 .yjzs .aside .aside-w .list .child-item-3{padding-left: 60px;}
@@ -55,15 +55,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .yjzs .aside .aside-w .list li .child.child-2{}
 .yjzs .aside .aside-w .list li .child.child-3{}
 /*   */
-.yjzs .aside .aside-w .list li:before{display: none;
-    content: '';
-    position: absolute;
-    background: #f3f3f3;
-    width: 12px;
-    bottom: 1px;
-    right: -2px;
-    z-index: 10;
-    top: 1px;}
+.yjzs .aside .aside-w .list li:before{display: none;content: '';position: absolute;background: #f3f3f3;width: 12px;bottom: 1px;right: -2px;z-index: 10;top: 1px;}
 .yjzs .aside .aside-w .list li:hover{background-color: #f3f3f3;}
 
 .yjzs .aside .aside-w .list li:hover:before{display: block;}
@@ -81,7 +73,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .yjzs .mnc-w .item-wrapper .avatar img{height: auto !important;}
 .yjzs .mnc-w .item-wrapper .item{position: relative;float: left;width: 98%;margin: 1%;box-sizing: border-box;border: 1px solid #e2e2e2;border-radius: 4px;padding: 20px;height: 200px;display: flex;}
 .yjzs .mnc-w .item-wrapper .cnt{flex: 1;}
-.yjzs .mnc-w .item-wrapper .txt{font-size: 18px;line-height: 32px;flex: 1;}
+.yjzs .mnc-w .item-wrapper .txt{font-size: 18px;line-height: 32px;flex: 1;display: block;}
 .yjzs .mnc-w .item-wrapper .span-txt{font-size: 12px;line-height: 20px;display: inline-block;}
 
 @media screen and (max-width: 1199px){

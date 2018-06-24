@@ -47,6 +47,7 @@
                                 <a href="${c.url}" class="[#if channel.id==c.id] active[/#if]">${c.name}</a>
                             </div>
                             [@cms_channel_list parentId = c.id]
+                            [#if tag_list?size>0]
                             <div class="child child-2">
                                 [#list tag_list as c2]
                                 <div class="child-2-w">
@@ -54,6 +55,7 @@
                                     <a href="${c2.url}" class="[#if channel.id==c2.id] active[/#if]">${c2.name}</a>
                                 </div>
                                 [@cms_channel_list parentId = c2.id]
+                                [#if tag_list?size>0]
                                 <div class="child child-3">
                                     [#list tag_list as c3]
                                     <div class="child-2-w">
@@ -63,10 +65,12 @@
                                     </div>
                                     [/#list]
                                 </div>
+                                [/#if]
                                 [/@cms_channel_list]
                                 </div>
                                 [/#list]
                             </div>
+                            [/#if]
                             [/@cms_channel_list]
                         </li>
                         [/#list]
@@ -96,7 +100,7 @@
                         dateFormat='yyyy-MM-dd' channelOption='1' ]
                         [#list tag_pagination.list as a]
                         <div class="item">
-                            <div class="avatar"><img src="${a.titleImg!}"/></div>
+                            <div class="avatar"><img src="${a.titleImg!site.defImg}"/></div>
                             <div class="cnt">
                                 <a href="${a.url}" class="txt">${a.title}</a>
                                 <div class="span-txt">${a.desc}</div>
