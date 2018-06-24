@@ -344,6 +344,13 @@ img {
     background-image: url(../imgs/icon-ptxw-on.png);
 }
 
+.index .news-main .icon-zczx {
+    background-image: url(../imgs/icon-zczx.png);
+}
+
+.index .news-main .icon-zczx-on {
+    background-image: url(../imgs/icon-zczx-on.png);
+}
 .float_remind_box{
     border: 1px dashed #4a8cd9;
     background-color: #f8f8f8;
