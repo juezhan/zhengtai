@@ -22,6 +22,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .w-2 .m-1 .mc-2{height: 150px;}
 .index .w-2 .m-2{width: 400px;background-color: #eaeaea;}
 .index .w-2 .m-2 .mc-1{width: 320px;padding:14px;font-size:14px;line-height:18px;background-color: #f4f4f4;height: 331px;margin-top: -28px;}
+.index .w-2 .m-2 .mc-1 a:hover{text-decoration: underline;}
 .index .w-2 .m-2 .mc-1 .avatar{margin-bottom:14px;}
 .index .w-2 .m-2 .mc-1 .tit{display:block;line-height:30px;font-size:18px;font-weight: 600;}
 .index .w-2 .m-2 .mc-1 .cnt{display:block;color:#9e9e9e;margin-top: 9px;}
@@ -36,6 +37,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .w-3 .m-1 .txt .date{color: #0e98a5;font-size: 18px;margin-top: 17px;}
 .index .w-3 .m-1 .txt .cnt{display: block; color: #999999;margin-top: 15px;}
 .index .w-3 .m-1 .txt .more{display: block; color: #f5a100;margin-top: 12px;}
+.index .w-3 .m-1 .txt .more:hover{text-decoration: underline;}
 .index .w-3 .m-2{width:400px;}
 .index .w-3 .m-2 .mc-1{width:348px;position: relative;}
 .index .w-3 .m-2 .mc-1:before{background-color:#f4f4f4;width:1px;height:100%;left:0;top:0;content: '';display: block;position: absolute;}
@@ -44,8 +46,9 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .w-3 .m-2 .mc-1 .t-txt{display: inline-block;position: relative;font-size: 14px;font-weight: bold;}
 .index .w-3 .m-2 .mc-1 .t-txt:after{background-color:#f5a100;height:1px;width:100%;left:0;bottom:0;content: '';display: block;position: absolute;z-index: 9;}
 .index .w-3 .m-2 .mc-1 .cnt{line-height: 24px;padding: 23px 14px;}
-.index .w-3 .m-2 .mc-1 a{color:#999999;}
-
+.index .w-3 .m-2 .mc-1 a{color:#999999;display: block;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.index .w-3 .m-2 .mc-1 a:hover{text-decoration: underline;
+    color: #0866B3;display: block;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .index .main-list{width:100%;height:180px;background-color: #fff;}
 .index .main-list .main-list-con{width:120px;height:180px;float:left;}
 .index .main-list .main-list-con h3{font-size:18px;color:#333333;padding:38px 0 5px 0;}
@@ -72,6 +75,8 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .main-list .main-list4:hover p{background:url("../imgs/main-list4-on.png") no-repeat center 50px;}
 .index .main-list .main-list5:hover p{background:url("../imgs/main-list6-on.png") no-repeat center 50px;}
 .index .main-list .main-list6:hover p{background:url("../imgs/main-list6-on.png") no-repeat center 50px;}
+.index .w-3 .m-2 .mc-1 a:hover{text-decoration: underline;
+    color: #0866B3;}
 
 @media screen and (max-width: 1199px) {
     .index .w-2 .m-1 .mc-2{height: auto;}
