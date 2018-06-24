@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <meta name="viewport"
-	  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="keywords" content="${channel.keywords!}"/>
 <meta http-equiv="description" content="${channel.description!}"/>
@@ -23,68 +23,92 @@
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
 <div class="banner" style="background-image: url(/${res}/imgs/banner-yjzs.png);">
-	<div class="container">
-	</div>
+    <div class="container">
+    </div>
 </div>
 <div class="yjzs-wrapper">
-	<div class="container">
-		<div class="yjzs-wrapper-m">
-			<div class="aside">
-				<div class="aside-w">
-					<div class="tt">
-						<div class="tt-w">
-							<div class="mtt">
-								<i class="ico"></i>
-								<p>业绩展示</p>
-							</div>
-						</div>
-					</div>
-					<ul class="list">
-						<!--<li><a href="#" class="active">咨询服务</a></li>-->
-						<li><a href="#">咨询服务</a></li>
-						<li><a href="#">工程造价</a></li>
-						<li><a href="#">招标代理</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="mnc">
-				<div class="mnc-w">
-					<div class="tit">业绩展示</div>
-					<div class="item-wrapper clearfix">
-						<div class="item">
-							<div class="avatar"><img src="/${res}/imgs/tt.png"/></div>
-							<div class="txt">咨询服务<br/>
-								<span class="span-txt">
-								政府专项资金项目咨询<br>
-								（1）产业振兴和技术改造专项项目<br>
-								（2）省发改委统筹推进全省城镇化、长吉一体化发展专项<br>
-								（3）东北老工业基地调整改造专项<br>
-								（4）中小企业技术改造中央投资专项<br>
-								（5）国家服务业引导资金专项
-								</span>
-							</div>
-						</div>
-						<div class="item">
-							<div class="avatar"><img src="/${res}/imgs/tt.png"/></div>
-							<div class="txt">工程造价<br/>
-								<span class="span-txt">
-								建设项目概、预算的编制与审核<br>
-								（1）2017年长春市朝阳区旧城改造项目概、预算的编制与审核<br>
-								（2）长春兴隆综合保税区8#厂房建设项目概、预算的编制与审核<br>
-								（3）2017年长春市南关区旧城改造项目环卫设施改造概、预算的编制与审核<br>
-								（4）吉林省榆树市松榆灌区特色农业供水工程引松入榆项目概、预算的编制与审核<br>
-								</span>
-							</div>
-						</div>
-						<div class="item">
-							<div class="avatar"><img src="/${res}/imgs/tt.png"/></div>
-							<div class="txt">招标代理<br/>此处放业务详情</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="yjzs-wrapper-m">
+            <div class="aside">
+                <div class="aside-w">
+                    <div class="tt">
+                        <div class="tt-w">
+                            <div class="mtt">
+                                <i class="ico"></i>
+                                <p>业绩展示</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list" id="myList">
+                        [@cms_channel_list parentId = '288']
+                        [#list tag_list as c]
+                        <li>
+                            <div class="item">
+                                <a href="${c.url}" class="[#if channel.id==c.id] active[/#if]">${c.name}</a>
+                            </div>
+                            [@cms_channel_list parentId = c.id]
+                            <div class="child child-2">
+                                [#list tag_list as c2]
+                                <div class="child-2-w">
+                                <div class="child-item child-item-2">
+                                    <a href="${c2.url}" class="[#if channel.id==c2.id] active[/#if]">${c2.name}</a>
+                                </div>
+                                [@cms_channel_list parentId = c2.id]
+                                <div class="child child-3">
+                                    [#list tag_list as c3]
+                                    <div class="child-2-w">
+                                    <div class="child-item child-item-3">
+                                        <a href="${c3.url}" class="[#if channel.id==c3.id] active[/#if]">${c3.name}</a>
+                                    </div>
+                                    </div>
+                                    [/#list]
+                                </div>
+                                [/@cms_channel_list]
+                                </div>
+                                [/#list]
+                            </div>
+                            [/@cms_channel_list]
+                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
+                    </ul>
+                    <script>
+                        $('#myList .child-3').each(function () {
+                          var txt = $(this).text().replace(/\s/g, "")
+                          if(txt.length == 0){
+                            $(this).css({visibility: 'hidden'})
+                          }
+                        });
+                        $('#myList .child-2').each(function () {
+                          var txt = $(this).text().replace(/\s/g, "")
+                          if(txt.length == 0){
+                            $(this).css({visibility: 'hidden'})
+                          }
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="mnc">
+                <div class="mnc-w">
+                    <div class="tit">业绩展示</div>
+                    <div class="item-wrapper clearfix">
+                        [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='1'
+                        dateFormat='yyyy-MM-dd' channelOption='1' ]
+                        [#list tag_pagination.list as a]
+                        <div class="item">
+                            <div class="avatar"><img src="${a.titleImg!}"/></div>
+                            <div class="cnt">
+                                <a href="${a.url}" class="txt">${a.title}</a>
+                                <div class="span-txt">${a.desc}</div>
+                            </div>
+                        </div>
+                        [/#list]
+                        [/@cms_content_page]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
