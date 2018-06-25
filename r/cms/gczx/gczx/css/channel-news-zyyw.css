@@ -51,7 +51,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .mnc-w .item-wrapper{padding: 1%;}
 .zyyw .mnc-w .item-wrapper .item{position: relative;float: left;width: 48%;margin: 1%;box-sizing: border-box;border: 1px solid #e2e2e2;border-radius: 4px;padding: 20px;height: 200px;}
 .zyyw .mnc-w .item-wrapper .ico{width: 60px;height: 60px;display: block;position: absolute;top: 0;right: 0;border-left: 1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2;background: 50% 50% no-repeat;}
-.zyyw .mnc-w .item-wrapper .txt{font-size: 18px;line-height: 32px;margin-bottom: 22px;margin-right: 12%;}
+.zyyw .mnc-w .item-wrapper .txt{font-size: 18px;line-height: 32px;margin-bottom: 22px;margin-right: 12%;width: 323px;display: inline-block;}
 .zyyw .mnc-w .item-wrapper .span-txt{font-size: 12px;line-height: 24px;}
 
 @media screen and (max-width: 1199px){
