@@ -12,14 +12,14 @@
 .xwzx .cnt-wrapper .cnt-cell .date p {font-size: 14px;color: #999999;padding: 0 14px;line-height: 1em;margin-top: 7px;}
 .xwzx .cnt-wrapper .cnt-cell .date p.day {font-size: 36px;color: #e62b1e;margin-top: 20px;}
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt {flex: 1;font-size: 14px;color: #746969;line-height: 18px;}
-.xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {font-size: 18px;color: #000000;margin-top: 9px;font-weight: 600;}
+.xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {font-size: 18px;color: #666666;margin-top: 9px;}
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-2,
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-3 {margin-top: 10px;}
 /*.xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-3{height: 36px;overflow: hidden;}*/
 .xwzx .cnt-wrapper .cnt-cell-first{padding-bottom: 20px;}
 .xwzx .cnt-wrapper .cnt-cell-first .mn-cnt{flex: 1;}
 .xwzx .cnt-wrapper .cnt-cell-first .date{color: #6d8ac4;font-size: 26px;line-height: 30px;}
-.xwzx .cnt-wrapper .cnt-cell-first .txt-1{font-size: 18px;line-height: 20px;color: #000000;margin-top: 27px;font-weight: 600;}
+.xwzx .cnt-wrapper .cnt-cell-first .txt-1{font-size: 18px;line-height: 20px;color: #666666;margin-top: 27px;}
 .xwzx .cnt-wrapper .cnt-cell-first .txt-2{margin: 11px 0;font-size: 14px;color: #777777;line-height: 24px;}
 .xwzx .cnt-wrapper .cnt-cell-first .avatar{display: flex;width: 330px;margin-left: 20px;align-items: center;justify-content: center;}
 .xwzx .cnt-wrapper .ad-wrapper{padding: 30px 0;font-size: 0;float: right;width: 300px;}

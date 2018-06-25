@@ -12,7 +12,7 @@
 .yjzs .cnt-wrapper .cnt-cell .date p {font-size: 14px;color: #999999;padding: 0 14px;line-height: 1em;margin-top: 7px;}
 .yjzs .cnt-wrapper .cnt-cell .date p.day {font-size: 36px;color: #e62b1e;margin-top: 20px;}
 .yjzs .cnt-wrapper .cnt-cell .mn-cnt {flex: 1;font-size: 14px;color: #746969;line-height: 18px;}
-.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {font-size: 18px;color: #000000;margin-top: 9px;font-weight: 600;}
+.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {font-size: 18px;color: #666666;margin-top: 9px;}
 .yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-2,
 .yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3 {margin-top: 10px;}
 /*.yjzs .cnt-wrapper .cnt-cell .mn-cnt .txt-3{height: 36px;overflow: hidden;}*/
