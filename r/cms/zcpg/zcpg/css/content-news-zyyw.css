@@ -17,7 +17,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon-house{width: 18px;height: 18px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;}
 .icon{display:inline-block}
 
-.zyyw .banner{background:50% 0 no-repeat;background-size: auto 100%;}
+.zyyw .banner{background:50% 0 no-repeat;background-size: contain;}
 .zyyw .banner .container {}
 .zyyw .banner .container:before{display: block;content: '';padding-top: 37.5%;}
 .zyyw .bus-heal{width:1058px;overflow: hidden;padding-bottom:50px;color: #645b58;margin: 40px auto 0;}
