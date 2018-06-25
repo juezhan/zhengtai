@@ -26,7 +26,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .banner .item-cnt{width: 100%;position: relative;}
 .index .banner .item-w .item{opacity: 0;z-index: -1; background: 50% 50% no-repeat;background-size: contain;float: left;width: 100%;position: absolute;transition: opacity .2s linear;}
 .index .banner .item-w .item:after,
-.index .banner .item-w .item-cnt:after{display: block;content: '';padding-top: 41%;}
+.index .banner .item-w .item-cnt:after{display: block;content: '';padding-top: 32%;}
 .index .banner .item-w .item.on{opacity: 1;z-index: 9}
 
 .index .case{}

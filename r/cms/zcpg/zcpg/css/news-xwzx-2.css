@@ -17,7 +17,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon-house{width: 18px;height: 18px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;}
 .icon{display:inline-block}
 .news-xwzx .xwzx-wapper .container{margin:0 auto;}
-.news-xwzx .xwzx-wapper{background: url("../imgs/about-bg.png") 50% 0% repeat-x;padding: 87px 0 45px;}
+.news-xwzx .xwzx-wapper{background: url("../imgs/about-bg.png") 50% 0% repeat-x;padding: 87px 0 45px;    border-top: 2px solid #293896;}
 .news-xwzx .xwzx-mn{background-color: #ffffff;padding: 0 54px;}
 .news-xwzx .xwzx-mbd{display: flex;}
 .news-xwzx .list-wapper{flex: 1;}
