@@ -39,24 +39,38 @@
             </div>
             <div class="cnt-wrapper">
                 <div class="m-cnt">
-                    [@cms_content_page count=channel.pageSize orderBy='4' channelId=channel.id channelOption='0' dateFormat='yyyy-MM-dd' currPageClass="currPageClass" norPageClass="norPageClass"]
-                    [#list tag_pagination.list as a]
-                    <div class="cnt-cell-first">
-                        <div class="mn-cnt">
-                            <div class="date" style="visibility: hidden">Apr 11, 2018</div>
-                            <a href="${a.url}" class="txt-1">${a.title}</a>
-                            <div class="txt-2" style="visibility: hidden">
-                                公司通过协助申报企业培育自主知识产权、完善产品研发和生产、规范研发费用管理和检测检验技术文件。
-                            </div>
-                            <!-- <div class="more"></div> -->
+                    <div class="zyywimgbox">
+                        <img src="/${res}/imgs/zyyw.jpg" alt="">
+                        <div id="zyywimga">
+                            <a class="zyywimgone" href="${base}/kjzx/zyyw/337.jhtml"></a>
+                            <a class="zyywimgtwo" href="${base}/kjzx/zyyw/338.jhtml"></a>
+                            <a class="zyywimgthree" href="${base}/kjzx/zyyw/339.jhtml"></a>
+                            <a class="zyywimgfour" href="${base}/kjzx/zyyw/340.jhtml"></a>
+                            <a class="zyywimgfive" href="${base}/kjzx/lxwm/index.jhtml"></a>
                         </div>
-                        <div class="avatar">
-                            <img src="/${res}/imgs/logo.png"/>
+                        <div id="zyywimgitemdiv">
+                            <div class="zyywimgitem one">国家与省市认定的各类科技型企业的策划与申报</div>
+                            <div class="zyywimgitem two">科技成果评价</div>
+                            <div class="zyywimgitem three">科技政策支持项目的策划与申报</div>
+                            <div class="zyywimgitem four"> 协助企业创建省级企业技术中心和省级科技创新中心</div>
+                            <div class="zyywimgitem five">联系我们</div>
                         </div>
                     </div>
-                    [/#list]
-                    [#include "../include/page.html"/]
-                    [/@cms_content_page]
+                    <script>
+                        $(function() {
+                            $('#zyywimgitemdiv div').hide();
+                            $('#zyywimga a').each(function (i) {
+                                $(this).hover(function () {
+                                    $('#zyywimgitemdiv div').hide().eq(i).show();
+                                },function () {
+                                    $('#zyywimgitemdiv div').hide();
+                                });
+                            })
+
+
+                        })
+
+                    </script>
                 </div>
                 <div class="ad-wrapper">
                     <img src="/${res}/imgs/ad-1.png"/>

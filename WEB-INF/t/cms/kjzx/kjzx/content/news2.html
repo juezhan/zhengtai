@@ -71,7 +71,7 @@ $(function(){
     <div class="container clearfix">
         <div class="toolbar">
             <div class="crumbs">
-                <i class="icon-home"></i>新闻中心
+                <i class="icon-home"></i>[#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
             </div>
             <!--<div class="menu-tag">
                 <a class="tag-item active">新闻中心</a>
@@ -87,8 +87,10 @@ $(function(){
             </div>
             <div class="ad-wrapper">
                 <div><img src="/${res}/imgs/ad-1.png"/></div>
-                <div><a href="${base}/kjzx/zyyw/340.jhtml"><img src="/${res}/imgs/ad-2.png"/></a></div>
-                <div><a href="${base}/kjzx/zyyw/337.jhtml"> <img src="/${res}/imgs/ad-3.png"/></a></div>
+                <!--<div><a href="${base}/kjzx/zyyw/340.jhtml"><img src="/${res}/imgs/ad-2.png"/></a></div>
+                <div><a href="${base}/kjzx/zyyw/337.jhtml"> <img src="/${res}/imgs/ad-3.png"/></a></div>-->
+                <a href="${base}/kjzx/yjzs/335.jhtml"><img src="/${res}/imgs/ad-2.png"/></a>
+                <a href="${base}/kjzx/yjzs/336.jhtml"><img src="/${res}/imgs/ad-3.png"/></a>
             </div>
         </div>
     </div>
