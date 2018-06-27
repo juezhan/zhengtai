@@ -13,7 +13,7 @@ ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon{display:inline-block}
 
-.index .banner{border-bottom: 1px solid #e5e5e5;background: no-repeat 50% 0;position: relative;}
+.index .banner{background: no-repeat 50% 0;position: relative;}
 .index .banner .container{height: 100%;position: relative;}
 .index .banner .arrow{width: 30px;height: 55px;position: absolute;background:0 0 no-repeat;top: 50%;margin-top: -28px;cursor: pointer;z-index: 99}
 .index .banner .arrow-r{background-image: url('../imgs/arrow-r.png');right: 50px;}
@@ -46,7 +46,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .banner.banner-750{display: none;}
 
 /*服务内容*/
-.fwnr{padding: 40px 0; background: #F6F6F6}
+.fwnr{padding: 40px 0; background: #F6F6F6;margin-top: -7px;}
 .fwnr .tabs{width: 100%; z-index: 9; text-align: center;}
 .fwnr .tabs a{color: #333; cursor: pointer; width:11%; padding-bottom: 3px; display: inline-block; font-size: 16px; text-align: center;}
 .fwnr .tabs a i{display: block;font-size: 50px;background: #8A8A8A;border-radius: 60px;color: #fff;width:90px;height: 90px;line-height: 90px;margin: 0 auto 10px;transition: all .3s;}

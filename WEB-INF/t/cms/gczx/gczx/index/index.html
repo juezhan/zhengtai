@@ -73,36 +73,7 @@
     itemGo();
   });
 </script>
-<div class="case">
-    <div class="container">
-        <div class="case-main">
-            <div class="tit">企业最新案例</div>
-            <div class="items">
-                [@cms_content_list count='8' orderBy='4' channelId='183' channelOption='1' dateFormat='yyyy.MM.dd']
-                [#list tag_list as a]
-                <div class="item">
-                    <img src="${a.titleImg!}" class="img"/>
-                    <div class="cnt">
-                        <div class="tt">${a.title}</div>
-                        <div class="bd">${a.stitle!}丨${a.date?string(dateFormat)}</div>
-                        <a href="${a.url}" class="link">立即查看</a>
-                    </div>
-                </div>
-                [/#list]
-                [/@cms_content_list]
-                <!--<div class="item">
-                    <img src="/${res}/imgs/图层.png" class="img"/>
-                    <div class="cnt">
-                        <div class="tt">集安人参现代农业产业园创建工作方案</div>
-                        <div class="bd">实施方案丨2018.3.30</div>
-                        <a href="#" class="link">立即查看</a>
-                    </div>
-                </div>-->
-            </div>
-            <a href="${base}/gczx/zxfw/index.jhtml" class="mover">查看更多案例</a>
-        </div>
-    </div>
-</div>
+
 <div class="grid clearfix fwnr">
     <div class="container">
         <div class="tabs">
@@ -335,6 +306,36 @@
     }
   });
 </script>
+<div class="case">
+    <div class="container">
+        <div class="case-main">
+            <div class="tit">企业最新案例</div>
+            <div class="items">
+                [@cms_content_list count='8' orderBy='4' channelId='183' channelOption='1' dateFormat='yyyy.MM.dd']
+                [#list tag_list as a]
+                <div class="item">
+                    <img src="${a.titleImg!}" class="img"/>
+                    <div class="cnt">
+                        <div class="tt">${a.title}</div>
+                        <div class="bd">${a.stitle!}丨${a.date?string(dateFormat)}</div>
+                        <a href="${a.url}" class="link">立即查看</a>
+                    </div>
+                </div>
+                [/#list]
+                [/@cms_content_list]
+                <!--<div class="item">
+                    <img src="/${res}/imgs/图层.png" class="img"/>
+                    <div class="cnt">
+                        <div class="tt">集安人参现代农业产业园创建工作方案</div>
+                        <div class="bd">实施方案丨2018.3.30</div>
+                        <a href="#" class="link">立即查看</a>
+                    </div>
+                </div>-->
+            </div>
+            <a href="${base}/gczx/zxfw/index.jhtml" class="mover">查看更多案例</a>
+        </div>
+    </div>
+</div>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
