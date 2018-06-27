@@ -17,6 +17,20 @@
     .lxwm .cnt-wrapper img{
         width: 100%;
     }
+    .g-wrap {
+        position: relative;
+        margin: 0 auto;
+        width: 100% !important;
+        height: 100%;
+        overflow: hidden;
+    }
+    #contact-1 .cont-info .c1 {
+        left: 0;
+        width: 336px;
+    }
+    #contact-1 .cont-info .c2 {
+        display: none;
+    }
 }
 
 #contact-1 .cont-info {position:relative;height:389px; background:#f1eff1 url(../imgs/p_1_1.jpg) no-repeat 0 96px;}

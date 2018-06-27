@@ -144,8 +144,109 @@
     .xwzx .cnt-wrapper .m-cnt{width: 100%;border-right:none;padding:30px 20px;}
     .xwzx .cnt-wrapper .ad-wrapper{width: 100%;display: flex;}
     .xwzx .cnt-wrapper .ad-wrapper div{flex: 1;margin: 0 5px;}
+
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox {
+        width: 300px;
+        height: 248px;
+        position: relative;
+        margin: auto;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox img {
+        width: 300px;
+        height: 248px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgone {
+        position: absolute;
+        top: 16px;
+        left: 42px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgtwo {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        bottom: 68px;
+        left: 15px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgthree {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        bottom: -3px;
+        left: 120px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgfour {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        bottom: 188px;
+        right: 50px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgfive {
+        position: absolute;
+        top: 136px;
+        right: 25px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
 }
 @media screen and (max-width: 749px){
     .xwzx .cnt-wrapper .m-cnt{width: 100%;border-right:none;padding:20px 12px;}
     .xwzx .cnt-wrapper .ad-wrapper{width: 100%;padding: 0 12px;box-sizing: border-box;}
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox {
+        width: 300px;
+        height: 248px;
+        position: relative;
+        margin: auto;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox img {
+        width: 300px;
+        height: 248px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgone {
+        position: absolute;
+        top: 16px;
+        left: 42px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgtwo {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        bottom: 68px;
+        left: 15px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgthree {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        bottom: -3px;
+        left: 120px;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgfour {
+        position: absolute;
+        top: 136px;
+        right: 25px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgfive {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        top: 18px;
+        right: 50px;
+    }
 }
