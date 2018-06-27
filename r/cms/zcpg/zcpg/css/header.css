@@ -1,6 +1,6 @@
 .header{border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb;}
 .header .container{height:72px}
-.header .logo{float:left;margin:18px 0 0 0;height: 34px;}
+.header .logo{float:left;margin:18px 0 0 100px;height: 34px;}
 .header .sign{float:right;color: #999999;margin-top: 48px;display: flex;height: 22px;line-height: 22px;}
 .header .sign .icon-earth{float:left;}
 .header .sign .bd{flex: 1;}

@@ -28,56 +28,51 @@
 .xwzx .banner .container img{width: 100%;}
 
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox {
-    margin: 117px 77px;
+    margin: 57px 40px;
     position: relative;
 }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox img{
-    width: 605px;
-    height: 501px;
+    width: 744px;
+    height: 616px;
 }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgone{
     position: absolute;
-    top:44px;
-    left:95px;
-    width: 70px;
-    height: 70px;
-    opacity: 0.9;
+    top: 56px;
+    left: 121px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgtwo{
     position: absolute;
-    width: 70px;
-    height: 70px;
-    opacity: 0.9;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    bottom: 146px;
-    left: 37px;
+    bottom: 182px;
+    left: 50px;
 }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgthree{
     position: absolute;
-    width: 70px;
-    height: 70px;
-    opacity: 0.9;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    bottom: 3px;
-    left: 250px;
+    bottom: 6px;
+    left: 312px;
 }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgfour{
      position: absolute;
-    width: 70px;
-    height: 70px;
-    opacity: 0.9;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    bottom: 146px;
-    right: 94px;
+    bottom: 181px;
+    right: 46px;
  }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgfive{
     position: absolute;
-    top: 45px;
-    right: 146px;
-    width: 70px;
-    height: 70px;
-    opacity: 0.9;
+    top: 56px;
+    right: 110px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgitem.one{
@@ -85,7 +80,7 @@
     background-color: rgba(47,159,209,0.6);
     height: 64px;
     width: 272px;
-    top: -30px;
+    top: -19px;
     left: -64px;
     color: #fff;
     padding:8px;
@@ -98,7 +93,7 @@
     height: 64px;
     width: 272px;
     left: -62px;
-    bottom: 72px;
+    bottom: 104px;
     color: #fff;
     padding:8px;
     font-size: 14px;
@@ -122,7 +117,7 @@
     height: 64px;
     width: 272px;
     right: -64px;
-    bottom: 73px;
+    bottom: 105px;
     color: #fff;
     padding:8px;
     font-size: 14px;
@@ -133,7 +128,7 @@
     background-color: rgba(228,163,59,0.6);
     height: 64px;
     width: 272px;
-    top: -30px;
+    top: -20px;
     right: -56px;
     color: #fff;
     padding:8px;
