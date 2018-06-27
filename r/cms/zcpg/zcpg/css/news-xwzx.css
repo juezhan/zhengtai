@@ -16,7 +16,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon-magnifier{width: 20px;height: 20px;background: url("../imgs/icon-magnifier.png") 50% 50% no-repeat;}
 .icon-house{width: 18px;height: 18px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;}
 .icon{display:inline-block}
-.news-xwzx .xwzx-wapper{background: url("../imgs/about-bg.png") 50% 100% repeat-x;padding: 87px 0 45px;}
+.news-xwzx .xwzx-wapper{background: url("../imgs/about-bg.png") 50% 100% repeat-x;padding: 87px 0 45px;background-size: contain;border-top: 2px solid #293896;}
 .news-xwzx .xwzx-mn{background-color: #ffffff;padding: 0 54px;}
 .news-xwzx .tit{display: flex;padding-top: 47px;}
 .news-xwzx .tit .txt{flex: 1;font-size: 24px;color: #dedede}

@@ -64,7 +64,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 
 
-#content { padding-top: 85px; background: #fff url(../imgs/content_bg.jpg) no-repeat center 0; }
+#content { padding-top: 85px; background:url(../imgs/content_bg.jpg) 50% 100% repeat-x;border-top: 2px solid #293896; }
 #main { margin: 0 auto; padding-bottom: 37px; max-width: 1135px; min-width: 1056px; background: #fff url(../imgs/main_inner_bg.jpg) repeat-x 0 0; }
 #main .subColumns { height: 92px; background: url(../imgs/subColumns_bg.png) no-repeat 0 31px; }
 #main .subColumns .wrapper { float: right; line-height: 69px; }

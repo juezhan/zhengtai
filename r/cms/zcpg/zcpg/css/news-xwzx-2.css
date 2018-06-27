@@ -36,7 +36,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-xwzx .add-more{height: 52px;background:url("../imgs/more-bg-1.png") 50% 50% no-repeat #fc2f07;margin: 13px 0}
 
 .news-xwzx .menu-wapper{width: 320px;margin-left: 117px;margin-top: -37px;display: flex;flex-direction: column;}
-.news-xwzx .menu-wapper .tt{background-color: #e60b00;color: #ffffff;position: relative;height: 170px;}
+.news-xwzx .menu-wapper .tt{background-color: #293896;color: #ffffff;position: relative;height: 170px;}
 .news-xwzx .menu-wapper .txt{position: absolute;font-size: 30px;line-height: 30px;left: 31px;bottom: 26px;}
 .news-xwzx .menu-wapper .menu-items{border-left: 1px solid #e6e6e6;border-right: 1px solid #e6e6e6;flex: 1;padding: 12px;}
 .news-xwzx .menu-wapper .menu-items img{width: 100%;height: auto;}
