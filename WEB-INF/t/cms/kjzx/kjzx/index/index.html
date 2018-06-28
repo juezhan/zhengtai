@@ -20,13 +20,60 @@
 <body class="index">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="banner">
+<!--<div class="banner">
     <div class="container">
         <div class="ad-wrapper">
             <div class="item" style="background-image: url('/${res}/imgs/banner-1.png')"></div>
         </div>
     </div>
+</div>-->
+<div class="banner" id="banner">
+    <div class="item-w clearfix">
+        <div class="item-cnt clearfix" id="itemCnt">
+            <div class="item on" style="background-image: url(/${res}/imgs/keji1.jpg);"></div>
+            <div class="item" style="background-image: url(/${res}/imgs/keji2.jpg);"></div>
+            <div class="item" style="background-image: url(/${res}/imgs/keji3.jpg);"></div>
+            <div class="item" style="background-image: url(/${res}/imgs/keji4.jpg);"></div>
+        </div>
+        <div class="arrow arrow-l" id="arrowL"></div>
+        <div class="arrow arrow-r" id="arrowR"></div>
+        <div class="progress-bar" id="progressBar">
+            <div class="progress-bar-dian on"></div>
+            <div class="progress-bar-dian"></div>
+            <div class="progress-bar-dian"></div>
+             <div class="progress-bar-dian"></div>
+             <!--<div class="progress-bar-dian"></div>-->
+        </div>
+    </div>
 </div>
+<script>
+    var t = 5000, mt = null, idx = 0
+
+    function adRun() {
+        mt = setInterval(function () {
+            idx += 1;
+            itemGo()
+        }, t)
+    }
+
+    function itemGo() {
+        if (idx >= 4 || idx < 0) {
+            idx = 0
+        }
+        $('#itemCnt .item').eq(idx).addClass('on').siblings().removeClass('on')
+        $('#progressBar .progress-bar-dian').eq(idx).addClass('on').siblings().removeClass('on')
+    }
+
+    adRun();
+    $('#arrowL').click(function () {
+        idx -= 1;
+        itemGo();
+    });
+    $('#arrowR').click(function () {
+        idx += 1;
+        itemGo();
+    });
+</script>
 <div class="news">
     <div class="container">
         <div class="w-1">
