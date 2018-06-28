@@ -63,11 +63,11 @@
                 </div>
             </div>
             <script>
-              $('#tagTt .item').click(function () {
+              $('#tagTt .item').hover(function () {
                 var target = $(this).data('target')
                 $(this).addClass('active').siblings().removeClass('active')
                 $(target).addClass('active').siblings().removeClass('active')
-              });
+              },null);
             </script>
         </div>
     </div>

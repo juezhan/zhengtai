@@ -33,7 +33,7 @@
                         [@cms_channel_list]
                         [#list tag_list as c]
                         [#if c.id == 216 || c.id == 218 ]
-                        <div class="tab-tag-item[#if c_index == 0] active[/#if]" data-target="#div_${c.id}">${c.name}</div>
+                        <a href="${c.url}" class="tab-tag-item[#if c.id == 216] active[/#if]" data-target="#div_${c.id}">${c.name}</a>
                         [/#if]
                         [/#list]
                         [/@cms_channel_list]
