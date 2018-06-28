@@ -38,11 +38,6 @@
             <div class="crumbs">
                 <i class="icon-home"></i>新闻中心
             </div>
-            <!--<div class="menu-tag">
-                <a class="tag-item active">新闻中心</a>
-                <a class="tag-item">业绩展示</a>
-                <a class="tag-item">媒体报道</a>
-            </div>-->
         </div>
         <div class="cnt-wrapper">
             <div class="m-cnt">
@@ -52,6 +47,24 @@
                     <div class="bd">
                         <div class="mn-cnt">
                             <a href="${a.url}"  class="txt-1">${a.title}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cnt-cell">
+                    <div class="bd">
+                        <div class="date">
+                            ${a.releaseDate}
+                            <p class="day">26</p>
+                            <p>Mar</p>
+                            <p>2018</p>
+                        </div>
+                        <div class="mn-cnt">
+                            <a href="${a.url}"  class="txt-1">${a.title}</a>
+                            <div class="txt-2">
+                                <span>发布者: ${a.author!'本站编辑'}</span>
+                                <span>浏览次数: ${a.tagStr!''}</span>
+                            </div>
+                            <div class="txt-3">${a.desc!}</div>
                         </div>
                     </div>
                 </div>
