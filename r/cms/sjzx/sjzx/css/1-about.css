@@ -19,7 +19,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about .about-w .bread .icon-house{height: 64px;width: 64px;background-color: #f4f4f4;}
 .about .about-w .bread .c{flex: 1;font-size: 13px;padding-left: 22px;font-weight: bold;}
 
-.about .about-w .m{display: flex;}
+.about .about-w .m{display: flex;padding: 50px 0;}
 .about .about-w .cm-1{width: 343px;margin-right: 36px;}
 .about .about-w .cm-1 .t-1{font-size: 24px;line-height:24px;margin-top: 32px;color: #999999}
 .about .about-w .cm-1 .t-2{font-size: 18px;line-height: 30px;color: #000000;margin-top: 9px;font-weight: bold;}

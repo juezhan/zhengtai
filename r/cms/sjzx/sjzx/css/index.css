@@ -36,7 +36,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .w-3 .m-1 .txt .tit{display: block; font-size: 16px;font-weight: 600;}
 .index .w-3 .m-1 .txt .date{color: #0e98a5;font-size: 18px;margin-top: 17px;}
 .index .w-3 .m-1 .txt .cnt{display: block; color: #999999;margin-top: 15px;}
-.index .w-3 .m-1 .txt .more{display: block; color: #f5a100;margin-top: 12px;}
+.index .w-3 .m-1 .txt .more{display: block; color: #f5a100;margin-top: 12px;text-align: right;}
 .index .w-3 .m-1 .txt .more:hover{text-decoration: underline;}
 .index .w-3 .m-2{width:400px;}
 .index .w-3 .m-2 .mc-1{width:348px;position: relative;}
