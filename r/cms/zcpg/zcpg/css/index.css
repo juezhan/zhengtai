@@ -16,7 +16,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .icon-earth{width: 22px;height: 22px;background: url("../imgs/icon-earth.png") 0 0 no-repeat;}
 .icon-magnifier{width: 20px;height: 20px;background: url("../imgs/icon-magnifier.png") 50% 50% no-repeat;}
 .icon-house{width: 18px;height: 18px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;}
-.index .banner {}
+.index .banner {border-top: 2px solid #293896;}
 .index .banner img {width: 100%;}
 .index .news {margin: 30px 0 30px;}
 .index .news .news-wrapper{display: flex;}
