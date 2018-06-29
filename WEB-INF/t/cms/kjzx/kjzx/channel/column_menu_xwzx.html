@@ -22,6 +22,7 @@
     Cms.channelViewCount("${base}", "${channel.id}");
     Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
   });
+  var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov']
 </script>
 <head>
 <body>
@@ -41,33 +42,49 @@
         </div>
         <div class="cnt-wrapper">
             <div class="m-cnt">
-                [@cms_content_page count=channel.pageSize orderBy='4' channelId=channel.id channelOption='0' dateFormat='yyyy-MM-dd' currPageClass="currPageClass" norPageClass="norPageClass"]
+                [@cms_content_page count=channel.pageSize orderBy='4' channelId=channel.id channelOption='0'
+                dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
                 [#list tag_pagination.list as a]
-                <div class="cnt-cell">
+                [#if a_index == 0]
+                <div class="cnt-cell-first">
                     <div class="bd">
+                        <div class="date">
+                            <script>
+                              var date = ${a.releaseDate?string(dateFormat)};
+                              document.write('' + date[0] + '　' + month[date[1]-1] + '　' + date[2] + '');
+                            </script>
+                        </div>
                         <div class="mn-cnt">
-                            <a href="${a.url}"  class="txt-1">${a.title}</a>
+                            <a href="${a.url}" class="txt-1">${a.title}</a>
+                            <div class="txt-2">
+                                <span>发布者: ${a.author!'本站编辑'}</span>
+                                <span>来源: ${a.origin!'本站原创'}</span>
+                            </div>
+                            <div class="txt-3">${a.desc!}</div>
                         </div>
                     </div>
+                    <div class="avatar"><img src="${a.titleImg!}"></div>
                 </div>
+                [#else]
                 <div class="cnt-cell">
                     <div class="bd">
                         <div class="date">
-                            ${a.releaseDate}
-                            <p class="day">26</p>
-                            <p>Mar</p>
-                            <p>2018</p>
+                            <script>
+                              var date = ${a.releaseDate?string(dateFormat)};
+                              document.write('<p class="day">' + date[0] + '</p><p>' + month[date[1]-1] + '</p><p>' + date[2] + '</p>');
+                            </script>
                         </div>
                         <div class="mn-cnt">
-                            <a href="${a.url}"  class="txt-1">${a.title}</a>
+                            <a href="${a.url}" class="txt-1">${a.title}</a>
                             <div class="txt-2">
                                 <span>发布者: ${a.author!'本站编辑'}</span>
-                                <span>浏览次数: ${a.tagStr!''}</span>
+                                <span>来源: ${a.origin!'本站原创'}</span>
                             </div>
                             <div class="txt-3">${a.desc!}</div>
                         </div>
                     </div>
                 </div>
+                [/#if]
                 [/#list]
                 [#include "../include/page.html"/]
                 [/@cms_content_page]

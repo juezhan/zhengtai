@@ -23,7 +23,7 @@
       <span class="tit-2">HOME</span>
     </a>
     [#list tag_list as c]
-      [#if c_index<4]      
+      [#if c_index<4]
       [#if channel.parentId??]
       <a href="${c.url}" class="item[#if channel.parentId==c.id] on[/#if] [#if c_index<3]key-item[/#if] ${c.path}" data-target="${c.path}">
       [#else]

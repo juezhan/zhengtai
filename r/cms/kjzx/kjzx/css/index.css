@@ -13,6 +13,22 @@ a:hover{text-decoration:none;color:#505960;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon{display:inline-block}
 
+.index .banner{background: no-repeat 50% 0;position: relative;}
+.index .banner .container{height: 100%;position: relative;}
+.index .banner .arrow{width: 30px;height: 55px;position: absolute;background:0 0 no-repeat;top: 50%;margin-top: -28px;cursor: pointer;z-index: 99}
+.index .banner .arrow-r{background-image: url('../imgs/arrow-r.png');right: 50px;}
+.index .banner .arrow-l{background-image: url('../imgs/arrow-l.png');left: 50px;}
+.index .banner .progress-bar{position: absolute;font-size: 0;bottom: 30px;text-align: center;width: 100%;z-index: 99}
+.index .banner .progress-bar-dian{width: 10px;height: 10px;border-radius: 50%;margin: 0 5px;display: inline-block;background-color: #d9dada;}
+.index .banner .progress-bar-dian.on{background-color: #0099ff;}
+.index .banner .banner-w{position: absolute;top: 0;width: 100%;left: 0;height: 100%;}
+.index .banner .item-w{width: 100%;overflow: hidden}
+.index .banner .item-cnt{width: 100%;position: relative;}
+.index .banner .item-w .item{opacity: 0;z-index: -1; background: 50% 50% no-repeat;background-size: contain;float: left;width: 100%;position: absolute;transition: opacity .2s linear;}
+.index .banner .item-w .item:after,
+.index .banner .item-w .item-cnt:after{display: block;content: '';padding-top: 31%;}
+.index .banner .item-w .item.on{opacity: 1;z-index: 9}
+
 .index .banner-tt{}
 .index .banner-tt .container{height: 40px;text-align: right;background-color: #48454b;line-height: 40px;font-size: 0;}
 .index .banner-tt .links{margin-right: 156px;}
@@ -23,19 +39,21 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .news{margin-top: 30px}
 .index .news .container{overflow: hidden;}
 .index .news .w-1{width: 688px;float: left;}
-.index .news .w-1 .h1{font-size: 18px;line-height: 18px;display: block;font-weight: 600;}
-.index .news .w-1 .p{font-size: 14px;line-height: 24px;display: block;margin-top: 24px}
+.index .news .w-1 a:hover{text-decoration: underline;}
+.index .news .w-1 .h1{font-size: 18px;line-height: 18px;display: block;font-weight: 600;color:#505960;}
+.index .news .w-1 .p{font-size: 14px;line-height: 24px;display: block;margin-top: 24px;color:#858585;}
 .index .news .w-2{width: 470px;float: right;}
 .index .news .w-2 .tag{}
 .index .news .w-2 .tag-tt{height: 33px;position: relative}
 .index .news .w-2 .tag-tt:after{content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 2px;background-color: #dedfe2;}
-.index .news .w-2 .tag-tt .item{font-size: 14px;float: left;line-height: 16px;position: relative;padding-bottom: 17px;margin-right: 20px;cursor: pointer;}
+.index .news .w-2 .tag-tt .item{font-size: 14px;float: left;line-height: 16px;position: relative;padding-bottom: 17px;margin-right: 20px;cursor: pointer;color: #747474;font-weight: bold;}
 .index .news .w-2 .tag-tt .item:after{content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 2px;background-color: #fc4334;visibility: hidden;}
 .index .news .w-2 .tag-tt .item.active:after{visibility: visible;z-index: 9;}
 .index .news .w-2 .tab-bd{}
 .index .news .w-2 .tab-bd .item{display: none;padding: 9px 0}
 .index .news .w-2 .tab-bd .item.active{display: block}
-.index .news .w-2 a{font-size: 14px;line-height: 24px;height: 24px;}
+.index .news .w-2 a{font-size: 14px;line-height: 24px;height: 24px;color: #858585;}
+.index .news .w-2 a:hover{color:#556cfd;text-decoration: underline}
 .index .news .w-3{width: 170px;float: right;font-size: 12px;line-height: 14px;}
 .index .news .w-3 .txt-1{font-weight: 600;font-size: 13px;}
 .index .news .w-3 .txt-2{font-size: 36px;line-height: 36px;color: #008000;margin-top: 15px;}
@@ -52,7 +70,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .crumbs .arrow{font-family: '宋体';margin: 0 3px;}
 
 /* 滑块 start */
-#subjects {height:165px; background-color:#e0e2e4;}
+#subjects {height:165px; background-color:#e0e2e4;margin-top: 30px;}
 #subjects .g-wrap{position: relative;height: 100%;overflow: hidden;}
 #subjects .g-wrap a {position:absolute; top:0; left:100%; width:100%; height:100%; overflow:hidden; -webkit-opacity:1; opacity:1; display:block\9; -webkit-transition:left 300ms, -webkit-opacity 700ms; transition:left 300ms, opacity 700ms;}
 #subjects .g-wrap .item-1 {z-index:1; background-color:#E5E4EA;}

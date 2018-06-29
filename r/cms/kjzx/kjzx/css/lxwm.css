@@ -68,3 +68,4 @@
 #contact-1 .cont-areas .addrs .item .subitem p {line-height:29px;}
 #contact-1 .cont-areas .addrs .item .subitem a {display:inline-block; padding-left:35px; line-height:29px; background:url(../imgs/p_1_2_icon.png) no-repeat 0 0;color: #ffeec7}
 .g-wrap {position:relative; margin:0 auto; width:1130px; height:100%; overflow:hidden;}
+.g-wrap .logoimg{width: 200px;top: 112px;position: absolute;left: 167px;}
