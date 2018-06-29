@@ -1,4 +1,4 @@
-.footer{height:auto;background-color:#f5eedc;color:#999999}
+.footer{height:auto;background-color:#f5eedc;color:#999999;background: url("../imgs/bottom.png") 50% 100% repeat-x;background-size: contain;}
 .footer a{color:#999999}
 .footer .footer-wrapper{display: flex;}
 .footer .footer-wrapper .mn-1{width: 33%;border-top: 2px solid #413e8d;height: 200px;color: #000000;}
