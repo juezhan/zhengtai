@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/index.css"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+<script type="text/javascript">
+  $(function () {
+    Cms.channelViewCount("${base}", "${channel.id}");
+    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+  });
+</script>
+<style>
+    .tags-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .tags-wrapper .tags {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eeeeee;
+        padding: 12px;
+    }
+
+    .tags-wrapper .title {
+    }
+
+    .tags-wrapper .cells {
+        flex: 1;
+    }
+
+    .tags-wrapper .cell {
+        float: left;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .tags-wrapper .cell.active {
+        color: #ffffff;
+        background-color: #660000;
+    }
+
+    .tags-wrapper .cell:hover {
+        cursor: pointer;
+        color: #660000;
+    }
+
+    .tags-wrapper .cell:hover.active {
+        color: #ffffff;
+    }
+
+    .data-cells {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .data-cells .txt {
+        font-size: 16px;
+    }
+
+    .data-cells .cell {
+        position: relative;
+        float: left;
+        width: 280px;
+        height: 120px;
+        border: 1px solid #ddd;
+        margin: 9px;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 5px;
+    }
+
+    .data-cells .cell .logos {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .data-cells .cell .logos .glyphicon {
+        font-size: 22px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        padding: 12px;
+        background-color: #ffffff;
+        margin-left: -20px;
+    }
+
+    .data-cells .cell .logo-cell {
+    }
+
+</style>
+<head>
+<body>
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="container" style="padding-top: 80px">
+    <div class="tags-wrapper" id="tagsWrapper">
+        [@cms_channel_list parentId='324']
+        [#list tag_list as c]
+        <div class="tags clear-flx">
+            <div class="title">${c.name}：</div>
+            <div class="cells clear-flx">
+                <div class="cell active" data-key="">不限</div>
+                [@cms_channel_list parentId=c.id]
+                [#list tag_list as c2]
+                <div class="cell" data-key=".${c2.keywords!}">${c2.name}</div>
+                [/#list]
+                [/@cms_channel_list]
+            </div>
+        </div>
+        [/#list]
+        [/@cms_channel_list]
+    </div>
+    <div id="dataList" class="data-cells clear-flx">
+        [@cms_content_page channelId=channel.id count='200' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd'
+        channelOption='1' ]
+        [#list tag_pagination.list as a]
+        <div class="cell ${a.originUrl}">
+            <a href="${a.url}" target="_blank">${a.title}</a>
+        </div>
+        [/#list]
+        [/@cms_content_page]
+    </div>
+</div>
+<script>
+  $('#tagsWrapper .cell').click(function () {
+    var cls = [];
+    $(this).addClass('active').siblings().removeClass('active');
+    $('#tagsWrapper .cell.active').each(function () {
+      var key = $(this).data('key');
+      cls.push(key)
+    });
+    $('#dataList .cell').show();
+    var clsName = cls.join('');
+    (clsName.length > 0) && $('#dataList .cell:not(' + cls.join('') + ')').hide();
+  });
+
+</script>
+</body>
+</html>
