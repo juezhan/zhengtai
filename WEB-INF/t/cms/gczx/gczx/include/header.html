@@ -9,10 +9,10 @@
                 [#if !channel??]
                 <li class="active"><a href="/"><span>首页</span><em>HOME</em></a></li>
                 [#list tag_list as c]
-                [#if c_index<4]
+                [#if c_index<5]
                 <li class="dropdown">
                     [@cms_channel_list parentId = c.id]
-                    <a class="[#if tag_list?size>0]dropdown-toggle[/#if]" href="${c.url}"><span>${c.name}</span><em>${c.txt}</em></a>
+                    <a class="[#if tag_list?size>0]dropdown-toggle[/#if]" href="${c.url}"><span>${c.name}</span><em>${c.txt!}</em></a>
                     [#if tag_list?size>0]
                     <div class="dropdown-wrap">
                         <div class="container">
@@ -31,14 +31,14 @@
                 [#else]
                 <li><a href="/"><span>首页</span><em>HOME</em></a></li>
                 [#list tag_list as c]
-                [#if c_index<4]
+                [#if c_index<5]
                 [#if channel.parentId??]
                 <li class="dropdown [#if channel.parentId==c.id] active[/#if]">
                     [#else]
                 <li class="dropdown [#if channel.id==c.id] active[/#if]">
                 [/#if]
                     [@cms_channel_list parentId = c.id]
-                    <a class="[#if tag_list?size>0]dropdown-toggle[/#if]" href="${c.url}"><span>${c.name}</span><em>${c.txt}</em></a>
+                    <a class="[#if tag_list?size>0]dropdown-toggle[/#if]" href="${c.url}"><span>${c.name}</span><em>${c.txt!}</em></a>
                     [#if tag_list?size>0]
                     <div class="dropdown-wrap">
                         <div class="container">
