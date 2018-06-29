@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name}</title>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/channel-news-yjzs.css"/>
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+<!--主营业务-->
+<head>
+<body class="yjzs">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="banner" style="background-image: url(/${res}/imgs/banner-yjzs.png);">
+    <div class="container">
+    </div>
+</div>
+<div class="yjzs-wrapper">
+    <div class="container">
+        <div class="yjzs-wrapper-m">
+            <div class="aside">
+                <div class="aside-w">
+                    <div class="tt">
+                        <div class="tt-w">
+                            <div class="mtt">
+                                <i class="ico"></i>
+                                <p>业绩展示</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list" id="myList">
+                        [@cms_channel_list parentId = '324']
+                        [#list tag_list as c]
+                        <li>
+                            <div class="item">
+                                <a href="${c.url}" class="[#if channel.id==c.id] active[/#if]">${c.name}</a>
+                            </div>
+                            [@cms_channel_list parentId = c.id]
+                            [#if tag_list?size>0]
+                            <div class="child child-2">
+                                [#list tag_list as c2]
+                                <div class="child-2-w">
+                                <div class="child-item child-item-2">
+                                    <a href="${c2.url}" class="[#if channel.id==c2.id] active[/#if]">${c2.name}</a>
+                                </div>
+                                [@cms_channel_list parentId = c2.id]
+                                [#if tag_list?size>0]
+                                <div class="child child-3">
+                                    [#list tag_list as c3]
+                                    <div class="child-2-w">
+                                    <div class="child-item child-item-3">
+                                        <a href="${c3.url}" class="[#if channel.id==c3.id] active[/#if]">${c3.name}</a>
+                                    </div>
+                                    </div>
+                                    [/#list]
+                                </div>
+                                [/#if]
+                                [/@cms_channel_list]
+                                </div>
+                                [/#list]
+                            </div>
+                            [/#if]
+                            [/@cms_channel_list]
+                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
+                        </ul>
+                    <script>
+                        $('#myList .child-3').each(function () {
+                          var txt = $(this).text().replace(/\s/g, "")
+                          if(txt.length == 0){
+                            $(this).css({visibility: 'hidden'})
+                          }
+                        });
+                        $('#myList .child-2').each(function () {
+                          var txt = $(this).text().replace(/\s/g, "")
+                          if(txt.length == 0){
+                            $(this).css({visibility: 'hidden'})
+                          }
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="mnc">
+                <div class="mnc-w">
+                    <div class="tit">新闻中心</div>
+                    <div class="item-wrapper clearfix">
+                        [@cms_content_page channelId=channel.id count='6' titLen='25' append='...' orderBy='1'
+                        dateFormat='yyyy-MM-dd' channelOption='1' ]
+                        [#list tag_pagination.list as a]
+                        <div class="item">
+                            <div class="avatar"><img src="${a.titleImg!site.defImg}"/></div>
+                            <div class="cnt">
+                                <a href="${a.url}" class="txt">${a.title}</a>
+                                <div class="span-txt">${a.desc}</div>
+                            </div>
+                        </div>
+                        [/#list]
+                        <div style="text-align: center">[@cms_pagination sysPage='1'/]</div>
+                        [/@cms_content_page]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>
