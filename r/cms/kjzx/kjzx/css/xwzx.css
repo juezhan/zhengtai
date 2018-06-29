@@ -7,6 +7,7 @@
 .xwzx .cnt-wrapper .cnt-cell,
 .xwzx .cnt-wrapper .cnt-cell-first {display: flex;border-bottom: 2px solid #e1e1e1;}
 .xwzx .cnt-wrapper .cnt-cell {padding: 27px 0 24px;}
+.xwzx .cnt-wrapper .cnt-cell:hover{background-color: #e1e1e1;}
 .xwzx .cnt-wrapper .cnt-cell .bd{display: flex}
 .xwzx .cnt-wrapper .cnt-cell .date {background-color: #e1e1e1;width: 100px;height: 110px;margin-right: 20px;}
 .xwzx .cnt-wrapper .cnt-cell .date p {font-size: 14px;color: #999999;padding: 0 14px;line-height: 1em;margin-top: 7px;}

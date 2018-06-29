@@ -46,7 +46,7 @@
                 dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
                 [#list tag_pagination.list as a]
                 [#if a_index == 0]
-                <div class="cnt-cell-first">
+                <a href="${a.url}" class="cnt-cell-first">
                     <div class="bd">
                         <div class="date">
                             <script>
@@ -55,7 +55,7 @@
                             </script>
                         </div>
                         <div class="mn-cnt">
-                            <a href="${a.url}" class="txt-1">${a.title}</a>
+                            <div class="txt-1">${a.title}</div>
                             <div class="txt-2">
                                 <span>发布者: ${a.author!'本站编辑'}</span>
                                 <span>来源: ${a.origin!'本站原创'}</span>
@@ -64,9 +64,9 @@
                         </div>
                     </div>
                     <div class="avatar"><img src="${a.titleImg!}"></div>
-                </div>
+                </a>
                 [#else]
-                <div class="cnt-cell">
+                <a href="${a.url}" class="cnt-cell">
                     <div class="bd">
                         <div class="date">
                             <script>
@@ -75,7 +75,7 @@
                             </script>
                         </div>
                         <div class="mn-cnt">
-                            <a href="${a.url}" class="txt-1">${a.title}</a>
+                            <div class="txt-1">${a.title}</div>
                             <div class="txt-2">
                                 <span>发布者: ${a.author!'本站编辑'}</span>
                                 <span>来源: ${a.origin!'本站原创'}</span>
@@ -83,7 +83,7 @@
                             <div class="txt-3">${a.desc!}</div>
                         </div>
                     </div>
-                </div>
+                </a>
                 [/#if]
                 [/#list]
                 [#include "../include/page.html"/]
