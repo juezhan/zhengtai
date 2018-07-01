@@ -41,7 +41,7 @@
             <div class="line-1"></div>
             [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
             <div class="bd">
-                <ul>
+                <ul class="bdul">
                     <li class="nav">
                         <div class="number">序号</div>
                         <div class="name">名称</div>
@@ -63,7 +63,13 @@
         </div>
     </div>
 </div>
-
+<script>
+    $('.bdul li').hover(function() {
+        $(this).addClass('hover');
+    }, function() {
+        $(this).removeClass('hover');
+    });
+</script>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
