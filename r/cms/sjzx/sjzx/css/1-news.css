@@ -24,26 +24,18 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .news-w .bread .items .item:hover{}
 .zyyw .news-w .bread .items .item:hover:before{opacity: 1;}
 .zyyw .m {padding: 32px 0 50px;position: relative;}
-#content .contentyjzs{
-	height: 260px;
-	width: 730px;
-	margin: auto;
-	display: block;
-}
-#content .contentyjzs h3{
-	color:#f58415;
-}
-#content .contentyjzs .contentyjzsleft{
-	float: left;
-	padding-top: 30px;
-	display: block;
-}
-#content .contentyjzs .contentyjzsright{
-	float: right;
-	width: 400px;
-	padding-top: 40px;
-	display: block;
-}
+
+#content{margin-top: 70px;padding-bottom: 20px;}
+#content .contentyjzs-cell{display: none;line-height: 36px;}
+#content .contentyjzs-cell.active{display: block;}
+#content .contentyjzs-cell h3{font-size: 18px;color: #0267b5;padding-bottom: 15px;}
+#content .contentyjzs-cell p{line-height: 22px;font-size: 12.5px;color: #999999;padding-bottom: 15px;}
+#content .contentyjzs{height: 260px;width: 730px;margin: auto;display: block;}
+#content .contentyjzs .contentyjzsleft{float: left;padding-top: 30px;display: block;}
+#content .contentyjzs .contentyjzsright{float: right;width: 400px;padding-top: 40px;display: block;}
+
+.banner{background:url("http://www.bgy.com.cn/images/product_2-1.png") 50% 0 no-repeat;margin-bottom: 80px;}
+.banner .container{height: 400px;}
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
 .container{width:960px;}
@@ -51,11 +43,11 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 
 @media screen and (max-width: 749px) {
-	.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
-	.zyyw .container .news-ad img{width: 100%;}
-	.zyyw .news-w{padding: 12px 0 20px;}
-	.zyyw .news-w .bread{height: 32px;line-height: 32px;}
-	.zyyw .news-w .bread .icon-house{height: 32px;width: 32px;}
-	/*.zyyw .news-w .bread .items{position: relative;top: 70px;line-height: 30px;height: 30px;}*/
-	/*.zyyw .m{margin-top: 50px;}*/
+.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
+.zyyw .container .news-ad img{width: 100%;}
+.zyyw .news-w{padding: 12px 0 20px;}
+.zyyw .news-w .bread{height: 32px;line-height: 32px;}
+.zyyw .news-w .bread .icon-house{height: 32px;width: 32px;}
+/*.zyyw .news-w .bread .items{position: relative;top: 70px;line-height: 30px;height: 30px;}*/
+/*.zyyw .m{margin-top: 50px;}*/
 }

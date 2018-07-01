@@ -3,27 +3,27 @@
 <meta name="viewport"
       content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="keywords" content="${channel.keywords!}"/>
 <meta http-equiv="description" content="${channel.description!}"/>
 <title>${channel.title!channel.name} - ${site.name}</title>
 <script src="${resSys}/jquery.js" type="text/javascript"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
-<link type="text/css" rel="stylesheet" href="/${res}/css/index.css" />
+<link type="text/css" rel="stylesheet" href="/${res}/css/index.css"/>
 <link href="/${res}/css/1-news.css" rel="stylesheet"/>
 
 
-<!--[if lt IE 9]> 
+<!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
 
 <![endif]-->
 <script type="text/javascript">
-$(function() {
-	Cms.channelViewCount("${base}","${channel.id}");
-	Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwitch?string}");
-});
+  $(function () {
+    Cms.channelViewCount("${base}", "${channel.id}");
+    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+  });
 </script>
 <head>
 <body class="zyyw">
@@ -40,7 +40,7 @@ $(function() {
                 主营业务
             </div>
             <div class="items" id="box">
-                <a href="#" class="active">绩效评价</a>
+                <a href="#" class="item active">绩效评价</a>
                 <a href="#" class="item">科技专项</a>
                 <a href="#" class="item">高企认定</a>
                 <a href="#" class="item">多元审计</a>
@@ -48,66 +48,32 @@ $(function() {
         </div>
     </div>
     <div id="content">
-        <div  style="display: block;line-height: 36px;">
-            <span class="contentyjzs">
-                <span class="contentyjzsleft" style="display: block;"><img src="/${res}/imgs/绩效评价.jpg" alt=""></span>
-            <span class="contentyjzsright" style="display: block;"><h3>财政资金绩效第三方评价</h3>
-                <p>依托人才优势和自主创新研发的专业软件，完成各级政府部门的财政预算内资金绩效第三方评价，为政府审核财政专项资金绩效目标完成情况提供支持。</p></span>
-            </span>
+        <div class="contentyjzs-cell active">
+            <h3>财政资金绩效第三方评价</h3>
+            <p>依托人才优势和自主创新研发的专业软件，完成各级政府部门的财政预算内资金绩效第三方评价，为政府审核财政专项资金绩效目标完成情况提供支持。</p>
         </div>
-        <div  style="display: none;line-height: 36px;">
-             <span class="contentyjzs">
-                <span class="contentyjzsleft" style="display: block;"><img src="/${res}/imgs/科技专项.jpg" alt=""></span>
-            <span class="contentyjzsright" style="display: block;"><h3>科技计划资金专项审计</h3>
-                <p>承接高等院校、科研机构及企事业单位承担的各类国家级、省级科技计划课题的中期检查及结题财务验收审计工作。</p></span>
-            </span>
+        <div class="contentyjzs-cell">
+            <h3>科技计划资金专项审计</h3>
+            <p>承接高等院校、科研机构及企事业单位承担的各类国家级、省级科技计划课题的中期检查及结题财务验收审计工作。</p>
         </div>
-        <div  style="display: none;line-height: 36px;">
-             <span class="contentyjzs">
-                <span class="contentyjzsleft" style="display: block;"><img src="/${res}/imgs/高企认定.jpg" alt=""></span>
-            <span class="contentyjzsright" style="display: block;"><h3>高新技术企业（小巨人）认定专项审计</h3>
-                <p>为中小企业“量身定制”的多种形式的审计专业服务，为科技型企业解决研发费用归集、高新技术产品（服务）收入归集核算等财务难题，为企业顺利申报高新技术企业（小巨人）提供强有力的财务支持。</p></span>
-            </span>
+        <div class="contentyjzs-cell">
+            <h3>高新技术企业（小巨人）认定专项审计</h3>
+            <p>为中小企业“量身定制”的多种形式的审计专业服务，为科技型企业解决研发费用归集、高新技术产品（服务）收入归集核算等财务难题，为企业顺利申报高新技术企业（小巨人）提供强有力的财务支持。</p>
         </div>
-        <div  style="display: none;line-height: 36px;">
-             <span class="contentyjzs">
-                <span class="contentyjzsleft" style="display: block;"><img src="/${res}/imgs/多元审计.jpg" alt=""></span>
-            <span class="contentyjzsright" style="display: block;"><h3>多元化审计业务</h3>
-                <p>在常规审计基础上，为各类企业提供基建财务决算审计、进出口业务稽查审核、财务尽职调查等专项服务；开展各类中央及省级财政预算内资金补助项目的财务审计以及各类经济案件司法会计鉴定等财会专项服务。</p></span>
-            </span>
+        <div class="contentyjzs-cell">
+            <h3>多元化审计业务</h3>
+            <p>在常规审计基础上，为各类企业提供基建财务决算审计、进出口业务稽查审核、财务尽职调查等专项服务；开展各类中央及省级财政预算内资金补助项目的财务审计以及各类经济案件司法会计鉴定等财会专项服务。</p>
         </div>
     </div>
     <script type="text/javascript">
-        window.onload=function(){
-            var oBox=document.getElementById('box');
-            var aLi=oBox.getElementsByTagName('a');
-            var oCon=document.getElementById('content');
-            var aDiv=oCon.getElementsByTagName('div');
-
-            for(var i=0;i<aLi.length;i++){
-                aLi[i].index=i;   //为每个li添加对应的索引index
-                aLi[i].onclick=function(){   //循环为每个li添加onclick事件
-                    for(var i=0;i<aLi.length;i++){
-                        aLi[i].className='item';
-                        aDiv[i].style.display='none';  //循环隐藏所有div
-                    }
-                    this.className='active';
-                    aDiv[this.index].style.display='block';    //this.index 获取当前li对应的索引
-                }
-            }
-        }
+      $('#box .item').click(function () {
+        $('#content .contentyjzs-cell').eq($(this).index()).addClass('active').siblings().removeClass('active');
+        return false;
+      });
     </script>
-    <style>
-        .news-w .active{
-            display: block;
-            float: left;
-            font-size: 13px;
-            color: #f58415;
-            padding: 0 5px;
-            font-weight: bold;
-            position: relative;
-        }
-    </style>
+</div>
+<div class="banner">
+    <div class="container"></div>
 </div>
 <!--<div class="m container clearfix">
     <div>

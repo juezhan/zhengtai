@@ -39,6 +39,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news .news-w .m .cm-2 .line{background-color: #cdcdcd;height: 2px;margin-top: 27px;}
 .news .news-w .m .cm-2 .line:before{width: 60px;content: '';background-color: #f5a100;height: 2px;display: block;}
 .news .news-w .m .cm-2 .t-5{margin-top: 23px;}
+.news .news-w .m .cm-2 .t-5 a{color: #999999;}
+.news .news-w .m .cm-2 .t-5 a:hover{color: #007d93;}
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
 	.container{width:960px;}
