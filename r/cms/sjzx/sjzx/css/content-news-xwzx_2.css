@@ -1,0 +1,74 @@
+blockquote,body,button,dd,dl,dt,fieldset,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;border:0}
+body,button,input,select,textarea{font-family:'Microsoft Yahei',"Lucida Grande",Tahoma,Arial,Helvetica,sans-serif;font-size:14px;color:#333}
+button,input,select,textarea{outline:0}
+html{line-height:1}
+address,cite,em,i,var{font-style:normal}
+h1{font-size:18px}
+h2{font-size:16px}
+h3{font-size:14px}
+h4,h5,h6{font-size:100%}
+li,ol,ul{list-style:none}
+a{text-decoration:none;color:#333;cursor:pointer}
+ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
+img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
+.container{width:1200px;margin:0 auto}
+.icon{display:inline-block}
+
+.zyyw .zyyw-w{}
+.zyyw .zyyw-w .bread{display: flex;height: 64px;line-height: 64px;border-bottom: 1px solid #f4f4f4;}
+.zyyw .zyyw-w .bread .icon-house{height: 64px;width: 64px;background-color: #f4f4f4;}
+.zyyw .zyyw-w .bread .c{flex: 1;display: flex; font-size: 18px;padding-left: 22px;}
+.zyyw .zyyw-w .bread .c .t-1{flex: 1;font-weight: bold;font-size: 13px;}
+.zyyw .zyyw-w .bread .c .t-2{margin-right: 60px;}
+.zyyw .zyyw-w .bread .c .t-2 a{margin-left: 22px;}
+
+.zyyw .zyyw-w .m{line-height: 24px;padding: 40px 0}
+.zyyw .zyyw-w .m .t-1{font-size: 24px;color:#f5a100;}
+.zyyw .zyyw-w .m .t-2{display: flex;margin-top: 27px;}
+.zyyw .zyyw-w .m .t-2 .avatar{width: 320px;height: 180px;overflow: hidden;margin-right: 24px;}
+.zyyw .zyyw-w .m .t-2 .cnt{font-size: 18px;color:#999999;flex: 1}
+
+.zyyw .list-items{color: #645b58;margin-top: 70px;}
+.zyyw .list-items a{color: #645b58}
+.zyyw .list-items .item-first{background-color: #f4f4f4;padding:0 10px;margin-top: 18px;}
+.zyyw .list-items .item-first .t{padding: 0 14px;font-size: 18px;color: #0062B2;display: block;border-bottom: 1px dotted #808080;line-height: 54px;height: 54px;}
+.zyyw .list-items .item-first .c{padding: 10px 14px;line-height: 24px;display: block}
+.zyyw .list-items .item{display: flex;line-height: 20px;margin: 13px 0}
+.zyyw .list-items .item .name{flex: 1;}
+.zyyw .list-items .item .date{margin-right: 16px;}
+.zyyw .list-items .line{height: 1px;background-color: #ededed;}
+
+.zyyw .news-list{width:838px;padding-bottom:90px;border-left: 2px #f4f4f4 solid;margin-left: 360px;padding-top: 30px;}
+.zyyw .news-list li{width:840px;height:135px; position:relative;border-bottom:2px #f4f4f4 solid}
+.zyyw .news-list li a{width:760px;height:105px;padding:30px 40px 0px 40px;z-index:10;position:absolute;left:0;top:0;}
+.zyyw .news-list li span{width:0;height:135px;position:absolute;left:0;top:0;z-index:8;background:-webkit-gradient(linear,120% 0%, 0% 100%, from(#f8f6f6), to(#f3f3f3), color-stop(1.2,#f3f3f3));-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
+.zyyw .news-list li h3{font-size:16px;color:#666666;padding-right:12px;margin-bottom:15px;background:url("http://www.bgy.com.cn/images/news-list.png") no-repeat right center;}
+.zyyw .news-list li h4{height:105px;width:125px; font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;float:left;font-weight:500;}
+.zyyw .news-list li p{font-size:12.5px;color:#999999;line-height: 22px;}
+.zyyw .news-list li:hover span{width:840px;}
+.zyyw .news-list li:hover h3{color:#26a2ae;background:url("http://www.bgy.com.cn/images/news-list-on.png") no-repeat right center;}
+.zyyw .news-list .avatar{display: block;width: 360px;height: 100%;overflow: hidden;position: absolute;top: 0;left: -362px;}
+.zyyw .news-list .avatar img{width: 100%;}
+
+.zyyw  .news-title{width:100%;height:220px;}
+.zyyw  .news-title .news-title-img{width:360px;height:220px;float:left;overflow:hidden;}
+.zyyw  .news-title .news-title-img img{width:100%;}
+.zyyw  .news-title .news-title-con{width:760px;height:220px;padding:0 40px;float:left;background:#f4f4f4;}
+.zyyw  .news-title .news-title-con h3{font-size:16px;color:#0e98a5;padding:30px 0 8px 0;}
+.zyyw  .news-title .news-title-con h4{font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;padding-bottom:20px;}
+.zyyw  .news-title .news-title-con p{font-size: 12.5px;color:#999999;line-height: 22px;}
+
+@media screen and (max-width: 1199px) and (min-width: 750px){
+	.container{width:960px;}
+	.zyyw .container .zyyw-ad img{width: 100%;}
+}
+
+@media screen and (max-width: 749px) {
+	.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
+	.zyyw .zyyw-w{padding: 12px 0 20px;}
+	.zyyw .zyyw-w .bd{margin:8px 0px 0;}
+	.zyyw .zyyw-w .bd img{width: 100% !important;height: auto !important;}
+	.zyyw .container .zyyw-ad img{width: 100%;}
+	.zyyw .zyyw-w .bread{height: 32px;line-height: 32px;}
+	.zyyw .zyyw-w .bread .icon-house{height: 32px;width: 32px;}
+}
