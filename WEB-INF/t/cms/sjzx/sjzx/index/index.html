@@ -30,9 +30,8 @@
             <div class="banner" id="banner">
                 <div class="banneritem-w clearfix">
                     <div class="item-cnt clearfix" id="itemCnt">
-                        <div class="item on" style="background-image: url(/${res}/imgs/shenji2.jpg);"></div>
+                        <div class="item on" style="background-image: url(/${res}/imgs/shenji4.jpg);"></div>
                         <div class="item" style="background-image: url(/${res}/imgs/shenji3.jpg);"></div>
-                        <div class="item" style="background-image: url(/${res}/imgs/shenji4.jpg);"></div>
                         <div class="item" style="background-image: url(/${res}/imgs/shenji5.jpg);"></div>
                         <!--<div class="item" style="background-image: url(/${res}/imgs/ad-5.jpg);"></div>-->
                     </div>
@@ -40,7 +39,6 @@
                     <div class="arrow arrow-r" id="arrowR"></div>
                     <div class="progress-bar" id="progressBar">
                         <div class="progress-bar-dian on"></div>
-                        <div class="progress-bar-dian"></div>
                         <div class="progress-bar-dian"></div>
                         <div class="progress-bar-dian"></div>
                         <!-- <div class="progress-bar-dian"></div>
@@ -59,7 +57,7 @@
                 }
 
                 function itemGo() {
-                    if (idx >= 4 || idx < 0) {
+                    if (idx >= 3 || idx < 0) {
                         idx = 0
                     }
                     $('#itemCnt .item').eq(idx).addClass('on').siblings().removeClass('on')
