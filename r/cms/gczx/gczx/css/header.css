@@ -42,13 +42,13 @@
 #iResearch-nav .dropdown-menu >li a { position: relative;  display: block; padding: 5px 0 5px 15px; line-height: 25px; color: #c2cbd5; background-color: transparent; box-shadow: 0 0 10px rgba(0,0,0,.05);-webkit-transition: all 300ms;-ms-transition: all 300ms;-o-transition: all 300ms;transition: all 300ms;}
 #iResearch-nav .dropdown-menu >li a::before,
 #iResearch-nav .dropdown-menu >li a::after { content: ''; position: absolute; width: 100%; height: 1px; left: 0; right: 0; bottom: 0; margin: auto; background-color: #6a7582; z-index: 1;-webkit-transition: all 300ms;-ms-transition: all 300ms;-o-transition: all 300ms;transition: all 300ms;}
-#iResearch-nav .dropdown-menu >li a::after { width: 0%; z-index: 2; background-color: #64bb2f;}
+#iResearch-nav .dropdown-menu >li a::after { width: 0%; z-index: 2; background-color: #0093ff;}
 
 #iResearch-nav .dropdown-menu >li a span { display: inline-block; vertical-align: middle;}
 #iResearch-nav .dropdown-menu >li a:hover { color: #fff; background-color: transparent;}
 #iResearch-nav .dropdown-menu >li a:hover::after { width: 100%;}
 #iResearch-nav .dropdown-wrap .icon { display: inline-block; width: 22px; height: 25px; vertical-align: middle; margin-right: 15px; background-repeat: no-repeat; background-position: center;}
-#iResearch-nav .dropdown-wrap .icon-1 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-1.png);}
+#iResearch-nav .dropdown-wrap .icon-1 { background-image: url(../imgs/head-icon-1.png);}
 #iResearch-nav .dropdown-wrap .icon-2 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-2.png);}
 #iResearch-nav .dropdown-wrap .icon-3 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-3.png);}
 #iResearch-nav .dropdown-wrap .icon-4 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-4.png);}
@@ -61,7 +61,7 @@
 #iResearch-nav .dropdown-wrap .icon-11 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-11.png); width: 28px;}
 #iResearch-nav .dropdown-wrap .icon-12 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-12.png);}
 
-#iResearch-nav .dropdown-wrap a:hover .icon-1 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-1-active-2.png);}
+#iResearch-nav .dropdown-wrap a:hover .icon-1 { background-image: url(../imgs/head-icon-1-active-2.png);}
 #iResearch-nav .dropdown-wrap a:hover .icon-2 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-2-active-2.png);}
 #iResearch-nav .dropdown-wrap a:hover .icon-3 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-3-active-2.png);}
 #iResearch-nav .dropdown-wrap a:hover .icon-4 { background-image: url(http://www.iresearch.com.cn/images/base/head-icon-4-active-2.png);}

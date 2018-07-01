@@ -29,7 +29,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .banner .banneritem-w .item{opacity: 0;z-index: -1; background: 50% 50% no-repeat;background-size: contain;float: left;width: 100%;position: absolute;transition: opacity .2s linear;}
 .index .banner .banneritem-w .item:after,
 .index .banner .banneritem-w .item-cnt:after{display: block;content: '';padding-top: 305px;}
-.index .banner .banneritem-w .item.on{opacity: 1;z-index: 9}
+.index .banner .banneritem-w .item.on{opacity: 1;z-index:-1;}
 
 /* ===== .index .w-2 ===== */
 .index .w-2{display: flex;background-color: #ffffff;}
