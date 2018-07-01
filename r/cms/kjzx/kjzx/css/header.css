@@ -14,9 +14,9 @@
 .header .icon-magnifier{margin-right: 9px; float: left; display: inline-block; background: url("../imgs/magnifier.png") 0 0 no-repeat;width: 20px;height: 18px;}
 .header .txt{}
 
-.sub-nav{height: 60px;line-height: 60px;position: absolute;top: 80px;left: 0;z-index: 4;width: 91%;}
-.sub-nav .container{height: 100%;}
-.sub-nav .menu{display:none;position:absolute;top:0;background-color: #4c4a4f;padding: 0 ;width: 88px;text-align: center}
+.sub-nav{height: 60px;line-height: 60px;position: absolute;top: 80px;left: 0;z-index: 48;width: 100%;}
+.sub-nav .container{height: 100%;position: relative;}
+.sub-nav .menu{display:none;position:absolute;top:0;background-color: #4c4a4f;padding: 0 ;width: 88px;text-align: center;right: 0;}
 .sub-nav .menu a{word-break:keep-all;color: #ffffff;display: block;float: left;line-height: 30px;height: 30px;width: 100%;}
 .sub-nav .menu a:hover{color:#f63b2e}
 .sub-nav .menu.active{display: block;}

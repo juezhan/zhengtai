@@ -39,7 +39,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .news{margin-top: 30px}
 .index .news .container{overflow: hidden;}
 .index .news .w-1{width: 688px;float: left;}
-.index .news .w-1 a:hover{text-decoration: underline;}
+.index .news .w-1 .h1:hover{text-decoration: underline;color:#556cfd}
 .index .news .w-1 .h1{font-size: 18px;line-height: 18px;display: block;font-weight: 600;color:#505960;}
 .index .news .w-1 .p{font-size: 14px;line-height: 24px;display: block;margin-top: 24px;color:#858585;}
 .index .news .w-2{width: 470px;float: right;}
