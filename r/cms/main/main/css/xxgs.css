@@ -34,7 +34,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .nav div{line-height:35px;font-size:12px;font-weight: 600;}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .number{width:84px;text-align:center}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name{width:576px;color:#293896}
-.xxgs .xxgs-main .container .xxgs-cnt .bd .name a{color:#293896}
+.xxgs .xxgs-main .container .xxgs-cnt .bd .name a{color:#666}
+.xxgs .xxgs-main .container .xxgs-cnt .bd .name a:hover{color:#0262a8}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .date{width:198px;text-align:center}
 
 

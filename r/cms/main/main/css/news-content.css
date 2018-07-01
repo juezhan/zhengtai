@@ -29,13 +29,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-content .aside .item+.item{margin-top: 20px;}
 .news-content .aside .item .tt{height:35px;line-height:35px;text-align:center;font-size:16px;color:#fff;background-color:#2084da}
 .news-content .aside .item .bd{border:1px solid #a0a0a0;padding:10px 15px;}
-.news-content .aside .item .bd .link{display:block;background-color:#fff;height:24px;line-height:24px;color:#000;font-size:14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.news-content .aside .item .bd .link{display:block;background-color:#fff;height:24px;line-height:24px;color:#666666;font-size:14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
 .news-content .aside .item .bd .link span{color:#ccc;margin-right:8px;font-family: '宋体';}
-
-
-@media screen and (min-width: 1620px) {
-  .container{width:1600px;}
-}
+.news-content .aside .item .bd .link:hover{color:#0262a8;}
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
   .container{width:960px;}
