@@ -36,16 +36,16 @@
             <div class="bd">
                 <div class="item-w clearfix">
                     <div class="item-cnt clearfix" id="itemCnt">
-                        <a href="javascript:void(0);" class="item on" style="background-image: url(/r/cms/kjzx/kjzx/imgs/keji1.jpg);"></a>
-                        <a href="javascript:void(0);" class="item" style="background-image: url(/r/cms/kjzx/kjzx/imgs/keji2.jpg);"></a>
-                        <a href="javascript:void(0);" class="item" style="background-image: url(/r/cms/kjzx/kjzx/imgs/keji3.jpg);"></a>
-                        <a href="javascript:void(0);" class="item" style="background-image: url(/r/cms/kjzx/kjzx/imgs/keji4.jpg);"></a>
+                        <a href="javascript:void(0);" class="item on" style="background-image: url(/${res}/imgs/news.png);"></a>
+                        <a href="javascript:void(0);" class="item" style="background-image: url(/${res}/imgs/1.jpg);"></a>
+                        <a href="javascript:void(0);" class="item" style="background-image: url(/${res}/imgs/2.jpg);"></a>
+                        <!--<a href="javascript:void(0);" class="item" style="background-image: url(/r/cms/kjzx/kjzx/imgs/keji4.jpg);"></a>-->
                     </div>
                     <div class="progress-bar" id="progressBar">
                         <div class="progress-bar-dian on"></div>
                         <div class="progress-bar-dian"></div>
                         <div class="progress-bar-dian"></div>
-                        <div class="progress-bar-dian"></div>
+                       <!-- <div class="progress-bar-dian"></div>-->
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@
                   }
 
                   function itemGo() {
-                    if (idx >= 4 || idx < 0) {
+                    if (idx >= 3 || idx < 0) {
                       idx = 0
                     }
                     $('#itemCnt .item').eq(idx).addClass('on').siblings().removeClass('on')
