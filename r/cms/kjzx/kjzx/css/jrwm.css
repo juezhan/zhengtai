@@ -21,7 +21,10 @@
 .jrwm .mn-c td {
     line-height: 50px;
 }
-
+.jrwm .mn-c td a:hover{
+    text-decoration: underline;
+    color: #0C6DB8;
+}
 .jrwm .mn-c th {
     background-color: #f5f5f5;
 }

@@ -34,7 +34,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 #content .contentyjzs .contentyjzsleft{float: left;padding-top: 30px;display: block;}
 #content .contentyjzs .contentyjzsright{float: right;width: 400px;padding-top: 40px;display: block;}
 
-.banner{background:url("http://www.bgy.com.cn/images/product_2-1.png") 50% 0 no-repeat;margin-bottom: 80px;}
+.banner{background:url("../imgs/back.png") 50% 0 no-repeat;margin-bottom: 80px;}
 .banner .container{height: 400px;}
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
