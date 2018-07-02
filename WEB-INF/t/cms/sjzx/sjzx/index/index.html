@@ -48,60 +48,59 @@
                 </div>
             </div>
             <script>
-                var t = 5000, mt = null, idx = 0
+              var t = 5000, mt = null, idx = 0
 
-                function adRun() {
-                    mt = setInterval(function () {
-                        idx += 1;
-                        itemGo()
-                    }, t)
+              function adRun() {
+                mt = setInterval(function () {
+                  idx += 1;
+                  itemGo()
+                }, t)
+              }
+
+              function itemGo() {
+                if (idx >= 3 || idx < 0) {
+                  idx = 0
                 }
+                $('#itemCnt .item').eq(idx).addClass('on').siblings().removeClass('on')
+                $('#progressBar .progress-bar-dian').eq(idx).addClass('on').siblings().removeClass('on')
+              }
 
-                function itemGo() {
-                    if (idx >= 3 || idx < 0) {
-                        idx = 0
-                    }
-                    $('#itemCnt .item').eq(idx).addClass('on').siblings().removeClass('on')
-                    $('#progressBar .progress-bar-dian').eq(idx).addClass('on').siblings().removeClass('on')
-                }
-
-                adRun();
-                $('#arrowL').click(function () {
-                    idx -= 1;
-                    itemGo();
-                });
-                $('#arrowR').click(function () {
-                    idx += 1;
-                    itemGo();
-                });
+              adRun();
+              $('#arrowL').click(function () {
+                idx -= 1;
+                itemGo();
+              });
+              $('#arrowR').click(function () {
+                idx += 1;
+                itemGo();
+              });
             </script>
         </div>
         <div class="w-2">
             <div class="m-1">
-                <div class="mc-1">
-                    <a href="">
-                        <img src="/${res}/imgs/img-1.png" alt="">
-                    </a>
-                    <!--<a href="${base}/sjzx/yjzs/index.jhtml">
-                        <i class="iconfont icon-jixiao"></i>
-                        <p>绩效评价</p>
-                    </a>
-                    <a href="${base}/sjzx/yjzs/index.jhtml">
-                        <i class="iconfont icon-typecar118"></i>
-                        <p>科技专项</p>
-                    </a>
-                    <a href="${base}/sjzx/yjzs/index.jhtml">
-                        <i class="iconfont icon-morendingwei"></i>
-                        <p>高企认定</p>
-                    </a>
-                    <a href="${base}/sjzx/yjzs/index.jhtml">
-                        <i class="iconfont icon-config-audit"></i>
-                        <p>多元审计</p>
-                    </a>
-                    <a href="${base}/sjzx/yjzs/index.jhtml">
-                        <i class="iconfont icon-qita"></i>
-                        <p>其他其他</p>
-                    </a>-->
+                <div class="mc-1" >
+                    <div class="cells">
+                        <a class="cell" href="${base}/sjzx/yjzs/index.jhtml">
+                            <i class="iconfont icon-jixiao"></i>
+                            <p>绩效评价</p>
+                        </a>
+                        <a class="cell" href="${base}/sjzx/yjzs/index.jhtml">
+                            <i class="iconfont icon-typecar118"></i>
+                            <p>科技专项</p>
+                        </a>
+                        <a class="cell" href="${base}/sjzx/yjzs/index.jhtml">
+                            <i class="iconfont icon-morendingwei"></i>
+                            <p>高企认定</p>
+                        </a>
+                        <a class="cell" href="${base}/sjzx/yjzs/index.jhtml">
+                            <i class="iconfont icon-config-audit"></i>
+                            <p>多元审计</p>
+                        </a>
+                        <a class="cell" href="${base}/sjzx/yjzs/index.jhtml">
+                            <i class="iconfont icon-qita"></i>
+                            <p>其他其他</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="mc-2">
                     <a href="${base}/sjzx/lxwm/index.jhtml"><img
@@ -127,10 +126,11 @@
                     <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-4.png"/>
                 </div>
                 <div class="txt">
-                    <div class="tit">科技计划资金专项审计 </div>
+                    <div class="tit">科技计划资金专项审计</div>
                     <div class="date">2018.04.13</div>
                     <div class="cnt">作为
-                        “十一五”、“十二五”、“十三五”期间国家科技计划资金审计机构之一，公司先后承担了省内各高等院校、科研院所及企业的国家科技计划课题结题验收审计任务100多项</div>
+                        “十一五”、“十二五”、“十三五”期间国家科技计划资金审计机构之一，公司先后承担了省内各高等院校、科研院所及企业的国家科技计划课题结题验收审计任务100多项
+                    </div>
                     <a href="${base}/sjzx/xwzx/index.jhtml" class="more">更多新闻 ></a>
                 </div>
             </div>
@@ -140,7 +140,8 @@
                         <div class="t-txt"><a href="${base}/sjzx/yjzs/index.jhtml">业绩展示</a></div>
                     </div>
                     <div class="cnt">
-                        [@cms_content_list channelId='201' count='4' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1']
+                        [@cms_content_list channelId='201' count='4' titLen='25' append='...' orderBy='2'
+                        dateFormat='yyyy.MM.dd' channelOption='1']
                         [#list tag_list as a]
                         <a href="${a.url}">${a.title}</a>
                         [/#list]

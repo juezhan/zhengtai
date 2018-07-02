@@ -34,7 +34,14 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 /* ===== .index .w-2 ===== */
 .index .w-2{display: flex;background-color: #ffffff;}
 .index .w-2 .m-1{flex:1;}
-.index .w-2 .m-1 .mc-1{/* height: 200px; */}
+.index .w-2 .m-1 .mc-1{height: 203px;position: relative;background: url("../imgs/img-1.png") 0 0 no-repeat;}
+.index .w-2 .m-1 .mc-1 .cells{position: absolute;top: 47px;right: 43px;}
+.index .w-2 .m-1 .mc-1 .cells .cell{display: block;float: left;text-align: center;color: #b5b5b5;padding: 10px 0;}
+.index .w-2 .m-1 .mc-1 .cells .cell + .cell{margin-left: 64px;}
+.index .w-2 .m-1 .mc-1 .cells .cell .iconfont{font-size: 52px;}
+.index .w-2 .m-1 .mc-1 .cells .cell p{font-size: 14px;margin-top: 27px;}
+.index .w-2 .m-1 .mc-1 .cells .cell:hover{color: #096bb6;}
+
 .index .w-2 .m-1 .mc-2{height: 150px;}
 .index .w-2 .m-2{width: 400px;background-color: #eaeaea;z-index: 999;}
 .index .w-2 .m-2 .mc-1{width: 320px;padding:14px;font-size:14px;line-height:18px;background-color: #f4f4f4;height: 331px;margin-top: -28px;}
