@@ -15,7 +15,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index{}
 .index{}
 .index .w-ad{}
-.index .banner{background: no-repeat 50% 0;position: relative;}
+.index .banner{background: no-repeat 50% 0;position: relative;z-index: -1;}
 .index .banner .container{height: 100%;position: relative;}
 .index .banner .arrow{width: 30px;height: 55px;position: absolute;background:0 0 no-repeat;top: 50%;margin-top: -28px;cursor: pointer;z-index: 99}
 .index .banner .arrow-r{background-image: url('../imgs/arrow-r.png');right: 50px;}
