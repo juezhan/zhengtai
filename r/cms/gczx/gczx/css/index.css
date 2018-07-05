@@ -49,9 +49,9 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .fwnr{padding: 40px 0; background: #F6F6F6;margin-top: -7px;}
 .fwnr .tabs{width: 100%; z-index: 9; text-align: center;}
 .fwnr .tabs a{color: #333; cursor: pointer; width:11%; padding-bottom: 3px; display: inline-block; font-size: 16px; text-align: center;}
-.fwnr .tabs a i{display: block;font-size: 50px;background: #8A8A8A;border-radius: 60px;color: #fff;width:90px;height: 90px;line-height: 90px;margin: 0 auto 10px;transition: all .3s;}
+.fwnr .tabs a i{display: block;font-size: 50px;border:1px solid #8A8A8A;border-radius: 60px;color: #8A8A8A;width:90px;height: 90px;line-height: 90px;margin: 0 auto 10px;transition: all .3s;}
 .fwnr .tabs a.active{color: #0066b3;}
-.fwnr .tabs a.active i{font-size: 90px; background: #F6F6F6; color: #0066b3;}
+.fwnr .tabs a.active i{font-size: 90px; background: #F6F6F6; color: #0066b3;border: none;}
 
 .list_fwnr{margin-top: 30px; }
 .list_fwnr .pic{float: left; width: 45%; padding:0 10px 0 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
