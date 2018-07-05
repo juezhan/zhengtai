@@ -62,6 +62,7 @@
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
 <div class="container">
+    <div class="crumb">您的位置：<a href='${base}/'>首页</a> <span>&gt;</span> [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] <span>&gt;</span> [/#if][/#list]</div>
     <div class="news_816-w">
         <div class="item-head">
             <div class="clearfix card">
@@ -71,35 +72,35 @@
                 </div>
                 <div class="item-head-text">
                     <h3 class="title">2017年浦东新区“小微企业创业创新基地城市示范”专项资金项目（第二批）</h3>
-                    <p class="attribute">
+                    <!--<p class="attribute">
                         <span class="inline-attribute">扶持方式：税收减免、现金补助、荣誉资质</span>
                         <span class="inline-attribute">实行地：上海</span>
                         <span class="inline-attribute" style="display: none;">服务参考价：</span>
-                    </p>
+                    </p>-->
                     <p class="attribute">
                         <span class="inline-attribute">项目级别：市区级</span>
                         <span class="inline-attribute">申报时间：2017-09-11到2017-09-30</span>
                     </p>
-                    <div class="tag-container">
+                   <!-- <div class="tag-container">
                         <a href="#" class="tag" target="_blank">最高获得300万</a>
                         <a href="#" class="tag" target="_blank">提升创新能力</a>
-                    </div>
+                    </div>-->
                     <br>
-                    <div>
+                    <!--<div>
                         <div style="display: inline-block;">
                             <div>
                                 <button class="btn">免费咨询</button>
                             </div>
                         </div>
                         <span class="btn-caption">如有任何疑问，欢迎免费咨询</span>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
         <div class="item-body">
             <div class="item-content">
                 <div class="card">
-                    <h4 class="sub-title">申请益处</h4>
+                    <h4 class="sub-title">政策详情</h4>
                     <div class="text text-large fr-view">
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;为了贯彻落实国家“小微企业创业创新基地城市示范”工作目标和要求，进一步激发小微企业发展活力，积极开创
                             “大众创业、万众创新”的新局面，浦东新区政府设立“小微企业创业创新基地城市示范”专项资金。</p>
@@ -171,10 +172,8 @@
                             对属于战略性新兴产业、现代服务业等领域，走“专、精、特、新”发展道路，且企业营业收入、利润总额、上交税金近三年平均增长25%以上的小微企业，经评估列入浦东新区“中小企业转型成长培育计划”，一次性给予不超过40万元的资助；两年后，经评估达到培育目标的，再给予不超过60万元的资助。</p>
                         <p>&nbsp;</p>
                         <p><br></p>
-                        <p><strong><span style="color: rgb(235, 107, 86);">具体支持12项申报事项，详见附件1。</span></strong></p>
-                        <p><br></p>
                     </div>
-                    <h4 class="sub-title">政策详述</h4>
+                   <!-- <h4 class="sub-title">政策详述</h4>
                     <div class="text-container">
                         <div class="text-wrapper">
                                 <span class="number">
@@ -195,25 +194,23 @@
                                 <p><br></p>
                             </div>
                         </div>
-                    </div>
-                    <h4 class="sub-title">政策模板</h4>
+                    </div>-->
+                    <h4 class="sub-title">附件</h4>
                     <a href="#">附件1支持事项.docx</a>
-                    <a href="#">附件2申报条件和材料清单.docx</a>
-                    <a href="#">附件3中小企业划型标准.docx</a>
-                    <div class="content-funcs">
+                    <!--<div class="content-funcs">
                         <div style="display: inline-block;">
                             <div>
                                 <button class="btn">免费咨询</button>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="item-sidebar">
                 <div class="card">
                     <div class="sidebar-list-container" style="">
-                        <h4 class="title">相关政策
-                            <a href="#" class="refresh nuxt-link-active" target="_blank">查看更多</a></h4>
+                        <h4 class="title">其他政策
+                            <a href="${base}/zckj/zc/index.jhtml" class="refresh nuxt-link-active" target="_blank">查看更多</a></h4>
                         <ul class="sidebar-list">
                             <li class="sidebar-list-item">
                                 <a href="#" class="" target="_blank">
@@ -231,23 +228,19 @@
                         </ul>
                     </div>
                     <div class="sidebar-list-container" style=""><h4 class="title">推荐技术
-                        <a href="/technologies" class="refresh" target="_blank">查看更多</a></h4>
+                        <a href="${base}/zckj/js/index.jhtml" class="refresh" target="_blank">查看更多</a></h4>
                         <ul class="sidebar-list">
                             <li class="sidebar-list-item"><a href="/technologies/5b162268263ee33a284d7159" class=""
                                                              target="_blank"><span class="list-item-number">1</span>
-                                <h5 class="list-item-title">轻质高效环保的中空微球聚合物乳液</h5><span title="水乳液"
+                                <h5 class="list-item-title">轻质高效环保的中空微球聚合物乳液</h5><!--<span title="水乳液"
                                                                                        class="tag">水乳液</span><span
-                                        title="钛白粉" class="tag">钛白粉</span></a></li>
+                                        title="钛白粉" class="tag">钛白粉</span>--></a></li>
                             <li class="sidebar-list-item"><a href="/technologies/5b165a7c263ee33a284e0b72" class=""
                                                              target="_blank"><span class="list-item-number">2</span>
-                                <h5 class="list-item-title">不受室外温度、地势和水源限制的封闭循环水源热泵</h5><span title="燃煤"
-                                                                                              class="tag">燃煤</span><span
-                                        title="地源热泵" class="tag">地源热泵</span></a></li>
+                                <h5 class="list-item-title">不受室外温度、地势和水源限制的封闭循环水源热泵</h5></a></li>
                             <li class="sidebar-list-item"><a href="/technologies/5b17a00a263ee33a284f90e0" class=""
                                                              target="_blank"><span class="list-item-number">3</span>
-                                <h5 class="list-item-title">【美国】高效回收工业废水中重金属的终极解决方案</h5><span title="电镀废水"
-                                                                                              class="tag">电镀废水</span><span
-                                        title="吸附材料" class="tag">吸附材料</span></a></li>
+                                <h5 class="list-item-title">【美国】高效回收工业废水中重金属的终极解决方案</h5></a></li>
                         </ul>
                     </div>
                 </div>

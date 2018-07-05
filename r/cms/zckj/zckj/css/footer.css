@@ -1,8 +1,7 @@
 .footer{background-color:#2c2c2c;}
-.footer a{color:#919191;}
 .footer .m-1{display:flex;color: #919191;font-size: 14px;line-height: 48px;padding: 27px 0 16px;}
 .footer .m-1 .mn-1{width: 198px;}
-.footer .m-1 .mn-2{width: 193px;font-size: 14px;}
+.footer .m-1 .mn-2{width: 134px;font-size: 14px;}
 .footer .m-1 .mn-3{flex: 1;}
 .footer .m-1 .mn-4{width: 160px;margin-right: 80px;text-align: center;}
 .footer .m-1 b{font-weight: normal;color: #ffffff;font-size: 18px;}
@@ -10,6 +9,11 @@
 .footer .m-1 .mn-4 .avatar{margin-top: 20px;}
 
 .footer .m-2{height: 92px;border-top: 1px solid #a0a0a0;color:#FFFFFF;}
-.footer .m-2 .table{font-size: 14px;margin: 14px auto;line-height: 32px;text-align: center;color: #999;}
-.footer .m-2 .table td{width: 25%;padding: 0 15px;}
+.footer .m-2 .table{font-size: 14px;margin: 14px auto;line-height: 32px;text-align: center;color: #999;width: 100%;}
+.footer .m-2 .table td{width: 25%;padding: 0 15px;color: #ffffff;}
 .footer .m-2 .table td.sp2{width: 50%}
+.footer .m-2 .table tr td:first-child{text-align:left}
+.footer .m-2 .table tr td:last-child{text-align:right}
+.footer .mn-2 div a{color: #ffffff;}
+.footer .mn-2 a:hover{color:#1f86ed}
+.footer .mn-3 .zckj-phone{color:#1f86ed;font-size: 18px;}
