@@ -1,0 +1,42 @@
+.jrwm {
+}
+
+.jrwm .mn {
+    background-color: #e7eaef;
+    padding: 55px 0 37px;
+}
+
+.jrwm .mn-c {
+    background-color: #ffffff;
+    padding: 43px 50px;
+    text-align: center;
+}
+
+.jrwm .mn-c table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.jrwm .mn-c th,
+.jrwm .mn-c td {
+    line-height: 50px;
+}
+.jrwm .mn-c td a:hover{
+    text-decoration: underline;
+    color: #0C6DB8;
+}
+.jrwm .mn-c th {
+    background-color: #f5f5f5;
+}
+
+.jrwm .mn-c .txt {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.jrwm .mn-c .txt-2 {
+    font-size: 18px;
+}
+.toolbar{display: flex;border-bottom: 2px solid #eaeaea;}
+.crumbs{line-height: 58px;height: 58px;font-size: 12px;flex: 1;font-weight: 600;}
+.crumbs .icon-home{background: url("../imgs/icon-home.png") 0 0 no-repeat;display: inline-block;height: 17px;width: 17px;margin-top: 20px;float: left;margin-right: 10px;}

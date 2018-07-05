@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="keywords" content="${channel.keywords!}"/>
+    <meta http-equiv="description" content="${channel.description!}"/>
+    <title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
+    <script src="${resSys}/jquery.js" type="text/javascript"></script>
+    <script src="${resSys}/front.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+    <link type="text/css" rel="stylesheet" href="/${res}/css/content-news-xwzx_2.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="/${res}/js/html5shiv.min.js"></script>
+    <script src="/${res}/js/respond.min.js"></script>
+
+    <![endif]-->
+    <script type="text/javascript">
+      $(function () {
+        Cms.channelViewCount("${base}", "${channel.id}");
+        Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+      });
+    </script>
+</head>
+<body class="zyyw">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="container">
+    <div class="zyyw-ad">
+        <img src="/${res}/imgs/yjzs-banner.jpg"/>
+    </div>
+    <div class="zyyw-w">
+        <div class="bread">
+            <i class="icon-house"></i>
+            <div class="c">
+                <div class="t-1"><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'
+                                                                                                target='_blank'>${n.name}</a>[#if
+                    n_has_next] &gt; [/#if][/#list] &gt;
+                </div>
+                <!--<div class="t-2">
+                  <a href="#">地产</a>
+                  <a href="#">物业</a>
+                  <a href="#">酒店</a>
+                </div>-->
+            </div>
+        </div>
+        <div class="list-items">
+            [@cms_content_page channelId=channel.id count='1' titLen='25' append='...' orderBy='2'
+            dateFormat='yyyy-MM-dd' channelOption='1' recommend='1' ]
+            [#list tag_pagination.list as a]
+            <div class="news-title">
+                <a href="${a.url}">
+                    <div class="news-title-img">
+                        <img src="${a.titleImg!}" alt="">
+                    </div>
+                    <div class="news-title-con">
+                        <h3>[@text_cut s=a.title len=titLen append=append/]</h3>
+                        <h4>${a.date?string(dateFormat)}</h4>
+                        <p>${a.desc}</p>
+                    </div>
+                </a>
+            </div>
+            [/#list]
+            [/@cms_content_page]
+            [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='23'
+            dateFormat='yyyy.MM.dd' channelOption='1' ]
+            <div class="news-list">
+                <ul>
+                    [#list tag_pagination.list as a]
+                    <li>
+                        <a href="${a.url}">
+                            <!--<div class="avatar"><img src="http://www.bgy.com.cn/upload/img/2018-06-19/452814fe-34a1-496f-8f2c-144108221ea5.jpg"></div>-->
+                            <h4>${a.date?string(dateFormat)}</h4>
+                            <h3>[@text_cut s=a.title len=titLen append=append/]</h3>
+                            <p>${a.desc}</p>
+                        </a>
+                        <span></span>
+                    </li>
+                    [/#list]
+                </ul>
+                <div style="text-align: center;padding-top: 50px;">[@cms_pagination sysPage='1'/]</div>
+            </div>
+            [/@cms_content_page]
+        </div>
+        <!-- <div class="m">
+         [@cms_content_page channelId=channel.id count='1' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
+         [#list tag_pagination.list as a]
+         <div class="t-1">${a.title}</div>
+         <div class="t-2">
+           <div class="avatar">
+             <img src="${a.titleImg!}"/>
+           </div>
+           <div class="cnt">${a.desc}</div>
+         </div>
+         [/#list]
+         [/@cms_content_page]
+       </div>-->
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>
