@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>${title} - ${site.name}</title>
+<meta content="${content.tagStr!}" http-equiv="keywords" />
+<meta content="${content.description!}" http-equiv="description" />
+<script src="/${res}/js/jquery-3.3.1.min.js"></script>
+<link href="/${res}/css/news-content.css" rel="stylesheet"/>
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
+<link href="/${res}/css/index.css" rel="stylesheet"/>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+
+    $(function() {
+        Cms.checkPerm("${base}","${content.id}");
+        Cms.collectCsi("${base}","collectCsiDiv","collect_csi","${content.id}");
+        Cms.attachment("${base}","${content.id}","${content.attachments?size}","attach");
+        Cms.viewCount("${base}","${content.id}");
+        Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwitch?string}");
+    });
+
+</script>
+
+<head>
+<body>
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="news-content">
+  <div class="container">
+    <div class="content">
+      <div class="content-mn">
+        <div class="crumb">您的位置：<a href='${base}/'>首页</a> <span>&gt;</span> [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] <span>&gt;</span> [/#if][/#list]</div>
+        <h1 class="title">${content.title}</h1>
+        <div class="content-inf">
+          发布时间：${content.releaseDate}&nbsp;&nbsp;&nbsp;浏览次数：<span id="views"></span>
+        </div>
+        <div class="content-txt">
+          ${txt!}
+        </div>
+        <div class="pager-wrapper">
+          <span class="prev-content"><i></i>上一篇：[@cms_content id=content.id next='1' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else]没有了[/#if][/@cms_content]</span>
+          <span class="next-content">下一篇：[@cms_content id=content.id next='0' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else]没有了[/#if][/@cms_content]<i></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="aside">
+      [@cms_channel_list parentId=channel.parentId]
+      [#list tag_list as c]
+      [#if c.id==170 || c.id==169]
+      <div class="item">
+        <div class="tt">${c.name}</div>
+        <div class="bd">
+          [@cms_content_list count='10' orderBy='4' channelId=c.id channelOption='1' dateFormat='yyyy-MM-dd']
+          [#list tag_list as a]
+          <a class="link" href="${a.url}" title="${a.title}"><span>&gt;</span>${a.title}</a>
+          [/#list]
+          [/@cms_content_list]
+        </div>
+      </div>
+      [/#if]
+      [/#list]
+      [/@cms_channel_list]
+    </div>
+  </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>
