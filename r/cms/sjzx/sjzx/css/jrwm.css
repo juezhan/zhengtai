@@ -1,6 +1,9 @@
-.jrwm {
+.jrwm a,table{
+    font-size: 14px;
+    text-decoration: none;
+    color: #0e0e0e;
 }
-
+.pagination{font-size: 12px;}
 .jrwm .mn {
     background-color: #e7eaef;
     padding: 55px 0 37px;
