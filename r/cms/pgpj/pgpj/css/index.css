@@ -208,4 +208,46 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
         line-height: 1em;
         padding: 6px 10px;
     }
+    .index .banner .slide {
+        height: 161px;
+        background-size: contain;
+        width: 100%;
+        background-repeat-y: no-repeat;
+        margin-top: 88px;
+    }
+    .index .news .tab-tag-item{
+        font-size: 16px;
+    }
+    .index .news .tab-cnt-item .tab-cnt-item-w{
+        display: block;}
+    .index .news .n-w {
+        display: block;
+    }
+    .index .news .tab-cnt-item .avatar{
+        margin: auto;
+    }
+    .index .news .n-2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .index .b-2 .item + .item{
+        margin-left: 0;
+    }
+    .index .b-2 .item {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .index .b-2 img{
+        width: 100%;
+    }
+    .index .news .tab-cnt-item .list{
+        margin-top: 20px;
+    }
+    .index .b-3 .item{
+        margin: 0 15px;
+    }
+
 }

@@ -59,4 +59,5 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-bd{padding: 20px 0;}
 	.about .about-bd .bd{margin:8px 0px 0;}
 	.about .about-bd .bd img{width: 100% !important;height: auto !important;}
+	.news .news-w .m-1{display: none;}
 }
