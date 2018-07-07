@@ -53,6 +53,60 @@
       [/#if]
       [/@cms_channel_list]
     </div>
+    <div class="nav-mini" id="navigationBarMini">
+      <div class="nav-mini-m"></div>
+      <div class="nav-mini-w">
+        [@cms_channel_list]
+        [#if !channel??]
+        <div class="item"><a href="${base}/" class="tt on"><i class="icon-nav icon-nav-home"></i>首页</a></div>
+        [#list tag_list as c]
+        [#if c_index<4]
+        <div class="item">
+          <a href="${c.url}" class="tt"><i class="icon-nav icon-nav-${c.path}"></i>${c.name}</a>
+          [@cms_channel_list parentId=c.id]
+          [#if tag_list?size>0]
+          <div class="menu">
+            <div class="arrow"></div>
+            <ul>
+              [#list tag_list as c2]
+              <li><a href="${c2.url}" class="tt">${c2.name}</a></li>
+              [/#list]
+            </ul>
+          </div>
+          [/#if]
+          [/@cms_channel_list]
+        </div>
+        [/#if]
+        [/#list]
+        [#else]
+        <div class="item"><a href="${base}/" class="tt"><i class="icon-nav icon-nav-home"></i>首页</a></div>
+        [#list tag_list as c]
+        [#if c_index<4]
+        <div class="item">
+          [#if channel.parentId??]
+          <a href="${c.url}" class="tt[#if channel.parentId==c.id] on[/#if]"><i class="icon-nav icon-nav-${c.path}"></i>${c.name}</a>
+          [#else]
+          <a href="${c.url}" class="tt[#if channel.id==c.id] on[/#if]"><i class="icon-nav icon-nav-${c.path}"></i>${c.name}</a>
+          [/#if]
+          [@cms_channel_list parentId=c.id]
+          [#if tag_list?size>0]
+          <div class="menu">
+            <div class="arrow"></div>
+            <ul>
+              [#list tag_list as c2]
+              <li><a href="${c2.url}" class="tt">${c2.name}</a></li>
+              [/#list]
+            </ul>
+          </div>
+          [/#if]
+          [/@cms_channel_list]
+        </div>
+        [/#if]
+        [/#list]
+        [/#if]
+        [/@cms_channel_list]
+      </div>
+    </div>
   </div>
 </div>
 <script>
@@ -66,5 +120,12 @@
   //     $(this).removeClass('visible')
   //   })
   // })
+  $('#navigationBarMini').click(function () {
+      $(this).addClass('active')
+  });
+  $('#navigationBarMini .nav-mini-m').click(function () {
+      $('#navigationBarMini').removeClass('active');
+      return false;
+  });
 </script>
 <!-- navigation-bar 结束 -->
