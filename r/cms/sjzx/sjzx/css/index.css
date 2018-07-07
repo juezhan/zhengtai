@@ -117,7 +117,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 @media screen and (max-width: 769px){
     .index .w-2{display: block;}
     .index .w-2 .m-1{}
-    .index .w-2 .m-1 .mc-1{padding: 0 12px;}
+    .index .w-2 .m-1 .mc-1{padding: 0 12px;height: 146px;background-size: 138%;margin-left: 10px;}
     .index .w-2 .m-2{width: 100%;}
     .index .w-2 .m-2 .mc-1{margin: 0;width: 100%;display: flex;height: auto;}
     .index .w-2 .m-2 .mc-1 .mnt{flex: 1;margin-left: 20px;padding-right: 14px;}
@@ -161,4 +161,9 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
     .index .w-3 .m-2 .mc-1 .cnt{padding: 10px 12px;line-height: 20px;}
     .index .w-ad img{width: 100%;}
     .index .w-2 .m-1 .mc-1 img{width: 100%;}
+    .index .banner .banneritem-w .item:after, .index .banner .banneritem-w .item-cnt:after{padding-top: 40%;}
+    .index .w-2 .m-1 .mc-1 .cells .cell + .cell {margin-left: 10px;}
+    .index .w-2 .m-1 .mc-1 .cells .cell .iconfont {font-size: 34px;}
+    .index .w-2 .m-1 .mc-1 .cells .cell p {font-size: 12px;margin-top: 27px;}
+    .index .w-2 .m-1 .mc-1 .cells {position: absolute;top: 47px;right: 12px;}
 }
