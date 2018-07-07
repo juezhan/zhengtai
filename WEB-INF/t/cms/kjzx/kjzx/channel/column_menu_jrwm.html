@@ -44,28 +44,22 @@
             <div class="mn-c">
                 [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
                 <table>
-                    <col width="20%">
-                    <col width="20%">
-                    <col width="15%">
-                    <col width="20%">
-                    <col width="15%">
-                    <col width="10%">
                     <tr>
-                        <th>职位名称</th>
-                        <th>人数</th>
-                        <th>工作地点</th>
-                        <th>专业要求</th>
-                        <th>学历要求</th>
-                        <th>详情</th>
+                        <th class="td-1">职位名称</th>
+                        <th class="td-2">人数</th>
+                        <th class="td-3">工作地点</th>
+                        <th class="td-4">专业要求</th>
+                        <th class="td-5">学历要求</th>
+                        <th class="td-6">详情</th>
                     </tr>
                     [#list tag_pagination.list as a]
                     <tr>
-                        <td class="d-1"><a href="${a.url}" title="${a.title}" >${a.title}</a></td>
-                        <td class="d-2">${a.tagStr}</td>
-                        <td class="d-3">${a.shortTitle}</td>
-                        <td class="d-4">${a.author}</td>
-                        <td class="d-5">${a.origin}</td>
-                        <td>
+                        <td class="td-1 d-1"><a href="${a.url}" title="${a.title}" >${a.title}</a></td>
+                        <td class="td-2 d-2">${a.tagStr}</td>
+                        <td class="td-3 d-3">${a.shortTitle}</td>
+                        <td class="td-4 d-4">${a.author}</td>
+                        <td class="td-5 d-5">${a.origin}</td>
+                        <td class="td-6">
                             <a href="${a.url}" title="${a.title}" >&gt;</a>
                         </td>
                     </tr>

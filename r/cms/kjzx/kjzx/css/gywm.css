@@ -1,4 +1,5 @@
 .gywm{}
+.gywm .banner .container.clearfix img{width:100%;}
 .gywm .crumbs{border-bottom: 2px solid #eaeaea;line-height: 58px;height: 58px;font-size: 12px;font-weight: 600;}
 .gywm .crumbs .icon-home{background: url("../imgs/icon-home.png") 0 0 no-repeat;display: inline-block;height: 17px;width: 17px;}
 .gywm .cnt-wrapper{}

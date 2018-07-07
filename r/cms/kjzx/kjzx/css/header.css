@@ -34,4 +34,5 @@
         width: 150px;
     }
     .header .container{height: auto;padding: 12px;box-sizing: border-box;}
+    .sub-nav{width:100%;}
 }

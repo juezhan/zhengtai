@@ -205,6 +205,8 @@
         margin: auto;
     }
     .xwzx .cnt-wrapper .m-cnt .zyywimgbox img {
+        width: 100%;
+        margin-top: 64px;
     }
     .xwzx .cnt-wrapper .m-cnt .zyywimgbox .zyywimgone {
         position: absolute;

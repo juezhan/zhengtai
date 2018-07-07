@@ -11,7 +11,7 @@
     padding: 43px 50px;
     text-align: center;
 }
-
+.jrwm .banner img{width: 100%}
 .jrwm .mn-c table {
     width: 100%;
     border-spacing: 0;
@@ -36,4 +36,19 @@
 
 .jrwm .mn-c .txt-2 {
     font-size: 18px;
+}
+.jrwm .mn-c .td-1{width:20%;}
+.jrwm .mn-c .td-2{width:20%;}
+.jrwm .mn-c .td-3{width:15%;}
+.jrwm .mn-c .td-4{width:20%;}
+.jrwm .mn-c .td-5{width:15%;}
+.jrwm .mn-c .td-6{width:10%;}
+@media screen and (max-width: 749px) {
+    .jrwm .mn-c{padding: 20px 12px;}
+    .jrwm .mn-c .td-1{width: 85%}
+    .jrwm .mn-c .td-6{width: 15%}
+    .jrwm .mn-c .td-2,
+    .jrwm .mn-c .td-3,
+    .jrwm .mn-c .td-4,
+    .jrwm .mn-c .td-5{display: none}
 }
