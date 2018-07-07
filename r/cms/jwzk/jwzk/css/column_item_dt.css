@@ -210,4 +210,15 @@ img {
         box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.35), 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
     }
     .column-item-dt .column-item-bd .slide-bar {display: none;}
+    .column-item-dt .column-item-bd .list-wrapper {
+        width: 98% !important;
+        padding: 0 3px;
+        overflow: hidden;
+        float: none;
+    }
+    .column-item-dt .column-item-bd .list-wrapper .cell.cell-a img {
+        width: 100%;
+        height: 100%;
+         margin: 0;
+    }
 }

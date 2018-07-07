@@ -248,4 +248,19 @@ img {
         padding: 0 26px 0 106px;
         box-sizing: border-box;
     }
+    .column-item-zx .column-item-bd .slide-bar {
+        display: none;
+    }
+    .column-item-zx .column-item-bd .box-wrapper {
+        width: 98% !important;
+        overflow: hidden;
+        float: none;
+        margin: auto;
+    }
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item {
+        width: 260px;
+        float: none;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 }
