@@ -42,7 +42,20 @@
 	        </div>
 	        <div class="cell-wrapper">
 	        	<div class="cell">
-					${channel.txt!}
+					<div class="cm-2">
+						<iframe id="mapIframe" class="ueditor_baidumap" src="/jeeadmin/jeecms/static/ueditor/dialogs/map/show.html#center=125.369686,43.872783&zoom=16&width=1200&markers=125.367764,43.871392&markerStyles=l,A" frameborder="0" width="100%" height="315"></iframe>
+					</div>
+					<script>
+                        loadMap();
+                        $(window).resize(function () {
+                            loadMap();
+                        });
+                        function loadMap () {
+                            var w = $('#mapIframe').width(),
+                                h = $('#mapIframe').height();
+                            $('#mapIframe').attr('src','/jeeadmin/jeecms/static/ueditor/dialogs/map/show.html#center=125.369686,43.872783&zoom=16&width='+w+'&height='+h+'&markers=125.367764,43.871392&markerStyles=l,A');
+                        }
+					</script>
 	        		<div class="cell-txt">
 	        		 	<div class="item">
 	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm1.png"/></div>

@@ -13,6 +13,7 @@ ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
+.news-index .news-main .banner{margin-top: 80px;}
 .news-index .news-main .banner img{
 	width: 100%;
 }

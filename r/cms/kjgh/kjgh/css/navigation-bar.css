@@ -1,8 +1,10 @@
 .navigation-bar{font-size:0;}
 .navigation-bar .bd{margin:0 auto;position: relative;}
-.navigation-bar .item{position:relative;text-align:center;font-size:16px;float: left;padding: 0 10px;}
-.navigation-bar .item a.tt{color:#000;display:block;padding:0 10px;line-height: 80px;height: 80px;}
-.navigation-bar .item a.tt.on{color: #e74f06}
+.navigation-bar .item{position:relative;text-align:center;font-size:16px;float: left;padding: 0 0px;}
+.navigation-bar .item a.tt{position: relative;color:#000;display:block;padding: 0 20px;line-height: 80px;height: 80px;}
+.navigation-bar .item a.tt:after{position: absolute;display: block;content: '';height: 0px;background-color: #40b0e7;bottom: 0;left: 10px;right: 10px;transition: height .2s linear;}
+.navigation-bar .item a.tt.on{color: #e74f06;}
+.navigation-bar .item a.tt.active:after{height: 4px;}
 .navigation-bar .item .menu{display:none;position:absolute;top:42px;left:0;width:100%;}
 .navigation-bar .line{position: absolute;background: #40b0e7;bottom: 0;height: 4px;left: 0;width: 47px;transition: 0.7s;}
 /*.navigation-bar .item .menu.visible{display:block}*/

@@ -2,11 +2,10 @@
 <link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
 <div class="navigation-bar" id="navigationBar">
     <div class="bd clearfix">
-        <div class="line" id="navLine"></div>
         [@cms_channel_list]
         [#if !channel??]
         <div class="item">
-            <a href="${base}/" class="tt on">首页</a></div>
+            <a href="${base}/" class="tt on active">首页</a></div>
         [#list tag_list as c]
         [#if c_index<6]
         <div class="item">
@@ -32,9 +31,9 @@
         [#if c_index<6]
         <div class="item">
             [#if channel.parentId??]
-            <a href="${c.url}" class="tt[#if channel.parentId==c.id] on[/#if]">${c.name}</a>
+            <a href="${c.url}" class="tt[#if channel.parentId==c.id] on active[/#if]">${c.name}</a>
             [#else]
-            <a href="${c.url}" class="tt[#if channel.id==c.id] on[/#if]">${c.name}</a>
+            <a href="${c.url}" class="tt[#if channel.id==c.id] on active[/#if]">${c.name}</a>
             [/#if]
             [@cms_channel_list parentId=c.id]
             [#if tag_list?size>0]
@@ -78,23 +77,15 @@
     </div>
 </div>
 <script>
-  var cntLeft = $('.header .container').offset().left;
-
-  function lineMore($target) {
-    var ttOnLeft = $target.offset().left;
-    $('#navLine').css({left: (ttOnLeft - cntLeft) + 'px'});
-    console.log('ttOnLeft', ttOnLeft);
-    console.log('$target', $target);
-  }
-
   var $target = $('#navigationBar a.tt.on');
-  lineMore($target);
   var mt = null
   $('#navigationBar a.tt').each(function (e) {
     $(this).hover(function () {
-      $(this).next('.menu').addClass('visible')
-      lineMore($(this));
+      $('#navigationBar a.tt').removeClass('active');
+      $(this).addClass('active').next('.menu').addClass('visible');
     }, function () {
+        $('#navigationBar a.tt').removeClass('active');
+        $target.addClass('active')
       var $this = $(this);
       mt = setTimeout(function () {
         $this.next('.menu').removeClass('visible')

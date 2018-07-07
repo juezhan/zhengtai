@@ -13,7 +13,7 @@ ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
-.about .about-bd{padding:60px 0}
+.about .about-bd{padding:80px 0}
 .about .about-bd .tt{font-size:30px;line-height:30px;text-align:center;color:#293896}
 .about .about-bd .bd{margin:46px 100px 0;color:#000;line-height: 2;}
 .about .about-bd .banner img{
@@ -230,17 +230,21 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 }
 .about-us .cell .cell-txt{
 	display: inline-block;
-	width: 478px;
+	width: 600px;
 	vertical-align: top;
-	margin-top: 62px;
 	font-size: 14px;
 	line-height: 26px;
 }
-.about-us .cell .cell-txt .img{
-	margin-bottom: 20px;
+.about-us .cell .cell-txt .img-line{
+	display: inline-block;
+	height: 100%;
+}
+.about-us .cell .cell-txt .celltxt-content{
+	display: inline-block;
+	width: 524px;
+	vertical-align: top;
 }
 @media screen and (min-width: 1620px) {
-  .container{width:1600px;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
@@ -255,7 +259,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 @media screen and (max-width: 749px) {
 	.container{width:100% !important;max-width:640px;min-width:320px;padding:0 12px;box-sizing: border-box;}
-	.about .about-bd{padding: 20px 0;}
+	.about .about-bd{padding: 60px 0;}
 	.about .about-bd .bd{margin:8px 0px 0;}
 	.about .about-bd .bd img{width: 100% !important;height: auto !important;}
 	.about .about-bd .lxwm .container .tit .cell-nav ul li{
@@ -275,7 +279,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about-us .cell .cell-img {
     	width: 100%;
 	}
-	.about-us .cell .img-line {
+	.about-us .cell .cell-txt .img-line {
     	display: none;
 	}
 	.about-us .cell .cell-txt {
@@ -290,7 +294,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 		width: 100%;
 	}
 	.about-us .cell .cell-txt .celltxt-content{
-		padding: 0 20px;
+		padding: 0 3%;
+		width: 94% !important;
 	}
 	.about .about-bd .lxwm .container .cell-wrapper .cell .cell-img {
 	    width: 100%;
