@@ -64,7 +64,9 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 }
 @media screen and (max-width: 768px) {
     .index .news .news-wrapper{display: block}
-    .index .news .news-ad{margin: 30px 0 0;}
+    .index .news .news-ad{margin: 30px 0 0;width: 100%;padding-top: 1px;height: 200px;}
+    .index .news .news-ad .items {display: flex;justify-content: center;margin-top: 78px;
+    }
 }
 @media screen and (max-width: 749px) {
     .container {padding: 0 12px;box-sizing: border-box;}

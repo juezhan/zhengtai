@@ -100,7 +100,7 @@
 	animation-duration: .75s;
 }
 
-.nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #000;position: absolute;top: 10px;right: 12px;border-radius: 3px;}
+.nav-mini{display: none;width: 20px;height: 20px;border: 1px solid #000;position: absolute;top: 10px;right: 12px;border-radius: 3px;z-index: 9999;}
 .nav-mini .nav-mini-m{display: none;background-color: rgba(0,0,0,.3);position: fixed;top:0;right: 0;height: 100%;width:100%;z-index: 999}
 .nav-mini .nav-mini-w{display: none;width:100px;background-color: #ffffff;position: fixed;top:0;right: 0;height: 100%;z-index: 9999;overflow: auto}
 .nav-mini .nav-mini-w .item{font-size: 14px;padding: 10px 12px;position: relative;}

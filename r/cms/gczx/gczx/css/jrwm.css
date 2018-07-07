@@ -1,6 +1,6 @@
 .jrwm {
 }
-
+.jrwm .banner img{width: 100%}
 .jrwm .mn {
     background-color: #e7eaef;
     padding: 55px 0 37px;
@@ -28,6 +28,12 @@
 .jrwm .mn-c th {
     background-color: #f5f5f5;
 }
+.jrwm .mn-c .td-1{width:20%;}
+.jrwm .mn-c .td-2{width:20%;}
+.jrwm .mn-c .td-3{width:15%;}
+.jrwm .mn-c .td-4{width:20%;}
+.jrwm .mn-c .td-5{width:15%;}
+.jrwm .mn-c .td-6{width:10%;}
 
 .jrwm .mn-c .txt {
     line-height: 30px;
@@ -40,3 +46,13 @@
 .toolbar{display: flex;border-bottom: 2px solid #eaeaea;}
 .crumbs{line-height: 58px;height: 58px;font-size: 12px;flex: 1;font-weight: 600;}
 .crumbs .icon-home{background: url("../imgs/icon-home.png") 0 0 no-repeat;display: inline-block;height: 17px;width: 17px;margin-top: 20px;float: left;margin-right: 10px;}
+
+@media screen and (max-width: 749px) {
+    .jrwm .mn-c{padding: 20px 12px;}
+    .jrwm .mn-c .td-1{width: 85%}
+    .jrwm .mn-c .td-6{width: 15%}
+    .jrwm .mn-c .td-2,
+    .jrwm .mn-c .td-3,
+    .jrwm .mn-c .td-4,
+    .jrwm .mn-c .td-5{display: none}
+}

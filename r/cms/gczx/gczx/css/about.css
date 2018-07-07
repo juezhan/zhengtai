@@ -98,5 +98,11 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .item-wrapper .item .emil{}
 
 	.about .about-bd .bd span{height: 13px;}
-
+	.about-bd .mcnt{display: block;}
+	.about-bd .mcnt-a{flex: 1;line-height: 26px;padding-right: 0;}
+	.about-bd .mcnt-b {width: 100%;float: none;margin: 0;}
+	.about-bd .mcnt-b img{width: 100%;}
+	.col-md-6 {width: 100%;float: none;}
+	.m-company-cpfw-item.item1, .m-company-cpfw-item.item3, .m-company-cpfw-item.item5 {padding-right: 0;}
+	.m-company-cpfw-item.item2, .m-company-cpfw-item.item4, .m-company-cpfw-item.item6 {padding-left: 0;}
 }

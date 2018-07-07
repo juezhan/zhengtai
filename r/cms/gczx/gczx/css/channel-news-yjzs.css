@@ -81,4 +81,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 749px) {
+    .yjzs .aside{display: none;}
+    .yjzs .mnc-w .item-wrapper .avatar{width: 90px;}
+    .yjzs .mnc-w .item-wrapper .avatar img{width:125px;height: 86px;}
 }
