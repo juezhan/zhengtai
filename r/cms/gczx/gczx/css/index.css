@@ -32,11 +32,10 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .case{}
 .index .case .case-main{padding: 90px 0 136px;}
 .index .case .tit{font-size: 36px;text-align: center;line-height: 1em;margin-bottom:  114px;}
-.index .case .mover{width: 192px;font-size: 16px;height: 40px;line-height: 40px;display: block;margin: 0 auto;border: 1px solid #33adff;text-align: center;color: #555555;margin-top: 120px;border-radius: 4px;}
+.index .case .mover{width: 192px;font-size: 16px;height: 40px;line-height: 40px;display: block;margin: 0 auto;border: 1px solid #33adff;text-align: center;color: #555555;border-radius: 4px;}
 .index .case .mover:hover{background-color:#33adff;color:#ffffff;}
 .index .case .items{overflow: hidden;}
-.index .case .item{width: 30%;float:left;display: flex;align-items: start;}
-.index .case .item + .item{margin-left: 5%;}
+.index .case .item{width: 30%;float:left;display: flex;align-items: start;margin-bottom: 150px;}
 .index .case .item .img{margin-right: 24px;width: 150px; height: 150px; }
 .index .case .item .cnt{flex: 1;position: relative;height: 155px;}
 .index .case .item .tt{font-size: 18px;color: #0099ff;}
