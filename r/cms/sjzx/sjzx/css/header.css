@@ -283,6 +283,7 @@
     .header .nav-mini {
         display: block
     }
+    .banner .container img{width: 100%;}
 }
 
 @charset "utf-8";
