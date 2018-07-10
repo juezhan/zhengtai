@@ -49,8 +49,8 @@
                     </li>
                     [#list tag_pagination.list as a]
                     <li>
-                        <div class="number">${a.id}</div>
-                        <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
+                        <div class="number">${a_index+1}</div>
+                        <div class="name"><a href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
                         <div class="date">${a.date?string(dateFormat)}</div>
                     </li>
                     [/#list]
