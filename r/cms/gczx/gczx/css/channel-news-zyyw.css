@@ -39,10 +39,12 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .aside .aside-w .list li .icon.icon-zxfw{background-image: url("../imgs/icon-zxfw.png");}
 .zyyw .aside .aside-w .list li .icon.icon-gczj{background-image: url("../imgs/icon-gczj.png");}
 .zyyw .aside .aside-w .list li .icon.icon-zbdl{background-image: url("../imgs/icon-zbdl.png");}
+.zyyw .aside .aside-w .list li .icon.icon-kjcgpj{background-image: url("../imgs/icon-kjcgpj.png");margin-left: 30px;}
+.zyyw .aside .aside-w .list li .icon.icon-zckj{background-image: url("../imgs/icon-zckj.png");}
 .zyyw .aside .aside-w .list li a.active .icon.icon-zxfw{background-image: url("../imgs/icon-zxfw-on.png");}
 .zyyw .aside .aside-w .list li a.active .icon.icon-gczj{background-image: url("../imgs/icon-gczj-on.png");}
 .zyyw .aside .aside-w .list li a.active .icon.icon-zbdl{background-image: url("../imgs/icon-zbdl-on.png");}
-
+.zyyw .aside .aside-w .list li a.active .icon.icon-kjcgpj{background-image: url("../imgs/icon-kjcgpj-on.png");}
 
 .zyyw .mnc {flex: 1;}
 .zyyw .mnc-w {border:1px solid #e0e0e0;box-sizing: border-box;}
