@@ -10,55 +10,73 @@
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
 <link type="text/css" rel="stylesheet" href="/${res}/css/index.css"/>
-<link type="text/css" rel="stylesheet" href="/${res}/css/yjzs.css"/>
-<!-- 业绩展示 -->
+<link type="text/css" rel="stylesheet" href="/${res}/css/xwzx.css"/>
+<!-- 新闻中心 -->
 <!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
 
 <![endif]-->
 <script type="text/javascript">
-  $(function () {
-    Cms.channelViewCount("${base}", "${channel.id}");
-    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
-  });
+    $(function () {
+        Cms.channelViewCount("${base}", "${channel.id}");
+        Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+    });
+    var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov']
 </script>
 <head>
 <body>
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="yjzs clearfix">
+<div class="xwzx clearfix">
     <div class="banner">
         <div class="container clearfix">
-            <img src="/${res}/imgs/xwzx-banner.png"/>
+            <img src="/${res}/imgs/yjzs-banner.jpg"/>
         </div>
     </div>
     <div class="container clearfix">
         <div class="toolbar">
             <div class="crumbs">
-                <i class="icon-home"></i>业绩展示
+                <a href='${base}/'><i class="icon-home"></i>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'
+                                                                                                        target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
             </div>
         </div>
         <div class="cnt-wrapper">
             <div class="m-cnt">
-                [@cms_content_page count=channel.pageSize orderBy='4' channelId=channel.id channelOption='0' dateFormat='yyyy-MM-dd' currPageClass="currPageClass" norPageClass="norPageClass"]
+                [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
+                dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
                 [#list tag_pagination.list as a]
-                <div class="cnt-cell">
+                <a href="${a.url}" class="cnt-cell">
                     <div class="bd">
+                        <!-- <div class="date">
+                             <script>
+                               var date = ${a.releaseDate?string(dateFormat)};
+                               document.write('<p class="day">' + date[0] + '</p><p>' + month[date[1] - 1] + '</p><p>' + date[2] + '</p>');
+                             </script>
+                         </div>-->
+                        <div class="data">
+                            <img src="${a.titleImg!site.defImg}"/>
+                        </div>
                         <div class="mn-cnt">
-                            <a href="${a.url}"  class="txt-1">${a.title}</a>
+                            <div class="txt-1">${a.title}</div>
+                            <div class="txt-2">
+                                <span>发布者: ${a.author!'本站编辑'}</span>
+                                <span>来源: ${a.origin!'本站原创'}</span>
+                            </div>
+                            <div class="txt-3">${a.desc!}</div>
                         </div>
                     </div>
-                    <!-- <div class="more"></div> -->
-                </div>
+                </a>
                 [/#list]
-                [#include "../include/page.html"/]
+                <div class="pagination" style="text-align: center;margin-top: 20px;">
+                    [@cms_pagination sysPage='1'/]
+                </div>
                 [/@cms_content_page]
             </div>
             <div class="ad-wrapper">
-                <div><img src="/${res}/imgs/ad-1.png"/></div>
-                <a href="${base}/kjzx/yjzs/335.jhtml"><img src="/${res}/imgs/ad-2.png"/></a>
                 <a href="${base}/kjzx/yjzs/336.jhtml"><img src="/${res}/imgs/ad-3.png"/></a>
+                <a href="${base}/kjzx/yjzs/335.jhtml"><img src="/${res}/imgs/ad-2.png"/></a>
+                <div><img src="/${res}/imgs/ad-1.png"/></div>
             </div>
         </div>
     </div>

@@ -12,6 +12,8 @@
 .xwzx .cnt-wrapper .cnt-cell .date {background-color: #e1e1e1;width: 100px;height: 110px;margin-right: 20px;}
 .xwzx .cnt-wrapper .cnt-cell .date p {font-size: 14px;color: #999999;padding: 0 14px;line-height: 1em;margin-top: 7px;}
 .xwzx .cnt-wrapper .cnt-cell .date p.day {font-size: 36px;color: #6d8ac4;margin-top: 20px;}
+.xwzx .cnt-wrapper .cnt-cell .data{padding-right: 20px;}
+.xwzx .cnt-wrapper .cnt-cell .data img{width: 145px;height: 136px;}
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt {flex: 1;font-size: 14px;color: #746969;line-height: 18px;}
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-1 {font-size: 18px;color: #666666;margin-top: 9px;}
 .xwzx .cnt-wrapper .cnt-cell .mn-cnt .txt-2,
