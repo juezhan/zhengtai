@@ -247,8 +247,8 @@ img {
     width: 126px;
     line-height: 28px;
     height: 28px;
-    background-color: #eee;
-    color: #000;
+    background-color: #ffa61a;
+    color: #fff;
     border: 1px solid #dcdcdc;
     text-align: center;
     border-radius: 3px
@@ -270,9 +270,9 @@ img {
     font-size: 0;
     display: inline-block;
     position: relative;
-    width: 350px;
+    width: 564px;
     background-color: #fff;
-    border-top: 1px solid #0066B3;
+    border-top: 3px solid #0066B3;
     margin: 13px;
     overflow: hidden;
     text-align: center;
@@ -305,11 +305,11 @@ img {
     color: #000000;
     font-size: 16px;
     display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    background-color: #eeeeee;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f2f2f2;
     padding: 0 11px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #d7d7d7;
     border-radius: 4px;
     text-align: left;
     text-overflow: ellipsis;

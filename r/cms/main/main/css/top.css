@@ -1,7 +1,8 @@
 .top{color:#000;height:44px;line-height:44px;font-size:12px;background-color:#f8f8f8}
 .top .container .bd{text-align:right}
-.top .container a{color:#000}
-
+.top .container a{color:#000;margin-right: 10px;height: 34px;display: inline-block;line-height: 30px;padding-right: 10px;}
+.top .container a:hover{
+	color: #0066b3;background-color: #e7e7e7;}
 @media screen and (min-width: 1600px) {
 }
 
