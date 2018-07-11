@@ -18,13 +18,13 @@
 <![endif]-->
 <script type="text/javascript">
 
-  $(function () {
-    Cms.checkPerm("${base}", "${content.id}");
-    Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
-    Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
-    Cms.viewCount("${base}", "${content.id}");
-    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
-  });
+    $(function () {
+        Cms.checkPerm("${base}", "${content.id}");
+        Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+        Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+        Cms.viewCount("${base}", "${content.id}");
+        Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+    });
 
 </script>
 
@@ -40,7 +40,7 @@
         <div class="bread">
             <i class="icon-house"></i>
             <div class="c">
-                新闻中心
+                [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
             </div>
         </div>
         <div class="m">
@@ -56,20 +56,31 @@
                 </div>
             </div>
             <div class="cm-2">
+                [@cms_content_page channelId=channel.id count='1' titLen='25' append='...' orderBy='2'
+                dateFormat='yyyy-MM-dd' channelOption='1' recommend='1' ]
+                [#list tag_pagination.list as a]
                 <div class="avatar">
-                    <img src="${content.titleImg!}"/>
+                    <img src="${a.titleImg!}"/>
                 </div>
                 <div class="cm-c">
-                    <div class="t-1">${content.title}</div>
-                    <div class="t-2">${content.releaseDate?string('yyyy.MM.dd')}</div>
-                    <div class="t-3">${content.desc}</div>
-                    <a href="#" class="t-4">详细内容 >></a>
+                    <div class="t-1">${a.title}</div>
+                    <div class="t-2">${a.releaseDate?string('yyyy.MM.dd')}</div>
+                    <div class="t-3">${a.desc}</div>
+                    <a href="${a.url}" class="t-4">详细内容 ></a>
                     <div class="line"></div>
-                    <div class="t-5">
-                        全国政协副主席梁振英到惠州调研粤港澳大湾区建设，莅临潼湖科技...<br/>
-                        物业管家成为应急救护员——碧桂园携手红十字会开展应急救护培训...<br/>
-                        携手中国城市与小城镇改革发展中心 共建智慧城市的新未来<br/>
-                        碧桂园获标准普尔评级(S&P)调升信用评级
+                </div>
+                [/#list]
+                [/@cms_content_page]
+                <div class="cm-c">
+                    <div class="t-5" style="margin-top: -18px;">
+                        [@cms_content_list typeId='1' count='10' channelId=content.channel.id orderBy='0']
+                        <ul>
+                            [#list tag_list as a]
+                            <li class="content-article-li"><a href="${a.url}"
+                                                              class="content-aritcle-title">${a.title}</a></li>
+                            [/#list]
+                        </ul>
+                        [/@cms_content_list]
                     </div>
                 </div>
             </div>

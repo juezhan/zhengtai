@@ -24,7 +24,7 @@
 
 <div class="xxgs-main">
     <div class="container">
-        <div class="aside">
+       <!-- <div class="aside">
             <div class="tt">${channel.name!}</div>
             <div class="bd">
                 [@cms_channel_list parentId=284]
@@ -33,7 +33,116 @@
                 [/#list]
                 [/@cms_channel_list]
             </div>
+        </div>-->
+        <div id="left_m">
+            <div class="tt">九维智库</div>
+            <div id="left_menu">
+                <div id="PARENT">
+                    <ul id="nal3">
+                        [@cms_channel_list parentId=286]
+                        [#list tag_list as c]
+                        <li><a href="${c.url}" title="${c.name}" class="one [#if channel.id==c.id]cur[/#if]">${c.name}</a></li>
+                        [/#list]
+                        [/@cms_channel_list]
+                    </ul>
+                    <!--<ul id="nal3">
+                        <li><a href="../sbksdy/" class="one cur">申报快速导引</a></li>
+                    </ul>
+                    <ul id="nal2">
+                        <li>
+                            <a href="#" class="one">重点研发</a>
+                            <ul class="xiala" style="display: block;">
+                                <li><a href="../sbylb2016zy/" class="two">当前申报计划项目一览</a></li>
+                                <li><a class="two" href="#" id="0303" onclick="iframeFarword(this,'0303','645','','xxmsq','新项目申请')">新项目申请</a></li>
+                                <li><a class="two" href="#" id="0304" onclick="iframeFarword(this,'0304','625','','ylxxmgl','已立项项目管理')">已立项项目管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="one">重大专项</a>
+                            <ul class="xiala" style="display: none;">
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="one">其他计划</a>
+                            <ul class="xiala" style="display: none;">
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="one">数据查询</a>
+                            <ul class="xiala" style="display: none;">
+                                <li><a class="two" href="#" onclick="iframeFarword(this,'0306','570','','zyrycx','在研人员查询')">在研人员查询</a></li>
+                                <li><a class="two" href="#" id="0305" onclick="iframeFarword(this,'0305','765','','xmsjtj','项目数据统计')">项目数据统计</a></li>
+                            </ul>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
         </div>
+        <script type="text/javascript">
+            $(".one").click(function() {
+                $(".one").removeClass("cur");
+                $(".one").parent().find("ul").hide(300);
+                $(this).addClass("cur");
+                $(this).parent().find("ul").stop().toggle(300);
+            });
+            $(".two").click(function() {
+                $(".two").removeClass("hover");
+                $(this).addClass("hover");
+            })
+
+            var isMouseOver = true; //控制鼠标移上移下事件和click事件的冲突
+            $('.xiala li a').each(function(){
+                var _height = $(this).height();
+
+                if(_height>33)
+                    $(this).css("background-image","url(/${res}/imgs/menu_xl3.png)");
+            });
+            $('.xiala li a').mouseover(function(){
+
+                var _height = $(this).height();
+                if(_height>33)
+                    $(this).css("background-image","url(/${res}/imgs/menu_xl4.png)");
+                else
+                    $(this).css("background-image","url(/${res}/imgs/menu_x12.png)");
+                isMouseOver=true;
+
+            });
+            $('.xiala li a').mouseout(function(){
+                if(isMouseOver){
+                    var _height = $(this).height();
+                    if(_height>33)
+                        $(this).css("background-image","url(/${res}/imgs/menu_xl3.png)");
+                    else
+                        $(this).css("background-image","url(/${res}/imgs/menu_xl.png)");
+                }
+            });
+            $('.xiala li a').click(function(){
+                isMouseOver = false;
+                $('.xiala li a').each(function(){
+                    var _height = $(this).height();
+                    if(_height>33)
+                        $(this).css("background-image","url(/${res}/imgs/menu_xl3.png)");
+                    else
+                        $(this).css("background-image","url(/${res}/imgs/menu_xl.png)");
+                    if($(this).attr("class")=='hover')
+                        $(this).removeClass("hover");
+                    if($(this).attr("class")=='hover1')
+                        $(this).removeClass("hover1");
+
+                });
+
+                var _height = $(this).height();
+                if(_height>33){
+                    $(this).addClass("hover1");
+                    $(this).css("background-image","url(/${res}/imgs/menu_xl4.png)");
+                }
+                else{
+                    $(this).addClass("hover");
+                    $(this).css("background-image","url(/${res}/imgs/menu_x12.png)");
+                }
+            });
+
+        </script>
         <div class="xxgs-cnt">
             ${channel.txt!}
         </div>
