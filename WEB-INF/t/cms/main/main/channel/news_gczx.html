@@ -35,49 +35,49 @@
             </div>
         </div>-->
         <div id="left_m">
-            <div class="tt">工程咨询</div>
-            <div id="left_menu">
-                <div id="PARENT">
-                    <ul id="nal3">
-                        [@cms_channel_list parentId=268]
-                        [#list tag_list as c]
-                        <li><a href="${c.url}" title="${c.name}" class="one [#if channel.id==c.id]cur[/#if]">${c.name}</a></li>
-                        [/#list]
-                        [/@cms_channel_list]
-                    </ul>
-                    <!--<ul id="nal3">
-                        <li><a href="../sbksdy/" class="one cur">申报快速导引</a></li>
-                    </ul>
-                    <ul id="nal2">
-                        <li>
-                            <a href="#" class="one">重点研发</a>
-                            <ul class="xiala" style="display: block;">
-                                <li><a href="../sbylb2016zy/" class="two">当前申报计划项目一览</a></li>
-                                <li><a class="two" href="#" id="0303" onclick="iframeFarword(this,'0303','645','','xxmsq','新项目申请')">新项目申请</a></li>
-                                <li><a class="two" href="#" id="0304" onclick="iframeFarword(this,'0304','625','','ylxxmgl','已立项项目管理')">已立项项目管理</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="one">重大专项</a>
-                            <ul class="xiala" style="display: none;">
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="one">其他计划</a>
-                            <ul class="xiala" style="display: none;">
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="one">数据查询</a>
-                            <ul class="xiala" style="display: none;">
-                                <li><a class="two" href="#" onclick="iframeFarword(this,'0306','570','','zyrycx','在研人员查询')">在研人员查询</a></li>
-                                <li><a class="two" href="#" id="0305" onclick="iframeFarword(this,'0305','765','','xmsjtj','项目数据统计')">项目数据统计</a></li>
-                            </ul>
-                        </li>
-                    </ul>-->
-                </div>
+        <div class="tt">工程咨询</div>
+        <div id="left_menu">
+            <div id="PARENT">
+                <ul id="nal3">
+                    [@cms_channel_list parentId=268]
+                    [#list tag_list as c]
+                    <li><a href="${c.url}" title="${c.name}" class="one [#if channel.id==c.id]cur[/#if]">${c.name}</a></li>
+                    [/#list]
+                    [/@cms_channel_list]
+                </ul>
+                <!--<ul id="nal3">
+                    <li><a href="../sbksdy/" class="one cur">申报快速导引</a></li>
+                </ul>
+                <ul id="nal2">
+                    <li>
+                        <a href="#" class="one">重点研发</a>
+                        <ul class="xiala" style="display: block;">
+                            <li><a href="../sbylb2016zy/" class="two">当前申报计划项目一览</a></li>
+                            <li><a class="two" href="#" id="0303" onclick="iframeFarword(this,'0303','645','','xxmsq','新项目申请')">新项目申请</a></li>
+                            <li><a class="two" href="#" id="0304" onclick="iframeFarword(this,'0304','625','','ylxxmgl','已立项项目管理')">已立项项目管理</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="one">重大专项</a>
+                        <ul class="xiala" style="display: none;">
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="one">其他计划</a>
+                        <ul class="xiala" style="display: none;">
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="one">数据查询</a>
+                        <ul class="xiala" style="display: none;">
+                            <li><a class="two" href="#" onclick="iframeFarword(this,'0306','570','','zyrycx','在研人员查询')">在研人员查询</a></li>
+                            <li><a class="two" href="#" id="0305" onclick="iframeFarword(this,'0305','765','','xmsjtj','项目数据统计')">项目数据统计</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
             </div>
         </div>
+    </div>
         <script type="text/javascript">
             $(".one").click(function() {
                 $(".one").removeClass("cur");

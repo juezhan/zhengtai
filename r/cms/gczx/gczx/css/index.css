@@ -65,6 +65,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .list_fwnr .fuwu_more a:hover span.out{top: 44px;}
 .list_fwnr .fuwu_more a:hover span.in{top: 0;}
 
+
+
 @media screen and (max-width: 768px) {
 	.index .case .item .img{margin-right: 12px;width: 150px;height: 130px;}
 	.index .case .tit{margin-bottom: 65px;}
