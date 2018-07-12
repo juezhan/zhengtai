@@ -11,6 +11,7 @@
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
 <link href="/${res}/css/index.css" rel="stylesheet"/>
+<link href="/${res}/css/donghua.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
 <link rel="stylesheet" href="/${res}/css/swiper.min.css">
 <script src="/${res}/css/swiper.min.js"></script>
@@ -25,14 +26,14 @@
 <body class="index">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="banner" id="banner">
+<!--<div class="banner" id="banner">
     <div class="item-w clearfix">
         <div class="item-cnt clearfix" id="itemCnt">
             <div class="item on" style="background-image: url(/${res}/imgs/ad-2.jpg);"></div>
-            <!--<div class="item" style="background-image: url(/${res}/imgs/ad-2.jpg);"></div>-->
+            &lt;!&ndash;<div class="item" style="background-image: url(/${res}/imgs/ad-2.jpg);"></div>&ndash;&gt;
             <div class="item" style="background-image: url(/${res}/imgs/ad-3.jpg);"></div>
             <div class="item" style="background-image: url(/${res}/imgs/ad-4.jpg);"></div>
-            <!--<div class="item" style="background-image: url(/${res}/imgs/ad-5.jpg);"></div>-->
+            &lt;!&ndash;<div class="item" style="background-image: url(/${res}/imgs/ad-5.jpg);"></div>&ndash;&gt;
         </div>
         <div class="arrow arrow-l" id="arrowL"></div>
         <div class="arrow arrow-r" id="arrowR"></div>
@@ -40,8 +41,8 @@
             <div class="progress-bar-dian on"></div>
             <div class="progress-bar-dian"></div>
             <div class="progress-bar-dian"></div>
-           <!-- <div class="progress-bar-dian"></div>
-            <div class="progress-bar-dian"></div>-->
+           &lt;!&ndash; <div class="progress-bar-dian"></div>
+            <div class="progress-bar-dian"></div>&ndash;&gt;
         </div>
     </div>
 </div>
@@ -72,9 +73,160 @@
     idx += 1;
     itemGo();
   });
-</script>
+</script>-->
+<div id="banner">
+    <ul id="banner_img">
+        <li class="item1">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>咨询研究</h2>
+                    <p>
+                        编制地方区域社会和经济发展规划、行业发展规划、产业发<br /><br />
+                        展规划、专题发展规划，开展新型城镇化、生态保护、农村<br /><br />
+                        产业融合、资源综合利用、大健康、创新创业、旅游等方面<br /><br />
+                        的研究咨询。
+                    </p>
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/zxyjtu.png" width="506" height="404" alt="" />
+                </div>
+            </div>
+        </li>
+        <li class="item2">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>专项规划</h2>
+                    <p>
+                        重点产业、扶贫攻坚、城镇化、民生、基础设施建设等各类<br /><br />
+                        专项规划的研究与编制。
+                    </p>
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/zxghtu.png" width="506" height="404" alt="" />
+                </div>
+            </div>
+        </li>
+        <li class="item3">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>报告/方案</h2>
+                    <p>
+                        为申报国家专项资金的项目编制可研报告、节能评估报告和<br /><br />
+                        资金申请报告及项目申报材料。<br />
+                    </p>
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/bgfatu.png" width="506" height="404" alt="" />
+                </div>
+            </div>
+        </li>
+        <li class="item4">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>工程造价</h2>
+                    <p>
+                        对建设项目工程造价的确定与控制提供专业服务，出具工程<br /><br />
+                        造价咨询报告。
+                    </p>
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/gczjtu.png" width="506" height="338" alt="" />
+                </div>
+            </div>
+        </li>
+        <li class="item5">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>科技成果评价</h2>
+                    <p>
+                        公司是国家行政机关认定的科技成果第三方评价试点单位，<br /><br />
+                        依据国家科技部《科技成果评价试点暂行办法》、吉林省<br /><br />
+                        科技成果评价试点工作方案》，为企业提供专业、权威的科<br /><br />
+                        技成果第三方评价。
+                    </p>
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/kjcgpjtu.png" width="506" height="344" alt="" />
+                </div>
+            </div>
+        </li>
+        <li class="item6">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>招标代理</h2>
+                    <p>
+                        承担各类工程招标代理；招标范围为货物、服务、咨询及工<br /><br />
+                        程招标的政府采购招标；同时，可从事总投资2亿元人民币<br /><br />
+                        以下（含2亿）的中央投资项目招标代理业务。
+                    </p>
 
-<div class="grid clearfix fwnr">
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/zbdltu.png" width="506" height="404" alt="" />
+                </div>
+            </div>
+        </li>
+        <li class="item7">
+            <div class="wrapper">
+                <div class="ad_txt">
+                    <h2>众创空间</h2>
+                    <p>
+
+                    </p>
+
+                </div>
+                <div class="ad_img">
+                    <img src="${res}/imgs/zckjtu.png" width="506" height="404" alt="" />
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div id="banner_ctr">
+        <div id="drag_ctr"></div>
+        <ul>
+            <li>咨询研究</li>
+            <li>专项规划</li>
+            <li>报告/方案</li>
+            <li>工程造价</li>
+            <li>科技成果评价</li>
+            <li>招标代理</li>
+            <li>众创空间</li>
+        </ul>
+        <div id="drag_arrow"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    var curIndex = 0;
+    var time = 800;
+    var slideTime = 5000;
+    var adTxt = $("#banner_img>li>div>.ad_txt");
+    var adImg = $("#banner_img>li>div>.ad_img");
+    var int = setInterval("autoSlide()", slideTime);
+    $("#banner_ctr>ul>li[class!='first-item'][class!='last-item']").click(function () {
+        show($(this).index("#banner_ctr>ul>li[class!='first-item'][class!='last-item']"));
+        window.clearInterval(int);
+        int = setInterval("autoSlide()", slideTime);
+    });
+    function autoSlide() {
+        curIndex + 1 >= $("#banner_img>li").size() ? curIndex = -1 : false;
+        show(curIndex + 1);
+    }
+    function show(index) {
+        $.easing.def = "easeOutQuad";
+        $("#drag_ctr,#drag_arrow").stop(false, true).animate({ left: index * 143 }, 300);
+        $("#banner_img>li").eq(curIndex).stop(false, true).fadeOut(time);
+        adTxt.eq(curIndex).stop(false, true).animate({ top: "340px" }, time);
+        adImg.eq(curIndex).stop(false, true).animate({ right: "120px" }, time);
+        setTimeout(function () {
+            $("#banner_img>li").eq(index).stop(false, true).fadeIn(time);
+            adTxt.eq(index).children("p").css({ paddingTop: "50px", paddingBottom: "50px" }).stop(false, true).animate({ paddingTop: "0", paddingBottom: "0" }, time);
+            adTxt.eq(index).css({ top: "0", opacity: "0" }).stop(false, true).animate({ top: "170px", opacity: "1" }, time);
+            adImg.eq(index).css({ right: "-50px", opacity: "0" }).stop(false, true).animate({ right: "10px", opacity: "1" }, time);
+        }, 200)
+        curIndex = index;
+    }
+</script>
+<!--<div class="grid clearfix fwnr">
     <div class="container">
         <div class="tabs">
             <a href="javascript:;" class="active"><i class="iconfont icon-qingdan"></i><span>咨询研究</span></a>
@@ -84,7 +236,7 @@
             <a href="javascript:;"><i class="iconfont icon-guihua"></i><span>科技成果评价</span></a>
             <a href="javascript:;"><i class="iconfont icon-zhaobiao1"></i><span>招标代理</span></a>
             <a href="javascript:;"><i class="iconfont icon-ruku"></i><span>众创空间</span></a>
-            <!--<a href="javascript:;"><i class="iconfont icon-zijin"></i><span>专项资金</span></a>-->
+            &lt;!&ndash;<a href="javascript:;"><i class="iconfont icon-zijin"></i><span>专项资金</span></a>&ndash;&gt;
         </div>
         <div id="tabs-container" class="swiper-container swiper-container-horizontal">
             <div class="swiper-wrapper">
@@ -192,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="swiper-slide">
+                &lt;!&ndash;<div class="swiper-slide">
                     <div class="content-slide">
                         <div class="list_fwnr clearfix">
                             <div class="pic"><img src="/${res}/imgs/3zxzj.jpg"></div>
@@ -206,7 +358,7 @@
                             </div>
                         </div>
                     </div>
-                </div>-->
+                </div>&ndash;&gt;
             </div>
         </div>
     </div>
@@ -304,7 +456,7 @@
 
     }
   });
-</script>
+</script>-->
 <!--<div id="banner">
     <ul id="banner_img">
         <li class="item1">

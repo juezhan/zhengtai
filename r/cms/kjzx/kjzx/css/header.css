@@ -17,8 +17,9 @@
 .sub-nav{height: 60px;line-height: 60px;position: absolute;top: 80px;left: 0;z-index: 48;width: 1200px;}
 .sub-nav .container{height: 100%;position: relative;}
 .sub-nav .menu{display:none;position:absolute;top:0;background-color: #4c4a4f;padding: 0 ;width: 88px;text-align: center;}
+.sub-nav:first-child{display:none;position:absolute;top:0;background-color: #4c4a4f;padding: 0 ;width: 374px;text-align: center;}
 .sub-nav .menu a{word-break:keep-all;color: #ffffff;display: block;float: left;line-height: 30px;height: 30px;width: 100%;}
-.sub-nav .menu a:hover{color:#f63b2e}
+.sub-nav .menu a:hover{color:#005baf}
 .sub-nav .menu.active{display: block;}
 
 @media screen and (max-width: 1199px) and (min-width: 769px){
