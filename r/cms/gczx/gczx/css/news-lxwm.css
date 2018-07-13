@@ -15,7 +15,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon{display:inline-block}
 
 .about .banner{background:50% 0 #00afe6 no-repeat;}
-.about .banner .container{height: 350px;}
+.about .banner .container{height: 180px;}
 .about .banner .cnt{width: 470px;color: #ffffff;margin-top: 106px;float: left;}
 .about .banner .cnt .tt{font-size: 18px;}
 .about .banner .cnt .bd{font-size: 12px;line-height: 24px;margin-top: 30px;}
@@ -34,7 +34,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 
 .about .item-wrapper{font-size: 0;text-align: center;margin-top: 55px;}
-.about .item-wrapper .item{display: inline-block;width: 238px;background-color:  #ffffff;border: 1px solid #d7d7d7;text-align: center;height: 348px;margin: 0 30px;}
+.about .item-wrapper .item{display: inline-block;width: 238px;background-color:  #ffffff;border: 1px solid #d7d7d7;text-align: center;height: 348px;margin: 0 30px;vertical-align: bottom;}
 .about .item-wrapper .item .mn{text-align: left;display: inline-block;}
 .about .item-wrapper .item .img{margin-top: 56px;}
 .about .item-wrapper .item .tit{font-size: 16px;margin-top: 50px;}

@@ -13,7 +13,7 @@ ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon{display:inline-block}
 
-.about .banner{background:50% 0 #00afe6 no-repeat;}
+.about .banner{background:50% 0 no-repeat;}
 .about .banner .cnt{width: 470px;color: #ffffff;margin-top: 106px;float: left;}
 .about .banner .cnt .tt{font-size: 18px;}
 .about .banner .cnt .bd{font-size: 12px;line-height: 24px;margin-top: 30px;}
@@ -32,7 +32,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .about .banner.banner-750{display: none;}
 .banner .container{}
-.banner .container:after{display: block;content: '';padding-top:16.66666666666667% }
+.banner .container:after{display: block;content: '';padding-top:180px; }
 
 .about-bd .mcnt{display: flex;}
 .about-bd .mcnt-a{flex: 1;line-height: 26px;padding-right: 62px;}

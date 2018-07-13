@@ -32,15 +32,19 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .case{}
 .index .case .case-main{padding: 90px 0 136px;}
 .index .case .tit{font-size: 36px;text-align: center;line-height: 1em;margin-bottom:  114px;}
-.index .case .mover{width: 192px;font-size: 16px;height: 40px;line-height: 40px;display: block;margin: 0 auto;border: 1px solid #33adff;text-align: center;color: #555555;border-radius: 4px;}
-.index .case .mover:hover{background-color:#33adff;color:#ffffff;}
+.index .case .mover{width: 192px;font-size: 16px;height: 40px;line-height: 40px;display: block;margin: 0 auto;border: 1px solid #0066b3;text-align: center;color: #555555;border-radius: 4px;}
+.index .case .mover:hover{background-color:#0066b3;color:#ffffff;}
 .index .case .items{overflow: hidden;}
-.index .case .item{width: 30%;float:left;display: flex;align-items: start;margin-bottom: 150px;margin-left: 3%;}
-.index .case .item .img{margin-right: 24px;width: 150px; height: 150px; }
+.index .case .item{width: 26%;float:left;align-items: start;margin-bottom: 150px;}
+.index .case .item + .item{margin-left: 10%;}
+.index .case .item:nth-child(4){margin-left: 0;}
+.index .case .item .itembox{display: flex;}
+.index .case .item .img{margin-right: 24px;width: 100px; height: 100px; }
 .index .case .item .cnt{flex: 1;position: relative;height: 155px;}
-.index .case .item .tt{font-size: 18px;color: #0099ff;}
+.index .case .item .cnt .dd{line-height: 18px;}
+.index .case .item .tt{font-size: 18px;color: #0066b3;padding-bottom: 20px;}
 .index .case .item .bd{font-size: 14px;color: #999999;margin-top: 50px;}
-.index .case .item .link{font-size: 14px;background-color: #0099ff;color: #fff;width: 106px;height: 40px;line-height: 40px;display: block;text-align: center;border-radius: 40px;bottom: 0;position: absolute;right: 0;}
+.index .case .item .link{font-size: 14px;background-color: #0066b3;color: #fff;width: 88px;height: 28px;line-height: 28px;display: block;text-align: center;border-radius: 40px;bottom: 0;position: absolute;right: 0;}
 
 .index .banner.banner-750{display: none;}
 
