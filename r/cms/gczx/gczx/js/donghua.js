@@ -10,7 +10,7 @@ $("#banner_ctr>ul>li[class!='first-item'][class!='last-item']").click(function (
     int = setInterval("autoSlide()", slideTime);
 });
 function autoSlide() {
-    curIndex + 1 >= $("#banner_img>li").size() ? curIndex = -1 : false;
+    curIndex + 1 >= $("#banner_img>li").length ? curIndex = -1 : false;
     show(curIndex + 1);
 }
 function show(index) {

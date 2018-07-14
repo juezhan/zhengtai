@@ -46,7 +46,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 @media screen and (max-width: 1199px){
 	.about .item-wrapper{margin: 55px -10px 0;}
-	.about .item-wrapper .item{margin:0 10px;}
+	.about .item-wrapper .item{margin:0 10px; width: 220px;}
 }
 @media screen and (max-width: 768px) {
 	.about .item-wrapper .item{width: 230px; height: 310px;}

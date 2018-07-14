@@ -77,10 +77,18 @@
 <div class="news">
     <div class="container">
         <div class="w-1">
-            <a href="${base}/kjzx/zyyw/338.jhtml" class="h1">科技成果评价</a>
+            [@cms_content_list count='1' orderBy='22' channelId='231' channelOption='1'
+            dateFormat='yyyy-MM-dd']
+            [#list tag_list as a]
+            <a href="${a.url}" class="h1">${a.title}</a>
+            <a href="${base}/kjzx/zyyw/338.jhtml" class="p">${a.description}</a>
+            <br>
+            [/#list]
+            [/@cms_content_list]
+            <!--<a href="${base}/kjzx/zyyw/338.jhtml" class="h1">科技成果评价</a>
             <a href="${base}/kjzx/zyyw/338.jhtml" class="p">
                 公司是国家行政机关认定的科技成果第三方评价试点单位，依据国家科技部《科技成果评价试点暂行办法》、吉林省《科技成果评价试点工作方案》，为企业提供专业、权威的科技成果第三方评价。
-            </a>
+            </a>-->
         </div>
         <div class="w-2">
             <div class="tag">
@@ -90,7 +98,7 @@
                 </div>
                 <div class="tab-bd">
                     <div id="c1" class="item  active">
-                        [@cms_content_list count='2' orderBy='2' channelId='231' channelOption='1'
+                        [@cms_content_list count='4' orderBy='4' channelId='231' channelOption='1'
                         dateFormat='yyyy-MM-dd']
                         [#list tag_list as a]
                         <a href="${a.url}">${a.title}</a>
@@ -99,7 +107,7 @@
                         [/@cms_content_list]
                     </div>
                     <div id="c2" class="item ">
-                        [@cms_content_list count='4' orderBy='4' channelId='232' channelOption='1'
+                        [@cms_content_list count='4' orderBy='4' channelId='233' channelOption='1'
                         dateFormat='yyyy-MM-dd']
                         [#list tag_list as a]
                         <a href="${a.url}">${a.title}</a>

@@ -21,7 +21,7 @@ body { font-family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif; fo
 #banner_img .ad_txt { position: absolute; left: 10px; top: 170px; color: #fff; text-shadow: 1px 1px rgba(51,51,51,0.3); }
 #banner_img .ad_txt h2 { font: bold 36px/60px Microsoft YaHei; }
 #banner_img .ad_txt a { display: block; width: 100px; height: 25px; line-height: 25px; text-align: center; margin-top: 10px; background: #fff; color: #666; text-decoration: none; text-shadow: none; }
-#banner_ctr { position: absolute; width: 1001px; height: 122px; margin-left: -480px; left: 50%; bottom: 40px; z-index: 1; }
+#banner_ctr { position: absolute; width: 1001px; height: 122px;left: 0; bottom: 40px; z-index: 1;right: 0;margin: auto; }
 #banner_ctr ul { width: 1001px; height: 122px; background: url(../imgs/serv_ico.png) center no-repeat; font-size: 0; line-height: 0; position: relative;background-size: contain;}
 #banner_ctr li { display: block; float: left; width: 115px; height: 122px; cursor: pointer;    padding: 0 14px;}
 #banner_ctr li.first-item { background: #fff; width: 20px; -webkit-border-radius: 20px 0 0 20px; -moz-border-radius: 20px 0 0 20px; border-radius: 20px 0 0 20px; cursor: default; }

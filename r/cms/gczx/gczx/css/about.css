@@ -38,9 +38,11 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about-bd .mcnt-a{flex: 1;line-height: 26px;padding-right: 62px;}
 .about-bd .mcnt-a h4{margin-bottom: 42px;margin-top: 0;font-size: 34px;}
 .about-bd .mcnt-a p{margin-bottom: 18px;color: #555;line-height: 1.6;font-size: 14px;}
-.about-bd .mcnt-b{width: 47.5%;float: left;margin: 0;}
+.about-bd .mcnt-b{width: 47.5%;float: left;margin: 0;overflow: hidden;}
 .about-bd .mcnt-b img{ width: 553px;height: 300px;}
-
+.about-bd .hx{width: 1200px;}
+.hx img{
+	width: 100%;}
 .row{}
 .col-md-6{width: 50%;float: left;}
 .col-md-12{width: 100%;float: left;}
@@ -60,10 +62,12 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .m-company-cpfw-item.item2,
 .m-company-cpfw-item.item4,
 .m-company-cpfw-item.item6 { padding-left: 50px;}
-
+.about-bd .hx img{width: 100%;}
+.about-bd .hx{margin-bottom: 70px;}
 @media screen and (max-width: 1199px){
 	.about .item-wrapper{margin: 55px -10px 0;}
 	.about .item-wrapper .item{margin:0 10px;}
+	.about-bd .hx{width: 960px;}
 }
 @media screen and (max-width: 768px) {
 	.about .item-wrapper .item{width: 230px; height: 310px;}

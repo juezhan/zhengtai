@@ -55,8 +55,14 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .mnc-w .item-wrapper .ico{width: 60px;height: 60px;display: block;position: absolute;top: 0;right: 0;border-left: 1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2;background: 50% 50% no-repeat;}
 .zyyw .mnc-w .item-wrapper .txt{font-size: 18px;line-height: 32px;margin-bottom: 22px;margin-right: 12%;width: 323px;display: inline-block;}
 .zyyw .mnc-w .item-wrapper .span-txt{font-size: 12px;line-height: 24px;}
-
+.container .zyywimg{
+	width: 100%;}
 @media screen and (max-width: 1199px){
+	.container {
+		width: 960px;
+	}
+	.container .zyywimg{
+		width: 100%;}
 }
 @media screen and (max-width: 768px) {
 }
