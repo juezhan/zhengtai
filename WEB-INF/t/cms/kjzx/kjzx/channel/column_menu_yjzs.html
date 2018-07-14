@@ -42,7 +42,22 @@
             </div>
         </div>
         <div class="cnt-wrapper">
+
             <div class="m-cnt">
+                <div class="classify" >
+                    <div class="tit">按分类查询：</div>
+                    <ul class="list" id="navigationBar">
+                        [@cms_channel_list parentId=channel.parentId]
+                        [#list tag_list as c2]
+                        <li>
+                            <a href="${c2.url}" class="[#if c2.id == channel.id]active[/#if]">
+                                ${c2.name}
+                            </a>
+                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
+                    </ul>
+                </div>
                 [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
                 dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
                 [#list tag_pagination.list as a]
@@ -74,9 +89,17 @@
                 [/@cms_content_page]
             </div>
             <div class="ad-wrapper">
+                [@cms_content_page recommend='1' orderBy='22' channelId='233' count=3 channelOption='0'
+                dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
+                [#list tag_pagination.list as a]
+                <a href="${a.url}">
+                    <img src="${a.titleImg!site.defImg}"/>
+                </a>
+                [/#list]
+                [/@cms_content_page]
+               <!-- <div><img src="/${res}/imgs/ad-1.png"/></div>
                 <a href="${base}/kjzx/yjzs/336.jhtml"><img src="/${res}/imgs/ad-3.png"/></a>
-                <a href="${base}/kjzx/yjzs/335.jhtml"><img src="/${res}/imgs/ad-2.png"/></a>
-                <div><img src="/${res}/imgs/ad-1.png"/></div>
+                <a href="${base}/kjzx/yjzs/335.jhtml"><img src="/${res}/imgs/ad-2.png"/></a>-->
             </div>
         </div>
     </div>
