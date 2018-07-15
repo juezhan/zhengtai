@@ -238,7 +238,10 @@ img {
     text-decoration: none;
     color:#0262a8;
 }
-
+.index .news .container .news-main .tag-bd .item .titimg{
+    margin-bottom: 16px;
+    width: 31px;
+    height: 14px;}
 .index .news .container .news-main .tag-bd .item .more {
     position: absolute;
     right: 0;

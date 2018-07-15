@@ -150,7 +150,7 @@
         <div class="xxgs-cnt">
             <div class="tt">${channel.name}</div>
             <div class="line-1"></div>
-            [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
+            [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1' ]
             <div class="bd">
                 <ul class="bdul">
                     <li class="nav">
@@ -161,7 +161,7 @@
                     [#list tag_pagination.list as a]
                     <li>
                         <div class="number">${a_index+1}</div>
-                        <div class="name"><a href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
+                        <div class="name"><a href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]<img src="${a.titleImg!}" alt="" class="titimg"></a></div>
                         <div class="date">${a.date?string(dateFormat)}</div>
                     </li>
                     [/#list]
