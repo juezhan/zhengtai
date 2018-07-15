@@ -33,6 +33,23 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .banner .item-w .item-cnt:after{display: block;content: '';padding-top: 28%;}
 .index .banner .item-w .item.on{opacity: 1;z-index: 9}
 
+.index .news .listbanner {border-top: 2px solid #293896;}
+.index .news .listbanner{background: no-repeat 50% 0;position: relative;}
+.index .news .listbanner .container{height: 100%;position: relative;}
+.index .news .listbanner .arrow{width: 30px;height: 55px;position: absolute;background:0 0 no-repeat;top: 50%;margin-top: -28px;cursor: pointer;z-index: 99}
+.index .news .listbanner .arrow-r{background-image: url('../imgs/arrow-r.png');right: 50px;}
+.index .news .listbanner .arrow-l{background-image: url('../imgs/arrow-l.png');left: 50px;}
+.index .news .listbanner .progress-bar{position: absolute;font-size: 0;bottom: 0px;text-align: center;width: 100%;z-index: 99}
+.index .news .listbanner .progress-bar-dian{width: 10px;height: 10px;border-radius: 50%;margin: 0 5px;display: inline-block;background-color: #d9dada;}
+.index .news .listbanner .progress-bar-dian.on{background-color: #0099ff;}
+.index .news .listbanner .banner-w{position: absolute;top: 0;width: 100%;left: 0;height: 100%;}
+.index .news .listbanner .banneritem-w{width: 100%;overflow: hidden}
+.index .news .listbanner .item-cnt{width: 100%;position: relative;}
+.index .news .listbanner .item-w .item{opacity: 0;z-index: -1; background: 50% 50% no-repeat;background-size: cover;float: left;width: 100%;position: absolute;transition: opacity .2s linear;}
+.index .news .listbanner .item-w .item:after,
+.index .news .listbanner .item-w .item-cnt:after{display: block;content: '';padding-top: 134px;margin-top: 10px;}
+.index .news .listbanner .item-w .item.on{opacity: 1;z-index: 9}
+
 .index .news {margin: 30px 0 30px;}
 .index .news .news-wrapper{display: flex;}
 .index .news .news-list{flex: 1;}

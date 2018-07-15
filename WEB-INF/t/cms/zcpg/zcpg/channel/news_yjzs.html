@@ -60,8 +60,17 @@
                     <div class="tt">
                         <div class="txt">ACHEVEMENT</div>
                     </div>
-                    <div class="menu-items">
+                    <!--<div class="menu-items">
                         <img src="${channel.titleImg!}"/>
+                    </div>-->
+                    <div class="menu-items">
+                        [@cms_channel_list parentId=channel.parentId]
+                        [#list tag_list as c]
+                        <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
+                            <span>${c.name}</span>
+                        </a>
+                        [/#list]
+                        [/@cms_channel_list]
                     </div>
                 </div>
             </div>

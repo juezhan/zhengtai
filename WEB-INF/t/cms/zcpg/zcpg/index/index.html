@@ -47,16 +47,16 @@
     </div>
 </div>
 <script>
-    var t = 5000, mt = null, idx = 0
+    var t = 2000, mt = null, idx = 0
 
-    function adRun() {
+    function Run() {
         mt = setInterval(function () {
             idx += 1;
-            itemGo()
+            addGo()
         }, t)
     }
 
-    function itemGo() {
+    function addGo() {
         if (idx >= 4 || idx < 0) {
             idx = 0
         }
@@ -64,14 +64,14 @@
         $('#progressBar .progress-bar-dian').eq(idx).addClass('on').siblings().removeClass('on')
     }
 
-    adRun();
+    Run();
     $('#arrowL').click(function () {
         idx -= 1;
-        itemGo();
+        addGo();
     });
     $('#arrowR').click(function () {
         idx += 1;
-        itemGo();
+        addGo();
     });
 </script>
 
@@ -94,15 +94,23 @@
                         [#list tag_list as c]
                         [#if c.id == 216 || c.id == 218 ]
                         <div class="tab-cnt-item [#if c.id == 216] active[/#if]" id="div_${c.id}">
-                            [@cms_content_list channelId=c.id count='1' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
+                            <div class="listbanner">
+                                <div class="item-w clearfix">
+                                    <div class="item-cnt clearfix" id="listitemCnt">
+                            [@cms_content_list channelId=c.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
                             [#list tag_list as a]
-                            <div class="tit">${a.title}</div>
-                            <div class="txt">
-                                ${a.desc}
-                                <a href="${a.url}">详细内容<span class="move-arrow">&gt;&gt;</span></a>
-                            </div>
+                                        <a href="${a.url}" class="item" style="background-image: url(${a.titleImg!});"></a>
                             [/#list]
                             [/@cms_content_list]
+                                    </div>
+                                    <div class="progress-bar" id="listprogressBar">
+                                        <div class="progress-bar-dian on"></div>
+                                        <div class="progress-bar-dian"></div>
+                                        <div class="progress-bar-dian"></div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         [/#if]
                         [/#list]
@@ -117,12 +125,56 @@
                       })
                     })
                 </script>
+                <script>
+                    $("#div_216 #listitemCnt").children("a:eq(0)").addClass('on');
+                    var t = 1000;
+                    var mt = null;
+                    var idsize = 0;
+                    function adNext() {
+                        mt = setInterval(function () {
+                            idsize += 1;
+                            itemNext()
+                        }, t)
+                    }
+
+                    function itemNext() {
+                        if (idsize >= 4 || idsize < 0) {
+                            idsize = 0
+                        }
+                        $('#div_216 #listitemCnt .item').eq(idsize).addClass('on').siblings().removeClass('on')
+                        $('#div_216 #listprogressBar .progress-bar-dian').eq(idsize).addClass('on').siblings().removeClass('on')
+                    }
+
+                    adNext();
+                </script>
+                <script>
+                    $("#div_218 #listitemCnt").children("a:eq(0)").addClass('on');
+                    var t = 1000;
+                    var mt = null;
+                    var idindex = 0;
+                    function adRun() {
+                        mt = setInterval(function () {
+                            idindex += 1;
+                            itemGo()
+                        }, t)
+                    }
+
+                    function itemGo() {
+                        if (idindex >= 4 || idindex < 0) {
+                            idindex = 0
+                        }
+                        $('#div_218 #listitemCnt .item').eq(idindex).addClass('on').siblings().removeClass('on')
+                        $('#div_218 #listprogressBar .progress-bar-dian').eq(idindex).addClass('on').siblings().removeClass('on')
+                    }
+
+                    adRun();
+                </script>
             </div>
             <div class="news-ad" title="公司业务" style="background-image: url(/${res}/imgs/index-img-1.png)">
                 <div class="items clearfix">
                     [@cms_content_list channelId='217' count='5' titLen='25' append='...' orderBy='1' dateFormat='yyyy.MM.dd' channelOption='1' ]
                     [#list tag_list as a]
-                    <a href="${a.url}" class="item">
+                    <a href="${a.url}" class="item" id="zyywicon">
                         <em style="background-image: url('${a.titleImg!}')"></em>
                         <span class="title">${a.title}</span>
                     </a>
@@ -130,6 +182,17 @@
                     [/@cms_content_list]
                 </div>
             </div>
+            <script>
+
+                $(function () {
+                    $("#zyywicon em").mouseenter(function () {
+                        $(this).css({'width':'60px','height':'60px','background-size': 'contain', 'margin-top': '-15px'});
+                    });
+                    $("#zyywicon em").mouseleave(function () {
+                        $(this).css({'width':'46px','height':'46px','background-size': 'contain', 'margin-top': '0'});
+                    });
+                });
+            </script>
         </div>
     </div>
 </div>
