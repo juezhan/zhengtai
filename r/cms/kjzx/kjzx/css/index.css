@@ -28,7 +28,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .banner .item-w .item:after,
 .index .banner .item-w .item-cnt:after{display: block;content: '';padding-top: 31%;}
 .index .banner .item-w .item.on{opacity: 1;z-index: 9}
-
+.index .banner .item-w .item-cnt .item-cnttit{text-align: center;font-size: 70px;color: #fff;position: absolute;top:32%;left: 0;right: 0;margin: auto}
 .index .banner-tt{}
 .index .banner-tt .container{height: 40px;text-align: right;background-color: #48454b;line-height: 40px;font-size: 0;}
 .index .banner-tt .links{margin-right: 156px;}
