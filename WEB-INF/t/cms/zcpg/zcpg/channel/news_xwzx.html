@@ -53,8 +53,23 @@
                             <div class="txt">${c.name}</div>
                             <a href="${c.url}" class="move">更多&gt;&gt;</a>
                         </div>
+                        <div class="list list-first">
+                            [@cms_content_list channelId=c.id count='5' titLen='34' descLen='50' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1' ]
+                            [#list tag_list as a]
+                            <div class="list-cell">
+                                <div class="name">
+                                    <a href="${a.url}" target="_blank" class="title">[@text_cut s=a.title len=titLen append=append/]</a>
+                                    <p class="desconter">[@text_cut s=a.desc len=descLen append=append/]</p>
+                                    <a href="${a.url}" target="_blank" class="look">查看详情</a>
+                                </div>
+                                <!--<div class="date">${a.date?string(dateFormat)}</div>-->
+                                <div class="titimg"><img src="${a.titleImg!}" alt=""></div>
+                            </div>
+                            [/#list]
+                            [/@cms_content_list]
+                        </div>
                         <div class="list">
-                            [@cms_content_list channelId=c.id count='20' titLen='50' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
+                            [@cms_content_list channelId=c.id count='5' titLen='34' append='...' orderBy='23' dateFormat='yyyy.MM.dd' channelOption='1' ]
                             [#list tag_list as a]
                             <div class="list-cell">
                                 <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>

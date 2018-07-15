@@ -34,7 +34,14 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-xwzx .xwzx-bd .list-cell{display: flex;font-size: 14px;line-height: 20px;}
 .news-xwzx .xwzx-bd .list-cell+.list-cell{margin-top: 10px;}
 .news-xwzx .xwzx-bd .list-cell .name{flex: 1;}
+.news-xwzx .xwzx-bd .list-first{border-bottom: 2px dotted #dedede;}
+.news-xwzx .xwzx-bd .list-first .list-cell .name .title{color:#0868b6;font-size: 17px;}
+.news-xwzx .xwzx-bd .list-first .list-cell .name .look{color:#0868b6;font-size: 14px;text-align: right;margin-top: 10px;display: block;}
+.news-xwzx .xwzx-bd .list-first .list-cell .name .look:hover{text-decoration: underline}
 .news-xwzx .xwzx-bd .list-cell .date{}
+.news-xwzx .xwzx-bd .list-cell .titimg{width: 220px;height: 158px;margin-left: 20px;}
+.news-xwzx .xwzx-bd .list-cell .titimg img{width: 200px;height: 158px;margin-left: 20px;}
+.news-xwzx .xwzx-bd .list-first .list-cell .desconter{line-height: 24px;margin-top: 10px;}
 .news-xwzx .xwzx-bd .item-w-a{
 	flex: 1;
 	padding-right: 24px;
