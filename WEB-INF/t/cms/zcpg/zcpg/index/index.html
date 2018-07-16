@@ -80,7 +80,7 @@
         <div class="news-wrapper">
             <div class="news-list">
                 <div class="tab-wrapper" id="tabWrapper">
-                    <div class="tab-tag" >
+                    <div class="tab-tag">
                         [@cms_channel_list]
                         [#list tag_list as c]
                         [#if c.id == 216]
@@ -105,7 +105,7 @@
                         [@cms_channel_list parentId = 216]
                         [#list tag_list as c2]
                         [#if c2_index == 0]
-                        <div class="tab-cnt-item active">
+                        <div class="tab-cnt-item active" id="div_${c2.id}">
                             <div class="listbanner">
                                 <div class="item-w clearfix">
                                     <div class="item-cnt clearfix" id="listitemCnt2">
@@ -149,7 +149,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         [/#if]
                         [/#list]
