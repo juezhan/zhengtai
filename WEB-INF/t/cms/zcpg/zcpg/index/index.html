@@ -83,8 +83,17 @@
                     <div class="tab-tag" >
                         [@cms_channel_list]
                         [#list tag_list as c]
-                        [#if c.id == 216 || c.id == 218 ]
-                        <a href="${c.url}" class="tab-tag-item[#if c.id == 216] active[/#if]" data-target="#div_${c.id}">${c.name}</a>
+                        [#if c.id == 216]
+                        [@cms_channel_list parentId = 216]
+                        [#list tag_list as c2]
+                            [#if c2_index == 0]
+                                <a href="${c2.url}" class="tab-tag-item active" data-target="#div_${c2.id}">${c2.name}</a>
+                            [/#if]
+                        [/#list]
+                        [/@cms_channel_list]
+                        [/#if]
+                        [#if c.id == 218]
+                        <a href="${c.url}" class="tab-tag-item" data-target="#div_${c.id}">${c.name}</a>
                         [/#if]
                         [/#list]
                         [/@cms_channel_list]
@@ -92,8 +101,36 @@
                     <div class="tab-cnt">
                         [@cms_channel_list]
                         [#list tag_list as c]
-                        [#if c.id == 216 || c.id == 218 ]
-                        <div class="tab-cnt-item [#if c.id == 216] active[/#if]" id="div_${c.id}">
+                        [#if c.id == 216]
+                        [@cms_channel_list parentId = 216]
+                        [#list tag_list as c2]
+                        [#if c2_index == 0]
+                        <div class="tab-cnt-item active">
+                            <div class="listbanner">
+                                <div class="item-w clearfix">
+                                    <div class="item-cnt clearfix" id="listitemCnt2">
+                                        [@cms_content_list channelId=c2.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
+                                        [#list tag_list as a]
+                                        <a href="${a.url}" class="item" title="${a.id}-${a.title}" style="background-image: url(${a.titleImg!});"></a>
+                                        [/#list]
+                                        [/@cms_content_list]
+                                    </div>
+                                    <div class="progress-bar" id="listprogressBar2">
+                                        [@cms_content_list channelId=c2.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
+                                        [#list tag_list as a]
+                                        <div class="progress-bar-dian[#if a_index == 0] on[/#if]"></div>
+                                        [/#list]
+                                        [/@cms_content_list]
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        [/#if]
+                        [/#list]
+                        [/@cms_channel_list]
+                        [/#if]
+                        [#if c.id == 218]
+                        <div class="tab-cnt-item" id="div_${c.id}">
                             <div class="listbanner">
                                 <div class="item-w clearfix">
                                     <div class="item-cnt clearfix" id="listitemCnt">
@@ -104,9 +141,11 @@
                             [/@cms_content_list]
                                     </div>
                                     <div class="progress-bar" id="listprogressBar">
-                                        <div class="progress-bar-dian on"></div>
-                                        <div class="progress-bar-dian"></div>
-                                        <div class="progress-bar-dian"></div>
+                                        [@cms_content_list channelId=c.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
+                                        [#list tag_list as a]
+                                        <div class="progress-bar-dian[#if a_index == 0] on[/#if]"></div>
+                                        [/#list]
+                                        [/@cms_content_list]
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +165,7 @@
                     })
                 </script>
                 <script>
-                    $("#div_216 #listitemCnt").children("a:eq(0)").addClass('on');
+                    $("#listitemCnt2").children("a:eq(0)").addClass('on');
                     var t = 1000;
                     var mt = null;
                     var idsize = 0;
@@ -141,8 +180,8 @@
                         if (idsize >= 4 || idsize < 0) {
                             idsize = 0
                         }
-                        $('#div_216 #listitemCnt .item').eq(idsize).addClass('on').siblings().removeClass('on')
-                        $('#div_216 #listprogressBar .progress-bar-dian').eq(idsize).addClass('on').siblings().removeClass('on')
+                        $('#listitemCnt2 .item').eq(idsize).addClass('on').siblings().removeClass('on')
+                        $('#listprogressBar2 .progress-bar-dian').eq(idsize).addClass('on').siblings().removeClass('on')
                     }
 
                     adNext();
