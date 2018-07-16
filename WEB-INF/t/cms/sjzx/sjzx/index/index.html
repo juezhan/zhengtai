@@ -7,16 +7,16 @@
 <title>首页 - ${site.name}</title>
 <meta http-equiv="keywords" content="${site.keywords!}"/>
 <meta http-equiv="description" content="${site.description!}"/>
-<script src="../../../../../../r/cms/sjzx/sjzx/js/jquery-3.3.1.min.js"></script>
+<script src="/${res}/js/jquery-3.3.1.min.js"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="../../../../../../r/cms/pgpj/pgpj/js/jquery.SuperSlide.js"></script>
-<link href="../../../../../../r/cms/sjzx/sjzx/css/index.css" rel="stylesheet"/>
-<link href="../../../../../../r/cms/sjzx/sjzx/css/icon.css" rel="stylesheet"/>
+<link href="/${res}/css/index.css" rel="stylesheet"/>
+<link href="/${res}/css/icon.css" rel="stylesheet"/>
 <link href="/${res}/css/iconfont.css" rel="stylesheet"/>
 
 <!--[if lt IE 9]>
-<script src="../../../../../../r/cms/sjzx/sjzx/js/html5shiv.min.js"></script>
-<script src="../../../../../../r/cms/sjzx/sjzx/js/respond.min.js"></script>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
 <![endif]-->
 <head>
 <body class="index">
@@ -24,9 +24,6 @@
 [#include "../include/header.html"/]
 <div class="">
     <div class="container">
-        <!--<div class="w-ad">
-            <img src="../../../../../../r/cms/sjzx/sjzx/imgs/index-banner-1.png"/>
-        </div>-->
         <div class="w-ad">
             <div class="banner" id="banner">
                 <div class="banneritem-w clearfix">
@@ -34,7 +31,6 @@
                         <div class="item on" style="background-image: url(/${res}/imgs/shenji4.jpg);"></div>
                         <div class="item" style="background-image: url(/${res}/imgs/shenji3.jpg);"></div>
                         <div class="item" style="background-image: url(/${res}/imgs/shenji5.jpg);"></div>
-                        <!--<div class="item" style="background-image: url(/${res}/imgs/ad-5.jpg);"></div>-->
                     </div>
                     <div class="arrow arrow-l" id="arrowL"></div>
                     <div class="arrow arrow-r" id="arrowR"></div>
@@ -79,6 +75,37 @@
         <div class="w-2">
             <div class="m-1">
                 <div class="mc-1" >
+                    [@cms_content_list count='1' orderBy='2' channelId='201' channelOption='1' dateFormat='yyyy.MM.dd' recommend='1' titLen='22']
+                    [#list tag_list as a]
+                    <div class="news-title">
+                    <a href="${a.url}">
+                        <div class="news-title-img">
+                            <img src="${a.titleImg!}" alt="">
+                        </div>
+                        <div class="news-title-con">
+                            <span class="tittxt">[@text_cut s=a.title len=titLen append=append/]</span>
+                            <span class="data">${a.date?string(dateFormat)}</span>
+                        </div>
+                    </a>
+                    </div>
+                    [/#list]
+                    [/@cms_content_list]
+                    [@cms_content_list count='8' orderBy='23' channelId='201' channelOption='1' dateFormat='yyyy.MM.dd' titLen='22']
+                    [#list tag_list as a]
+                    <div class="news-title">
+                        <a href="${a.url}">
+                            <div class="news-title-con">
+                                <sapn class="tittxt">[@text_cut s=a.title len=titLen append=append/]</sapn>
+                                <sapn class="data">${a.date?string(dateFormat)}</sapn>
+                            </div>
+                        </a>
+                    </div>
+                    [/#list]
+                    [/@cms_content_list]
+                </div>
+            </div>
+            <div class="m-2 m-1">
+                <div class="mc-1">
                     <div class="cells">
                         <a class="cell" href="${base}/sjzx/zyyw/index.jhtml#item1">
                             <i class="iconfont icon-jixiao"></i>
@@ -96,60 +123,6 @@
                             <i class="iconfont icon-config-audit"></i>
                             <p>多元审计</p>
                         </a>
-                        <a class="cell" href="${base}/sjzx/zyyw/index.jhtml">
-                            <i class="iconfont icon-qita"></i>
-                            <p>其他服务</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="mc-2">
-                    <a href="${base}/sjzx/gywm/index.jhtml"><img
-                            src="../../../../../../r/cms/sjzx/sjzx/imgs/img-3.png"/></a>
-                </div>
-            </div>
-            <div class="m-2">
-                <div class="mc-1">
-                    <div class="avatar">
-                        <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-2.png"/>
-                    </div>
-                    <div class="mnt">
-                        <a href="#" class="tit">预算内资金绩效评价</a>
-                        <a href="#" class="cnt">依托人才优势和自主创新研发的专业软件，完成各级政府部门的财政预算内资金绩效第三方评价，为政府审核财政专项资金绩效目标完成情况提供支持。</a>
-                        <a href="http://localhost:8080/sjzx/zyyw/index.jhtml" class="more">了解更多 ></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w-3">
-            <div class="m-1">
-                <div class="avatar">
-                    <img src="../../../../../../r/cms/sjzx/sjzx/imgs/img-4.png"/>
-                </div>
-                <div class="txt">
-                    <div class="tit">科技计划资金专项审计</div>
-                    <div class="date">2018.04.13</div>
-                    <div class="cnt">作为
-                        “十一五”、“十二五”、“十三五”期间国家科技计划资金审计机构之一，公司先后承担了省内各高等院校、科研院所及企业的国家科技计划课题结题验收审计任务100多项
-                    </div>
-                    <a href="${base}/sjzx/xwzx/index.jhtml" class="more">更多新闻 ></a>
-                </div>
-            </div>
-            <div class="m-2">
-                <div class="mc-1">
-                    <div class="t">
-                        <div class="t-txt"><a href="${base}/sjzx/yjzs/index.jhtml">业绩展示</a></div>
-                    </div>
-                    <div class="cnt">
-                        [@cms_content_list channelId='201' count='4' titLen='25' append='...' orderBy='2'
-                        dateFormat='yyyy.MM.dd' channelOption='1']
-                        [#list tag_list as a]
-                        <a href="${a.url}">${a.title}</a>
-                        [/#list]
-                        [/@cms_content_list]
-                        <!--<a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>
-                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>
-                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>
-                        <a href="http://localhost:8080/sjzx/yjzs/index.jhtml">财政资金绩效第三方评价</a>-->
                     </div>
                 </div>
             </div>

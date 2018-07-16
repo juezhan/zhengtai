@@ -28,7 +28,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .zyyw-w .m .t-2 .avatar{width: 320px;height: 180px;overflow: hidden;margin-right: 24px;}
 .zyyw .zyyw-w .m .t-2 .cnt{font-size: 18px;color:#999999;flex: 1}
 
-.zyyw .list-items{color: #645b58;margin-top: 70px;}
+.zyyw .list-items{color: #645b58;margin-top: 70px;position: relative;}
 .zyyw .list-items a{color: #645b58}
 .zyyw .list-items .item-first{background-color: #f4f4f4;padding:0 10px;margin-top: 18px;}
 .zyyw .list-items .item-first .t{padding: 0 14px;font-size: 18px;color: #0062B2;display: block;border-bottom: 1px dotted #808080;line-height: 54px;height: 54px;}
@@ -46,7 +46,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .news-list li h4{height:105px;width:125px; font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;float:left;font-weight:500;}
 .zyyw .news-list li p{font-size:12.5px;color:#999999;line-height: 22px;}
 .zyyw .news-list li:hover span{width:840px;}
-.zyyw .news-list li:hover h3{color:#26a2ae;background:url("http://www.bgy.com.cn/images/news-list-on.png") no-repeat right center;}
+.zyyw .news-list li:hover h3{color:#116fb9;background:url("http://www.bgy.com.cn/images/news-list-on.png") no-repeat right center;}
 .zyyw .news-list .avatar{display: block;width: 360px;height: 100%;overflow: hidden;position: absolute;top: 0;left: -362px;}
 .zyyw .news-list .avatar img{width: 100%;}
 
@@ -54,9 +54,45 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw  .news-title .news-title-img{width:360px;height:220px;float:left;overflow:hidden;}
 .zyyw  .news-title .news-title-img img{width:100%;}
 .zyyw  .news-title .news-title-con{width:760px;height:220px;padding:0 40px;float:left;background:#f4f4f4;}
-.zyyw  .news-title .news-title-con h3{font-size:16px;color:#0e98a5;padding:30px 0 8px 0;}
+.zyyw  .news-title .news-title-con h3{font-size:16px;color:#116fb9;padding:30px 0 8px 0;}
 .zyyw  .news-title .news-title-con h4{font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;padding-bottom:20px;}
 .zyyw  .news-title .news-title-con p{font-size: 12.5px;color:#999999;line-height: 22px;}
+
+.news-select {
+	width: 260px;
+	height: 55px;
+	margin-top: 10px;
+	padding-right: 58px;
+	position: relative;
+	position: relative;
+	border: 2px #dfdfdf solid;
+	background: url(../imgs/news-down.jpg) no-repeat right center;
+	cursor: pointer;
+}
+.news-select ul {
+	width: 318px;
+	padding: 10px 0;
+	position: absolute;
+	left: -2px;
+	top: 55px;
+	display: none;
+	z-index: 100;
+	max-height: 200px;
+	overflow-y: auto;
+	border: 2px #dfdfdf solid;
+}
+.news-select li {
+	padding: 10px 0px 10px 10px;
+	font-size: 14px;
+	color: #666666;
+	-webkit-transition: all .3s;
+	transition: .3s;
+}
+.news-select li:hover{background:#dfdfdf;color:#116fb9;}
+.news-select li:hover a{color:#116fb9;}
+.news-selectbox{position: absolute;top: 250px;}
+.news-select input{font-size: 16px;line-height: 54px;text-indent: 19px;}
+
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
 	.container{width:960px;}

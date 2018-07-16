@@ -36,7 +36,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about .item-wrapper{font-size: 0;text-align: center;margin-top: 55px;}
 .about .item-wrapper .item{display: inline-block;width: 238px;background-color:  #ffffff;border: 1px solid #d7d7d7;text-align: center;height: 348px;margin: 0 30px;vertical-align: bottom;}
 .about .item-wrapper .item .mn{text-align: left;display: inline-block;}
-.about .item-wrapper .item .img{margin-top: 56px;}
+.about .item-wrapper .item .img{margin-top: 56px;width: 120px;height: 110px;}
 .about .item-wrapper .item .tit{font-size: 16px;margin-top: 50px;}
 .about .item-wrapper .item .nm{font-size: 14px;margin-top: 12px;}
 .about .item-wrapper .item .mobile{font-size: 12px;margin-top: 15px;}

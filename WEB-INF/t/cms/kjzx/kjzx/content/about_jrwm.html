@@ -86,11 +86,14 @@
         <div>${txt!}</div>
       </div>
       <div class="ad-wrapper">
-        <a href="${base}/kjzx/yjzs/336.jhtml"><img src="/${res}/imgs/ad-3.png"/></a>
-        <!--<div><a href="${base}/kjzx/zyyw/340.jhtml"><img src="/${res}/imgs/ad-2.png"/></a></div>
-        <div><a href="${base}/kjzx/zyyw/337.jhtml"> <img src="/${res}/imgs/ad-3.png"/></a></div>-->
-        <a href="${base}/kjzx/yjzs/335.jhtml"><img src="/${res}/imgs/ad-2.png"/></a>
-        <div><img src="/${res}/imgs/ad-1.png"/></div>
+        [@cms_content_page recommend='1' orderBy='22' channelId='233' count=3 channelOption='0'
+        dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
+        [#list tag_pagination.list as a]
+        <a href="${a.url}">
+          <img src="${a.titleImg!site.defImg}"/>
+        </a>
+        [/#list]
+        [/@cms_content_page]
       </div>
     </div>
   </div>
