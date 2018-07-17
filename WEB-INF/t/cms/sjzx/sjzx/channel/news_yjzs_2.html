@@ -86,10 +86,15 @@
                 <div class="news-select" name="layout-select" id="news-select" data_role="0">
                     <input value="请选择..." id="select" readonly="readonly" type="text">
                     <ul class="select-list">
-                        <li><a href="">绩效评价</a></li>
-                        <li>科技专项</li>
-                        <li>高企认定</li>
-                        <li>多元审计</li>
+                        [@cms_channel_list parentId=channel.parentId]
+                        [#list tag_list as c2]
+                        <li>
+                            <a href="${c2.url}" class="[#if c2.id == channel.id]active[/#if]">
+                                ${c2.name}
+                            </a>
+                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
                     </ul>
                 </div>
             </div>
@@ -100,12 +105,12 @@
                     var role = $(this).attr('data_role');
                         if (role==0)
                     {
-                        $(this).children(".select-list").slideDown(1000);
+                        $(this).children(".select-list").slideDown(500);
                         $(this).attr('data_role','1');
                     }
                     else
                     {
-                        $(this).children(".select-list").slideUp(1000);
+                        $(this).children(".select-list").slideUp(500);
                         $(this).attr('data_role','0');
                     }
 
