@@ -106,6 +106,16 @@
                         [#list tag_list as c2]
                         [#if c2_index == 0]
                         <div class="tab-cnt-item active" id="div_${c2.id}">
+                            <div class="indexnews">
+                                <ul>
+                                    [@cms_content_list channelId=c.id count='3' titLen='17' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
+                                    [#list tag_list as a]
+                                    <li><a href="${a.url}" class="">[@text_cut s=a.title len=titLen append=append/]</a></li>
+                                    [/#list]
+                                    [/@cms_content_list]
+                                </ul>
+                                <a href="${base}/zcpg/qyjzpg/index.jhtml" class="yejiinput">更多业绩</a>
+                            </div>
                             <div class="listbanner">
                                 <div class="item-w clearfix">
                                     <div class="item-cnt clearfix" id="listitemCnt2">
@@ -131,14 +141,24 @@
                         [/#if]
                         [#if c.id == 218]
                         <div class="tab-cnt-item" id="div_${c.id}">
+                            <div class="indexnews">
+                                <ul>
+                                    [@cms_content_list channelId=c.id count='3' titLen='17' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
+                                    [#list tag_list as a]
+                                    <li><a href="${a.url}" class="">[@text_cut s=a.title len=titLen append=append/]</a></li>
+                                    [/#list]
+                                    [/@cms_content_list]
+                                </ul>
+                                <a href="${base}/zcpg/qyjzpg/index.jhtml" class="yejiinput">更多业绩</a>
+                            </div>
                             <div class="listbanner">
                                 <div class="item-w clearfix">
                                     <div class="item-cnt clearfix" id="listitemCnt">
-                            [@cms_content_list channelId=c.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
-                            [#list tag_list as a]
+                                        [@cms_content_list channelId=c.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']
+                                        [#list tag_list as a]
                                         <a href="${a.url}" class="item" style="background-image: url(${a.titleImg!});"></a>
-                            [/#list]
-                            [/@cms_content_list]
+                                        [/#list]
+                                        [/@cms_content_list]
                                     </div>
                                     <div class="progress-bar" id="listprogressBar">
                                         [@cms_content_list channelId=c.id count='3' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' recommend='1']

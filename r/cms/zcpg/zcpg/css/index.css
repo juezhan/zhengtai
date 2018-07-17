@@ -33,8 +33,8 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .banner .item-w .item-cnt:after{display: block;content: '';padding-top: 28%;}
 .index .banner .item-w .item.on{opacity: 1;z-index: 9}
 
-.index .news .listbanner {border-top: 2px solid #293896;}
-.index .news .listbanner{background: no-repeat 50% 0;position: relative;}
+.index .news .listbanner {}
+.index .news .listbanner{background: no-repeat 50% 0;position: relative;width: 194px;display: inline-block;right: 0;}
 .index .news .listbanner .container{height: 100%;position: relative;}
 .index .news .listbanner .arrow{width: 30px;height: 55px;position: absolute;background:0 0 no-repeat;top: 50%;margin-top: -28px;cursor: pointer;z-index: 99}
 .index .news .listbanner .arrow-r{background-image: url('../imgs/arrow-r.png');right: 50px;}
@@ -54,16 +54,21 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .news .news-wrapper{display: flex;}
 .index .news .news-list{flex: 1;}
 .index .news .tab-wrapper{}
-.index .news .tab-tag{}
+.index .news .tab-tag{border-bottom: 2px solid #293896;}
 .index .news .tab-tag:after{content: '';display: block;clear: both;}
 .index .news .tab-tag-item{position: relative;float: left;font-size: 13px;height: 20px;line-height: 20px;padding-bottom: 11px;cursor: pointer;font-weight: bold;}
 .index .news .tab-tag-item:after{display: block;position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background-color: #e80009;content: '';visibility: hidden;}
 .index .news .tab-tag-item + .tab-tag-item{margin-left: 22px;}
 .index .news .tab-cnt{}
+.index .news .tab-cnt .indexnews{width: 300px;display: inline-block;}
+.index .news .tab-cnt .indexnews ul li{padding: 10px;}
+.index .news .tab-cnt .indexnews ul>:first-child a{color: #0b69b7;font-size: 16px;}
+.index .news .tab-cnt .indexnews ul a:hover{color: #0b69b7;text-decoration: underline}
+.index .news .tab-cnt .indexnews .yejiinput{background-color: #ffa61a;color: #fff;font-size: 12px;border-radius: 10px;width: 80px;height:26px;line-height:26px;margin-left:200px;display: inline-block;text-align: center;}
 .index .news .tab-cnt-item{display: none;}
 .index .news .tab-tag-item.active{}
 .index .news .tab-tag-item.active:after{visibility: visible;}
-.index .news .tab-cnt-item.active{display: block;}
+.index .news .tab-cnt-item.active{display:block;}
 .index .news .tit{font-size: 24px;line-height: 24px;margin: 24px 0 28px;}
 .index .news .txt{font-size: 14px;line-height: 25px;}
 .index .news .txt a{color: #e80009}
