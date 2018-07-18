@@ -375,6 +375,8 @@ img {
     padding: 10px;
     width: 135px;
 }
+.index .w-2 .tag-tt .item.active:after{visibility: visible;z-index: 9;}
+.index .w-2 .tab-bd .item.active{display: block}
 
 /*@media screen and (min-width: 1620px) {
     .container {

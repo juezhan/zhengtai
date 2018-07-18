@@ -106,57 +106,35 @@
                 <div class="news_area_bd">
                     <div class="item active">
                         <ul class="news_l clearfix">
-                            <li>
-                                <span>2018-06-06</span>
-                                <a href="#" title="科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知" class="list">科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知 </a>
-                            </li>
-                            <li>
-                                <span>2018-06-06</span>
-                                <a href="#" title="科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知" class="list">科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知 </a>
-                            </li>
-                            <li>
-                                <span>2018-06-06</span>
-                                <a href="#" title="科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知" class="list">科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知 </a>
-                            </li>
-                            <li>
-                                <span>2018-06-06</span>
-                                <a href="#" title="科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知" class="list">科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知 </a>
-                            </li>
-                            <li>
-                                <span>2018-06-06</span>
-                                <a href="#" title="科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知" class="list">科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知 </a>
-                            </li>
-                            <li>
-                                <span>2018-06-06</span>
-                                <a href="#" title="科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知" class="list">科技部关于发布国家磁约束核聚变能发展研究专项2018年度项目申报指南的通知 </a>
-                            </li>
+                            [@cms_content_page channelId='384' count='10' titLen='40' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1' ]
+                                    [#list tag_pagination.list as a]
+                                    <li>
+                                        <span>${a.date?string(dateFormat)}</span>
+                                        <a title="${a.title}" class="list" href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
+                                    </li>
+                                    [/#list]
+
+                            <link href="/${res}/css/pagination.css" rel="stylesheet"/>
+                            <div class="pagination">[@cms_pagination sysPage='1'/]</div>
+                            [/@cms_content_page]
                         </ul>
-                        <div class="list_bottom clearfix"><a href="#" class="more">更多&gt;&gt;</a></div>
+                       <!-- <div class="list_bottom clearfix"><a href="#" class="more">更多&gt;&gt;</a></div>-->
                     </div>
                     <div class="item">
                         <ul class="news_l clearfix">
+                            [@cms_content_page channelId='385' count='10' titLen='40' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1' ]
+                            [#list tag_pagination.list as a]
                             <li>
-                                <span>2018-04-09</span>
-                                <a href="#" title="国家重点研发计划项目决算报表(2018) " class="list">国家重点研发计划项目决算报表(2018) </a>
+                                <span>${a.date?string(dateFormat)}</span>
+                                <a title="${a.title}" class="list" href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
                             </li>
-                            <li>
-                                <span>2018-04-09</span>
-                                <a href="#" title="国家重点研发计划项目决算报表(2018) " class="list">国家重点研发计划项目决算报表(2018) </a>
-                            </li>
-                            <li>
-                                <span>2018-04-09</span>
-                                <a href="#" title="国家重点研发计划项目决算报表(2018) " class="list">国家重点研发计划项目决算报表(2018) </a>
-                            </li>
-                            <li>
-                                <span>2018-04-09</span>
-                                <a href="#" title="国家重点研发计划项目决算报表(2018) " class="list">国家重点研发计划项目决算报表(2018) </a>
-                            </li>
-                            <li>
-                                <span>2018-04-09</span>
-                                <a href="#" title="国家重点研发计划项目决算报表(2018) " class="list">国家重点研发计划项目决算报表(2018) </a>
-                            </li>
+                            [/#list]
+
+                            <link href="/${res}/css/pagination.css" rel="stylesheet"/>
+                            <div class="pagination">[@cms_pagination sysPage='1'/]</div>
+                            [/@cms_content_page]
                         </ul>
-                        <div class="list_bottom clearfix"><a href="#" class="more">更多&gt;&gt;</a></div>
+                        <!--<div class="list_bottom clearfix"><a href="#" class="more">更多&gt;&gt;</a></div>-->
                     </div>
                 </div>
             </div>
