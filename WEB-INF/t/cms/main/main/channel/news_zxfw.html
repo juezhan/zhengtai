@@ -147,7 +147,6 @@
             <script>
               $('#newsArea>.news_area_tt>.item').click(function () {
                 var currentIndex = $(this).addClass('active').siblings().removeClass('active').end().index();
-                console.log('currentIndex', currentIndex)
                 $('#newsArea>.news_area_bd>.item').eq(currentIndex).addClass('active').siblings().removeClass('active');
               });
             </script>
