@@ -106,27 +106,33 @@
                 <div class="news_area_bd">
                     <div class="item active">
                         <ul class="news_l clearfix">
-                            [@cms_content_page channelId='384' count='10' titLen='40' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1' ]
-                                    [#list tag_pagination.list as a]
-                                    <li>
-                                        <span>${a.date?string(dateFormat)}</span>
-                                        <a title="${a.title}" class="list" href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
-                                    </li>
-                                    [/#list]
+                            [@cms_content_page channelId='384' count='10' titLen='40' append='...' orderBy='4'
+                            dateFormat='yyyy-MM-dd' channelOption='1' ]
+                            [#list tag_pagination.list as a]
+                            <li>
+                                <span>${a.date?string(dateFormat)}</span>
+                                <a title="${a.title}" class="list" href="javascript:void(0);"
+                                   onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')"
+                                   target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
+                            </li>
+                            [/#list]
 
                             <link href="/${res}/css/pagination.css" rel="stylesheet"/>
                             <div class="pagination">[@cms_pagination sysPage='1'/]</div>
                             [/@cms_content_page]
                         </ul>
-                       <!-- <div class="list_bottom clearfix"><a href="#" class="more">更多&gt;&gt;</a></div>-->
+                        <!-- <div class="list_bottom clearfix"><a href="#" class="more">更多&gt;&gt;</a></div>-->
                     </div>
                     <div class="item">
                         <ul class="news_l clearfix">
-                            [@cms_content_page channelId='385' count='10' titLen='40' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1' ]
+                            [@cms_content_page channelId='385' count='10' titLen='40' append='...' orderBy='4'
+                            dateFormat='yyyy-MM-dd' channelOption='1' ]
                             [#list tag_pagination.list as a]
                             <li>
                                 <span>${a.date?string(dateFormat)}</span>
-                                <a title="${a.title}" class="list" href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
+                                <a title="${a.title}" class="list" href="javascript:void(0);"
+                                   onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')"
+                                   target="_blank">[@text_cut s=a.title len=titLen append=append/]</a>
                             </li>
                             [/#list]
 
@@ -139,10 +145,11 @@
                 </div>
             </div>
             <script>
-                $('#newsArea>.news_area_tt>.item').click(function () {
-                  var currentIndex = $(this).addClass('active').siblings().removeClass('active').index();
-                  $('#newsArea>.news_area_bd>.item').eq(currentIndex).addClass('active').siblings().removeClass('active');
-                });
+              $('#newsArea>.news_area_tt>.item').click(function () {
+                var currentIndex = $(this).addClass('active').siblings().removeClass('active').end().index();
+                console.log('currentIndex', currentIndex)
+                $('#newsArea>.news_area_bd>.item').eq(currentIndex).addClass('active').siblings().removeClass('active');
+              });
             </script>
         </div>
     </div>
