@@ -54,17 +54,17 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .news .news-wrapper{display: flex;}
 .index .news .news-list{flex: 1;}
 .index .news .tab-wrapper{}
-.index .news .tab-tag{border-bottom: 2px solid #293896;}
+.index .news .tab-tag{border-bottom: 2px solid #293896;height: 29px;}
 .index .news .tab-tag:after{content: '';display: block;clear: both;}
 .index .news .tab-tag-item{position: relative;float: left;font-size: 13px;height: 20px;line-height: 20px;padding-bottom: 11px;cursor: pointer;font-weight: bold;}
 .index .news .tab-tag-item:after{display: block;position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background-color: #e80009;content: '';visibility: hidden;}
 .index .news .tab-tag-item + .tab-tag-item{margin-left: 22px;}
 .index .news .tab-cnt{}
-.index .news .tab-cnt .indexnews{width: 300px;display: inline-block;}
+.index .news .tab-cnt .indexnews{width: 450px;display: inline-block;}
 .index .news .tab-cnt .indexnews ul li{padding: 10px;}
 .index .news .tab-cnt .indexnews ul>:first-child a{color: #0b69b7;font-size: 16px;}
 .index .news .tab-cnt .indexnews ul a:hover{color: #0b69b7;text-decoration: underline}
-.index .news .tab-cnt .indexnews .yejiinput{background-color: #ffa61a;color: #fff;font-size: 12px;border-radius: 10px;width: 80px;height:26px;line-height:26px;margin-left:200px;display: inline-block;text-align: center;}
+.index .news .tab-cnt .indexnews .yejiinput{background-color: #ffa61a;color: #fff;font-size: 12px;border-radius: 10px;width: 80px;height:26px;line-height:26px;margin-left:356px;display: inline-block;text-align: center;}
 .index .news .tab-cnt-item{display: none;}
 .index .news .tab-tag-item.active{}
 .index .news .tab-tag-item.active:after{visibility: visible;}
@@ -74,7 +74,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .news .txt a{color: #e80009}
 .index .news .txt .move-arrow{font-family: '宋体'}
 
-.index .news .news-ad{margin-left: 30px;width: 667px;height: 189px;}
+.index .news .news-ad{margin-left: 30px;width: 508px;height: 189px;}
 .index .news .news-ad .items{display: flex;justify-content: center;margin-top: 106px;}
 .index .news .news-ad .item{display: block;float: left;width: 100px;text-align: center;margin: 0 10px;}
 .index .news .news-ad .item em{width: 46px;height: 46px;display: block;margin: 0 auto 13px;background: 50% 50% no-repeat;}
