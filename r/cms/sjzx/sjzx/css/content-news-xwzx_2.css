@@ -82,11 +82,17 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	border: 2px #dfdfdf solid;
 }
 .news-select li {
-	padding: 10px 0px 10px 10px;
 	font-size: 14px;
 	color: #666666;
 	-webkit-transition: all .3s;
 	transition: .3s;
+}
+.news-select li a{
+	color: #645b58;
+	width: 100%;
+	display: inline-block;
+	padding: 10px 0px 10px 0px;
+	text-indent: 10px;
 }
 .news-select li:hover{background:#dfdfdf;color:#116fb9;}
 .news-select li:hover a{color:#116fb9;}
