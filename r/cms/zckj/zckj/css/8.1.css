@@ -56,9 +56,9 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
     animation-delay:2s;}
 .news_81 .indexconterbg .indexconter .item_b .bleft h1{font-size: 30px;padding: 20px 0;}
 .news_81 .indexconterbg .indexconter .item_b .bleft ul li{display: block;line-height: 40px;font-size: 20px;}
-.news_81 .indexconterbg .indexconter .item_c{padding-top: 156px;width: 1200px;margin: auto;}
+.news_81 .indexconterbg .indexconter .item_c{padding-top: 156px;width: 1200px;margin: auto;position: relative;}
 .news_81 .indexconterbg .indexconter .item_c .aflontimg{display: inline-block;margin-left: 80px;width: 450px;vertical-align: middle;}
-.news_81 .indexconterbg .indexconter .item_c .itemlist{display: inline-block;width: 360px;color: #fff;margin-left: 150px;vertical-align: middle;}
+.news_81 .indexconterbg .indexconter .item_c .itemlist{width: 360px;color: #fff;margin-left: 150px;vertical-align: middle;position: absolute;right: 140px;top: 316px;}
 .news_81 .indexconterbg .indexconter .item_c h1{font-size: 30px;padding: 20px 0;color: #fff;}
 .news_81 .indexconterbg .indexconter .item_c p{line-height: 30px;font-size: 14px;color: #fff;}
 .news_81 .indexconterbg .indexconter .item_c .ewmimg{text-align: right;}
@@ -67,3 +67,5 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .news_81 .indexconterbg .indexconter .item_c .itemlist h2{font-size: 20px;}
 .news_81 .indexconterbg .indexconter .item_c .weiimg{text-align: right;padding-top: 30px;}
 .news_81 .indexconterbg .indexconter .item_c .weiimg img{margin: 0 5px;}
+.option{display: none}
+.optionone{opacity: 1}

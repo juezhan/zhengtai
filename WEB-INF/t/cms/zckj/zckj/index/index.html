@@ -21,8 +21,20 @@
   <div class="banner">
     <img src="/${res}/imgs/index_banner.png" alt="" class="bannerimg">
   </div>
-  <div class="container animated bounceInLeft">
+  <div class="container wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="5"  data-wow-iteration="1">
     <ul class="nav_ul">
+        [@cms_channel_list]
+        [#list tag_list as c]
+      <li><a href="${c.url}">
+        <div class="nav_item">
+          <img src="${c.titleImg!}" alt="">
+          <div class="nav_tit">${c.name}</div>
+        </div>
+      </a></li>
+        [/#list]
+        [/@cms_channel_list]
+    </ul>
+    <!--<ul class="nav_ul">
       <li><a href="">
         <div class="nav_item">
           <img src="/${res}/imgs/index_nav1.png" alt="">
@@ -53,7 +65,7 @@
           <div class="nav_tit">政策</div>
         </div>
       </a></li>
-    </ul>
+    </ul>-->
   </div>
   <div class="indexconterbg" style="background: url(/${res}/imgs/index_bg.jpg) no-repeat center">
     <div class="indexconter">
@@ -73,28 +85,33 @@
         </div>
       </div>
       <div class="item_b">
-        <div class="bright">
-          <div class="it1 animated bounceInLeft">
-            <img src="/${res}/imgs/b1.png" alt="">
-            <img src="" alt="">
+        <div class="bright" id="bright">
+          <div class="it it1 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="3"  data-wow-iteration="1">
+            <img src="/${res}/imgs/b1.png" alt="" class="zsimg">
+            <img src="/${res}/imgs/b11.png" alt="" class="option">
           </div>
-          <div class="it2 animated bounceInRight">
-            <img src="/${res}/imgs/b2.png" alt="">
+          <div class="it it2 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="3"  data-wow-iteration="1">
+            <img src="/${res}/imgs/b2.png" alt="" class="zsimg">
+            <img src="/${res}/imgs/b22.png" alt="" class="option">
           </div>
-          <div class="it3 animated bounceInLeft">
-            <img src="/${res}/imgs/b3.png" alt="">
+          <div class="it it3 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="3"  data-wow-iteration="1">
+            <img src="/${res}/imgs/b3.png" alt=""  class="zsimg">
+            <img src="/${res}/imgs/b33.png" alt="">
           </div>
-          <div class="it4 animated bounceInRight">
-            <img src="/${res}/imgs/b4.png" alt="">
+          <div class="it it4 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="3"  data-wow-iteration="1">
+            <img src="/${res}/imgs/b4.png" alt="" class="zsimg">
+            <img src="/${res}/imgs/b44.png" alt="">
           </div>
-          <div class="it5 animated bounceInLeft">
-            <img src="/${res}/imgs/b5.png" alt="">
+          <div class="it it5 wow bounceInLeft" data-wow-duration="1s" data-wow-delay="2s" data-wow-offset="3"  data-wow-iteration="1">
+            <img src="/${res}/imgs/b5.png" alt="" class="zsimg">
+            <img src="/${res}/imgs/b55.png" alt="">
           </div>
-          <div class="it6 animated bounceInRight">
-            <img src="/${res}/imgs/b6.png" alt="">
+          <div class="it it6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s" data-wow-offset="3"  data-wow-iteration="1">
+            <img src="/${res}/imgs/b6.png" alt="" class="zsimg">
+            <img src="/${res}/imgs/b66.png" alt="">
           </div>
         </div>
-        <div class="bleft animated ">
+        <div class="bleft wow bounceInUp" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="3"  data-wow-iteration="1">
             <h1>松江漕河泾一期</h1>
             <ul>
               <li>12个开放工作位</li>
@@ -107,13 +124,33 @@
             </ul>
         </div>
       </div>
+      <script>
+          $(document).ready(function(){
+
+                  $(".zsimg").hover(function(){
+                     /* timer = setTimeout(function(){
+
+                      },300);*/
+                      $(this).addClass('option');
+                      $(this).siblings().removeClass('option');
+                     /* $(this).hide();
+                      $(this).siblings().show();*/
+              },function () {
+                     /* clearTimeout(timer);*/
+                      $(this).removeClass('option');
+                      $(this).siblings().addClass('option');
+                      /*$(this).show();
+                      $(this).siblings().hide();*/
+                  })
+          });
+      </script>
       <div class="item_c">
-        <div class="aflontimg">
+        <div class="aflontimg wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="3"  data-wow-iteration="1">
           <h1>关于正泰</h1>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吉林正泰众创空间是以吉林正泰工程咨询有限公司、吉林东方卓达科技咨询公司、吉林正泰会计师事物所有限公司、吉林正泰资产评估有限公司为基础，以长春净月高新技术产业开发区、长春北湖科技园、国家技术转移东北中心、吉林省科技大市场等入驻企业为主要服务对象，并与吉林大华铭仁律师事务所、吉林省天邦青华知识产权运营服务有限公司、长春科技金融创新服务中心、长春广源小额贷款有限责任公司等建立了长期合作关系，为科技型企业和创新创业者应用新技术、开发新产品、开拓新市场、培育新业态建立的新型创新创业服务平台。 </p>
           <div class="ewmimg"><img src="/${res}/imgs/erweima.jpg" alt=""></div>
         </div>
-        <div class="itemlist">
+        <div class="itemlist wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="3"  data-wow-iteration="1">
           <h2>0431-81961806</h2>
           <ul>
             <li>工作时间：8：30～16:30（周一～周五）</li>
@@ -128,7 +165,10 @@
     </div>
   </div>
 
-
+  <script src="/${res}/js/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
 [#include "../include/bottom.html"/]
 </body>
 </html>
