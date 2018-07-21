@@ -67,4 +67,8 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .news_81 .indexconterbg .indexconter .item_c .itemlist h2{font-size: 20px;}
 .news_81 .indexconterbg .indexconter .item_c .weiimg{text-align: right;padding-top: 30px;}
 .news_81 .indexconterbg .indexconter .item_c .weiimg img{margin: 0 5px;}
-.option{display: none}
+
+.bright .it .img-a{}
+.bright .it .img-b{display: none}
+.bright .it:hover .img-a{display: none}
+.bright .it:hover .img-b{display: block}
