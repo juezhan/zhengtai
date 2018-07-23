@@ -77,3 +77,41 @@ p {margin: 0 0 10px;}
 .news_810 .list-sidebar .consult {}
 .news_810 .list-sidebar .consult .consult-text {}
 .news_810 .list-sidebar .consult .consult-qrcode {}
+
+.news_810{background-color: #f2f7fb;}
+.clearf {content: "";display: block;clear: both;}
+.hdkaishi{width: 1200px;margin: auto;}
+.container{width:100%;}
+.weizhi1{width: 100%;height: 20px; margin-top:100px;position: relative;font-size: 16px;}
+.weizhi1 a{color: rgb(0,104,175)}
+.suozai{float: left;color: black;}
+.shouye{float: left;}
+.wenzi{color: black}
+.huodong{width: 100%;height: 35px;margin-top: 20px;text-align: center;font-size: 24px;position: relative;display: block;}
+.xiahuaxian{width: 50px;height: 30px;margin: 0px 47% 20px 47%;}
+.zhongti{width: 100%;margin-top: 40px;}
+.zongui{width: 100%;margin-top: 10px;}
+.wenziti{width: 100%;}
+.tupiankuang{width: 100%; }
+.biaoqian{width: 48%;display: inline-block;}
+.yuefen{width: 15%;height: 117px;}
+.tukuangti{margin-left: 100px;margin-top: -110px;width: 80%;}
+.jieshao{font-size: 18px ;width: 80%}
+.jieshao2{width: 70%;margin-left: 68px;}
+p{color: black;}
+.xiangqing{margin: 40px 100px;width: 150px;}
+.chakan{width: 80px;height: 30px;border: 1px solid rgb(0,104,175);padding: 10px 25px;border-radius: 25px;}
+.huodongdatu{width: 100%;height: 402px;}
+.dibu{width: 100%; margin-top: 20px;}
+.dibili{width: 31%;height: 380px;border:1px solid rgb(160,160,160);display: inline-block;margin: 15px 12px;}
+.dibuyi{width: 100%;height: 247px;}
+.dibuxia{width: 100%;height: 131px;}
+.peixun{width: 90%;margin:15px auto;height: 50px;border-bottom: 1px solid rgb(160,160,160); font-size: 16px;}
+.huodonggengduo{width: 90%;margin: 25px auto;}
+.xiangqingwenzi{float: left;color: black;}
+.jiantou{width: 50px;height: 15px;float: right;padding-left: -3px;}
+@media screen and (max-width: 1119px) and (min-width: 769px) {
+    .container {width: 1000px;margin:0 4px 0 20px;}
+    .dibili{margin: 15px 5px;}
+
+}
