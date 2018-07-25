@@ -73,12 +73,12 @@
                                 <img src="/${res}/imgs/xqimg1.jpg" alt="">
                             </div>
                             <div class="item-head-text">
-                                <h3 class="title">2017年浦东新区“小微企业创业创新基地城市示范”专项资金项目（第二批）</h3>
+                                <h3 class="title">${content.title}</h3>
                                 <p class="attribute">
-                                    申报时间：2017-09-11到2017-09-30 申报时间：2017-09-11到2017-09-30 申报时间：2017-09-11到2017-09-30 申报时间：2017-09-11到2017-09-30 申报时间：2017-09-11到2017-09-30 申报时间：2017-09-11到2017-09-30 申报时间：2017-09-11到2017-09-30
+                                    [@text_cut s=content.description len='140' append='...'/]
                                 </p>
                                 <ul class="identifying">
-                                    <li>政策</li>
+                                    <li>${content.tagStr!}</li>
                                     <li>科技企业</li>
                                     <li>孵化器</li>
                                     <li>众创空间</li>
@@ -89,8 +89,7 @@
                     <img src="/${res}/imgs/zzxqline.png" alt="" class="imgline">
                     <div>
                         <div class="text text-large fr-view">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;为了贯彻落实国家“小微企业创业创新基地城市示范”工作目标和要求，进一步激发小微企业发展活力，积极开创
-                                “大众创业、万众创新”的新局面，浦东新区政府设立“小微企业创业创新基地城市示范”专项资金。</p>
+                            <p><div class="content">${txt!}</div></p>
                         </div>
                         <img src="/${res}/imgs/xqline.png" alt="" class="imgline">
                     </div>
@@ -102,7 +101,6 @@
                                 <a href="#">附件1支持事项.docx</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -111,18 +109,16 @@
                     <div class="sidebar-list-container" style="">
                         <h4 class="title">其他政策</h4>
                         <ul class="sidebar-list">
+                            [@cms_content_page channelId=channel.id count='2' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
+                            [#list tag_pagination.list as a]
                             <li class="sidebar-list-item">
-                                <a href="#" class="" target="_blank">
-                                    <img src="/${res}/imgs/xqimg2.jpg" alt="">
-                                    <h5 class="list-item-title overflow-hidden">关于开展吉林省科技型中小企业评价工作的通知</h5>
+                                <a href="${a.url}" class="" target="_blank">
+                                    <img src="${a.titleImg!}" alt="">
+                                    <h5 class="list-item-title overflow-hidden">[@text_cut s=a.title len=titLen append=append/]</h5>
                                 </a>
                             </li>
-                            <li class="sidebar-list-item">
-                                <a href="#" class="" target="_blank">
-                                    <img src="/${res}/imgs/xqimg2.jpg" alt="">
-                                    <h5 class="list-item-title overflow-hidden">关于开展吉林省科技型中小企业评价工作的通知</h5>
-                                </a>
-                            </li>
+                            [/#list]
+                            [/@cms_content_page]
                         </ul>
                     </div>
                 </div>
