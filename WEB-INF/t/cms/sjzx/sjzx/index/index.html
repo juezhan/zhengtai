@@ -75,21 +75,19 @@
         <div class="w-2">
             <div class="m-1">
                 <div class="mc-1" >
-                    [@cms_content_list count='1' orderBy='2' channelId='201' channelOption='1' dateFormat='yyyy.MM.dd' recommend='1' titLen='22']
+                    <div class="img-wrapper">
+                    [@cms_content_list count='2' orderBy='2' channelId='201' channelOption='1' dateFormat='yyyy.MM.dd' recommend='1' titLen='22']
                     [#list tag_list as a]
-                    <div class="news-title">
-                    <a href="${a.url}">
-                        <div class="news-title-img">
-                            <img src="${a.titleImg!}" alt="">
-                        </div>
-                        <div class="news-title-con">
-                            <span class="tittxt">[@text_cut s=a.title len=titLen append=append/]</span>
-                            <span class="data">${a.date?string(dateFormat)}</span>
-                        </div>
+                    <a href="${a.url}" class="news-title-img">
+                        <img src="${a.titleImg!}" alt="a.title">
                     </a>
-                    </div>
+                        [#if a_index == 0]
+                        <div class="line"></div>
+                        [/#if]
                     [/#list]
                     [/@cms_content_list]
+                    </div>
+                    <div class="txt-wrapper">
                     [@cms_content_list count='8' orderBy='23' channelId='201' channelOption='1' dateFormat='yyyy.MM.dd' titLen='22']
                     [#list tag_list as a]
                     <div class="news-title">
@@ -100,11 +98,16 @@
                             </div>
                         </a>
                     </div>
+                        [#if a_index == 3]
+                        <div class="line"></div>
+                        [/#if]
                     [/#list]
                     [/@cms_content_list]
+                    </div>
                 </div>
             </div>
-            <div class="m-2 m-1">
+            <div class="m-2">
+                <div class="m-1">
                 <div class="mc-1">
                     <div class="cells">
                         <a class="cell" href="${base}/sjzx/zyyw/index.jhtml#item1">
@@ -124,6 +127,7 @@
                             <p>多元审计</p>
                         </a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
