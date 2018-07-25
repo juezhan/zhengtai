@@ -80,7 +80,7 @@ img {
 }
 
 .column-item-zx .column-item-bd .slide-bar {
-    width: 250px;
+    width: 20%;
     font-size: 0;
     float: left;
 }
@@ -90,14 +90,16 @@ img {
 
 .column-item-zx .column-item-bd .slide-bar .menu-wrapper {
     border: 1px solid #a0a0a0;
+   margin: 0  0 20px 20px;
 }
 
 .column-item-zx .column-item-bd .slide-bar .menu-cell {
     font-size: 18px;
     display: block;
-    height: 78px;
-    line-height: 78px;
+    height: 76px;
+    line-height: 76px;
     text-align: center;
+
 }
 
 .column-item-zx .column-item-bd .slide-bar .menu-cell + .menu-cell {
@@ -119,12 +121,15 @@ img {
 
 .column-item-zx .column-item-bd .container {
     overflow: hidden;
+    width: 1200px;
+    background-color: white;
 }
 
 .column-item-zx .column-item-bd .box-wrapper {
     width: 917px;
     overflow: hidden;
     float: right;
+    margin: 22px 20px 0 0;
 }
 
 .column-item-zx .column-item-bd .box-wrapper .box {
@@ -249,7 +254,7 @@ img {
         box-sizing: border-box;
     }
     .column-item-zx .column-item-bd .slide-bar {
-        display: none;
+        display:none;
     }
     .column-item-zx .column-item-bd .box-wrapper {
         width: 98% !important;
@@ -263,4 +268,41 @@ img {
         margin: auto;
         margin-bottom: 30px;
     }
+}
+
+.jiuweitop{width: 100%;height: 200px;}
+.logo{width: 504px;height: 100px;position: absolute;margin: -150px 37.5% 0 37.5%;}
+.daohangkaishi{width: 100%;height: 50px;background-color: #070b50;}
+.daohangui{width: 1200px;margin: auto;}
+.daohangui li{width: 19%;padding: 16px 0;display: inline-block;font-size: 18px;text-align: center;}
+.daohangui a{width: 100px;height: 50px;color: white;}
+.daohangui li:hover{background-color: rgb(0,104,175);}
+.shouye{background-color: rgb(0,104,175);}
+.tit-logo{width: 220px;height: 123px;margin-left: 20px;margin-top: 20px; border-top: 1px solid #a0a0a0;}
+.jiuweidikuang{width: 100%;height: 700px}
+.dibu{margin-top: 50px;margin-left: 30%;font-size: 18px;width: 100%;height: 100px;position: absolute;}
+.dibuwenzi{margin-left: 10%;display: inline-block;margin-top: 10px;line-height: 50px;}
+@media screen and (max-width: 1119px) and (min-width: 769px) {
+    .container {width: 1000px;background-color: white;}
+    .logo{margin: -150px 25% 0 25%;}
+    .daohangui{width: 1000px;margin: auto;}
+    .column-item-zx .column-item-bd .box-wrapper {
+        width: 730px;overflow: hidden;float: left;margin-left: 20px;}
+
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item{
+        width: 305px;float: left;margin: 14px 20px;
+    }
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .img{
+        padding: inherit;z-index: 999;width: 140px;height: 140px;position: relative;overflow: hidden;}
+
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item-mn{
+        background-color: #f8f8f8;position: relative;width: 270px;margin-left: -140px;float: right;height: 140px;z-index: 1;
+        padding: 0 26px 0 106px;box-sizing: border-box;
+    }
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .tt{
+        font-size: 16px;text-align: center;color: #000000;margin-top: 16px;}
+    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .bd{
+        font-size: 10px;line-height: 14px;color: #999999;margin-top: 10px;margin-left: 10px;}
+    .dibu{margin-left: 10%;}
+    .dibuwenzi{text-align: center;}
 }
