@@ -155,8 +155,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .countdown .countdown-tt .item:hover:after{background-color: #dddddd;}
 .countdown .countdown-tt .item.active:after{background-color: #4f87d1;}
 .countdown .countdown-bd{}
-.countdown .countdown-bd .item{display: none;}
-.countdown .countdown-bd .item>img{max-width: 100%;display: block;margin: 0 auto;}
+.countdown .countdown-bd .item{display: none;padding: 6px 0}
+.countdown .countdown-bd .item>img{max-width: 100%;display: block;margin-left: 20px;}
 .countdown .countdown-bd .item.active {display: block;}
 
 .news_area{border:1px solid #dddddd;margin-top: 15px;padding: 0 20px;}
