@@ -24,7 +24,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
     margin-left: 33px;width: 630px;height: 390px;overflow: hidden;}
 .news_81 .indexconterbg .indexconter .item_a .itemlist{display: inline-block;width: 410px;color: #fff;margin-left: 50px;}
 .news_81 .indexconterbg .indexconter .item_a .itemlist h1{font-size: 30px;padding: 20px 0;}
-.news_81 .indexconterbg .indexconter .item_a .itemlist ul li{display: block;line-height: 40px;font-size: 20px;}
+.news_81 .indexconterbg .indexconter .item_a .itemlist ul li{display: block;line-height: 36px;font-size: 18px;}
 .news_81 .indexconterbg .indexconter .item_b{margin-top: 70px;position: relative;height: 1350px;}
 .news_81 .indexconterbg .indexconter .item_b .bright{position: absolute;right: 0;width: 800px;margin-left: 50px;top: 100px;}
 .news_81 .indexconterbg .indexconter .item_b .bright div{overflow: hidden;position: absolute;}
@@ -49,13 +49,9 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
     animation-name: bounceInRight;
     -webkit-animation-delay:2s;  /**延迟动画**/
     animation-delay:2s; }
-.news_81 .indexconterbg .indexconter .item_b .bleft{position: absolute;bottom: 226px;left: 92px;
-    -webkit-animation-name: fadeInUpBig;
-    animation-name: fadeInUpBig;
-    -webkit-animation-delay:2s;  /**延迟动画**/
-    animation-delay:2s;}
-.news_81 .indexconterbg .indexconter .item_b .bleft h1{font-size: 30px;padding: 20px 0;}
-.news_81 .indexconterbg .indexconter .item_b .bleft ul li{display: block;line-height: 40px;font-size: 20px;}
+.news_81 .indexconterbg .indexconter .item_b .bleft{position: absolute;bottom: 114px;left: 92px;width: 270px;-webkit-animation-name: fadeInUpBig;animation-name: fadeInUpBig;-webkit-animation-delay:2s;  /**延迟动画**/animation-delay:2s;}
+.news_81 .indexconterbg .indexconter .item_b .bleft h1{font-size: 24px;padding: 20px 0;}
+.news_81 .indexconterbg .indexconter .item_b .bleft ul li{display: block;line-height: 24px;font-size: 14px;}
 .news_81 .indexconterbg .indexconter .item_c{padding-top: 156px;width: 1200px;margin: auto;position: relative;}
 .news_81 .indexconterbg .indexconter .item_c .aflontimg{display: inline-block;margin-left: 80px;width: 450px;vertical-align: middle;}
 .news_81 .indexconterbg .indexconter .item_c .itemlist{width: 360px;color: #fff;margin-left: 150px;vertical-align: middle;position: absolute;right: 140px;top: 316px;}
@@ -70,5 +66,5 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 
 .bright .it .img-a{}
 .bright .it .img-b{display: none}
-.bright .it:hover .img-a{display: none}
-.bright .it:hover .img-b{display: block}
+/*.bright .it:hover .img-a{display: none}
+.bright .it:hover .img-b{display: block}*/

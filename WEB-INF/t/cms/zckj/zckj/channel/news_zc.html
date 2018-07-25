@@ -21,306 +21,31 @@
 <body class="news_815">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<!--<div class="ad-wrapper">
-    <div class="container">
-        <div class="ad-content">
-            <h1 class="title">众创政策空间</h1>
-            <form action="/policies/search" class="searchbar-container white-searchbar-container">
-                <input placeholder="请输入您想要搜索的政策名称或关键字" type="text" name="text" autocomplete="off" class="searchbar-text">
-                <button class="m-btn btn-primary btn-search">搜&nbsp;索</button>
-            </form>
-            <div class="searchbar-tag-container">
-                热门搜索：
-                <a href="#" class="">高企加分</a>
-                <a href="#" class="">高新技术企业</a>
-                <a href="#" class="">商标</a>
-                <a href="#" class="">软件著作权</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="news_810-w">
-        <div class="list-container clearfix">
-            <div class="list-wrapper">
-                <nav class="filter-container">-->
-                    <!--<h3>
-                        您的位置:<a href='${base}/'>首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
-                    </h3>-->
-                    <!--<article class="filter">
-                        <div class="filter-label">活动类型</div>
-                        <ul class="filter-items">
-                            <li class="filter-item">
-                                <div class="item-content active"><span class="no-limit">不限</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>展会论坛</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>互动沙龙</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>项目路演</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>培训讲座</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>走访考察</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>线上分享</span></div>
-                            </li>
-                            <li class="filter-item">
-                                <div class="item-content"><span>其他</span></div>
-                            </li>
-                        </ul>
-                        <div class="more" style="display: none;"><span class="m-icon"><i class="iconfont icon-more"></i></span>
-                        </div>
-                    </article>-->
-             <!--   </nav>
-                <div class="list-items">-->
-                    <!--<a href="#" class="list-item activity-during" target="_blank">
-                        <div class="list-item-wrapper">
-                            <div class="m-cover cover"
-                                 style="background-image: url(https://res2.maikeji.cn/Fq6reCfkIQ1Z9DZw1HtleEPTWNat);">
-                                <div class="cover-caption"></div>
-                            </div>
-                            <div class="list-item-content">
-                                <div>
-                                    <h4 class="list-item-title overflow-hidden">
-                                        2018 长江经济带互联网+绿色技术转移转化大会
-                                    </h4>
-                                    <p class="list-item-text brief-text">
-                                        简介：长江经济带11省市技术转移政府相关单位代表、知名企业、高校院所聚集上海，深化长江经济带区域创新协作，促进上海建设具有全球影响力科技创新中心建设。
-                                    </p>
-                                    <p class="list-item-text">
-                                        2018.06.15</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>-->
-                <!--    [@cms_content_page channelId=channel.id count='6' titLen='25' append='...' orderBy='1'
-                    dateFormat='yyyy-MM-dd' channelOption='1' ]
-                    [#list tag_pagination.list as a]
-                    <a href="${a.url}" class="list-item activity-during" target="_blank">
-                        <div class="list-item-wrapper">
-                            <div class="m-cover cover"
-                                 style="background-image: url(${a.titleImg!site.defImg});">
-                            </div>
-                            <div class="list-item-content">
-                                <div>
-                                    <h4 class="list-item-title overflow-hidden">
-                                        ${a.title}
-                                    </h4>
-                                    <p class="list-item-text brief-text">
-                                        ${a.desc}
-                                    </p>
-                                    <p class="list-item-text">
-                                        ${a.date?string(dateFormat)}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    [/#list]
-                    <div style="text-align: center">[@cms_pagination sysPage='1'/]</div>
-                    [/@cms_content_page]-->
-                <!--<a href="/activities/5b151363263ee3372df24aa5" class="list-item activity-during" target="_blank">
-                    <div class="list-item-wrapper">
-                        <div class="m-cover cover"
-                             style="background-image: url(https://res2.maikeji.cn/Fna39IHI8j8zaJ5q_zXHrO4ZjOTf);">
-                            <div class="cover-caption"></div>
-                        </div>
-                        <div class="list-item-content">
-                            <div><h4 class="list-item-title overflow-hidden">&lt;!&ndash;<span class="member-offer"></span>&ndash;&gt;第二届全国化工园区绿色发展高端论坛
-                            </h4>
-                                <p class="list-item-text">
-                                    活动时间：2018.07.26-2018.07.27</p>
-                                <p class="list-item-text brief-text">
-                                    简介：迈科技携手环保会开辟“技术转移服务”板块，解读国内中水处理的现状、分享中水处理的优质技术，在提升本次活动的参与感同时，更是为企业创新发展提供新...</p></div>
-                            &lt;!&ndash;<div class="btn-container">
-                                <button class="btn btn-primary">
-                                    我要报名
-                                </button>
-                                <div class="btn-caption" style="display: none;">
-
-                                </div>
-                            </div>&ndash;&gt;
-                        </div>
-                    </div>
-                </a>
-                <a href="/activities/5b1252c9263ee3372def2570" class="list-item activity-during" target="_blank">
-                    <div class="list-item-wrapper">
-                        <div class="m-cover cover"
-                             style="background-image: url(https://res2.maikeji.cn/FuJwKPJl5P5muDGHktr9XA2N5u2p);">
-                            <div class="cover-caption"></div>
-                        </div>
-                        <div class="list-item-content">
-                            <div><h4 class="list-item-title overflow-hidden"><span class="member-offer" style="display: none;"></span>全国第 39 次复混肥技术年会
-                            </h4>
-                                <p class="list-item-text">
-                                    活动时间：2018.06.11-2018.06.13</p>
-                                <p class="list-item-text brief-text">
-                                    简介：诚邀您参与全国复混（合）肥行业发展现状、国家政策趋势、企业转型对策等相关内容互动访谈和技术咨询。
-                                </p></div>
-                            &lt;!&ndash;<div class="btn-container">
-                                <button class="btn btn-primary">
-                                    我要报名
-                                </button>
-                                <div class="btn-caption" style="display: none;">
-
-                                </div>
-                            </div>&ndash;&gt;
-                        </div>
-                    </div>
-                </a>
-                <a href="/activities/5acf6180263ee34a0db9575e" class="list-item activity-during" target="_blank">
-                    <div class="list-item-wrapper">
-                        <div class="m-cover cover"
-                             style="background-image: url(https://res2.maikeji.cn/FhEXQAnCPiGF7tS18SR3vdexKjKK);">
-                            <div class="cover-caption"></div>
-                        </div>
-                        <div class="list-item-content">
-                            <div><h4 class="list-item-title overflow-hidden">&lt;!&ndash;<span class="member-offer"></span>&ndash;&gt;2018北美土壤修复技术专题培训讲座丨中国专场预告
-                            </h4>
-                                <p class="list-item-text">
-                                    活动时间：2018.06.11-2018.06.15</p>
-                                <p class="list-item-text brief-text">
-                                    简介：中国的土壤修复市场即将迎来爆发期，本次活动邀请6位国内外专家，进一步促进国内外专业技术人才交流，整合国内外优势资源，助推国际土壤修复项目合作。
-                                </p></div>
-                            &lt;!&ndash;<div class="btn-container">
-                                <button class="btn btn-primary">
-                                    我要报名
-                                </button>
-                                <div class="btn-caption">
-                                    （17人已报名）
-                                </div>
-                            </div>&ndash;&gt;
-                        </div>
-                    </div>
-                </a>
-                <a href="/activities/5b07a48a263ee303782c7d47" class="list-item activity-during" target="_blank">
-                    <div class="list-item-wrapper">
-                        <div class="m-cover cover"
-                             style="background-image: url(https://res2.maikeji.cn/FoFYEvKtQp_62X2VMNdQTg-PuRC2);">
-                            <div class="cover-caption"></div>
-                        </div>
-                        <div class="list-item-content">
-                            <div><h4 class="list-item-title overflow-hidden"><span class="member-offer" style="display: none;"></span>2018
-                                科创区（上海）投资推介会暨沪绵军民融合金融对接会
-                            </h4>
-                                <p class="list-item-text">
-                                    活动时间：2018.06.05-2018.06.07</p>
-                                <p class="list-item-text brief-text">
-                                    简介：此次活动以军民融合为重点方向，以绵阳为中心打造创新产业园区，推进长三角地区的招商引资工作。
-                                </p></div>
-                            &lt;!&ndash;<div class="btn-container">
-                                <button class="btn btn-primary">
-                                    我要报名
-                                </button>
-                                <div class="btn-caption" style="display: none;">
-
-                                </div>
-                            </div>&ndash;&gt;
-                        </div>
-                    </div>
-                </a>-->
-             <!--   </div>-->
-                <!--<nav aria-label="Page navigation" class="list-pagination">
-                    <ul class="pagination">&lt;!&ndash;&ndash;&gt;
-                        <li class="active"><a href="/activities?page=1" class="">1</a></li>
-                        <li class=""><a href="/activities?page=2" class="">2</a></li>
-                        <li class=""><a href="/activities?page=3" class="">3</a></li>
-                        <li class=""><a href="/activities?page=4" class="">4</a></li>
-                        <li class=""><a href="/activities?page=5" class="">5</a></li>
-                        <li class=""><a href="/activities?page=6" class="">6</a></li>
-                        <li class=""><a href="/activities?page=13" class="">...</a></li>
-                        <li class=""><a href="/activities?page=20" class="">20</a></li>
-                        <li><a href="/activities?page=2" class="" aria-label="Next"><span aria-hidden="true">下一页</span></a></li>
-                    </ul>
-                </nav>-->
-    <!--        </div>
-        </div>
-    </div>
-</div>-->
     <div class="zckaishi">
         <div class="container">
             <div class="weizhi1">
-                <a href="" ><span class="suozai">您现在所在的位置 ： </span></a><a href=""   class="shouye"/> <span class="wenzi">首页</span> > <a href="" rel="技术"/> 政策
+                <h3>
+                    您的位置:<a href='${base}/'>首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
+                </h3>
             </div>
             <div class="zcneirong">
                 <ul class="zcui">
+                    [@cms_content_page channelId=channel.id count='5' titLen='25' append='...' orderBy='2'
+                    dateFormat='yyyy-MM-dd' channelOption='1' len='2']
+                    [#list tag_pagination.list as a]
                     <li>
-                        <div class="tupian" style="background-image:url(/${res}/imgs/zctupian.png)"></div>
+                        <img src="${a.titleImg!site.defImg}" alt="" class="tupian" >
                         <div class="zcwenzi">
-                            <p class="biaoti">关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</p>
-                            <p class="zcjieshao">各市（州）科技局、长春新区科技委、国家级高新区科技局、各有关单位： 根据 《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、
-                                公式无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14 家单...<a href="">更多</a>
+                            <a href="${a.url}"><p class="biaoti"> ${a.title}</p></a>
+                            <p class="zcjieshao">[@text_cut s=a.desc len='122' append='...'/]<a href="${a.url}" class="zcmore">&lt更多&gt</a>
                             </p>
-                            <p class="zcriqi">2017 -12-18</p>
+                            <p class="zcriqi"> ${a.date?string(dateFormat)}</p>
                         </div>
                     </li>
-                    <li>
-                        <div class="tupian" style="background-image:url(/${res}/imgs/zctupian1.png)"></div>
-                        <div class="zcwenzi">
-                            <p class="biaoti">关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</p>
-                            <p class="zcjieshao">各市（州）科技局、长春新区科技委、国家级高新区科技局、各有关单位： 根据 《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、
-                                公式无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14 家单...<a href="">更多</a>
-                            </p>
-                            <p class="zcriqi">2017 -12-18</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tupian" style="background-image:url(/${res}/imgs/zctupian2.png)"></div>
-                        <div class="zcwenzi">
-                            <p class="biaoti">关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</p>
-                            <p class="zcjieshao">各市（州）科技局、长春新区科技委、国家级高新区科技局、各有关单位： 根据 《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、
-                                公式无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14 家单...<a href="">更多</a>
-                            </p>
-                            <p class="zcriqi">2017 -12-18</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tupian" style="background-image:url(/${res}/imgs/zctupian3.png)"></div>
-                        <div class="zcwenzi">
-                            <p class="biaoti">关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</p>
-                            <p class="zcjieshao">各市（州）科技局、长春新区科技委、国家级高新区科技局、各有关单位： 根据 《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、
-                                公式无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14 家单...<a href="">更多</a>
-                            </p>
-                            <p class="zcriqi">2017 -12-18</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="tupian" style="background-image:url(/${res}/imgs/zctupian4.png)"></div>
-                        <div class="zcwenzi">
-                            <p class="biaoti">关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</p>
-                            <p class="zcjieshao">各市（州）科技局、长春新区科技委、国家级高新区科技局、各有关单位： 根据 《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、
-                                公式无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14 家单...<a href="">更多</a>
-                            </p>
-                            <p class="zcriqi">2017 -12-18</p>
-                        </div>
-                    </li>
+                    [/#list]
+                    <div style="text-align: center;padding: 10px 0;">[@cms_pagination sysPage='1'/]</div>
+                    [/@cms_content_page]
                 </ul>
-                <ul class="pagination clear">
-                    <li><span>总共一条记录</span></li>
-                    <li><span>1/1</span></li>
-                    <li><a href="#"><span>首页</span></a></li>
-                    <li><a href="#"><span>上一页</span></a></li>
-                    <li><a href="#"><span>下一页</span></a></li>
-                    <li><a href="#"><span>尾页</span></a></li>
-                    <li class="ye">
-                        <span >
-                            <span>第</span>
-                            <select>
-                                <option>1</option>
-                            </select>
-                            <span>页</span>
-                        </span>
-
-                    </li>
-                </ul>
-
             </div>
         </div>
     </div>

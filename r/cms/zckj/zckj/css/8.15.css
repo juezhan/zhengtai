@@ -22,7 +22,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 p {margin: 0 0 10px;}
 .pull-right{float: right!important;}
 .pull-left{float: left!important;}
-
+.zcmore:hover{color: #0066cc;}
 /*
 
 .list-pagination {text-align: right;}
