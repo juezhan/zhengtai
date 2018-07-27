@@ -21,15 +21,59 @@
 <body class="news_815">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
+<div class="banneer">
+    <img src="/${res}/imgs/zcbanner.png" alt="" width="100%">
+</div>
     <div class="zckaishi">
         <div class="container">
             <div class="weizhi1">
-                <h3>
-                    您的位置:<a href='${base}/'>首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
-                </h3>
+                <div class="weizhileft">政策支持</div>
+                <div class="weizhiright">
+                    <div class="weizhirightbox">
+                        <ul>
+                            <li><a href="" class="active">2018</a></li>
+                            <li>2017</li>
+                            <li>2016</li>
+                            <li>2015</li>
+                            <li>2014</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="leftbtn"> < </div>
+                        <div class="rightbtn"> > </div>
+                    </div>
+                </div>
             </div>
             <div class="zcneirong">
-                <ul class="zcui">
+                <div class="datam">
+                    <ul>
+                        <li><span class="datatit">12</span>月</li>
+                    </ul>
+                    <div>
+                        <img src="/${res}/imgs/jiantuoleft.png" alt="" class="jiantuoleft">
+                        <img src="/${res}/imgs/jiantuoright.png" alt="" class="jiantuoright">
+                    </div>
+                </div>
+                <div>
+                    <div class="item itemright">
+                        <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
+                        <div class="itemtitle">
+                            <div class="data">2017-12-18</div>
+                            <div class="tit"> <!--50字-->各市（洲）科技局、长春新区科创委、各市（洲）科技局、长春新区科创委</div>
+                           <a href="" class="more">MORE+</a>
+                        </div>
+                    </div>
+                    <div class="item itemleft">
+                        <div class="itemtitle">
+                            <div class="data">2017-12-18</div>
+                            <div class="tit">各市（洲）科技局、长春新区科创委、</div>
+                            <a href="" class="more">MORE+</a>
+                        </div>
+                        <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
+                        </div>
+                    </div>
+            </div>
+                <!--<ul class="zcui">
                     [@cms_content_page channelId=channel.id count='5' titLen='25' append='...' orderBy='2'
                     dateFormat='yyyy-MM-dd' channelOption='1' len='2']
                     [#list tag_pagination.list as a]
@@ -45,7 +89,7 @@
                     [/#list]
                     <div style="text-align: center;padding: 10px 0;">[@cms_pagination sysPage='1'/]</div>
                     [/@cms_content_page]
-                </ul>
+                </ul>-->
             </div>
         </div>
     </div>
