@@ -9,12 +9,12 @@ body { font-family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif; fo
 #banner_img { display: block; position: relative; }
 #banner_img li { position: absolute; top: 0; left: 0; width: 100%; height: 650px; background-position: center; background-size: cover; display: none; }
 /*ñͼƬ-------ʼ*/
-#banner_img li.item1 { background-image: url(../imgs/zxyjbg.png); display: block; }
-#banner_img li.item2 { background-image: url(../imgs/zxghbg.png); }
-#banner_img li.item3 { background-image: url(../imgs/bgfabg.png); }
-#banner_img li.item4 { background-image: url(../imgs/gczjbg.png); }
-#banner_img li.item5 { background-image: url(../imgs/kjcgpj.png); }
-#banner_img li.item6 { background-image: url(../imgs/zbdlbg.png); }
+#banner_img li.item1 { background-image: url(../imgs/zckjbg.png); display: block; }
+#banner_img li.item2 { background-image: url(../imgs/zckjbg.png); }
+#banner_img li.item3 { background-image: url(../imgs/zckjbg.png); }
+#banner_img li.item4 { background-image: url(../imgs/zckjbg.png); }
+#banner_img li.item5 { background-image: url(../imgs/zckjbg.png); }
+#banner_img li.item6 { background-image: url(../imgs/zckjbg.png); }
 #banner_img li.item7 { background-image: url(../imgs/zckjbg.png); }
 /*ñͼƬ--------*/
 #banner_img .ad_img { position: absolute; right: 10px; top: 80px; width: 506px; height: 404px; }
@@ -26,7 +26,7 @@ body { font-family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif; fo
 #banner_ctr li { display: block; float: left; width: 115px; height: 122px; cursor: pointer;    padding: 0 14px;}
 #banner_ctr li.first-item { background: #fff; width: 20px; -webkit-border-radius: 20px 0 0 20px; -moz-border-radius: 20px 0 0 20px; border-radius: 20px 0 0 20px; cursor: default; }
 #banner_ctr li.last-item { background: #fff; width: 20px; -webkit-border-radius: 0 20px 20px 0; -moz-border-radius: 0 20px 20px 0; border-radius: 0 20px 20px 0; cursor: default; }
-#drag_ctr { position: absolute; top: -14px; left: 0px; width: 115px; height: 156px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; bottom: 170px; background: #0084cf;padding: 0 14px;}
+#drag_ctr { position: absolute; top: 10px; left: 0px; width: 115px; height: 100px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; bottom: 170px; background: #0084cf;padding: 0 14px;}
 /*#drag_arrow { position: absolute; top: -14px; left: 20px; width: 115px; height: 156px; background: url(../imgs/drag_banner_arrow.gif) center 14px no-repeat;padding: 0 14px;}*/
 /*
 @charset "UTF-8";
