@@ -23,460 +23,6 @@
 <div class="news_86">
     [#include "../include/top.html"/]
     [#include "../include/header.html"/]
-  <!--  <div class="ad-wrapper">
-        <div class="container">
-            <div class="ad-content">
-                <h1 class="title"><i></i>有问题 找专家<i></i></h1>
-                <p class="text">Link Technology to Industry</p>
-                <form class="searchbar-container white-searchbar-container">
-                    <input placeholder="寻找你的专家顾问" type="text" name="text"
-                           autocomplete="off" value=""
-                           class="searchbar-text">
-                    <button type="button" class="m-btn btn-primary btn-search">搜&nbsp;索</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="ad-message">
-        <div class="container">
-            <h2 class="experts-section-title"><i></i>发表留言<i></i></h2>
-            <form id="guestbookForm" action="${base}/guestbook.jspx"  method="post">
-                <div class="message_inf">
-                    <div class="line"></div>
-                    <p><span>类别:</span>
-                        <select name="ctgId">
-                            [@cms_guestbook_ctg_list siteId=site.id]
-                            [#list tag_list as ctg]
-                            <option value="${ctg.id}">${ctg.name}</option>
-                            [/#list]
-                            [/@cms_guestbook_ctg_list]
-                        </select>
-                    </p>
-                    <p><span>邮箱:</span><input type="text" name="email" class="message_email"
-                                             maxlength="100"/><span>手机号:</span><input type="text" name="phone"
-                                                                                     maxlength="50"
-                                                                                     class="message_phone"/><span
-                            style="width:auto;">QQ:</span><input type="text" name="qq" class="message_qq"/></p>
-                    <div class="line"></div>
-                    <p><span>标题:</span><input type="text" name="title" class="message_title" maxlength="255"/></p>
-                    <p><span style="vertical-align: top;display: inline-block;margin-top: 18px;">内容:</span><textarea name="content" cols="55" rows="10" class="message_txt"></textarea></p>
-                    <p><span>验证码:</span><input type="text" name="captcha" maxlength="20" vld="{required:true}"
-                                              class="message_code"/><img id="guestbookCaptcha" src="${base}/captcha.svl"
-                                                                         onclick="this.src='${base}/captcha.svl?d='+new Date()*1">
-                    </p>
-                    <input type="hidden" name="token" id="token" value="${token!}"/>
-                    <p style="margin-top:30px; position:relative;width: 100px;margin: auto;"><input type="hidden" name="sessionId"
-                                                                          id="sessionId"/>
-                        <input type="submit" id="submit" class="message_btn" value="发表留言"/>
-                        &lt;!&ndash;<a class="tolist">查看留言列表</a>&ndash;&gt;</p>
-                </div>
-            </form>
-            <script type="text/javascript">
-              $(function () {
-                $("#sessionId").val(null);
-                $("#submit").click(function () {
-                  var options = {
-                    url: '${base}/guestbook.jspx',
-                    type: 'post',
-                    dataType: 'json',
-                    data: $("#guestbookForm").serialize(),
-                    success:  function (data) {
-                      if(data.status==0) {
-                        alert("留言成功");
-                        location.href=location.href;
-                      } else if(data.status==1) {
-                        alert("验证码错误");
-                        $("#guestbookCaptcha").click();
-                      } else if(data.status==2) {
-                        alert("留言尚未开启");
-                        $("#guestbookCaptcha").click();
-                      } else if(data.status==3) {
-                        alert("您需要登陆");
-                        $("#guestbookCaptcha").click();
-                      }else if(data.status==4) {
-                        alert("留言超过限制了!");
-                        $("#guestbookCaptcha").click();
-                      }else if(data.status==10) {
-                        alert("标题或者内容含有敏感词,不允许发表!");
-                        $("#guestbookCaptcha").click();
-                      }
-                    }
-                  };
-                  $.ajax(options);
-                  return false;
-                });
-              });
-
-            </script>
-        </div>
-    </div>
-    <div class="experts-section experts-section-expert">
-        <h2 class="experts-section-title"><i></i>入驻专家<i></i></h2>
-        <p class="caption">知名学者、产业专家，为您技术升级转型之路出力</p>
-        <div class="experts-section-content">
-            <p class="selectors">
-                <span class="item">医药科学</span>
-                <i class="divider"></i>
-                <span class="item">化学化工</span>
-                <i class="divider"></i>
-                <span class="item active">工程技术</span>
-                <i class="divider"></i>
-                <span class="item">农业科学</span>
-            </p>
-            <div class="holy-grail expert-list">
-                <div class="expert-list-items-container" style="display: none;">
-                    <div class="expert-list-item"><a href="#" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FkYTT-2wHhkH2Acbixr2lNHlGQ4N);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">新型药物</em></span><span
-                                    class="tag"><em class="overflow-hidden">呼吸性疾病发病机理与分子机制</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em class="overflow-hidden">高通量药物</em></span>
-                                </p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">钱峰</span><span
-                                class="post">研究员</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>上海交通大学</span><span> | </span><span>药学院</span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="#" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FgjtudRkHJys7ie7gHgIFSZpdY05);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">药物化学</em></span><span
-                                    class="tag"><em class="overflow-hidden">慢性疼痛药物</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em class="overflow-hidden">糖尿病药物</em></span>
-                                </p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">傅磊</span><span
-                                class="post">教授，博导</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>上海交通大学</span><span> | </span><span>药学院</span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="#" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FlJZx0aYnFFDD8rX6blUFJu2A6qy);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">尼古丁</em></span><span
-                                    class="tag"><em class="overflow-hidden">食品</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">应用与环境微生物</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">许平</span><span
-                                class="post">教授</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>上海交通大学</span><span> | </span><span>生命科学技术学院</span></p>
-                        </div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/5563e4ea4808dd491cea2988" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/Fs9wv1jxUivb_9UFPy4_ki7rAJza);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">药物输送系统</em></span><span class="tag"><em
-                                    class="overflow-hidden">新型医药用高分子材料</em></span>
-                            </p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">生物可降解高分子合成</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">郭圣荣</span><span
-                                class="post">教授</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>上海交通大学</span><span> | </span><span>药学院</span></p></div>
-                    </a></div>
-                </div>
-                <div class="expert-list-items-container" style="display: none;">
-                    <div class="expert-list-item"><a href="/experts/55caef6b695a326551000059" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FoH744KaI1wZKRxzzdHFmHyaC6OW);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">污染治理</em></span><span
-                                    class="tag"><em class="overflow-hidden">新型高效吸附剂及滤料的研发</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">电容去离子器件电极材料的开发</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">马杰</span><span
-                                class="post">副教授</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>同济大学</span><span> | </span><span>环境工程系</span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/5980555f3b1f3511eafdfa71" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/Fvro-I16N_kXh7AiBD5bKPeOGTw4);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">水污染控制技术及工程</em></span><span class="tag"><em
-                                    class="overflow-hidden">有机污染物高效降解技术、工艺及装备研发</em></span>
-                            </p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">微藻水环境修复技术</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">李潜</span><span
-                                class="post"></span></p>
-                            <p class="text title-text overflow-hidden"><span>江苏大学 | 环境安全工程学院</span><span
-                                    style="display: none;"> | </span><span></span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/596c93aa24d2753fd6f44f12" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/Frn3YY4MEC1UwbI_Kr6TALNPaXXm);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em class="overflow-hidden">溶胶-凝胶、气溶胶</em></span><span
-                                    class="tag"><em class="overflow-hidden">纳米技术</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em class="overflow-hidden">药物释放</em></span>
-                                </p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">姜兴茂</span><span
-                                class="post"></span></p>
-                            <p class="text title-text overflow-hidden"><span>常州大学石油化工学院</span><span
-                                    style="display: none;"> | </span><span></span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/596c93aa24d2753fd6f44f97" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/Fky3RKLCbLFUWHLjk0w-4V2-Zi3S);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em class="overflow-hidden">高分子材料表面的超疏水、疏油改性</em></span><span
-                                    class="tag"><em class="overflow-hidden">高分子材料的合成</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em class="overflow-hidden">高分子材料的改性与加工</em></span>
-                                </p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">管涌</span><span
-                                class="post"></span></p>
-                            <p class="text title-text overflow-hidden"><span>华东理工大学</span><span
-                                    style="display: none;"> | </span><span></span></p></div>
-                    </a></div>
-                </div>
-                <div class="expert-list-items-container active" style="">
-                    <div class="expert-list-item"><a href="/experts/596c93aa24d2753fd6f44ef2" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FlUDABUE7Y4V-4_danINetKqOcOy);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">建筑与地下空间的通风和热问题</em></span><span class="tag"><em
-                                    class="overflow-hidden">空气源热泵热水系统</em></span>
-                            </p>
-                                <p class="text"><span class="tag long-tag"><em class="overflow-hidden">中低温热能高效利用、有机朗肯循环(ORC)</em></span>
-                                </p><span class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">高乃平</span><span
-                                class="post"></span></p>
-                            <p class="text title-text overflow-hidden"><span>同济大学 | 机械与能源学院</span><span
-                                    style="display: none;"> | </span><span></span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/55c0cfa4695a326cd4000004" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FkKFHsAjc4V07Q3syA8moYDoKy94);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em class="overflow-hidden">超导材料及应用技术</em></span><span
-                                    class="tag"><em class="overflow-hidden">超导材料电磁仿真模型</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em class="overflow-hidden">超导限流器</em></span>
-                                </p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">洪智勇</span><span
-                                class="post">副教授</span></p>
-                            <p class="text title-text overflow-hidden"><span>上海交通大学 | 电子信息与电气工程学院</span><span> | </span><span>电子信息与电气工程学院</span>
-                            </p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/558c91334808dd8a5e8e1cb5" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FqNUpZupe2I00yolDj-HW7s4-XYk);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">焊接工艺及设备</em></span><span class="tag"><em
-                                    class="overflow-hidden">焊接冶金</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">异种材料连接</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">薛小怀</span><span
-                                class="post">副教授</span></p>
-                            <p class="text title-text overflow-hidden"><span>上海交通大学</span><span> | </span><span>材料科学与工程学院</span>
-                            </p>
-                        </div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/59ae1e43263ee31252418531" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/Fjq2MMhYksO4OI2vb6ceb30PANp-);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">低维纳米材料</em></span><span class="tag"><em
-                                    class="overflow-hidden">结构及传感器</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">微纳结构调控及器件</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">胡南滔 </span><span
-                                class="post"></span></p>
-                            <p class="text title-text overflow-hidden"><span>上海交通大学</span><span
-                                    style="display: none;"> | </span><span></span></p></div>
-                    </a></div>
-                </div>
-                <div class="expert-list-items-container" style="display: none;">
-                    <div class="expert-list-item"><a href="/experts/55d040f4695a3212470001e5" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FnRi_0gydHchUz9Mu-HJLdZbxVFL);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">生物信息平台</em></span><span class="tag"><em
-                                    class="overflow-hidden">杂交优势</em></span>
-                            </p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">分子设计育种</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">何航</span><span
-                                class="post">副研究员</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>北京大学</span><span> | </span><span>生命科学学院</span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/55c19bd9695a3269d5000082" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/Fi7E9S15EQVfc6rz1mVAXTVyx3Su);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em class="overflow-hidden">组织修复与再生材料</em></span><span
-                                    class="tag"><em class="overflow-hidden">纳米生物材料</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">可注射生物材料</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">刘昌胜</span><span
-                                class="post">教授</span></p>
-                            <p class="text title-text overflow-hidden"><span>华东理工大学</span><span> | </span><span>材料科学与工程学院</span>
-                            </p>
-                        </div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/55cc3ae4695a327398000087" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FkaOOzpxgqH-Lfa-UIeIycOuvNHk);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">食品生物大分子的改性</em></span><span class="tag"><em
-                                    class="overflow-hidden">食品安全</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">食品加工技术</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">马莺</span><span
-                                class="post">教授</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>哈尔滨工业大学</span><span> | </span><span>化工学院</span></p></div>
-                    </a></div>
-                    <div class="expert-list-item"><a href="/experts/55cc6572695a327b4d00000f" class="" target="_blank">
-                        <div class="img-container"
-                             style="background-image: url(https://res2.maikeji.cn/FksG9o4pMPX1mhzV-rv9wdv5W5Ax);">
-                            <div class="img-caption"><p class="text"><span class="tag"><em
-                                    class="overflow-hidden">极端环境营养学</em></span><span class="tag"><em
-                                    class="overflow-hidden">生物活性物质分离</em></span></p>
-                                <p class="text"><span class="tag long-tag"><em
-                                        class="overflow-hidden">新资源功能食品开发</em></span></p><span
-                                        class="m-icon"><i class="iconfont icon-more"></i></span></div>
-                        </div>
-                        <div class="text-container"><p class="text name-text overflow-hidden"><span
-                                class="name">王振宇</span><span
-                                class="post">教授</span></p>
-                            <p class="text title-text overflow-hidden">
-                                <span>哈尔滨工业大学</span><span> | </span><span>化工学院</span></p></div>
-                    </a></div>
-                </div>
-            </div>
-            <p class="link-more-container"><a href="/experts/search?text=%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF"
-                                              class="link-more">查看更多工程技术类专家
-            </a></p></div>
-    </div>
-    <div class="experts-section experts-section-institution"><h2 class="experts-section-title"><i></i>合作机构<i></i></h2>
-        <p class="caption">汇聚国内外顶尖高校和科研院所的优质技术力量</p>
-        <div class="experts-section-content" style="height:806px;">
-            <table class="institution-list">
-                <tbody>
-                <tr>
-                    <td class="triangle-bottom-right"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="background"
-                        style="background-image:url('../../../../../../r/cms/zckj-3/zckj/imgs/img-experts-1.jpg');"></td>
-                    <td colspan="2" class="text"><h3 class="title">丰富的技术资源</h3>
-                        <p class="caption">平台汇聚了大量技术信息资源，一手掌握国<br>内外的顶尖高校和科研院所等优质技术力量</p></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="border"><a href="#" class="" target="_blank">
-          <span alt="上海化工研究院"
-                class="m-cover"
-                style="background-image: url(https://res2.maikeji.cn/Fg3RFoEUbZjk1Q3TQHO1cNmxa0Ju);"></span></a>
-                    </td>
-                    <td class="border"><a href="#" class="" target="_blank">
-          <span alt="中美中心"
-                class="m-cover"
-                style="background-image: url(https://res2.maikeji.cn/Fjqn57DsNS7d2DO20Gxz_mqAX9VT);"></span></a>
-                    </td>
-                    <td class="border"><a href="#" class="" target="_blank">
-          <span
-                  alt="机械科学研究总院江苏分院" class="m-cover"
-                  style="background-image: url(https://res2.maikeji.cn/FgvREhoDqxMcTLaeSh_IS63GdQ1Z);"></span></a>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="background"
-                        style="background-image:url('../../../../../../r/cms/zckj-3/zckj/imgs/img-experts-2.jpg');"></td>
-                    <td class="border">
-                        <a href="#" class="" target="_blank">
-            <span
-                    alt="上海微谱化工技术服务有限公司" class="m-cover"
-                    style="background-image: url(https://res2.maikeji.cn/FnIA86kW_uF7VDjgQlUFy4OffPFM);"></span></a>
-                    </td>
-                    <td class="background"
-                        style="background-image:url('../../../../../../r/cms/zckj-3/zckj/imgs/img-experts-3.jpg');"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="border">
-                        <a href="" class="" target="_blank">
-            <span alt="上海交通大学"
-                  class="m-cover"
-                  style="background-image: url(https://res2.maikeji.cn/FuNFNKZklHpRvKG90oFRz69LWF0h);">
-            </span>
-                        </a>
-                    </td>
-                    <td class="border">
-                        <a href="" class="" target="_blank">
-            <span alt="同济大学"
-                  class="m-cover"
-                  style="background-image: url(https://res2.maikeji.cn/FjiRMabN725O1u9C2F8Aixy2ybFQ);">
-            </span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="triangle-top-left"></td>
-                </tr>
-                </tbody>
-            </table>
-            <p class="link-more-container">
-                <a href="/institutions" class="link-more" target="_blank">查看更多合作机构</a>
-            </p>
-        </div>
-    </div>-->
     <div class="zkkaishi">
         <div class="zczktop" style="background-image: url(/${res}/imgs/zczktop.png) "></div>
         <div class="container">
@@ -512,21 +58,13 @@
                 <div class="zuoce">
                     <div class="zkbiaoti" style="background-image: url(/${res}/imgs/zkbiaoti.png) "></div>
                     <ul class="zuoceui">
-                        <li class="active zkziran">
-                            <a href="">自然科学</a>
+                        [@cms_channel_list parentId=channel.parentId]
+                        [#list tag_list as c2]
+                        <li class="active [#if c2.id == channel.id]zkziran[/#if]">
+                            <a href="${c2.url}">${c2.name}</a>
                         </li>
-                        <li>
-                            <a href="">医药科学</a>
-                        </li>
-                        <li>
-                            <a href="">农业科学</a>
-                        </li>
-                        <li>
-                            <a href="">人文与社会科学</a>
-                        </li>
-                        <li>
-                            <a href="">工程与技术科学</a>
-                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
                     </ul>
                 </div>
 
@@ -536,7 +74,26 @@
                         您的位置:<a href='${base}/'class="zksy">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
                     </h3>
                     <ul class="xiaui">
+                        [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
+                        dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
+                        [#list tag_pagination.list as a]
                         <li class="xiali">
+                            <span class="nongqi">
+                                <!--<div class="zhaopian" style="background-image: url(${a.titleImg!site.defImg}) "></div>-->
+                                <img src="${a.titleImg!site.defImg}" alt=""  class="zhaopian">
+                                <span class="xingming">${a.title}</span>
+                            </span>
+                            <span class="nongqi1">
+                                ${a.txt!}
+                            </span>
+
+                        </li>
+                        [/#list]
+                        <div class="pagination" style="text-align: center;margin-top: 20px;">
+                            [@cms_pagination sysPage='1'/]
+                        </div>
+                        [/@cms_content_page]
+                        <!--<li class="xiali">
                             <span class="nongqi">
                                 <div class="zhaopian" style="background-image: url(/${res}/imgs/touxiang.png) "></div>
                                 <span class="xingming">张瑛洁</span>
@@ -600,9 +157,9 @@
                                 <p> [ 专家简介 ] 自然科学/力学/固体力学</p>
                             </span>
 
-                        </li>
+                        </li>-->
                     </ul>
-                    <ul class="pagination clear">
+                    <!--<ul class="pagination clear">
                         <li><span>总共一条记录</span></li>
                         <li><span>1/1</span></li>
                         <li><a href="#"><span>首页</span></a></li>
@@ -619,7 +176,7 @@
                             </span>
 
                         </li>
-                    </ul>
+                    </ul>-->
 
                 </div>
             </div>
