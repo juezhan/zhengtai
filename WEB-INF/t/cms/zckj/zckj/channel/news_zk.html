@@ -78,14 +78,15 @@
                         dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
                         [#list tag_pagination.list as a]
                         <li class="xiali">
-                            <span class="nongqi">
-                                <!--<div class="zhaopian" style="background-image: url(${a.titleImg!site.defImg}) "></div>-->
-                                <img src="${a.titleImg!site.defImg}" alt=""  class="zhaopian">
-                                <span class="xingming">${a.title}</span>
-                            </span>
-                            <span class="nongqi1">
-                                ${a.txt!}
-                            </span>
+                            <a href="${a.url}">
+                                <span class="nongqi">
+                                    <img src="${a.titleImg!site.defImg}" alt=""  class="zhaopian">
+                                    <span class="xingming">${a.title}</span>
+                                </span>
+                                <span class="nongqi1">
+                                    ${a.txt!}
+                                </span>
+                            </a>
 
                         </li>
                         [/#list]
