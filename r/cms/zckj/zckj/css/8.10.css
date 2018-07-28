@@ -27,7 +27,7 @@ p {margin: 0 0 10px;}
 
 .news_810 .btn{display: inline-block;padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;}
 .news_810{background-color: #ffffff;font-size: 14px;line-height: 1.42857143;}
-.news_810 a{display:inline-block;color: #337ab7;text-decoration: none;font-size: 20px;}
+.news_810 a{display:inline-block;color: #337ab7;text-decoration: none;}
 
 .news_810 .ad-wrapper {background: url(../imgs/bg-header-technologies.jpg) no-repeat 50%;background-size: cover;background-image: url(../imgs/bg-header-activities.jpg);color: #fefdfd;padding-top: 70px;}
 .news_810 .ad-wrapper .ad-content {display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;-ms-flex-pack: center;justify-content: center;-ms-flex-align: center;align-items: center;padding-bottom: 30px;height: 380px;width: 100%;}
@@ -84,7 +84,7 @@ p {margin: 0 0 10px;}
 .container{width: 1200px;margin: auto;}
 .weizhi1{width: 100%;height: 20px; margin-top:100px;position: relative;font-size: 20px;}
 .suozai{float: left;}
-.shouye{float: left;margin-left: 20px;}
+.shouye{float: left;margin-left: 20px;font-size: 20px;}
 .huodong{width: 100%;height: 35px;margin-top: 20px;text-align: center;font-size: 24px;position: relative;display: block;}
 .xiahuaxian{width: 50px;height: 30px;margin: 0px 48% 20px 48%;background-repeat: no-repeat;}
 .zongti{width: 100%;margin-top: 40px;}
