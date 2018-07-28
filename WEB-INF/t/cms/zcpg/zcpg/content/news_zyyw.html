@@ -11,41 +11,60 @@
 
 <link type="text/css" rel="stylesheet" href="/${res}/css/content-news-zyyw.css"/>
 <link href="${resSys}/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css"/>
-
+<link href="/${res}/css/news-xwzx-2.css" rel="stylesheet"/>
 <!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
 <![endif]-->
 
 <head>
-<body class="zyyw">
+<body class="zyyw news-xwzx">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="zyyw-wapper">
-    <div class="banner" style="background-image: url('${content.typeImg!}')">
-        <div class="container"></div>
-    </div>
-    <div class="container clearfix">
-        <div class="bus-heal">
-            <div class="cnt">
-                <h1>${content.title}</h1>
-                <div class="txt">
-                    ${txt!}
+<div class="xwzx-wapper">
+    <div class="container">
+        <div class="xwzx-mn">
+            <div class="xwzx-mbd">
+                <div class="list-wapper">
+                    <div class="tt">
+                        <div class="tt-w">
+                            <i class="icon icon-house"></i><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a
+                                href='${n.url}' target='_blank' class="ts">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
+                        </div>
+                    </div>
+                    <div>
+                        ${txt!}
+                    </div>
+                </div>
+                <div class="menu-wapper">
+                    <div class="tt">
+                        <div class="txt">NEWS</div>
+                    </div>
+                    <div class="menu-items">
+                        [@cms_channel_list parentId = channel.parentId]
+                        [#list tag_list as c]
+                        [@cms_content_list channelId = c.id count='1' ]
+                        [#list tag_list as a]
+                        <a href="${a.url}" class="item[#if c.id == channel.id] active[/#if]">
+                            <span>${c.name}</span>
+                        </a>
+                        [/#list]
+                        [/@cms_content_list]
+                        [/#list]
+                        [/@cms_channel_list]
+                    </div>
                 </div>
             </div>
-            <div class="avatar">
-                <img src="${content.contentImg!site.defImg}" vspace="0" hspace="0" border="0"/>
-            </div>
-        </div>
-        <div class="pager-wrapper">
-            <span class="prev-content"><i></i>[@cms_content id=content.id next='1' channelId=channel.id][#if tag_bean??]上一篇：<a
-                    href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else][/#if][/@cms_content]</span>
-            <span class="next-content">[@cms_content id=content.id next='0' channelId=channel.id][#if tag_bean??]下一篇：<a
-                    href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else][/#if][/@cms_content]<i></i></span>
         </div>
     </div>
 </div>
-
+<h1>
+    [@cms_channel_list parentId = channel.id]
+    [#list tag_list as c]
+    ${c.name}
+    [/#list]
+    [/@cms_channel_list]
+</h1>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
