@@ -154,7 +154,7 @@ p {margin: 0 0 10px;}
 .nongqi1{width: 75%;margin-top: 20px;display: inline-block;vertical-align: middle;}
 .nongqi1 p{color: rgb(96,96,96)}
 .zhaopian{width: 105px;height: 105px; margin: 20px 20px;}
-.xingming{margin: 10px 50px;color: rgb(96,96,96);width: 10%;}
+.xingming{margin: 10px 40px;color: rgb(96,96,96);width: 10%;}
 .list-pagination{width: 100%;}
 .pagination{padding: 30px 0;margin: 10px 28%;display: block;}
 ul.pagination li  {color: black;float: left;padding: 0px 3px;}
@@ -162,7 +162,7 @@ ul.pagination li a{color:rgb(31,134,237);text-decoration: none;}
 .ye{margin-top: -3px;position: relative}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container {width: 1000px;margin:0 10px 0 14px;}
-    .xingming{margin: 10px 45px;width: 15%;}
+    .xingming{margin: 10px 31px;width: 100%;}
     .pagination{margin: 10px 25%;}
     .zkxlbt{margin-left: 400px;}
 }
