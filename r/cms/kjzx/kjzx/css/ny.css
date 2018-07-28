@@ -1,0 +1,9 @@
+.year-wrapper {
+  border-bottom: 1px solid #000;
+  position: relative;
+  z-index: 999;
+  margin-top: 150px;
+}
+.year-wrapper .tt.active {
+  color: #f00;
+}
