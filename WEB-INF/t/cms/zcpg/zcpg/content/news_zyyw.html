@@ -8,10 +8,10 @@
 <script src="${resSys}/jquery.js" type="text/javascript"></script>
 <script src="${resSys}/jqueryUI/jquery-ui.js" type="text/javascript"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
-
+<link href="/${res}/css/news-xwzx-2.css" rel="stylesheet"/>
 <link type="text/css" rel="stylesheet" href="/${res}/css/content-news-zyyw.css"/>
 <link href="${resSys}/jqueryUI/jquery.ui.css" rel="stylesheet" type="text/css"/>
-<link href="/${res}/css/news-xwzx-2.css" rel="stylesheet"/>
+
 <!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
@@ -33,12 +33,16 @@
                         </div>
                     </div>
                     <div>
+                        <div class="newstitle">
+                            <div class="newstit" >${content.title}</div>
+                            <div class="newsshorttit" >${content.description}</div>
+                        </div>
                         ${txt!}
                     </div>
                 </div>
                 <div class="menu-wapper">
                     <div class="tt">
-                        <div class="txt">NEWS</div>
+                        <div class="txt">BUSINESS</div>
                     </div>
                     <div class="menu-items">
                         [@cms_channel_list parentId = channel.parentId]
@@ -58,13 +62,6 @@
         </div>
     </div>
 </div>
-<h1>
-    [@cms_channel_list parentId = channel.id]
-    [#list tag_list as c]
-    ${c.name}
-    [/#list]
-    [/@cms_channel_list]
-</h1>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>

@@ -30,6 +30,10 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 .zyyw .pager-wrapper{font-size: 14px;margin-bottom: 30px;}
 .zyyw .pager-wrapper .next-content{float: right}
+.news-xwzx .list-wapper .newstitle{padding: 20px 0;}
+.news-xwzx .list-wapper .newstitle .newstit{color: #000000;font-size: 20px;font-family: '微软雅黑';}
+.news-xwzx .list-wapper .newstitle .newsshorttit{color: #ff5210;font-size: 20px;padding: 5px 0;}
+.news-xwzx .menu-wapper{    width: 320px;margin-left: 68px;margin-top: -37px;display: flex;flex-direction: column;}
 
 @media screen and (max-width: 1199px)  {
     .zyyw .bus-heal{width: 958px;}
