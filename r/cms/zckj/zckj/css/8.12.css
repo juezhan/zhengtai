@@ -81,9 +81,9 @@ p {margin: 0 0 10px;}
 .fr{float: right;}
 .fl{float: left;}
 .zxkaishi{width: 100%;}
+.zhaopian{width: 100%;height:1600px;background-repeat: no-repeat;background-position: center top;}
+.zxbiaotou{width: 40%;height: 80px;margin: auto;margin-top: 80px;}
 .container{width: 1200px;margin: auto;position: relative;}
-.zhaopian{width: 100%;height:1356px;}
-.zxbiaotou{width: 40%;height: 80px;margin: auto;margin-top: -1250px;}
 .zxrongqi{width: 100%;display: inline-block;height: 350px; }
 .fudong{width: 5%;}
 .gongcheng{width: 35px;height:200px;margin-left: 40px;}
@@ -106,7 +106,7 @@ p {margin: 0 0 10px;}
 .zxui3{width: 35%;margin-left: 10%;margin-top: -200px;position:absolute;}
 .zxui3 li{display: inline-block;height: 60px;}
 .zxrongqi4{width: 100%;margin-top:400px;}
-.zuihou{width: 100%;height: 100px}
+
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container {width: 1000px;margin: 0 10px 0 14px;}
     .yanju{margin-left: 35px;font-size: 14px;}
