@@ -26,7 +26,7 @@ body { font-family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif; fo
 #banner_ctr li { display: block; float: left; width: 115px; height: 122px; cursor: pointer;    padding: 0 14px;}
 #banner_ctr li.first-item { background: #fff; width: 20px; -webkit-border-radius: 20px 0 0 20px; -moz-border-radius: 20px 0 0 20px; border-radius: 20px 0 0 20px; cursor: default; }
 #banner_ctr li.last-item { background: #fff; width: 20px; -webkit-border-radius: 0 20px 20px 0; -moz-border-radius: 0 20px 20px 0; border-radius: 0 20px 20px 0; cursor: default; }
-#drag_ctr { position: absolute; top: 10px; left: 0px; width: 115px; height: 100px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; bottom: 170px; background: #0084cf;padding: 0 14px;}
+#drag_ctr { position: absolute; top: -10px; left: 0px; width: 115px; height: 140px; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; bottom: 170px; background: #0084cf;padding: 0 14px;}
 /*#drag_arrow { position: absolute; top: -14px; left: 20px; width: 115px; height: 156px; background: url(../imgs/drag_banner_arrow.gif) center 14px no-repeat;padding: 0 14px;}*/
 /*
 @charset "UTF-8";
