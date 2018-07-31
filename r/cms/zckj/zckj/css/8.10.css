@@ -100,14 +100,18 @@ p{color: black;}
 .bmz{font-size: 15px;}
 .xiangqing{margin: 30px 100px;width: 150px;}
 .chakan{width: 80px;height: 30px;border: 1px solid rgb(0,104,175);padding: 10px 25px;border-radius: 25px;}
-.huodongdatu{width: 100%;height: 402px;}
+.huodongdatu{width: 576px;height: 402px;}
 .hdjxz{width: 100%;height: 350px;background-position: center;background-repeat: no-repeat;}
 .hdnei{width: 100%;margin-top: 20px;}
 .hdneiui{width: 50%}
 .hdneiui li{width: 100%;}
+.hdneiui li:nth-child(2){margin-left: 100%;margin-bottom: 30px;margin-top: 30px;}
 .hdjxs{width: 15%;height: 117px;}
-.hdlier{margin-left: 100%;margin-top: 30px;}
-.hdlisan{margin-top: 30px;}
+.hdjxs .bs{background-color: #d2d2d2;color: #fff;padding: 6px 0;text-align: center;font-size: 17px;}
+.hdjxs .hddata{height: 76px;  color: #fff;  background: #0066b3;  text-align: center;  font-size: 12px;line-height: 76px;}
+.hdjxs .hddata span{font-size: 30px;display: inline-block;}
+/*.hdlier{margin-left: 100%;margin-top: 30px;}*/
+/*.hdlisan{margin-top: 30px;}*/
 .dibuxia{width: 80%;height: 150px;border:1px solid rgb(160,160,160);margin-left: 20%;margin-top: -115px;}
 .peixun{width: 90%;margin:15px auto;height: 50px;border-bottom: 1px solid rgb(160,160,160); font-size: 16px;}
 .huodonggengduo{width: 90%;margin: 25px auto;}
