@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>${title} - ${site.name} - Powered by JEECMS</title>
+    <meta content="${content.tagStr!}" http-equiv="keywords"/>
+    <meta content="${content.description!}" http-equiv="description"/>
+    <script src="${resSys}/jquery.js" type="text/javascript"></script>
+    <script src="${resSys}/front.js" type="text/javascript"></script>
+
+    <link type="text/css" rel="stylesheet" href="/${res}/css/8.16.css"/>
+    <!-- 8.14 咨询详情 -->
+    <!--[if lt IE 9]>
+    <script src="/${res}/js/html5shiv.min.js"></script>
+    <script src="/${res}/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(function () {
+            ;
+            Cms.checkPerm("${base}", "${content.id}");
+            Cms.collectCsi("${base}", "collectCsiDiv", "collect_csi", "${content.id}");
+            Cms.attachment("${base}", "${content.id}", "${content.attachments?size}", "attach");
+            Cms.viewCount("${base}", "${content.id}");
+            Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+        });
+    </script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('.content-comment').click(function () {
+                $('html,body').animate({scrollTop: $('#comments-text').offset().top}, 1000)
+                $('#comments-text').focus();
+            });
+        });
+
+        $(function () {
+            //设置一个定时器，为BUTTON点击事件用
+            var timer = null;
+            var number1 = 0;
+
+            //文本输入时改变
+            $('#comments-text').keyup(function () {
+                if (!$(this).val() == '') {
+                    $('.submit-on').attr("class", "submit-out");
+                } else {
+                    $(".submit-out").attr("class", "submit-on");
+                }
+            });
+
+            //处理输入的内容是文字还是字母的函数
+            function getLength(str) {
+                return String(str).replace(/[^\x00-\xff]/g, 'aa').length;
+            };
+
+        });
+    </script>
+
+</head>
+<body class="news_816">
+[#include "../include/top.html"/]
+[#include "../include/header.html"/]
+<div class="container">
+    <div class="crumb">您的位置：<a href='${base}/'>首页</a> <span>&gt;</span> [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] <span>&gt;</span> [/#if][/#list]</div>
+    <div class="news_816-w">
+        <div class="item-body">
+            <div class="item-content">
+                <div class="cardbox">
+                    <div class="item-head">
+                        <div class="clearfix card">
+                            <div class="item-head-img-container">
+                                <img src="/${res}/imgs/xqimg1.jpg" alt="">
+                            </div>
+                            <div class="item-head-text">
+                                <h3 class="title">${content.title}</h3>
+                                <div>主办单位 ：${content.origin!}</div>
+                                <div>活动时间 ：${content.shortTitle!}</div>
+                                <div>活动地点 ：${content.description!}</div>
+                                <ul class="identifying">
+                                    <li>${content.author!}</li>
+                                    <!--<li>科技企业</li>
+                                    <li>孵化器</li>
+                                    <li>众创空间</li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/${res}/imgs/zzxqline.png" alt="" class="imgline">
+                    <div>
+                        <div class="text text-large fr-view">
+                            <p><div class="content">${content.txt1!}</div></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-sidebar">
+                <div class="card">
+                    <div class="sidebar-list-container" style="">
+                        <h4 class="title">其他政策</h4>
+                        <ul class="sidebar-list">
+                            [@cms_content_page channelId=channel.id count='2' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
+                            [#list tag_pagination.list as a]
+                            <li class="sidebar-list-item">
+                                <a href="${a.url}" class="" target="_blank">
+                                    <img src="${a.titleImg!}" alt="">
+                                    <h5 class="list-item-title overflow-hidden">[@text_cut s=a.title len=titLen append=append/]</h5>
+                                </a>
+                            </li>
+                            [/#list]
+                            [/@cms_content_page]
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>
