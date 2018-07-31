@@ -39,7 +39,6 @@
                     <ul class="zongui">
                         <li class="biaoqian">
                             <div class="wenziti">
-                                <!--<div class="yuefen" style="background-image:url(/${res}/imgs/huodongyuefen.png)"></div>-->
                                 <div class="hdjxs yuefen">
                                     <div class="hddata"><span>${a.date?string('MM')}
  </span>月</div>
@@ -48,7 +47,7 @@
                                 <div class="tukuangti">
                                     <p class="jieshao">[@text_cut s=a.title len=titLen append=append/]</p>
                                     <p>${a.txt!}</p>
-                                    <p>主办单位 ：${a.tagStr!}</p>
+                                    <p>主办单位 ：${a.origin!}</p>
                                     <p>活动时间 ：${a.shortTitle!}</p>
                                     <p>活动地点 ：${a.description!}</p>
                                     <a href="${a.url}" class="xiangqing"><span class="chakan" >查看详情</span></a>
