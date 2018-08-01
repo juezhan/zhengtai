@@ -17,6 +17,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon-house{width: 18px;height: 18px;background: url("../imgs/icon-house.png") 50% 50% no-repeat;}
 .icon{display:inline-block}
 .news-zyyw .zyyw-wapper .container{width:1308px;margin:0 auto;}
+.waikuang{margin-top: 200px;}
 .news-zyyw .zyyw-wapper{background: url("../imgs/about-bg.png") 50% 0% repeat-x;padding: 87px 0 45px;}
 .news-zyyw .zyyw-mn{background-color: #ffffff;padding: 0 54px;}
 .news-zyyw .zyyw-mbd{display: flex;}
@@ -65,8 +66,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
 
 #content { padding-top: 85px; background:url(../imgs/content_bg.jpg) 50% 100% repeat-x;border-top: 2px solid #293896; }
-#main { margin: 0 auto; padding-bottom: 37px; max-width: 1135px; min-width: 1056px; background: #fff url(../imgs/main_inner_bg.jpg) repeat-x 0 0; }
-#main .subColumns { height: 92px; background: url(../imgs/subColumns_bg.png) no-repeat 0 31px; }
+#main { margin: 0 auto; padding-bottom: 37px; max-width: 1135px; min-width: 1056px; background: #fff url(../imgs/main_inner_bg.jpg) repeat-x 0 0;}
+#main .subColumns { height: 92px; background: url(../imgs/subColumns_bg.png) no-repeat 0 31px;}
 #main .subColumns .wrapper { float: right; line-height: 69px; }
 #main .subColumns .wrapper a { float: left; margin-left: 25px; font-weight: bold; font-size: 13px; color: #757575; }
 #main .subColumns .abs { display: none; position: absolute; left: 0; top: 50px; width: 0; height: 3px; background-color: #e80000; }

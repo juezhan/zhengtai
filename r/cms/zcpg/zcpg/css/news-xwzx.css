@@ -27,7 +27,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 /* ===================== ================================ */
 .news-xwzx .xwzx-bd{display: flex;margin-top:40px;}
 .news-xwzx .xwzx-bd .item{}
-.news-xwzx .xwzx-bd .title{display: flex;line-height: 20px;}
+.news-xwzx .xwzx-bd .title{display: flex;line-height: 20px;padding-bottom: 5px;}
+.title1{border-bottom: 1px solid rgb(0,104,175);}
 .news-xwzx .xwzx-bd .title .txt{flex: 1;font-size: 16px;font-weight: bold;}
 .news-xwzx .xwzx-bd .title .move{font-size: 13px;color: #db2020;font-weight: bold;}
 .news-xwzx .xwzx-bd .list{padding: 23px 0 15px;}
