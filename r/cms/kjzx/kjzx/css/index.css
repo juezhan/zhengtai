@@ -53,7 +53,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .index .news .w-2 .tab-bd .item{display: none;padding: 9px 0}
 .index .news .w-2 .tab-bd .item.active{display: block}
 .index .news .w-2 a{font-size: 14px;line-height: 24px;height: 24px;color: #858585;}
-.index .news .w-2 a:hover{color:#556cfd;text-decoration: underline}
+.index .news .w-2 .tab-bd a:hover{color:#556cfd;text-decoration: underline}
 .index .news .w-3{width: 170px;float: right;font-size: 12px;line-height: 14px;}
 .index .news .w-3 .txt-1{font-weight: 600;font-size: 13px;}
 .index .news .w-3 .txt-2{font-size: 36px;line-height: 36px;color: #008000;margin-top: 15px;}
