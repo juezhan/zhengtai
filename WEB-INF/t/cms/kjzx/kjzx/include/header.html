@@ -9,7 +9,7 @@
             [#if !channel??]
             <div class="item"><a href="/" class="tt index on active"><span>首页</span></a></div>
             [#list tag_list as c]
-            [#if c_index<5]
+            [#if c_index<6]
             <div class="item">
                 <a href="${c.url}" class="tt" id="item_${c.id}" data-target="#subNav_${c.id}"><span>${c.name}</span></a>
             </div>
