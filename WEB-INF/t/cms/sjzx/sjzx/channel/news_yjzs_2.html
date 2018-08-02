@@ -34,15 +34,23 @@
         <div class="bread">
             <i class="icon-house"></i>
             <div class="c">
-                <div class="t-1"><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'
+            <!--    <div class="t-1"><a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'
                                                                                                 target='_blank'>${n.name}</a>[#if
-                    n_has_next] &gt; [/#if][/#list]
+                    n_has_next] &gt; [/#if][/#list]&ndash;&gt;-->
+                    业绩展示
                 </div>
                 <!--<div class="t-2">
                   <a href="#">地产</a>
                   <a href="#">物业</a>
                   <a href="#">酒店</a>
                 </div>-->
+
+                <div class="items" id="box">
+                    <a href="#" class="item1 item active">绩效评价</a>
+                    <a href="#" class="item2 item">科技专项</a>
+                    <a href="#" class="item3 item">高企认定</a>
+                    <a href="#" class="item4 item">多元审计</a>
+                </div>
             </div>
         </div>
         <div class="list-items">
@@ -82,9 +90,9 @@
                 <div style="text-align: center;padding-top: 50px;">[@cms_pagination sysPage='1'/]</div>
             </div>
             [/@cms_content_page]
-            <div class="news-selectbox">
+           <!-- <div class="news-selectbox">
                 <div class="news-select" name="layout-select" id="news-select" data_role="0">
-                    <input value="请选择..." id="select" readonly="readonly" type="text">
+                   <input value="请选择..." id="select" readonly="readonly" type="text">
                     <ul class="select-list">
                         [@cms_channel_list parentId=channel.parentId]
                         [#list tag_list as c2]
@@ -98,7 +106,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>-->
         <script>
             $(document).ready(function(){
                 $("#news-select").click(function(){
