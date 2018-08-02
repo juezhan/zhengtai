@@ -37,15 +37,15 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .list-items .item .name{flex: 1;}
 .zyyw .list-items .item .date{margin-right: 16px;}
 .zyyw .list-items .line{height: 1px;background-color: #ededed;}
-
-.zyyw .news-list{width:838px;padding-bottom:90px;border-left: 2px #f4f4f4 solid;margin-left: 360px;padding-top: 30px;}
-.zyyw .news-list li{width:840px;height:135px; position:relative;border-bottom:2px #f4f4f4 solid}
-.zyyw .news-list li a{width:760px;height:105px;padding:30px 40px 0px 40px;z-index:10;position:absolute;left:0;top:0;}
+.zyyw .zyyw-w .bread .items .item{display: block;float: left;font-size: 15px;color: #848181;padding: 0 5px;font-weight: bold;position: relative;}
+.zyyw .news-list{width:99.8%;padding-bottom:90px;border-left: 2px #f4f4f4 solid;padding-top: 30px;border-right: 2px #f4f4f4 solid;}
+.zyyw .news-list li{width:100%;height:135px; position:relative;border-bottom:2px #f4f4f4 solid}
+.zyyw .news-list li a{width:90%;height:105px;padding:30px 40px 0px 40px;z-index:10;position:absolute;left:0;top:0;}
 .zyyw .news-list li span{width:0;height:135px;position:absolute;left:0;top:0;z-index:8;background:-webkit-gradient(linear,120% 0%, 0% 100%, from(#f8f6f6), to(#f3f3f3), color-stop(1.2,#f3f3f3));-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
 .zyyw .news-list li h3{font-size:16px;color:#666666;padding-right:12px;margin-bottom:15px;background:url("http://www.bgy.com.cn/images/news-list.png") no-repeat right center;}
 .zyyw .news-list li h4{height:105px;width:125px; font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;float:left;font-weight:500;}
 .zyyw .news-list li p{font-size:12.5px;color:#999999;line-height: 22px;}
-.zyyw .news-list li:hover span{width:840px;}
+.zyyw .news-list li:hover span{width:100%;}
 .zyyw .news-list li:hover h3{color:#116fb9;background:url("http://www.bgy.com.cn/images/news-list-on.png") no-repeat right center;}
 .zyyw .news-list .avatar{display: block;width: 360px;height: 100%;overflow: hidden;position: absolute;top: 0;left: -362px;}
 .zyyw .news-list .avatar img{width: 100%;}

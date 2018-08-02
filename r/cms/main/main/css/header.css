@@ -11,8 +11,8 @@
 .icon-user{background-image:url(icon.png);background-position:-20px -40px;width:18px;height:18px}
 
 
-.header .container{height:105px}
-.header .logo{float:left;margin:20px 0 0 0}
+.header .container{height:130px}
+.header .logo{float:left;margin:20px 0 0 0;height:80px;width: 500px;}
 .header .sign{float:right;border:1px solid #e5e5e5;height:38px;line-height:38px;border-radius:12px;font-size:0;margin-top:29px}
 .header .sign .icon{float:left;margin:10px 12px 0}
 .header .sign .bd{padding:0 18px;display:inline-block;border-left:1px solid #e5e5e5;font-size:0;line-height: 40px;height: 40px;}
