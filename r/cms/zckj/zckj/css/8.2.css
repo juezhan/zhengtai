@@ -107,7 +107,7 @@ p {margin: 0 0 10px;}
 .wenzi{color: black}
 .kuang{width: 100%;height: 50px;margin: 20px 0;border: 1px solid  rgb(160,160,160);}
 .kuang ul{width: 100%;list-style: none;}
-.kuang li{padding: 15px 13px;display: inline-block; }
+.kuang li{padding: 15px 0px;display: inline-block;}
 .yiyi{text-indent: 5px;}
 .kuang a{color: black;}
 .buxian {width: 20px;height: 20px; border:1px solid rgba(0,104,175,0.5);background:rgba(227,241,255,0.5);}
@@ -123,7 +123,9 @@ p {margin: 0 0 10px;}
 .mingzi1{width:550px; position: absolute;margin-top: 280px;margin-left: 40px;font-weight: 700;}
 .zhaoui{width: 100%;}
 .zhaoli{width: 31%;height: 310px;margin: 30px 12px;display: inline-block;}
-.tupian{width: 100%;height: 194px;background-repeat: no-repeat;background-position: center;}
+.zhaoli.item {display: none;}
+.zhaoli.item.active {display: inline-block;}
+.tupian{width: 100%;height: 194px;background: no-repeat center center;background-size: cover;}
 .xiawenzi{width: 372px;height: 100px;position: absolute; background-color: white;}
 .biaoti{height: 40px; font-size: 16px; font-weight: 700;width: 352px; position: relative;margin: 10px 10px;}
 .mingzi{width: 372px;text-indent: 10px;}
@@ -131,6 +133,14 @@ p{color: black;}
 .anniu{margin: 20px 0;margin-left: 45%;}
 button{width: 100px;padding: 10px 10px;border-radius: 5px;color: #0b69b7;background-color: white;border: 1px solid #0b69b7; }
 .ye{margin-top: -3px;position: relative}
+.kuang{height: auto;padding: 10px 0;}
+.selector{display: flex;}
+.selector .selector-title{padding: 15px 13px;}
+.selector .selector-items{flex: 1;}
+.selector .selector-items li span{cursor: pointer;border:1px solid transparent;padding: 4px 8px;}
+.selector .selector-items li.active{}
+.selector .selector-items li.active span{border-color:rgba(0,104,175,0.5);}
+
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container {width: 1000px;margin: 0 10px 0 14px;}
     .zhaoli{width: 31%;margin: 20px 10px;}
