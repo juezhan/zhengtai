@@ -50,10 +50,10 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .zyyw .news-list .avatar{display: block;width: 360px;height: 100%;overflow: hidden;position: absolute;top: 0;left: -362px;}
 .zyyw .news-list .avatar img{width: 100%;}
 
-.zyyw  .news-title{width:100%;height:220px;}
-.zyyw  .news-title .news-title-img{width:360px;height:220px;float:left;overflow:hidden;}
-.zyyw  .news-title .news-title-img img{width:100%;}
-.zyyw  .news-title .news-title-con{width:760px;height:220px;padding:0 40px;float:left;background:#f4f4f4;}
+.zyyw  .news-title{width:100%;height:220px;display: inline-block;}
+.zyyw  .news-title .news-title-img{width:30%;height:220px;overflow:hidden;}
+.zyyw  .news-title .news-title-img img{width:100%;height: 220px;}
+.zyyw  .news-title .news-title-con{width:63.5%;height:220px;padding:0 40px;background:#f4f4f4;margin-left: 30%;margin-top: -220px;}
 .zyyw  .news-title .news-title-con h3{font-size:16px;color:#116fb9;padding:30px 0 8px 0;}
 .zyyw  .news-title .news-title-con h4{font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;padding-bottom:20px;}
 .zyyw  .news-title .news-title-con p{font-size: 12.5px;color:#999999;line-height: 22px;}
