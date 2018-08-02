@@ -62,9 +62,9 @@
 
                 </div>
                 <div class="menu-wapper">
-                    <div class="tt">
+                   <!-- <div class="tt">
                         <div class="txt">ABOUT</div>
-                    </div>
+                    </div>-->
                     <!--<div class="menu-items">
                         <a href="${base}/zcpg/qyjj/index.jhtml" class="item active">
                             <span>企业简介</span>
@@ -73,14 +73,24 @@
                             <span>公司客户</span>
                         </a>
                     </div>-->
+
+
+                    [@cms_channel_list parentId=channel.parentId]
+                    [#list tag_list as c]
+                    <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
+                        <span class="wenzi">${c.name}</span>
+                    </a>
+                    [/#list]
+                    [/@cms_channel_list]
                     <div class="menu-items">
-                        [@cms_channel_list parentId=channel.parentId]
+                       <!-- [@cms_channel_list parentId=channel.parentId]
                         [#list tag_list as c]
                         <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
                             <span>${c.name}</span>
                         </a>
                         [/#list]
-                        [/@cms_channel_list]
+                        [/@cms_channel_list]-->
+                        <img src="/${res}/imgs/8.jpg" alt="" class="tupian">
                     </div>
                 </div>
             </div>

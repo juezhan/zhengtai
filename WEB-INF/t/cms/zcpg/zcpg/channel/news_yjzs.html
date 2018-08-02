@@ -57,20 +57,31 @@
                     </div>
                 </div>
                 <div class="menu-wapper">
-                    <div class="tt">
+                 <!--   <div class="tt">
                         <div class="txt">ACHEVEMENT</div>
-                    </div>
+                    </div>-->
                     <!--<div class="menu-items">
                         <img src="${channel.titleImg!}"/>
                     </div>-->
+
+                    [@cms_channel_list parentId=channel.parentId]
+                    [#list tag_list as c]
+                    <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
+                        <span class="wenzi">${c.name}</span>
+                    </a>
+                    [/#list]
+                    [/@cms_channel_list]
+
+
                     <div class="menu-items">
-                        [@cms_channel_list parentId=channel.parentId]
+                      <!--  [@cms_channel_list parentId=channel.parentId]
                         [#list tag_list as c]
                         <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
                             <span>${c.name}</span>
                         </a>
                         [/#list]
-                        [/@cms_channel_list]
+                        [/@cms_channel_list]-->
+                        <img src="/${res}/imgs/8.jpg" alt="" class="tupian">
                     </div>
                 </div>
             </div>
