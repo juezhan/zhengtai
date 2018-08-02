@@ -73,7 +73,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 #subjects {height:165px; background-color:#e0e2e4;margin-top: 30px;}
 #subjects .g-wrap{position: relative;height: 100%;overflow: hidden;}
 #subjects .g-wrap a {position:absolute; top:0; left:100%; width:100%; height:100%; overflow:hidden; -webkit-opacity:1; opacity:1; display:block\9; -webkit-transition:left 300ms, -webkit-opacity 700ms; transition:left 300ms, opacity 700ms;}
-#subjects .g-wrap .item-1 {z-index:1; background-color:#E5E4EA;cursor: default;}
+#subjects .g-wrap .item-1 {z-index:1; background-color:#E5E4EA;}
 #subjects .g-wrap .item-2 {z-index:2; background-color:#ffd900;}
 #subjects .g-wrap .item-3 {z-index:3; background-color:#fc433e;}
 #subjects .g-wrap .item-4 {z-index:4; background-color:#2d2d58;}
@@ -92,6 +92,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 #subjects .trans a {-webkit-opacity:0; opacity:0; display:none\9;}
 
 /* 逐个出现 */
+#subjects .ready .item-1 {transition-delay:150ms; -webkit-transition-delay:150ms; -ms-transition-delay:150ms; -moz-transition-delay:150ms;}
 #subjects .ready .item-2 {transition-delay:150ms; -webkit-transition-delay:150ms; -ms-transition-delay:150ms; -moz-transition-delay:150ms;}
 #subjects .ready .item-3 {transition-delay:150ms; -webkit-transition-delay:300ms; -ms-transition-delay:300ms; -moz-transition-delay:300ms;}
 #subjects .ready .item-4 {transition-delay:150ms; -webkit-transition-delay:450ms; -ms-transition-delay:450ms; -moz-transition-delay:450ms;}
@@ -102,15 +103,15 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 #subjects .state-0 .item-3 {left:617px;}
 #subjects .state-0 .item-4 {left:876px;}
 /* 指向第一个 */
-#subjects .state-1 .item-1 {left:0;}
+/*#subjects .state-1 .item-1 {left:0;}
 #subjects .state-1 .item-2 {left:340px;}
 #subjects .state-1 .item-3 {left:617px;}
-#subjects .state-1 .item-4 {left:876px;}
-/*#subjects .state-1 .item-1 {left:0;}
+#subjects .state-1 .item-4 {left:876px;}*/
+#subjects .state-1 .item-1 {left:0;}
 #subjects .state-1 .item-2 {left:492px;}
 #subjects .state-1 .item-3 {left:705px;}
 #subjects .state-1 .item-4 {left:917px;}
-#subjects .state-1 .item-1 .p2 {-webkit-opacity:1; opacity:1; display:block\9;}*/
+#subjects .state-1 .item-1 .p2 {-webkit-opacity:1; opacity:1; display:block\9;}
 /* 指向第二个 */
 #subjects .state-2 .item-1 {left:0;}
 #subjects .state-2 .item-2 {left:212px;}

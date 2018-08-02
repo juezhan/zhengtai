@@ -5,7 +5,7 @@
     width: 100%;border: 2px solid #e1e1e1;border-radius: 10px;}
 .xwzx .cnt-wrapper .m-cnt .classify .tit{display: inline-block;vertical-align: middle;width: 114px;font-size: 16px;text-indent: 8px;}
 .xwzx .cnt-wrapper .m-cnt .classify .list{display: inline-block;vertical-align: middle;width: 82%;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li{display: inline-block;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li{display:block;font-size: 18px;}
 .xwzx .cnt-wrapper .m-cnt .classify .list li a{padding: 6px;display: inline-block;margin: 4px 0;}
 .xwzx .cnt-wrapper .m-cnt .classify .list li a:hover{background-color: #0064b5;color: #fff;}
 .xwzx .cnt-wrapper .m-cnt .classify .list li .active{background-color: #0064b5;color: #fff;}
