@@ -35,7 +35,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .w-2{display: flex;background-color: #ffffff;}
 .index .w-2 .m-1{flex:1;height: 100%;}
 .index .w-2 .m-1 .mc-1{height: auto;position: relative;padding: 10px 0;display: flex;}
-.index .w-2 .m-1 .tis{border: 1px solid #0066B3;color: #0066B3;font-size: 16px;font-weight: bold;border-radius: 10px;padding: 8px 20px;width: 66px;margin-top: 10px;}
+.index .w-2 .m-1 .tis{border: 1px solid #0066B3;color: #0066B3;font-size: 15px;font-weight: bold;border-radius: 10px;padding: 8px 20px;width: 66px;margin-top: 10px;}
 .index .w-2 .m-1 .mc-1 .news-title{padding:5px 0 5px 25px;}
 .index .w-2 .m-1 .mc-1 .news-title .news-title-con{line-height: 30px;font-size: 16px;}
 .index .w-2 .m-1 .mc-1 .news-title a:hover{color: #096bb6;}
