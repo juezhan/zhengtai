@@ -58,6 +58,9 @@
                         [/@cms_channel_list]
                     </ul>
                 </div>
+                <div class="classify" style="padding: 5px 0;margin-top: 20px;">
+                    ${channel.txt!}
+                </div>
                 [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
                 dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
                 [#list tag_pagination.list as a]
