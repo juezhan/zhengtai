@@ -118,8 +118,7 @@ p {margin: 0 0 10px;}
 .xiawenziba{height: 350px;background-color: white;width: 100%;}
 .zcbiaojian{width: 50px;height: 128px;margin-left: 520px;position: relative;margin-top: -354px;}
 .biaoti1{height: 40px; font-size: 20px; font-weight: 700;width: 530px; position: absolute;margin-top: 80px;margin-left: 40px;}
-.zhongwenzi1{width: 530px;height: 143px;font-size: 16px;position: absolute; word-wrap:break-word; overflow : hidden;
-    text-overflow: ellipsis;  display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;margin-top: 130px;margin-left: 40px;line-height: 30px;}
+.zhongwenzi1{width: 530px;height: 143px;font-size: 16px;position: absolute; word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;  display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;margin-top: 130px;margin-left: 40px;line-height: 30px;}
 .mingzi1{width:550px; position: absolute;margin-top: 280px;margin-left: 40px;font-weight: 700;}
 .zhaoui{width: 100%;}
 .zhaoli{width: 31%;height: 310px;margin: 30px 12px;display: inline-block;}
