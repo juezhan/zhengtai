@@ -77,7 +77,7 @@
 
                     [@cms_channel_list parentId=channel.parentId]
                     [#list tag_list as c]
-                    <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]">
+                    <a href="${c.url}" class="item[#if c.id == channel.id] active[/#if]" style="width: 151px">
                         <span class="wenzi">${c.name}</span>
                     </a>
                     [/#list]
@@ -90,7 +90,7 @@
                         </a>
                         [/#list]
                         [/@cms_channel_list]-->
-                        <img src="/${res}/imgs/8.jpg" alt="" class="tupian">
+                        <img src="${channel.titleImg!}" alt="" class="tupian">
                     </div>
                 </div>
             </div>
