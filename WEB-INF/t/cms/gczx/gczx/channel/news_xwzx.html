@@ -86,7 +86,11 @@
             </div>
             <div class="mnc">
                 <div class="mnc-w">
-                    <div class="tit">新闻中心</div>
+                    <div class="tit">
+                        [@cms_channel id=channel.id]
+                            ${tag_bean.name}
+                        [/@cms_channel]
+                    </div>
                     <div class="item-wrapper clearfix">
                         [@cms_content_page channelId=channel.id count='6' titLen='25' append='...' orderBy='1'
                         dateFormat='yyyy-MM-dd' channelOption='1' ]

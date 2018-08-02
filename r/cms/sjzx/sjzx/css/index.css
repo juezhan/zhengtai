@@ -42,7 +42,7 @@ img {border: 0;vertical-align: middle;-ms-interpolation-mode: bicubic}
 .index .w-2 .m-1 .mc-1 .news-title .news-title-con .tittxt{width: 410px;display: inline-block;}
 .index .w-2 .m-1 .mc-1 .news-title-img{display: block;margin: 8px 0 7px;}
 .index .w-2 .m-1 .mc-1 .news-title-img img{width: 200px;height: 150px;}
-.zhuti{margin-top: 50px;z-index: 22;position: absolute;margin-left: 20px;font-size: 18px;}
+.zhuti{margin-top: 12px;z-index: 22;position: absolute;margin-left: 20px;font-size: 20px;color: #0066b3;font-family: '微软雅黑';}
 .index .w-2 .m-1 .mc-1 .cells{position: absolute;top: 126px;width: 320px;border: 0.3px solid #0066B3;}
 .index .w-2 .m-1 .mc-1 .cells .cell{display: block;float: left;text-align: center;color: #b5b5b5;padding: 26px 0;width: 50%;}
 .index .w-2 .m-1 .mc-1 .cells .cell + .cell{margin-left: 0px;}
