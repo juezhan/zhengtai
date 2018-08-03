@@ -24,77 +24,151 @@
 <div class="banneer">
     <img src="/${res}/imgs/zcbanner.png" alt="" width="100%">
 </div>
-    <div class="zckaishi">
-        <div class="container">
-            <div class="weizhi1">
-                <div class="weizhileft">政策支持</div>
-                <div class="weizhiright">
-                    <div class="weizhirightbox">
-                        <ul>
-                            <li><a href="" class="active">2018</a></li>
-                            <li>2017</li>
-                            <li>2016</li>
-                            <li>2015</li>
-                            <li>2014</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div class="leftbtn"> < </div>
-                        <div class="rightbtn"> > </div>
-                    </div>
-                </div>
-            </div>
-            <div class="zcneirong">
-                <div class="datam">
+<div class="zckaishi">
+    <div class="container">
+        <div class="weizhi1">
+            <div class="weizhileft">政策支持</div>
+            <div class="weizhiright">
+                <div class="weizhirightbox">
                     <ul>
-                        <li><span class="datatit">12</span>月</li>
+                        [@cms_channel_list parentId=channel.parent.parentId]
+                        [#list tag_list as c]
+                        <li>
+                            <a href="${c.url}" class="tt [#if channel.id==c.id] active[/#if]">${c.name}</a>
+                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
                     </ul>
-                    <div>
-                        <img src="/${res}/imgs/jiantuoleft.png" alt="" class="jiantuoleft">
-                        <img src="/${res}/imgs/jiantuoright.png" alt="" class="jiantuoright">
-                    </div>
                 </div>
                 <div>
-                    <div class="item itemright">
-                        <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
-                        <div class="itemtitle">
-                            <div class="data">2017-12-18</div>
-                            <div class="tit"> <!--50字-->各市（洲）科技局、长春新区科创委、各市（洲）科技局、长春新区科创委</div>
-                           <a href="" class="more">MORE+</a>
-                        </div>
-                    </div>
-                    <div class="item itemleft">
-                        <div class="itemtitle">
-                            <div class="data">2017-12-18</div>
-                            <div class="tit">各市（洲）科技局、长春新区科创委、</div>
-                            <a href="" class="more">MORE+</a>
-                        </div>
-                        <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
-                        </div>
-                    </div>
-            </div>
-                <!--<ul class="zcui">
-                    [@cms_content_page channelId=channel.id count='5' titLen='25' append='...' orderBy='2'
-                    dateFormat='yyyy-MM-dd' channelOption='1' len='2']
-                    [#list tag_pagination.list as a]
-                    <li>
-                        <img src="${a.titleImg!site.defImg}" alt="" class="tupian" >
-                        <div class="zcwenzi">
-                            <a href="${a.url}"><p class="biaoti"> ${a.title}</p></a>
-                            <p class="zcjieshao">[@text_cut s=a.desc len='122' append='...'/]<a href="${a.url}" class="zcmore">&lt更多&gt</a>
-                            </p>
-                            <p class="zcriqi"> ${a.date?string(dateFormat)}</p>
-                        </div>
-                    </li>
-                    [/#list]
-                    <div style="text-align: center;padding: 10px 0;">[@cms_pagination sysPage='1'/]</div>
-                    [/@cms_content_page]
-                </ul>-->
+                    <div class="leftbtn"> <</div>
+                    <div class="rightbtn"> ></div>
+                </div>
             </div>
         </div>
+        <div class="zcneirong">
+            <div class="datam">
+                <ul>
+                    <li><span class="datatit">${channel.name}</span>月</li>
+                </ul>
+                <div>
+                    <a href="#" class="btn prev jiantuoleft" id="monthBtnPrev"
+                       style="background-image: url(/${res}/imgs/jiantuoleft.png)"></a>
+                    <a href="#" class="btn next jiantuoright" id="monthBtnNext"
+                       style="background-image: url(/${res}/imgs/jiantuoright.png)"></a>
+                </div>
+            </div>
+            <div>
+                <div class="item itemright">
+                    <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
+                    <div class="itemtitle">
+                        <div class="data">2017-12-18</div>
+                        <div class="tit"> <!--50字-->各市（洲）科技局、长春新区科创委、各市（洲）科技局、长春新区科创委</div>
+                        <a href="" class="more">MORE+</a>
+                    </div>
+                </div>
+                <div class="item itemleft">
+                    <div class="itemtitle">
+                        <div class="data">2017-12-18</div>
+                        <div class="tit">各市（洲）科技局、长春新区科创委、</div>
+                        <a href="" class="more">MORE+</a>
+                    </div>
+                    <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!--<ul class="zcui">
+            [@cms_content_page channelId=channel.id count='5' titLen='25' append='...' orderBy='2'
+            dateFormat='yyyy-MM-dd' channelOption='1' len='2']
+            [#list tag_pagination.list as a]
+            <li>
+                <img src="${a.titleImg!site.defImg}" alt="" class="tupian" >
+                <div class="zcwenzi">
+                    <a href="${a.url}"><p class="biaoti"> ${a.title}</p></a>
+                    <p class="zcjieshao">[@text_cut s=a.desc len='122' append='...'/]<a href="${a.url}" class="zcmore">&lt更多&gt</a>
+                    </p>
+                    <p class="zcriqi"> ${a.date?string(dateFormat)}</p>
+                </div>
+            </li>
+            [/#list]
+            <div style="text-align: center;padding: 10px 0;">[@cms_pagination sysPage='1'/]</div>
+            [/@cms_content_page]
+        </ul>-->
     </div>
+</div>
+</div>
 
+<script>
+  let yearArr = [];
+  let monthArr = null;
+  let currentYearIndex = -1;
+  let yearItem = null;
+  let currentMonthIndex = -1;
+  [@cms_channel_list parentId = channel.parent.parentId]
+    [#list
+  tag_list as c
+  ]
+  [#if c.id == channel.parent.id]
+  currentYearIndex = ${c_index}
+    [/#if]
+      yearItem = {
+        id:${c.id},
+        url: '${c.url}',
+        name: '${c.name}',
+        month: []
+      };
+  [@cms_channel_list parentId = c.id]
+    [#list
+  tag_list as c2
+  ]
+  [#if c2.id == channel.id]
+  currentMonthIndex = ${c2_index}
+    [/#if]
+      yearItem.month.push({
+        url: '${c2.url}',
+        name: '${c2.name}'
+      });
+  [/#list]
+    [/@cms_channel_list]
+    yearArr.push(yearItem);
+  [/#list]
+    [/@cms_channel_list]
+  if (currentYearIndex > -1) {
+    monthArr = yearArr[currentYearIndex].month;
+  }
+</script>
 
+<script>
+  let $monthBtnPrev = $('#monthBtnPrev');
+  let $monthBtnNext = $('#monthBtnNext');
+  let itemPrev = '';
+  let itemNext = '';
+  if (monthArr && currentMonthIndex > -1) {
+    let maxIndex = monthArr.length - 1
+    switch (currentMonthIndex) {
+      case 0:
+        if (currentYearIndex - 1 > -1) {
+          let prevMonth = yearArr[currentYearIndex - 1].month;
+          let prevMonthMax = prevMonth.length - 1
+          itemPrev = yearArr[currentYearIndex - 1].month[prevMonthMax]
+        }
+        itemNext = monthArr[currentMonthIndex + 1];
+        break;
+      case maxIndex:
+        itemPrev = monthArr[currentMonthIndex - 1];
+        if(currentYearIndex + 1 < yearArr.length){
+            itemNext = yearArr[currentYearIndex + 1].month[0]
+        }
+        break;
+      default:
+        itemPrev = monthArr[currentMonthIndex - 1];
+        itemNext = monthArr[currentMonthIndex + 1];
+        break;
+    }
+    $monthBtnPrev.attr('href', itemPrev.url);
+    $monthBtnNext.attr('href', itemNext.url);
+  }
+</script>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
