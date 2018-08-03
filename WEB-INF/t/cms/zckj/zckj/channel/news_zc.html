@@ -99,45 +99,44 @@
 </div>
 
 <script>
-  let yearArr = [];
-  let monthArr = null;
-  let currentYearIndex = -1;
-  let yearItem = null;
-  let currentMonthIndex = -1;
-  [@cms_channel_list parentId = channel.parent.parentId]
-    [#list
-  tag_list as c
-  ]
-  [#if c.id == channel.parent.id]
-  currentYearIndex = ${c_index}
-    [/#if]
-      yearItem = {
-        id:${c.id},
-        url: '${c.url}',
-        name: '${c.name}',
-        month: []
-      };
-  [@cms_channel_list parentId = c.id]
-    [#list
-  tag_list as c2
-  ]
-  [#if c2.id == channel.id]
-  currentMonthIndex = ${c2_index}
-    [/#if]
-      yearItem.month.push({
-        url: '${c2.url}',
-        name: '${c2.name}'
-      });
-  [/#list]
-    [/@cms_channel_list]
-    yearArr.push(yearItem);
-  [/#list]
-    [/@cms_channel_list]
-  if (currentYearIndex > -1) {
-    monthArr = yearArr[currentYearIndex].month;
-  }
+    let yearArr = [];
+    let monthArr = null;
+    let currentYearIndex = -1;
+    let yearItem = null;
+    let currentMonthIndex = -1;
+    [@cms_channel_list parentId = channel.parent.parentId]
+        [#list
+    tag_list as c
+    ]
+    [#if c.id == channel.parent.id]
+    currentYearIndex = ${c_index}
+        [/#if]
+            yearItem = {
+                id:${c.id},
+                url: '${c.url}',
+                name: '${c.name}',
+                month: []
+            };
+    [@cms_channel_list parentId = c.id]
+        [#list
+    tag_list as c2
+    ]
+    [#if c2.id == channel.id]
+    currentMonthIndex = ${c2_index}
+        [/#if]
+            yearItem.month.push({
+                url: '${c2.url}',
+                name: '${c2.name}'
+            });
+    [/#list]
+        [/@cms_channel_list]
+        yearArr.push(yearItem);
+    [/#list]
+        [/@cms_channel_list]
+    if (currentYearIndex > -1) {
+        monthArr = yearArr[currentYearIndex].month;
+    }
 </script>
-
 <script>
   let $monthBtnPrev = $('#monthBtnPrev');
   let $monthBtnNext = $('#monthBtnNext');
