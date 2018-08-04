@@ -210,4 +210,5 @@ $('#selectorWrapper').on('click', '.item', function () {
     }
     setPageination();
   }, 20);
+  // c1-0 c2-4
 });
