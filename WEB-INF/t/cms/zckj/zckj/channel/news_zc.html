@@ -58,24 +58,39 @@
                        style="background-image: url(/${res}/imgs/jiantuoright.png)"></a>
                 </div>
             </div>
-            <div>
-                <div class="item itemright">
+            <ul class="zcbox">
+                [@cms_content_page channelId=channel.id count='2000' titLen='25' append='...' orderBy='2'
+                dateFormat='yyyy-MM-dd' channelOption='1' len='2']
+                [#list tag_pagination.list as a]
+                <li class="item">
+                    <div class="itemimg"><img src="${a.titleImg!}" alt=""></div>
+                    <div class="itemtitle">
+                        <div class="data">${a.date?string(dateFormat)}</div>
+                        <div class="tit"> <!--50字--> ${a.title}</div>
+                        <a href="${a.url}" class="more">MORE+</a>
+                    </div>
+                </li>
+                [/#list]
+                <!--<div style="text-align: center;padding: 10px 0;">[@cms_pagination sysPage='1'/]</div>-->
+                [/@cms_content_page]
+            </ul>
+                <!--<li class="item">
                     <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
                     <div class="itemtitle">
                         <div class="data">2017-12-18</div>
-                        <div class="tit"> <!--50字-->各市（洲）科技局、长春新区科创委、各市（洲）科技局、长春新区科创委</div>
+                        <div class="tit"> &lt;!&ndash;50字&ndash;&gt;各市（洲）科技局、长春新区科创委、各市（洲）科技局、长春新区科创委</div>
                         <a href="" class="more">MORE+</a>
                     </div>
-                </div>
-                <div class="item itemleft">
+                </li>
+                <li class="item">
                     <div class="itemtitle">
                         <div class="data">2017-12-18</div>
                         <div class="tit">各市（洲）科技局、长春新区科创委、</div>
                         <a href="" class="more">MORE+</a>
                     </div>
                     <div class="itemimg"><img src="/${res}/imgs/zctupian.png" alt=""></div>
-                </div>
-            </div>
+                </li>-->
+            </ul>
         </div>
         <!--<ul class="zcui">
             [@cms_content_page channelId=channel.id count='5' titLen='25' append='...' orderBy='2'

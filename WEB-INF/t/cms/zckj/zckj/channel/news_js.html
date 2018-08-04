@@ -27,45 +27,53 @@
 <div class="kaishi">
     <div class="jishutop " style="background-image: url(/${res}/imgs/jishutop.png)"></div>
     <div class="container">
-        <div class="kuang clearfix" id="selectorWrapper"></div>
-        <!--
-        <div class="kuang clearfix">
-            <ui>
-                <li class="yiyi">
+        <div class="kuang clearfix" id="selectorWrapper">
+            <div class="selector">
+                <div class="selector-title yiyi"></div>
+                <div class="selector-items">
+                    <ui>
+                        <li class="item active" data-value=""><span>不限</span></li>
+                        [@cms_channel_list parentId='427']
+                        [#list tag_list as c2]
+                        <li class="item" data-value="${c2.keywords!}"><span>${c2.name}</span></li>
+                        [/#list]
+                        [/@cms_channel_list]
+                        <!--<li class="yiyi">
 
-                    <a href=""/>技术类型 ：
-                </li>
-                </li>
-                <li>
-                    <a href="" class="active "/> <span class="buxian">不限</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>电子信息技术</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>生物与新医药技术</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>航空航天技术</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>新材料技术</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>高技术服务业</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>新能源及节能技术</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>资源与环境技术</span></li>
-                </li>
-                <li>
-                    <a href=""/> <span>高技术改造传统产业</span></li>
-                </li>
-            </ui>
+                            <a href=""/>技术类型 ：
+                        </li>
+                        </li>
+                        <li>
+                            <a href="" class="active "/> <span class="buxian">不限</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>电子信息技术</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>生物与新医药技术</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>航空航天技术</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>新材料技术</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>高技术服务业</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>新能源及节能技术</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>资源与环境技术</span></li>
+                        </li>
+                        <li>
+                            <a href=""/> <span>高技术改造传统产业</span></li>
+                        </li>-->
+                    </ui>
+                </div>
+            </div>
         </div>
-        -->
         <div class="shouzhaopian">
             <ul>
                 <div class="libiao">
@@ -84,15 +92,20 @@
             </ul>
         </div>
         <div class="zhaopian clearfix">
-            <ul id="itemWrapper" class="zhaoui"></ul>
-        </div>
-        <div class="box" style="padding-bottom: 20px;">
-            <div id="pagination2" class="page fl"></div>
-        </div>
-        <!--
-        <div class="zhaopian clearfix">
-            <ul class="zhaoui">
-                <li class="zhaoli">
+            <ul class="zhaoui" id="itemWrapper">
+                [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
+                dateFormat='[dd,MM,yyyy]']
+                [#list tag_pagination.list as a]
+                <li class="item zhaoli ${a.origin!}">
+                    <div class="tupian" style="background-image: url(${a.titleImg!})"></div>
+                    <div class="xiawenzi">
+                        <p class="biaoti">${a.title}</p>
+                        <p class="mingzi"><a href="${a.url}">MORE+</a></p>
+                    </div>
+                </li>
+                [/#list]
+                [/@cms_content_page]
+                <!--<li class="zhaoli">
                     <div class="tupian" style="background-image: url(/${res}/imgs/dierzhang.png)"></div>
                     <div class="xiawenzi">
                         <p class="biaoti">自调压储气废胎缝合沼气池</p>
@@ -133,13 +146,15 @@
                         <p class="biaoti">一种治疗肝病的药物</p>
                         <p class="mingzi"><a href="">MORE+</a></p>
                     </div>
-                </li>
+                </li>-->
             </ul>
         </div>
-        <div class="anniu">
-            <button type="submit">加载更多</button>
+        <div class="box" style="padding-bottom: 20px;">
+            <div id="pagination2" class="page fl"></div>
         </div>
-        -->
+        <!--<div class="anniu">
+            <button type="submit">加载更多</button>
+        </div>-->
     </div>
     <script src="/${res}/js/classify-page.js"></script>
 </div>
