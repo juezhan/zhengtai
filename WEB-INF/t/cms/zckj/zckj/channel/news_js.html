@@ -29,6 +29,10 @@
     <div class="container">
         <div class="kuang clearfix" id="selectorWrapper">
             <div class="selector">
+                [@cms_channel id='424']
+                <div class="selector-title yiyi">${tag_bean.name} ：</div>
+               <!-- <a href="${tag_bean.url}" target="_blank">${tag_bean.name}</a>-->
+                [/@cms_channel]
                 <div class="selector-title yiyi"></div>
                 <div class="selector-items">
                     <ui>
@@ -76,7 +80,24 @@
         </div>
         <div class="shouzhaopian">
             <ul>
+                [@cms_content_page orderBy='5' channelId=channel.id channelOption='0'
+                dateFormat='[dd,MM,yyyy]' titLen='30' append='...' recommend='1' count='1' descLen='200']
+                [#list tag_pagination.list as a]
                 <div class="libiao">
+                    <div class="tupian1" style="background-image: url(${a.titleImg!})"></div>
+                </div>
+                <li class="libiao1">
+                    <div class="xiawenziba">
+                        <p class="biaoti1">[@text_cut s=a.title len=titLen append=append/]</p>
+                        <p class="zhongwenzi1">[@text_cut s=a.desc len=descLen append=append/]
+                        </p>
+                        <p class="mingzi1"><a href="${a.url}">MORE+</a></p>
+                    </div>
+                    <div class="zcbiaojian" style="background-image: url(/${res}/imgs/zcbiaojian.png)"></div>
+                </li>
+                [/#list]
+                [/@cms_content_page]
+               <!-- <div class="libiao">
                     <div class="tupian1" style="background-image: url(/${res}/imgs/tupian1.png)"></div>
                 </div>
                 <li class="libiao1">
@@ -88,18 +109,18 @@
                         <p class="mingzi1"><a href="">MORE+</a></p>
                     </div>
                     <div class="zcbiaojian" style="background-image: url(/${res}/imgs/zcbiaojian.png)"></div>
-                </li>
+                </li>-->
             </ul>
         </div>
         <div class="zhaopian clearfix">
             <ul class="zhaoui" id="itemWrapper">
-                [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
-                dateFormat='[dd,MM,yyyy]']
+                [@cms_content_page orderBy='4' channelId=channel.id channelOption='0'
+                dateFormat='[dd,MM,yyyy]' titLen='20' append='...']
                 [#list tag_pagination.list as a]
                 <li class="item zhaoli ${a.origin!}">
                     <div class="tupian" style="background-image: url(${a.titleImg!})"></div>
                     <div class="xiawenzi">
-                        <p class="biaoti">${a.title}</p>
+                        <p class="biaoti">[@text_cut s=a.title len=titLen append=append/]</p>
                         <p class="mingzi"><a href="${a.url}">MORE+</a></p>
                     </div>
                 </li>
