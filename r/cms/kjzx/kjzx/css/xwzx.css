@@ -3,14 +3,18 @@
 .xwzx .cnt-wrapper .m-cnt {border-right: 2px solid #eaeaea;width: 856px;padding: 30px 40px 30px 20px;box-sizing: border-box;float: left;}
 .xwzx .cnt-wrapper .m-cnt .classify{
     width: 100%;border: 2px solid #e1e1e1;border-radius: 10px;}
-.xwzx .cnt-wrapper .m-cnt .classify .tit{display: inline-block;vertical-align: middle;width: 114px;font-size: 16px;text-indent: 8px;}
-.xwzx .cnt-wrapper .m-cnt .classify .list{display: inline-block;vertical-align: middle;width: 82%;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li{display:block;font-size: 18px;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li a{padding: 6px;display: inline-block;margin: 4px 0;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li a:hover{background-color: #0064b5;color: #fff;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li .active{background-color: #0064b5;color: #fff;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li:nth-child(1){padding-right: 50px;}
-.xwzx .cnt-wrapper .m-cnt .classify .list li:nth-child(3){padding-right: 30px;}
+.xwzx .cnt-wrapper .m-cnt .classify .tit{display: inline-block;vertical-align: middle;width: 114px;font-size: 16px;text-indent: 8px;margin-top: -70px;}
+.xwzx .cnt-wrapper .m-cnt .classify .list{display: inline-block;vertical-align: middle;width: 82%;margin: 5px 0;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li{display:inline-block;font-size: 15px;width: 48%;padding-left: 10px;vertical-align: center;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li a{padding: 6px;display: inline-block;margin: 4px 0;width: 70%;min-height:2rem;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li a:hover{color:#0a9fe1;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li .active{color:#0a9fe1;}
+.zhaopian{width: 15%;height: 40px;}
+/*.xwzx .cnt-wrapper .m-cnt .classify .list li:nth-child(1){float: left;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li:nth-child(2){float: left;}
+
+.xwzx .cnt-wrapper .m-cnt .classify .list li:nth-child(4){float: left;}
+.xwzx .cnt-wrapper .m-cnt .classify .list li:nth-child(3){float: left;}*/
 .xwzx .cnt-wrapper .ad-wrapper {padding: 30px 0;font-size: 0;float: right;width: 300px;}
 .xwzx .cnt-wrapper .ad-wrapper img {margin-bottom: 12px;}
 .xwzx .cnt-wrapper .more {height: 54px;background: url("../imgs/xwzx-more.png") #e1dede 50% 50% no-repeat;cursor: pointer;}

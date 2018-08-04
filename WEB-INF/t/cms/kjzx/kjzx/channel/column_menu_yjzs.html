@@ -50,6 +50,7 @@
                         [@cms_channel_list parentId=channel.parentId]
                         [#list tag_list as c2]
                         <li>
+                            <img src="${c2.titleImg!}" alt="" width="100%" class="zhaopian">
                             <a href="${c2.url}" class="[#if c2.id == channel.id]active[/#if]">
                                 ${c2.name}
                             </a>
@@ -58,8 +59,9 @@
                         [/@cms_channel_list]
                     </ul>
                 </div>
-                <div class="classify" style="padding: 5px 0;margin-top: 20px;">
+                <div class="classify" style="padding: 5px 3%;margin-top: 20px; width: 94%;">
                     ${channel.txt!}
+
                 </div>
                 [@cms_content_page orderBy='4' channelId=channel.id count=10 channelOption='0'
                 dateFormat='[dd,MM,yyyy]' currPageClass="currPageClass" norPageClass="norPageClass"]
