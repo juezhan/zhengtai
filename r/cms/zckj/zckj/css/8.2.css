@@ -114,7 +114,7 @@ p {margin: 0 0 10px;}
 .shouzhaopian{width: 100%;position: relative;}
 .libiao{width: 50%;float: left;}
 .libiao1{width: 50%;float: right;height: 350px;}
-.tupian1{width: 600px;height:350px; }
+.tupian1{width: 600px;height:350px; background-size: cover;}
 .xiawenziba{height: 350px;background-color: white;width: 100%;}
 .zcbiaojian{width: 50px;height: 128px;margin-left: 520px;position: relative;margin-top: -354px;}
 .biaoti1{height: 40px; font-size: 20px; font-weight: 700;width: 530px; position: absolute;margin-top: 80px;margin-left: 40px;}
