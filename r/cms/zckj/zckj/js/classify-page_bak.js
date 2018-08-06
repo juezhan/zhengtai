@@ -185,8 +185,8 @@ function setPageination() {
   });
 }
 
-getSelectorItems();
-getItems();
+// getSelectorItems();
+// getItems();
 $('#itemWrapper .item').addClass('enable');
 setPageination();
 
