@@ -49,7 +49,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-xwzx .menu-wapper .item.active:after,
 .news-xwzx .menu-wapper .item:hover:after{width: 100%;}
 
-.news-xwzx .list-wapper .list-item.bd{width: 640px;}
+.news-xwzx .list-wapper .list-item.bd{width: 640px;padding: 26px 0 40px 0;}
 .news-xwzx .list-wapper .list-item.bd img{width: 100%;}
 
 
