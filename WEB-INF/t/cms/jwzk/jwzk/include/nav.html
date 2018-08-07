@@ -2,10 +2,11 @@
 <!-- navigation-bar 开始 -->
 <link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
 <div class="navigation-bar" id="navigationBar">
+  <img src="/${res}/imgs/logo2.png" class="logo2">
     <div class="bd">
       [@cms_channel_list]
       [#if !channel??]
-        <div class="item on"><a href="/" class="tt">首页</a></div>
+        <div class="item on"><a href="/" class="tt">网站首页</a></div>
         [#list tag_list as c]
           <div class="item">
             <a href="${c.url}" class="tt">${c.name}</a>
@@ -24,7 +25,7 @@
           </div>
         [/#list]
       [#else]
-        <div class="item"><a href="/" class="tt">首页</a></div>
+        <div class="item"><a href="/" class="tt">网站首页</a></div>
         [#list tag_list as c]
           <div class="item[#if channel??&&channel.id==c.id] on[/#if]" >
             <a href="${c.url}" class="tt">${c.name}</a>
@@ -45,6 +46,9 @@
       [/#if]
       [/@cms_channel_list]
     </div>
+  <div class="search">
+    <input type="text" name="q" value="${oldq!}" placeholder="l 请输入关键词" maxlength="50" autocomplete="off" class="searchCon"><a href=""> <img src="/${res}/imgs/fangdajing.png" class="fangdajing"></a>
+  </div>
 </div>
 <script>
     var mt = null,$currTt = $('#navigationBar a.tt.on').eq(0)
