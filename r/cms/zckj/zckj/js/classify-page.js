@@ -6,7 +6,7 @@ $(document).ready(function () {
         // let total = $('#itemWrapper .item:not(.hide)').length;
         let total = $('#itemWrapper .item.enable').length;
         // 每页显示数
-        let pageSize = 9;
+        let pageSize = 15;
         // 总页数=（总记录数+每页显示数-1）/每页显示数
         let totalPage = Math.floor((total + pageSize - 1) / pageSize);
         $('#itemWrapper .item.enable:lt(' + pageSize + ')').addClass('active');
