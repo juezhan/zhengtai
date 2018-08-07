@@ -117,8 +117,10 @@ p {margin: 0 0 10px;}
 .tupian1{width: 600px;height:350px; }
 .xiawenziba{height: 350px;background-color: white;width: 100%;}
 .zcbiaojian{width: 50px;height: 128px;margin-left: 520px;position: relative;margin-top: -354px;}
-.biaoti1{height: 40px; font-size: 20px; font-weight: 700;width: 530px; position: absolute;margin-top: 80px;margin-left: 40px;}
-.zhongwenzi1{width: 530px;height: 143px;font-size: 16px;position: absolute; word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;  display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;margin-top: 130px;margin-left: 40px;line-height: 30px;}
+.biaoti1{height: 40px; font-size: 20px; font-weight: 700;width: 530px; position: absolute;margin-top: 80px;margin-left: 40px; word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;
+    display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.zhongwenzi1{width: 530px;height: 143px;font-size: 16px;position: absolute; word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;
+    display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;margin-top: 130px;margin-left: 40px;line-height: 30px;}
 .mingzi1{width:550px; position: absolute;margin-top: 280px;margin-left: 40px;font-weight: 700;}
 .zhaoui{width: 100%;}
 .zhaoli{width: 31%;height: 310px;margin: 30px 12px;display: inline-block;}
@@ -126,7 +128,7 @@ p {margin: 0 0 10px;}
 .zhaoli.item.active {display: inline-block;}
 .tupian{width: 100%;height: 194px;background: no-repeat center center;background-size: cover;}
 .xiawenzi{width: 372px;height: 100px;position: absolute; background-color: white;}
-.biaoti{height: 40px; font-size: 16px; font-weight: 700;width: 352px; position: relative;margin: 10px 10px;}
+.biaoti{height: 40px; font-size: 16px; font-weight: 700;position: relative;margin: 10px 10px;}
 .mingzi{width: 372px;text-indent: 10px;}
 p{color: black;}
 .anniu{margin: 20px 0;margin-left: 45%;}
@@ -145,7 +147,8 @@ button{width: 100px;padding: 10px 10px;border-radius: 5px;color: #0b69b7;backgro
     .zhaoli{width: 31%;margin: 20px 10px;}
     .kuang li{padding: 15px 4px;display: inline-block; }
     .xiawenzi{width: 310px;}
-    .biaoti1{width: 450px;}
+    .biaoti1{width: 450px;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;
+        display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
     .zhongwenzi1{width: 450px;}
     .mingzi1{width:450px;}
     .zcbiaojian{margin-left: 430px;}
