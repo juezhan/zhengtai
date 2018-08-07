@@ -1,11 +1,11 @@
 .navigation-bar{font-size:0;}
 
-.logo2{width:500px;height: 80px;position: absolute;margin-top: -280px;}
-.navigation-bar .bd{text-align:center;width: 50%;margin-left:500px;height: 80px;position: absolute;margin-top: -280px;background-color: white;line-height: 80px;}
-.navigation-bar .item{position:relative;padding: 0 5px;display:inline-block;text-align:center;font-size:16px;height: 80px;line-height: 80px;}
+.logo2{width:500px;height: 114px;position: absolute;margin-top: -600px;}
+.navigation-bar .bd{text-align:center;width: 50%;margin-left:500px;height: 114px;position: absolute;margin-top: -600px;background-color: white;line-height: 80px;}
+.navigation-bar .item{position:relative;padding: 0 5px;display:inline-block;text-align:center;font-size:16px;height: 80px;line-height: 114px;}
 .navigation-bar .item + .item{margin-left: 30px;}
-.navigation-bar .item .tt{display: block;height: 80px;}
-.navigation-bar .item.on{color:white;background-color:#0066b3;height: 80px;}
+.navigation-bar .item .tt{display: block;height:114px;}
+.navigation-bar .item.on{color:white;background-color:#0066b3;height: 114px;}
 .navigation-bar .item.on a.tt{color:white;}
 .navigation-bar .item a:hover{color: white;}
 .navigation-bar .item a:active{color: white;}
@@ -16,8 +16,8 @@
 .navigation-bar .item .menu ul{display: block;}
 .navigation-bar .item .menu ul a{word-break:keep-all;color: #fff;padding: 0 20px;font-size: 14px;line-height: 24px;height: 24px;}
 .navigation-bar .item .menu ul a:hover{color:#999}
-.searchCon{position: absolute;margin-top: -320px;height: 30px;width: 200px;margin-left: 860px;}
-.fangdajing{width: 37px;height: 30px;position: absolute;margin-top: -320px;margin-left: 1060px;}
+.searchCon{position: absolute;margin-top: -660px;height: 30px;width: 200px;margin-left: 860px;}
+.fangdajing{width: 35px;height: 30px;position: absolute;margin-top: -660px;margin-left: 1060px;}
 @media screen and (max-width: 1024px) {
     .navigation-bar{width: 100%;background-color: #eee;}
   .navigation-bar .item{padding: 0 8px;font-size: 14px;height: 40px;line-height: 30px;}

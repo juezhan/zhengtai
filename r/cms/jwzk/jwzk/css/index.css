@@ -210,29 +210,38 @@ img {
     color: #ea8010;
 }*/
 body{background-color: #dddddc;}
-
-.header .container {
-   margin-top: -80px;
-    position: relative;
-}
-@media screen and (max-width: 1024px) {
-
-}
+.header .container {margin-top: -80px;position: relative;}
 .jwsy{width: 100%;background-color: white;}
 .kaishi{width: 1200px;margin: auto;padding-top: 20px;}
 .toubuzuo{width: 350px;display: inline-block;margin-left: 20px;}
 .wenzi{font-size: 22px;font-weight: 800;height: 20px;border-bottom: 1px solid black;position: relative;}
 .wenzi2{width: 96%;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;margin: 20px 0;font-size: 16px;line-height: 20px;}
 .tuyou{margin-left: 400px;position: absolute;margin-top: -200px;width: 800px;}
-.gengduo{margin-left: 530px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;}
-.gengduo1{margin-left: 830px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;}
-.tu{widh: 90%;margin: 30px auto;}
-.tu li{display: inline-block;width: 23%;}
-.tu1{width: 90px;height: 90px;background-repeat: no-repeat;}
+.gengduo{margin-left: 700px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;}
+.gengduo1{margin-left: 990px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;}
+.tu{widh: 100%;margin: 30px 0 30px 30px;}
+.tu li{display: inline-block;width: 24%;text-align: center;}
+.tu1{width: 80px;height: 80px;background-repeat: no-repeat;}
 .fuwu{line-height: 25px;padding: 10px 10px;font-size: 18px;}
 .fuwu a{color: #8c8c8c;}
+
 .jwsy1{width: 100%;background-color: white;margin-top: 30px;}
 .er{width: 100%;background-color: white;margin-left: 20px;}
-.erui{margin-top: 30px;width: 100%;display: inline-block;}
+.erui{margin: 30px 0;width: 100%;display: inline-block;}
 .erli{width: 23%;padding-left: 10px;display: inline-block;}
-.tupian{width: 245px;height: 200px;}
+.tupian{width: 280px;height: 150px;}
+.fuwu1{line-height: 25px;padding: 10px 0px;font-size: 18px;}
+.fuwu1 a{color: #8c8c8c;}
+
+.sanli{width: 32%;margin-left: 10px;display: inline-block;}
+.tupian3{width: 145px;height: 155px;}
+.sanwen{width: 250px;height: 155px; }
+.bannian{height: 50px;position: absolute;padding-left: 20px;}
+.ling{height: 50px;padding-left: 20px;}
+@media screen and (max-width: 1119px) {
+    .kaishi{width: 1000px;margin: auto;}
+    .gengduo{margin-left: 500px;}
+    .tu li{width: 18%;}
+    .tupian{width: 230px;}
+    .gengduo1{margin-left: 790px;}
+}
