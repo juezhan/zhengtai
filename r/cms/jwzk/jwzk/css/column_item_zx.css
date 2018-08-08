@@ -271,7 +271,6 @@ img {
 }
 
 .jiuweitop{width: 100%;height: 200px;}
-.logo{width: 504px;height: 100px;position: absolute;margin: -150px 37.5% 0 37.5%;}
 .daohangkaishi{width: 100%;height: 50px;background-color: #070b50;}
 .daohangui{width: 1200px;margin: auto;}
 .daohangui li{width: 19%;padding: 16px 0;display: inline-block;font-size: 18px;text-align: center;}
@@ -284,7 +283,6 @@ img {
 .dibuwenzi{margin-left: 10%;display: inline-block;margin-top: 10px;line-height: 50px;}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container {width: 1000px;background-color: white;}
-    .logo{margin: -150px 25% 0 25%;}
     .daohangui{width: 1000px;margin: auto;}
     .column-item-zx .column-item-bd .box-wrapper {
         width: 730px;overflow: hidden;float: left;margin-left: 20px;}
