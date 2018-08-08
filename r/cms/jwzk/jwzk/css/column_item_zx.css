@@ -60,10 +60,8 @@ img {
     -ms-interpolation-mode: bicubic
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto
-}
+
+/*
 
 .icon {
     display: inline-block
@@ -269,8 +267,9 @@ img {
         margin-bottom: 30px;
     }
 }
+*/
 
-.jiuweitop{width: 100%;height: 200px;}
+/*.jiuweitop{width: 100%;height: 200px;}
 .daohangkaishi{width: 100%;height: 50px;background-color: #070b50;}
 .daohangui{width: 1200px;margin: auto;}
 .daohangui li{width: 19%;padding: 16px 0;display: inline-block;font-size: 18px;text-align: center;}
@@ -280,27 +279,31 @@ img {
 .tit-logo{width: 220px;height: 123px;margin-left: 20px;margin-top: 20px; border-top: 1px solid #a0a0a0;}
 .jiuweidikuang{width: 100%;height: 700px}
 .dibu{margin-top: 50px;margin-left: 30%;font-size: 18px;width: 100%;height: 100px;position: absolute;}
-.dibuwenzi{margin-left: 10%;display: inline-block;margin-top: 10px;line-height: 50px;}
+.dibuwenzi{margin-left: 10%;display: inline-block;margin-top: 10px;line-height: 50px;}*/
+/*.header .container {margin-top: -80px;position: relative;}*/
+.fuwufanwei{width: 100%;}
+.container {width: 1200px;margin: auto}
+.juzhong{width: 1000px;margin: auto;}
+.wenziti{position: absolute;margin-top: -500px;letter-spacing: 20px;color: white;font-size: 60px;font-family: 宋体；}
+.hengxian{width: 100px;}
+.wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
+.wenxintop{width: 475px;height: 49px;margin-left: 500px;}
+.biaoti{width: 100%;padding: 0 30% 30px 30%;}
+.fuwufanwei{width: 100%;}
+.fuwukuang{width: 1200px;margin: auto;}
+.jieshao{width: 400px;height: 400px;}
+.jiewenzi{width: 380px;padding: 170px 0;font-size: 16px;}
+.tubiao{width: 750px;margin-left: 430px;margin-top: -360px;position: absolute;}
+.tubiao ui{width: 100%;}
+.tubiao li{width: 47%;margin-left: 2%;height: 120px;background-color: white;margin-top: 50px;display: inline-block;}
+.erji{width: 90px;height: 100px;padding: 10px 0;}
+.tuwen{width: 190px;height: 120px;}
+.yanjiu{width: 160px;height: 30px;position: absolute;margin-left: 120px;border-bottom: 1px solid#c7c7c7;margin-top: -105px;}
+.yanjiuwen{width: 160px;height: 80px;position: absolute;margin-left: 120px;margin-top: -60px;}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
-    .container {width: 1000px;background-color: white;}
-    .daohangui{width: 1000px;margin: auto;}
-    .column-item-zx .column-item-bd .box-wrapper {
-        width: 730px;overflow: hidden;float: left;margin-left: 20px;}
-
-    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item{
-        width: 305px;float: left;margin: 14px 20px;
-    }
-    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .img{
-        padding: inherit;z-index: 999;width: 140px;height: 140px;position: relative;overflow: hidden;}
-
-    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item-mn{
-        background-color: #f8f8f8;position: relative;width: 270px;margin-left: -140px;float: right;height: 140px;z-index: 1;
-        padding: 0 26px 0 106px;box-sizing: border-box;
-    }
-    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .tt{
-        font-size: 16px;text-align: center;color: #000000;margin-top: 16px;}
-    .column-item-zx .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .bd{
-        font-size: 10px;line-height: 14px;color: #999999;margin-top: 10px;margin-left: 10px;}
-    .dibu{margin-left: 10%;}
-    .dibuwenzi{text-align: center;}
+    .container {width: 1000px;}
+    .fuwukuang{width: 1000px;margin: auto;}
+    .tubiao li{width: 40%;}
+    .tubiao{margin-left: 330px;}
+    .jiewenzi{width: 280px;margin-left: 20px;}
 }

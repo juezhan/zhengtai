@@ -21,7 +21,7 @@
 .fangdajing{width: 20px;height: 23px;position: absolute;margin-top: -660px;margin-left: 1040px;}
 @media screen and (max-width: 1024px) {
     .navigation-bar{width: 100%;background-color: #eee;}
-     .navigation-bar .item{padding: 0 8px;font-size: 14px;height: 40px;line-height: 90px;}
+     .navigation-bar .item{padding: 0 5px;font-size: 14px;height: 90px;line-height: 90px;margin-left: -10px;}
     .navigation-bar .item.on{height: 90px;border-radius: 0;}
     .navigation-bar .item .tt{height:90px;}
     .searchCon{margin-left: 780px;}
