@@ -70,9 +70,10 @@ img {
 .icon {
     display: inline-block
 }
-.wenziti{position: absolute;margin-top: -500px;font-weight: 800;letter-spacing: 20px;color: white;font-size: 30px;}
+.juzhong{width: 1000px;margin: auto;}
+.wenziti{position: absolute;margin-top: -500px;letter-spacing: 20px;color: white;font-size: 60px;font-family: 宋体；}
 .hengxian{width: 100px;}
-.wenziti2{position: absolute;margin-top: -350px;font-weight: 800;letter-spacing: 20px;color: white;font-size: 30px;}
+.wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 
 /*.index .banner {
     margin-top: 0px
