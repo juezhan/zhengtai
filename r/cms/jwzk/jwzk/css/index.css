@@ -70,7 +70,9 @@ img {
 .icon {
     display: inline-block
 }
-
+.wenziti{position: absolute;margin-top: -500px;font-weight: 800;letter-spacing: 20px;color: white;font-size: 30px;}
+.hengxian{width: 100px;}
+.wenziti2{position: absolute;margin-top: -350px;font-weight: 800;letter-spacing: 20px;color: white;font-size: 30px;}
 
 /*.index .banner {
     margin-top: 0px
