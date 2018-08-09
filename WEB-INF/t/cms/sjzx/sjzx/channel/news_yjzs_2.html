@@ -47,10 +47,17 @@
                 </div>-->
 
                 <div class="items" id="box">
-                    <a href="#" class="item1 item active">绩效评价</a>
+                    [@cms_channel_list parentId=channel.parentId]
+                    [#list tag_list as c2]
+                        <a href="${c2.url}" class="item1 item [#if c2.id == channel.id]active[/#if]">
+                            ${c2.name}
+                        </a>
+                    [/#list]
+                    [/@cms_channel_list]
+                   <!-- <a href="#" class="item1 item active">绩效评价</a>
                     <a href="#" class="item2 item">科技专项</a>
                     <a href="#" class="item3 item">高企认定</a>
-                    <a href="#" class="item4 item">多元审计</a>
+                    <a href="#" class="item4 item">多元审计</a>-->
                 </div>
             </div>
         </div>
