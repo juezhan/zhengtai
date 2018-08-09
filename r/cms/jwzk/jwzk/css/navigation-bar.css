@@ -17,13 +17,14 @@
 .navigation-bar .item .menu ul{display: block;}
 .navigation-bar .item .menu ul a{word-break:keep-all;color: #fff;padding: 0 20px;font-size: 14px;line-height: 24px;height: 24px;}
 .navigation-bar .item .menu ul a:hover{color:#999}
-.searchCon{position: absolute;margin-top: -660px;height: 23px;width: 180px;margin-left: 860px;text-indent: 20px;}
-.fangdajing{width: 20px;height: 23px;position: absolute;margin-top: -660px;margin-left: 1040px;}
+.searchCon{position: absolute;margin-top: -660px;height: 23px;width: 180px;margin-left: 920px;text-indent: 20px;}
+.fangdajing{width: 20px;height: 23px;position: absolute;margin-top: -660px;margin-left: 1080px;}
 @media screen and (max-width: 1024px) {
-    .navigation-bar{width: 100%;background-color: #eee;}
+    .navigation-bar{width: 100%;background-color: #eee;margin-left: -10px;}
      .navigation-bar .item{padding: 0 5px;font-size: 14px;height: 90px;line-height: 90px;margin-left: -10px;}
     .navigation-bar .item.on{height: 90px;border-radius: 0;}
     .navigation-bar .item .tt{height:90px;}
-    .searchCon{margin-left: 780px;}
-    .fangdajing{margin-left: 930px;}
+    .searchCon{margin-left: 800px;}
+    .fangdajing{margin-left: 960px;}
+
 }

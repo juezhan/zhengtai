@@ -48,197 +48,156 @@ a {
     cursor: pointer
 }
 
-ahover {
+/*ahover {
     text-decoration: none;
     color: #ef3838;
     transition-duration: .4s
-}
+}*/
 
 img {
     border: 0;
     vertical-align: middle;
     -ms-interpolation-mode: bicubic
 }
-.column-item-zj .column-item-bd {
-    padding: 23px 0 28px;
+
+.header .container {margin-top: -80px;position: relative;}
+.juzhong{width: 1000px;margin: auto;}
+.wenziti{position: absolute;margin-top: -500px;letter-spacing: 20px;color: white;font-size: 60px;font-family: 宋体；}
+.hengxian{width: 100px;}
+.wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
+.wenxintop{width: 475px;height: 49px;margin-left: 500px;}
+.biaoti{width: 100%;padding: 30px 10% 30px 30%;height: 40px;}
+em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;}
+.art1{
+    width: 1200px;
+    margin: 0 auto;
+
 }
 
-.column-item-zj .column-item-bd .slide-bar {
-    width: 250px;
-    font-size: 0;
-    float: left;
+.art1_nav{
+    width: 100%;
+    height: 20px;
+    margin: 0 34%;
 }
-
-.column-item-zj .column-item-bd .slide-bar .tit-logo {
-}
-
-.column-item-zj .column-item-bd .slide-bar .menu-wrapper {
-    border: 1px solid #a0a0a0;
-}
-
-.column-item-zj .column-item-bd .slide-bar .menu-cell {
+.art1_nav ul li{
+   display: inline-block;;
     font-size: 18px;
-    display: block;
-    height: 78px;
-    line-height: 78px;
-    text-align: center;
+    list-style: none;
+    line-height: 16px;
+    color: #a8a8a8;
 }
-
-.column-item-zj .column-item-bd .slide-bar .menu-cell + .menu-cell {
-    border-top: 1px solid #a0a0a0;
-}
-
-.column-item-zj .column-item-bd .slide-bar .menu-cell em {
-    display: inline-block;
-    content: '';
-    width: 6px;
-    height: 6px;
-    font-size: 0;
-    background-color: #000000;
-    border-radius: 50%;
-    margin-right: 10px;
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-}
-
-.column-item-zj .column-item-bd .container {
-    overflow: hidden;
-}
-
-.column-item-zj .column-item-bd .box-wrapper {
-    width: 917px;
-    overflow: hidden;
-    float: right;
-}
-
-.column-item-zj .column-item-bd .box-wrapper .box {
-    border: 1px solid #a0a0a0;
-}
-.column-item-zj .column-item-bd .box-wrapper .box + .box{
-    margin-top: 27px;
-}
-
-.column-item-zj .column-item-bd .box-wrapper .box .box-tt {
-    margin: 0 36px;
-    border-bottom: 1px solid #a0a0a0;
-    padding: 16px 0 12px;
-    font-size: 0;
-}
-
-.column-item-zj .column-item-bd .box-wrapper .box .txt-1 {
-    font-size: 20px;
-    color: #e74a19;
-    border-bottom: 1px solid #e74a19;
-    line-height: 24px;
-    height: 24px;
-    display: inline-block;
-    padding-bottom: 12px;
-    margin-bottom: -13px;
-    font-weight: 600;
-}
-
-.column-item-zj .column-item-bd .box-wrapper .box .txt-2 {
-    color: #999999;
-    margin-left: 10px;
-    font-size: 14px;
-}
-
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd{
-    overflow: hidden;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a{padding: 26px 19px 20px;}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item{
-    width: 260px;
-    margin: 12px 16px;
-    float: left;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item-mn{
-    border:1px solid #a0a0a0;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item .img{}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item .tt{text-align: center;font-size: 20px;margin-top: 25px;}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item .bd{
-    padding: 15px 12px 0;
-    font-size: 14px;
-    line-height: 24px;
-    color: #333;
-    font-weight: bold;
-}
-
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b{
-    padding: 25px 17px;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item{
-    width: 400px;
-    float: left;
-    margin: 14px 20px;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item-mn{
-    background-color: #f8f8f8;
-    position: relative;
-    width: 320px;
-    margin-left: -160px;
-    float: right;
-    height: 160px;
-    z-index: 1;
-    padding: 0 26px 0 106px;
-    box-sizing: border-box;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .img{
-    padding: inherit;
-    z-index: 999;
-    width: 160px;
-    height: 160px;
-    position: relative;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .tt{
-    font-size: 18px;
-    text-align: center;
-    color: #000000;
-    margin-top: 25px;
-}
-.column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .bd{
+.art1_nav ul li a{
     font-size: 12px;
-    line-height: 18px;
-    color: #999999;
-    margin-top: 16px;
+    display: inline-block;
+    padding: 0 2px;
+    line-height: 16px;
+
+}
+.art1_nav ul li a:hover{
+    color: #0066b3;
+}
+.active2{
+    color:#0066b3;
+}
+.art1_per{
+   width: 100%;
+margin-top: 20px;
+    height: 400px;
+}
+.per_box{
+    width: 23%;
+    height: 100%;
+    display: inline-block;;
+    background-color: white;
+    margin-left: 20px;
+}
+.per_box img{
+    width: 100%;
+    height: 280px;
+}
+.per_box p{
+    text-align: center;
+   margin: 20px 0;
+}
+.s1{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.s2,.s3{font-size: 12px;color: #999;}
+.art1_foo{height: 28px;padding:50px 25% 20px 25%;}
+
+.foo_ul li {
+    display: inline-block;
+    line-height: 28px;
+    list-style: none;
+    margin-right: 5px;
+}
+.foo_ul li a{
+
+    padding: 0 12px;
+    font-size: 16px;
+    background-color: #eeeeee;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 749px) {
-    .column-item-zj .column-item-bd .slide-bar{display: none;}
-    .column-item-zj .column-item-bd .box-wrapper{width: 100%;}
-    .column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-a .item {
-        width: 260px;
-        display: block;
-        margin: auto;
-        margin-bottom: 10px;
-        float: none;
-    }
-    .column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item {
-        width: 300px;
-        float: none;
-        margin: 14px 20px;
-        display: block;
-        height: 160px;
-    }
-    .column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item .img {
-        padding: inherit;
-        z-index: 999;
-        width: 100px;
-        position: relative;
-        height: 100px;
-        margin-top: 30px;
-        margin-left: -19px;
-    }
-    .column-item-zj .column-item-bd .box-wrapper .box .box-bd.box-bd-b .item-mn {
-        background-color: #f8f8f8;
-        position: relative;
-        width: 320px;
-        margin-left: -160px;
-        float: right;
-        height: 160px;
-        z-index: 1;
-        padding: 0 26px 0 106px;
-        box-sizing: border-box;
-    }
+@media screen and (max-width: 1119px) and (min-width: 769px) {
+    .container{width: 1000px;margin: auto;}
+    .biaoti{padding: 20px 25% 30px 25%;}
+    .art1_nav{margin: 0 25%;}
+    .per_box{width: 18%;}
+    .per_box p{margin-top:10px;margin-bottom: 10px;}
+    .art1_foo{height: 28px;padding:50px 15% 20px 15%;}
+}
+
+
+.per_det{
+    width: 850px;
+    margin: auto;
+    position: absolute;;
+    margin-left: 300px;
+    margin-top: -400px;
+    height: 380px;
+    background-color: white;
+    padding-top: 20px;
+}
+.per_det p{
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.art2{
+    width: 100%;
+    padding-top:20px;
+
+}
+.container1{
+    height: 600px;
+    width: 1200px;
+    margin: auto;
+}
+.per_box1{
+    width: 23%;
+    height: 100%;
+    display: inline-block;;
+    background-color: white;
+    margin-left: 20px;
+}
+.per_box1 img{
+    width: 100%;
+    height: 280px;
+}
+
+.per_box1 p{
+    text-align: center;
+    margin: 20px 0;
+}
+@media screen and (max-width: 1119px) and (min-width: 769px) {
+    .container1{width: 1000px;margin: auto;}
+    .biaoti{padding: 20px 25% 30px 25%;}
+    .per_det{width: 680px;margin-left: 300px;}
+    .per_box1{width: 25%;}
+    .art1_nav{margin: 0 28%;}
 }
