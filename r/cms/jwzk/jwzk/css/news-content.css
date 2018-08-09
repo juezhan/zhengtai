@@ -8,11 +8,11 @@ h2{font-size:16px}
 h3{font-size:14px}
 h4,h5,h6{font-size:100%}
 li,ol,ul{list-style:none}
-a{text-decoration:none;color:#333;cursor:pointer}
+a{text-decoration:none;color:black;cursor:pointer;font-size: 16px;}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
-
+/*
 .news-content{margin: 20px 0 44px; overflow: hidden;}
 .news-content .content{float:left;width:100%;}
 .news-content .content .content-mn{margin-right:0;}
@@ -30,18 +30,43 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-content .aside .item .tt{height:35px;line-height:35px;text-align:center;font-size:16px;color:#fff;background-color:#2084da}
 .news-content .aside .item .bd{border:1px solid #a0a0a0;padding:10px 15px;}
 .news-content .aside .item .bd .link{display:block;background-color:#fff;height:24px;line-height:24px;color:#000;font-size:14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
-.news-content .aside .item .bd .link span{color:#ccc;margin-right:8px;font-family: '宋体';}
+.news-content .aside .item .bd .link span{color:#ccc;margin-right:8px;font-family: '宋体';}*/
 
-
+.juzhong{width: 1000px;margin: auto;}
+.wenziti{position: absolute;margin-top: -500px;letter-spacing: 20px;color: white;font-size: 60px;font-family: 宋体；}
+.hengxian{width: 100px;}
+.wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
+.wenxintop{width: 475px;height: 49px;margin-left: 500px;}
+.biaoti{width: 100%;padding: 20px 30%;}
+.jwneirong{width: 100%;margin-top: 30px;}
+.jwneirong .diyili{width: 70%;display: inline-block;}
+.wenzikaishi{text-align: center; }
+.diyi{font-size:30px;letter-spacing: 5px;}
+.dier{font-size:18px;letter-spacing: 3px;margin-top: 30px;}
+.disan{font-size:18px;letter-spacing: 3px;margin-top: 10px;}
+.disi{font-size:18px;width: 90%;margin:20px auto;}
+.diwu{margin: 20px 25%;}
+.laohu{width: 400px;height: 355px;background-repeat: no-repeat;background-position: center top;}
+.zuoce{width: 350px;margin-left: 845px;position: absolute;margin-top: -575px;}
+.zuoceui{border: 1px solid #dcdcdc;width: 100%;}
+.jushang{margin-top: 20px;}
+.dierceng{width: 100%;}
+.gonggao{width: 350px;background-color: #070b50;height: 40px;line-height: 40px;text-align: center;color: white;font-size: 20px;letter-spacing: 2px;}
+em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;
+  -webkit-transform: translateY(-3px);transform: translateY(-3px);}
+.gonggaowenzi{width:340px; line-height: 25px;padding: 5px 10px;}
+.gonggaowenzi a{width: 310px;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;
+  display: -webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;}
 @media screen and (min-width: 1620px) {
   .container{width:1600px;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 750px){
-  .container{width:960px;}
-  .news-content .content .content-mn{margin-right: 280px;}
-  .news-content .aside{width: 240px;margin-left: -240px;}
-  .news-content .content .content-mn .content-txt{padding:20px 30px;}
+  .container{width:1000px;margin: auto;}
+ .jwneirong .diyili{width: 60%;}
+  .zuoce{margin-left: 600px;margin-top: -490px;}
+  .laohu{width: 300px;height: 255px;}
+  .diwu{margin: 20px 20%;}
 }
 
 @media screen and (max-width: 749px) {

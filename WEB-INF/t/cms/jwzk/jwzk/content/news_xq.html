@@ -29,46 +29,95 @@
 
 <head>
 <body>
-[#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="news-content">
+<div class="news-content" style="background-color: #f8f8f8;">
   <div class="container">
-    <div class="content">
-      <div class="content-mn">
-        <div class="crumb">您的位置：<a href='${base}/'>首页</a> <span>&gt;</span> [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] <span>&gt;</span> [/#if][/#list]</div>
-        <h1 class="title">${content.title}</h1>
-        <div class="content-inf">
-          发布时间：${content.releaseDate}&nbsp;&nbsp;&nbsp;浏览次数：<span id="views"></span>
-        </div>
-        <div class="content-txt">
-          ${txt!}
-        </div>
-        <div class="pager-wrapper">
-          <span class="prev-content"><i></i>上一篇：[@cms_content id=content.id next='1' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else]没有了[/#if][/@cms_content]</span>
-          <span class="next-content">下一篇：[@cms_content id=content.id next='0' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else]没有了[/#if][/@cms_content]<i></i></span>
-        </div>
+    <!-- <div class="content">
+       <div class="content-mn">
+         <div class="crumb">您的位置：<a href='${base}/'>首页</a> <span>&gt;</span> [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] <span>&gt;</span> [/#if][/#list]</div>
+         <h1 class="title">${content.title}</h1>
+         <div class="content-inf">
+           发布时间：${content.releaseDate}&nbsp;&nbsp;&nbsp;浏览次数：<span id="views"></span>
+         </div>
+         <div class="content-txt">
+           ${txt!}
+         </div>
+         <div class="pager-wrapper">
+           <span class="prev-content"><i></i>上一篇：[@cms_content id=content.id next='1' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else]没有了[/#if][/@cms_content]</span>
+           <span class="next-content">下一篇：[@cms_content id=content.id next='0' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">[@text_cut s=tag_bean.title len=21 append='...'/]</a>[#else]没有了[/#if][/@cms_content]<i></i></span>
+         </div>
+       </div>
+     </div>
+     <div class="aside">
+       [@cms_channel_list parentId=channel.parentId]
+       [#list tag_list as c]
+       [#if c.id==170 || c.id==169]
+       <div class="item">
+         <div class="tt">${c.name}</div>
+         <div class="bd">
+           [@cms_content_list count='10' orderBy='4' channelId=c.id channelOption='1' dateFormat='yyyy-MM-dd']
+           [#list tag_list as a]
+           <a class="link" href="${a.url}" title="${a.title}"><span>&gt;</span>${a.title}</a>
+           [/#list]
+           [/@cms_content_list]
+         </div>
+       </div>
+       [/#if]
+       [/#list]
+       [/@cms_channel_list]
+     </div>-->
+      <div class="juzhong">
+        <div class="wenziti"><span class="jiuwei">九维</span><img src="/${res}/imgs/hengxian.png" class="hengxian"/></div>
+        <div class="wenziti2">吉林民间智库第一家</div>
       </div>
-    </div>
-    <div class="aside">
-      [@cms_channel_list parentId=channel.parentId]
-      [#list tag_list as c]
-      [#if c.id==170 || c.id==169]
-      <div class="item">
-        <div class="tt">${c.name}</div>
-        <div class="bd">
-          [@cms_content_list count='10' orderBy='4' channelId=c.id channelOption='1' dateFormat='yyyy-MM-dd']
-          [#list tag_list as a]
-          <a class="link" href="${a.url}" title="${a.title}"><span>&gt;</span>${a.title}</a>
-          [/#list]
-          [/@cms_content_list]
-        </div>
+      <div class="biaoti">
+        <img src="/${res}/imgs/gonggaotop.png" class="xinwentop"/>
       </div>
-      [/#if]
-      [/#list]
-      [/@cms_channel_list]
-    </div>
+      <div class="jwneirong">
+            <div class="diyili">
+                <span class="wenzikaishi">
+                  <p class="diyi">东北虎豹国家公园</p>
+                  <p class="dier">作者：梁海明 马达旋 </p>
+                  <p class="disan">时间：2015-06-25</p>
+                </span>
+                <p class="disi">
+                  被评估单位中国科学院长春光学精密机械与物理研究所是新中国在光学领域建立的第一个研究所，创造了十几项“中国第一”，先后参加过“两弹一星”、“载人航天工程”等多项国家重大工程项目。
+                </p>
+                <p class="diwu">
+                    <img src="/${res}/imgs/8.jpg" class="laohu"/>
+                </p>
+            </div>
+      </div>
+      <div class="zuoce">
+          <ul class="zuoceui">
+              <li class="dierceng">
+                  <ul>
+                        <p class="gonggao">最新公告</p>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <ul class="zuoceui jushang">
+              <li class="dierceng">
+                  <ul>
+                      <p class="gonggao">行业动态</p>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="#" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
   </div>
 </div>
+
+
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
