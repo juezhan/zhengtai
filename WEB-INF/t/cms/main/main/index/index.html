@@ -103,7 +103,7 @@
                             <!-- 打开新标签 -->
                             <!--<div><a href="${a.url}" target="_blank"><em></em>${a.title}</a></div>-->
                             <!-- 打开新窗体 -->
-                            <div><a href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank"><em></em><sapn>${a.title}</sapn><img src="${a.titleImg!}" alt="" class="titimg"></a></div>
+                            <div><a href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank"><em></em>[@text_cut s=a.title len=titLen append=append/]<img src="${a.titleImg!}" alt="" class="titimg"></a></div>
                             <span>${a.date?string(dateFormat)}</span>
                         </li>
                         [/#list]
