@@ -66,7 +66,7 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 100%;margin-bottom: 30px;margin-left: 30%;}
+.biaoti{width: 460px;margin:auto;}
 em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;}
 .art1{
     width: 1200px;
@@ -75,19 +75,19 @@ em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;backgr
 }
 
 .art1_nav{
-    width: 100%;
+    width: 1200px;
     height: 20px;
-    margin: 0 34%;
+    margin-left:350px;
+
 }
 .art1_nav ul li{
    display: inline-block;;
-    font-size: 18px;
     list-style: none;
     line-height: 16px;
     color: #a8a8a8;
 }
 .art1_nav ul li a{
-    font-size: 12px;
+    font-size: 16px;
     display: inline-block;
     padding: 0 2px;
     line-height: 16px;
@@ -100,7 +100,7 @@ em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;backgr
     color:#0066b3;
 }
 .art1_per{
-   width: 100%;
+   width: 1200px;
 margin-top: 20px;
     height: 400px;
 }
@@ -142,7 +142,6 @@ margin-top: 20px;
 
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container{width: 1000px;margin: auto;}
-    .biaoti{padding: 20px 25% 30px 25%;}
     .art1_nav{margin: 0 25%;}
     .per_box{width: 18%;}
     .per_box p{margin-top:10px;margin-bottom: 10px;}
@@ -196,7 +195,6 @@ margin-top: 20px;
 }
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container1{width: 1000px;margin: auto;}
-    .biaoti{padding: 20px 25% 30px 25%;}
     .per_det{width: 680px;margin-left: 300px;}
     .per_box1{width: 25%;}
     .art1_nav{margin: 0 28%;}

@@ -149,7 +149,7 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 350px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 100%;margin-bottom: 30px;margin-left: 30%;}
+.biaoti{width: 460px;margin:auto;}
 .zhuanjiaxinxi{width: 100%;font-size: 18px;margin-bottom: 100px;}
 .gongkai{margin-left: 45%;color: #00a0e9;}
 .biaoge{line-height: 35px;height: 35px;width: 70%;margin: auto;margin-top: 20px;background-color: #070b50;}
@@ -161,7 +161,7 @@ img {
 
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container {width:1000px;margin: auto;}
-    .biaoti{margin-left: 25%;}
+
     .biaoge span{padding: 5px 60px;color: white;}
     .gongkai{margin-left: 45%;}
     .yaoq{margin-left: 50px;}
@@ -221,7 +221,6 @@ img {
 .yanjiuwen{width: 160px;height: 80px;position: absolute;margin-left: 120px;margin-top: -60px;}
 @media screen and (max-width: 1119px){
     .fuwukuang{width: 1000px;margin: auto;}
-    .tubiao li{width: 40%;}
     .tubiao{margin-left: 330px;}
     .jiewenzi{width: 280px;margin-left: 20px;}
 }
