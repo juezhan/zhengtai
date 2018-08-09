@@ -66,11 +66,11 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 100%;padding: 30px 10% 30px 30%;height: 40px;}
+.biaoti{width: 100%;margin-bottom: 30px;margin-left: 30%;}
 em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;}
 .art1{
     width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 
 }
 
@@ -105,11 +105,11 @@ margin-top: 20px;
     height: 400px;
 }
 .per_box{
-    width: 23%;
+    width: 22%;
     height: 100%;
     display: inline-block;;
     background-color: white;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .per_box img{
     width: 100%;
