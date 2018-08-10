@@ -37,23 +37,25 @@
             <div class="bd">
                 <div class="item-w clearfix">
                     <div class="item-cnt clearfix" id="itemCnt">
-                        <a href="javascript:void(0);" onclick="window.open('${base}/main/ptxw/278.jhtml','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank" class="item on" style="background-image: url(/${res}/imgs/news.png);"></a>
-                        <a  href="javascript:void(0);" onclick="window.open('${base}/main/ptxw/277.jhtml','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank" class="item" style="background-image: url(/${res}/imgs/1.jpg);"></a>
-                        <a  href="javascript:void(0);" onclick="window.open('${base}/main/ptxw/276.jhtml','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank" class="item" style="background-image: url(/${res}/imgs/2.jpg);"></a>
-                        <!--<a href="javascript:void(0);" class="item" style="background-image: url(/r/cms/kjzx/kjzx/imgs/keji4.jpg);"></a>-->
+                        [@cms_content_list channelId='438' count='3' titLen='26' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1']
+                        [#list tag_list as a]
+                        <a href="javascript:void(0);" onclick="window.open('${a.url}','','modal=yes,width=1000,height=600,resizable=no,scrollbars=no')" target="_blank" class="item" style="background-image: url(${a.titleImg!});"></a>
+                        [/#list]
+                        [/@cms_content_list]
                     </div>
                     <div class="progress-bar" id="progressBar">
-                        <div class="progress-bar-dian on"></div>
-                        <div class="progress-bar-dian"></div>
-                        <div class="progress-bar-dian"></div>
-                       <!-- <div class="progress-bar-dian"></div>-->
+                        [@cms_content_list channelId='438' count='3' titLen='26' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1']
+                        [#list tag_list as a]
+                        <div class="progress-bar-dian[#if a_index == 0] on[/#if]"></div>
+                        [/#list]
+                        [/@cms_content_list]
                     </div>
                 </div>
-
                 <script>
                   var t = 5000, mt = null, idx = 0
 
                   function adRun() {
+                    $('#itemCnt>a:first').addClass('on')
                     mt = setInterval(function () {
                       idx += 1;
                       itemGo()
@@ -74,7 +76,6 @@
                   }, null);
                   adRun();
                 </script>
-
             </div>
         </div>
 
