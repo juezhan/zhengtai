@@ -7,6 +7,7 @@
 <meta http-equiv="keywords" content="${site.keywords!}"/>
 <meta http-equiv="description" content="${site.description!}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="renderer" content="webkit">
 <script src="/${res}/js/jquery-3.3.1.min.js"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 <script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
@@ -20,44 +21,199 @@
 <head>
 <body class="zyyw">
 [#include "../include/header.html"/]
-<div class="banner">
-    <img src="/${res}/imgs/6.7banner.jpg"/>
-</div>
-<div class="zyywnews" title="主营业务">
-    <div class="container">
-        <div class="tit">
-          <div>
-            主营业务
-          </div>
-          <div class="line">—</div>
+<div class="main">
+
+    <div class="er_box">
+        <div class="er_nav">
+            <ul>
+                <li><a>旅游规划策划</a></li>
+                <li>|</li>
+                <li><a>景观设计</a></li>
+                <li>|</li>
+                <li><a>景区运营管理</a></li>
+                <li>|</li>
+                <li><a>建筑设计</a></li>
+                <li>|</li>
+                <li><a>城市设计</a></li>
+                <li>|</li>
+                <li><a>智慧旅游</a></li>
+            </ul>
         </div>
-        <div class="cell-wrapper">
-            <div class="cell">
-                <img class="img" src="/${res}/imgs/zyyw1.jpg"/>
-                <div class="cell-txt primary">
-                    <div class="tit">空间体系规划</div>
-                    <div class="cell-line">—</div>
-                    <div class="cell-tit">
-                        "内生增长+外延并购"完善产品链，巩固产品竞争力，保持行业领先地位
-                    </div>
-                    <a href="http://localhost:8080/kjgh/kjtxgh/index.jhtml" class="cell-a">了解详情</a>
-                </div>
-            </div>
-            <div class="cell">
-                <img class="img" src="/${res}/imgs/zyyw2.jpg"/>
-                <div class="cell-txt primary">
-                    <div class="tit">测绘</div>
-                    <div class="cell-line">—</div>
-                    <div class="cell-tit">
-                        "内生增长+外延并购"完善产品链，巩固产品竞争力，保持行业领先地位
-                    </div>
-                    <a href="" class="cell-a">了解详情</a>
-                </div>
-                
-            </div>
-        </div>
+        <div class="mark" id="btn">
+            <span>&and;收起</span></div>
     </div>
+
+    <div class="pic">
+        <img src="/${res}/imgs/lunbo1.png"  />
+    </div>
+
+    <div class="back">
+        <div class="art">
+            <div class="art_left">
+                <div class="contact">
+                    <div class="con_title">
+                        <span>联系我们</span>
+                    </div>
+                    <div class="con_tel">
+                        <p class="tel_p1">咨询热线</p>
+                        <p class="tel_p2"><a href="">400-8130-588</a> </p>
+                    </div>
+                    <div class="con_tel">
+                        <p class="tel_p1">24小时专家热线</p>
+                        <p class="tel_p2">138-0119-5460</p>
+                    </div>
+                    <div class="jiaoliu">
+                        <div class="jiaoliu_img"><a href=""><img src="img/信息.jpg"/></a></div>
+                        <span>点击与专家在线交流</span>
+                    </div>
+                    <div class="saomiao">
+                        <p>扫描二维码关注</p>
+                    </div>
+                    <div class="erweima">
+                        <img src="img/vxerweima.png"/>
+                        <p><a href="">微信</a></p>
+                    </div>
+                    <div class="erweima">
+                        <img src="img/vxerweima.png"/>
+                        <p><a href="">微博</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="art_right">
+                <div class="m-box">
+                    <div class="g-right" id="js-recommend-video">
+                        <a title="图片" rel="videoPlayer" data-item="54">
+                            <img src="/${res}/imgs/sydt.png"  class="u-video-image" />
+                        </a>
+                    </div>
+                    <div class="g-left">
+                        <h1 >
+                            <strong style=" ; display: inline-block; padding: 10px 35px; font-size: 1.25em; line-height: 1;background-color: #f1f2f6;margin-top: 10px;">
+                                旅游规划</strong>
+                        </h1>
+                        <p>吉林正泰始创于2001 年,公司秉承“美丽中国·巅峰智造”的使命,已发展成为旅游规划行业
+                            标杆和文旅产业创新引领者,提供“规划+运营+营销+投资”四位一体一站式解决方案。公司总部位
+                            于北京,并在上海、深圳、成都、西安等地设有分公司。公司资质全面,业务覆盖全国,完成2300余项
+                            高品质项目,累计运管景区70余家,打造了多彩贵州、大美青海、清新福建等一批知名旅游目的
+                            地,荣获“中国旅游知名品牌”等荣誉。</p>
+                        <a href="" class="btn" title="查看更多吉林正泰简介">查看更多</a>
+                    </div>
+                </div>
+                <div class="erji">
+                    <ul class="m-col-b fix">
+                        <li>
+                            <a  href="${base}/kjgh/zyyw/1809.jhtml">
+                                <img src="/${res}/imgs/yi.jpg" class="lazy" />
+                                <div class="figcaption icon-arraw-right">
+                                    <strong>巅峰创作|“四全”总体思路“六全”旅游思路</strong>
+                                </div>
+                                <div class="youtu"><img src="/${res}/imgs/youtu.png"/></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="${base}/kjgh/zyyw/1809.jhtml">
+                                <img src="/${res}/imgs/er.jpg" class="lazy" />
+                                <div class="figcaption icon-arraw-right">
+                                    <strong>巅峰创作|“四全”总体思路“六全”旅游思路</strong>
+                                </div>
+                                <div class="youtu"><img src="/${res}/imgs/youtu.png"/></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="${base}/kjgh/zyyw/1809.jhtml">
+                                <img src="/${res}/imgs/san.jpg" class="lazy" />
+                                <div class="figcaption icon-arraw-right">
+                                    <strong>巅峰创作|“四全”总体思路“六全”旅游思路</strong>
+                                </div>
+                                <div class="youtu"><img src="/${res}/imgs/youtu.png"/></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sanji">
+                    <div class="m-box m-col-c">
+                        <h2 class="u-header"><strong>相关政策延伸阅读</strong></h2>
+                        <ul class="yiui">
+                            <li>
+                                <a  href="${base}/kjgh/zyyw/1809.jhtml">
+                                    <b class="hao">高科技与民族传说的完美结合</b>
+                                    <p>作为全球首部大型实景5D沉浸式光影秀、高科技与民族史诗的完美结合，由中视巅峰总导演曲国军指导，巅峰智业创始人、
+                                        中视巅峰董事长刘锋博士总策划，中视巅峰总经理雷奎担任总制作的迄今为止涉及历史最长、
+                                        范围最广的世界首部沉浸式5D历史光影秀——《满秀》，首演效果“炸裂”，千人会场座无虚席，
+                                        视频直播观看人数突破13万人，观众反响好评如潮。
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="${base}/kjgh/zyyw/1809.jhtml">
+                                    <b class="hao">高科技与民族传说的完美结合</b>
+                                    <p>作为全球首部大型实景5D沉浸式光影秀、高科技与民族史诗的完美结合，由中视巅峰总导演曲国军指导，巅峰智业创始人、
+                                        中视巅峰董事长刘锋博士总策划，中视巅峰总经理雷奎担任总制作的迄今为止涉及历史最长、
+                                        范围最广的世界首部沉浸式5D历史光影秀——《满秀》，首演效果“炸裂”，千人会场座无虚席，
+                                        视频直播观看人数突破13万人，观众反响好评如潮。
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="${base}/kjgh/zyyw/1809.jhtml">
+                                    <b class="hao">高科技与民族传说的完美结合</b>
+                                    <p>作为全球首部大型实景5D沉浸式光影秀、高科技与民族史诗的完美结合，由中视巅峰总导演曲国军指导，巅峰智业创始人、
+                                        中视巅峰董事长刘锋博士总策划，中视巅峰总经理雷奎担任总制作的迄今为止涉及历史最长、
+                                        范围最广的世界首部沉浸式5D历史光影秀——《满秀》，首演效果“炸裂”，千人会场座无虚席，
+                                        视频直播观看人数突破13万人，观众反响好评如潮。
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="/news/" class="btn weizhi" target="_blank" title="查看更多巅峰智业新闻">查看更多</a>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <div class="clear"></div>
 </div>
+</body>
+<script>
+    $(function() {
+        $("#show").on("click",function() {
+            if($(".er_box").css("opacity") == "1") {
+                $(".er_box").animate({
+                    height: '-2px',
+                    opacity: "0",
+                    border: "none"
+                }, "fast");
+                $(".er_nav").css("display","none");
+            } else {
+                $(".er_box").animate({
+
+                    height: '80px',
+                    opacity: '1'
+                }, "fast");
+                $(".er_nav").css("display","block");
+            }
+        })
+        $("#btn").on("click",function() {
+            if($(".er_box").css("opacity") == "1") {
+                $(".er_box").animate({
+                    height: '-2px',
+                    opacity: "0",
+                    border: "none"
+                }, "fast");
+                $(".er_nav").css("display","none");
+            } else {
+                $(".er_box").animate({
+
+                    height: '80px',
+                    opacity: '1'
+                }, "fast");
+                $(".er_nav").css("display","block");
+            }
+        })
+    })
+</script>
+
 [#include "../include/bottom.html"/]
 </body>
 </html>

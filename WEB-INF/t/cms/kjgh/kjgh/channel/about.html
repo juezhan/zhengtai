@@ -21,94 +21,138 @@
 <head>
 <body class="about">
 [#include "../include/header.html"/]
-<div class="about-bd">
-    <div class="banner">
-		<img src="/${res}/imgs/6.9banner.jpg"/>
-	</div>
-	<div class="lxwm" title="联系我们">
-		<div class="container">
-			<div class="tit">
-				<div class="cell-nav">
-					<ul>
-						<li>
-							您所在的位置&gt;首页&gt;联系我们
-						</li>
-						<li>
-							<div class="contact">联系方式 <div class="circle"></div><span class="contactus">CONTACT US</span></div>
-						</li>
-					</ul>
-				</div>
-	          	<div class="line"></div>
-	        </div>
-	        <div class="cell-wrapper">
-	        	<div class="cell">
-					<div class="cm-2">
-						<iframe id="mapIframe" class="ueditor_baidumap" src="/jeeadmin/jeecms/static/ueditor/dialogs/map/show.html#center=125.369686,43.872783&zoom=16&width=1200&markers=125.367764,43.871392&markerStyles=l,A" frameborder="0" width="100%" height="315"></iframe>
-					</div>
-					<script>
-                        loadMap();
-                        $(window).resize(function () {
-                            loadMap();
-                        });
-                        function loadMap () {
-                            var w = $('#mapIframe').width(),
-                                h = $('#mapIframe').height();
-                            $('#mapIframe').attr('src','/jeeadmin/jeecms/static/ueditor/dialogs/map/show.html#center=125.369686,43.872783&zoom=16&width='+w+'&height='+h+'&markers=125.367764,43.871392&markerStyles=l,A');
-                        }
-					</script>
-	        		<div class="cell-txt">
-	        		 	<div class="item">
-	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm1.png"/></div>
-	        		 		<div class="p">地址</div>
-	        		 		<div>81961806</div>
-	        		 	</div>
-	        		 	<div class="item">
-	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm2.png"/></div>
-	        		 		<div class="p">电话</div>
-	        		 		<div>81961806</div>
-	        		 	</div>
-	        		 	<div class="item">
-	        		 		<div><img class="img cell-img" src="/${res}/imgs/lxwm3.png"/></div>
-	        		 		<div class="p">邮箱</div>
-	        		 		<div>admin@chinata.cn</div>
-	        		 	</div>
-	        		</div>
-	        		<div class="message">
-	        			<div class="message-tit">在线留言</div>
-	        			<div class="message-line"></div>
-	        			<form action="" method="" class="message-form">
-							<div class="message-item">
-								<span>姓名：</span>
-								<input type="text" name="">
-							</div>
-							<div class="message-item message-centre">
-								<span><span class="sup">*</span>电话：</span>
-								<input type="text" name="">
-							</div>
-							<div class="message-item">
-								<span>邮箱：</span>
-								<input type="text" name="">
-							</div>
-							<div class="message-centont">
-								<textarea></textarea>
-								<span class="message-span"><span class="red">*</span>留言内容：</span>
-							</div>
-							<div class="verify">
-								<div class="verify-item verify-box">
-									<span>验证码：</span>
-									<input type="text" name="">
-									<div class="verify-img"><img src="/${res}/imgs/lxwm4.png"></div>
-								</div>
-								<div class="verify-item verify-txt">（备注：带<span class="red">*</span>	为必填项）</div>
-							</div>
-							<input type="submit" value="提交" class="btn" name="">
-						</form>
-	        		</div>
-	        	</div>
-	        </div>
+<div class="main">
+	<div class="er_box">
+		<div class="er_nav">
+			<ul>
+				<li><a>旅游规划策划</a></li>
+				<li>|</li>
+				<li><a>景观设计</a></li>
+				<li>|</li>
+				<li><a>景区运营管理</a></li>
+				<li>|</li>
+				<li><a>建筑设计</a></li>
+				<li>|</li>
+				<li><a>城市设计</a></li>
+				<li>|</li>
+				<li><a>智慧旅游</a></li>
+			</ul>
 		</div>
+		<div class="mark" id="btn">
+			<span>&and;收起</span></div>
 	</div>
+
+	<div class="pic">
+		<img src="/${res}/imgs/lunbo1.png"  />
+	</div>
+
+	<div class="back">
+
+		<div class="addr">
+			<div class="addr_img"><img src="img/1533796976(1).jpg" /></div>
+			<span>当前位置：</span>
+			<a>首页</a>&gt;
+			<a class="active">巅峰动态</a>
+		</div>
+		<div class="art">
+			<div class="art_left">
+				<div class="left_pic">
+					<img id="gb" src="img/核心.jpg" />
+				</div>
+				<div class="aside">
+                    <div class="asi1"><a  href="${base}/kjgh/lxwo/1809.jhtml">巅峰新闻</a></div>
+					<div class="asi2 active2"><a  href="${base}/kjgh/lxwo/1809.jhtml">媒体新闻</a></div>
+				</div>
+				<div class="contact">
+					<div class="con_title">
+						<span>联系我们</span>
+					</div>
+					<div class="con_tel">
+						<p class="tel_p1">咨询热线</p>
+						<p class="tel_p2">400-8130-588</p>
+					</div>
+					<div class="con_tel">
+						<p class="tel_p1">24小时专家热线</p>
+						<p class="tel_p2">138-0119-5460</p>
+					</div>
+					<div class="jiaoliu">
+						<div class="jiaoliu_img"><img src="img/信息.jpg"/></div>
+						<span>点击与专家在线交流</span>
+					</div>
+					<div class="saomiao">
+						<p>扫描二维码关注</p>
+					</div>
+					<div class="erweima">
+						<img src="img/vxerweima.png"/>
+						<p>微信</p>
+					</div>
+					<div class="erweima">
+						<img src="img/vxerweima.png"/>
+						<p>微博</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="art_right">
+				<div class="item">
+					<div class="map_box">
+						<img src="img/map.png" />
+						<div class="map_con">
+							<div class="con_left">
+								<img src="img/定位.png">
+							</div>
+							<div class="con_right">
+								<p>北京巅峰智业旅游文化创意股份有限公司(总部)</p>
+								<p>北京市 - 朝阳区三元桥左家庄1号国门大厦B座3F/6F</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="clear"></div>
 </div>
+</body>
+<script>
+    $(function() {
+        $("#show").on("click",function() {
+            if($(".er_box").css("opacity") == "1") {
+                $(".er_box").animate({
+                    height: '-2px',
+                    opacity: "0",
+                    border: "none"
+                }, "fast");
+                $(".er_nav").css("display","none");
+            } else {
+                $(".er_box").animate({
+
+                    height: '80px',
+                    opacity: '1'
+                }, "fast");
+                $(".er_nav").css("display","block");
+            }
+        })
+        $("#btn").on("click",function() {
+            if($(".er_box").css("opacity") == "1") {
+                $(".er_box").animate({
+                    height: '-2px',
+                    opacity: "0",
+                    border: "none"
+                }, "fast");
+                $(".er_nav").css("display","none");
+            } else {
+                $(".er_box").animate({
+
+                    height: '80px',
+                    opacity: '1'
+                }, "fast");
+                $(".er_nav").css("display","block");
+            }
+        })
+    })
+</script>
 [#include "../include/bottom.html"/]
 </body>
 </html>

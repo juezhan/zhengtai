@@ -12,6 +12,7 @@ a{text-decoration:none;color:#333;cursor:pointer}
 ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
+/*
 .icon{display:inline-block}
 .about .about-bd{padding:80px 0}
 .about .about-bd .tt{font-size:30px;line-height:30px;text-align:center;color:#293896}
@@ -363,4 +364,275 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 	.about .about-join .join .container .item-box .item-centre {
 	    padding: 0;
 	}
+}*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	/*background-color: #F0F1F3;*/
+}
+.er_box{
+	width: 100%;
+	height: 80px;
+	border-top: 4px solid #005BAC;
+	border-bottom: 5px solid #005BAC;
+	position: relative;
+}
+.er_nav{
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+}
+.er_nav ul{
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 50px;
+	height: 100%;
+}
+.er_nav ul li{
+	list-style: none;
+	float: left;
+	height: 40px;
+	line-height:40px;
+	color: #005BAC;
+}
+.er_nav ul li a{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	color: #999;
+	cursor: pointer;
+}
+.mark{
+	width: 55px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	background-color: #005BAC;
+	position: absolute;
+	left: 45%;
+	bottom: -25px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.pic{
+	width: 100%;
+	margin-top: -6px;
+}
+
+.back{
+	width: 100%;
+	height: 100%;
+	background-color: #F0F1F3;
+}
+.addr{
+	width: 1000px;
+	height: 22px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+.addr_img{
+	float: left;
+	width: 22px;
+	height: 21px;
+}
+.addr img{
+	width: 22px;
+	height: 21px;
+	margin-top: 2px;
+	/*margin-left: 5px;
+    margin-top: 2px;*/
+}
+.addr span{
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+}
+.art{
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.art_left{
+	width: 21%;
+	height: 100%;
+	float: left;
+}
+.left_pic{
+	width: 210px;
+	height: 200px;
+}
+.left_pic img{
+	width: 100%;
+	height: 100%;
+}
+.aside{
+	width: 99%;
+	height: 81px;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	background-color: #fff;
+	font-size: 18px;
+	text-align: center;
+	color: #666;
+}
+.asi1{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	line-height: 40px;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+.asi1:hover{
+	color: #fff;
+	background-color: #005BAC;
+}
+.asi2{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+.asi2:hover{
+	color: #fff;
+	background-color:#005BAC;
+}
+.active2{
+	color: #fff;
+	background-color:#005BAC;
+	cursor:auto;
+}
+.contact{
+	width: 100%;
+	height: 430px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff
+}
+.con_title{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color:#005BAC;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+.con_tel{
+	width: 99%;
+	height: 70px;
+	margin-top: 10px;
+
+}
+.con_tel p{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+}
+.tel_p1{
+	font-size: 14px;
+}
+.tel_p2{
+	font-size: 18px;
+	color: red;
+}
+
+.jiaoliu{
+	width: 100%;
+	height: 40px;
+	background-color:#F0F1F3;
+}
+.jiaoliu_img{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.jiaoliu_img img{
+	width: 100%;
+	height: 100%;
+}
+.jiaoliu span{
+	height: 40px;
+	line-height: 40px;
+}
+.saomiao{
+	width: 100%;
+	height: 40px;
+
+}
+.saomiao p{
+	color: red;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.erweima{
+	padding: 10px;
+	width: 39%;
+	text-align: center;
+	float: left;
+}
+.erweima p{
+	font-size: 14px;
+}
+.art_right{
+	width: 73%;
+	height: 900px;
+	border: 1px solid #ccc;
+	float: right;
+	background-color: #fff;
+	padding: 20px;
+}
+.item{
+	width: 100%;
+	height: 170px;
+}
+
+.it_p3{
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.footer{
+	width: 100%;
+	height: 170px;
+	background-color: #DDDDDD;
+	text-align: center;
+	padding-top: 30px;
+}
+.foo_p1{
+	color: #004EA8;
+	font-size: 18px;
+	font-weight: 600;
+	height: 30px;
+	line-height: 30px;
+}
+.foo_p2{
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+}
+.foo_p3{
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+}
+.foo_p1 span{
+	margin-left: 30px;
+}
+.clear{
+	clear: both;
 }

@@ -180,7 +180,6 @@ img {
 
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -190,7 +189,6 @@ img {
     height: 100%;
     /*background-color: #F0F1F3;*/
 }
-
 .er_box{
     width: 100%;
     height: 80px;
@@ -240,6 +238,9 @@ img {
 }
 .pic{
     width: 100%;
+    height: 150px;
+    border: 1px solid #005BAC;
+    margin-top: -6px;
 }
 
 .back{
@@ -279,12 +280,58 @@ img {
 .art_left{
     width: 21%;
     height: 100%;
-    float: right;
+    float: left;
 }
-
+.left_pic{
+    width: 210px;
+    height: 200px;
+}
+.left_pic img{
+    width: 100%;
+    height: 100%;
+}
+.aside{
+    width: 99%;
+    height: 81px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+}
+.asi1{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.asi1:hover{
+    color: #fff;
+    background-color: #005BAC;
+}
+.asi2{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.asi2:hover{
+    color: #fff;
+    background-color:#005BAC;
+}
+.active2{
+    color: #fff;
+    background-color:#005BAC;
+    cursor:auto;
+}
 .contact{
     width: 100%;
     height: 430px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     background-color: #fff
 }
@@ -357,55 +404,56 @@ img {
     font-size: 14px;
 }
 .art_right{
-    width: 73.5%;
+    width: 73%;
     height: 900px;
     border: 1px solid #ccc;
     float: right;
     background-color: #fff;
     padding: 20px;
-    margin-right: 10px;
 }
 .item{
-    width: 30%;
-    height: 200px;
-    border: 1px solid #999;
-    float: left;
-    margin-right: 11px;
-    margin-left: 11px;
-    border-radius: 0 0 5px 5px;
+    width: 100%;
+    height: 170px;
 }
-.item:hover .item_con p,.item{
-    cursor: pointer;
+.item_title{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #004EA8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tit_p1{
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
     color: #004EA8;
 }
-.item img{
-    width: 100%;
-    height: 150px;
+.tit_p2{
+    height: 30px;
+    line-height: 30px;
+}
+.tit_p2 span{
+    margin-right: 20px;
+}
+.item_abs{
+    width: 97%;
+    border: 1px solid #999;
+    padding: 10px;
+}
+.item_abs p{
+    font-size: 14px;
+    color: #666;
 }
 .item_con{
-    width: 100%;
-    height: 50px;
-    margin-top: -3px;
+    width: 97%;
+    height: 500px;
+    border: 1px solid red;
+    margin-top: 20px;
+    padding:0 10px;
 }
 .item_con p{
     font-size: 14px;
-    margin-left: 5px;
-    margin-top: 5px;
-    float: left;
-    width: 75%;
-    color: #333;
-    font-weight: 600;
-}
-.icon{
-    width: 20%;
-    height: 42px;
-    float: right;
-    margin-right: 5px;
-    margin-top: 2px;
-}
-.icon img{
-    width: 100%;
-    height: 100%;
+    color: #666;
 }
 .footer{
     width: 100%;

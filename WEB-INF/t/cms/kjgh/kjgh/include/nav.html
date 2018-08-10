@@ -1,5 +1,5 @@
 <!-- navigation-bar 开始 -->
-<link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
+<!--<link href="/${res}/css/navigation-bar.css" rel="stylesheet"/>
 <div class="navigation-bar" id="navigationBar">
     <div class="bd clearfix">
         [@cms_channel_list]
@@ -75,7 +75,27 @@
         [/#list]
         [/@cms_channel_list]
     </div>
+</div>-->
+
+
+
+<div class="nav_box">
+    <div class="nav_back">
+        <div class="logo"><img src="/${res}/imgs/logo.png"/></div>
+        <div class="nav">
+            <ul>
+                <li><a  href="${base}/kjgh/index.jhtml">首页</a></li>
+                <li><a  href="${base}/kjgh/gywm/index.jhtml">关于我们</a></li>
+                <li><a href="${base}/kjgh/lwdt/index.jhtml" class="active" id="show">六维动态</a></li>
+                <li><a  href="${base}/kjgh/zyyw/index.jhtml">主营业务</a></li>
+                <li><a  href="${base}/kjgh/alcg/index.jhtml">案例成果</a></li>
+                <li><a href="${base}/kjgh/lxwm/index.jhtml" >联系我们</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
+
+
 <script>
   var $target = $('#navigationBar a.tt.on');
   var mt = null

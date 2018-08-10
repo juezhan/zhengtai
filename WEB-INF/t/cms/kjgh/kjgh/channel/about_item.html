@@ -21,40 +21,127 @@
 <head>
 <body class="about">
 [#include "../include/header.html"/]
-<div class="about-bd">
-    <div class="banner">
-		<img src="/${res}/imgs/6.2banner.jpg"/>
-	</div>
-	<div class="lxwm" title="关于我们">
-		<div class="container">
-			<div class="tit">
-				<div class="cell-nav">
-					<ul>
-						<li>
-							您所在的位置&gt;首页&gt;关于我们
-						</li>
-						<li>
-							<div class="contact">企业简介 <div class="circle"></div><span class="contactus">COMPANY PROFILE</span></div>
-						</li>
-					</ul>
-				</div>
-	          	<div class="line"></div>
-	        </div>
-	        <div class="about-us">
-	        	<div class="cell">
-	        		 <img class="img cell-img" src="/${res}/imgs/about1.jpg"/>
-
-	        		<div class="cell-txt">
-						<img class="img img-line" src="/${res}/imgs/about3.jpg"/>
-	        			<div class="celltxt-content"><!--<img class="img img" src="/${res}/imgs/about2.jpg"/>-->
-							${channel. txt!}
-	        			</div>
-	        		</div>
-	        	</div>
-	        </div>
+<div class="main">
+	<div class="er_box">
+		<div class="er_nav">
+			<ul>
+				<li><a>旅游规划策划</a></li>
+				<li>|</li>
+				<li><a>景观设计</a></li>
+				<li>|</li>
+				<li><a>景区运营管理</a></li>
+				<li>|</li>
+				<li><a>建筑设计</a></li>
+				<li>|</li>
+				<li><a>城市设计</a></li>
+				<li>|</li>
+				<li><a>智慧旅游</a></li>
+			</ul>
 		</div>
+		<div class="mark" id="btn">
+			<span>&and;收起</span></div>
 	</div>
+
+	<div class="pic">
+		<img src="/${res}/imgs/lunbo1.png"  />
+	</div>
+
+	<div class="back">
+
+		<div class="addr">
+			<div class="addr_img"><img src="img/1533796976(1).jpg" /></div>
+			<span>当前位置：</span>
+			<a>首页</a>&gt;
+			<a class="active">巅峰动态</a>
+		</div>
+		<div class="art">
+			<div class="art_left">
+				<div class="left_pic">
+					<img id="gb" src="img/核心.jpg" />
+				</div>
+				<div class="aside">
+					<div class="asi1"><a  href="${base}/kjgh/gywm/1809.jhtml">巅峰新闻</a></div>
+					<div class="asi2 active2"><a  href="${base}/kjgh/gywm/1809.jhtml">媒体新闻</a></div>
+				</div>
+				<div class="contact">
+					<div class="con_title">
+						<span>联系我们</span>
+					</div>
+					<div class="con_tel">
+						<p class="tel_p1">咨询热线</p>
+						<p class="tel_p2">400-8130-588</p>
+					</div>
+					<div class="con_tel">
+						<p class="tel_p1">24小时专家热线</p>
+						<p class="tel_p2">138-0119-5460</p>
+					</div>
+					<div class="jiaoliu">
+						<div class="jiaoliu_img"><img src="img/信息.jpg"/></div>
+						<span>点击与专家在线交流</span>
+					</div>
+					<div class="saomiao">
+						<p>扫描二维码关注</p>
+					</div>
+					<div class="erweima">
+						<img src="img/vxerweima.png"/>
+						<p>微信</p>
+					</div>
+					<div class="erweima">
+						<img src="img/vxerweima.png"/>
+						<p>微博</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="art_right">
+				<div class="item">
+					<p class="it_p3">作为全球首部大型实景5D沉浸式光影秀、高科技与民族史诗的完美结合，由中视巅峰总导演曲国军指导，巅峰智业创始人、中视巅峰董事长刘锋博士总策划，中视巅峰总经理雷奎担任总制作的迄今为止涉及历史最长、范围最广的世界首部沉浸式5D历史光影秀——《满秀》，首演效果“炸裂”，千人会场座无虚席，视频直播观看人数突破13万人，观众反响好评如潮。......</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="clear"></div>
 </div>
+</body>
+<script>
+    $(function() {
+        $("#show").on("click",function() {
+            if($(".er_box").css("opacity") == "1") {
+                $(".er_box").animate({
+                    height: '-2px',
+                    opacity: "0",
+                    border: "none"
+                }, "fast");
+                $(".er_nav").css("display","none");
+            } else {
+                $(".er_box").animate({
+
+                    height: '80px',
+                    opacity: '1'
+                }, "fast");
+                $(".er_nav").css("display","block");
+            }
+        })
+        $("#btn").on("click",function() {
+            if($(".er_box").css("opacity") == "1") {
+                $(".er_box").animate({
+                    height: '-2px',
+                    opacity: "0",
+                    border: "none"
+                }, "fast");
+                $(".er_nav").css("display","none");
+            } else {
+                $(".er_box").animate({
+
+                    height: '80px',
+                    opacity: '1'
+                }, "fast");
+                $(".er_nav").css("display","block");
+            }
+        })
+    })
+</script>
 [#include "../include/bottom.html"/]
 </body>
 </html>
