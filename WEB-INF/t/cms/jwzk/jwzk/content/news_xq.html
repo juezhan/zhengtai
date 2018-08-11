@@ -31,7 +31,7 @@
 <head>
 <body>
 [#include "../include/header.html"/]
-<div class="news-content" style="background-color: #f8f8f8;">
+<div class="news-content">
   <div class="container">
     <!-- <div class="content">
        <div class="content-mn">
@@ -72,20 +72,18 @@
         <div class="wenziti2">吉林民间智库第一家</div>
       </div>
       <div class="biaoti">
-        <img src="/${res}/imgs/gonggaotop.png" class="xinwentop"/>
+          <img src="/${res}/imgs/gonggaotop.png" class="xinwentop"/>
       </div>
       <div class="jwneirong">
             <div class="diyili">
                 <span class="wenzikaishi">
-                  <p class="diyi">东北虎豹国家公园</p>
-                  <p class="dier">作者：梁海明 马达旋 </p>
-                  <p class="disan">时间：2015-06-25</p>
+                  <p class="diyi">${content.title}</p>
+                  <p class="dier">作者：${content.author!}</p>
+                  <p class="disan">时间：2015-06-25 ${content.shortTitle!}</p>
                 </span>
                 <p class="disi">
-                  被评估单位中国科学院长春光学精密机械与物理研究所是新中国在光学领域建立的第一个研究所，创造了十几项“中国第一”，先后参加过“两弹一星”、“载人航天工程”等多项国家重大工程项目。
-                </p>
-                <p class="diwu">
-                    <img src="/${res}/imgs/8.jpg" class="laohu"/>
+                  <!--被评估单位中国科学院长春光学精密机械与物理研究所是新中国在光学领域建立的第一个研究所，创造了十几项“中国第一”，先后参加过“两弹一星”、“载人航天工程”等多项国家重大工程项目。-->
+                    ${content.txt!}
                 </p>
             </div>
       </div>
@@ -94,11 +92,18 @@
               <li class="dierceng">
                   <ul>
                         <p class="gonggao">最新公告</p>
+                      [@cms_content_page channelId=channel.id count='5' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
+                      [#list tag_pagination.list as a]
+                      <li class="gonggaowenzi">
+                          <a href="${a.url}" >
+                          <em></em> [@text_cut s=a.title len=titLen append=append/]</a>
+                      </li>
+                     <!-- <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
                       <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
                       <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>-->
+                      [/#list]
+                      [/@cms_content_page]
                   </ul>
               </li>
           </ul>
@@ -106,11 +111,18 @@
               <li class="dierceng">
                   <ul>
                       <p class="gonggao">行业动态</p>
+                      [@cms_content_page channelId=channel.id count='5' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
+                      [#list tag_pagination.list as c]
+                      <li class="gonggaowenzi">
+                          <a href="${c.url}" >
+                              <em></em> [@text_cut s=c.title len=titLen append=append/]</a>
+                      </li>
+                     <!-- <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
                       <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
                       <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>-->
+                      [/#list]
+                      [/@cms_content_page]
                   </ul>
               </li>
           </ul>

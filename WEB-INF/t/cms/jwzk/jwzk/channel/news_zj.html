@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="keywords" content="${channel.keywords!}"/>
+<meta http-equiv="description" content="${channel.description!}"/>
+<title>${channel.title!channel.name} - ${site.name}</title>
+<script src="${resSys}/jquery.js" type="text/javascript"></script>
+<script src="${resSys}/front.js" type="text/javascript"></script>
+<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
+<link type="text/css" rel="stylesheet" href="/${res}/css/news_zj.css"/>
+
+<!--[if lt IE 9]>
+<script src="/${res}/js/html5shiv.min.js"></script>
+<script src="/${res}/js/respond.min.js"></script>
+
+<![endif]-->
+<script type="text/javascript">
+  $(function () {
+    Cms.channelViewCount("${base}", "${channel.id}");
+    Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
+  });
+</script>
+<head>
+<body class="about">
+
+[#include "../include/header.html"/]
+<!--<div class="banner">
+    <div class="container">
+        <img src="/${res}/imgs/banner-about.png"/>
+</div>
+</div>
+<div class="column-item-bd">
+    <div class="container">
+        <div class="slide-bar">
+            <img class="tit-logo" src="/${res}/imgs/about-tit.png"/>
+            <div class="menu-wrapper">
+                <a href="#" class="menu-cell">智库简介</a>
+                <a href="#" class="menu-cell">宗旨</a>
+                <a href="#" class="menu-cell">使命</a>
+                <a href="#" class="menu-cell">定位</a>
+                <a href="#" class="menu-cell">愿景</a>
+            </div>
+        </div>
+        <div class="list-wrapper">
+            <div class="cell" id="zkjj">
+                <div class="tit">智库简介</div>
+                <div class="bd">
+                    <div class="tt">新经济的专业咨询机构，中国知名民间智库</div>
+                    <div class="lst">
+                        <div class="item">面向企业和高新区，提供新经济咨询服务</div>
+                        <div class="item">总部位于北京，在宁波、武汉、广州、天津、成都、济南六地设有业务中心</div>
+                        <div class="item">拥有300余名项目经理、咨询师组成的专业团队以及3000余名外部专家组成的专家网络</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell" id="zz">
+                <div class="tit">宗旨</div>
+                <div class="bd">
+                    <div class="tt">新经济的专业咨询机构，中国知名民间智库</div>
+                    <div class="lst">
+                        <div class="item">政策咨询　战略研究</div>
+                        <div class="item">理论探索　社会实践</div>
+                        <div class="item">民间视角　建设态度</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell" id="sm">
+                <div class="tit">使命</div>
+                <div class="bd">
+                    <div class="tt">新经济的专业咨询机构，中国知名民间智库</div>
+                    <div class="lst">
+                        <div class="item">面向企业和高新区，提供新经济咨询服务</div>
+                        <div class="item">总部位于北京，在宁波、武汉、广州、天津、成都、济南六地设有业务中心</div>
+                        <div class="item">拥有300余名项目经理、咨询师组成的专业团队以及3000余名外部专家组成的专家网络</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell" id="dw">
+                <div class="tit">定位</div>
+                <div class="bd">
+                    <div class="tt">新经济的专业咨询机构，中国知名民间智库</div>
+                    <div class="lst">
+                        <div class="item">面向企业和高新区，提供新经济咨询服务</div>
+                        <div class="item">总部位于北京，在宁波、武汉、广州、天津、成都、济南六地设有业务中心</div>
+                        <div class="item">拥有300余名项目经理、咨询师组成的专业团队以及3000余名外部专家组成的专家网络</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell" id="yj">
+                <div class="tit">愿景</div>
+                <div class="bd">
+                    <div class="tt">新经济的专业咨询机构，中国知名民间智库</div>
+                    <div class="lst">
+                        <div class="item">面向企业和高新区，提供新经济咨询服务</div>
+                        <div class="item">总部位于北京，在宁波、武汉、广州、天津、成都、济南六地设有业务中心</div>
+                        <div class="item">拥有300余名项目经理、咨询师组成的专业团队以及3000余名外部专家组成的专家网络</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div class="kaishi">
+    <div class="container">
+        <div class="juzhong">
+            <div class="wenziti"><span class="jiuwei">荟萃民间智力</span></div>
+            <div class="wenziti2">共襄盛世伟业</div>
+        </div>
+        <div class="biaoti">
+            <img src="/${res}/imgs/zhuanjia.png" class="xinwentop"/>
+        </div>
+        <div class="zhuanjiaxinxi">
+            <p class="gongkai">公开招聘</p>
+            <p class="biaoge">
+                <span>职称要求</span>
+                <span>研究成果要求</span>
+                <span>申请入库登记表</span>
+            </p>
+            <p class="xiangqingxialei">
+                <a href="" class="yaoq">职称要求</a>
+                <a href="" class="chenggou">研究成果要求</a>
+                <a href="" class="xiazai">下载</a>
+            </p>
+        </div>
+    </div>
+</div>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
+</body>
+</html>

@@ -152,32 +152,53 @@
                 <div class="wenziti2">吉林民间智库第一家</div>
             </div>
             <div class="toubuzuo">
-                <span class="wenzi">关于九维</span>
+              <!--  <span class="wenzi">关于九维</span>
                 <div class="wenzi2">
                     为广泛联系、引导和聚焦民间智力资源服务与吉林经济和社会发展大局，推动振兴东北老工业基地战略的落实，从民间视角加强对振兴吉林重大决策、重大项目
-                    的咨询研究，促进我科学决策软实力建设，吉林正泰工程咨询有限公司发起举办了吉林省第一家民间智库--吉林省九维智库研究中心 （以下简称九维智库） 。
-                </div>
+                    的咨询研究，促进我科学决策软实力建设，吉林正泰工程咨询有限公司发起举办了吉林省第一家民间智库;吉林省九维智库研究中心 （以下简称九维智库） 。
+                </div>-->
+                [@cms_content_list count='1' orderBy='22' channelId='436' channelOption='1'
+                dateFormat='yyyy-MM-dd']
+                [#list tag_list as a]
+                <span class="wenzi">${a.title}</span>
+                <br><br><br>
+                <a href="${base}/kjzx/zyyw/338.jhtml" class="wenzi2">${a.description}</a>
+
+                [/#list]
+                [/@cms_content_list]
             </div>
             <div class="tuyou">
                 <a href=" ${base}/jwzk/gyjw/index.jhtml "  class="gengduo">了解更多  →</a>
                 <div class="tu">
                     <ul>
+                        [@cms_channel_list]
+                        [#list tag_list as c]
                         <li>
-                            <img src="/${res}/imgs/tu1.png" class="tu1"/>
-                            <p class="fuwu"><a href=""> 服务范围</a></p>
+                            <a href="${c.url}">
+                                <img src="${c.titleImg!}" class="tu1"/>
+                                <p class="fuwu"><a href="">${c.name}</a></p>
+                            </a>
+                        </li>
+                        [/#list]
+                        [/@cms_channel_list]
+                      <!--  <li>
+                            <a href="${base}/jwzk/zx/index.jhtml">
+                                <img src="/${res}/imgs/tu2.png" class="tu1"/>
+                                <p class="fuwu"><a href="">在库专家</a></p>
+                            </a>
                         </li>
                         <li>
-                            <img src="/${res}/imgs/tu2.png" class="tu1"/>
-                            <p class="fuwu"><a href="">在库专家</a></p>
+                            <a href="${base}/jwzk/yj/index.jhtml">
+                                <img src="/${res}/imgs/tu3.png" class="tu1"/>
+                                <p class="fuwu"><a href="">研究成果</a></p>
+                            </a>
                         </li>
                         <li>
-                            <img src="/${res}/imgs/tu3.png" class="tu1"/>
-                            <p class="fuwu"><a href="">研究成果</a></p>
-                        </li>
-                        <li>
-                            <img src="/${res}/imgs/tu4.png" class="tu1"/>
-                            <p class="fuwu"><a href=""> 专家征聘</a></p>
-                        </li>
+                            <a href="${base}/jwzk/gy/index.jhtml">
+                                <img src="/${res}/imgs/tu4.png" class="tu1"/>
+                                <p class="fuwu"><a href=""> 专家征聘</a></p>
+                            </a>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -189,11 +210,18 @@
                 <span class="wenzi">新闻资讯</span>
                 <a href="${base}/jwzk/xwzx/index.jhtml"  class="gengduo1">了解更多  →</a>
                 <ul class="erui">
-                    <li class="erli">
-                        <img src="/${res}/imgs/2tu1.png" class="tupian"/>
-                        <p class="fuwu1"><a href="">[公司新闻] 进行装饰资本化和整卷化整改、砖石化理财、</a></p>
-                    </li>
-                    <li class="erli">
+                    [@cms_content_list count='4' orderBy='23' channelId='437' channelOption='1'
+                    dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
+                        <li class="erli">
+                            <a href="${a.url}">
+                                <img src="${a.titleImg!}" class="tupian"/>
+                                <p class="fuwu1"><a href="">${a.title}</a></p>
+                            </a>
+                        </li>
+                    [/#list]
+                    [/@cms_content_list]
+                   <!-- <li class="erli">
                         <img src="/${res}/imgs/2tu2.png" class="tupian"/>
                         <p class="fuwu1"><a href="">[公司新闻] 进行装饰资本化和整卷化整改、砖石化理财、</a></p>
                     </li>
@@ -204,7 +232,7 @@
                     <li class="erli">
                         <img src="/${res}/imgs/2tu4.png" class="tupian"/>
                         <p class="fuwu1"><a href="">[公司新闻] 进行装饰资本化和整卷化整改、砖石化理财、</a></p>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
@@ -215,15 +243,22 @@
                 <span class="wenzi">研究成果</span>
                 <a href="${base}/jwzk/yj/index.jhtml"  class="gengduo1">了解更多  →</a>
                 <ul class="erui">
-                    <li class="sanli">
-                        <img src="/${res}/imgs/3tu1.png" class="tupian3"/>
-                        <span class="sanwen">
-                            <a href="" class="bannian">2018年中国零售趋势半年报</a>
-                            <span class="ling">零售 |</span><span class="shijian"> 2018/7/23 19:28:19</span>
-                            <span class="chakan"><button >立即查看</button></span>
-                        </span>
-                    </li>
-                    <li class="sanli">
+                    [@cms_content_list count='3' orderBy='23' channelId='160' channelOption='1'
+                    dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
+                        <li class="sanli">
+                            <a href="${a.url}">
+                                <img src="${a.titleImg!}" class="tupian3"/>
+                                <span class="sanwen">
+                                    <a href="${a.url}" class="bannian">${a.title}</a>
+                                    <span class="ling">零售 |</span><span class="shijian">2018/7/23 19:28:19</span>
+                                    <span class="chakan"><button ><a href="${a.url}" class="chakan1">立即查看</a></button></span>
+                                </span>
+                            </a>
+                        </li>
+                    [/#list]
+                    [/@cms_content_list]
+                 <!--   <li class="sanli">
                         <img src="/${res}/imgs/3tu2.png" class="tupian3"/>
                         <span class="sanwen">
                             <a href="" class="bannian">2018年中国零售趋势半年报</a>
@@ -239,7 +274,7 @@
                             <span class="ling">零售 |</span><span class="shijian"> 2018/7/23 19:28:19</span>
                         <span class="chakan"><button >立即查看</button></span>
                         </span>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

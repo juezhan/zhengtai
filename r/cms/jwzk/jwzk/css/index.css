@@ -218,11 +218,11 @@ img {
 .header .container {margin-top: -80px;position: relative;}
 .jwsy{width: 100%;background-color: white;}
 .kaishi{width: 1200px;margin: auto;padding-top: 20px;}
-.toubuzuo{width: 350px;display: inline-block;margin-left: 20px;}
+.toubuzuo{width: 350px;display: inline-block;margin-left: 20px;min-height: 280px;}
 .wenzi{font-size: 22px;font-weight: 800;height: 20px;border-bottom: 1px solid black;position: relative;}
 .wenzi2{width: 96%;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;margin: 20px 0;font-size: 13px;line-height: 24px;letter-spacing: 5px;}
 .tuyou{margin-left: 400px;position: absolute;margin-top: -200px;width: 800px;}
-.gengduo{margin-left: 700px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;position: absolute;margin-top: -60px;}
+.gengduo{margin-left: 700px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;position: absolute;margin-top: -80px;}
 .gengduo1{margin-left: 990px;font-size: 14px;border-bottom: 1px solid #d1d1d1;line-height: 25px;}
 .tu{widh: 100%;margin: 30px 0 30px 30px;}
 .tu li{display: inline-block;width: 24%;text-align: center;}
@@ -247,6 +247,7 @@ img {
 .shijian{color: #b5a6aa;height: 20px;font-size: 10px;}
 .chakan{height: 50px;position: absolute;margin-top: 110px;margin-left: -140px;}
 .chakan button{width: 110px;height: 35px;border-radius: 20px;background-color: #005dae;color: white;}
+.chakan1{color: white;}
 @media screen and (max-width: 1119px) {
     .kaishi{width: 1000px;margin: auto;}
     .gengduo{margin-left: 500px;}

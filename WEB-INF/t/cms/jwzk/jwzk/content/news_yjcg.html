@@ -22,6 +22,10 @@
     Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
   });
 </script>
+<style>
+    .daohang a:nth-child(1) em{display: none}
+    .daohang li{display: inline-block;}
+</style>
 <head>
 <body class="column-item-dt">
 [#include "../include/header.html"/]
@@ -104,7 +108,8 @@
                 </div>
             </div>
             <div class="cell">
-                <img class="img" src="/${res}/imgs/图7.png"/>
+                <img class="img-banner" src="/${res}/imgs/图7.png"/>
+
                 <div class="cnt">
                     <div class="txt-1">世界一流科技园区的新方向</div>
                     <div class="txt-2">
@@ -192,27 +197,37 @@
             <img src="/${res}/imgs/yanjiucheng.png" class="xinwentop"/>
         </div>
         <div class="daohang">
-            <a href="#" class="active shouye" >电子信息技术</a>
-            <a href="#" ><em></em>生物与新医药技术 </a>
+            <ul>
+            [@cms_channel_list parentId='160']
+            [#list tag_list as c2]
+            <li>
+                <a href="#"  ><em></em>${c2.name}</a>
+            </li>
+
+          <!--  <a href="#" ><em></em>生物与新医药技术 </a>
             <a href="#" ><em></em>航空航天技术 </a>
             <a href="#" ><em></em>新材料技术 </a>
             <a href="#" ><em></em>高技术服务业</a>
             <a href="#" ><em></em>新能源及节能技术 </a>
             <a href="#" ><em></em>资源与环境技术 </a>
-            <a href="#" ><em></em>高技术改造传统产业 </a>
+            <a href="#" ><em></em>高技术改造传统产业 </a>-->
+            [/#list]
+            [/@cms_channel_list]
+            </ul>
         </div>
         <div class="xiangqingye">
             <div class="xiangqingzuo">
-                <img src="/${res}/imgs/tupian1.png" class="xiangqingtu"/>
+                <img src="${content.titleImg!}" class="xiangqingtu"/>
                 <button type="button" value="" class="anniu">报告下载</button>
             </div>
             <div class="xiangqingyou">
                 <p>
-                   <span class="zhaiyao">摘要 ：</span>
+                  <!-- <span class="zhaiyao">摘要 ：</span>
                     是通过对项目的主要内容和配套条件，如市场需求、资源供应、建设规模、工艺路线、设备选型、
                     环境影响、资金筹措、盈利能力等，从技术 、经济、工程等方面进行调查研究和分析比较，
                     并对项目建成以后可能取得的财务、经济效益及社会影响进行预测，
-                    从而提出该项目是否值得投资和如何进行建设的咨询意见，为项目决策提供依据的一种综合性的分析方法。
+                    从而提出该项目是否值得投资和如何进行建设的咨询意见，为项目决策提供依据的一种综合性的分析方法。-->
+                    ${content.txt!}
                 </p>
             </div>
         </div>
