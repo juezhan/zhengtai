@@ -141,7 +141,7 @@ img {
     background: url(../imgs/badge-1.png) 0 14px no-repeat;
     padding-left: 25px;
 }*/
-
+.header .container {margin-top: -80px;position: relative;}
 .kaishi{width: 100%;}
 .container {width: 1200px;margin:auto}
 .juzhong{width: 1000px;margin: auto;}
@@ -149,7 +149,7 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 350px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 460px;margin:auto;}
+.biaoti{width: 460px;margin:30px auto;}
 .zhuanjiaxinxi{width: 100%;font-size: 18px;margin-bottom: 100px;}
 .gongkai{margin-left: 45%;color: #00a0e9;}
 .biaoge{line-height: 35px;height: 35px;width: 70%;margin: auto;margin-top: 20px;background-color: #070b50;}

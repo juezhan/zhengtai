@@ -39,18 +39,27 @@
       <div class="fuweifanwei" style="background-color: #f3f2f2;">
             <div class="fuwukuang">
                 <span class="jieshao">
-                    <p class="jiewenzi"> 九维智库将在业务主管单位 ——吉林省社会科学界联合会的指导下，努力开展研究咨询业务</p>
+                    <div class="jiewenzi"> <!--九维智库将在业务主管单位 ——吉林省社会科学界联合会的指导下，努力开展研究咨询业务-->
+                        ${channel.txt!}
+                    </div>
                 </span>
                  <div class="tubiao">
                      <ul>
+                         [@cms_content_list count='4' orderBy='23' channelId='158' channelOption='1'
+                         dateFormat='yyyy-MM-dd']
+                         [#list tag_list as a]
                          <li>
-                             <img src="/${res}/imgs/erji.png" class="erji"/>
-                                <span class="tuwen">
-                                    <p class="yanjiu"> 咨询研究 </p>
-                                    <p class="yanjiuwen">区域经济与社会发展战略咨询与研究</p>
-                                </span>
+                             <a href="${a.url}">
+                                 <img src="${a.titleImg!}" class="erji"/>
+                                    <span class="tuwen">
+                                        <p class="yanjiu"> [@text_cut s=a.title len=titLen append=append/] </p>
+                                        <div class="yanjiuwen">[@text_cut s=a.desc len=descLen append=append/]</div>
+                                    </span>
+                             </a>
                          </li>
-                         <li>
+                         [/#list]
+                         [/@cms_content_list]
+                     <!--    <li>
                              <img src="/${res}/imgs/erji4.png" class="erji"/>
                              <span class="tuwen">
                                     <p class="yanjiu"> 咨询研究 </p>
@@ -70,7 +79,7 @@
                                     <p class="yanjiu"> 咨询研究 </p>
                                     <p class="yanjiuwen">区域经济与社会发展战略咨询与研究</p>
                                 </span>
-                         </li>
+                         </li>-->
                      </ul>
                  </div>
             </div>

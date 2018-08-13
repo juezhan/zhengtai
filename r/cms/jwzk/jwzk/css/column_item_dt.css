@@ -203,6 +203,7 @@ img {
 .column-item-dt .column-item-bd .list-wrapper .cell.cell-a {
 }
 .column-item-dt .column-item-bd .list-wrapper .cell.cell-a img{width: 427px;height: 281px;margin: -20px 23px -20px -26px;}*/
+.header .container {margin-top: -80px;position: relative;}
 .kaishi{width: 100%;}
 .container {width: 1200px;margin:auto}
 .juzhong{width: 1000px;margin: auto;}

@@ -281,6 +281,7 @@ img {
 .dibu{margin-top: 50px;margin-left: 30%;font-size: 18px;width: 100%;height: 100px;position: absolute;}
 .dibuwenzi{margin-left: 10%;display: inline-block;margin-top: 10px;line-height: 50px;}*/
 /*.header .container {margin-top: -80px;position: relative;}*/
+.header .container {margin-top: -80px;position: relative;}
 .fuwufanwei{width: 100%;}
 .container {width: 1200px;margin: auto}
 .juzhong{width: 1000px;margin: auto;}
@@ -288,8 +289,8 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 460px;margin:auto;}
-.fuwufanwei{width: 100%;padding-top: 30px;}
+.biaoti{width: 460px;margin: 30px auto;}
+.fuwufanwei{width: 100%;}
 .fuwukuang{width: 1200px;margin: auto;}
 .jieshao{width: 400px;height: 400px;}
 .jiewenzi{width: 380px;padding: 170px 0;font-size: 16px;}
