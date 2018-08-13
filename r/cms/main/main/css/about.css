@@ -16,6 +16,39 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .about .about-bd{padding:60px 0}
 .about .about-bd .tt{font-size:24px;line-height:30px;text-align:center;color:#0066B3}
 .about .about-bd .bd{margin:46px 100px 0;color:#000;line-height: 2;}
+#left_m{
+	display: inline-block;
+}
+#left_menu {
+	width: 210px;
+	border: 1px solid #ddd;
+	background-color: #f2f2f2;
+	padding: 7px 4px 3px 4px;
+	display: inline-block;
+}
+#left_m .tt{height:50px;line-height:50px;text-align:center;font-size:24px;color:#fff;background-color:#2084da}
+#nal3{list-style-type:none;text-align:left;width:210px;margin-top:0;padding-bottom:1px}
+#nal3 a{display:block;color:#444;line-height:32px;text-decoration:none;padding:0 4px 0 30px;margin-bottom:4px}
+#nal3 li{background-repeat:no-repeat;color:#444}
+#nal3 li a:link,#nal3 li a:visited{background-image:url(../imgs/menu_l_bk3.png);background-repeat:no-repeat;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#nal3 li a:hover{background-position:left center}
+#nal3 li a:active{background-position:left bottom;color:#FFF}
+#nal3 li a.cur:link,#nal3 li a.cur:visited{background-position:left bottom;color:#FFF;font-weight:bold;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#nal3 a:link{color:#444;text-decoration:none}
+#nal3 a:visited{color:#444;text-decoration:none}
+#nal3 a:hover{color:#2c77cf}
+#nal3 a:active{color:#000}
+#nal3 li ul{list-style:none;text-align:left;height:auto}
+#nal3 li ul a{padding:0 4px 0 30px;font-weight:normal;display:block;line-height:32px;background-repeat:no-repeat}
+#nal3 li ul a:link,#nal3 li ul a:visited{text-decoration:none;background-image:url(../imgs/menu_l_sub_bk.png);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#nal3 li ul a.cur:link,#nal3 li ul a.cur:visited{background-position:left bottom;color:#FFF;font-weight:bold}
+#nal3 li ul a:hover{text-decoration:none;background-position:left center}
+#nal3 li ul a:active{text-decoration:none;color:#FFF;background-position:left bottom}
+#nal3 li:hover ul{left:auto}
+#nal3 li.sfhover ul{left:auto}
+#nal3 ul.collapsed{display:none}
+.about-bd .container .xxgs-cnt{width: 965px;float:right;}
+.countdown{border:1px solid #dddddd;border-top: 2px solid #2084da;}
 
 @media screen and (min-width: 1620px) {
   .container{width:1600px;}
