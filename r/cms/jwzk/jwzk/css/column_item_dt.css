@@ -211,24 +211,24 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 460px;margin:auto;}
+.biaoti{width: 460px;margin:30px auto;}
 .daohang{width: 100%;margin-bottom: 20px;}
 em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;}
 a.shouye{color: #00a0e9;}
 .tupian{width: 1200px;padding-bottom: 30px;}
-.tupian li{width: 47%;min-height: 180px;border-bottom: 1px dashed #bebebe;display: inline-block;padding: 20px 0;margin-left: 4px;}
+.tupian li{width: 48%;min-height: 180px;border-bottom: 1px dashed #bebebe;display: inline-block;padding: 20px 0;margin-left: 4px;}
 .tupian1{width: 260px;height: 160px;float: left;}
 .tupian li a{color: #333;text-decoration: none;}
-.wenzi{position: absolute;padding: 40px 0;font-size: 16px;width: 265px;float: right;height: 300px;}
-.xiawenziba{padding: 5px 0;width: 260px;height: 20px;float: right;}
+.wenzi{position: absolute;padding: 40px 10px;font-size: 16px;width: 265px;float: right;height: 300px;line-height: 20px;}
 .wenziba a{color: #333;text-decoration: none;float: right;}
-.fenyekaishi{padding: 20px 30%;}
+.fenyekaishi{padding: 20px 30%;font-size: 18px;}
 .fenye a{text-decoration:none;color:#333;cursor:pointer;display: inline-block;font-size: 16px;width: 30px;background-color: #eeeeee;text-align: center;padding: 5px 0; }
 a.shouyezi{width: 50px;}
 a.shangye{width: 70px;}
 .fenye a:active{background-color: #0066b3;color: white;}
 a.shuziyi{background-color: #0066b3;color: white;}
-
+/*.daohang a:nth-child(1) em{display: none}*/
+.daohang li{display: inline-block;}
 /*详情页*/
 .xiangqing{width: 100%;margin-top: 30px;}
 .xiangqingzuo{width: 350px;height: 250px;margin-top: 30px;}

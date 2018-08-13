@@ -31,15 +31,18 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .news-content .aside .item .bd{border:1px solid #a0a0a0;padding:10px 15px;}
 .news-content .aside .item .bd .link{display:block;background-color:#fff;height:24px;line-height:24px;color:#000;font-size:14px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
 .news-content .aside .item .bd .link span{color:#ccc;margin-right:8px;font-family: '宋体';}*/
-
+.clear{
+    clear: both;
+}
 .juzhong{width: 1000px;margin: auto;}
 .wenziti{position: absolute;margin-top: -500px;letter-spacing: 20px;color: white;font-size: 60px;font-family: 宋体；}
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
 .biaoti{width: 470px;margin: auto;padding-top: 40px;}
-.jwneirong{width: 100%;margin-top: 30px;}
-.jwneirong .diyili{width: 70%;display: inline-block;}
+.erjixinxi{margin-top: 30px;width: 100%;}
+.jwneirong{width: 70%;float: left;margin-bottom: 30px;}
+.jwneirong .diyili{width: 90%;display: inline-block;margin: auto;}
 .wenzikaishi{text-align: center; }
 .diyi{font-size:30px;letter-spacing: 5px;}
 .dier{font-size:18px;letter-spacing: 3px;margin-top: 30px;}
@@ -47,11 +50,11 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .disi{font-size:18px;width: 90%;margin:20px auto;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;}
 .diwu{margin: 20px 25%;}
 .laohu{width: 400px;height: 355px;background-repeat: no-repeat;background-position: center top;}
-.zuoce{width: 350px;margin-left: 845px;position: absolute;margin-top: -575px;}
+.zuoce{width: 30%;float: right;}
 .zuoceui{border: 1px solid #dcdcdc;width: 100%;}
 .jushang{margin-top: 20px;}
 .dierceng{width: 100%;}
-.gonggao{width: 350px;background-color: #070b50;height: 40px;line-height: 40px;text-align: center;color: white;font-size: 20px;letter-spacing: 2px;}
+.gonggao{width: 100%;background-color: #070b50;height: 40px;line-height: 40px;text-align: center;color: white;font-size: 20px;letter-spacing: 2px;}
 em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;
   -webkit-transform: translateY(-3px);transform: translateY(-3px);}
 .gonggaowenzi{width:340px; line-height: 25px;padding: 5px 10px;}

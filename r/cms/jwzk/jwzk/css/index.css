@@ -231,11 +231,11 @@ img {
 .fuwu a{color: #8c8c8c;}
 
 .jwsy1{width: 100%;background-color: white;margin-top: 30px;}
-.er{width: 100%;background-color: white;margin-left: 20px;}
+.er{width: 100%;background-color: white;margin-left: 20px;min-height: 200px;}
 .erui{margin: 30px 0;width: 100%;display: inline-block;}
-.erli{width: 23%;padding-left: 10px;display: inline-block;}
+.erli{width: 23%;padding-left: 10px;display: inline-block;min-height: 240px;}
 .tupian{width: 280px;height: 150px;}
-.fuwu1{line-height: 25px;padding: 10px 0px;font-size: 18px;}
+.fuwu1{line-height: 30px;padding: 10px 0px;font-size: 18px;height: 50px;width: 260px;}
 .fuwu1 a{color: #8c8c8c;}
 
 .jwsy2{width: 100%;background-color: white;margin-top: 30px;}
@@ -259,5 +259,6 @@ img {
     .bannian{height: 50px;position: absolute;padding-left: 15px;font-size: 12px;width: 180px;}
     .shijian{position: absolute;margin-top: 70px;}
     .chakan{height: 50px;margin-top: 100px;margin-left:-20px;}
+    .fuwu1{width: 240px;}
 
 }

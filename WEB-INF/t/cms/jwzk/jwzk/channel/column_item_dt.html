@@ -192,73 +192,57 @@
             <img src="/${res}/imgs/yanjiucheng.png" class="xinwentop"/>
         </div>
      <div class="daohang">
-            <a href="#" class="active shouye" >电子信息技术</a>
+         <ul>
+           <!-- <a href="#" class="active shouye" >电子信息技术</a>
             <a href="#" ><em></em>生物与新医药技术 </a>
             <a href="#" ><em></em>航空航天技术 </a>
             <a href="#" ><em></em>新材料技术 </a>
             <a href="#" ><em></em>高技术服务业</a>
             <a href="#" ><em></em>新能源及节能技术 </a>
             <a href="#" ><em></em>资源与环境技术 </a>
-            <a href="#" ><em></em>高技术改造传统产业 </a>
+            <a href="#" ><em></em>高技术改造传统产业 </a>-->
+         [@cms_channel_list parentId='160']
+         [#list tag_list as c2]
+         <li class="shouye [#if c2.id == channel.id]zkziran[/#if]">
+             <a href="#"  ><em></em>${c2.name}</a>
+         </li>
+         [/#list]
+         [/@cms_channel_list]
+         </ul>
         </div>
      <div class="tupian">
-            <ul>
-               <li>
-                   <a href="${base}/jwzk/yj/1806.jhtml">
-                        <img src="/${res}/imgs/tupian1.png" class="tupian1"/>
-                        <span class="wenzi">
-                            <p class="xiawenziba"><a href="${base}/jwzk/yj/1806.jhtml" >[  名称  ] 一种可自动旋转的太阳能电池</a></p>
-                            <p class="xiawenziba">[  类别  ] 高新技术改造传统企业</p>
-                            <p class="xiawenziba">[  时间  ] 2017 - 09 17</p>
-                        </span>
-                   </a>
-                </li>
+         <ul>
+                [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='4' orderBy='4' titLen='35'  channelOption='1']
+                [#list tag_pagination.list as a]
                 <li>
-                    <a href="${base}/jwzk/yj/1806.jhtml">
-                        <img src="/${res}/imgs/tupian2.png" class="tupian1"/>
+                    <a href="${a.url}">
+                        <img src="${a.titleImg!}" class="tupian1"/>
                         <span class="wenzi">
-                            <p class="xiawenziba"><a href="${base}/jwzk/yj/1806.jhtml" >[  名称  ] 一种可自动旋转的太阳能电池</a></p>
-                            <p class="xiawenziba">[  类别  ] 高新技术改造传统企业</p>
-                            <p class="xiawenziba">[  时间  ] 2017 - 09 17</p>
-                        </span>
+                        <p >[  名称  ] ${a.title}</p>
+                        <p >[  类别  ] ${a. description!}</p>
+                        <p >[  时间  ] ${a.shortTitle!}</p>
+                    </span>
                     </a>
                 </li>
-                <li>
-                    <a href="${base}/jwzk/yj/1806.jhtml">
-                        <img src="/${res}/imgs/tupian3.png" class="tupian1"/>
-                        <span class="wenzi">
-                            <p class="xiawenziba"><a href="${base}/jwzk/yj/1806.jhtml" >[  名称  ] 一种可自动旋转的太阳能电池</a></p>
-                            <p class="xiawenziba">[  类别  ] 高新技术改造传统企业</p>
-                            <p class="xiawenziba">[  时间  ] 2017 - 09 17</p>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="${base}/jwzk/yj/1806.jhtml">
-                        <img src="/${res}/imgs/tupian4.png" class="tupian1"/>
-                        <span class="wenzi">
-                            <p class="xiawenziba"><a href="${base}/jwzk/yj/1806.jhtml" >[  名称  ] 一种可自动旋转的太阳能电池</a></p>
-                            <p class="xiawenziba">[  类别  ] 高新技术改造传统企业</p>
-                            <p class="xiawenziba">[  时间  ] 2017 - 09 17</p>
-                        </span>
-                    </a>
-                </li>
-
-            </ul>
+                [/#list]
+             <div class="fenyekaishi">
+                [/@cms_content_page]
+             </div>
+         </ul>
         </div>
-        <div class="fenyekaishi">
-            <div class="fenye">
-                <a href="" class="shouyezi">首页</a>
-                <a href="" class="shangye">上一页</a>
-                <a href="" class="active shuziyi">1</a>
-                <a href="" class="">2</a>
-                <a href="" class="">3</a>
-                <a href="" class="">4</a>
-                <a href="" class="">5</a>
-                <a href="" class="">6</a>
-                <a href="" class="shangye">下一页</a>
-                <a href="" class="shouyezi">尾页</a>
-            </div>
+       <!-- <div class="fenyekaishi">-->
+            <!--  <div class="fenye">
+            <a href="" class="shouyezi">首页</a>
+               <a href="" class="shangye">上一页</a>
+               <a href="" class="active shuziyi">1</a>
+               <a href="" class="">2</a>
+               <a href="" class="">3</a>
+               <a href="" class="">4</a>
+               <a href="" class="">5</a>
+               <a href="" class="">6</a>
+               <a href="" class="shangye">下一页</a>
+               <a href="" class="shouyezi">尾页</a>-->
+         <!--   </div>-->
 
         </div>
     </div>
