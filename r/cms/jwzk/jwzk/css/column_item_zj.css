@@ -61,6 +61,7 @@ img {
 }
 
 .header .container {margin-top: -80px;position: relative;}
+.container {width: 1200px;margin: auto}
 .juzhong{width: 1000px;margin: auto;}
 .wenziti{position: absolute;margin-top: -500px;letter-spacing: 20px;color: white;font-size: 60px;font-family: 宋体；}
 .hengxian{width: 100px;}
@@ -109,7 +110,7 @@ margin-top: 20px;
     height: 100%;
     display: inline-block;;
     background-color: white;
-    margin-left: 10px;
+    margin: 0 15px;
 }
 .per_box img{
     width: 100%;
@@ -141,7 +142,7 @@ margin-top: 20px;
 }
 
 @media screen and (max-width: 1119px) and (min-width: 769px) {
-    .container{width: 1000px;margin: auto;}
+    .container2{width: 1000px;margin: auto;}
     .art1_nav{margin: 0 25%;}
     .per_box{width: 18%;}
     .per_box p{margin-top:10px;margin-bottom: 10px;}

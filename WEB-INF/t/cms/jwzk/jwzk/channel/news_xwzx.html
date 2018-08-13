@@ -75,74 +75,96 @@
                 <li class="xinxili">
                     <img src="/${res}/imgs/xinwengonggao.png" class="xinwengonggao"/>
                     <ul class="dierui">
+                        [@cms_content_list count='1' recommend='1' orderBy='1' channelId='437' channelOption='1'
+                        dateFormat='yyyy-MM-dd']
+                        [#list tag_list as a]
                         <li class="dierli">
-                            <img src="/${res}/imgs/1.png" class="diyizhang"/>
+                            <img src="${a.titleImg!}" class="diyizhang"/>
                             <span class="zong" >
-                                 <span class="diyi"><a href="${base}/jwzk/xwzx/1804.jhtml">吉林省国新兴业投资集团有限公司股权制抵押评估款项目</a> </span>
-                                 <span class="shijian"> 2017 - 01- 04</span>
+                                 <span class="diyi"><a href="${a.url}">${a.title}</a> </span>
+                                 <span class="shijian">${a.date?string(dateFormat)}</span>
                             </span>
                         </li>
+                        [/#list]
+                        [/@cms_content_list]
+
+                        [@cms_content_list count='4' orderBy='2' channelId='437' channelOption='1'
+                        dateFormat='yyyy-MM-dd']
+                        [#list tag_list as a]
                         <li class="dierli">
                             <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
+                                <span class="dierwen"><a href="${a.url}" >  > ${a.title}</a> </span>
+                                <span class="jian">${a.date?string(dateFormat)}</span>
                             </p>
                         </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
+                        [/#list]
+                        [/@cms_content_list]
+
+                        <!--<li class="dierli">-->
+                            <!--<p class="dierp">-->
+                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
+                                <!--<span class="jian"> 2017 - 01- 04</span>-->
+                            <!--</p>-->
+                        <!--</li>-->
+                        <!--<li class="dierli">-->
+                            <!--<p class="dierp">-->
+                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
+                                <!--<span class="jian"> 2017 - 01- 04</span>-->
+                            <!--</p>-->
+                        <!--</li>-->
+                        <!--<li class="dierli">-->
+                            <!--<p class="dierp">-->
+                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
+                                <!--<span class="jian"> 2017 - 01- 04</span>-->
+                            <!--</p>-->
+                        <!--</li>-->
                     </ul>
                 </li>
 
                 <li class="xinxili">
                     <img src="/${res}/imgs/hangyedongtai.png" class="xinwengonggao"/>
                     <ul class="dierui">
+                        [@cms_content_list count='1' recommend='1' orderBy='1' channelId='437' channelOption='1'
+                        dateFormat='yyyy-MM-dd']
+                        [#list tag_list as a]
                         <li class="dierli">
-                            <img src="/${res}/imgs/8.jpg" class="diyizhang"/>
-                            <span >
-                                   <span class="diyi"><a href="${base}/jwzk/xwzx/1804.jhtml">吉林省国新兴业投资集团有限公司股权制抵押评估款项目</a> </span>
-                                    <span class="shijian"> 2017 - 01- 04</span>
+                            <img src="${a.titleImg!}" class="diyizhang"/>
+                            <span class="zong" >
+                                 <span class="diyi"><a href="${a.url}">${a.title}</a> </span>
+                                 <span class="shijian">${a.date?string(dateFormat)}</span>
                             </span>
                         </li>
+                        [/#list]
+                        [/@cms_content_list]
+                        [@cms_content_list count='4' orderBy='1' channelId='437' channelOption='1'
+                        dateFormat='yyyy-MM-dd']
+                        [#list tag_list as a]
                         <li class="dierli">
                             <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
+                                <span class="dierwen"><a href="${a.url}" >  > ${a.title}</a> </span>
+                                <span class="jian">${a.date?string(dateFormat)}</span>
                             </p>
                         </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
+                        [/#list]
+                        [/@cms_content_list]
+                        <!--<li class="dierli">-->
+                            <!--<p class="dierp">-->
+                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
+                                <!--<span class="jian"> 2017 - 01- 04</span>-->
+                            <!--</p>-->
+                        <!--</li>-->
+                        <!--<li class="dierli">-->
+                            <!--<p class="dierp">-->
+                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
+                                <!--<span class="jian"> 2017 - 01- 04</span>-->
+                            <!--</p>-->
+                        <!--</li>-->
+                        <!--<li class="dierli">-->
+                            <!--<p class="dierp">-->
+                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
+                                <!--<span class="jian"> 2017 - 01- 04</span>-->
+                            <!--</p>-->
+                        <!--</li>-->
                     </ul>
                 </li>
             </ul>

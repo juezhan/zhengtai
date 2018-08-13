@@ -118,7 +118,7 @@
        <div class="art1">
             <div class="art1_nav">
                 <ul>
-                    <li><a class="active2">自然科学</a></li>
+                    <!--<li><a class="active2">自然科学</a></li>-->
                     [@cms_channel_list parentId='159']
                     [#list tag_list as c2]
                     <li><em></em><a>${c2.name}</a></li>
@@ -131,50 +131,57 @@
             </div>
           <div class="art1_per">
                 <ul>
+                    [@cms_content_list count='4'  orderBy='1' channelId='159' channelOption='1'
+                    dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
                     <li class="per_box">
-                        <a href="${base}/jwzk/yj/1807.jhtml">
-                            <img src="/${res}/imgs/zhuanjia1.png" class="xinwentop"/>
-                            <p><a href="" class="s1">钱峰</a><span class="s2">研究员</span></p>
-                            <p><span class="s3">上海交通大学| 药学院</span></p>
+                        <a href="${a.url}">
+                            <img src="${a.titleImg!}" class="xinwentop"/>
+                            <p><a class="s1">${a.title}</a><span class="s2">${a.author!}</span></p>
+                            <p><span class="s3">${a.description!}</span></p>
                         </a>
                     </li>
-                    <li class="per_box">
-                        <a href="${base}/jwzk/yj/1807.jhtml">
-                            <img src="/${res}/imgs/zhuanjia2.png" class="xinwentop"/>
-                            <p><a href="${base}/jwzk/yj/1807.jhtml" class="s1">傅磊</a><span class="s2">教授、博导</span></p>
-                            <p><span class="s3">上海交通大学| 药学院</span></p>
-                        </a>
-                    </li>
-                    <li class="per_box">
-                        <a href="${base}/jwzk/yj/1807.jhtml">
-                            <img src="/${res}/imgs/zhuanjia3.png" class="xinwentop"/>
-                            <p><a href="${base}/jwzk/yj/1807.jhtml" class="s1">许平</a><span class="s2">教授</span></p>
-                            <p><span class="s3">上海交通大学 | 生命科学技术学院</span></p>
-                        </a>
-                    </li>
-                    <li class="per_box">
-                        <a href="${base}/jwzk/yj/1807.jhtml">
-                            <img src="/${res}/imgs/zhuanjia4.png" class="xinwentop"/>
-                            <p><a href="${base}/jwzk/yj/1807.jhtml" class="s1">郭圣荣</a><span class="s2">教授</span></p>
-                            <p><span class="s3">上海交通大学 | 药学院</span></p>
-                        </a>
-                    </li>
+                    [/#list]
+                    [/@cms_content_list]
+                    <!--<li class="per_box">-->
+                        <!--<a href="${base}/jwzk/yj/1807.jhtml">-->
+                            <!--<img src="/${res}/imgs/zhuanjia2.png" class="xinwentop"/>-->
+                            <!--<p><a href="${base}/jwzk/yj/1807.jhtml" class="s1">傅磊</a><span class="s2">教授、博导</span></p>-->
+                            <!--<p><span class="s3">上海交通大学| 药学院</span></p>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li class="per_box">-->
+                        <!--<a href="${base}/jwzk/yj/1807.jhtml">-->
+                            <!--<img src="/${res}/imgs/zhuanjia3.png" class="xinwentop"/>-->
+                            <!--<p><a href="${base}/jwzk/yj/1807.jhtml" class="s1">许平</a><span class="s2">教授</span></p>-->
+                            <!--<p><span class="s3">上海交通大学 | 生命科学技术学院</span></p>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li class="per_box">-->
+                        <!--<a href="${base}/jwzk/yj/1807.jhtml">-->
+                            <!--<img src="/${res}/imgs/zhuanjia4.png" class="xinwentop"/>-->
+                            <!--<p><a href="${base}/jwzk/yj/1807.jhtml" class="s1">郭圣荣</a><span class="s2">教授</span></p>-->
+                            <!--<p><span class="s3">上海交通大学 | 药学院</span></p>-->
+                        <!--</a>-->
+                    <!--</li>-->
                 </ul>
             </div>
             <div class="art1_foo">
-                <ul class="foo_ul">
-                    <li><a>首页</a></li>
-                    <li><a>上一页</a></li>
-                    <li><a>1</a></li>
-                    <li><a>2</a></li>
-                    <li><a>3</a></li>
-                    <li><a>4</a></li>
-                    <li><a>5</a></li>
-                    <li><a>6</a></li>
-                    <li><a>下一页</a></li>
-                    <li><a>尾页</a></li>
-                </ul>
+                <!--<ul class="foo_ul">-->
+                    <!--<li><a>首页</a></li>-->
+                    <!--<li><a>上一页</a></li>-->
+                    <!--<li><a>1</a></li>-->
+                    <!--<li><a>2</a></li>-->
+                    <!--<li><a>3</a></li>-->
+                    <!--<li><a>4</a></li>-->
+                    <!--<li><a>5</a></li>-->
+                    <!--<li><a>6</a></li>-->
+                    <!--<li><a>下一页</a></li>-->
+                    <!--<li><a>尾页</a></li>-->
+                <!--</ul>-->
+
             </div>
+
         </div>
     </div>
 </div>

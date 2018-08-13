@@ -20,14 +20,43 @@
 <![endif]-->
 
 <head>
+    <style>
+        #left_m{
+            display: inline-block;
+        }
+        #left_menu {
+            width: 210px;
+            border: 1px solid #ddd;
+            background-color: #f2f2f2;
+            padding: 7px 4px 3px 4px;
+            display: inline-block;
+        }
+        #left_m .tt{height:50px;line-height:50px;text-align:center;font-size:24px;color:#fff;background-color:#2084da}
+
+    </style>
 <body class="about">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
 <div class="about-bd">
     <div class="container">
-        <div class="tt">关于我们</div>
-        <div class="bd">
-        ${channel. txt!}
+        <!--<div class="tt">关于我们</div>-->
+        <!--<div class="bd">-->
+        <!--${channel. txt!}-->
+        <!--</div>-->
+        <div id="left_m">
+            <div class="tt">平台业务受理流程</div>
+            <div id="left_menu">
+                <div id="PARENT">
+                    <ul id="nal3">
+                        [@cms_channel_list parentId=channel.id]
+                        [#list tag_list as c]
+                        <li><a href="${c.url}" title="${c.name}"
+                               class="one [#if channel.id==c.id]cur[/#if]">${c.name}</a></li>
+                        [/#list]
+                        [/@cms_channel_list]
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
