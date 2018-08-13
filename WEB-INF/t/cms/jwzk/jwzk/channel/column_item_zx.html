@@ -49,13 +49,12 @@
                          dateFormat='yyyy-MM-dd']
                          [#list tag_list as a]
                          <li>
-                             <a href="${a.url}">
                                  <img src="${a.titleImg!}" class="erji"/>
                                     <span class="tuwen">
                                         <p class="yanjiu"> [@text_cut s=a.title len=titLen append=append/] </p>
                                         <div class="yanjiuwen">[@text_cut s=a.desc len=descLen append=append/]</div>
                                     </span>
-                             </a>
+
                          </li>
                          [/#list]
                          [/@cms_content_list]

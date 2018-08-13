@@ -22,10 +22,7 @@
     Cms.siteFlow("${base}", location.href, document.referrer, "${site.config.flowSwitch?string}");
   });
 </script>
-<style>
-    .daohang a:nth-child(1) em{display: none}
-    .daohang li{display: inline-block;}
-</style>
+
 <head>
 <body class="column-item-dt">
 [#include "../include/header.html"/]
@@ -200,7 +197,7 @@
             <ul>
             [@cms_channel_list parentId='160']
             [#list tag_list as c2]
-            <li>
+            <li class="shouye [#if c2.id == channel.id]zkziran[/#if]">
                 <a href="#"  ><em></em>${c2.name}</a>
             </li>
 

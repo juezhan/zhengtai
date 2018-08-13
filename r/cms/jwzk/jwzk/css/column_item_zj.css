@@ -66,7 +66,7 @@ img {
 .hengxian{width: 100px;}
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
-.biaoti{width: 460px;margin:auto;}
+.biaoti{width: 460px;margin:30px auto;}
 em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;}
 .art1{
     width: 1200px;

@@ -74,59 +74,62 @@
       <div class="biaoti">
           <img src="/${res}/imgs/gonggaotop.png" class="xinwentop"/>
       </div>
-      <div class="jwneirong">
-            <div class="diyili">
+      <div class="erjixinxi">
+          <div class="jwneirong">
+              <div class="diyili">
                 <span class="wenzikaishi">
                   <p class="diyi">${content.title}</p>
                   <p class="dier">作者：${content.author!}</p>
-                  <p class="disan">时间:${content.releaseDate}</p>
+                  <p class="disan">时间:${content.shortTitle!}</p>
                 </span>
-                <p class="disi">
-                  <!--被评估单位中国科学院长春光学精密机械与物理研究所是新中国在光学领域建立的第一个研究所，创造了十几项“中国第一”，先后参加过“两弹一星”、“载人航天工程”等多项国家重大工程项目。-->
-                    ${content.txt!}
-                </p>
-            </div>
+                  <div class="disi">
+                      <!--被评估单位中国科学院长春光学精密机械与物理研究所是新中国在光学领域建立的第一个研究所，创造了十几项“中国第一”，先后参加过“两弹一星”、“载人航天工程”等多项国家重大工程项目。-->
+                      ${content.txt!}
+                  </div>
+              </div>
+          </div>
+          <div class="zuoce">
+              <ul class="zuoceui">
+                  <li class="dierceng">
+                      <ul>
+                          <p class="gonggao">最新公告</p>
+                          [@cms_content_page channelId=channel.id count='5' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
+                          [#list tag_pagination.list as a]
+                          <li class="gonggaowenzi">
+                              <a href="${a.url}" >
+                                  <em></em> [@text_cut s=a.title len=titLen append=append/]</a>
+                          </li>
+                          <!-- <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                           <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                           <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                           <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>-->
+                          [/#list]
+                          [/@cms_content_page]
+                      </ul>
+                  </li>
+              </ul>
+              <ul class="zuoceui jushang">
+                  <li class="dierceng">
+                      <ul>
+                          <p class="gonggao">行业动态</p>
+                          [@cms_content_page channelId=channel.id count='5' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
+                          [#list tag_pagination.list as c]
+                          <li class="gonggaowenzi">
+                              <a href="${c.url}" >
+                                  <em></em> [@text_cut s=c.title len=titLen append=append/]</a>
+                          </li>
+                          <!-- <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                           <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                           <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
+                           <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>-->
+                          [/#list]
+                          [/@cms_content_page]
+                      </ul>
+                  </li>
+              </ul>
+          </div>
       </div>
-      <div class="zuoce">
-          <ul class="zuoceui">
-              <li class="dierceng">
-                  <ul>
-                        <p class="gonggao">最新公告</p>
-                      [@cms_content_page channelId=channel.id count='5' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
-                      [#list tag_pagination.list as a]
-                      <li class="gonggaowenzi">
-                          <a href="${a.url}" >
-                          <em></em> [@text_cut s=a.title len=titLen append=append/]</a>
-                      </li>
-                     <!-- <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>-->
-                      [/#list]
-                      [/@cms_content_page]
-                  </ul>
-              </li>
-          </ul>
-          <ul class="zuoceui jushang">
-              <li class="dierceng">
-                  <ul>
-                      <p class="gonggao">行业动态</p>
-                      [@cms_content_page channelId=channel.id count='5' titLen='20' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1']
-                      [#list tag_pagination.list as c]
-                      <li class="gonggaowenzi">
-                          <a href="${c.url}" >
-                              <em></em> [@text_cut s=c.title len=titLen append=append/]</a>
-                      </li>
-                     <!-- <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>
-                      <li class="gonggaowenzi"> <a href="${base}/jwzk/xwzx/1804.jhtml" ><em></em> 长春市正泰汽车贸易有限公司评估项目...</a></li>-->
-                      [/#list]
-                      [/@cms_content_page]
-                  </ul>
-              </li>
-          </ul>
-      </div>
+      <div class="clear"></div>
   </div>
 </div>
 
