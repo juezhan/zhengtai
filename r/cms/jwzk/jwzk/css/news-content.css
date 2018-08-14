@@ -10,7 +10,7 @@ h4,h5,h6{font-size:100%}
 li,ol,ul{list-style:none}
 a{text-decoration:none;color:black;cursor:pointer;font-size: 16px;}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
-.container{width:1200px;margin:0 auto}
+.container{width:1200px;margin:0 auto;}
 .icon{display:inline-block}
 /*
 .news-content{margin: 20px 0 44px; overflow: hidden;}
@@ -50,7 +50,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .disi{font-size:18px;width: 90%;margin:20px auto;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;}
 .diwu{margin: 20px 25%;}
 .laohu{width: 400px;height: 355px;background-repeat: no-repeat;background-position: center top;}
-.zuoce{width: 30%;float: right;}
+.zuoce{width: 30%;float: right;margin-bottom: 30px;}
 .zuoceui{border: 1px solid #dcdcdc;width: 100%;}
 .jushang{margin-top: 20px;}
 .dierceng{width: 100%;}
@@ -60,6 +60,7 @@ em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;backgr
 .gonggaowenzi{width:340px; line-height: 25px;padding: 5px 10px;}
 .gonggaowenzi a{width: 310px;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;
   display: -webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;}
+
 @media screen and (min-width: 1620px) {
   .container{width:1600px;}
 }

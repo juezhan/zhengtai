@@ -302,9 +302,9 @@ img {
 .yanjiu{width: 160px;height: 30px;position: absolute;margin-left: 120px;border-bottom: 1px solid#c7c7c7;margin-top: -105px;}
 .yanjiuwen{width: 160px;height: 80px;position: absolute;margin-left: 120px;margin-top: -60px;}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
-    .container {width: 1000px;}
-    .fuwukuang{width: 1000px;margin: auto;}
-    .tubiao li{width: 40%;}
-    .tubiao{margin-left: 330px;}
-    .jiewenzi{width: 280px;margin-left: 20px;}
+.container {width: 1000px;}
+.fuwukuang{width: 1000px;margin: auto;}
+.tubiao li{width: 40%;}
+.tubiao{margin-left: 330px;}
+.jiewenzi{width: 280px;margin-left: 20px;}
 }

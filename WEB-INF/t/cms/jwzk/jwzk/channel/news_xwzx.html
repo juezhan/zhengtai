@@ -71,13 +71,57 @@
             <img src="/${res}/imgs/xinwentop.png" class="xinwentop"/>
         </div>
         <div class="xinwenxinxi">
-            <ul>
+            <img src="/${res}/imgs/xinwengonggao.png" class="xinwengonggao"/>
+            <ul class="xinwenui">
+                <ul class="daui">
+                    [@cms_content_page  channelId=channel.id  sysPage='1' recommend='1'  dateFormat='yyyy-MM-dd' count='10' orderBy='4' titLen='35'  channelOption='1']
+                    [#list tag_pagination.list as a]
+                    <li class="xinxili">
+                        <ul class="dierui">
+                            <!--[@cms_content_list count='1' recommend='1' orderBy='1' channelId='437' channelOption='1'
+                              dateFormat='yyyy-MM-dd']
+                              [#list tag_list as a]-->
+                            <li class="dierli">
+                                <img src="${a.titleImg!}" class="diyizhang"/>
+                                <span class="zong" >
+                                 <span class="diyi"><a href="${a.url}">${a.title}</a> </span>
+                                 <span class="shijian">${a.date?string(dateFormat)}</span>
+                            </span>
+                            </li>
+                            <!--  [/#list]
+                              [/@cms_content_list]-->
+
+                            [@cms_content_list count='4' orderBy='2' channelId='437' channelOption='1'
+                            dateFormat='yyyy-MM-dd']
+                            [#list tag_list as a]
+                            <li class="dierli">
+                                <p class="dierp">
+                                    <span class="dierwen"><a href="${a.url}" >  > ${a.title}</a> </span>
+                                    <span class="jian">${a.date?string(dateFormat)}</span>
+                                </p>
+                            </li>
+                            [/#list]
+                            [/@cms_content_list]
+                        </ul>
+                    </li>
+                    [/#list]
+                    <div class="fenyekaishi">
+                        [/@cms_content_page]
+                    </div>
+            </ul>
+        </div>
+    </div>
+    <div style="background-color: #f8f8f8;margin-top: 30px;">
+        <div class="xinwenxinxi2">
+            <img src="/${res}/imgs/hangyedongtai.png" class="xinwengonggao"/>
+            <ul class="daui">
+                [@cms_content_page  channelId=channel.id  sysPage='1' recommend='1'  dateFormat='yyyy-MM-dd' count='10' orderBy='4' titLen='35'  channelOption='1']
+                [#list tag_pagination.list as a]
                 <li class="xinxili">
-                    <img src="/${res}/imgs/xinwengonggao.png" class="xinwengonggao"/>
                     <ul class="dierui">
-                        [@cms_content_list count='1' recommend='1' orderBy='1' channelId='437' channelOption='1'
+                      <!--[@cms_content_list count='1' recommend='1' orderBy='1' channelId='437' channelOption='1'
                         dateFormat='yyyy-MM-dd']
-                        [#list tag_list as a]
+                        [#list tag_list as a]-->
                         <li class="dierli">
                             <img src="${a.titleImg!}" class="diyizhang"/>
                             <span class="zong" >
@@ -85,8 +129,8 @@
                                  <span class="shijian">${a.date?string(dateFormat)}</span>
                             </span>
                         </li>
-                        [/#list]
-                        [/@cms_content_list]
+                      <!--  [/#list]
+                        [/@cms_content_list]-->
 
                         [@cms_content_list count='4' orderBy='2' channelId='437' channelOption='1'
                         dateFormat='yyyy-MM-dd']
@@ -99,155 +143,16 @@
                         </li>
                         [/#list]
                         [/@cms_content_list]
-
-                        <!--<li class="dierli">-->
-                            <!--<p class="dierp">-->
-                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
-                                <!--<span class="jian"> 2017 - 01- 04</span>-->
-                            <!--</p>-->
-                        <!--</li>-->
-                        <!--<li class="dierli">-->
-                            <!--<p class="dierp">-->
-                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
-                                <!--<span class="jian"> 2017 - 01- 04</span>-->
-                            <!--</p>-->
-                        <!--</li>-->
-                        <!--<li class="dierli">-->
-                            <!--<p class="dierp">-->
-                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
-                                <!--<span class="jian"> 2017 - 01- 04</span>-->
-                            <!--</p>-->
-                        <!--</li>-->
                     </ul>
                 </li>
-
-                <li class="xinxili">
-                    <img src="/${res}/imgs/hangyedongtai.png" class="xinwengonggao"/>
-                    <ul class="dierui">
-                        [@cms_content_list count='1' recommend='1' orderBy='1' channelId='437' channelOption='1'
-                        dateFormat='yyyy-MM-dd']
-                        [#list tag_list as a]
-                        <li class="dierli">
-                            <img src="${a.titleImg!}" class="diyizhang"/>
-                            <span class="zong" >
-                                 <span class="diyi"><a href="${a.url}">${a.title}</a> </span>
-                                 <span class="shijian">${a.date?string(dateFormat)}</span>
-                            </span>
-                        </li>
-                        [/#list]
-                        [/@cms_content_list]
-                        [@cms_content_list count='4' orderBy='1' channelId='437' channelOption='1'
-                        dateFormat='yyyy-MM-dd']
-                        [#list tag_list as a]
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${a.url}" >  > ${a.title}</a> </span>
-                                <span class="jian">${a.date?string(dateFormat)}</span>
-                            </p>
-                        </li>
-                        [/#list]
-                        [/@cms_content_list]
-                        <!--<li class="dierli">-->
-                            <!--<p class="dierp">-->
-                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
-                                <!--<span class="jian"> 2017 - 01- 04</span>-->
-                            <!--</p>-->
-                        <!--</li>-->
-                        <!--<li class="dierli">-->
-                            <!--<p class="dierp">-->
-                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
-                                <!--<span class="jian"> 2017 - 01- 04</span>-->
-                            <!--</p>-->
-                        <!--</li>-->
-                        <!--<li class="dierli">-->
-                            <!--<p class="dierp">-->
-                                <!--<span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>-->
-                                <!--<span class="jian"> 2017 - 01- 04</span>-->
-                            <!--</p>-->
-                        <!--</li>-->
-                    </ul>
-                </li>
+                [/#list]
+                <div class="fenyekaishi">
+                    [/@cms_content_page]
+                </div>
             </ul>
         </div>
     </div>
-    <div style="background-color: #f8f8f8;margin-top: 30px;">
-        <div class="xinwenxinxi2">
-            <ul class="daui">
-                <li class="xinxili">
-                    <ul class="dierui">
-                        <li class="dierli">
-                            <img src="/${res}/imgs/1.png" class="diyizhang"/>
-                            <span >
-                                     <span class="diyi"><a href="${base}/jwzk/xwzx/1804.jhtml">吉林省国新兴业投资集团有限公司股权制抵押评估款项目</a> </span>
-                                    <span class="shijian"> 2017 - 01- 04</span>
-                            </span>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="xinxili">
-                    <ul class="dierui">
-                        <li class="dierli">
-                            <img src="/${res}/imgs/9.jpg" class="diyizhang"/>
-                            <span>
-                                    <span class="diyi"><a href="${base}/jwzk/xwzx/1804.jhtml">吉林省国新兴业投资集团有限公司股权制抵押评估款项目</a> </span>
-                                    <span class="shijian"> 2017 - 01- 04</span>
-                            </span>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                        <li class="dierli">
-                            <p class="dierp">
-                                <span class="dierwen"><a href="${base}/jwzk/xwzx/1804.jhtml" >  > 长春高翔特种管道有限公司全部股东 ...</a> </span>
-                                <span class="jian"> 2017 - 01- 04</span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="fenyekaishi">
+   <!-- <div class="fenyekaishi">
             <div class="fenye">
                 <a href="" class="shouyezi">首页</a>
                 <a href="" class="shangye">上一页</a>
@@ -261,7 +166,7 @@
                 <a href="" class="shouyezi">尾页</a>
             </div>
 
-    </div>
+    </div>-->
 </div>
 
 [#include "../include/footer.html"/]

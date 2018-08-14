@@ -54,7 +54,7 @@
     var mt = null,$currTt = $('#navigationBar a.tt.on').eq(0)
     $('#navigationBar a.tt').each(function (e) {
         $(this).hover(function () {
-            $(this).next('.menu').addClass('visible')
+            /*$(this).next('.menu').addClass('visible')*/
             $('#navigationBar a.tt').removeClass('active');
             $(this).addClass('active')
         }, function () {
@@ -62,7 +62,7 @@
             $currTt.addClass('active')
             var $this = $(this);
             mt = setTimeout(function () {
-                $this.next('.menu').removeClass('visible')
+                /*$this.next('.menu').removeClass('visible')*/
                 clearTimeout(mt);
             },50)
         })
