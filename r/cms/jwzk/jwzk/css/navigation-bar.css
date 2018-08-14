@@ -9,7 +9,7 @@
 .navigation-bar .item.on a.tt{color:white;}
 .navigation-bar .item a:hover{color: white;}
 .navigation-bar .item a:active{color: white;height: 90px;}
-.navigation-bar .item a{color: #505050;text-decoration: none;}
+.navigation-bar .item a{color: #505050;text-decoration: none;font-size: 20px;}
 .navigation-bar .item:hover{background-color:#0066b3;height: 90px;}
 .navigation-bar .item:active{background-color:#0066b3;}
 .navigation-bar .item .menu{display: none;position:absolute;top: 100%;left:0;width: 160%;line-height: initial;background-color: rgba(0,0,0,.7);padding: 5px 0;}
@@ -20,11 +20,13 @@
 .searchCon{position: absolute;margin-top: -660px;height: 23px;width: 180px;margin-left: 920px;text-indent: 20px;}
 .fangdajing{width: 20px;height: 23px;position: absolute;margin-top: -660px;margin-left: 1080px;}
 @media screen and (max-width: 1024px) {
-    .navigation-bar{width: 100%;background-color: #eee;margin-left: -10px;}
-     .navigation-bar .item{padding: 0 5px;font-size: 14px;height: 90px;line-height: 90px;margin-left: -10px;}
+    .navigation-bar{width: 100%;background-color: #eee;}
+     .navigation-bar .item{padding: 0 5px;font-size: 12px;height: 90px;line-height: 90px;margin-left: -15px;}
     .navigation-bar .item.on{height: 90px;border-radius: 0;}
     .navigation-bar .item .tt{height:90px;}
     .searchCon{margin-left: 800px;}
     .fangdajing{margin-left: 960px;}
+    .logo2{width:400px;height: 90px;position: absolute;margin-top: -600px;}
+    .navigation-bar .bd{text-align:center;width: 60%;margin-left:400px;height: 90px;position: absolute;margin-top: -600px;background-color: white;line-height: 90px;}
 
 }

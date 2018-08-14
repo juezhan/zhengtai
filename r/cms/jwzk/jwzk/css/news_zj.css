@@ -142,6 +142,7 @@ img {
     padding-left: 25px;
 }*/
 .header .container {margin-top: -80px;position: relative;}
+
 .kaishi{width: 100%;}
 .container {width: 1200px;margin:auto}
 .juzhong{width: 1000px;margin: auto;}
@@ -151,7 +152,7 @@ img {
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
 .biaoti{width: 460px;margin:30px auto;}
 .zhuanjiaxinxi{width: 100%;font-size: 18px;margin-bottom: 100px;}
-.gongkai{margin-left: 45%;color: #00a0e9;}
+.gongkai{color: #00a0e9;font-size: 18px;text-align: center;padding-top: 30px;}
 .biaoge{line-height: 35px;height: 35px;width: 70%;margin: auto;margin-top: 20px;background-color: #070b50;}
 .biaoge span{padding: 5px 86px;color: white;}
 .xiangqingxialei{line-height: 35px;height: 35px;width: 68%;margin: auto;margin-top: 10px;border-bottom: 1px dashed#070b50;}
@@ -159,13 +160,31 @@ img {
 .chenggou{margin-left: 170px;}
 .xiazai{margin-left: 220px;}
 
+
+
+
+.jrwm .mn {
+    padding: 0px 0 37px;
+}
+
+.jrwm .mn-c {
+    background-color: #ffffff;
+    text-align: center;
+}
+.mn-c ui{width: 100%;}
+.mn-c li:nth-child(1){width:100%;background-color: #070b50;text-align: center; color: white;font-size: 16px;}
+.mn-c li div{display:inline-block;font-size:18px;line-height:36px;width:33%;}
+div.hh1{width: 100%;}
+div.yi{border-bottom: 1px dashed#070b50; width: 33%;}
+
+
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container {width:1000px;margin: auto;}
-
+    .gongkai{text-align: center;margin-right: 180px;}
     .biaoge span{padding: 5px 60px;color: white;}
     .gongkai{margin-left: 45%;}
     .yaoq{margin-left: 50px;}
     .chenggou{margin-left: 120px;}
     .xiazai{margin-left: 150px;}
-
+    .mn-c li div{display:inline-block;font-size:18px;line-height:36px;width:25%;}
 }

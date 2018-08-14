@@ -76,9 +76,9 @@ em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;backgr
 }
 
 .art1_nav{
-    width: 1200px;
+    width: 100%;
     height: 20px;
-    margin-left:350px;
+    text-align: center;
 
 }
 .art1_nav ul li{
@@ -142,13 +142,14 @@ margin-top: 20px;
     cursor: pointer;
 }
 .art1_nav ul li:nth-child(1) em{display: none;}
+.art1_nav ul li:nth-child(1) a{color: #0066b3;}
 .active{color: #0066b3}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container2{width: 1000px;margin: auto;}
-    .art1_nav{margin: 0 25%;}
+    .art1_nav{text-align: center;}
     .per_box{width: 18%;}
     .per_box p{margin-top:10px;margin-bottom: 10px;}
-    .art1_foo{height: 28px;padding:50px 15% 20px 15%;font-size: 18px;}
+    .art1_foo{height: 28px;text-align:center;font-size: 18px;}
 }
 
 
@@ -200,5 +201,4 @@ margin-top: 20px;
     .container1{width: 1000px;margin: auto;}
     .per_det{width: 680px;margin-left: 300px;}
     .per_box1{width: 25%;}
-    .art1_nav{margin: 0 28%;}
 }

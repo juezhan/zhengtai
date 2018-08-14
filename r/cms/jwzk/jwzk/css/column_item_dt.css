@@ -212,7 +212,7 @@ img {
 .wenziti2{position: absolute;margin-top: -350px;letter-spacing: 25px;color: white;font-size: 60px;margin-left: 200px;font-family: 宋体；}
 .wenxintop{width: 475px;height: 49px;margin-left: 500px;}
 .biaoti{width: 460px;margin:30px auto;}
-.daohang{width: 100%;margin-bottom: 20px;}
+.daohang{width: 100%;margin-bottom: 20px;text-align: center;}
 em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;background-color: #000000;border-radius: 50%;margin-right: 10px;}
 a.shouye{color: #00a0e9;}
 .tupian{width: 1200px;padding-bottom: 30px;}
@@ -227,7 +227,9 @@ a.shouyezi{width: 50px;}
 a.shangye{width: 70px;}
 .fenye a:active{background-color: #0066b3;color: white;}
 a.shuziyi{background-color: #0066b3;color: white;}
-/*.daohang a:nth-child(1) em{display: none}*/
+.daohang ul li:nth-child(1) em{display: none;}
+.daohang ul li:nth-child(1) a{color: #0066b3;}
+.active{color: #0066b3}
 .daohang li{display: inline-block;}
 /*详情页*/
 .xiangqing{width: 100%;margin-top: 30px;}

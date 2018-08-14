@@ -102,7 +102,7 @@
     </div>
 </div>-->
 
-<div class="kaishi">
+<!--<div class="kaishi">
     <div class="container">
         <div class="juzhong">
             <div class="wenziti"><span class="jiuwei">荟萃民间智力</span></div>
@@ -125,7 +125,56 @@
             </p>
         </div>
     </div>
-</div>
+</div>-->
+<div class="jrwm clearfix">
+    <div class="container">
+        <div class="juzhong">
+            <div class="wenziti"><span class="jiuwei">荟萃民间智力</span></div>
+            <div class="wenziti2">共襄盛世伟业</div>
+        </div>
+        <div class="biaoti">
+            <img src="/${res}/imgs/zhuanjia.png" class="xinwentop"/>
+            <p class="gongkai">公开招聘</p>
+        </div>
+        [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='4' dateFormat='yyyy-MM-dd' channelOption='1' ]
+
+                <div class="mn">
+            <div class="container clearfix ">
+                <div class="mn-c">
+                    <ui>
+                        <li>
+                            <div class="hh1">职称要求</div>
+                            <div class="hh1">研究成果要求</div>
+                            <div class="hh1">申请入库登记表</div>
+                        </li>
+                        [#list tag_pagination.list as a]
+                            <li class="erer">
+                                <div class="yi">${a.title!}</div>
+                                <div class="yi">${a.description!}</div>
+                                <div class="yi">下载</div>
+                            </li>
+                        [/#list]
+                    </ui>
+                </div>
+                <div class="pagination" style="text-align: center;padding-top: 30px">[@cms_pagination sysPage='1'/]</div>
+        </div>
+    </div>
+
+        [/@cms_content_page]
+    </div>
+
+    <!--<ui>
+        <li>
+            <div class="hh1">职称要求</div>
+            <div class="hh1">研究成果要求</div>
+            <div class="hh1">申请入库登记表</div>
+        </li>
+        <li class="erer">
+            <div class="yi"></div>
+            <div class="yi">研究成果要求</div>
+            <div class="yi">申请入库登记表</div>
+        </li>
+    </ui>-->
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>

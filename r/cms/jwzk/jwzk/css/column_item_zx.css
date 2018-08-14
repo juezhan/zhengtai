@@ -293,18 +293,20 @@ img {
 .fuwufanwei{width: 100%;}
 .fuwukuang{width: 1200px;margin: auto;}
 .jieshao{width: 400px;height: 400px;}
-.jiewenzi{width: 380px;padding: 170px 0;font-size: 16px;}
+.jiewenzi{width: 380px;padding: 170px 0;font-size: 16px;line-height: 30px;}
 .tubiao{width: 750px;margin-left: 430px;margin-top: -360px;position: absolute;}
 .tubiao ui{width: 100%;}
 .tubiao li{width: 47%;margin-left: 2%;height: 120px;background-color: white;margin-top: 50px;display: inline-block;}
 .erji{width: 90px;height: 100px;padding: 10px 0;}
 .tuwen{width: 190px;height: 120px;}
-.yanjiu{width: 160px;height: 30px;position: absolute;margin-left: 120px;border-bottom: 1px solid#c7c7c7;margin-top: -105px;}
-.yanjiuwen{width: 160px;height: 80px;position: absolute;margin-left: 120px;margin-top: -60px;}
+.yanjiu{width: 200px;height: 30px;position: absolute;margin-left: 120px;border-bottom: 1px solid#c7c7c7;margin-top: -105px;}
+.yanjiuwen{width: 200px;height: 80px;position: absolute;margin-left: 120px;margin-top: -60px;}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
 .container {width: 1000px;}
 .fuwukuang{width: 1000px;margin: auto;}
 .tubiao li{width: 40%;}
 .tubiao{margin-left: 330px;}
 .jiewenzi{width: 280px;margin-left: 20px;}
+    .yanjiu{width: 160px;}
+    .yanjiuwen{width: 160px;}
 }
