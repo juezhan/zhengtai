@@ -49,7 +49,15 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 #nal3 ul.collapsed{display:none}
 .about-bd .container .xxgs-cnt{width: 965px;float:right;}
 .countdown{border:1px solid #dddddd;border-top: 2px solid #2084da;}
-
+.img_box{
+	width: 900px;
+	margin: 0 auto;
+}
+.countdown img{
+	width: 100%;
+	height: 100%;
+}
+.c_p1{text-align: center;font-size: 22px;font-weight: 600;margin: 20px 0;}
 @media screen and (min-width: 1620px) {
   .container{width:1600px;}
 }
