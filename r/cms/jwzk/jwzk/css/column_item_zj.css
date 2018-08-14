@@ -141,7 +141,8 @@ margin-top: 20px;
     background-color: #eeeeee;
     cursor: pointer;
 }
-
+.art1_nav ul li:nth-child(1) em{display: none;}
+.active{color: #0066b3}
 @media screen and (max-width: 1119px) and (min-width: 769px) {
     .container2{width: 1000px;margin: auto;}
     .art1_nav{margin: 0 25%;}
