@@ -132,7 +132,7 @@ img {
     overflow: hidden;
     height: 292px;
 }
-.index .aside .progress-bar{position: absolute;font-size: 0;bottom: 30px;text-align: center;width: 100%;z-index: 99}
+.index .aside .progress-bar{position: absolute;font-size: 0;bottom: 0;text-align: center;width: 100%;z-index: 99}
 .index .aside .progress-bar-dian{cursor: pointer; width: 10px;height: 10px;border-radius: 50%;margin: 0 5px;display: inline-block;background-color: #d9dada;}
 .index .aside .progress-bar-dian.on{background-color: #0099ff;}
 .index .aside .banner-w{position: absolute;top: 0;width: 100%;left: 0;height: 100%;}
