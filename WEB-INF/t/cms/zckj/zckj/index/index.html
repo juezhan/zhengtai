@@ -12,13 +12,17 @@
 <link href="/${res}/css/animate.css" rel="stylesheet"/>
 <link href="/${res}/css/8.1.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
+<link href="/${res}/css/pageSwitch.min.css" rel="stylesheet">
 
+<script src="/${res}/js/pageSwitch.min.js"></script>
 <!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
+
 <![endif]-->
 <head>
-<body class="news_81">
+<body class="index">
+<!--<body class="news_81">
   <div class="banner">
     <img src="/${res}/imgs/index_banner.png" alt="" class="bannerimg">
   </div>
@@ -34,7 +38,7 @@
       </a></li>
         [/#list]
         [/@cms_channel_list]
-    </ul>
+    </ul>-->
     <!--<ul class="nav_ul">
       <li><a href="">
         <div class="nav_item">
@@ -67,7 +71,7 @@
         </div>
       </a></li>
     </ul>-->
-  </div>
+  <!--</div>
   <div class="indexconterbg" style="background: url(/${res}/imgs/index_bg.jpg) no-repeat center">
     <div class="indexconter">
       <div class="item_a">
@@ -135,7 +139,538 @@
   <script src="/${res}/js/wow.min.js"></script>
   <script>
       new WOW().init();
-  </script>
+  </script>-->
+[#include "../include/header.html"/]
+<div class="kaishi">
+
+    <div class="clear main">
+        <ul class="main_text">
+            <li class="main_news">
+                <div class="news_center">
+                    <div class="news_title">
+                        <a href="NewsList.aspx?nid=1">更多>></a></div>
+                    <div class="news_left">
+                        <div id="container">
+                            <div class="sections">
+                                <div class="section" id="section0"><h3>this is the page1</h3></div>
+                                <div class="section" id="section1"><h3>this is the page2</h3></div>
+                                <div class="section" id="section2"><h3>this is the page3</h3></div>
+                                <div class="section" id="section3"><h3>this is the page4</h3></div>
+                            </div>
+                        </div>
+                        <script>
+                            $("#container").PageSwitch({
+                                direction:'horizontal',
+                                easing:'ease-in',
+                                duration:1000,
+                                autoPlay:true,
+                                loop:'false'
+                            });
+                        </script>
+                    </div>
+                    <div class="news_right">
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=437" title="我院组织职工文艺汇演庆祝建院三十周年">
+                                我院组织职工文艺汇演庆祝建院三十周…
+                            </a></li>
+                            <li class="news_date">
+                                2018-08-14
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=435" title="我院组织开展“创新驱动发展”青年论坛 ">我院组织开展“创新驱动发展”青年论…
+                            </a></li>
+                            <li class="news_date">
+                                2018-05-07
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=429" title="我院荣获“城阳区卫计局2017年度工程建设项目优秀合作单位”">
+                                我院荣获“城阳区卫计局2017年度工…
+                            </a></li>
+                            <li class="news_date">
+                                2018-02-11
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=428" title="我院完成2017年创新工作亮点评选">
+                                我院完成2017年创新工作亮点评选
+                            </a></li>
+                            <li class="news_date">
+                                2018-02-06
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=427" title="青岛澳柯玛集团李蔚董事长来我院洽谈业务">
+                                青岛澳柯玛集团李蔚董事长来我院洽谈…
+                            </a></li>
+                            <li class="news_date">
+                                2018-01-23
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=426" title="市发改委李希琨副主任带队来我院进行现场年度考核">
+                                市发改委李希琨副主任带队来我院进行…
+                            </a></li>
+                            <li class="news_date">
+                                2018-01-02
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=425" title="市发改委李刚主任带队来我院调研指导工作">
+                                市发改委李刚主任带队来我院调研指导…
+                            </a></li>
+                            <li class="news_date">
+                                2017-12-25
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=423" title="市规划局领导来我院座谈交流">
+                                市规划局领导来我院座谈交流
+                            </a></li>
+                            <li class="news_date">
+                                2017-12-06
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=422" title="即墨区有关领导来我院指导交流工作">
+                                即墨区有关领导来我院指导交流工作
+                            </a></li>
+                            <li class="news_date">
+                                2017-11-07
+                            </li>
+                        </ul>
+
+                        <ul class="news">
+                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=421" title="中咨海外董事长、总经理鲁静来我院座谈交流">
+                                中咨海外董事长、总经理鲁静来我院座…
+                            </a></li>
+                            <li class="news_date">
+                                2017-11-03
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
+            <li class="main_gonggao">
+                <div class="gonggao_center">
+                    <ul class="gonggao_title">
+                        <a href="NewsList.aspx?nid=2">更多>></a></ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=436" title="青岛海业5000吨级油码头工程社会稳定风险分析公众参与公示">
+                            青岛海业5000吨级油码头工程…
+                        </a></li>
+                        <li class="news_date">
+                            2018-06-11
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=434" title="南泊子村村庄改造项目社会稳定风险调查信息公示">
+                            南泊子村村庄改造项目社会稳…
+                        </a></li>
+                        <li class="news_date">
+                            2018-04-27
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=433" title="青岛港董家口港区原油码头二期工程项目社会稳定风险分析公众参与公示">
+                            青岛港董家口港区原油码头二…
+                        </a></li>
+                        <li class="news_date">
+                            2018-03-23
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=432" title="青岛市工程咨询院2017年度报告公开 ">
+                            青岛市工程咨询院2017年度报…
+                        </a></li>
+                        <li class="news_date">
+                            2018-03-20
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=424" title="莱荣高铁项目社会稳定风险分析公众参与公示">
+                            莱荣高铁项目社会稳定风险分…
+                        </a></li>
+                        <li class="news_date">
+                            2017-12-25
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=419" title="山东液化天然气(LNG)项目二期工程社会稳定风险分析公众参与公示">
+                            山东液化天然气(LNG)项目二期…
+                        </a></li>
+                        <li class="news_date">
+                            2017-11-09
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=417" title="青岛康尼尔董家口环保科技有限公司西海岸新区 资源综合利用中心项目社会稳定风险分析公众参与公示">
+                            青岛康尼尔董家口环保科技有…
+                        </a></li>
+                        <li class="news_date">
+                            2017-10-25
+                        </li>
+                    </ul>
+
+                    <ul class="gonggao">
+                        <li class="gonggao_biaoti"><em></em><a href="NewsShow.aspx?id=418" title="岙东路改扩建工程（一期）社会稳定风险调查公示">
+                            岙东路改扩建工程（一期）社…
+                        </a></li>
+                        <li class="news_date">
+                            2017-10-25
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+        </ul>
+        <ul class="main_text1">
+            <li class="text_left">
+                <table width="295" border="0" cellspacing="0" cellpadding="0">
+                    <tr >
+                        <td colspan="3" style="background-image: url(/${res}/imgs/imgs-text1.png); height: 15px;
+                                    width: 250px; text-align: right; padding-top: 20px; background-repeat: no-repeat;">
+                            <a href="LY_List.aspx?nid=1" style="color: #016DAD;margin-left: 5px;">更多>></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td width="27" height="200">
+                            <img src="/${res}/imgs/imgs-left.png" width="27" height="205" /></td>
+                        <td width="250" height="200" style="background-image: url(images/fanwei_center.jpg)"
+                            valign="top">
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    政策研究
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    决策咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    规划咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    投资咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    评估咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    融资咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    节能咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    造价咨询
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    招标代理
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    工程监理
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    项目管理
+                                </a>
+                            </div>
+
+                            <div class="fanwei">
+                                <a href="LY_ywfw.aspx">
+                                    安全咨询
+                                </a>
+                            </div>
+<!--
+                        </td>
+                        <td width="18" height="200">
+                            <img src="images/fanwei_right.jpg" width="18" height="200" /></td>-->
+                    </tr>
+                </table>
+            </li>
+            <li class="text_center">
+                <div class="case_top">
+                    <a href="YJ_List.aspx?pid=4" style="color: #016DAD">更多>></a>
+                </div>
+                <ul class="case-center">
+                    <marquee behavior="scroll" direction="up" height="185" width="350" loop="-1" scrollamount="3"
+                             scrolldelay="100" onmouseout="this.start()" onmouseover="this.stop()">
+
+                        <li>
+                            <span class="case-left">长春吉大专利代理有限公司</span>
+                            <img src="/${res}/imgs/imgs-case1.png" class="case-right">
+                        </li>
+                        <li>
+                            <span class="case-left">吉林省创业孵化投资管理有限公司</span>
+                            <img src="/${res}/imgs/imgs-case2.png" class="case-right">
+                        </li>
+                    </marquee>
+                </ul>
+            </li>
+            <li class="text_left">
+                <table width="300" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td colspan="3" style="background-image: url(/${res}/imgs/imgs-textleft.png); height: 15px;
+                                    width: 250px; text-align: right; padding-top: 20px; background-repeat: no-repeat;">
+                            <a href="LY_List.aspx?nid=1" style="color: #016DAD;margin-left: 5px;">更多>></a></td>
+                    </tr>
+                    <tr>
+                        <td width="18" height="200">
+                           <!-- <img src="images/zhinan_left.jpg" width="18" height="200" /></td>-->
+                        <td width="250" height="190" style="background-image: url(images/fanwei_center.jpg);
+                                    padding-top: 10px;" valign="top">
+                            <ul class="zhinan">
+
+                                <li class="zhinan_biaoti"><em></em><a href="LY_Show.aspx?id=46" title="青岛市工程咨询院项目咨询工作流程图">
+                                    青岛市工程咨询院项目咨询工…
+                                </a></li>
+                                <li class="news_date">
+                                    2014-05-12
+                                </li>
+                            </ul>
+
+                            <ul class="zhinan">
+                                <li class="zhinan_biaoti"><em></em><a href="LY_Show.aspx?id=45" title="政府投资项目前期工作流程">
+                                    政府投资项目前期工作流程
+                                </a></li>
+                                <li class="news_date">
+                                    2014-05-12
+                                </li>
+                            </ul>
+
+                            <ul class="zhinan">
+
+                                <li class="zhinan_biaoti"><em></em><a href="LY_Show.aspx?id=44" title="实行核准制的企业投资项目管理工作程序">
+                                    实行核准制的企业投资项目管…
+                                </a></li>
+                                <li class="news_date">
+                                    2014-05-12
+                                </li>
+                            </ul>
+
+                            <ul class="zhinan">
+
+                                <li class="zhinan_biaoti"><em></em><a href="LY_Show.aspx?id=43" title="市财力投资项目评估工作流程图">
+                                    市财力投资项目评估工作流程…
+                                </a></li>
+                                <li class="news_date">
+                                    2014-05-12
+                                </li>
+                            </ul>
+
+                            <ul class="zhinan">
+
+                                <li class="zhinan_biaoti"><em></em><a href="LY_Show.aspx?id=42" title="非财力投资项目评估工作流程图">
+                                    非财力投资项目评估工作流程…
+                                </a></li>
+                                <li class="news_date">
+                                    2014-05-12
+                                </li>
+                            </ul>
+
+                            <ul class="zhinan">
+
+                                <li class="zhinan_biaoti"><em></em><a href="LY_Show.aspx?id=39" title="关于新增建设工程造价咨询服务项目收费标准的通知">
+                                    关于新增建设工程造价咨询服…
+                                </a></li>
+                                <li class="news_date">
+                                    2012-06-12
+                                </li>
+                            </ul>
+
+                        </td>
+                        <td width="27" height="200">
+                            <img src="/${res}/imgs/imgs-right.png" width="27" height="205" />
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <div class="Bottom1">
+            <ul class="Bottom_title">
+                <a href="NewsList.aspx?nid=2">更多>></a>
+            </ul>
+            <ul>
+                <marquee behavior="scroll" direction="left" height="300" width="996" loop="-1" scrollamount="3"
+                         scrolldelay="100" onmouseover="this.stop()" onmouseout="this.start()">
+                        <li>
+                            <div>
+                                <img src="/${res}/imgs/imgs-study1.png">
+                                <p>"科技创新助推智能制造产业" 企业家沙龙</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="/${res}/imgs/imgs-studyi2.png">
+                                <p>"科技创新助推智能制造产业" 企业家沙龙</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="/${res}/imgs/imgs-study.png">
+                                <p>"科技创新助推智能制造产业" 企业家沙龙</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="/${res}/imgs/imgs-study4.png">
+                                <p>"科技创新助推智能制造产业" 企业家沙龙</p>
+                            </div>
+                        </li>
+
+                </marquee>
+            </ul>
+        </div>
+        <ul class="link">
+            <li class="link_left">
+                <img src="/${res}/imgs/imgs-footer1.png" class="link-img" />
+            </li>
+            <li class="link_right">
+                <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="width:15%">
+                            <select name="selFrnd1" id="Select1" onchange='javascript:openLink(this.options[this.selectedIndex].value);'>
+                                <option selected="selected" value="0">————政府网站————</option>
+
+                                <option value="http://www.ndrc.gov.cn/">
+                                    国家发展和改革委员会
+                                </option>
+
+                                <option value="http://www.qddpc.gov.cn/">
+                                    青岛市发展与改革委员会
+                                </option>
+
+                                <option value="http://www.gov.cn/">
+                                    中国政府网
+                                </option>
+
+                                <option value="http://www.qingdao.gov.cn">
+                                    青岛政务网
+                                </option>
+
+                            </select>
+                        </td>
+                        <td style="width:15%">
+                            <select name="selFrnd2" id="Select2" onchange='javascript:openLink(this.options[this.selectedIndex].value);'>
+                                <option selected="selected" value="0">————中央企业————</option>
+
+                                <option value="http://www.cdb.com.cn">
+                                    国家开发银行
+                                </option>
+
+                            </select>
+                        </td>
+                        <td style="width:15%">
+                            <select name="selFrnd3" id="Select3" onchange='javascript:openLink(this.options[this.selectedIndex].value);'>
+                                <option selected="selected" value="0">————行业网站————</option>
+
+                                <option value="http://www.cnaec.com.cn/">
+                                    中国工程咨询网
+                                </option>
+
+                                <option value="http://www.sdgczx.com/">
+                                    山东省工程咨询协会
+                                </option>
+
+                                <option value="http://www.qdgczx.com/">
+                                    青岛市工程咨询协会
+                                </option>
+
+                                <option value="http://www.cdb.com.cn">
+                                    中国国际工程咨询公司
+                                </option>
+
+                                <option value="http://www.sicc.sh.cn">
+                                    上海投资咨询公司
+                                </option>
+
+                                <option value="http://www.giecc.com.cn/">
+                                    广州市国际工程咨询公司
+                                </option>
+
+                            </select>
+                        </td>
+                        <td style="width:15%">
+                            <select name="selFrnd4" id="selFrnd4" onchange='javascript:openLink(this.options[this.selectedIndex].value);'>
+                                <option selected="selected" value="0">—————其他—————</option>
+
+                                <option value="http://www.qdccb.com/">
+                                    院战略合作伙伴-青岛银行
+                                </option>
+
+                                <option value="http://www.ce.cn/">
+                                    中国经济网
+                                </option>
+
+                                <option value="http://www.baidu.com">
+                                    百度
+                                </option>
+
+                                <option value="http://www.sina.com.cn">
+                                    新浪
+                                </option>
+
+                                <option value="http://www.sohu.com">
+                                    搜狐
+                                </option>
+
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+<div>
+[#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>
 </html>

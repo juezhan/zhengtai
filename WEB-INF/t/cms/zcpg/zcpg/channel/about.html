@@ -35,28 +35,7 @@
                                 href='${n.url}' target='_blank' class="ts">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
                         </div>
                     </div>
-                    <!-- <div class="list-items">
-                        [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy.MM.dd' channelOption='1' ]
-                        [#list tag_pagination.list as a]
-                        [#if a_index == 0]
-                        <div class="item-first">
-                            <a href="${a.url}" target="_blank" class="t">${a.title}</a>
-                            <a href="${a.url}" target="_blank" class="c">${a.desc}</a>
-                        </div>
-                        [/#if]
-                        [#if a_index > 0]
-                        <div class="item">
-                            <div class="date">${a.date?string(dateFormat)}</div>
-                            <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
-                        </div>
-                        [/#if]
-                        [#if a_has_next]
-                        <div class="line"></div>
-                        [/#if]
-                        [/#list]
-                        [/@cms_content_page]
-                        <div class="add-more"></div>
-                    </div> -->
+
                     <div class="list-item bd">
                         ${channel.txt!}
                     </div>

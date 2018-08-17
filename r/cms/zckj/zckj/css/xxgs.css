@@ -13,6 +13,11 @@ ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .container{width:1200px;margin:0 auto}
 .icon{display:inline-block}
+.kaishi{width: 1000px;margin: auto; border: 1px solid #9fa5aa;background-color: #9fa5aa;}
+
+
+
+/*
 .xxgs .xxgs-main{margin:20px 0 44px}
 .xxgs .xxgs-main .container{overflow:hidden}
 .xxgs .xxgs-main .container .aside{float:left;width:260px}
@@ -35,4 +40,6 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .number{width:84px;text-align:center}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name{width:576px;color:#293896}
 .xxgs .xxgs-main .container .xxgs-cnt .bd .name a{color:#293896}
-.xxgs .xxgs-main .container .xxgs-cnt .bd .date{width:198px;text-align:center}
+.xxgs .xxgs-main .container .xxgs-cnt .bd .date{width:198px;text-align:center}*/
+
+

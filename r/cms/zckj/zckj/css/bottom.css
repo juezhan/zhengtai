@@ -1,8 +1,30 @@
 .bottom {
-    height: 30px;
+   /* height: 30px;
     line-height: 30px;
     background-color: #000000;
     color: #999;
     font-size: 12px;
-    text-align: center
+    text-align: center*/
+    width: 1000px;margin: auto;
+}
+#main-1 {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url(../images/main_bg.jpg);
+    clear: both;
+}
+/*.footer{ background-color: #e7ebf4;border-bottom: 1px solid #93a4be;}*/
+.footer a {
+    color: #3d3d3d;
+}
+.footer1 {
+    width: 1000px;
+    text-align: center;
+    color: #3d3d3d;
+    margin-left: 0 auto;
+    height: 65px;
+    background-image: url(../images/footer_bg.jpg);
+    background-color: #e7ebf4;
+    border-bottom: 1px solid #93a4be;
 }

@@ -1,9 +1,155 @@
 <!-- header 开始 -->
 <link href="/${res}/css/iconfont.css" rel="stylesheet"/>
 <link href="/${res}/css/header.css" rel="stylesheet"/>
-<div class="header">
-    <div class="container">
-        <div class="header-w">
+<div class="index">
+    <div style="width: 1000px;margin:auto; border: 1px solid #9fa5aa;background-color: #9fa5aa;">
+        <div class="banner-1">
+                <div class="banner" id="banner">
+                    <div class="item-w clearfix">
+                        <div class="item-cnt clearfix" id="itemCnt">
+                            <div class="item on" style="background-image: url(/${res}/imgs/keji1.jpg);">
+                            </div>
+                            <div class="item" style="background-image: url(/${res}/imgs/keji1.jpg);">
+                                <!--<div class="animated fadeInLeftBig item-cnttit">正&nbsp;泰&nbsp;科&nbsp;技&nbsp;咨&nbsp;询</div>-->
+                            </div>
+                            <div class="item" style="background-image: url(/${res}/imgs/keji1.jpg);">
+                                <!-- <div class="animated fadeInLeftBig item-cnttit">正&nbsp;泰&nbsp;科&nbsp;技&nbsp;咨&nbsp;询</div>-->
+                            </div>
+                            <div class="item" style="background-image: url(/${res}/imgs/keji1.jpg);">
+                                <!-- <div class="animated fadeInLeftBig item-cnttit" style="color:#0066B3;">正&nbsp;泰&nbsp;科&nbsp;技&nbsp;咨&nbsp;询</div>-->
+                            </div>
+                        </div>
+                        <div class="arrow arrow-l" id="arrowL"></div>
+                        <div class="arrow arrow-r" id="arrowR"></div>
+                        <div class="progress-bar" id="progressBar">
+                            <div class="progress-bar-dian on"></div>
+                            <div class="progress-bar-dian"></div>
+                            <div class="progress-bar-dian"></div>
+                            <div class="progress-bar-dian"></div>
+                            <!--<div class="progress-bar-dian"></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head_bg">
+                <ul class="head_main">
+                    <div class="dropdown">
+                        <a href="${base}/zckj/index.jhtml"><li>首页</li></a>
+                        <a href=""><li class="dropbtn">关于我们</li>
+                            <div class="dropdown-content">
+                                <a href="http://www.runoob.com">项目 1</a>
+                                <a href="http://www.runoob.com">项目 2</a>
+                                <a href="http://www.runoob.com">项目 3</a>
+                            </div>
+                        </a>
+                        <a href="${base}/zckj/zcxxzx/index.jhtml"><li>信息资讯</li>
+                            <div class="dropdown-content">
+                                <a href="http://www.runoob.com">项目 1</a>
+                                <a href="http://www.runoob.com">项目 2</a>
+                                <a href="http://www.runoob.com">项目 3</a>
+                            </div>
+                        </a>
+                        <a href=""><li>入驻企业</li></a>
+                        <a href=""><li>专家库 </li>
+                            <div class="dropdown-content">
+                                <a href="http://www.runoob.com">项目 1</a>
+                                <a href="http://www.runoob.com">项目 2</a>
+                                <a href="http://www.runoob.com">项目 3</a>
+                            </div>
+                        </a>
+                        <a href=""><li>科技成果库 </li>
+                            <div class="dropdown-content">
+                                <a href="http://www.runoob.com">项目 1</a>
+                                <a href="http://www.runoob.com">项目 2</a>
+                                <a href="http://www.runoob.com">项目 3</a>
+                            </div>
+                        </a>
+                        <a href=""><li>培训服务 </li></a>
+                        <a href=""><li>资讯服务 </li></a>
+                        <a href=""><li>在线学习 </li></a>
+                    </div>
+
+                </ul>
+                <div class="navi_right">
+                    <ul class="navi_down">
+                        今天是：<span id=localtime></span>
+                        <script type="text/javascript">
+                            function showLocale(objD)
+                            {
+                                var str,colorhead,colorfoot;
+                                var yy = objD.getYear();
+                                if(yy<1900) yy = yy+1900;
+                                var MM = objD.getMonth()+1;
+                                if(MM<10) MM = '0' + MM;
+                                var dd = objD.getDate();
+                                if(dd<10) dd = '0' + dd;
+                                var hh = objD.getHours();
+                                if(hh<10) hh = '0' + hh;
+                                var mm = objD.getMinutes();
+                                if(mm<10) mm = '0' + mm;
+                                var ss = objD.getSeconds();
+                                if(ss<10) ss = '0' + ss;
+                                var ww = objD.getDay();
+                                if  ( ww==0 )  colorhead="<font color=\"#000000\">";
+                                if  ( ww > 0 && ww < 6 )  colorhead="<font color=\"#000000\">";
+                                if  ( ww==6 )  colorhead="<font color=\"#000000\">";
+                                if  (ww==0)  ww="星期日";
+                                if  (ww==1)  ww="星期一";
+                                if  (ww==2)  ww="星期二";
+                                if  (ww==3)  ww="星期三";
+                                if  (ww==4)  ww="星期四";
+                                if  (ww==5)  ww="星期五";
+                                if  (ww==6)  ww="星期六";
+                                colorfoot="</font>"
+                                str = colorhead + yy + "-" + MM + "-" + dd + " " + ww +" " + hh + ":" + mm + ":" + ss +  colorfoot;
+                                return(str);
+                            }
+                            function tick()
+                            {
+                                var today;
+                                today = new Date();
+                                document.getElementById("localtime").innerHTML = showLocale(today);
+                                window.setTimeout("tick()", 1000);
+                            }
+                            tick();
+                        </script>
+                    </ul>
+                </div>
+            </div>
+    </div>
+        <script>
+            var t = 5000, mt = null, idx = 0
+
+            function adRun() {
+                mt = setInterval(function () {
+                    idx += 1;
+                    itemGo()
+                }, t)
+            }
+
+            function itemGo() {
+                if (idx >= 4 || idx < 0) {
+                    idx = 0
+                }
+                $('#itemCnt .item').eq(idx).addClass('on').siblings().removeClass('on')
+                $('#progressBar .progress-bar-dian').eq(idx).addClass('on').siblings().removeClass('on')
+            }
+
+            adRun();
+            $('#arrowL').click(function () {
+                idx -= 1;
+                itemGo();
+            });
+            $('#arrowR').click(function () {
+                idx += 1;
+                itemGo();
+            });
+        </script>
+
+
+</div>
+
+  <!--      <div class="header-w">
             <div class="avatar">
                 <img src="/${res}/imgs/logo-2.png" class="logo">
             </div>
@@ -177,4 +323,4 @@
     [#else]
     [/#if]
 </script>
-<!-- header 结束 -->
+&lt;!&ndash; header 结束 &ndash;&gt;-->
