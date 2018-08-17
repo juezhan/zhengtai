@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption{ margin: 0 ; padding: 0; border: 0; outline: 0;background:transparent;}
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; }
+em,i{font-style:normal;}
+:focus{outline:0 none;}
+a { text-decoration: none; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+body { font: 12px/26px Verdana,Geneva,sans-serif,"宋体"; background: #fff; color: #535353; }
+a { color: #535353; text-decoration: none;}
+a:hover {color: #ff6633;}
+.fl { float: left; }
+.fr { float: right; }
+

@@ -1,6 +1,12 @@
 <!-- header 开始 -->
 <link href="/${res}/css/iconfont.css" rel="stylesheet"/>
 <link href="/${res}/css/header.css" rel="stylesheet"/>
+<!--<link type="text/css" rel="stylesheet" href="/${res}/css/common.css">-->
+<link type="text/css" rel="stylesheet" href="/${res}/css/style1.css">
+
+<script type="text/javascript" src="/${res}/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/${res}/js/script1.js"></script>
+
 <div class="index">
     <div style="width: 1000px;margin:auto; border: 1px solid #9fa5aa;background-color: #9fa5aa;">
         <div class="banner-1">
@@ -32,44 +38,176 @@
                 </div>
             </div>
             <div class="head_bg">
-                <ul class="head_main">
+                <!--<ul class="head_main">
                     <div class="dropdown">
                         <a href="${base}/zckj/index.jhtml"><li>首页</li></a>
-                        <a href=""><li class="dropbtn">关于我们</li>
+                        <a href="${base}/zckj/zcgywm/index.jhtml"><li class="dropbtn">关于我们</li>
                             <div class="dropdown-content">
                                 <a href="http://www.runoob.com">项目 1</a>
                                 <a href="http://www.runoob.com">项目 2</a>
                                 <a href="http://www.runoob.com">项目 3</a>
                             </div>
                         </a>
-                        <a href="${base}/zckj/zcxxzx/index.jhtml"><li>信息资讯</li>
+                       <a href="${base}/zckj/zcxxzx/index.jhtml"><li>信息资讯</li>
                             <div class="dropdown-content">
                                 <a href="http://www.runoob.com">项目 1</a>
                                 <a href="http://www.runoob.com">项目 2</a>
                                 <a href="http://www.runoob.com">项目 3</a>
                             </div>
                         </a>
-                        <a href=""><li>入驻企业</li></a>
-                        <a href=""><li>专家库 </li>
+                        <a href="${base}/zckj/rzqy/index.jhtml"><li>入驻企业</li></a>
+                        <a href="${base}/zckj/zjk/index.jhtml"><li>专家库 </li>
                             <div class="dropdown-content">
                                 <a href="http://www.runoob.com">项目 1</a>
                                 <a href="http://www.runoob.com">项目 2</a>
                                 <a href="http://www.runoob.com">项目 3</a>
                             </div>
                         </a>
-                        <a href=""><li>科技成果库 </li>
+                        <a href="${base}/zckj/kjcgk/index.jhtml"><li>科技成果库 </li>
                             <div class="dropdown-content">
                                 <a href="http://www.runoob.com">项目 1</a>
                                 <a href="http://www.runoob.com">项目 2</a>
                                 <a href="http://www.runoob.com">项目 3</a>
                             </div>
                         </a>
-                        <a href=""><li>培训服务 </li></a>
-                        <a href=""><li>资讯服务 </li></a>
-                        <a href=""><li>在线学习 </li></a>
+                        <a href="${base}/zckj/zcpxtz/index.jhtml"><li>培训服务 </li></a>
+                        <a href="${base}/zckj/zczxfw/index.jhtml"><li>咨询服务 </li></a>
+                        <a href="${base}/zckj/zxxx/index.jhtml"><li>在线学习 </li></a>
                     </div>
+                </ul>-->
 
-                </ul>
+                <div class="wrapper">
+                    <div class="header">
+                        <div class="nav">
+                            <ul class="menu">
+                                <li class="li_2018 current">
+                                    <a href="#" class="current">首页</a></li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer1">关于我们</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer2">信息资讯</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer3">入驻企业</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer4">专家库</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer5">科技成果库</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer6">培训服务</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer7">咨询服务</a>
+                                </li>
+                                <li class="li_2018">
+                                    <a class="bind_menu_a" href="#" data-layerid="layer7">在线学习 </a>
+                                </li>
+                            </ul>
+                            <div class="sub_menu bind_menu_a" id="layer1" data-layerid="layer1" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息1</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息1</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub_menu bind_menu_a" id="layer2" data-layerid="layer2" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息2</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息2</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub_menu bind_menu_a" id="layer3" data-layerid="layer3" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息3</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息3</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub_menu bind_menu_a" id="layer4" data-layerid="layer4" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息4</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息4</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub_menu bind_menu_a" id="layer5" data-layerid="layer5" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息5</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息5</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub_menu bind_menu_a" id="layer6" data-layerid="layer6" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息6</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息6</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub_menu bind_menu_a" id="layer7" data-layerid="layer7" style="display: none;">
+                                <i></i>
+                                <div class="sub_area clearfix">
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息7</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list">
+                                        <li class="li_2018"><a href="">公告信息7</a></li>
+                                    </ul>
+                                    <ul class="sub_nav list sub_ad">
+                                        <li class="li_2018"><a title="" alt="" href=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="navi_right">
                     <ul class="navi_down">
                         今天是：<span id=localtime></span>
@@ -148,6 +286,7 @@
 
 
 </div>
+
 
   <!--      <div class="header-w">
             <div class="avatar">

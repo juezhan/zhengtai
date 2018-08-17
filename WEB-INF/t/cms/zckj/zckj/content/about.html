@@ -8,7 +8,7 @@
 <script src="${resSys}/jquery.js" type="text/javascript"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
 
-<link type="text/css" rel="stylesheet" href="/${res}/css/index.css" />
+<link type="text/css" rel="stylesheet" href="/${res}/css/news1.css" />
 
 <!--[if lt IE 9]> 
 <script src="/${res}/js/html5shiv.min.js"></script>
@@ -59,7 +59,7 @@ $(function(){
 <body>
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="main container clearfix">
+<!--<div class="main container clearfix">
   <section class="content_w850">
     <h1>${content.title}<a class="position">${channel.name}</a></h1>
     <div class="content-inf">发布时间：${content.releaseDate}&nbsp;&nbsp;作者：${content.author!'本站编辑'}&nbsp;&nbsp;来源：${content.origin!'本站原创'}&nbsp;&nbsp;浏览次数：<span id="views"></span>
@@ -131,8 +131,49 @@ $(function(){
 		  })
     </script>
   </section>
-  [#include "../include/right310.html"/]
-</div>
+
+</div>-->
+<div class="kaishi">
+  <div class="container">
+    <div class="Left-container">
+      <ul>
+        <div class="left_top">信息资讯</div>
+        <li class="left_bg"><a href="">单位新闻</a></li>
+        <li class="left_bg"><a href="">图文资讯</a></li>
+        <li class="left_bg"><a href="">通知公告</a></li>
+        <li class="left_bg"><a href="">业务动态</a></li>
+        <li class="left_bg"><a href="">行业资讯</a></li>
+        <li class="left_bg"><a href="">政策法规</a></li>
+        <li class="left_bg"><a href="">标准规范</a></li>
+      </ul>
+    </div>
+    <div class="right-container">
+      <div class="right_top">
+        <div class="right_topLeft">
+          单位新闻
+        </div>
+        <div class="right_topRight">
+          您所在的位置： <a href="index.aspx">首页</a> >> 信息资讯</a> >> <a href="#">单位新闻</a>
+        </div>
+      </div>
+      <p class="right-p"> 我院组织职工文艺汇演庆祝建院三十周年</p>
+      <p class="right-2p">发布日期：2018-08-14 &nbsp; &nbsp; 信息来源：办公室</p>
+      <p class="right-wenzi">
+        2018年8月8日，为纪念我院迎来建院三十周年，我院组织了一场精彩纷呈的职工文艺汇演，并对职工推选出的12名功勋员工
+        和3名资深员工进行了表彰。
+      </p>
+      <p class="right-wenzi">
+        相关主管部门领导、部分客户代表、院退休老职工和在职员工共两百余人观看了演出。由80余名职工自编自演了包括歌舞、小品、相声、诗朗诵等多种类型11个节目，展现了我院职工积极向上、团结进取的精神面貌，观众深受感染和鼓舞，起到了凝心聚力的积极作用。
+      </p>
+      <div class="imgs-rigth">
+        <img src="/${res}/imgs/imgs-2banner.png"/>
+        <div>
+        </div>
+        <p class="clear qu"></p>
+      </div>
+    </div>
+
+
 [#include "../include/footer.html"/]
 [#include "../include/right-fixed.html"/]
 </body>

@@ -152,10 +152,10 @@
                     <div class="news_left">
                         <div id="container">
                             <div class="sections">
-                                <div class="section" id="section0"><h3>this is the page1</h3></div>
-                                <div class="section" id="section1"><h3>this is the page2</h3></div>
-                                <div class="section" id="section2"><h3>this is the page3</h3></div>
-                                <div class="section" id="section3"><h3>this is the page4</h3></div>
+                                <div class="section" id="section0"></div>
+                                <div class="section" id="section1"></div>
+                                <div class="section" id="section2"></div>
+                                <div class="section" id="section3"></div>
                             </div>
                         </div>
                         <script>
@@ -171,12 +171,14 @@
                     <div class="news_right">
 
                         <ul class="news">
-                            <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=437" title="我院组织职工文艺汇演庆祝建院三十周年">
-                                我院组织职工文艺汇演庆祝建院三十周…
-                            </a></li>
-                            <li class="news_date">
-                                2018-08-14
-                            </li>
+                            <a href="">
+                                <li class="news_biaoti"><em></em><a href="NewsShow.aspx?id=437" title="我院组织职工文艺汇演庆祝建院三十周年">
+                                    我院组织职工文艺汇演庆祝建院三十周…
+                                </a></li>
+                                <li class="news_date">
+                                    2018-08-14
+                                </li>
+                            </a>
                         </ul>
 
                         <ul class="news">
@@ -441,18 +443,19 @@
                     <a href="YJ_List.aspx?pid=4" style="color: #016DAD">更多>></a>
                 </div>
                 <ul class="case-center">
-                    <marquee behavior="scroll" direction="up" height="185" width="350" loop="-1" scrollamount="3"
-                             scrolldelay="100" onmouseout="this.start()" onmouseover="this.stop()">
-
-                        <li>
-                            <span class="case-left">长春吉大专利代理有限公司</span>
-                            <img src="/${res}/imgs/imgs-case1.png" class="case-right">
-                        </li>
-                        <li>
-                            <span class="case-left">吉林省创业孵化投资管理有限公司</span>
-                            <img src="/${res}/imgs/imgs-case2.png" class="case-right">
-                        </li>
-                    </marquee>
+                    <div id="colee" style="overflow:hidden;height:200px;width:388px;">
+                        <div id="colee1">
+                            <li>
+                                <span class="case-left">长春吉大专利代理有限公司</span>
+                                <img src="/${res}/imgs/imgs-case1.png" class="case-right">
+                            </li>
+                            <li>
+                                <span class="case-left">吉林省创业孵化投资管理有限公司</span>
+                                <img src="/${res}/imgs/imgs-case2.png" class="case-right">
+                            </li>
+                        </div>
+                        <div id="colee2"></div>
+                    </div>
                 </ul>
             </li>
             <li class="text_left">
@@ -538,35 +541,33 @@
             <ul class="Bottom_title">
                 <a href="NewsList.aspx?nid=2">更多>></a>
             </ul>
-            <ul>
-                <marquee behavior="scroll" direction="left" height="300" width="996" loop="-1" scrollamount="3"
-                         scrolldelay="100" onmouseover="this.stop()" onmouseout="this.start()">
-                        <li>
+            <ul >
+               <div id="scrollobj" style="white-space:nowrap;overflow:hidden;width:998px;margin: auto;" onmouseover="stop()" onmouseout="start()">
+                       <li >
                             <div>
                                 <img src="/${res}/imgs/imgs-study1.png">
                                 <p>"科技创新助推智能制造产业" 企业家沙龙</p>
                             </div>
                         </li>
-                        <li>
+                        <li >
                             <div>
                                 <img src="/${res}/imgs/imgs-studyi2.png">
                                 <p>"科技创新助推智能制造产业" 企业家沙龙</p>
                             </div>
                         </li>
-                        <li>
+                        <li >
                             <div>
                                 <img src="/${res}/imgs/imgs-study.png">
                                 <p>"科技创新助推智能制造产业" 企业家沙龙</p>
                             </div>
                         </li>
-                        <li>
+                        <li >
                             <div>
                                 <img src="/${res}/imgs/imgs-study4.png">
                                 <p>"科技创新助推智能制造产业" 企业家沙龙</p>
                             </div>
                         </li>
-
-                </marquee>
+                </div>
             </ul>
         </div>
         <ul class="link">
@@ -669,6 +670,44 @@
             </li>
         </ul>
     </div>
+    <!--<p id="scrollobj" style="white-space:nowrap;overflow:hidden;width:400px;margin: auto;" onmouseover="stop()" onmouseout="start()"><span style="padding-left: 210px;">欢迎您登录拜博医疗口腔集团内部网</span></p>-->
+
+    <script>
+        function scroll(obj) {
+            var tmp = (obj.scrollLeft)++;
+            //当滚动条到达右边顶端时
+            if (obj.scrollLeft==tmp) obj.innerHTML += obj.innerHTML;
+            //当滚动条滚动了初始内容的宽度时滚动条回到最左端
+            if (obj.scrollLeft>=obj.firstChild.offsetWidth) obj.scrollLeft=0;
+        }
+        var a =    setInterval("scroll(document.getElementById('scrollobj'))",20);
+        function stop(){
+            clearInterval(a);
+        }
+        function start(){
+            a=setInterval("scroll(document.getElementById('scrollobj'))",30);
+        }
+    </script>
+    <script>
+        var speed=30;
+        var colee2=document.getElementById("colee2");
+        var colee1=document.getElementById("colee1");
+        var colee=document.getElementById("colee");
+        colee2.innerHTML=colee1.innerHTML; //克隆colee1为colee2
+        function Marquee1(){
+//当滚动至colee1与colee2交界时
+            if(colee2.offsetTop-colee.scrollTop<=0){
+                colee.scrollTop-=colee1.offsetHeight; //colee跳到最顶端
+            }else{
+                colee.scrollTop++
+            }
+        }
+        var MyMar1=setInterval(Marquee1,speed)//设置定时器
+        //鼠标移上时清除定时器达到滚动停止的目的
+        colee.onmouseover=function() {clearInterval(MyMar1)}
+        //鼠标移开时重设定时器
+        colee.onmouseout=function(){MyMar1=setInterval(Marquee1,speed)}
+    </script>
 <div>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]

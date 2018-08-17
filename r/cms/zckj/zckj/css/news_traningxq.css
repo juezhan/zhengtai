@@ -14,9 +14,9 @@ ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 .icon{display:inline-block}
 .kaishi{width: 1000px;margin: auto; border: 1px solid #9fa5aa;background-color: #9fa5aa;}
-.container{width: 998px;min-height:690px;}
-.Left-container{width: 213px;border: 1px solid #B0CEF2; background-color: #FFF;border-top: none ; valign:top;float: left;margin-left: 2px;min-height: 681px;}
-.right-container{width:770px; valign:top; border: 1px solid #B0CEF2; background-color: #FFF;border-top: none;float: right;min-height: 681px;}
+.container{width: 998px;min-height:935px;}
+.Left-container{width: 213px;border: 1px solid #B0CEF2; background-color: #FFF;border-top: none ; valign:top;float: left;margin-left: 2px;min-height: 930px;}
+.right-container{width:770px; valign:top; border: 1px solid #B0CEF2; background-color: #FFF;border-top: none;float: right;min-height: 930px;}
 .Left-container ul{width: 100%;}
 .left_top {width: 173px;height: 20px;background-image: url(../imgs/left_top.jpg);color: #012C54;font-size: 16px;font-weight: bold;
     padding-top: 10px;text-align: left;padding-left: 40px;background-color:#dddddd;}
@@ -29,6 +29,8 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
     width: 490px;padding-right: 10px;padding-top: 10px;color: #000;text-align: right;float: left;}
 .right-p{width: 650px;margin: auto;height: 50px;border-bottom: 1px dashed #8c8c8c;padding-top: 25px;text-align:center;font-size: 18px;}
 .right-2p{width: 650px;margin: auto;text-align: center;margin-top: 10px;}
-.right-wenzi{width: 700px;margin: 20px 15px; color: #3d3d3d; font-family:"微软雅黑", "黑体"; font-size: 18px; background-color: #ffffff; text-indent: 32pt;font-weight: bold;line-height: 30px;}
-.imgs-rigth{width: 310px;height: 310px;margin: auto;}
-.imgs-rigth img{width: 100%;height: 250px;}
+.container-text{width: 700px;color: #3d3d3d; font-family:"微软雅黑", "黑体"; font-size: 14px;line-height: 25px;text-indent: 32pt;margin: auto;}
+.right-wenzi{margin: 20px 15px;}
+.text1{font-weight: bold;}
+.time{float: right;}
+

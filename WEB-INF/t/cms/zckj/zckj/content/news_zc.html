@@ -62,7 +62,7 @@
 <body class="news_816">
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="container">
+<!--<div class="container">
     <div class="crumb">您的位置：<a href='${base}/'>首页</a> <span>&gt;</span> [#list channel.nodeList as n]<a href='${n.url}' target='_blank'>${n.name}</a>[#if n_has_next] <span>&gt;</span> [/#if][/#list]</div>
     <div class="news_816-w">
         <div class="item-body">
@@ -79,7 +79,7 @@
                                     [@text_cut s=content.description len='140' append='...'/]
                                 </p>
                                 <ul class="identifying">
-                                    <li><!--${content.tagStr!}-->政策</li>
+                                    <li>&lt;!&ndash;${content.tagStr!}&ndash;&gt;政策</li>
                                     <li>科技企业</li>
                                     <li>孵化器</li>
                                     <li>众创空间</li>
@@ -126,7 +126,10 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
+
+
+
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
 </body>

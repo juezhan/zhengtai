@@ -1,0 +1,68 @@
+@charset "utf-8";
+.wrapper {
+    width: 996px;
+    min-width: 980px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+}
+/*header*/
+.header {
+    font-family: "微软雅黑";
+    background-color: #0066b3;
+}
+    /*nav*/
+.nav {
+    height: 40px;
+    position: relative;
+    z-index: 10;
+    line-height:40px;
+    font-size: 14px;
+    color: #ffff;
+    clear: both;
+}
+.menu li.li_2018 {
+    float: left;
+    display: inline;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+.menu li.li_2018 a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color:white;
+}
+.menu li.current a {
+    color:fff;
+}
+.menu li.li_2018 a:hover {
+    color: #0066b3;
+    background-color: white;
+}
+.menu li.current a:hover{
+    color: #0066b3;
+}
+.sub_menu{position:absolute;left:0;top:20px;width:70%;}
+.sub_menu i{background:url("../static/boc2018_a_hover.png") no-repeat;width:14px;height:10px;position:absolute;top:-7px;margin-left:-6px;}
+.sub_area{padding:20px;line-height:32px;font-size:14px;color:#535353;}
+.sub_area .sub_nav{width:21%;padding-left:30px;list-style:none;background:url("../static/boc2018_dot_liney.gif") repeat-y right 0;float:left;height:130px;}
+.sub_area .sub_nav li.li_2018 {background:url("../static/boc2018_dot_icon.png") no-repeat 0 -72px;line-height:32px;padding-left:16px;}
+.sub_area .sub_nav li.li_2018 a{font-family:"微软雅黑";color:#535353;font-size:14px;}
+.sub_pic{padding-left:3.75em;width:40%;float:left;}
+.sub_area .sub_pic a{display:block; font-family:"微软雅黑";font-size:14px;line-height:32px;color:#535353;}
+.sub_area .sub_pic li.li_2018 span{cursor:pointer;width:35%;margin-right:20px;background:url("../static/boc2018_dot_icon.png") no-repeat 0 -72px;font-family:"微软雅黑";color:#535353;font-size:14px;line-height:32px;padding-left:14px;display:inline-block;line-height:24px;}
+.sub_area .last{background:none;}
+.sub_area .sub_nav li.li_2018 a:hover,.sub_area .sub_pic a:hover,.sub_area .sub_pic li.li_2018 span:hover{color:#ff6633;}
+.sub_pic img,.sub_area .sub_ad img{vertical-align:top;margin:0px 0 10px 0px;border:1px solid #dadada;border-radius:5px;}
+.sub_area .sub_ad{background:none;}
+.sub_area .sub_ad li.li_2018{background:none;padding:0;}
+
+#layer1 i{left:18.5%;}
+#layer2 i{left:31%;}
+#layer3 i{left:43%;}
+#layer4 i{left:56%;}
+#layer5 i{left:68.5%;}
+#layer6 i{left:81%;}
+#layer7 i{left:93.5%;}
