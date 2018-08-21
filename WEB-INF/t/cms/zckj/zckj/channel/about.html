@@ -1,81 +1,197 @@
-<!DOCTYPE HTML>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="keywords" content="${channel.keywords!}"/>
-<meta http-equiv="description" content="${channel.description!}"/>
-<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>
-<script src="${resSys}/jquery.js" type="text/javascript"></script>
-<script src="${resSys}/front.js" type="text/javascript"></script>
-<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
-<link type="text/css" rel="stylesheet" href="/${res}/css/about.css" />
-<link href="/${res}/css/icon.css" rel="stylesheet"/>
+<!--<!DOCTYPE HTML>-->
+<!--<html>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--<meta http-equiv="keywords" content="${channel.keywords!}"/>-->
+<!--<meta http-equiv="description" content="${channel.description!}"/>-->
+<!--<title>${channel.title!channel.name} - ${site.name} - Powered by JEECMS</title>-->
+<!--<script src="${resSys}/jquery.js" type="text/javascript"></script>-->
+<!--<script src="${resSys}/front.js" type="text/javascript"></script>-->
+<!--<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>-->
+<!--<link type="text/css" rel="stylesheet" href="/${res}/css/about.css" />-->
+<!--<link href="/${res}/css/icon.css" rel="stylesheet"/>-->
 
-<!--[if lt IE 9]>
-<script src="/${res}/js/html5shiv.min.js"></script>
-<script src="/${res}/js/respond.min.js"></script>
+<!--&lt;!&ndash;[if lt IE 9]>-->
+<!--<script src="/${res}/js/html5shiv.min.js"></script>-->
+<!--<script src="/${res}/js/respond.min.js"></script>-->
 
-<![endif]-->
+<!--<![endif]&ndash;&gt;-->
 
+<!--<head>-->
+<!--<body class="about">-->
+
+<!--<div class="kaishi">-->
+    <!--<div class="container">-->
+        <!--<div class="Left-container">-->
+            <!--<ul>-->
+                <!--<div class="left_top">关于我们</div>-->
+                 <!--[@cms_channel_list parentId='486']-->
+                    <!--[#list tag_list as c2]-->
+                <!--<li class="left_bg"><a href="${c2.url}" >${c2.name}</a></li>-->
+              <!--&lt;!&ndash;   <li class="left_bg"><a href="">图文资讯</a></li>-->
+              <!--<li class="left_bg"><a href="">通知公告</a></li>-->
+              <!--<li class="left_bg"><a href="">业务动态</a></li>-->
+              <!--<li class="left_bg"><a href="">行业资讯</a></li>-->
+              <!--<li class="left_bg"><a href="">政策法规</a></li>-->
+              <!--<li class="left_bg"><a href="">标准规范</a></li> &ndash;&gt;-->
+                    <!--[/#list]-->
+                    <!--[/@cms_channel_list]-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="right-container">-->
+            <!--<div class="right_top">-->
+                <!--<div class="right_topLeft">-->
+                    <!--单位新闻-->
+                <!--</div>-->
+                <!--<div class="right_topRight">-->
+                    <!--您所在的位置：<a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'-->
+                                                                                                        <!--target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<ul class="rigth-text">-->
+                <!--<div class="rigth-input" >-->
+                    <!--<span class="input-text"> 标题</span>-->
+                    <!--<span class="input-text1"> 日期</span>-->
+                <!--</div>-->
+                 <!--[@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='10' orderBy='4' titLen='35'  channelOption='1']-->
+              <!--[#list tag_pagination.list as a]-->
+                <!--<li>-->
+                    <!--<a href="${a.url}">-->
+                        <!--<div>-->
+                            <!--<a href="${a.url}" class="text-1"><em></em> ${a.title}</a>-->
+                            <!--<span class="text-span"> ${a.date?string(dateFormat)}</span>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                  <!--[/#list]-->
+                <!--<div class="rigth-input2" id="AspNetPager1" style="text-align:center;margin-top: -5px;" >-->
+                      <!--[/@cms_content_page]-->
+                <!--<div>-->
+
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<body class="about">
+    <title>吉林正泰众创空间</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止缓存-->
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <!--禁止缓存-->
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="/js/js.js"></script>
+</head>
 [#include "../include/top.html"/]
 [#include "../include/header.html"/]
-<div class="kaishi">
-    <div class="container">
-        <div class="Left-container">
-            <ul>
-                <div class="left_top">关于我们</div>
-                 [@cms_channel_list parentId='486']
-                    [#list tag_list as c2]
-                <li class="left_bg"><a href="${c2.url}" >${c2.name}</a></li>
-              <!--   <li class="left_bg"><a href="">图文资讯</a></li>
-              <li class="left_bg"><a href="">通知公告</a></li>
-              <li class="left_bg"><a href="">业务动态</a></li>
-              <li class="left_bg"><a href="">行业资讯</a></li>
-              <li class="left_bg"><a href="">政策法规</a></li>
-              <li class="left_bg"><a href="">标准规范</a></li> -->
-                    [/#list]
-                    [/@cms_channel_list]
-            </ul>
-        </div>
-        <div class="right-container">
-            <div class="right_top">
-                <div class="right_topLeft">
-                    单位新闻
-                </div>
-                <div class="right_topRight">
-                    您所在的位置：<a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'
-                                                                                                        target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
-                </div>
-            </div>
-            <ul class="rigth-text">
-                <div class="rigth-input" >
-                    <span class="input-text"> 标题</span>
-                    <span class="input-text1"> 日期</span>
-                </div>
-                 [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='10' orderBy='4' titLen='35'  channelOption='1']
-              [#list tag_pagination.list as a]
-                <li>
-                    <a href="${a.url}">
-                        <div>
-                            <a href="${a.url}" class="text-1"><em></em> ${a.title}</a>
-                            <span class="text-span"> ${a.date?string(dateFormat)}</span>
-                        </div>
-                    </a>
-                </li>
-                  [/#list]
-                <div class="rigth-input2" id="AspNetPager1" style="text-align:center;margin-top: -5px;" >
-                      [/@cms_content_page]
-                <div>
 
-            </ul>
-        </div>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
 
-    </div>
-</div>
 
+
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    function changeOn(){
+        //alert(document.getElementById("fankui").style.backgroundImage);
+        document.getElementById("fankui").style.backgroundImage="url('/help/img/daohang_bg_on.jpg')";
+    }
+</script>
+
+
+<table width="100%" height="20" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
+        <td width="80" class="font_hui_14">您的位置：</td>
+        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >
+            关于我们
+        </td>
+        <td width="845"></td>
+    </tr>
+    <tr>
+        <td height="1" bgcolor="#fc8703"></td>
+        <td bgcolor="#fc8703" colspan="2"></td>
+        <td bgcolor="#e1e1e1"></td>
+    </tr>
+</table>
+<table width="1200" height="300" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td valign="top" height="100"><table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
+            <tr id=td_1>
+                <td align='left' valign='top' style='line-height:200%' class=font_hui_14_2><br><p class="MsoNormal" style="text-align: left;">　　吉林正泰众创空间是以吉林正泰工程咨询有限公司、吉林东方卓达科技咨询公司、吉林正泰会计师事物所有限公司、吉林正泰资产评估有限公司为基础，以长春净月高新技术产业开发区、长春北湖科技园、国家技术转移东北中心、吉林省科技大市场等入驻企业为主要服务对象，并与吉林大华铭仁律师事务所、吉林省天邦青华知识产权运营服务有限公司、长春科技金融创新服务中心、长春广源小额贷款有限责任公司等建立了长期合作关系，为科技型企业和创新创业者应用新技术、开发新产品、开拓新市场、培育新业态建立的新型创新创业服务平台。
+                    <br>
+                    <br>
+                    　　众创空间定位
+                    <br>
+                    <br>
+                    　　吉林正泰众创空间将通过政府引导、科技引领、模式创新、政策支乘撑、服务集成的“五措并举”方针，有效促进科技信息共享化，科技服务集成化，科技资源商品化和科技成果产业化，使吉林正泰众创空间成为技术创新等成果转化的加速器，科技产业发展的助推器，科技资源统筹利用的聚变器，在创新型国家建设和区域经济社会发展中发挥一定的作用。
+                    <br>
+                    <br>
+                    　　众创空间目标。
+                    <br>
+                    <br>
+                    　　吉林正泰众创空间将努力打造省内一流的创新产业服务平台、科技资源统筹转化中心和第三方科技成果评价评估综合服务基地。到2020年，吉林正泰众创空间线上和线下服务功能和服务设施更加完善，网络体系更加健全。每年线上发布企业难题不少于100项，科技成果300项，推动不少于50项科技成果和重点项目转化落地。线下服务主要根据创业者的需求，自主少为100家以上企业提供科技咨询，项目申报，高新技术企业小巨人企业，认定咨询，企业发展筹划等服务；培训、技术人才，管理人才300人以上；评价，评估科技成果100项以上。
+                    <br>
+                    <br>
+                    　　众创空间功能
+                    <br>
+                    <br>
+                    　　吉林正泰众创空间将重点发挥“服务、共享、培育、交流”四位一体的功能。
+                    <br>
+                    <br>
+                    　　●服务功能——通过提供技术、成果、政策、企业融资知
+                    <br>
+                    <br>
+                    　　识产权等科技资源供需信息的专业化和集成化服务，促进技术转移和成果转化，实现科技资源与产业对接。
+                    <br>
+                    <br>
+                    　　●共享功能—通过众创空间服务平台汇集的技术信息、政策信息、投融资信息以及专家人才等资源信息的开放，实现资源共享共用，提高科技资源的利用率。
+                    <br>
+                    <br>
+                    　　●培育功能——针对科技企业不同发展阶段与成长需求，建立多层次、全方位的科技企业培育体系，激发科技企业转化科技成果和提升企业快速发展的新活力。
+                    <br>
+                    <br>
+                    　　●交流功能——通过举办各种专业论坛、咨询、培训、信息发布等活动，提高科技企业技术创新能力，推动技术成果商品化和产业化进程。
+                    <br>
+                    <br>
+                    　　众创空间模式
+                    <br>
+                    <br>
+                    　　吉林正泰众创空间采取线上服务与线下服务相结合的运营模式。线上服务依托吉林正泰众创空间网络平台的信息资源，可为创新企业在线点击获取符合自身需求的技术和信息。线下服务主要根据创新企业的需求，提供有针对性的专业化服务。
+                    <br>
+                    <br>
+                    　　<br>
+                </p></td>
+            </tr>
+        </table></td></tr></table>
+</td>
+</tr>
+<tr>
+    <td></td>
+</tr>
+</table>
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
+
 </body>
 </html>
