@@ -1,0 +1,268 @@
+body { margin:0; line-height:1.5;}
+
+a:link {
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: none;
+}
+.font_hui_12 {
+    font-size: 12px;
+    color: #7d7d7d;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_14 {
+    font-size: 14px;
+    color: #434343;
+    text-decoration: none;
+    font-weight:bolder;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_14_2 {
+    font-size: 14px;
+    color: #434343;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_14_3 {
+    font-size: 14px;
+    color: #a1a1a1;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_16 {
+    font-size: 16px;
+    color: #424242;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_16_2 {
+    font-size: 16px;
+    color: #515151;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_17 {
+    font-size: 17px;
+    color: #5d5d5d;
+    text-decoration: none;
+    font-weight:bolder;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_18_2 {
+    font-size: 18px;
+    color: #343434;
+    text-decoration: none;
+    font-weight:600;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_23 {
+    font-size: 23px;
+    color: #343434;
+    text-decoration: none;
+    font-weight:500;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_25 {
+    font-size: 25px;
+    color: #515151;
+    text-decoration: none;
+    font-weight:500;
+    font-family:"Microsoft Yahei"
+}
+.font_bai_14 {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_cheng_12 {
+    font-size: 12px;
+    color: #fe5627;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_cheng_12_2 {
+    font-size: 12px;
+    color: #fe5627;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_cheng_14 {
+    font-size: 14px;
+    color: #fc8703;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_cheng_14_2 {
+    font-size: 14px;
+    color: #fe5627;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_cheng_16 {
+    font-size: 16px;
+    color: #fc8703;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_cheng_18 {
+    font-size: 18px;
+    color: #fc8703;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_cheng_23 {
+    font-size: 23px;
+    color: #fc8703;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_18 {
+    font-size: 18px;
+    color: #5d5d5d;
+    font-weight:500;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_hui_18_2 {
+    font-size: 18px;
+    color: #343434;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_lan_20 {
+    font-size: 20px;
+    color: #44749b;
+    font-weight:600;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_hei_18 {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_bai_16 {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+.font_bai_20 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_bai_30 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_hong_30 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_hong_12 {
+    font-size: 12px;
+    color:#FF0000;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_hong_14 {
+    font-size: 14px;
+    color:#FF0000;
+    text-decoration: none;
+    font-family:"Microsoft Yahei"
+}
+
+.font_hei_14 {
+    font-size: 14px;
+    color:#000000;
+    text-decoration: none;
+    font-weight:bolder;
+    font-family:"Microsoft Yahei"
+}
+.font_lan_25 {
+    font-size: 25px;
+    color: #00569f;
+    text-decoration: none;
+    font-weight:bolder;
+    font-family:"Microsoft Yahei";
+}
+
+.demo{
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.2);/* IE9����׼��������IE6�Ͳ���IE7�ں˵�������(��QQ������)������ */
+}
+.demo p{
+    color: #FFFFFF;
+}
+@media \0screen\,screen\9 {
+    /* ֻ֧��IE6��7��8 */
+    .demo {
+        background-color: transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#26FFFFFF, endColorstr=#26FFFFFF)
+    }
+
+    .demo p {
+        position: relative; /* ������Ԫ��Ϊ���Զ�λ��������Ԫ�ز��̳�Alphaֵ */
+    }
+
+    .tb6_on {
+        BACKGROUND-IMAGE: url(/help/img/daohang_bg_on.jpg);
+    }
+
+    .tb6_on a {
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .tb6_on a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .tb6_off {
+        BACKGROUND-IMAGE: url(/help/img/daohang_bg_off.jpg);
+    }
+
+    .tb6_off a {
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .tb6_off a:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+}

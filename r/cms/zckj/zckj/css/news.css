@@ -8,7 +8,7 @@ h2{font-size:16px}
 h3{font-size:14px}
 h4,h5,h6{font-size:100%}
 li,ol,ul{list-style:none}
-a{text-decoration:none;color:#333;cursor:pointer}
+a{text-decoration:none;color:#333;cursor:pointer;}
 ahover{text-decoration:none;color:#ef3838;transition-duration:.4s}
 .clear {clear: both;}
 img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
@@ -27,7 +27,7 @@ img{border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
     padding-left: 40px;float: left;}
 .right_topRight {
     width: 490px;padding-right: 10px;padding-top: 10px;color: #000;text-align: right;float: left;}
-.rigth-text{width: 720px;margin: 20px 40px;}
+.rigth-text{width: 720px;margin: 20px 40px;min-height: 300px;}
 .rigth-input{width: 680px;height: 10px;background-color:#d1d1d1; padding: 15px 0;margin: 20px 0;}
 .input-text{float: left;padding-left: 30px;}
 .input-text1{float: right;padding-right: 60px;}
@@ -36,4 +36,8 @@ em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;backgr
 .text-1{margin-left: 10px;width: 560px;float: left;}
 .rigth-input2{width: 680px;height: 10px;background-color:#d1d1d1; padding: 15px 0;margin-top: 100px;}
 #AspNetPager1 a{margin-right: 5px;color: #00a0e9;}
-
+element.style {
+    width: 680px;
+    text-align: center;
+    margin-top: -5px;
+}

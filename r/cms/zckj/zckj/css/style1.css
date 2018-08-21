@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 .wrapper {
     width: 996px;
@@ -6,12 +7,12 @@
     position: relative;
     margin: auto;
 }
-/*header*/
+
 .header {
     font-family: "微软雅黑";
     background-color: #0066b3;
 }
-    /*nav*/
+
 .nav {
     height: 40px;
     position: relative;
@@ -66,3 +67,5 @@
 #layer5 i{left:68.5%;}
 #layer6 i{left:81%;}
 #layer7 i{left:93.5%;}
+
+

@@ -11,7 +11,7 @@
 <link href="/${res}/css/news.css" rel="stylesheet"/>
 <link href="/${res}/css/icon.css" rel="stylesheet"/>
 
-<!--[if lt IE 9]> 
+<!--[if lt IE 9]>
 <script src="/${res}/js/html5shiv.min.js"></script>
 <script src="/${res}/js/respond.min.js"></script>
 
@@ -64,14 +64,18 @@
     <div class="container">
         <div class="Left-container">
             <ul>
-                <div class="left_top">信息资讯</div>
-                <li class="left_bg"><a href="">单位新闻</a></li>
-                <li class="left_bg"><a href="">图文资讯</a></li>
-                <li class="left_bg"><a href="">通知公告</a></li>
-                <li class="left_bg"><a href="">业务动态</a></li>
-                <li class="left_bg"><a href="">行业资讯</a></li>
-                <li class="left_bg"><a href="">政策法规</a></li>
-                <li class="left_bg"><a href="">标准规范</a></li>
+                <div class="left_top">在线学习</div>
+                 [@cms_channel_list parentId='486']
+                    [#list tag_list as c2]
+                <li class="left_bg"><a href="${c2.url}" >${c2.name}</a></li>
+              <!--   <li class="left_bg"><a href="">图文资讯</a></li>
+              <li class="left_bg"><a href="">通知公告</a></li>
+              <li class="left_bg"><a href="">业务动态</a></li>
+              <li class="left_bg"><a href="">行业资讯</a></li>
+              <li class="left_bg"><a href="">政策法规</a></li>
+              <li class="left_bg"><a href="">标准规范</a></li> -->
+                    [/#list]
+                    [/@cms_channel_list]
             </ul>
         </div>
         <div class="right-container">
@@ -80,7 +84,8 @@
                     单位新闻
                 </div>
                 <div class="right_topRight">
-                    您所在的位置： <a href="index.aspx">首页</a> >> 信息资讯</a> >> <a href="#">单位新闻</a>
+                    您所在的位置：<a href='${base}/'>首页</a> &gt; [#list channel.nodeList as n]<a href='${n.url}'
+                                                                                                        target='_blank'>${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]
                 </div>
             </div>
             <ul class="rigth-text">
@@ -88,91 +93,20 @@
                     <span class="input-text"> 标题</span>
                     <span class="input-text1"> 日期</span>
                 </div>
+                 [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='10' orderBy='4' titLen='35'  channelOption='1']
+              [#list tag_pagination.list as a]
                 <li>
-                    <a href="${base}/zckj/zxxx/1859.jhtml">
+                    <a href="${a.url}">
                         <div>
-                            <a href="${base}/zckj/zxxx/1859.jhtml" class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</a>
-                            <span class="text-span"> 2018-08-14</span>
+                            <a href="${a.url}" class="text-1"><em></em> ${a.title}</a>
+                            <span class="text-span"> ${a.date?string(dateFormat)}</span>
                         </div>
                     </a>
                 </li>
-                <li>
-                    <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                        <span class="text-span"> 2018-08-14</span>
-                    </div>
-
-                </li>
-                <li>
-                    <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                        <span class="text-span"> 2018-08-14</span>
-                    </div>
-
-                </li>  <li>
-                <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                    <span class="text-span"> 2018-08-14</span>
-                </div>
-
-            </li>
-                <li>
-                    <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                        <span class="text-span"> 2018-08-14</span>
-                    </div>
-
-                </li>
-                <li>
-                    <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                        <span class="text-span"> 2018-08-14</span>
-                    </div>
-
-                </li>  <li>
-                <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                    <span class="text-span"> 2018-08-14</span>
-                </div>
-
-            </li>
-                <li>
-                    <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                        <span class="text-span"> 2018-08-14</span>
-                    </div>
-
-                </li>
-                <li>
-                    <div><span class="text-1"><em></em>  我院组织职工文艺汇演庆祝建院三十周年</span>
-                        <span class="text-span"> 2018-08-14</span>
-                    </div>
-
-                </li>
-                <div class="rigth-input2" >
-                    <div id="AspNetPager1" style="width:100%;text-align:center;margin-top: -5px;">
-                        <a disabled="disabled" >首页</a>
-                        <a disabled="disabled" >上一页</a>
-                        <span style="margin-right:5px;font-weight:Bold;color:red;">1</span>
-                        <a href="" >2</a>
-                        <a href="" >3</a>
-                        <a href="" >4</a>
-                        <a href="" >5</a>
-                        <a href="" >6</a>
-                        <a href="" >7</a>
-                        <a href="" >8</a>
-                        <a href="" >9</a>
-                        <a href="" >10</a>
-                        <a href="" >下一页</a>
-                        <a href="" >尾页</a>
-                        &nbsp;&nbsp;转到
-                        <select name="AspNetPager1_input" id="AspNetPager1_input" onchange="__doPostBack('AspNetPager1','')">
-                        <option value="1" selected="true">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select> 页
-                    </div>
-                </div>
+                  [/#list]
+                <div class="rigth-input2" id="AspNetPager1" style="text-align:center;margin-top: -5px;" >
+                      [/@cms_content_page]
+                <div>
 
             </ul>
         </div>

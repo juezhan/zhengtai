@@ -1,0 +1,233 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>吉林正泰众创空间</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止缓存-->
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <!--禁止缓存-->
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="/js/js.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<script language="javascript">
+    //urlxml 为字符串形式xml
+    function callBackFun(urlxml){
+        var xml = anaXml(urlxml);
+        var mes = anaXml(urlxml).getElementsByTagName("msg");
+        //alert("mes:" + mes[0].childNodes[0].data);
+        return mes[0].childNodes[0].data;
+    }
+
+    function anaXml(xmlString){
+        var xmlDoc=null;
+        //判断浏览器的类型
+        //支持IE浏览器
+        if(!window.DOMParser && window.ActiveXObject){   //window.DOMParser 判断是否是非ie浏览器
+            var xmlDomVersions = ['MSXML.2.DOMDocument.6.0','MSXML.2.DOMDocument.3.0','Microsoft.XMLDOM'];
+            for(var i=0;i < xmlDomVersions.length; i++){
+                try{
+                    xmlDoc = new ActiveXObject(xmlDomVersions[i]);
+                    xmlDoc.async = false;
+                    xmlDoc.loadXML(xmlString); //loadXML方法载入xml字符串
+                    break;
+                }catch(e){
+                }
+            }
+        }
+        //支持Mozilla浏览器
+        else if(window.DOMParser && document.implementation && document.implementation.createDocument){
+            try{
+
+                domParser = new  DOMParser();
+                xmlDoc = domParser.parseFromString(xmlString, 'text/xml');
+            }catch(e){
+            }
+        }
+        else{
+            return null;
+        }
+
+        return xmlDoc;
+    }
+
+    function get_mobile_code(){
+        $.post('sms.jsp', {mobile:jQuery.trim($('#mobile').val())}, function(msg) {
+            //alert(jQuery.trim(unescape(msg)));
+            //alert(callBackFun(msg));
+            if(callBackFun(msg)=='提交成功'){
+                RemainTime();
+            }
+        });
+    };
+    var iTime = 59;
+    var Account;
+    function RemainTime(){
+        document.getElementById('zphone').disabled = true;
+        var iSecond,sSecond="",sTime="";
+        if (iTime >= 0){
+            iSecond = parseInt(iTime%60);
+            iMinute = parseInt(iTime/60)
+            if (iSecond >= 0){
+                if(iMinute>0){
+                    sSecond = iMinute + "分" + iSecond + "秒";
+                }else{
+                    sSecond = iSecond + "秒";
+                }
+            }
+            sTime=sSecond;
+            if(iTime==0){
+                clearTimeout(Account);
+                sTime='获取手机验证码';
+                iTime = 59;
+                document.getElementById('zphone').disabled = false;
+            }else{
+                Account = setTimeout("RemainTime()",1000);
+                iTime=iTime-1;
+            }
+        }else{
+            sTime='没有倒计时';
+        }
+        document.getElementById('zphone').value = sTime;
+    }
+
+    //验证码刷新
+    function changeValidateCode(obj)
+    {
+        //获取当前的时间作为参数，无具体意义
+        var timenow = new Date().getTime();
+        //每次请求需要一个不同的参数，否则可能会返回同样的验证码
+        //这和浏览器的缓存机制有关系，也可以把页面设置为不缓存，这样就不用这个参数了。
+        obj.src="ValidateCode.ps?d="+timenow;
+    }
+</script>
+[#include "../include/header.html"/]
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<table width="100%" height="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#f2f2f2">
+    <tr>
+        <td>
+            <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+                <tr>
+                    <td height="50" align="center" class="font_hei_18" colspan="2">用户注册</td>
+                </tr>
+                <tr>
+                    <td height="1" colspan="2" bgcolor="#f2f2f2"></td>
+                </tr>
+                <tr>
+                    <td height="40" colspan="2"></td>
+                </tr>
+                <form action="users_addUser.ps" name="UserForm" method="post">
+                    <tr>
+                        <td height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>昵称：</td>
+                        <td><input type="text" name="userName" style="width:300px; height:30px;line-height:30px" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td width="450" height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>手机号码：</td>
+                        <td width="750"><input type="text" name="mobile" id="mobile" style="width:300px; height:30px;line-height:30px" value=""  /></td>
+                    </tr>
+                    <tr>
+                        <td height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>登录密码：</td>
+                        <td><input type="password" name="password" style="width:300px; height:30px;line-height:30px" /></td>
+                    </tr>
+                    <tr>
+                        <td height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>确认密码：</td>
+                        <td><input type="password" name="password2" style="width:300px; height:30px;line-height:30px" /></td>
+                    </tr>
+                    <tr>
+                        <td height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>验证码：</td>
+                        <td class="font_hui_14_2">
+                            <input type="text" name="validateCode" style="width:150px; height:30px;" />
+                            &nbsp;&nbsp;<img src="ValidateCode.ps" onClick="changeValidateCode(this);" style="cursor:hand;"/>　看不清？换一张
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>校验码：</td>
+                        <td>
+                        <input type="text" name="mobileCode" style="width:200px; height:30px;line-height:30px" class="inputBg" />
+                        <input id="zphone" type="button" style=" width::100xp;height:30px" value=" 获取校验码 " onClick="get_mobile_code();">
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td align="right" height="70">&nbsp;</td>
+                        <td><table width="300" height="35" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <input type="hidden" name="struts.token.name" value="struts.token" />
+                                    <input type="hidden" name="struts.token" value="PG87OC8LEXKB7RLZW3HEUAUHXXKZCUP5" />
+                                    <input type="hidden" name="userType" value="1" />
+                                    <input type="image" src="img/registNew.jpg" onClick="return check();" />
+                                </td>
+                            </tr>
+                        </table></td>
+                    </tr>
+                </form>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+<script LANGUAGE="javascript">
+    <!--
+    function checkspace(checkstr) {
+        var str = '';
+        for(i = 0; i < checkstr.length; i++) {
+            str = str + ' ';
+        }
+        return (str == checkstr);
+    }
+    function check()
+    {
+
+        if(checkspace(document.UserForm.userName.value)) {
+            document.UserForm.userName.focus();
+            alert("请填写昵称！");
+            return false;
+        }
+        if(checkspace(document.UserForm.mobile.value)) {
+            document.UserForm.mobile.focus();
+            alert("请填写手机号码！");
+            return false;
+        }
+
+        // var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/
+        var myreg =/^[1][34578][0-9]{9}$/
+        if(!myreg.test(document.UserForm.mobile.value)) {
+            alert("手机号码无效！");
+            return false;
+        }
+
+        if(checkspace(document.UserForm.password.value)) {
+            document.UserForm.password.focus();
+            alert("请填写密码！");
+            return false;
+        }
+        if(document.UserForm.password.value != document.UserForm.password2.value) {
+            document.UserForm.password2.focus();
+            alert("两次密码输入不一致！");
+            return false;
+        }
+        if(checkspace(document.UserForm.validateCode.value)) {
+            document.UserForm.validateCode.focus();
+            alert("请填写验证码！");
+            return false;
+        }
+        // if(checkspace(document.UserForm.mobile_code.value)) {
+//	document.UserForm.mobile_code.focus();
+//    alert("请填写校验码！");
+//	return false;
+//  }
+
+        //document.UserForm.submit();加了一次提交，适合于不是按钮时使用
+    }
+    //-->
+</script>
+</html>

@@ -25,7 +25,7 @@ em{ display: inline-block;content: '';width: 6px;height: 6px;font-size: 0;backgr
 .news_left {width: 310px;height: 234px;margin-top: 15px;text-align: center;padding: 3px 3px;border: 1px solid #D9D9D9;background-color: #F6F6F6;float: left;}
 .news_right {width: 330px;height: 225px;margin-top: 15px;margin-left: 15px;float: left;}
 .news {width: 350px;height: 18px;padding-top: 5px;}
-.news_biaoti {width: 260px;text-align: left;height: 15px;float: left;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.news_biaoti {width: 260px;text-align: left;height: 25px;float: left;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
 .main_gonggao {width: 299px;padding-top: 20px;margin-left: 5px;height: 283px;border: 1px solid #D5D5D5;float: left;background-color: white;}
 .gonggao_center {width: 280px;height: 282px;margin: 0 auto;}
 .gonggao_title {width: 290px;height: 15px;margin-bottom: 20px;text-align: right;padding-top: 5px;background-image: url(../imgs/imgs-Training.png);background-repeat: no-repeat;
@@ -42,8 +42,9 @@ tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
 .text_center {width: 388px;/*background-image: url(../imgs/imgs-center.png);*/height: 238px;margin: 0px 5px 0px 5px;border: 1px solid #D5D5D5;float: left;background-color: white;}
 .case_top {width: 371px;height: 15px;background-image: url(../imgs/imgs-center.png);text-align: right;padding-right: 17px;background-repeat: no-repeat;margin-top: 15px;}
 .case-center{width: 388px;margin-top: 10px;}
+/*.case-center a{display: inline-block;}*/
 .case-center li{width: 96%;height: 70px;border-bottom: 1px solid #9fa5aa;padding: 10px 0;margin: auto;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
-.case-left{width: 60%;float: left;padding: 20px 0;font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;height: 30px;}
+.case-left{width: 50%;float: left;padding: 35px 0;font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;height: 30px;}
 .case-right{width: 40%;float: right;}
 .text_left {width: 298px;height: 240px;float: left;background-color: white;}
 .zhinan {width: 250px;height: 19px;border-bottom: 1px dashed #BCBDBC;padding-top: 8px;}
@@ -54,7 +55,11 @@ tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
 .Bottom1 li{width: 260px;margin-left: 20px;height: 300px;display: inline-block;margin-top: 20px;}
 .Bottom1 img{width: 100%;height: 250px;}
 .Bottom1 p{margin-top: 10px;font-size: 14px;width: 260px;height: 50px;word-wrap:break-word; overflow : hidden;text-overflow: ellipsis;}
-
+element.style {
+    width: 680px;
+    text-align: center;
+    margin-top: -5px;
+}
 .link {
     width: 998px;
     height: 45px;
