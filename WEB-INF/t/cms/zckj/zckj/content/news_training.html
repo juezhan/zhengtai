@@ -1,133 +1,288 @@
-<!DOCTYPE HTML>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="keywords" content="${channel.keywords!}"/>
-<meta http-equiv="description" content="${channel.description!}"/>
-<title>${channel.title!channel.name} - ${site.name}</title>
-<script src="/${res}/js/jquery-3.3.1.min.js"></script>
-<script src="${resSys}/front.js" type="text/javascript"></script>
-<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>
-<link href="/${res}/css/news_traningxq.css" rel="stylesheet"/>
-<link href="/${res}/css/icon.css" rel="stylesheet"/>
+<!--<!DOCTYPE HTML>-->
+<!--<html>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--<meta http-equiv="keywords" content="${channel.keywords!}"/>-->
+<!--<meta http-equiv="description" content="${channel.description!}"/>-->
+<!--<title>${channel.title!channel.name} - ${site.name}</title>-->
+<!--<script src="/${res}/js/jquery-3.3.1.min.js"></script>-->
+<!--<script src="${resSys}/front.js" type="text/javascript"></script>-->
+<!--<script type="text/javascript" src="/${res}/js/jquery.SuperSlide.js"></script>-->
+<!--<link href="/${res}/css/news_traningxq.css" rel="stylesheet"/>-->
+<!--<link href="/${res}/css/icon.css" rel="stylesheet"/>-->
 
-<!--[if lt IE 9]> 
-<script src="/${res}/js/html5shiv.min.js"></script>
-<script src="/${res}/js/respond.min.js"></script>
+<!--&lt;!&ndash;[if lt IE 9]> -->
+<!--<script src="/${res}/js/html5shiv.min.js"></script>-->
+<!--<script src="/${res}/js/respond.min.js"></script>-->
 
-<![endif]-->
+<!--<![endif]&ndash;&gt;-->
 
+<!--<head>-->
+<!--<body class="adout">-->
+<!--[#include "../include/header.html"/]-->
+<!--&lt;!&ndash;-->
+<!--<div class="xxgs-main">-->
+    <!--<div class="container">-->
+        <!--<div class="aside">-->
+            <!--<div class="tt">${channel.name!}</div>-->
+            <!--<div class="bd">-->
+                <!--[@cms_channel_list parentId=channel.parentId]-->
+                <!--[#list tag_list as c]-->
+                    <!--<a href="${c.url}" title="${c.name}" class="item [#if channel.id==c.id]on[/#if]"><span>&gt;</span>${c.name}</a>-->
+                <!--[/#list]-->
+                <!--[/@cms_channel_list]-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="xxgs-cnt">-->
+            <!--<div class="tt">${channel.name}</div>-->
+            <!--<div class="line-1"></div>-->
+            <!--[@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]-->
+            <!--<div class="bd">-->
+                <!--<ul>-->
+                    <!--<li class="nav">-->
+                        <!--<div class="number">序号</div>-->
+                        <!--<div class="name">名称</div>-->
+                        <!--<div class="date">日期</div>-->
+                    <!--</li>-->
+                    <!--[#list tag_pagination.list as a]-->
+                    <!--<li>-->
+                        <!--<div class="number">${a.id}</div>-->
+                        <!--<div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>-->
+                        <!--<div class="date">${a.date}</div>-->
+                    <!--</li>-->
+                    <!--[/#list]-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="line-2"></div>-->
+            <!--<link href="/${res}/css/pagination.css" rel="stylesheet"/>-->
+            <!--<div class="pagination">[@cms_pagination sysPage='1'/]</div>-->
+            <!--[/@cms_content_page]-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>&ndash;&gt;-->
+<!--<div class="kaishi">-->
+    <!--<div class="container">-->
+        <!--<div class="Left-container">-->
+            <!--<ul>-->
+                <!--<div class="left_top">-->
+                    <!--信息资讯-->
+                <!--</div>-->
+              <!--[@cms_channel_list parentId='486']-->
+                    <!--[#list tag_list as c2]-->
+                <!--<li class="left_bg"><a href="${c2.url}" >${c2.name}</a></li>-->
+              <!--&lt;!&ndash;   <li class="left_bg"><a href="">图文资讯</a></li>-->
+              <!--<li class="left_bg"><a href="">通知公告</a></li>-->
+              <!--<li class="left_bg"><a href="">业务动态</a></li>-->
+              <!--<li class="left_bg"><a href="">行业资讯</a></li>-->
+              <!--<li class="left_bg"><a href="">政策法规</a></li>-->
+              <!--<li class="left_bg"><a href="">标准规范</a></li> &ndash;&gt;-->
+                <!--[/#list]-->
+                 <!--[/@cms_channel_list]-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="right-container">-->
+            <!--<div class="right_top">-->
+                <!--<div class="right_topLeft">-->
+                    <!--单位新闻-->
+                <!--</div>-->
+                <!--<div class="right_topRight">-->
+                    <!--您所在的位置： <a href="index.aspx">首页</a> >> 信息资讯</a> >> <a href="#">单位新闻</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<p class="right-p">${content.title}</p>-->
+            <!--<p class="right-2p">发布时间:  ${content.releaseDate}  &nbsp; 来源:  ${content.origin!'本站原创'} &nbsp;</p>-->
+            <!--<div class="container-text">-->
+                <!--<p class="right-wenzi">-->
+                   <!--&lt;!&ndash;  根据《国家发展改革委重大固定资产投资项目社会稳定风险评估暂行办法》（发改投资[2012]2492号），青岛海业油码头有限公司委托青岛市工程咨询院对青岛海业5000吨级油码头工程项目进行社会稳定风险分析。按照分析程序，现公示有关信息，征求公众对项目的意见和建议。-->
+                                   <!--</p>-->
+                                   <!--<p class="text1">一、项目基本信息</p>-->
+                                   <!--<p ><b class="text1">1、项目名称：</b>青岛海业5000吨级油码头工程项目。</p>-->
+                                   <!--<p ><b class="text1">2、建设单位：</b>青岛海业油码头有限公司。</p>-->
+                                   <!--<p ><b class="text1">3、项目概况：</b>项目建设地点位于青岛港黄岛港区黄山嘴海域，拟建设5000吨级并同时满足2艘1000吨级游船同时靠泊的码头泊位1个。本工程码头主要为原油、燃料油和柴油内贸出口及海洋原油接卸服务。工程总用海面积157306平方米，泊位的设计总吞吐量为75万吨/年，其中原油50万吨/年，燃料油15万吨/年，柴油10万吨/年。项目总投资约3806万元，建设工期12个月。项目由青岛海业油码头有限公司投资建设与运营。</p>-->
+                                   <!--<p class="text1">二、征求公众意见的内容</p>-->
+                                   <!--<p>本次公示主要就以下几点征求公众意见，如有其它方面意见或建议也可提出：</p>-->
+                                   <!--<p>您是否支持项目的建设（请说明支持或反对的理由）；您认为项目的建设对当地经济及社会有何影响；项目的建设和运营对您的生活、工作有何种影响；您对项目最担心的问题；其它意见和建议。</p>-->
+                                   <!--<p class="text1">三、公众参与方式</p>-->
+                                   <!--<p>您对本工程的意见或建议，可自公示之日起5个工作日内，通过电话、传真、邮件等方式反馈给我们，您的意见和建议将对本项目建设具有积极的意义。在此，对您的积极参与，我们由衷的表示感谢！</p>-->
+                                   <!--<p class="text1"> 四、联系方式</p>-->
+                                   <!--<p>1、项目单位</p>-->
+                                   <!--<p>单位名称：青岛海业油码头有限公司</p>-->
+                                   <!--<p>联系人：刘主任</p>-->
+                                   <!--<p>联系电话：17660975559</p>-->
+                                   <!--<p>2、社会稳定分析单位</p>-->
+                                   <!--<p>单位名称：青岛市工程咨询院</p>-->
+                                   <!--<p> 联 系 人：李经理</p>-->
+                                   <!--<p>电    话：0532-86990127，15275238011</p>-->
+                                   <!--<p>传    真：0532-80779922</p>-->
+                                   <!--<p> E-mail：15275238011@163.com </p>-->
+                                    <!--<p class="time"> 青岛市工程咨询院</p>-->
+                                   <!--<p class="clear time">2018年6月11日</p> &ndash;&gt;-->
+                                     <!--${content.txt!}-->
+                                   <!--<p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="clear"></div>-->
+<!--</div>-->
+
+
+
+<!--[#include "../include/footer.html"/]-->
+<!--[#include "../include/bottom.html"/]-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<body class="adout">
+    <title>吉林正泰众创空间</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止缓存-->
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <!--禁止缓存-->
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
 [#include "../include/header.html"/]
-<!--
-<div class="xxgs-main">
-    <div class="container">
-        <div class="aside">
-            <div class="tt">${channel.name!}</div>
-            <div class="bd">
-                [@cms_channel_list parentId=channel.parentId]
-                [#list tag_list as c]
-                    <a href="${c.url}" title="${c.name}" class="item [#if channel.id==c.id]on[/#if]"><span>&gt;</span>${c.name}</a>
-                [/#list]
-                [/@cms_channel_list]
-            </div>
-        </div>
-        <div class="xxgs-cnt">
-            <div class="tt">${channel.name}</div>
-            <div class="line-1"></div>
-            [@cms_content_page channelId=channel.id count='20' titLen='25' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1' ]
-            <div class="bd">
-                <ul>
-                    <li class="nav">
-                        <div class="number">序号</div>
-                        <div class="name">名称</div>
-                        <div class="date">日期</div>
-                    </li>
-                    [#list tag_pagination.list as a]
-                    <li>
-                        <div class="number">${a.id}</div>
-                        <div class="name"><a href="${a.url}" target="_blank">[@text_cut s=a.title len=titLen append=append/]</a></div>
-                        <div class="date">${a.date}</div>
-                    </li>
-                    [/#list]
-                </ul>
-            </div>
-            <div class="line-2"></div>
-            <link href="/${res}/css/pagination.css" rel="stylesheet"/>
-            <div class="pagination">[@cms_pagination sysPage='1'/]</div>
-            [/@cms_content_page]
-        </div>
-    </div>
-</div>-->
-<div class="kaishi">
-    <div class="container">
-        <div class="Left-container">
-            <ul>
-                <div class="left_top">
-                    信息资讯
-                </div>
-              [@cms_channel_list parentId='486']
-                    [#list tag_list as c2]
-                <li class="left_bg"><a href="${c2.url}" >${c2.name}</a></li>
-              <!--   <li class="left_bg"><a href="">图文资讯</a></li>
-              <li class="left_bg"><a href="">通知公告</a></li>
-              <li class="left_bg"><a href="">业务动态</a></li>
-              <li class="left_bg"><a href="">行业资讯</a></li>
-              <li class="left_bg"><a href="">政策法规</a></li>
-              <li class="left_bg"><a href="">标准规范</a></li> -->
-                [/#list]
-                 [/@cms_channel_list]
-            </ul>
-        </div>
-        <div class="right-container">
-            <div class="right_top">
-                <div class="right_topLeft">
-                    单位新闻
-                </div>
-                <div class="right_topRight">
-                    您所在的位置： <a href="index.aspx">首页</a> >> 信息资讯</a> >> <a href="#">单位新闻</a>
-                </div>
-            </div>
-            <p class="right-p">${content.title}</p>
-            <p class="right-2p">发布时间:  ${content.releaseDate}  &nbsp; 来源:  ${content.origin!'本站原创'} &nbsp;</p>
-            <div class="container-text">
-                <p class="right-wenzi">
-                   <!--  根据《国家发展改革委重大固定资产投资项目社会稳定风险评估暂行办法》（发改投资[2012]2492号），青岛海业油码头有限公司委托青岛市工程咨询院对青岛海业5000吨级油码头工程项目进行社会稳定风险分析。按照分析程序，现公示有关信息，征求公众对项目的意见和建议。
-                                   </p>
-                                   <p class="text1">一、项目基本信息</p>
-                                   <p ><b class="text1">1、项目名称：</b>青岛海业5000吨级油码头工程项目。</p>
-                                   <p ><b class="text1">2、建设单位：</b>青岛海业油码头有限公司。</p>
-                                   <p ><b class="text1">3、项目概况：</b>项目建设地点位于青岛港黄岛港区黄山嘴海域，拟建设5000吨级并同时满足2艘1000吨级游船同时靠泊的码头泊位1个。本工程码头主要为原油、燃料油和柴油内贸出口及海洋原油接卸服务。工程总用海面积157306平方米，泊位的设计总吞吐量为75万吨/年，其中原油50万吨/年，燃料油15万吨/年，柴油10万吨/年。项目总投资约3806万元，建设工期12个月。项目由青岛海业油码头有限公司投资建设与运营。</p>
-                                   <p class="text1">二、征求公众意见的内容</p>
-                                   <p>本次公示主要就以下几点征求公众意见，如有其它方面意见或建议也可提出：</p>
-                                   <p>您是否支持项目的建设（请说明支持或反对的理由）；您认为项目的建设对当地经济及社会有何影响；项目的建设和运营对您的生活、工作有何种影响；您对项目最担心的问题；其它意见和建议。</p>
-                                   <p class="text1">三、公众参与方式</p>
-                                   <p>您对本工程的意见或建议，可自公示之日起5个工作日内，通过电话、传真、邮件等方式反馈给我们，您的意见和建议将对本项目建设具有积极的意义。在此，对您的积极参与，我们由衷的表示感谢！</p>
-                                   <p class="text1"> 四、联系方式</p>
-                                   <p>1、项目单位</p>
-                                   <p>单位名称：青岛海业油码头有限公司</p>
-                                   <p>联系人：刘主任</p>
-                                   <p>联系电话：17660975559</p>
-                                   <p>2、社会稳定分析单位</p>
-                                   <p>单位名称：青岛市工程咨询院</p>
-                                   <p> 联 系 人：李经理</p>
-                                   <p>电    话：0532-86990127，15275238011</p>
-                                   <p>传    真：0532-80779922</p>
-                                   <p> E-mail：15275238011@163.com </p>
-                                    <p class="time"> 青岛市工程咨询院</p>
-                                   <p class="clear time">2018年6月11日</p> -->
-                                     ${content.txt!}
-                                   <p>
-            </div>
-        </div>
-    </div>
-    <div class="clear"></div>
-</div>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
 
 
+
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    function changeOn(){
+        //alert(document.getElementById("fankui").style.backgroundImage);
+        document.getElementById("fankui").style.backgroundImage="url('/help/img/daohang_bg_on.jpg')";
+    }
+</script>
+
+            <table width="100%" height="157" border="0" cellpadding="0" cellspacing="0" class="bg01">
+                <tr>
+                    <td align="center"><table width="1200" height="157" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="870">&nbsp;</td>
+                            <td width="330" align="center"><table width="330" height="157" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td height="30" align="right">
+
+                                        <table width="325" height="30" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="219" align="right"><a href="login.jsp" target="_blank"><img src="img/login.jpg" width="85" height="30" border="0" /></a></td>
+                                                <td width="20">&nbsp;</td>
+                                                <td width="86"><a href="regist.jsp" target="_blank"><img src="img/regist.jpg" width="86" height="30" border="0" /></a></td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="30"></td>
+                                </tr>
+                                <tr>
+                                    <td height="34" align="right"><table width="325" height="34" border="0" cellpadding="0" cellspacing="0">
+                                        <form name="search_search" method="post" action="search_search.ps">
+                                            <tr>
+                                                <td width="285" align="right"><input type="text" name="keyWord" style="width:285px; height:29px; line-height:29px" /></td>
+                                                <td width="40"><input type="image" src="img/search.jpg" /></td>
+                                            </tr>
+                                        </form>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                    <td height="25"></td>
+                                </tr>
+                            </table></td>
+                        </tr>
+                    </table></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="100%" height="20" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<table width="1200" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
+        <td width="80" class="font_hui_14">您的位置：</td>
+        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >
+            服务机构
+        </td>
+        <td width="845"></td>
+    </tr>
+    <tr>
+        <td height="1" bgcolor="#fc8703"></td>
+        <td bgcolor="#fc8703" colspan="2"></td>
+        <td bgcolor="#e1e1e1"></td>
+    </tr>
+</table>
+<table width="1200" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td><table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
+            <tr>
+                <td height='20'></td>
+            </tr>
+            <tr>
+                <td height='50' class='font_lan_20' align='center'>长春吉大专利代理有限责任公司</td>
+            </tr>
+            <tr>
+                <td height='25' class=font_hui_14_3 align='center'>加入时间：2017-09-13</td>
+            </tr>
+            <tr>
+                <td height='20'></td>
+            </tr>
+            <tr>
+                <td><hr style='border:1px dotted #bdbdbd' /></td>
+            </tr>
+            <tr>
+                <td height='10'></td>
+            </tr>
+            <tr id=td_1>
+                <td align='left' valign='top' style='line-height:200%' class=font_hui_14_2><br><p>成立于2001年，前身为机械工业部长春专利事务所与吉林大学专利事务所，2001年包括吉林工业大学、白求恩医科大学、长春科技大学、长春邮电学院与吉林大学合并为新的吉林大学，分别设置于吉林工业大学和老吉林大学的两个专利事务所合并，并进行了脱钩改制，成立了长春吉大专利代理有限责任公司。<br>
+                </p></td>
+            </tr>
+            <tr>
+                <td align='right' class='font_hui_14'><br>（责任编辑：管理员）</td>
+            </tr>
+            <tr>
+                <td height='30'><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr>	<tr>
+                    <td align='left' height='30' class='font_hui_14'>关键字：</td>
+                </tr>
+                </table></td></tr></table>
+        </td>
+    </tr>
+    <tr>
+        <td height="20"></td>
+    </tr>
+</table>
+
+</body>
 
 [#include "../include/footer.html"/]
 [#include "../include/bottom.html"/]
-</body>
 </html>
