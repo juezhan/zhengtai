@@ -112,6 +112,11 @@
 </script>
 [#include "../include/header.html"/]
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<table width="100%" height="20" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
+    <tr>
+        <td></td>
+    </tr>
+</table>
 <table width="100%" height="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#f2f2f2">
     <tr>
         <td>
@@ -146,7 +151,7 @@
                         <td height="55" align="right" class="font_hui_14_2"><font color="#FF0000">*</font>验证码：</td>
                         <td class="font_hui_14_2">
                             <input type="text" name="validateCode" style="width:150px; height:30px;" />
-                            &nbsp;&nbsp;<img src="ValidateCode.ps" onClick="changeValidateCode(this);" style="cursor:hand;"/>　看不清？换一张
+                            &nbsp;&nbsp;<img src="/${res}/imgs/ValidateCode.ps" onClick="changeValidateCode(this);" style="cursor:hand;"/>　看不清？换一张
                         </td>
                     </tr>
                     <!--<tr>
@@ -164,7 +169,7 @@
                                     <input type="hidden" name="struts.token.name" value="struts.token" />
                                     <input type="hidden" name="struts.token" value="PG87OC8LEXKB7RLZW3HEUAUHXXKZCUP5" />
                                     <input type="hidden" name="userType" value="1" />
-                                    <input type="image" src="img/registNew.jpg" onClick="return check();" />
+                                    <input type="image" src="/${res}/imgs/registNew.jpg" onClick="return check();" />
                                 </td>
                             </tr>
                         </table></td>
@@ -172,6 +177,11 @@
                 </form>
             </table>
         </td>
+    </tr>
+</table>
+<table width="100%" height="20" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
+    <tr>
+        <td></td>
     </tr>
 </table>
 </body>
@@ -230,4 +240,6 @@
     }
     //-->
 </script>
+[#include "../include/footer.html"/]
+[#include "../include/bottom.html"/]
 </html>

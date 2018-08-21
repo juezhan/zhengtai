@@ -18,7 +18,8 @@
 <![endif]-->
 
 <head>
-<body class="experts">
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
 [#include "../include/header.html"/]
 <!--
 <div class="xxgs-main">
@@ -60,7 +61,7 @@
         </div>
     </div>
 </div>-->
-<div class="kaishi">
+<!--<div class="kaishi">
     <div class="container">
         <div class="Left-container">
             <ul>
@@ -68,12 +69,12 @@
                  [@cms_channel_list parentId='486']
                     [#list tag_list as c2]
                 <li class="left_bg"><a href="${c2.url}" >${c2.name}</a></li>
-              <!--   <li class="left_bg"><a href="">图文资讯</a></li>
+              &lt;!&ndash;   <li class="left_bg"><a href="">图文资讯</a></li>
               <li class="left_bg"><a href="">通知公告</a></li>
               <li class="left_bg"><a href="">业务动态</a></li>
               <li class="left_bg"><a href="">行业资讯</a></li>
               <li class="left_bg"><a href="">政策法规</a></li>
-              <li class="left_bg"><a href="">标准规范</a></li> -->
+              <li class="left_bg"><a href="">标准规范</a></li> &ndash;&gt;
                     [/#list]
                     [/@cms_channel_list]
             </ul>
@@ -111,7 +112,329 @@
         </div>
 
     </div>
-</div>
+</div>-->
+
+<table width="100%" height="20" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
+        <td width="80" class="font_hui_14">您的位置：</td>
+        <td width="159"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >　<a href="ztpx.jsp" class="font_hong_14">培训信息</a></td>
+        <td width="90" align="center" class="font_hui_14"><a href="zxpx.jsp?classId=FTBDZCP91A" target="_blank" class="font_hui_14">在线培训</a></td>
+        <td width="90" align="center" class="font_hui_14"><a href="listIndex.jsp?classId=DG88APA01F" target="_blank" class="font_hui_14">培训通知</a></td>
+        <td width="746">
+            <div id="colee_left" style="overflow:hidden;width:746px; height:30">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td id="colee_left1" align="center">
+                            <table cellpadding="2" cellspacing="0" border="0">
+                                <tr align="center">
+                                    <td class="font_hui_14_2">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="colee_left2"></td>
+                    </tr>
+                </table>
+            </div>
+            <script>
+                //使用div时，请保证colee_left2与colee_left1是在同一行上.
+                var speed=30//速度数值越大速度越慢
+                var colee_left2=document.getElementById("colee_left2");
+                var colee_left1=document.getElementById("colee_left1");
+                var colee_left=document.getElementById("colee_left");
+                colee_left2.innerHTML=colee_left1.innerHTML
+                function Marquee3(){
+                    if(colee_left2.offsetWidth-colee_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度
+                        colee_left.scrollLeft-=colee_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度
+                    else{
+                        colee_left.scrollLeft++
+                    }
+                }
+                var MyMar3=setInterval(Marquee3,speed)
+                colee_left.onmouseover=function() {clearInterval(MyMar3)}
+                colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+            </script>
+        </td>
+    </tr>
+    <tr>
+        <td height="1" bgcolor="#fc8703"></td>
+        <td bgcolor="#fc8703" colspan="2"></td>
+        <td bgcolor="#e1e1e1" colspan="3"></td>
+    </tr>
+</table>
+<table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
+    <tr>
+        <td width='110' height='300' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>10日</td>
+            </tr>
+            <tr>
+                <td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>8月</td>
+            </tr>
+        </table></td>
+        <td width='420' align='center' valign='top'><img src='upload/jpg/2017-09/12-165039.jpg' width='375' height='280' /></td>
+        <td width='670' align='center'><table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='50' colspan='2' class='font_hei_18'>“科技创新助推智能制造产业”企业家沙龙</td>
+            </tr>
+            <tr>
+                <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
+                <td width='520' valign='top' class='font_hui_14_2' align='left'>1、技术服务战略合作签约；
+                    <div>2、关于人工智能、机器人、机器视觉、工业4.0智能化数字化工厂等技术方案介绍；</div>
+                    <div>3、针对企业股权融资利弊以及对企业影响因素综合分析；&nbsp;</div>
+                    <div>4、会议讨论交流
+                        针对智能制造产业相关问题、制造业企业如何转型升级等问题展开交流讨论，如何从科技创新方面着手助推智能制造业发展。</div></td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>主办单位：</td>
+                <td class='font_hui_14_2' align='left'>吉林省科技大市场</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动时间：</td>
+                <td class='font_hui_14_2' align='left'>2017-08-10</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动地点：</td>
+                <td class='font_hui_14_2' align='left'>长春北湖科技园C2-3（吉林省科技大市场二楼会议室）</td>
+            </tr>
+            <tr>
+                <td height='5' colspan='2'></td>
+            </tr>
+            <tr>
+                <td height='1' colspan='2' bgcolor='#CCCCCC'></td>
+            </tr>
+        </table></td>
+    </tr>
+    <tr>
+        <td height='110'></td>
+        <td></td>
+        <td align='center' valign='top'><table width='600' height='80' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td width='140' height='10'><table width='140' height='45' border='1' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
+                    <tr>
+                        <td align='center' class='font_cheng_14'><a href='showPeixun.jsp?id=38' class='font_cheng_14' target='_blank'>查看详情</a></td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+<table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
+    <tr>
+        <td width='110' height='300' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>14日</td>
+            </tr>
+            <tr>
+                <td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>4月</td>
+            </tr>
+        </table></td>
+        <td width='420' align='center' valign='top'><img src='upload/jpg/2017-09/12-165454.jpg' width='375' height='280' /></td>
+        <td width='670' align='center'><table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='50' colspan='2' class='font_hei_18'>科技成果转化服务实务培训</td>
+            </tr>
+            <tr>
+                <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
+                <td width='520' valign='top' class='font_hui_14_2' align='left'>课程一
+                    <div><br>
+                    </div>
+                    <div>1.专利技术转移与专利商用化
+                        <br>
+                        2.专利运营先进模式及案例分享<br>
+                    </div>
+                    <div><br>
+                    </div>
+                    <div>课程二</div>
+                    <div><br>
+                    </div>
+                    <div>1.专利许可合同的签订技巧及注意事项
+                        <br>
+                        2.专利技术转让合同的签订技巧及注意事项<br>
+                    </div></td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>主办单位：</td>
+                <td class='font_hui_14_2' align='left'>吉林省科技大市场 中国技术交易所</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动时间：</td>
+                <td class='font_hui_14_2' align='left'>2017-04-14</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动地点：</td>
+                <td class='font_hui_14_2' align='left'>吉林省科技大市场（长春市高新北区盛北大街3333号北湖科技园C2-3）</td>
+            </tr>
+            <tr>
+                <td height='5' colspan='2'></td>
+            </tr>
+            <tr>
+                <td height='1' colspan='2' bgcolor='#CCCCCC'></td>
+            </tr>
+        </table></td>
+    </tr>
+    <tr>
+        <td height='110'></td>
+        <td></td>
+        <td align='center' valign='top'><table width='600' height='80' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td width='140' height='10'><table width='140' height='45' border='1' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
+                    <tr>
+                        <td align='center' class='font_cheng_14'><a href='showPeixun.jsp?id=37' class='font_cheng_14' target='_blank'>查看详情</a></td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+<table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
+    <tr>
+        <td width='110' height='300' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>15日</td>
+            </tr>
+            <tr>
+                <td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>9月</td>
+            </tr>
+        </table></td>
+        <td width='420' align='center' valign='top'><img src='upload/jpg/2017-09/12-165236.jpg' width='375' height='280' /></td>
+        <td width='670' align='center'><table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='50' colspan='2' class='font_hei_18'>“青创扶”--基金申报培训</td>
+            </tr>
+            <tr>
+                <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
+                <td width='520' valign='top' class='font_hui_14_2' align='left'><p>-如何在早期挖掘各类基金申报特点？ <br>
+                    -如何让帮助企业快速申报基金？ <br>
+                    -如何解决企业基金申报过程中遇到的困难？ <br>
+                    课程深度解读各类基金申报条件，以及企业在各类基金申报中所遇到的困难解读，帮助企业高效、精准的解读各种基金。 <br>
+                    <br>
+                </p></td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>主办单位：</td>
+                <td class='font_hui_14_2' align='left'>吉林省工信厅</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动时间：</td>
+                <td class='font_hui_14_2' align='left'>2017-09-15</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动地点：</td>
+                <td class='font_hui_14_2' align='left'>万易国家级孵化器（工农大路1035号(百脑汇旁边) </td>
+            </tr>
+            <tr>
+                <td height='5' colspan='2'></td>
+            </tr>
+            <tr>
+                <td height='1' colspan='2' bgcolor='#CCCCCC'></td>
+            </tr>
+        </table></td>
+    </tr>
+    <tr>
+        <td height='110'></td>
+        <td></td>
+        <td align='center' valign='top'><table width='600' height='80' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td width='140' height='10'><table width='140' height='45' border='1' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
+                    <tr>
+                        <td align='center' class='font_cheng_14'><a href='showPeixun.jsp?id=29' class='font_cheng_14' target='_blank'>查看详情</a></td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+<table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
+    <tr>
+        <td width='110' height='300' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>12日</td>
+            </tr>
+            <tr>
+                <td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>9月</td>
+            </tr>
+        </table></td>
+        <td width='420' align='center' valign='top'><img src='upload/jpg/2017-09/12-160434.jpg' width='375' height='280' /></td>
+        <td width='670' align='center'><table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td height='50' colspan='2' class='font_hei_18'>吉林省高新技术企业认定培训会</td>
+            </tr>
+            <tr>
+                <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
+                <td width='520' valign='top' class='font_hui_14_2' align='left'><p>课程一<br>
+                </p>
+                    <p>1、高新技术企业认定办法（新）解读&nbsp;</p>
+                    <p><br>
+                        2、高新技术企业研发费用核算及审计要点<br>
+                    </p>
+                    <p><br>
+                    </p>
+                    <p>课程二</p>
+                    <p>&nbsp;1、高新技术企业申报整体策划&nbsp;</p>
+                    <p><br>
+                        2、申报技巧&nbsp;</p>
+                    <p><br>
+                        3、成功案例剖析
+                        <b...</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>主办单位：</td>
+                <td class='font_hui_14_2' align='left'>吉林省科技大市场</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动时间：</td>
+                <td class='font_hui_14_2' align='left'>2017-09-12</td>
+            </tr>
+            <tr>
+                <td height='25' class='font_hui_14_2'>活动地点：</td>
+                <td class='font_hui_14_2' align='left'>长春市高新北区盛北大街3333号北湖科技园C2-3</td>
+            </tr>
+            <tr>
+                <td height='5' colspan='2'></td>
+            </tr>
+            <tr>
+                <td height='1' colspan='2' bgcolor='#CCCCCC'></td>
+            </tr>
+        </table></td>
+    </tr>
+    <tr>
+        <td height='110'></td>
+        <td></td>
+        <td align='center' valign='top'><table width='600' height='80' border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+                <td width='140' height='10'><table width='140' height='45' border='1' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
+                    <tr>
+                        <td align='center' class='font_cheng_14'><a href='showPeixun.jsp?id=28' class='font_cheng_14' target='_blank'>查看详情</a></td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+
+
+<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td height="50" align="center" class="font_hui_14"><div>当前第[1/1]页 [<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='ztpx.jsp?pageNo='+i+'&classId=FLMN3V0022' selected='selected'>1</option><option value='ztpx.jsp?pageNo=1&classId=FLMN3V0022'>1</option></select>[<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>尾页</a>]</div>
+        </td>
+    </tr>
+    <tr>
+        <td height="20"></td>
+    </tr>
+</table>
+
 
 
 
