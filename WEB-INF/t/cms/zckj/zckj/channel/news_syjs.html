@@ -384,7 +384,9 @@
     <tr>
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >　专家库</td>
+        <td width="240"class="font_hui_14">
+            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
+        </td>
         <td width="845"></td>
     </tr>
     <tr>
@@ -401,7 +403,15 @@
 <table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
         <td width="30"></td>
-        <td width="1140"><a href='zhuanjia.jsp?type=自然科学' class='font_cheng_16'>自然科学</a>　　<a href='zhuanjia.jsp?type=医药科学' class='font_cheng_16'>医药科学</a>　　<a href='zhuanjia.jsp?type=农业科学' class='font_cheng_16'>农业科学</a>　　<a href='zhuanjia.jsp?type=人文与社会科学' class='font_cheng_16'>人文与社会科学</a>　　<a href='zhuanjia.jsp?type=工程与技术科学' class='font_cheng_16'>工程与技术科学</a>　　
+        <td width="1140">
+            <!--<a href='zhuanjia.jsp?type=自然科学' class='font_cheng_16'>自然科学</a>　　<a href='zhuanjia.jsp?type=医药科学' class='font_cheng_16'>医药科学</a>　　<a href='zhuanjia.jsp?type=农业科学' class='font_cheng_16'>农业科学</a>　　<a href='zhuanjia.jsp?type=人文与社会科学' class='font_cheng_16'>人文与社会科学</a>　　<a href='zhuanjia.jsp?type=工程与技术科学' class='font_cheng_16'>工程与技术科学</a>　　-->
+            [@cms_channel_list parentId="247"]
+                [#list tag_list as c2]
+                    <a href="${c2.url}" class='font_cheng_16'>
+                        ${c2.name}
+                    </a>
+                [/#list]
+            [/@cms_channel_list]
         </td>
         <td width="30"></td>
     </tr>
@@ -416,14 +426,18 @@
     <tr>
         <td valign="top"><table width='100%' border='0' cellspacing='0' cellpadding='0'>
             <tr>
-                <td width='33%' height='22'>
+
+                [@cms_content_list count='6' orderBy='23' channelId=channel.id channelOption='1'
+                dateFormat='yyyy-MM-dd']
+                [#list tag_list as a]
+                <td width='33%' height='22' style="height: 320px;float: left">
                     <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
                         <tr>
                             <td width='15' height='120'>&nbsp;</td>
                             <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
                                 <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=433' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=433' class='font_hui_18' target='_blank'>张瑛洁</a></td>
+                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='${a.url}' class='font_hui_18' target='_blank'><img src='${a.titleImg!}' border='0' width='70' height='80'></a></td>
+                                    <td width='151' class='font_hui_18'><a href='${a.url}' class='font_hui_18' target='_blank'>${a.title}</a></td>
                                     <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
                                         <tr>
                                             <td align='center' class='font_cheng_14'>推荐</td>
@@ -431,7 +445,7 @@
                                     </table></td>
                                 </tr>
                                 <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：东北电力大学</td>
+                                    <td class='font_hui_14_2' colspan='2'>单位：${a.author!}</td>
                                 </tr>
                             </table></td>
                             <td width='15'>&nbsp;</td>
@@ -448,7 +462,7 @@
                         </tr>
                         <tr>
                             <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
+                            <td class='font_hui_18'>【专家类型】 ${a.tagStr!}</td>
                             <td></td>
                         </tr>
                         <tr>
@@ -479,516 +493,519 @@
                         </tr>
                     </table>
                 </td>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=432' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=432' class='font_hui_18' target='_blank'>刘术侠</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=432' class='font_hui_14_3' target='_blank'>自然科学/化学/无机化学,物理化学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=431' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=431' class='font_hui_18' target='_blank'>台桂花</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=431' class='font_hui_14_3' target='_blank'>自然科学/生物学/细胞生物学,生物化学与分子生物学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
+                [/#list]
+                [/@cms_content_list]
+
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=432' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=432' class='font_hui_18' target='_blank'>刘术侠</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=432' class='font_hui_14_3' target='_blank'>自然科学/化学/无机化学,物理化学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=431' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=431' class='font_hui_18' target='_blank'>台桂花</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=431' class='font_hui_14_3' target='_blank'>自然科学/生物学/细胞生物学,生物化学与分子生物学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
             </tr>
             <tr><td height='30'></td></tr>
             <tr>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=430' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=430' class='font_hui_18' target='_blank'>闫吉昌</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=430' class='font_hui_14_3' target='_blank'>自然科学/化学/分析化学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=429' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=429' class='font_hui_18' target='_blank'>朱筱娟</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=429' class='font_hui_14_3' target='_blank'>自然科学/生物学/神经生物学,细胞生物学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=428' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=428' class='font_hui_18' target='_blank'>刘殿峰</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=428' class='font_hui_14_3' target='_blank'>自然科学/生物学/动物学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=430' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=430' class='font_hui_18' target='_blank'>闫吉昌</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=430' class='font_hui_14_3' target='_blank'>自然科学/化学/分析化学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=429' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=429' class='font_hui_18' target='_blank'>朱筱娟</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：东北师范大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=429' class='font_hui_14_3' target='_blank'>自然科学/生物学/神经生物学,细胞生物学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=428' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=428' class='font_hui_18' target='_blank'>刘殿峰</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=428' class='font_hui_14_3' target='_blank'>自然科学/生物学/动物学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
             </tr>
             <tr><td height='30'></td></tr>
             <tr>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=427' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=427' class='font_hui_18' target='_blank'>刘永江</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=427' class='font_hui_14_3' target='_blank'>自然科学/地球科学/地质学与应用地质学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=426' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=426' class='font_hui_18' target='_blank'>孟广伟</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=426' class='font_hui_14_3' target='_blank'>自然科学/力学/固体力学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
-                <td width='33%' height='22'>
-                    <table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>
-                        <tr>
-                            <td width='15' height='120'>&nbsp;</td>
-                            <td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=425' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>
-                                    <td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=425' class='font_hui_18' target='_blank'>那辉</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                                        <tr>
-                                            <td align='center' class='font_cheng_14'>推荐</td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>
-                                </tr>
-                            </table></td>
-                            <td width='15'>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td height='1' bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                            <td bgcolor='#eaeaea'></td>
-                        </tr>
-                        <tr>
-                            <td height='10'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【专家类型】 自然科学</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='30'></td>
-                            <td class='font_hui_18'>【研究方向】</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=425' class='font_hui_14_3' target='_blank'>自然科学/化学</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height='15'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
-                                <tr>
-                                    <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
-                                    <td width='80' align='center' class='font_bai_14'></td>
-                                </tr>
-                            </table></td>
-                            <td bgcolor='#fc8703'></td>
-                        </tr>
-                    </table>
-                </td>
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=427' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=427' class='font_hui_18' target='_blank'>刘永江</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=427' class='font_hui_14_3' target='_blank'>自然科学/地球科学/地质学与应用地质学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=426' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=426' class='font_hui_18' target='_blank'>孟广伟</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=426' class='font_hui_14_3' target='_blank'>自然科学/力学/固体力学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
+                <!--<td width='33%' height='22'>-->
+                    <!--<table width='385' height='280' border='1' cellpadding='0' cellspacing='0' bordercolor='#eaeaea' style='border-collapse:collapse' rules='none'>-->
+                        <!--<tr>-->
+                            <!--<td width='15' height='120'>&nbsp;</td>-->
+                            <!--<td width='347'><table width='355' height='120' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='showZhuanjia.jsp?id=425' class='font_hui_18' target='_blank'><img src='/img/zanwu2.jpg' border='0' width='70' height='80'></a></td>-->
+                                    <!--<td width='151' class='font_hui_18'><a href='showZhuanjia.jsp?id=425' class='font_hui_18' target='_blank'>那辉</a></td>-->
+                                    <!--<td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>-->
+                                        <!--<tr>-->
+                                            <!--<td align='center' class='font_cheng_14'>推荐</td>-->
+                                        <!--</tr>-->
+                                    <!--</table></td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td class='font_hui_14_2' colspan='2'>单位：吉林大学</td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td width='15'>&nbsp;</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='1' bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                            <!--<td bgcolor='#eaeaea'></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='10'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【专家类型】 自然科学</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='30'></td>-->
+                            <!--<td class='font_hui_18'>【研究方向】</td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='50'></td>-->
+                            <!--<td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=425' class='font_hui_14_3' target='_blank'>自然科学/化学</a></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height='15'></td>-->
+                            <!--<td></td>-->
+                            <!--<td></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td height=35' bgcolor='#fc8703'></td>-->
+                            <!--<td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>-->
+                                <!--<tr>-->
+                                    <!--<td width='250' class='font_bai_14'></td>-->
+                                    <!--<td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>-->
+                                    <!--<td width='80' align='center' class='font_bai_14'></td>-->
+                                <!--</tr>-->
+                            <!--</table></td>-->
+                            <!--<td bgcolor='#fc8703'></td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</td>-->
             </tr>
         </table>
 
