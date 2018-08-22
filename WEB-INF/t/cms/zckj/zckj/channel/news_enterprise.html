@@ -147,11 +147,12 @@
     <tr>
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >
-            共享信息
+        <td width="240"class="font_hui_14">
+            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
         </td>
         <td width="845"></td>
     </tr>
+
     <tr>
         <td height="1" bgcolor="#fc8703"></td>
         <td bgcolor="#fc8703" colspan="2"></td>
@@ -165,7 +166,10 @@
 </table>
 <table width="1200" height="400" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
-        <td><table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
+        <td>
+            [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='6' orderBy='4' titLen='35'  channelOption='1']
+            [#list tag_pagination.list as a]
+            <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
             <tr><td width='300'> <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189335' title='关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知' class='font_hui_14_3' target='_blank'><img src='/upload/jpg/2017-12/18-100624.jpg' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
                 <td style='line-height:28px' class='font_hui_16' align='left' height='40'>
                     <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189335' title='关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知' class='font_hui_16' target='_blank'>关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</a>
@@ -178,12 +182,22 @@
                             根据《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、公示无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14家单...<更多></a>
                     </td>
                 </tr>
-            </table><table width='850' height='20' border='0' cellspacing='0' cellpadding='0' align='center'>
+            </table>
+                <table width='850' height='20' border='0' cellspacing='0' cellpadding='0' align='center'>
                 <tr>    <td width='30' align='left'><img src='/img/time.jpg'></td>    <td align='left' class='font_hui_14_3'>2017-12-18</td>  </tr>
-            </table></td></tr><tr><td colspan='2' height='20'></td></tr>
+            </table>
+            </td>
+            </tr>
+                <tr>
+                    <td colspan='2' height='20'></td></tr>
             <tr><td colspan='2' height='1'><hr style='border:1px dotted #bdbdbd' /></td></tr>
             <tr><td colspan='2' height='20'></td></tr>
         </table>
+            [/#list]
+        <td height="40" align="center" class="font_hui_14">
+        [/@cms_content_page]
+        </td>
+           <!--
             <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
                 <tr><td width='300'> <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189334' title='关于开展吉林省科技型中小企业评价工作的通知' class='font_hui_14_3' target='_blank'><img src='/upload/jpg/2017-12/18-100518.jpg' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
                     <td style='line-height:28px' class='font_hui_16' align='left' height='40'>
@@ -279,7 +293,7 @@
                 </table></td></tr><tr><td colspan='2' height='20'></td></tr>
                 <tr><td colspan='2' height='1'><hr style='border:1px dotted #bdbdbd' /></td></tr>
                 <tr><td colspan='2' height='20'></td></tr>
-            </table>
+            </table>-->
 
         </td>
     </tr>

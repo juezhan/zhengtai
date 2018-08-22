@@ -802,12 +802,11 @@
                                 dateFormat='yyyy-MM-dd']
                                 [#list tag_list as a]
                             <tr>
-                                <a href="${a.url}">
-                                <td width='15'><img src='${a.titleImg!}' /></td>
-                                <td style='line-height:28px' class='font_hui_14_2' align='left'>
-                                    <a href="" title='关于开展吉林省科技型中小企业评价工作的通知' class='font_hui_14_2' target='_blank'>${a.title}</a>
-                                </td>
-                                </a>
+                                    <td width='15'><img src='${a.titleImg!}' /></td>
+                                    <td style='line-height:28px' class='font_hui_14_2' align='left'>
+                                        <a href="${a.url}" title='关于开展吉林省科技型中小企业评价工作的通知' class='font_hui_14_2' target='_blank'>${a.title}</a>
+                                    </td>
+
                             </tr>
                                 [/#list]
                                 [/@cms_content_list]
@@ -850,14 +849,12 @@
                                 dateFormat='yyyy-MM-dd']
                                 [#list tag_list as a]
                             <tr>
-                                <a href="${a.url}">
                                     <td ><img src='${a.titleImg!}' /></td>
                                     <td style='line-height:28px' class='font_hui_14_2' align='left'>
-                                        <a href='' target='_blank' class='font_hui_14_2'>
+                                        <a href='${a.url}' target='_blank' class='font_hui_14_2'>
                                             ${a.title}
                                         </a>
                                     </td>
-                                </a>
                             </tr>
                                 [/#list]
                                 [/@cms_content_list]
@@ -917,10 +914,9 @@
                             <td width='15' height='79'>&nbsp;</td>
                             <td width='347'>
                                 <table width='355' height='79' border='0' cellpadding='0' cellspacing='0'>
-                                <a href="${a.url}">
                                 <tr>
                                     <td width='158' align='center' rowspan='2' class='font_cheng_23'><img src='${a.titleImg!}' border='0' width='70' height='70'></td>
-                                    <td width='151' class='font_hui_18'><a href='' class='font_hui_18' target='_blank'>
+                                    <td width='151' class='font_hui_18'><a href='${a.url}' class='font_hui_18' target='_blank'>
                                         ${a.title}</a></td>
                                     <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
                                         <tr>
@@ -929,7 +925,6 @@
                                     </table>
                                     </td>
                                 </tr>
-                                </a>
                                 <tr>
                                     <td>&nbsp;</td>
                                 </tr>
@@ -1145,7 +1140,7 @@
                     dateFormat='yyyy-MM-dd']
                     [#list tag_list as a]
                     <td width="290" height="150" align="center" valign="top" style="float: left;">
-                        <a href="" target="_blank">
+                        <a href="${a.url}" target="_blank">
                             <img src="${a.titleImg!}" width="284" height="130" border="0" />
                         </a>
                     </td>
@@ -1190,7 +1185,7 @@
                     <td width="287" height="140" align="center" style="float: left;" >
 
                         <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-                        <a href='showFwjg.jsp?classId=6N258JZHY5&newsId=189329' title='长春吉大专利代理有限责任公司' class='null' target='_blank'>
+                        <a href='${a.url}' title='长春吉大专利代理有限责任公司' class='null' target='_blank'>
                             <img src="${a.titleImg!}" width="278" height="130" border="0" style="padding-top: 3px;"/>
                         </a>
 
@@ -1257,28 +1252,36 @@
     </tr>
 </table>
 <table width="1200" height="200" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
-    <tr>
-        <td width="16"></td>
-        <td width="280"><table width='100%' border='0' cellspacing='0' cellpadding='0'>
-            <tr>
-                <td width='100%' height='22'>
-                    <table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
-                        <tr>
-                            <td><a href='showPeixun.jsp?id=38' target='_blank' title='“科技创新助推智能制造产业”企业家沙龙'><img src='upload/jpg/2017-09/12-165039.jpg' width='285' height='180' border='0'></a></td>
-                        </tr>
-                        <tr>
-                            <td align='left' height='30' class='font_hui_14_2'><a href='showPeixun.jsp?id=38' target='_blank' class='font_hui_14_2' title='“科技创新助推智能制造产业”企业家沙龙'>“科技创新助推智能制造产业”企</a></td>
-                        </tr>
-                        <tr>
-                            <td align='left' height='22' class='font_cheng_12'><a href='showPeixun.jsp?id=38' target='_blank' class='font_cheng_12' title='“科技创新助推智能制造产业”企业家沙龙'>2017-08-10 09:00:00</a></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
 
+    <tr>
+        [@cms_content_list count='4' orderBy='22' channelId='520' channelOption='1'
+        dateFormat='yyyy-MM-dd']
+        [#list tag_list as a]
+        <td width="16"></td>
+        <td width="280">
+            <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+                <tr>
+                    <td width='100%' height='22'>
+                        <table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
+                            <tr>
+                                <td>
+                                    <a href='${a.url}' target='_blank' title='“科技创新助推智能制造产业”企业家沙龙'>
+                                    <img src='${a.titleImg!}' width='285' height='180' border='0'></a></td>
+                            </tr>
+                            <tr>
+                                <td align='left' height='30' class='font_hui_14_2'><a href='showPeixun.jsp?id=38' target='_blank' class='font_hui_14_2' title='“科技创新助推智能制造产业”企业家沙龙'>${a.title}</a></td>
+                            </tr>
+                            <tr>
+                                <td align='left' height='22' class='font_cheng_12'><a href='showPeixun.jsp?id=38' target='_blank' class='font_cheng_12' title='“科技创新助推智能制造产业”企业家沙龙'>${a.releaseDate}</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         </td>
-        <td width="16">&nbsp;</td>
+        [/#list]
+        [/@cms_content_list]
+     <!--   <td width="16">&nbsp;</td>
         <td width="280">
             <table width='100%' border='0' cellspacing='0' cellpadding='0'>
             <tr>
@@ -1309,13 +1312,13 @@
                 <td width='100%' height='22'>
                     <table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
                         <tr>
-                            <td><a href='showPeixun.jsp?id=29' target='_blank' title='“青创扶”--基金申报培训'><img src='upload/jpg/2017-09/12-165236.jpg' width='285' height='180' border='0'></a></td>
+                            <td><a href='showPeixun.jsp?id=29' target='_blank' title='“青创扶”&#45;&#45;基金申报培训'><img src='upload/jpg/2017-09/12-165236.jpg' width='285' height='180' border='0'></a></td>
                         </tr>
                         <tr>
-                            <td align='left' height='30' class='font_hui_14_2'><a href='showPeixun.jsp?id=29' target='_blank' class='font_hui_14_2' title='“青创扶”--基金申报培训'>“青创扶”--基金申报培训</a></td>
+                            <td align='left' height='30' class='font_hui_14_2'><a href='showPeixun.jsp?id=29' target='_blank' class='font_hui_14_2' title='“青创扶”&#45;&#45;基金申报培训'>“青创扶”&#45;&#45;基金申报培训</a></td>
                         </tr>
                         <tr>
-                            <td align='left' height='22' class='font_cheng_12'><a href='showPeixun.jsp?id=29' target='_blank' class='font_cheng_12' title='“青创扶”--基金申报培训'>2017-09-15 13:30:00</a></td>
+                            <td align='left' height='22' class='font_cheng_12'><a href='showPeixun.jsp?id=29' target='_blank' class='font_cheng_12' title='“青创扶”&#45;&#45;基金申报培训'>2017-09-15 13:30:00</a></td>
                         </tr>
                     </table>
                 </td>
@@ -1343,8 +1346,9 @@
         </table>
 
         </td>
-        <td width="16"></td>
+        <td width="16"></td>-->
     </tr>
+
 </table>
 <table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
