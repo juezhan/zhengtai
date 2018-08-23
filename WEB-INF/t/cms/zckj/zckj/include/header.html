@@ -488,15 +488,22 @@
                     <tr>
                         <td height="50"><table width="900" height="50" border="0" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td style="width: 110px;text-align: center;border-bottom:1px solid red " class="font_hui_16"><a href="${base}/zckj/index.jhtml" class="font_hui_16">首页</a>
+                                <td style="width: 110px;text-align: center;border-bottom:1px solid red " class="font_hui_16">
+                                    [@cms_channel_list]
+                                    <a href="${base}/" class="font_hui_16">首页</a>
+                                    [#list tag_list as c]
                                 </td>
-                                <td width="110" align="center" class="font_hui_16"><a href="${base}/zckj/gcxx/index.jhtml" class="font_hui_16">共享信息</a></td>
-                                <td width="129" align="center" class="font_hui_16"><a href="${base}/zckj/zczx/index.jhtml" class="font_hui_16">众创咨询</a></td>
-                                <td width="130" align="center" class="font_hui_16"><a href="${base}/zckj/ztpx/index.jhtml" class="font_hui_16">专题培训</a></td>
-                                <td width="130" align="center" class="font_hui_16"><a href="${base}/zckj/fwjg/index.jhtml" class="font_hui_16" >服务机构</a></td>
-                                <td width="93" align="center" class="font_hui_16"><a href="${base}/zckj/zczjk/index.jhtml" class="font_hui_16">专家库</a></td>
-                                <td width="108" align="center" class="font_hui_16"><a href="${base}/zckj/zckjcg/index.jhtml" class="font_hui_16">科技成果</a></td>
-                                <td width="100" align="center" class="font_hui_16"><a href="${base}/zckj/gywm/index.jhtml" class="font_hui_16">关于我们</a></td>
+                                <td width="110" align="center" class="font_hui_16">
+                                    <a href="${c.url}" class="font_hui_16">${c.name}</a>
+                                    [/#list]
+                                    [/@cms_channel_list]
+                                </td>
+                                <!--<td width="129" align="center" class="font_hui_16"><a href="${base}/zckj/zczx/index.jhtml" class="font_hui_16">众创咨询</a></td>-->
+                                <!--<td width="130" align="center" class="font_hui_16"><a href="${base}/zckj/ztpx/index.jhtml" class="font_hui_16">专题培训</a></td>-->
+                                <!--<td width="130" align="center" class="font_hui_16"><a href="${base}/zckj/fwjg/index.jhtml" class="font_hui_16" >服务机构</a></td>-->
+                                <!--<td width="93" align="center" class="font_hui_16"><a href="${base}/zckj/zczjk/index.jhtml" class="font_hui_16">专家库</a></td>-->
+                                <!--<td width="108" align="center" class="font_hui_16"><a href="${base}/zckj/zckjcg/index.jhtml" class="font_hui_16">科技成果</a></td>-->
+                                <!--<td width="100" align="center" class="font_hui_16"><a href="${base}/zckj/gywm/index.jhtml" class="font_hui_16">关于我们</a></td>-->
                             </tr>
                         </table></td>
                     </tr>

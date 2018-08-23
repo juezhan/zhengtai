@@ -260,16 +260,16 @@
         <td valign="top">
             <table width='100%' border='0' cellspacing='0' cellpadding='0'>
             <tr>
-                [@cms_content_list count='3' orderBy='23' channelId=channel.id channelOption='1'
-                dateFormat='yyyy-MM-dd']
-                [#list tag_list as a]
-                <td width='25%' height='22'>
+                [@cms_content_page  channelId="521"  sysPage='1'  dateFormat='yyyy-MM-dd' count='8' orderBy='2' titLen='35'  channelOption='1']
+                [#list tag_pagination.list as a]
+
+                <td width='25%' height='22'style="float: left;height: 220px">
                     <table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
                         <tr>
                             <td><a href='${a.url}' target='_blank' ><img src='${a.titleImg!}' width='270' height='180' border='0'></a></td>
                         </tr>
                         <tr>
-                            <td align='left' height='25' class='font_hui_14_2'><a href='${a.url}' target='_blank' class='font_hui_14_2' title='长春吉大专利代理有限责任公司'>${a.title}</a></td>
+                            <td align='left' height='25' class='font_hui_14_2' ><a href='${a.url}' target='_blank' class='font_hui_14_2' >${a.title}</a></td>
                         </tr>
                         <tr>
                             <td align='left' height='25' class='font_hui_14_2'></td>
@@ -277,7 +277,6 @@
                     </table>
                 </td>
                 [/#list]
-                [/@cms_content_list]
                 <!--<td width='25%' height='22'>-->
                     <!--<table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>-->
                         <!--<tr>-->
@@ -377,7 +376,12 @@
         </td>
     </tr>
     <tr>
-        <td height="40" align="center" class="font_hui_14"><div>当前第[1/1]页 [<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='fwjg.jsp?pageNo='+i+'&classId=6N258JZHY5' selected='selected'>1</option><option value='fwjg.jsp?pageNo=1&classId=6N258JZHY5'>1</option></select>[<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>尾页</a>]</div>
+        <td height="40" align="center" class="font_hui_14">
+            <!--<div>当前第[1/1]页 [<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='fwjg.jsp?pageNo='+i+'&classId=6N258JZHY5' selected='selected'>1</option><option value='fwjg.jsp?pageNo=1&classId=6N258JZHY5'>1</option></select>[<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>尾页</a>]</div>-->
+            <div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
+                [/@cms_content_page]
+            </div>
+
         </td>
     </tr>
     <tr>
