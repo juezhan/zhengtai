@@ -167,24 +167,27 @@
 <table width="1200" height="400" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
         <td>
-            [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='6' orderBy='4' titLen='35'  channelOption='1']
+            [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='6' orderBy='1' titLen='35'  channelOption='1']
             [#list tag_pagination.list as a]
             <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
-            <tr><td width='300'> <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189335' title='关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知' class='font_hui_14_3' target='_blank'><img src='/upload/jpg/2017-12/18-100624.jpg' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
+            <tr><td width='300'>
+                <a href='${a.url}'  class='font_hui_14_3' target='_blank'></a>
+                <img src='${a.titleImg!}' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
                 <td style='line-height:28px' class='font_hui_16' align='left' height='40'>
-                    <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189335' title='关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知' class='font_hui_16' target='_blank'>关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</a>
+                    <a href='${a.url}'  class='font_hui_16' target='_blank'> ${a.title}</a>
                 </td>
             </tr>
                 <tr>
                     <td style='line-height:28px' class='font_hui_16' align='left'>
                         <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189335' title='关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知' class='font_hui_14_3' target='_blank'>
-                            各市（州）科技局、长春新区科创委、国家级高新区科技局，各有关单位：
-                            根据《吉林省科技企业孵化器和众创空间认定管理办法》，经组织评审、公示无异议，现确定长春正茂青年创业孵化有限公司等9家单位为吉林省科技企业孵化器，吉林省云聚会创业服务有限公司等14家单...<更多></a>
+                            ${a.description!}
+                            <更多>
+                        </a>
                     </td>
                 </tr>
             </table>
                 <table width='850' height='20' border='0' cellspacing='0' cellpadding='0' align='center'>
-                <tr>    <td width='30' align='left'><img src='/img/time.jpg'></td>    <td align='left' class='font_hui_14_3'>2017-12-18</td>  </tr>
+                <tr>    <td width='30' align='left'><img src='/${res}/imgs/time.jpg'></td>    <td align='left' class='font_hui_14_3'>${a.releaseDate}</td>  </tr>
             </table>
             </td>
             </tr>
@@ -194,9 +197,9 @@
             <tr><td colspan='2' height='20'></td></tr>
         </table>
             [/#list]
-        <td height="40" align="center" class="font_hui_14">
+        <div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
         [/@cms_content_page]
-        </td>
+        </div>
            <!--
             <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
                 <tr><td width='300'> <a href='showNews.jsp?classId=JCJ6HS39JG&newsId=189334' title='关于开展吉林省科技型中小企业评价工作的通知' class='font_hui_14_3' target='_blank'><img src='/upload/jpg/2017-12/18-100518.jpg' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
@@ -297,10 +300,10 @@
 
         </td>
     </tr>
-    <tr>
+   <!-- <tr>
         <td height="40" align="center" class="font_hui_14"><div>当前第[1/6]页 [<a target='_self' href='listIndex.jsp?pageNo=1&classId=JSLG6JRK8R' class='font_lan_14_3'>首页</a>] [上一页] [<a target='_self' href='listIndex.jsp?pageNo=2&classId=JSLG6JRK8R' class='font_lan_14_3'>下一页</a>] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='listIndex.jsp?pageNo='+i+'&classId=JSLG6JRK8R' selected='selected'>1</option><option value='listIndex.jsp?pageNo=1&classId=JSLG6JRK8R'>1</option><option value='listIndex.jsp?pageNo=2&classId=JSLG6JRK8R'>2</option><option value='listIndex.jsp?pageNo=3&classId=JSLG6JRK8R'>3</option><option value='listIndex.jsp?pageNo=4&classId=JSLG6JRK8R'>4</option><option value='listIndex.jsp?pageNo=5&classId=JSLG6JRK8R'>5</option><option value='listIndex.jsp?pageNo=6&classId=JSLG6JRK8R'>6</option></select>[<a target='_self' href='listIndex.jsp?pageNo=6&classId=JSLG6JRK8R' class='font_lan_14_3'>尾页</a>]</div>
         </td>
-    </tr>
+    </tr>-->
     <tr>
         <td height="20"></td>
     </tr>

@@ -167,70 +167,86 @@
         <td bgcolor="#fc8703" colspan="2"></td>
         <td bgcolor="#e1e1e1" colspan="3"></td>
     </tr>
+
 </table>
 <table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
         <td></td>
     </tr>
 </table>
+[@cms_content_page channelId=channel.id count='4' titLen='20' append='...' orderBy='2' dateFormat='yyyy-MM-dd' channelOption='1']
+[#list tag_pagination.list as a]
 <table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
     <tr>
-        <td width='110' height='300' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
-            <tr>
-                <td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>10日</td>
-            </tr>
-            <tr>
-                <td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>8月</td>
-            </tr>
-        </table></td>
-        <td width='420' align='center' valign='top'><img src='upload/jpg/2017-09/12-165039.jpg' width='375' height='280' /></td>
-        <td width='670' align='center'><table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
-            <tr>
-                <td height='50' colspan='2' class='font_hei_18'>“科技创新助推智能制造产业”企业家沙龙</td>
-            </tr>
-            <tr>
-                <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
-                <td width='520' valign='top' class='font_hui_14_2' align='left'>1、技术服务战略合作签约；
-                    <div>2、关于人工智能、机器人、机器视觉、工业4.0智能化数字化工厂等技术方案介绍；</div>
-                    <div>3、针对企业股权融资利弊以及对企业影响因素综合分析；&nbsp;</div>
-                    <div>4、会议讨论交流
-                        针对智能制造产业相关问题、制造业企业如何转型升级等问题展开交流讨论，如何从科技创新方面着手助推智能制造业发展。</div></td>
-            </tr>
-            <tr>
-                <td height='25' class='font_hui_14_2'>主办单位：</td>
-                <td class='font_hui_14_2' align='left'>吉林省科技大市场</td>
-            </tr>
-            <tr>
-                <td height='25' class='font_hui_14_2'>活动时间：</td>
-                <td class='font_hui_14_2' align='left'>2017-08-10</td>
-            </tr>
-            <tr>
-                <td height='25' class='font_hui_14_2'>活动地点：</td>
-                <td class='font_hui_14_2' align='left'>长春北湖科技园C2-3（吉林省科技大市场二楼会议室）</td>
-            </tr>
-            <tr>
-                <td height='5' colspan='2'></td>
-            </tr>
-            <tr>
-                <td height='1' colspan='2' bgcolor='#CCCCCC'></td>
-            </tr>
-        </table></td>
+        <td width='110' height='300' align='center' valign='top'>
+           <table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
+                <tr>
+                    <td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>10日</td>
+                </tr>
+                <tr>
+                    <td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>8月</td>
+                </tr>
+            </table>
+       </td>
+
+        <td width='420' align='center' valign='top'><img src='${a.titleImg!}' width='375' height='280' /></td>
+        <td width='670' align='center'>
+            <table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
+                <tr>
+                    <td height='50' colspan='2' class='font_hei_18'>  [@text_cut s=a.title len=titLen append=append/]</td>
+                </tr>
+                <tr>
+                    <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
+                    <td width='520' valign='top' class='font_hui_14_2' align='left'>
+                        ${a.txt!}
+                    </td>
+                </tr>
+                <tr>
+                    <td height='25' class='font_hui_14_2'>主办单位：</td>
+                    <td class='font_hui_14_2' align='left'>${a.origin!}</td>
+                </tr>
+                <tr>
+                    <td height='25' class='font_hui_14_2'>活动时间：</td>
+                    <td class='font_hui_14_2' align='left'>${a.shortTitle!}</td>
+                </tr>
+                <tr>
+                    <td height='25' class='font_hui_14_2'>活动地点：</td>
+                    <td class='font_hui_14_2' align='left'>${a.description!}</td>
+                </tr>
+                <tr>
+                    <td height='5' colspan='2'></td>
+                </tr>
+                <tr>
+                    <td height='1' colspan='2' bgcolor='#CCCCCC'></td>
+                </tr>
+            </table>
+        </td>
     </tr>
     <tr>
         <td height='110'></td>
         <td></td>
-        <td align='center' valign='top'><table width='600' height='80' border='0' cellpadding='0' cellspacing='0'>
-            <tr>
-                <td width='140' height='10'><table width='140' height='45' border='1' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
-                    <tr>
-                        <td align='center' class='font_cheng_14'><a href='showPeixun.jsp?id=38' class='font_cheng_14' target='_blank'>查看详情</a></td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table></td>
+        <td align='center' valign='top'>
+            <table width='600' height='80' border='0' cellpadding='0' cellspacing='0'>
+                <tr>
+                    <td width='140' height='10'>
+                        <table width='140' height='45' border='1' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
+                            <tr>
+                                <td align='center' class='font_cheng_14'><a href='${a.url}' class='font_cheng_14' target='_blank'>查看详情</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
     </tr>
 </table>
-<table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
+[/#list]
+<div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
+    [/@cms_content_page]
+</div>
+
+<!-- <table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
     <tr>
         <td width='110' height='300' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'>
             <tr>
@@ -311,7 +327,7 @@
         <td width='420' align='center' valign='top'><img src='upload/jpg/2017-09/12-165236.jpg' width='375' height='280' /></td>
         <td width='670' align='center'><table width='600' height='300' border='0' cellpadding='0' cellspacing='0'>
             <tr>
-                <td height='50' colspan='2' class='font_hei_18'>“青创扶”--基金申报培训</td>
+                <td height='50' colspan='2' class='font_hei_18'>“青创扶”&#45;&#45;基金申报培训</td>
             </tr>
             <tr>
                 <td width='80' valign='top' class='font_hui_14_2'>活动描述：</td>
@@ -420,16 +436,19 @@
                     </tr>
                 </table></td>
             </tr>
-        </table></td>
+        </table></td>-->
+
     </tr>
+
 </table>
 
 
-<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+<!--<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
         <td height="50" align="center" class="font_hui_14"><div>当前第[1/1]页 [<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='ztpx.jsp?pageNo='+i+'&classId=FLMN3V0022' selected='selected'>1</option><option value='ztpx.jsp?pageNo=1&classId=FLMN3V0022'>1</option></select>[<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>尾页</a>]</div>
         </td>
-    </tr>
+    </tr>-->
+
     <tr>
         <td height="20"></td>
     </tr>

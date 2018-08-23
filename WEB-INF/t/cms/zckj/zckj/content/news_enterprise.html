@@ -132,11 +132,12 @@
     <tr>
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >
-            共享信息 ><font color='red'>众创政策信息</font>
+        <td width="240"class="font_hui_14">
+            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
         </td>
         <td width="845"></td>
     </tr>
+
     <tr>
         <td height="1" bgcolor="#fc8703"></td>
         <td bgcolor="#fc8703" colspan="2"></td>
@@ -155,10 +156,10 @@
                 <td height='20'></td>
             </tr>
             <tr>
-                <td height='50' class='font_lan_20' align='center'>关于公布2018年度吉林省科技企业孵化器和众创空间名单的通知</td>
+                <td height='50' class='font_lan_20' align='center'>${content.title}</td>
             </tr>
             <tr>
-                <td height='25' class=font_hui_14_3 align='center'>加入时间：2017-12-18</td>
+                <td height='25' class=font_hui_14_3 align='center'>加入时间：${content.releaseDate}</td>
             </tr>
             <tr>
                 <td height='20'></td>
@@ -171,7 +172,7 @@
             </tr>
             <tr id=td_1>
                 <td align='left' valign='top' style='line-height:200%' class=font_hui_14_2><br><p>
-                </p>
+              <!--  </p>
                     <p style="MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt" class="p0">
                         <table style="LINE-HEIGHT: 26px" border="0" cellspacing="0" cellpadding="0" width="900">
                             <tbody>
@@ -211,9 +212,11 @@
         <td height='30'><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr>	<tr>
             <td align='left' height='30' class='font_hui_14'>关键字：</td>
         </tr>
-        </table></td></tr></table>
-</td>
-</tr>
+        </table></td></tr>
+</table>-->
+                    ${content.txt!}
+                </td>
+            </tr>
 <tr>
     <td height="20"></td>
 </tr>
