@@ -14,12 +14,12 @@
     <link href="/${res}/css/icon.css" rel="stylesheet"/>
 
     &lt;!&ndash;[if lt IE 9]>
-    <script src="/${res}/js/html5shiv.min.js"></script>
-    <script src="/${res}/js/respond.min.js"></script>
+    <!--<script src="/${res}/js/html5shiv.min.js"></script>-->
+    <!--<script src="/${res}/js/respond.min.js"></script>-->
 
-    <![endif]&ndash;&gt;
-</head>
-<body>-->
+    <!--<![endif]&ndash;&gt;-->
+<!--</head>-->
+<!--<body>&ndash;&gt;-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -87,11 +87,11 @@
         dateFormat='yyyy-MM-dd']
         [#list tag_list as a]
         <td width="30%" height="150" style="float: left;margin-left: 20px;margin-bottom: 20px;position: relative;border-right: 1px solid #ccc">
-            <div style="width:130px;height: 90px;border: 1px solid blue;position: absolute;">
+            <div style="width:130px;height: 90px;position: absolute;">
                 <img style="width: 100%;height: 100%" src="${a.titleImg!}"/>
             </div>
             <div style="width: 200px;height: 30px;line-height: 30px;color: #283898;font-size: 28px;font-weight: 600;position: absolute;right: 10px;overflow: hidden">${a.title}</div>
-            <div style="width: 130px;height: 45px;line-height: 45px;font-size: 18px;border: 1px solid #999;position: absolute;bottom: 20px;right: 20px;border-radius: 5px;text-align: center;cursor: pointer"><a href="${a.url}">立即查看</a></div>
+            <div style="width: 130px;height: 45px;line-height: 45px;font-size: 18px;border: 1px solid #999;position: absolute;bottom: 20px;right: 20px;border-radius: 5px;text-align: center;cursor: pointer"><a style="color: #000" href="${a.url}">立即查看</a></div>
         </td>
         [/#list]
         [/@cms_content_list]
