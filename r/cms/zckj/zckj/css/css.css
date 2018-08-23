@@ -79,48 +79,49 @@ a:hover {
 }
 .font_cheng_12 {
     font-size: 12px;
-    color: #fe5627;
+    color: #0066b3;
     font-weight:bolder;
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }
 .font_cheng_12_2 {
     font-size: 12px;
-    color: #fe5627;
+    color: #0066b3;
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }
 .font_cheng_14 {
     font-size: 14px;
-    color: #fc8703;
+    color: #0066b3;
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }
 
 .font_cheng_14_2 {
     font-size: 14px;
-    color: #fe5627;
+    color: #0066b3;
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }
 
 .font_cheng_16 {
     font-size: 16px;
-    color: #fc8703;
+    color: #0066b3;
     text-decoration: none;
+    padding-left:10px;
     font-family:"Microsoft Yahei"
 }
 
 .font_cheng_18 {
     font-size: 18px;
-    color: #fc8703;
+    color: #0066b3;
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }
 
 .font_cheng_23 {
     font-size: 23px;
-    color: #fc8703;
+    color: #0066b3;
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }

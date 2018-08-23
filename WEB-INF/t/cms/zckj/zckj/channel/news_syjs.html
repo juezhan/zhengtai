@@ -382,16 +382,16 @@
 </table>
 <table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
-        <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
-        <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14">
-            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
-        </td>
-        <td width="845"></td>
-    </tr>
+    <td width="35"><img src="/${res}/imgs/daohang_tu.jpg" width="30" height="40"></td>
+    <td width="80" class="font_hui_14">您的位置：</td>
+    <td width="240"class="font_hui_14">
+        <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
+    </td>
+    <td width="845"></td>
+</tr>
     <tr>
-        <td height="1" bgcolor="#fc8703"></td>
-        <td bgcolor="#fc8703" colspan="2"></td>
+        <td height="1" bgcolor="#0066b3"></td>
+        <td bgcolor="#0066b3" colspan="2"></td>
         <td bgcolor="#e1e1e1"></td>
     </tr>
 </table>
@@ -437,7 +437,8 @@
                                 <tr>
                                     <td width='158' align='center' rowspan='3' class='font_cheng_23'><a href='${a.url}' class='font_hui_18' target='_blank'><img src='${a.titleImg!}' border='0' width='70' height='80'></a></td>
                                     <td width='151' class='font_hui_18'><a href='${a.url}' class='font_hui_18' target='_blank'>${a.title}</a></td>
-                                    <td width='46' align='left'><table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#fc8703' style='border-collapse:collapse'>
+                                    <td width='46' align='left'>
+                                        <table width='40' height='20' border='2' cellpadding='0' cellspacing='0' bordercolor='#0066b3' style='border-collapse:collapse'>
                                         <tr>
                                             <td align='center' class='font_cheng_14'>推荐</td>
                                         </tr>
@@ -471,8 +472,13 @@
                         </tr>
                         <tr>
                             <td height='50'></td>
-                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=433' class='font_hui_14_3' target='_blank'>自然科学/化学/应用化学</a></td>
-                            <td></td>
+                            <td class='font_hui_14_3'><a href='showZhuanjia.jsp?id=433' class='font_hui_14_3' target='_blank'>
+                                ${a.description!}
+                            </a>
+                            </td>
+                            <td>
+
+                            </td>
                         </tr>
                         <tr>
                             <td height='15'></td>
@@ -480,15 +486,15 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td height=35' bgcolor='#fc8703'></td>
-                            <td bgcolor='#fc8703'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
+                            <td height=35' bgcolor='#102179'></td>
+                            <td bgcolor='#102179'><table width='355' height='35' border='0' cellpadding='0' cellspacing='0'>
                                 <tr>
                                     <td width='250' class='font_bai_14'></td>
-                                    <td width='25' align='right'><img src='img/didian.jpg' width='16' height='20' /></td>
+                                    <td width='25' align='right'><img src='/${res}/imgs/didian.jpg' width='16' height='20' /></td>
                                     <td width='80' align='center' class='font_bai_14'></td>
                                 </tr>
                             </table></td>
-                            <td bgcolor='#fc8703'></td>
+                            <td bgcolor='#102179'></td>
                         </tr>
                     </table>
                 </td>

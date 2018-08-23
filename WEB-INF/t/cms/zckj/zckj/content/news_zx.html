@@ -207,145 +207,64 @@
         <td></td>
     </tr>
 </table>
+<table width="1200" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td></td>
+    </tr>
+</table>
 <table width="1200" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
-        <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
+        <td width="35"><img src="/${res}/imgs/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >　<font color="#FF0000">众创咨询</font></td>
+        <td width="240"class="font_hui_14">
+            <a href='${base}/zckj/index.jhtml' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
+        </td>
         <td width="845"></td>
     </tr>
+
     <tr>
-        <td height="1" bgcolor="#fc8703"></td>
-        <td bgcolor="#fc8703" colspan="2"></td>
+        <td height="1" bgcolor="#0066b3"></td>
+        <td bgcolor="#0066b3" colspan="2"></td>
         <td bgcolor="#e1e1e1"></td>
     </tr>
 </table>
-<table width="1200" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="1200" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
         <td></td>
     </tr>
 </table>
-<table width="1200" align="center" border="0" cellspacing="0" cellpadding="0">
+<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
-        <td width="800"><table width='800' border='0' align='center' cellpadding='0' cellspacing='0'>
-            <tr>
-                <td width='70' height='50' align='center'><img src='img/wenhao.jpg' width='30' height='30' /></td>
-                <td width='597' class='font_hui_18_2' colspan='2'><p>哪些领域可以申报高新技术企业？<br>
-                </p></td>
-            </tr>
-            <tr>
-                <td width='70' height='40' align='center'></td>
-                <td width='597' class='font_hui_14_3'>咨询人：一个人</td>
-                <td width='133' class='font_hui_14_3'>2017-09-13 11:14</td>
-            </tr>
-            <tr>
-                <td colspan='3' height='10'></td>
-            </tr>
-        </table>
-            <table width='800' border='0' align='center' cellpadding='0' cellspacing='0'>
+        <td>
+            <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
+                <tr>
+                    <td height='20'></td>
+                </tr>
+                <tr>
+                    <td height='50' class='font_lan_20' align='center'>${content.title}</td>
+                </tr>
+                <tr>
+                    <td height='25' class=font_hui_14_3 align='center'>加入时间：${content.releaseDate}</td>
+                </tr>
+                <tr>
+                    <td height='20'></td>
+                </tr>
+                <tr>
+                    <td><hr style='border:1px dotted #bdbdbd' /></td>
+                </tr>
                 <tr>
                     <td height='10'></td>
-                    <td bgcolor='#f8f8f8'></td>
-                    <td bgcolor='#f8f8f8'></td>
-                    <td bgcolor='#f8f8f8'></td>
+                </tr>
+                <tr id=td_1>
+                    <td align='left' valign='top' style='line-height:200%' class=font_hui_14_2><br>
+                        ${content.txt!}
+                    </td>
                 </tr>
                 <tr>
-                    <td width='70' height='170'></td>
-                    <td width='25' bgcolor='#f8f8f8'></td>
-                    <td width='680' valign='top' bgcolor='#f8f8f8' class='font_hui_16_2'><p>有八大领域：
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 电子信息
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 生物与新医药
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 航空航天
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新材料
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 高技术服务
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新能源与节能
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 资源与环境
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 先进制造与自动化
-                        <br>
-                        （但需满足三级目录）
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; 在产品所属高新技术领域情况说明中，要对本企业所列的高新技术产品进行逐一或分类描述。如产品
-                        <br>
-                        属于国家重点支持的高新技术领域当中的第一项“一、电子信息技术（一）软件1、系统软件”，必须描述
-                        <br>
-                        到第三级。<br>
-                    </p></td>
-                    <td width='25' bgcolor='#f8f8f8'></td>
+                    <td height="20"></td>
                 </tr>
             </table>
-
         </td>
-        <td width="20">&nbsp;</td>
-        <td width="380" align="center" valign="top" bgcolor="#f8f8f8"><table width="360" height="200" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td height="50">
-                    <table width="360" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td width="300" height="30" align="left" class="font_cheng_18">大家都在问</td>
-                            <td width="60" height="30" align="right" class="font_hui_14_3"><a href="zixun.jsp" class="font_hui_14_3">更多+</a></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td height="1" bgcolor="#fc8703"></td>
-            </tr>
-            <tr>
-                <td height="10"></td>
-            </tr>
-            <tr>
-                <td valign="top"><table width='360' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
-                    <tr>
-                        <td width='20' height='35' align='center' class='font_cheng_18'>&#8226;</td>
-                        <td width='340' align='left' class='font_hui_14_2'><a href='showZixun.jsp?id=78' class='font_hui_14_2'>哪些领域可以申报高新技术企业？
-                        </a></td>
-                    </tr>
-                </table>
-                    <table width='360' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
-                        <tr>
-                            <td width='20' height='35' align='center' class='font_cheng_18'>&#8226;</td>
-                            <td width='340' align='left' class='font_hui_14_2'><a href='showZixun.jsp?id=76' class='font_hui_14_2'>认定高新企业的条件 有哪些？
-                            </a></td>
-                        </tr>
-                    </table>
-                    <table width='360' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
-                        <tr>
-                            <td width='20' height='35' align='center' class='font_cheng_18'>&#8226;</td>
-                            <td width='340' align='left' class='font_hui_14_2'><a href='showZixun.jsp?id=74' class='font_hui_14_2'>创业需要注意的细节问题是什么
-                            </a></td>
-                        </tr>
-                    </table>
-                    <table width='360' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
-                        <tr>
-                            <td width='20' height='35' align='center' class='font_cheng_18'>&#8226;</td>
-                            <td width='340' align='left' class='font_hui_14_2'><a href='showZixun.jsp?id=71' class='font_hui_14_2'>大学生创业税务减免方面的资质怎么办理
-                            </a></td>
-                        </tr>
-                    </table>
-                    <table width='360' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
-                        <tr>
-                            <td width='20' height='35' align='center' class='font_cheng_18'>&#8226;</td>
-                            <td width='340' align='left' class='font_hui_14_2'><a href='showZixun.jsp?id=66' class='font_hui_14_2'>创业者最容易犯哪些错误？
-                            </a></td>
-                        </tr>
-                    </table>
-
-                </td>
-            </tr>
-        </table></td>
-    </tr>
-</table>
-<table width="1200" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
-    <tr>
-        <td></td>
     </tr>
 </table>
 
