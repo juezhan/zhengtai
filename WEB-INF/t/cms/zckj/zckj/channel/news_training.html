@@ -15,7 +15,7 @@
 <!--<script src="/${res}/js/html5shiv.min.js"></script>-->
 <!--<script src="/${res}/js/respond.min.js"></script>-->
 
-<![endif]-->
+<!--<![endif]&ndash;&gt;-->
 
 <!--<head>-->
 <!--<body >-->
@@ -265,10 +265,10 @@
                 [@cms_content_page  channelId="521"  sysPage='1'  dateFormat='yyyy-MM-dd' count='8' orderBy='2' titLen='35'  channelOption='1']
                 [#list tag_pagination.list as a]
 
-                <td width='25%' height='22'style="float: left;height: 220px">
+                <td width='22%' height='22'style="float: left;height: 220px;margin-left: 20px">
                     <table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
                         <tr>
-                            <td><a href='${a.url}' target='_blank' ><img src='${a.titleImg!}' width='270' height='180' border='0'></a></td>
+                            <td><a href='${a.url}' target='_blank' ><img src='${a.titleImg!}' width='100%' height='180' border='0' ></a></td>
                         </tr>
                         <tr>
                             <td align='left' height='25' class='font_hui_14_2' ><a href='${a.url}' target='_blank' class='font_hui_14_2' >${a.title}</a></td>
@@ -383,7 +383,6 @@
             <div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
                 [/@cms_content_page]
             </div>
-
         </td>
     </tr>
     <tr>
