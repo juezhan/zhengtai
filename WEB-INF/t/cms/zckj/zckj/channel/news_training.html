@@ -260,10 +260,9 @@
         <td valign="top">
             <table width='100%' border='0' cellspacing='0' cellpadding='0'>
             <tr>
-                [@cms_content_list count='3' orderBy='23' channelId=channel.id channelOption='1'
-                dateFormat='yyyy-MM-dd']
-                [#list tag_list as a]
-                <td width='25%' height='22'>
+                [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='6' orderBy='1' titLen='35'  channelOption='1']
+                [#list tag_pagination.list as a]
+                <td width='25%' height='22' style="float: left;height: 220px;">
                     <table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>
                         <tr>
                             <td><a href='${a.url}' target='_blank' ><img src='${a.titleImg!}' width='270' height='180' border='0'></a></td>
@@ -277,7 +276,8 @@
                     </table>
                 </td>
                 [/#list]
-                [/@cms_content_list]
+
+            </tr>
                 <!--<td width='25%' height='22'>-->
                     <!--<table width='100%' height='30' border='0' align='center' cellpadding='0' cellspacing='0'>-->
                         <!--<tr>-->
@@ -371,14 +371,19 @@
                         <!--</tr>-->
                     <!--</table>-->
                 <!--</td>-->
-            </tr>
+
         </table>
 
         </td>
     </tr>
-    <tr>
-        <td height="40" align="center" class="font_hui_14"><div>当前第[1/1]页 [<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='fwjg.jsp?pageNo='+i+'&classId=6N258JZHY5' selected='selected'>1</option><option value='fwjg.jsp?pageNo=1&classId=6N258JZHY5'>1</option></select>[<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>尾页</a>]</div>
+   <tr>
+        <td height="40" align="center" class="font_hui_14">
+            <div height="40" align="center" class="font_hui_14"  >
+                [/@cms_content_page]
+            </div>
+            <!--<div>当前第[1/1]页 [<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='fwjg.jsp?pageNo='+i+'&classId=6N258JZHY5' selected='selected'>1</option><option value='fwjg.jsp?pageNo=1&classId=6N258JZHY5'>1</option></select>[<a target='_self' href='fwjg.jsp?pageNo=1&classId=6N258JZHY5' class='font_lan_14_3'>尾页</a>]</div>-->
         </td>
+
     </tr>
     <tr>
         <td height="20"></td>

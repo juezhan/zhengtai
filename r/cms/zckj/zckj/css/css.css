@@ -15,9 +15,8 @@ a:hover {
 }
 .font_hui_14 {
     font-size: 14px;
-    color: #434343;
+   /* color: #434343;*/
     text-decoration: none;
-    font-weight:bolder;
     font-family:"Microsoft Yahei"
 }
 .font_hui_14_2 {
@@ -193,11 +192,11 @@ a:hover {
 
 .font_hong_14 {
     font-size: 14px;
-    color:#FF0000;
+ /*   color:#FF0000;*/
     text-decoration: none;
     font-family:"Microsoft Yahei"
 }
-
+.font_hong_14 :active{color:#FF0000;}
 .font_hei_14 {
     font-size: 14px;
     color:#000000;

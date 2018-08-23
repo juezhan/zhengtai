@@ -153,23 +153,26 @@
 <table width='1200' height='200' border='0' align='center' cellpadding='0' cellspacing='0'>
     <tr>
         <td width='126' height='20'></td>
-        <td width='1074' height='60' class='font_hui_23'>“科技创新助推智能制造产业”企业家沙龙</td>
+        <td width='1074' height='60' class='font_hui_23'>${content.title}</td>
     </tr>
     <tr>
         <td></td>
         <td height='1' bgcolor='#CCCCCC'></td>
     </tr><tr><td rowspan='7' align='center' valign='top'><table width='85' height='120' border='0' cellpadding='0' cellspacing='0'><tr><td height='75' align='center' bgcolor='#fc8703' class='font_bai_30'>10日</td>
 </tr><tr><td height='45' align='center' bgcolor='#a7a7a7' class='font_bai_20'>8月</td>
-</tr></table></td><td height='40' class='font_cheng_14_2'>活动时间：2017-08-10 09:00:00</td></tr><tr><td height='30' class='font_hui_14_2'>主办单位：吉林省科技大市场</td></tr><tr><td height='30' class='font_hui_14_2'>活动地点：长春北湖科技园C2-3（吉林省科技大市场二楼会议室）</td></tr><tr><td height='15'></td></tr><tr><td height='1 colspan='2' bgcolor='#CCCCCC'></td></tr>
+</tr></table></td><td height='40' class='font_cheng_14_2'>活动时间：${content.releaseDate}</td></tr><tr><td height='30' class='font_hui_14_2'>主办单位：${content.origin!}</td></tr><tr><td height='30' class='font_hui_14_2'>活动地点：${content.description!}</td></tr><tr><td height='15'></td></tr><tr><td height='1 colspan='2' bgcolor='#CCCCCC'></td></tr>
     <tr>
         <td height='15'></td>
     </tr>
     <tr>
-        <td height='20' class='font_hui_14_2'>1、技术服务战略合作签约；
+        <td height='20' class='font_hui_14_2'>
+          <!--  1、技术服务战略合作签约；
             <div>2、关于人工智能、机器人、机器视觉、工业4.0智能化数字化工厂等技术方案介绍；</div>
             <div>3、针对企业股权融资利弊以及对企业影响因素综合分析；&nbsp;</div>
             <div>4、会议讨论交流
-                针对智能制造产业相关问题、制造业企业如何转型升级等问题展开交流讨论，如何从科技创新方面着手助推智能制造业发展。</div></td>
+                针对智能制造产业相关问题、制造业企业如何转型升级等问题展开交流讨论，如何从科技创新方面着手助推智能制造业发展。</div>-->
+            ${content.txt!}
+        </td>
     </tr>
 </table>-->
 

@@ -153,7 +153,7 @@
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
         <td width="240"class="font_hui_14">
-            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
+            <a href='${base}/zckj/index.jhtml' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
         </td>
         <td width="845"></td>
     </tr>
@@ -171,15 +171,22 @@
 <table width="1200" height="400" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
         <td>
+            [@cms_content_page  channelId=channel.id  sysPage='1'  dateFormat='yyyy-MM-dd' count='6' orderBy='1' titLen='35'  channelOption='1']
+            [#list tag_pagination.list as a]
             <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
-            <tr><td width='300'> <a href='showZcjg.jsp?id=20' class='font_hui_14_2' target='_blank'><img src='/img/zanwu.jpg' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
+            <tr>
+                <td width='300'> <a href='${a.url}' class='font_hui_14_2' target='_blank'>
+                    <img src='${a.titleImg!}' width='300' height='160' border='0'/>
+                </td>
+                <td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'>
+                    <tr>
                 <td style='line-height:28px' class='font_hui_16' align='left' height='40'>
-                    <a href='showZcjg.jsp?id=20' class='font_hui_14_2' target='_blank'>吉林省天邦菁华知识产权运营服务有限公司</a>
+                    <a href='${a.url}' class='font_hui_14_2' target='_blank'>${a.title}</a>
                 </td>
             </tr>
                 <tr>
                     <td style='line-height:28px' class='font_hui_16' align='left'>
-                        <a href='showZcjg.jsp?id=20' class='font_hui_14_2' target='_blank'>吉林省天邦菁华知识产权运营服务有限公司是一家从事知识产权商业运营服务的专业化公司。公司旗下的长春众邦菁华知识产权代理有限公司（原长春菁华专利商标代理事务所（普通合伙））是国家知识产权局指定的知识产权专业代理机构。公司通过知识产权全流程服务，支持科研院所、企业、高校和其他科研机构形成高价值知识产权。</a>
+                        <a href='${a.url}' class='font_hui_14_2' target='_blank'> ${a.description!}</a>
                     </td>
                 </tr>
             </table><table width='850' height='20' border='0' cellspacing='0' cellpadding='0' align='center'>
@@ -188,6 +195,9 @@
             <tr><td colspan='2' height='1'><hr style='border:1px dotted #bdbdbd' /></td></tr>
             <tr><td colspan='2' height='20'></td></tr>
         </table>
+            [/#list]
+            <div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
+                [/@cms_content_page]
        <!--     <table width='1200' border='0' cellspacing='0' cellpadding='0' align='center'>
                 <tr><td width='300'> <a href='showZcjg.jsp?id=24' class='font_hui_14_2' target='_blank'><img src='/img/zanwu.jpg' width='300' height='160' border='0'/></td><td align='center' valign='top'><table width='850' height='140' border='0' cellspacing='0' cellpadding='0'><tr>
                     <td style='line-height:28px' class='font_hui_16' align='left' height='40'>
@@ -241,10 +251,6 @@
                 <tr><td colspan='2' height='20'></td></tr>
             </table>-->
 
-        </td>
-    </tr>
-    <tr>
-        <td height="40" align="center" class="font_hui_14"><div>当前第[1/2]页 [<a target='_self' href='listZcjg.jsp?pageNo=1&classId=F28GE8EV4C' class='font_lan_14_3'>首页</a>] [上一页] [<a target='_self' href='listZcjg.jsp?pageNo=2&classId=F28GE8EV4C' class='font_lan_14_3'>下一页</a>] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='listZcjg.jsp?pageNo='+i+'&classId=F28GE8EV4C' selected='selected'>1</option><option value='listZcjg.jsp?pageNo=1&classId=F28GE8EV4C'>1</option><option value='listZcjg.jsp?pageNo=2&classId=F28GE8EV4C'>2</option></select>[<a target='_self' href='listZcjg.jsp?pageNo=2&classId=F28GE8EV4C' class='font_lan_14_3'>尾页</a>]</div>
         </td>
     </tr>
     <tr>

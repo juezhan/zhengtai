@@ -123,8 +123,15 @@
     <tr>
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="159"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >　<a href="ztpx.jsp" class="font_hong_14">培训信息</a></td>
-        <td width="90" align="center" class="font_hui_14"><a href="zxpx.jsp?classId=FTBDZCP91A" target="_blank" class="font_hui_14">在线培训</a></td>
+        <td width="300"class="font_hui_14">
+            <a href="${base}/zckj/index.jhtml" class="font_hui_14">首页</a> >
+            [@cms_channel_list parentId="520"]
+            [#list tag_list as c2]　
+            <a href="${c2.url}" class="font_hong_14">${c2.name}</a>
+            [/#list]
+            [/@cms_channel_list]
+        </td>
+       <!-- <td width="90" align="center" class="font_hui_14"><a href="zxpx.jsp?classId=FTBDZCP91A" target="_blank" class="font_hui_14">在线培训</a></td>
         <td width="90" align="center" class="font_hui_14"><a href="listIndex.jsp?classId=DG88APA01F" target="_blank" class="font_hui_14">培训通知</a></td>
         <td width="746">
             <div id="colee_left" style="overflow:hidden;width:746px; height:30">
@@ -160,7 +167,7 @@
                 colee_left.onmouseover=function() {clearInterval(MyMar3)}
                 colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
             </script>
-        </td>
+        </td>-->
     </tr>
     <tr>
         <td height="1" bgcolor="#fc8703"></td>
@@ -242,9 +249,7 @@
     </tr>
 </table>
 [/#list]
-<div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
-    [/@cms_content_page]
-</div>
+
 
 <!-- <table width='1200' height='410' border='0' align='center' cellpadding='0' cellspacing='0'>
     <tr>
@@ -443,11 +448,15 @@
 </table>
 
 
-<!--<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
-        <td height="50" align="center" class="font_hui_14"><div>当前第[1/1]页 [<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='ztpx.jsp?pageNo='+i+'&classId=FLMN3V0022' selected='selected'>1</option><option value='ztpx.jsp?pageNo=1&classId=FLMN3V0022'>1</option></select>[<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>尾页</a>]</div>
+        <td height="50" align="center" class="font_hui_14">
+          <!--  <div>当前第[1/1]页 [<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>首页</a>] [上一页] [下一页] <select name=menu1 onchange=MM_jumpMenu('self',this,0)><option value='ztpx.jsp?pageNo='+i+'&classId=FLMN3V0022' selected='selected'>1</option><option value='ztpx.jsp?pageNo=1&classId=FLMN3V0022'>1</option></select>[<a target='_self' href='ztpx.jsp?pageNo=1&classId=FLMN3V0022' class='font_lan_14_3'>尾页</a>]</div>-->
+            <div height="40" align="center" class="font_hui_14" style="position: relative;margin-top: 20px;">
+                [/@cms_content_page]
+            </div>
         </td>
-    </tr>-->
+    </tr>
 
     <tr>
         <td height="20"></td>

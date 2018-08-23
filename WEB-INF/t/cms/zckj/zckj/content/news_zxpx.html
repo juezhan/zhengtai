@@ -28,7 +28,9 @@
     <tr>
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >　<font color="#FF0000">在线培训</font></td>
+        <td width="240"class="font_hui_14">
+            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
+        </td>
         <td width="845"></td>
     </tr>
     <tr>
@@ -46,18 +48,21 @@
     <tr>
         <td><table width='1200' height='200' border='0' align='center' cellpadding='0' cellspacing='0'>
             <tr>
-                <td width='1074' height='60' class='font_hui_23' align='center'>2018年科技发展计划项目如何申报?</td>
+                <td width='1074' height='60' class='font_hui_23' align='center'>${content.title}</td>
             </tr>
             <tr>
-                <td height='20' class='font_hui_14_2'><p><span style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">一、2018年科技发展计划内容&nbsp;</span>
+                <td height='20' class='font_hui_14_2'>
+                    <p>
+                        ${content.txt!}
                 </p>
-                    <div style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><br>
+              <!--      <div style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><br>
                     </div>
                     <div style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">二、科技项目申报中的注意事项</div>
                     <div style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><br>
                     </div>
-                    <div style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">三、科技项目成功案例剖析</div>
-                    <img border="0" src="/ewebeditor/sysimage/icon16/ppt.gif"><a href="/ewebeditor/uploadfile/20170912131626611.ppt" target="_blank">2018年科技计划.ppt</a><br>
+                    <div style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">三、科技项目成功案例剖析</div>-->
+                    <img border="0" src="/ewebeditor/sysimage/icon16/ppt.gif">
+                    <a href="/ewebeditor/uploadfile/20170912131626611.ppt" target="_blank">2018年科技计划.ppt</a><br>
                     <p></p>
                     <p><br>
                     </p></td>

@@ -150,14 +150,16 @@
     <tr>
         <td valign="top"><table width='1200' border='0' cellspacing='0' cellpadding='0'>
             <tr>
-                <td height='50' class='font_hui_18' width='100'>企业名称：</td>
-                <td align='left' class='font_hui_18'>${content.title}</td>
+              <!--  <td height='50' class='font_hui_18' width='100'></td>-->
+                <td  class='font_hui_18' style="height: 80px;border-bottom: 1px solid darkgrey;" >企业名称：${content.title}</td>
             </tr>
             <tr>
-                <td height='30' class='font_hui_18' width='100'></td>
-                <td align='left' class='font_hui_14_2'></td>
+                <td height='60' class='font_hui_18' style="width: 100%;">
+                    ${content.txt!}
+                </td>
+              <!--  <td align='left' class='font_hui_14_2'></td>-->
             </tr>
-            <tr>
+          <!--  <tr>
                 <td height='30' class='font_hui_18' width='100'></td>
                 <td align='left' class='font_hui_14_2'></td>
             </tr>
@@ -169,7 +171,7 @@
             </tr>
             <tr>
                 <td colspan='2' height='10'></td>
-            </tr>
+            </tr>-->
             <!--<tr>
                 <td height='50' class='font_hui_14_2' width='100' valign='top'>简介：</td>
                 <td align='left' class='font_hui_14_2' valign='top'>${content.description!}</td>
@@ -180,7 +182,8 @@
                 </p>
                 </td>
             </tr>-->
-            ${content.txt!}
+
+
 
         </table>
         </td>
