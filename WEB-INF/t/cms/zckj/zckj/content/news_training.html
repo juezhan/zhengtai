@@ -19,7 +19,7 @@
 
 <!--<head>-->
 <!--<body class="adout">-->
-<!--[#include "../include/header.html"/]-->
+
 <!--&lt;!&ndash;-->
 <!--<div class="xxgs-main">-->
     <!--<div class="container">-->
@@ -127,8 +127,7 @@
 
 
 
-<!--[#include "../include/footer.html"/]-->
-<!--[#include "../include/bottom.html"/]-->
+
 <!--</body>-->
 <!--</html>-->
 
@@ -165,52 +164,7 @@
     }
 </script>
 
-            <table width="100%" height="157" border="0" cellpadding="0" cellspacing="0" class="bg01">
-                <tr>
-                    <td align="center"><table width="1200" height="157" border="0" cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td width="870">&nbsp;</td>
-                            <td width="330" align="center"><table width="330" height="157" border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td height="30" align="right">
 
-                                        <table width="325" height="30" border="0" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td width="219" align="right"><a href="login.jsp" target="_blank"><img src="img/login.jpg" width="85" height="30" border="0" /></a></td>
-                                                <td width="20">&nbsp;</td>
-                                                <td width="86"><a href="regist.jsp" target="_blank"><img src="img/regist.jpg" width="86" height="30" border="0" /></a></td>
-                                            </tr>
-                                        </table>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="30"></td>
-                                </tr>
-                                <tr>
-                                    <td height="34" align="right"><table width="325" height="34" border="0" cellpadding="0" cellspacing="0">
-                                        <form name="search_search" method="post" action="search_search.ps">
-                                            <tr>
-                                                <td width="285" align="right"><input type="text" name="keyWord" style="width:285px; height:29px; line-height:29px" /></td>
-                                                <td width="40"><input type="image" src="img/search.jpg" /></td>
-                                            </tr>
-                                        </form>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td height="25"></td>
-                                </tr>
-                            </table></td>
-                        </tr>
-                    </table></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
 <table width="100%" height="20" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#f2f2f2">
     <tr>
         <td></td>
@@ -225,8 +179,8 @@
     <tr>
         <td width="35"><img src="img/daohang_tu.jpg" width="30" height="40"></td>
         <td width="80" class="font_hui_14">您的位置：</td>
-        <td width="240"class="font_hui_14"><a href="index.jsp" class="font_hui_14">首页</a> >
-            服务机构
+        <td width="240"class="font_hui_14">
+            <a href='${base}/' class="font_hui_14">首页</a>  &gt; [#list channel.nodeList as n]<a href='${n.url}' target='_blank' class="font_hui_14">${n.name}</a>[#if n_has_next] &gt; [/#if][/#list]  &gt;
         </td>
         <td width="845"></td>
     </tr>
@@ -248,10 +202,10 @@
                 <td height='20'></td>
             </tr>
             <tr>
-                <td height='50' class='font_lan_20' align='center'>长春吉大专利代理有限责任公司</td>
+                <td height='50' class='font_lan_20' align='center'>${content.title}</td>
             </tr>
             <tr>
-                <td height='25' class=font_hui_14_3 align='center'>加入时间：2017-09-13</td>
+                <td height='25' class=font_hui_14_3 align='center'>加入时间：${content.releaseDate} </td>
             </tr>
             <tr>
                 <td height='20'></td>
@@ -263,15 +217,19 @@
                 <td height='10'></td>
             </tr>
             <tr id=td_1>
-                <td align='left' valign='top' style='line-height:200%' class=font_hui_14_2><br><p>成立于2001年，前身为机械工业部长春专利事务所与吉林大学专利事务所，2001年包括吉林工业大学、白求恩医科大学、长春科技大学、长春邮电学院与吉林大学合并为新的吉林大学，分别设置于吉林工业大学和老吉林大学的两个专利事务所合并，并进行了脱钩改制，成立了长春吉大专利代理有限责任公司。<br>
-                </p></td>
+                <td align='left' valign='top' style='line-height:200%' class=font_hui_14_2><br>
+                    <div class="content">${txt!}</div>
+                    <!--<p>成立于2001年，前身为机械工业部长春专利事务所与吉林大学专利事务所，2001年包括吉林工业大学、白求恩医科大学、长春科技大学、长春邮电学院与吉林大学合并为新的吉林大学，分别设置于吉林工业大学和老吉林大学的两个专利事务所合并，并进行了脱钩改制，成立了长春吉大专利代理有限责任公司。<br>-->
+                <!--</p>-->
+
+                </td>
             </tr>
             <tr>
-                <td align='right' class='font_hui_14'><br>（责任编辑：管理员）</td>
+                <td align='right' class='font_hui_14'><br>${content.author!'本站编辑'} </td>
             </tr>
             <tr>
                 <td height='30'><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr>	<tr>
-                    <td align='left' height='30' class='font_hui_14'>关键字：</td>
+                    <td align='left' height='30' class='font_hui_14'>关键字：${content.tagStr!}</td>
                 </tr>
                 </table></td></tr></table>
         </td>
